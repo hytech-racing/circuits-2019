@@ -19641,6 +19641,37 @@ MAX voltage: 100V</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="TLP290-4">
+<description>&lt;b&gt;Toshiba Quad Channel Optocoupler TLP291-4&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="TLP291-4" x="5.08" y="12.7"/>
+</gates>
+<devices>
+<device name="" package="SOIC-16">
+<connects>
+<connect gate="G$1" pin="C1" pad="16"/>
+<connect gate="G$1" pin="C2" pad="14"/>
+<connect gate="G$1" pin="C3" pad="12"/>
+<connect gate="G$1" pin="C4" pad="10"/>
+<connect gate="G$1" pin="EM1" pad="15"/>
+<connect gate="G$1" pin="EM2" pad="13"/>
+<connect gate="G$1" pin="EM3" pad="11"/>
+<connect gate="G$1" pin="EM4" pad="9"/>
+<connect gate="G$1" pin="GND1" pad="2"/>
+<connect gate="G$1" pin="GND2" pad="4"/>
+<connect gate="G$1" pin="GND3" pad="6"/>
+<connect gate="G$1" pin="GND4" pad="8"/>
+<connect gate="G$1" pin="VCC1" pad="1"/>
+<connect gate="G$1" pin="VCC2" pad="3"/>
+<connect gate="G$1" pin="VCC3" pad="5"/>
+<connect gate="G$1" pin="VCC4" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
