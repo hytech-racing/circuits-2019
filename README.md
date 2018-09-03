@@ -1,5 +1,3 @@
-View this project on [CADLAB.io](https://cadlab.io/project/1277). 
-
 ![HyTech logo](https://hytechracing.gatech.edu/images/hytech_logo_small.png)
 
 # 2019 Circuits
@@ -20,3 +18,6 @@ View this project on [CADLAB.io](https://cadlab.io/project/1277).
 ## Getting Started with EAGLE
 1. Download and install [EAGLE](https://www.autodesk.com/products/eagle/overview)
 2. Get the free [Educational License](https://www.autodesk.com/education/free-software/eagle) (a .edu email address is required)
+
+## View on CADLAB
+View design diffs on [CADLAB.io](https://cadlab.io/project/1277).
