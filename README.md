@@ -21,3 +21,10 @@
 
 ## View on CADLAB
 View design diffs on [CADLAB.io](https://cadlab.io/project/1277).
+
+## Circuit Board Versioning Scheme
+* New boards must start their numbering at revision 1.
+* Revision numbers must be incremented by 1 when a physical board is manufactured.
+* Revision numbers should not be incremented at any other time.
+* After a board is manufactured, the files corresponding to the manufactured version should not be modified.
+* Circuit boards based off of a previous year's design should increment based off of the previous board's revision number.
