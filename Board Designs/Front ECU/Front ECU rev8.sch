@@ -1821,6 +1821,42 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pad name="9" x="11.43" y="0" drill="1.016" shape="long" rot="R90"/>
 <rectangle x1="11.176" y1="-0.254" x2="11.684" y2="0.254" layer="51"/>
 </package>
+<package name="MX150L-RIGHT_ANGLE-10">
+<pad name="1" x="17.1958" y="2.921" drill="1.524"/>
+<pad name="2" x="23.0378" y="2.921" drill="1.524"/>
+<pad name="6" x="17.1958" y="-2.921" drill="1.524"/>
+<pad name="7" x="23.0378" y="-2.921" drill="1.524"/>
+<hole x="0" y="0" drill="4.7752"/>
+<hole x="57.7596" y="0" drill="4.7752"/>
+<wire x1="-3.81" y1="-12.446" x2="61.5696" y2="-12.446" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="7.8994" x2="61.5696" y2="7.8994" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="7.8994" x2="-3.81" y2="-12.446" width="0.127" layer="21"/>
+<wire x1="61.5696" y1="7.8994" x2="61.5696" y2="-12.446" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-12.7" x2="12.7" y2="-25.4" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-25.4" x2="44.45" y2="-25.4" width="0.127" layer="21"/>
+<wire x1="44.45" y1="-25.4" x2="44.45" y2="-12.7" width="0.127" layer="21"/>
+<pad name="3" x="28.8798" y="2.921" drill="1.524"/>
+<pad name="4" x="34.7218" y="2.921" drill="1.524"/>
+<pad name="8" x="28.8798" y="-2.921" drill="1.524"/>
+<pad name="9" x="34.7218" y="-2.921" drill="1.524"/>
+<pad name="5" x="40.5638" y="2.921" drill="1.524"/>
+<pad name="10" x="40.5638" y="-2.921" drill="1.524"/>
+</package>
+<package name="MX150L-RIGHT_ANGLE-4">
+<pad name="P$1" x="17.6784" y="2.921" drill="1.524"/>
+<pad name="P$2" x="23.5204" y="2.921" drill="1.524"/>
+<pad name="P$3" x="17.6784" y="-2.921" drill="1.524"/>
+<pad name="P$4" x="23.5204" y="-2.921" drill="1.524"/>
+<hole x="0" y="0" drill="4.7752"/>
+<hole x="41.2496" y="0" drill="4.7752"/>
+<wire x1="-3.81" y1="-12.446" x2="45.0596" y2="-12.446" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="7.8994" x2="45.0596" y2="7.8994" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="7.8994" x2="-3.81" y2="-12.446" width="0.127" layer="21"/>
+<wire x1="45.0596" y1="7.8994" x2="45.0596" y2="-12.446" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-12.7" x2="12.7" y2="-25.4" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-25.4" x2="27.94" y2="-25.4" width="0.127" layer="21"/>
+<wire x1="27.94" y1="-25.4" x2="27.94" y2="-12.7" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TPOT">
@@ -3076,6 +3112,17 @@ Source: http://www.molex.com</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="MX150-RIGHT_ANGLE-4" package="MX150L-RIGHT_ANGLE-4">
+<connects>
+<connect gate="-1" pin="S" pad="P$1"/>
+<connect gate="-2" pin="S" pad="P$2"/>
+<connect gate="-3" pin="S" pad="P$3"/>
+<connect gate="-4" pin="S" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="CONNECTOR-10" prefix="X">
@@ -3185,6 +3232,23 @@ Source: http://www.molex.com</description>
 </technologies>
 </device>
 <device name="MX150L_VERTICAL-10" package="MX150L_VERTICAL-10">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-10" pin="S" pad="10"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+<connect gate="-7" pin="S" pad="7"/>
+<connect gate="-8" pin="S" pad="8"/>
+<connect gate="-9" pin="S" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="MX150L-RIGHT_ANGLE-10" package="MX150L-RIGHT_ANGLE-10">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-10" pin="S" pad="10"/>
@@ -4249,7 +4313,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="R13" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="43k"/>
 <part name="R14" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="12k"/>
 <part name="GND15" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="X3" library="HyTechDevices" deviceset="CONNECTOR-4" device="MX150L_VERTICAL-4"/>
+<part name="X3" library="HyTechDevices" deviceset="CONNECTOR-4" device="MX150-RIGHT_ANGLE-4" value="CONNECTOR-4MX150-RIGHT_ANGLE-4"/>
 <part name="GND1" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="X4" library="HyTechDevices" deviceset="CONNECTOR-10" device="MX150L_VERTICAL-10"/>
 <part name="U$4" library="HyTechDevices" deviceset="TLP291-4" device=""/>
@@ -4262,7 +4326,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="R20" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="270"/>
 <part name="P+11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="GND18" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="X6" library="HyTechDevices" deviceset="CONNECTOR-10" device="MX150L_VERTICAL-10"/>
+<part name="X6" library="HyTechDevices" deviceset="CONNECTOR-10" device="MX150L-RIGHT_ANGLE-10" value="CONNECTOR-10MX150L-RIGHT_ANGLE-10"/>
 <part name="R21" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="270"/>
 <part name="R22" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="270"/>
 <part name="U$7" library="HyTechDevices" deviceset="JUMPER" device=""/>
@@ -4414,7 +4478,7 @@ if U$24 is not installed.</text>
 <instance part="P+2" gate="1" x="243.84" y="213.36" rot="R270"/>
 <instance part="P+3" gate="1" x="170.18" y="182.88" rot="R270"/>
 <instance part="GND4" gate="1" x="172.72" y="180.34" rot="R90"/>
-<instance part="GND5" gate="1" x="139.7" y="177.8" rot="R270"/>
+<instance part="GND5" gate="1" x="134.62" y="177.8" rot="R270"/>
 <instance part="P+5" gate="1" x="78.74" y="154.94" rot="R270"/>
 <instance part="GND7" gate="1" x="68.58" y="157.48" rot="R90"/>
 <instance part="LED1" gate="LED" x="243.84" y="83.82" rot="R270"/>
@@ -4614,6 +4678,7 @@ if U$24 is not installed.</text>
 <segment>
 <pinref part="U$3" gate="G$1" pin="8"/>
 <pinref part="GND5" gate="1" pin="GND"/>
+<wire x1="137.16" y1="177.8" x2="142.24" y2="177.8" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="66.04" y1="157.48" x2="58.42" y2="157.48" width="0.1524" layer="91"/>
