@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1721,18 +1721,18 @@ Standard character type LCDs, available in sizes from 8x1 to 40x4!</description>
 <instance part="U$1" gate="G$1" x="27.94" y="25.4"/>
 <instance part="U$4" gate="G$1" x="-25.4" y="53.34"/>
 <instance part="LED6" gate="LED" x="91.44" y="101.6"/>
-<instance part="LED7" gate="LED" x="86.36" y="101.6"/>
-<instance part="LED8" gate="LED" x="81.28" y="101.6"/>
-<instance part="LED9" gate="LED" x="76.2" y="101.6"/>
-<instance part="LED10" gate="LED" x="73.66" y="101.6"/>
+<instance part="LED7" gate="LED" x="88.9" y="91.44"/>
+<instance part="LED8" gate="LED" x="81.28" y="91.44"/>
+<instance part="LED9" gate="LED" x="71.12" y="93.98"/>
+<instance part="LED10" gate="LED" x="55.88" y="99.06"/>
 <instance part="S3" gate="1" x="68.58" y="78.74"/>
 <instance part="S4" gate="1" x="76.2" y="78.74"/>
 <instance part="U$2" gate="G$1" x="-2.54" y="83.82"/>
 <instance part="R1" gate="G$1" x="-10.16" y="96.52"/>
 <instance part="R2" gate="G$1" x="53.34" y="106.68"/>
-<instance part="R3" gate="G$1" x="63.5" y="106.68"/>
-<instance part="R4" gate="G$1" x="73.66" y="106.68"/>
-<instance part="R5" gate="G$1" x="78.74" y="104.14"/>
+<instance part="R3" gate="G$1" x="68.58" y="106.68"/>
+<instance part="R4" gate="G$1" x="96.52" y="106.68"/>
+<instance part="R5" gate="G$1" x="76.2" y="99.06"/>
 <instance part="R6" gate="G$1" x="83.82" y="109.22"/>
 <instance part="R7" gate="G$1" x="63.5" y="66.04"/>
 <instance part="R8" gate="G$1" x="78.74" y="66.04"/>
@@ -1749,24 +1749,6 @@ Standard character type LCDs, available in sizes from 8x1 to 40x4!</description>
 <busses>
 </busses>
 <nets>
-<net name="N$1" class="0">
-<segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$2" class="0">
-<segment>
-<pinref part="R3" gate="G$1" pin="2"/>
-<pinref part="R4" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$3" class="0">
-<segment>
-<pinref part="LED10" gate="LED" pin="A"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-</segment>
-</net>
 </nets>
 </sheet>
 </sheets>
