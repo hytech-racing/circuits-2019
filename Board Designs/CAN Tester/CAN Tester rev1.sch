@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -1691,64 +1691,70 @@ Standard character type LCDs, available in sizes from 8x1 to 40x4!</description>
 </class>
 </classes>
 <parts>
-<part name="U$1" library="HyTechDevices" deviceset="TEENSY_3.2_SIMPLE" device=""/>
-<part name="U$4" library="HyTechDevices" deviceset="ISO1050CAN" device=""/>
-<part name="LED6" library="HyTechDevices" deviceset="LED" device="-0805"/>
-<part name="LED7" library="HyTechDevices" deviceset="LED" device="-0805"/>
-<part name="LED8" library="HyTechDevices" deviceset="LED" device="-0805"/>
-<part name="LED9" library="HyTechDevices" deviceset="LED" device="-0805"/>
-<part name="LED10" library="HyTechDevices" deviceset="LED" device="-0805"/>
-<part name="S3" library="HyTechDevices" deviceset="BTN_10-XX" device="SMD"/>
-<part name="S4" library="HyTechDevices" deviceset="BTN_10-XX" device="SMD"/>
-<part name="U$2" library="HyTechDevices" deviceset="JUMPER" device=""/>
-<part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="120"/>
+<part name="U3" library="HyTechDevices" deviceset="TEENSY_3.2_SIMPLE" device=""/>
+<part name="U1" library="HyTechDevices" deviceset="ISO1050CAN" device="" value="ISOLATED CAN TERMINAL"/>
+<part name="INCOMING" library="HyTechDevices" deviceset="LED" device="-0805" value="YELLOW"/>
+<part name="OUTGOING" library="HyTechDevices" deviceset="LED" device="-0805" value="BLUE"/>
+<part name="ACKERR" library="HyTechDevices" deviceset="LED" device="-0805" value="RED"/>
+<part name="LINE_OK" library="HyTechDevices" deviceset="LED" device="-0805" value="GREEN"/>
+<part name="SPARE" library="HyTechDevices" deviceset="LED" device="-0805" value="WHITE"/>
+<part name="MODE_SWITCH" library="HyTechDevices" deviceset="BTN_10-XX" device="SMD"/>
+<part name="SPARE_BUTTON" library="HyTechDevices" deviceset="BTN_10-XX" device="SMD"/>
+<part name="U2" library="HyTechDevices" deviceset="JUMPER" device="" value="TERMINATION_RESISTOR_JUMPER"/>
+<part name="CAN_TERMINATION_RESISTOR" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="120"/>
+<part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="220"/>
 <part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="220"/>
 <part name="R3" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="220"/>
 <part name="R4" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="220"/>
 <part name="R5" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="220"/>
-<part name="R6" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="220"/>
-<part name="R7" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10K"/>
-<part name="R8" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10K"/>
-<part name="X3" library="HyTechDevices" deviceset="CONNECTOR-4" device="NANO-FIT_RIGHT_ANGLE-4-SURFACE" value="Nanofit"/>
-<part name="X1" library="HyTechDevices" deviceset="CONNECTOR-4" device="DURACLIK_RIGHT_ANGLE-4" value="Minifit"/>
-<part name="X2" library="HyTechDevices" deviceset="HD44780LCD" device="-1602"/>
+<part name="R_MODE_SWITCH" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10K"/>
+<part name="R_SPARE_BUTTON" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10K"/>
+<part name="M2" library="HyTechDevices" deviceset="CONNECTOR-4" device="NANO-FIT_RIGHT_ANGLE-4-SURFACE" value="Nanofit"/>
+<part name="M1" library="HyTechDevices" deviceset="CONNECTOR-4" device="DURACLIK_RIGHT_ANGLE-4" value="Minifit"/>
+<part name="U4" library="HyTechDevices" deviceset="HD44780LCD" device="-1602" value="CHARACTER_LCD"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 </plain>
 <instances>
-<instance part="U$1" gate="G$1" x="27.94" y="25.4"/>
-<instance part="U$4" gate="G$1" x="-25.4" y="53.34"/>
-<instance part="LED6" gate="LED" x="91.44" y="101.6"/>
-<instance part="LED7" gate="LED" x="88.9" y="91.44"/>
-<instance part="LED8" gate="LED" x="81.28" y="91.44"/>
-<instance part="LED9" gate="LED" x="71.12" y="93.98"/>
-<instance part="LED10" gate="LED" x="55.88" y="99.06"/>
-<instance part="S3" gate="1" x="68.58" y="78.74"/>
-<instance part="S4" gate="1" x="76.2" y="78.74"/>
-<instance part="U$2" gate="G$1" x="-2.54" y="83.82"/>
-<instance part="R1" gate="G$1" x="-10.16" y="96.52"/>
-<instance part="R2" gate="G$1" x="53.34" y="106.68"/>
-<instance part="R3" gate="G$1" x="68.58" y="106.68"/>
-<instance part="R4" gate="G$1" x="96.52" y="106.68"/>
-<instance part="R5" gate="G$1" x="76.2" y="99.06"/>
-<instance part="R6" gate="G$1" x="83.82" y="109.22"/>
-<instance part="R7" gate="G$1" x="63.5" y="66.04"/>
-<instance part="R8" gate="G$1" x="78.74" y="66.04"/>
-<instance part="X3" gate="-1" x="35.56" y="96.52"/>
-<instance part="X3" gate="-2" x="35.56" y="93.98"/>
-<instance part="X3" gate="-3" x="35.56" y="91.44"/>
-<instance part="X3" gate="-4" x="35.56" y="88.9"/>
-<instance part="X1" gate="-1" x="20.32" y="96.52"/>
-<instance part="X1" gate="-2" x="20.32" y="93.98"/>
-<instance part="X1" gate="-3" x="20.32" y="91.44"/>
-<instance part="X1" gate="-4" x="20.32" y="88.9"/>
-<instance part="X2" gate="G$1" x="83.82" y="38.1"/>
+<instance part="U3" gate="G$1" x="22.86" y="25.4"/>
+<instance part="U1" gate="G$1" x="-10.16" y="25.4"/>
+<instance part="INCOMING" gate="LED" x="114.3" y="30.48"/>
+<instance part="OUTGOING" gate="LED" x="124.46" y="30.48"/>
+<instance part="ACKERR" gate="LED" x="134.62" y="30.48"/>
+<instance part="LINE_OK" gate="LED" x="144.78" y="30.48"/>
+<instance part="SPARE" gate="LED" x="154.94" y="30.48"/>
+<instance part="MODE_SWITCH" gate="1" x="172.72" y="50.8"/>
+<instance part="SPARE_BUTTON" gate="1" x="185.42" y="50.8"/>
+<instance part="U2" gate="G$1" x="-25.4" y="25.4" rot="R90"/>
+<instance part="CAN_TERMINATION_RESISTOR" gate="G$1" x="-22.86" y="38.1" rot="R90"/>
+<instance part="R1" gate="G$1" x="114.3" y="43.18" rot="R90"/>
+<instance part="R2" gate="G$1" x="124.46" y="43.18" rot="R90"/>
+<instance part="R3" gate="G$1" x="134.62" y="43.18" rot="R90"/>
+<instance part="R4" gate="G$1" x="144.78" y="43.18" rot="R90"/>
+<instance part="R5" gate="G$1" x="154.94" y="43.18" rot="R90"/>
+<instance part="R_MODE_SWITCH" gate="G$1" x="170.18" y="30.48" rot="R90"/>
+<instance part="R_SPARE_BUTTON" gate="G$1" x="182.88" y="30.48" rot="R90"/>
+<instance part="M2" gate="-1" x="-43.18" y="45.72"/>
+<instance part="M2" gate="-2" x="-43.18" y="43.18"/>
+<instance part="M2" gate="-3" x="-43.18" y="40.64"/>
+<instance part="M2" gate="-4" x="-43.18" y="38.1"/>
+<instance part="M1" gate="-1" x="-43.18" y="33.02"/>
+<instance part="M1" gate="-2" x="-43.18" y="30.48"/>
+<instance part="M1" gate="-3" x="-43.18" y="27.94"/>
+<instance part="M1" gate="-4" x="-43.18" y="25.4"/>
+<instance part="U4" gate="G$1" x="78.74" y="38.1"/>
 </instances>
 <busses>
 </busses>
 <nets>
+<net name="N$1" class="0">
+<segment>
+<pinref part="CAN_TERMINATION_RESISTOR" gate="G$1" pin="1"/>
+<pinref part="U2" gate="G$1" pin="P$2"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>

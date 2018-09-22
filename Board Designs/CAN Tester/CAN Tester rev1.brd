@@ -607,29 +607,34 @@ design rules under a new name.</description>
 </pass>
 </autorouter>
 <elements>
-<element name="U$1" library="HyTechDevices" package="TEENSY_3.2_SIMPLE" value="TEENSY_3.2_SIMPLE" x="-19.05" y="1.27"/>
-<element name="U$4" library="HyTechDevices" package="DUB8" value="ISO1050CAN" x="-30.48" y="-30.48"/>
-<element name="LED6" library="HyTechDevices" package="LED-805" value="" x="-64.77" y="-72.39"/>
-<element name="LED7" library="HyTechDevices" package="LED-805" value="" x="-71.12" y="-72.39"/>
-<element name="LED8" library="HyTechDevices" package="LED-805" value="" x="-77.47" y="-72.39"/>
-<element name="LED9" library="HyTechDevices" package="LED-805" value="" x="-83.82" y="-72.39"/>
-<element name="LED10" library="HyTechDevices" package="LED-805" value="" x="-90.17" y="-72.39"/>
-<element name="S3" library="HyTechDevices" package="TACTILE_SWITCH_SMD_6.2MM_TALL" value="" x="-87.63" y="-78.74"/>
-<element name="S4" library="HyTechDevices" package="TACTILE_SWITCH_SMD_6.2MM_TALL" value="" x="-87.63" y="-86.36"/>
-<element name="U$2" library="HyTechDevices" package="0805" value="JUMPER" x="-91.44" y="-91.44"/>
-<element name="R1" library="HyTechDevices" package="0805" value="120" x="-91.44" y="-93.98"/>
-<element name="R2" library="HyTechDevices" package="0805" value="220" x="-91.44" y="-96.52"/>
-<element name="R3" library="HyTechDevices" package="0805" value="220" x="-91.44" y="-99.06"/>
-<element name="R4" library="HyTechDevices" package="0805" value="220" x="-91.44" y="-101.6"/>
-<element name="R5" library="HyTechDevices" package="0805" value="220" x="-91.44" y="-104.14"/>
-<element name="R6" library="HyTechDevices" package="0805" value="220" x="-91.44" y="-106.68"/>
-<element name="R7" library="HyTechDevices" package="0805" value="10K" x="-91.44" y="-109.22"/>
-<element name="R8" library="HyTechDevices" package="0805" value="10K" x="-91.44" y="-111.76"/>
-<element name="X3" library="HyTechDevices" package="NANO-FIT_RIGHT_ANGLE-4-SURFACE" value="Nanofit" x="-99.06" y="-101.6"/>
-<element name="X1" library="HyTechDevices" package="DURACLIK_RIGHT_ANGLE-4" value="Minifit" x="-96.52" y="-123.19"/>
-<element name="X2" library="HyTechDevices" package="LCD1602" value="HD44780LCD-1602" x="-102.87" y="-161.29"/>
+<element name="U3" library="HyTechDevices" package="TEENSY_3.2_SIMPLE" value="TEENSY_3.2_SIMPLE" x="-19.05" y="1.27"/>
+<element name="U1" library="HyTechDevices" package="DUB8" value="ISOLATED CAN TERMINAL" x="-30.48" y="-30.48"/>
+<element name="INCOMING" library="HyTechDevices" package="LED-805" value="YELLOW" x="-64.77" y="-72.39"/>
+<element name="OUTGOING" library="HyTechDevices" package="LED-805" value="BLUE" x="-71.12" y="-72.39"/>
+<element name="ACKERR" library="HyTechDevices" package="LED-805" value="RED" x="-77.47" y="-72.39"/>
+<element name="LINE_OK" library="HyTechDevices" package="LED-805" value="GREEN" x="-83.82" y="-72.39"/>
+<element name="SPARE" library="HyTechDevices" package="LED-805" value="WHITE" x="-90.17" y="-72.39"/>
+<element name="MODE_SWITCH" library="HyTechDevices" package="TACTILE_SWITCH_SMD_6.2MM_TALL" value="" x="-87.63" y="-78.74"/>
+<element name="SPARE_BUTTON" library="HyTechDevices" package="TACTILE_SWITCH_SMD_6.2MM_TALL" value="" x="-87.63" y="-86.36"/>
+<element name="U2" library="HyTechDevices" package="0805" value="TERMINATION_RESISTOR_JUMPER" x="-91.44" y="-91.44"/>
+<element name="CAN_TERMINATION_RESISTOR" library="HyTechDevices" package="0805" value="120" x="-91.44" y="-93.98"/>
+<element name="R1" library="HyTechDevices" package="0805" value="220" x="-91.44" y="-96.52"/>
+<element name="R2" library="HyTechDevices" package="0805" value="220" x="-91.44" y="-99.06"/>
+<element name="R3" library="HyTechDevices" package="0805" value="220" x="-91.44" y="-101.6"/>
+<element name="R4" library="HyTechDevices" package="0805" value="220" x="-91.44" y="-104.14"/>
+<element name="R5" library="HyTechDevices" package="0805" value="220" x="-91.44" y="-106.68"/>
+<element name="R_MODE_SWITCH" library="HyTechDevices" package="0805" value="10K" x="-91.44" y="-109.22"/>
+<element name="R_SPARE_BUTTON" library="HyTechDevices" package="0805" value="10K" x="-91.44" y="-111.76"/>
+<element name="M2" library="HyTechDevices" package="NANO-FIT_RIGHT_ANGLE-4-SURFACE" value="Nanofit" x="-99.06" y="-101.6"/>
+<element name="M1" library="HyTechDevices" package="DURACLIK_RIGHT_ANGLE-4" value="Minifit" x="-96.52" y="-123.19"/>
+<element name="U4" library="HyTechDevices" package="LCD1602" value="CHARACTER_LCD" x="-102.87" y="-161.29"/>
 </elements>
 <signals>
+<signal name="N$1">
+<contactref element="CAN_TERMINATION_RESISTOR" pad="1"/>
+<contactref element="U2" pad="2"/>
+<wire x1="-90.415" y1="-91.44" x2="-92.465" y2="-93.98" width="0" layer="19" extent="1-1"/>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
