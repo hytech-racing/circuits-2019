@@ -665,15 +665,13 @@ design rules under a new name.</description>
 <element name="U4" library="HyTechDevices" package="LCD1602" value="CHARACTER_LCD" x="-102.87" y="-161.29"/>
 <element name="5V_REGULATOR" library="HyTechDevices" package="SOT223" value="" x="-107.95" y="-157.48"/>
 <element name="CONTRAST_POT" library="HyTechDevices" package="TRIM-3386" value="10k" x="-104.14" y="-167.64"/>
+<element name="C1" library="HyTechDevices" package="0805" value="10 uF" x="-109.22" y="-173.99"/>
+<element name="C2" library="HyTechDevices" package="0805" value="10 uF" x="-109.22" y="-176.53"/>
 </elements>
 <signals>
 <signal name="CANTX">
-<contactref element="M2" pad="2"/>
-<contactref element="M1" pad="2"/>
 <contactref element="U3" pad="D3(CANTX)"/>
 <contactref element="U1" pad="P$3"/>
-<wire x1="-100.31" y1="-101.6" x2="-95.52" y2="-115.06" width="0" layer="19" extent="1-1"/>
-<wire x1="-29.21" y1="-35.28" x2="-100.31" y2="-101.6" width="0" layer="19" extent="1-1"/>
 <wire x1="-17.78" y1="25.4" x2="-29.21" y2="-35.28" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CANL">
@@ -691,8 +689,6 @@ design rules under a new name.</description>
 </signal>
 <signal name="GND">
 <contactref element="U3" pad="GND"/>
-<contactref element="M2" pad="1"/>
-<contactref element="M1" pad="1"/>
 <contactref element="5V_REGULATOR" pad="2"/>
 <contactref element="5V_REGULATOR" pad="4"/>
 <contactref element="SPARE" pad="C"/>
@@ -704,11 +700,15 @@ design rules under a new name.</description>
 <contactref element="CONTRAST_POT" pad="1"/>
 <contactref element="U4" pad="5"/>
 <contactref element="U4" pad="16"/>
-<wire x1="-93.52" y1="-115.06" x2="-84.71" y2="-127.83" width="0" layer="19" extent="1-1"/>
-<wire x1="-90.415" y1="-111.76" x2="-93.52" y2="-115.06" width="0" layer="19" extent="1-1"/>
-<wire x1="-97.81" y1="-101.6" x2="-90.415" y2="-111.76" width="0" layer="19" extent="1-1"/>
+<contactref element="M2" pad="2"/>
+<contactref element="M1" pad="2"/>
+<contactref element="C1" pad="2"/>
+<contactref element="C2" pad="2"/>
+<wire x1="-95.52" y1="-115.06" x2="-84.71" y2="-127.83" width="0" layer="19" extent="1-1"/>
+<wire x1="-90.415" y1="-111.76" x2="-95.52" y2="-115.06" width="0" layer="19" extent="1-1"/>
+<wire x1="-100.31" y1="-101.6" x2="-90.415" y2="-111.76" width="0" layer="19" extent="1-1"/>
 <wire x1="-56.77" y1="-127.83" x2="-84.71" y2="-127.83" width="0" layer="19" extent="1-1"/>
-<wire x1="-90.17" y1="-71.34" x2="-97.81" y2="-101.6" width="0" layer="19" extent="1-1"/>
+<wire x1="-90.17" y1="-71.34" x2="-100.31" y2="-101.6" width="0" layer="19" extent="1-1"/>
 <wire x1="-83.82" y1="-71.34" x2="-90.17" y2="-71.34" width="0" layer="19" extent="1-1"/>
 <wire x1="-77.47" y1="-71.34" x2="-83.82" y2="-71.34" width="0" layer="19" extent="1-1"/>
 <wire x1="-71.12" y1="-71.34" x2="-77.47" y2="-71.34" width="0" layer="19" extent="1-1"/>
@@ -716,18 +716,17 @@ design rules under a new name.</description>
 <wire x1="-107.95" y1="-154.33" x2="-84.71" y2="-127.83" width="0" layer="19" extent="1-1"/>
 <wire x1="-107.95" y1="-160.63" x2="-107.95" y2="-154.33" width="0" layer="19" extent="1-1"/>
 <wire x1="-106.68" y1="-170.4975" x2="-107.95" y2="-160.63" width="0" layer="19" extent="1-1"/>
+<wire x1="-108.195" y1="-173.99" x2="-106.68" y2="-170.4975" width="0" layer="19" extent="1-1"/>
+<wire x1="-108.195" y1="-176.53" x2="-108.195" y2="-173.99" width="0" layer="19" extent="1-1"/>
 <wire x1="-17.78" y1="35.56" x2="-64.77" y2="-71.34" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="VIN">
-<contactref element="M2" pad="4"/>
-<contactref element="M1" pad="4"/>
-<contactref element="5V_REGULATOR" pad="1"/>
-<wire x1="-100.31" y1="-98.3" x2="-99.52" y2="-115.06" width="0" layer="19" extent="1-1"/>
-<wire x1="-110.25" y1="-160.63" x2="-99.52" y2="-115.06" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CANH">
 <contactref element="U1" pad="P$7"/>
 <contactref element="U2" pad="1"/>
+<contactref element="M2" pad="4"/>
+<contactref element="M1" pad="4"/>
+<wire x1="-100.31" y1="-98.3" x2="-99.52" y2="-115.06" width="0" layer="19" extent="1-1"/>
+<wire x1="-92.465" y1="-91.44" x2="-100.31" y2="-98.3" width="0" layer="19" extent="1-1"/>
 <wire x1="-31.75" y1="-25.68" x2="-92.465" y2="-91.44" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CANRX">
@@ -815,8 +814,10 @@ design rules under a new name.</description>
 <contactref element="U1" pad="P$8"/>
 <contactref element="U4" pad="15"/>
 <contactref element="CONTRAST_POT" pad="3"/>
+<contactref element="C2" pad="1"/>
 <wire x1="-105.65" y1="-160.63" x2="-59.31" y2="-127.83" width="0" layer="19" extent="1-1"/>
 <wire x1="-101.6" y1="-170.4975" x2="-105.65" y2="-160.63" width="0" layer="19" extent="1-1"/>
+<wire x1="-110.245" y1="-176.53" x2="-101.6" y2="-170.4975" width="0" layer="19" extent="1-1"/>
 <wire x1="-34.29" y1="-35.28" x2="-59.31" y2="-127.83" width="0" layer="19" extent="1-1"/>
 <wire x1="-34.29" y1="-25.68" x2="-34.29" y2="-35.28" width="0" layer="19" extent="1-1"/>
 <wire x1="-2.54" y1="35.56" x2="-34.29" y2="-25.68" width="0" layer="19" extent="1-1"/>
@@ -876,6 +877,15 @@ design rules under a new name.</description>
 <contactref element="U4" pad="14"/>
 <contactref element="U3" pad="D10(TX2)"/>
 <wire x1="-17.78" y1="7.62" x2="-61.85" y2="-127.83" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="+12V">
+<contactref element="M2" pad="1"/>
+<contactref element="M1" pad="1"/>
+<contactref element="5V_REGULATOR" pad="1"/>
+<contactref element="C1" pad="1"/>
+<wire x1="-97.81" y1="-101.6" x2="-93.52" y2="-115.06" width="0" layer="19" extent="1-1"/>
+<wire x1="-110.25" y1="-160.63" x2="-93.52" y2="-115.06" width="0" layer="19" extent="1-1"/>
+<wire x1="-110.245" y1="-173.99" x2="-110.25" y2="-160.63" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
