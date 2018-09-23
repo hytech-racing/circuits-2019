@@ -1702,13 +1702,13 @@ Standard character type LCDs, available in sizes from 8x1 to 40x4!</description>
 <part name="SPARE_BUTTON" library="HyTechDevices" deviceset="BTN_10-XX" device="SMD"/>
 <part name="U2" library="HyTechDevices" deviceset="JUMPER" device="" value="TERMINATION_RESISTOR_JUMPER"/>
 <part name="CAN_TERMINATION_RESISTOR" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="120"/>
-<part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="220"/>
-<part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="220"/>
-<part name="R3" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="220"/>
-<part name="R4" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="220"/>
-<part name="R5" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="220"/>
-<part name="R_MODE_SWITCH" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10K"/>
-<part name="R_SPARE_BUTTON" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10K"/>
+<part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="55"/>
+<part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="55"/>
+<part name="R3" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="55"/>
+<part name="R4" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="55"/>
+<part name="R5" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="55"/>
+<part name="R_MODE_SWITCH" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="25K"/>
+<part name="R_SPARE_BUTTON" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="25K"/>
 <part name="M2" library="HyTechDevices" deviceset="CONNECTOR-4" device="NANO-FIT_RIGHT_ANGLE-4-SURFACE" value="Nanofit"/>
 <part name="M1" library="HyTechDevices" deviceset="CONNECTOR-4" device="DURACLIK_RIGHT_ANGLE-4" value="Minifit"/>
 <part name="U4" library="HyTechDevices" deviceset="HD44780LCD" device="-1602" value="CHARACTER_LCD"/>
