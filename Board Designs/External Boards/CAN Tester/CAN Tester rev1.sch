@@ -2499,6 +2499,11 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="R_MODE_SWITCH" gate="G$1" pin="2"/>
 <wire x1="182.88" y1="60.96" x2="167.64" y2="60.96" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND8" gate="1" pin="GND"/>
+<wire x1="60.96" y1="66.04" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="U4" gate="G$1" pin="VSS"/>
+</segment>
 </net>
 <net name="CANH" class="0">
 <segment>
@@ -2702,14 +2707,12 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <net name="N$16" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="GND2"/>
-<wire x1="114.3" y1="5.08" x2="119.38" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="5.08" x2="119.38" y2="0" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="5.08" x2="114.3" y2="0" width="0.1524" layer="91"/>
 <pinref part="U1" gate="G$1" pin="GND1"/>
-<wire x1="88.9" y1="5.08" x2="83.82" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="5.08" x2="83.82" y2="0" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="0" x2="101.6" y2="0" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="5.08" x2="88.9" y2="0" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="0" x2="101.6" y2="0" width="0.1524" layer="91"/>
 <wire x1="101.6" y1="0" x2="101.6" y2="-2.54" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="0" x2="101.6" y2="0" width="0.1524" layer="91"/>
+<wire x1="114.3" y1="0" x2="101.6" y2="0" width="0.1524" layer="91"/>
 <junction x="101.6" y="0"/>
 </segment>
 </net>
@@ -2723,13 +2726,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="U4" gate="G$1" pin="VO"/>
 <wire x1="60.96" y1="60.96" x2="66.04" y2="60.96" width="0.1524" layer="91"/>
 <label x="66.04" y="60.96" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="VSS" class="0">
-<segment>
-<pinref part="GND8" gate="1" pin="GND"/>
-<wire x1="60.96" y1="66.04" x2="71.12" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="U4" gate="G$1" pin="VSS"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -2824,6 +2820,16 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,1,60.96,63.5,VDD,+3V3,,,,"/>
+<approved hash="102,1,60.96,66.04,VSS,GND,,,,"/>
+<approved hash="110,1,101.6,-2.54,GND,N$16,,,,"/>
+<approved hash="110,1,101.6,-2.54,N$16,GND,,,,"/>
+<approved hash="113,1,164.781,70.8254,MODE_SWITCH,,,,,"/>
+<approved hash="113,1,165.621,50.5054,SPARE_BUTTON,,,,,"/>
+<approved hash="113,1,177.8,96.0222,5V_REGULATOR,,,,,"/>
+<approved hash="212,1,66.04,0,CANL,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
