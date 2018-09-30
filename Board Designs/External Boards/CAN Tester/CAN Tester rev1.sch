@@ -1258,6 +1258,59 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <pad name="P$1" x="-5" y="0" drill="2" shape="long" rot="R90"/>
 <pad name="P$2" x="5" y="0" drill="2" shape="long" rot="R90"/>
 </package>
+<package name="1X02_LOCK_LONGPADS">
+<description>This footprint was designed to help hold the alignment of a through-hole component (i.e.  6-pin header) while soldering it into place.
+You may notice that each hole has been shifted either up or down by 0.005 of an inch from it's more standard position (which is a perfectly straight line).
+This slight alteration caused the pins (the squares in the middle) to touch the edges of the holes.  Because they are alternating, it causes a "brace"
+to hold the component in place.  0.005 has proven to be the perfect amount of "off-center" position when using our standard breakaway headers.
+Although looks a little odd when you look at the bare footprint, once you have a header in there, the alteration is very hard to notice.  Also,
+if you push a header all the way into place, it is covered up entirely on the bottom side.  This idea of altering the position of holes to aid alignment
+will be further integrated into the Sparkfun Library for other footprints.  It can help hold any component with 3 or more connection pins.
+&lt;br&gt;
+&lt;br&gt;
+&lt;a href="https://github.com/sparkfun/SparkFun-Eagle-Libraries"&gt;Source: Sparkfun&lt;/a&gt;</description>
+<wire x1="1.651" y1="0" x2="0.889" y2="0" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0" x2="-1.016" y2="0" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="0.9906" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0.9906" x2="-0.9906" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="-0.9906" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-0.9906" x2="-0.9906" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="0" x2="3.556" y2="0" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="-0.9906" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-0.9906" x2="3.5306" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="0" x2="3.81" y2="0.9906" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="0.9906" x2="3.5306" y2="1.27" width="0.2032" layer="21"/>
+<pad name="1" x="-0.127" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="2.667" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-1.27" y="1.778" size="1.27" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.27" y="-3.302" size="1.27" layer="27" font="vector">&gt;VALUE</text>
+<rectangle x1="-0.2921" y1="-0.2921" x2="0.2921" y2="0.2921" layer="51"/>
+<rectangle x1="2.2479" y1="-0.2921" x2="2.8321" y2="0.2921" layer="51"/>
+</package>
+<package name="1X02_SLIM">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1.016" shape="octagon" rot="R90"/>
+<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TEENSY_3.2_SIMPLE">
@@ -1305,12 +1358,6 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
 <pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
 <text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
-</symbol>
-<symbol name="JUMPER">
-<wire x1="0" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
-<pin name="P$1" x="0" y="-2.54" visible="off" length="short" rot="R90"/>
-<pin name="P$2" x="5.08" y="-2.54" visible="off" length="short" rot="R90"/>
-<text x="0" y="0.508" size="1.27" layer="94">JUMP</text>
 </symbol>
 <symbol name="ISO1050">
 <wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
@@ -1464,6 +1511,19 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <rectangle x1="-2.032" y1="1.524" x2="2.032" y2="2.032" layer="94"/>
 <pin name="1" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="2" x="0" y="-2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+<symbol name="M02">
+<description>&lt;a href="https://github.com/sparkfun/SparkFun-Eagle-Libraries"&gt;Source: Sparkfun&lt;/a&gt;</description>
+<wire x1="3.81" y1="-2.54" x2="-2.54" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.6096" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="-2.54" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="-2.54" x2="3.81" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="5.08" x2="3.81" y2="5.08" width="0.4064" layer="94"/>
+<text x="-2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="5.842" size="1.778" layer="95">&gt;NAME</text>
+<pin name="1" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="2" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1632,41 +1692,6 @@ Source: http://www.molex.com</description>
 <connect gate="-2" pin="S" pad="P$2"/>
 <connect gate="-3" pin="S" pad="P$3"/>
 <connect gate="-4" pin="S" pad="P$4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="JUMPER">
-<description>Jumper for changing operation of a device</description>
-<gates>
-<gate name="G$1" symbol="JUMPER" x="2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="0805">
-<connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name=".1" package="1X02">
-<connects>
-<connect gate="G$1" pin="P$1" pad="1"/>
-<connect gate="G$1" pin="P$2" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name=".3" package="AXIAL-0.3">
-<connects>
-<connect gate="G$1" pin="P$1" pad="P$1"/>
-<connect gate="G$1" pin="P$2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2219,6 +2244,52 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="M02" prefix="JP">
+<description>Standard 2-pin 0.1" header.
+&lt;br&gt;
+&lt;br&gt;
+NOTES ON THE VARIANTS LOCK and LOCK_LONGPADS...
+This footprint was designed to help hold the alignment of a through-hole component (i.e.  6-pin header) while soldering it into place. You may notice that each hole has been shifted either up or down by 0.005 of an inch from it's more standard position (which is a perfectly straight line).  This slight alteration caused the pins (the squares in the middle) to touch the edges of the holes.  Because they are alternating, it causes a "brace" to hold the component in place.  0.005 has proven to be the perfect amount of "off-center" position when using our standard breakaway headers. Although looks a little odd when you look at the bare footprint, once you have a header in there, the alteration is very hard to notice.  Also,if you push a header all the way into place, it is covered up entirely on the bottom side.  This idea of altering the position of holes to aid alignment
+will be further integrated into the Sparkfun Library for other footprints.  It can help hold any component with 3 or more connection pins.
+&lt;br&gt;
+&lt;br&gt;
+Note: The Sparkfun version includes many other packages including surface mount that may be of future interest.
+&lt;br&gt;
+&lt;br&gt;
+&lt;a href="https://github.com/sparkfun/SparkFun-Eagle-Libraries"&gt;Source: Sparkfun&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="M02" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="LOCK_LONGPADS" package="1X02_LOCK_LONGPADS">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="1X02">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_SLIM" package="1X02_SLIM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="HyTechSymbols">
@@ -2301,7 +2372,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="SPARE" library="HyTechDevices" deviceset="LED" device="-0805" value="WHITE"/>
 <part name="MODE_SWITCH" library="HyTechDevices" deviceset="BTN_10-XX" device=""/>
 <part name="SPARE_BUTTON" library="HyTechDevices" deviceset="BTN_10-XX" device=""/>
-<part name="U2" library="HyTechDevices" deviceset="JUMPER" device="" value="TERMINATION_RESISTOR_JUMPER"/>
 <part name="CAN_TERMINATION_RESISTOR" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="120"/>
 <part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="55"/>
 <part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="55"/>
@@ -2329,6 +2399,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="C2" library="HyTechDevices" deviceset="CAP" device="0805" value="10 uF"/>
 <part name="M3" library="HyTechDevices" deviceset="CONNECTOR-4" device="NANO-FIT-VERTICAL-4" value="Nanofit-1"/>
 <part name="M4" library="HyTechDevices" deviceset="CONNECTOR-4" device="" value="Minifit-1"/>
+<part name="JP1" library="HyTechDevices" deviceset="M02" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2344,7 +2415,6 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="SPARE" gate="LED" x="157.48" y="30.48" rot="R90"/>
 <instance part="MODE_SWITCH" gate="1" x="162.56" y="68.58" rot="R270"/>
 <instance part="SPARE_BUTTON" gate="1" x="162.56" y="48.26" rot="R270"/>
-<instance part="U2" gate="G$1" x="43.18" y="2.54"/>
 <instance part="CAN_TERMINATION_RESISTOR" gate="G$1" x="58.42" y="0" rot="R180"/>
 <instance part="R1" gate="G$1" x="144.78" y="-10.16" rot="R180"/>
 <instance part="R2" gate="G$1" x="144.78" y="0" rot="R180"/>
@@ -2387,6 +2457,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="M4" gate="-2" x="142.24" y="83.82"/>
 <instance part="M4" gate="-3" x="142.24" y="81.28"/>
 <instance part="M4" gate="-4" x="142.24" y="78.74"/>
+<instance part="JP1" gate="G$1" x="45.72" y="7.62" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -2421,11 +2492,11 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 </segment>
 <segment>
 <pinref part="CAN_TERMINATION_RESISTOR" gate="G$1" pin="1"/>
-<pinref part="U2" gate="G$1" pin="P$2"/>
 <pinref part="CAN_TERMINATION_RESISTOR" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="0" x2="48.26" y2="0" width="0.1524" layer="91"/>
 <wire x1="63.5" y1="0" x2="68.58" y2="0" width="0.1524" layer="91"/>
 <label x="68.58" y="0" size="1.27" layer="95" xref="yes"/>
+<pinref part="JP1" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="M3" gate="-3" pin="S"/>
@@ -2542,9 +2613,9 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <label x="119.38" y="10.16" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U2" gate="G$1" pin="P$1"/>
-<wire x1="43.18" y1="0" x2="38.1" y2="0" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="0" x2="38.1" y2="0" width="0.1524" layer="91"/>
 <label x="38.1" y="0" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="JP1" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="M2" gate="-4" pin="S"/>
