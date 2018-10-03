@@ -386,23 +386,6 @@ Source: http://www.molex.com</description>
 <pad name="COIL+" x="25.019" y="0" drill="1.5" shape="square"/>
 <pad name="COIL-" x="25.019" y="7.493" drill="1.5" shape="square"/>
 </package>
-<package name="MINIFIT_5566-2">
-<description>&lt;b&gt;Mini-Fit Junior connector 2 pole&lt;/b&gt;&lt;p&gt;
-Source: http://www.molex.com</description>
-<wire x1="-2.6" y1="4.5" x2="2.6" y2="4.5" width="0.254" layer="21"/>
-<wire x1="2.6" y1="4.5" x2="2.6" y2="-2.2" width="0.254" layer="21"/>
-<wire x1="2.6" y1="-3.3" x2="2.6" y2="-4.9" width="0.254" layer="21"/>
-<wire x1="2.6" y1="-4.9" x2="-2.6" y2="-4.9" width="0.254" layer="21"/>
-<wire x1="-2.6" y1="-4.9" x2="-2.6" y2="4.5" width="0.254" layer="21"/>
-<wire x1="2.6" y1="-2.2" x2="2.6" y2="-3.3" width="0.254" layer="21" curve="-180"/>
-<pad name="1" x="0" y="-2.75" drill="1.4" shape="square"/>
-<pad name="2" x="0" y="2.75" drill="1.4" shape="square"/>
-<text x="0" y="-5.207" size="0.8128" layer="25" rot="R180" align="bottom-center">&gt;NAME</text>
-<text x="0" y="6.858" size="0.8128" layer="27" align="bottom-center">&gt;VALUE</text>
-<wire x1="-2.1" y1="6.3" x2="2.1" y2="6.3" width="0.254" layer="27"/>
-<wire x1="-2.1" y1="6.3" x2="-2.1" y2="4.6" width="0.254" layer="27"/>
-<wire x1="2.1" y1="6.3" x2="2.1" y2="4.6" width="0.254" layer="27"/>
-</package>
 <package name="MINI-BLADE_FUSE_HOLDER">
 <description>MOUSER PART NUMBER
 &lt;BR&gt;
@@ -1240,52 +1223,6 @@ diameter 2.54 mm, horizontal, grid 10.16 mm</description>
 <wire x1="4" y1="9" x2="5" y2="9" width="0.127" layer="21"/>
 <wire x1="5" y1="9" x2="8" y2="5" width="0.127" layer="21"/>
 </package>
-<package name="NANO-FIT_RIGHT_ANGLE-2">
-<pad name="2" x="-1.25" y="0" drill="1.2" shape="square"/>
-<pad name="1" x="1.25" y="0" drill="1.2" shape="square"/>
-<hole x="1.25" y="-7.18" drill="1.7"/>
-<hole x="-1.25" y="-7.18" drill="1.7"/>
-<wire x1="-2.5" y1="2" x2="2.5" y2="2" width="0.127" layer="21"/>
-<wire x1="2.5" y1="2" x2="2.5" y2="-3" width="0.127" layer="21"/>
-<wire x1="2.5" y1="-3" x2="3" y2="-3" width="0.127" layer="21"/>
-<wire x1="3" y1="-3" x2="3" y2="-10.5" width="0.127" layer="21"/>
-<wire x1="3" y1="-10.5" x2="-3" y2="-10.5" width="0.127" layer="21"/>
-<wire x1="-3" y1="-10.5" x2="-3" y2="-3" width="0.127" layer="21"/>
-<wire x1="-3" y1="-3" x2="-2.5" y2="-3" width="0.127" layer="21"/>
-<wire x1="-2.5" y1="-3" x2="-2.5" y2="2" width="0.127" layer="21"/>
-</package>
-<package name="DURACLIK_RIGHT_ANGLE-2">
-<smd name="1" x="1" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
-<smd name="2" x="-1" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
-<smd name="P$1" x="3.55" y="2.65" dx="5.3" dy="1.7" layer="1" rot="R90"/>
-<smd name="P$2" x="-3.55" y="2.65" dx="5.3" dy="1.7" layer="1" rot="R90"/>
-<wire x1="5" y1="-1" x2="-5" y2="-1" width="0.127" layer="21"/>
-<wire x1="-3" y1="10" x2="-2" y2="10" width="0.127" layer="21"/>
-<wire x1="-2" y1="10" x2="-2" y2="6" width="0.127" layer="21"/>
-<wire x1="-2" y1="6" x2="2" y2="6" width="0.127" layer="21"/>
-<wire x1="2" y1="6" x2="2" y2="10" width="0.127" layer="21"/>
-<wire x1="2" y1="10" x2="3" y2="10" width="0.127" layer="21"/>
-<wire x1="-5" y1="-1" x2="-5" y2="6" width="0.127" layer="21"/>
-<wire x1="-5" y1="6" x2="-3" y2="10" width="0.127" layer="21"/>
-<wire x1="3" y1="10" x2="5" y2="6" width="0.127" layer="21"/>
-<wire x1="5" y1="6" x2="5" y2="-1" width="0.127" layer="21"/>
-</package>
-<package name="DURACLIK_VERTICAL-2">
-<smd name="1" x="1" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
-<smd name="2" x="-1" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
-<smd name="P$1" x="4.6" y="2.1" dx="4.2" dy="2" layer="1" rot="R90"/>
-<smd name="P$2" x="-4.6" y="2.1" dx="4.2" dy="2" layer="1" rot="R90"/>
-<wire x1="6" y1="5" x2="6" y2="-1" width="0.127" layer="21"/>
-<wire x1="6" y1="-1" x2="-6" y2="-1" width="0.127" layer="21"/>
-<wire x1="-6" y1="-1" x2="-6" y2="5" width="0.127" layer="21"/>
-<wire x1="-6" y1="5" x2="-3" y2="9" width="0.127" layer="21"/>
-<wire x1="-3" y1="9" x2="-2" y2="9" width="0.127" layer="21"/>
-<wire x1="-2" y1="9" x2="-2" y2="6" width="0.127" layer="21"/>
-<wire x1="-2" y1="6" x2="2" y2="6" width="0.127" layer="21"/>
-<wire x1="2" y1="6" x2="2" y2="9" width="0.127" layer="21"/>
-<wire x1="2" y1="9" x2="3" y2="9" width="0.127" layer="21"/>
-<wire x1="3" y1="9" x2="6" y2="5" width="0.127" layer="21"/>
-</package>
 <package name="MINIFIT_5566-10">
 <description>&lt;b&gt;Mini-Fit Junior connector 10 pole&lt;/b&gt;&lt;p&gt;
 Source: http://www.molex.com</description>
@@ -1336,24 +1273,6 @@ Source: http://www.molex.com</description>
 <wire x1="-9" y1="-10" x2="-9" y2="0" width="0.127" layer="21"/>
 <wire x1="-9" y1="0" x2="-7" y2="0" width="0.127" layer="21"/>
 <wire x1="-7" y1="0" x2="-7" y2="5" width="0.127" layer="21"/>
-</package>
-<package name="NANO-FIT_VERTICAL-10">
-<pad name="P$3" x="0" y="0" drill="1.2" shape="square"/>
-<pad name="P$8" x="0" y="2.5" drill="1.2" shape="square"/>
-<pad name="P$9" x="2.5" y="2.5" drill="1.2" shape="square"/>
-<pad name="P$4" x="2.5" y="0" drill="1.2" shape="square"/>
-<pad name="P$5" x="5" y="0" drill="1.2" shape="square"/>
-<pad name="P$10" x="5" y="2.5" drill="1.2" shape="square"/>
-<pad name="P$7" x="-2.5" y="2.5" drill="1.2" shape="square"/>
-<pad name="P$2" x="-2.5" y="0" drill="1.2" shape="square"/>
-<pad name="P$1" x="-5" y="0" drill="1.2" shape="square"/>
-<pad name="P$6" x="-5" y="2.5" drill="1.2" shape="square"/>
-<wire x1="-7" y1="4" x2="7" y2="4" width="0.127" layer="21"/>
-<wire x1="7" y1="4" x2="7" y2="2" width="0.127" layer="21"/>
-<wire x1="-7" y1="2" x2="-7" y2="4" width="0.127" layer="21"/>
-<wire x1="-7" y1="2" x2="-7" y2="-2" width="0.127" layer="21"/>
-<wire x1="-7" y1="-2" x2="7" y2="-2" width="0.127" layer="21"/>
-<wire x1="7" y1="-2" x2="7" y2="2" width="0.127" layer="21"/>
 </package>
 <package name="DURACLIK_RIGHT_ANGLE-10">
 <smd name="1" x="9" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
@@ -1455,34 +1374,6 @@ MX150L™ Vertical PCB Header</description>
 <text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
 <rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
-</package>
-<package name="NANO-FIT_VERTICAL-2">
-<description>105309-1202
-
-Nano-Fit™ Vertical Header, Through Hole, Single Row</description>
-<pad name="P$1" x="-1.25" y="0" drill="1.2"/>
-<pad name="P$2" x="1.25" y="0" drill="1.2"/>
-<wire x1="-3" y1="1.74" x2="3" y2="1.74" width="0.127" layer="21"/>
-<wire x1="3" y1="1.74" x2="3" y2="-1.74" width="0.127" layer="21"/>
-<wire x1="2.6" y1="-4.6" x2="-2.6" y2="-4.6" width="0.127" layer="21"/>
-<wire x1="-3" y1="-1.74" x2="-3" y2="1.74" width="0.127" layer="21"/>
-<wire x1="-3" y1="-1.74" x2="-2.6" y2="-1.74" width="0.127" layer="21"/>
-<wire x1="-2.6" y1="-1.74" x2="-2.6" y2="-4.6" width="0.127" layer="21"/>
-<wire x1="3" y1="-1.74" x2="2.6" y2="-1.74" width="0.127" layer="21"/>
-<wire x1="2.6" y1="-1.74" x2="2.6" y2="-4.6" width="0.127" layer="21"/>
-</package>
-<package name="NANO-FIT_VERTICAL-4">
-<description>105312-1204 Nano-Fit™ Vertical Header, Through Hole, Dual Row, 4 Circuits</description>
-<pad name="P$1" x="-1.25" y="0" drill="1.2" shape="square"/>
-<pad name="P$2" x="1.25" y="0" drill="1.2" shape="square"/>
-<pad name="P$3" x="-1.25" y="2.5" drill="1.2" shape="square"/>
-<pad name="P$4" x="1.25" y="2.5" drill="1.2" shape="square"/>
-<wire x1="-3" y1="4" x2="3" y2="4" width="0.127" layer="21"/>
-<wire x1="3" y1="4" x2="3" y2="2.32" width="0.127" layer="21"/>
-<wire x1="-3" y1="2.32" x2="-3" y2="4" width="0.127" layer="21"/>
-<wire x1="-3" y1="2.3" x2="-3" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="-3" y1="-1.7" x2="3" y2="-1.7" width="0.127" layer="21"/>
-<wire x1="3" y1="-1.7" x2="3" y2="2.3" width="0.127" layer="21"/>
 </package>
 <package name="MX150L_VERTICAL-4">
 <description>19428-0011
@@ -1630,6 +1521,260 @@ MX150L™ Vertical PCB Header</description>
 <smd name="B2" x="3.975" y="2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
 <text x="0" y="3.175" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
 <text x="0" y="-3.175" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+</package>
+<package name="NANO-FIT_VERTICAL-10">
+<pad name="P$3" x="0" y="0" drill="1.2"/>
+<pad name="P$8" x="0" y="2.5" drill="1.2"/>
+<pad name="P$9" x="2.5" y="2.5" drill="1.2"/>
+<pad name="P$4" x="2.5" y="0" drill="1.2"/>
+<pad name="P$5" x="5" y="0" drill="1.2"/>
+<pad name="P$10" x="5" y="2.5" drill="1.2"/>
+<pad name="P$7" x="-2.5" y="2.5" drill="1.2"/>
+<pad name="P$2" x="-2.5" y="0" drill="1.2"/>
+<pad name="P$1" x="-5" y="0" drill="1.2"/>
+<pad name="P$6" x="-5" y="2.5" drill="1.2"/>
+<wire x1="-6.75" y1="4.25" x2="6.75" y2="4.25" width="0.127" layer="21"/>
+<wire x1="-6.75" y1="4.25" x2="-6.75" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-6.75" y1="-1.75" x2="-2.6" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="-1.75" x2="2.6" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="2.6" y1="-1.75" x2="6.75" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="6.75" y1="-1.75" x2="6.75" y2="4.25" width="0.127" layer="21"/>
+<wire x1="2.6" y1="-4.6" x2="-2.6" y2="-4.6" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="-4.6" x2="-2.6" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="2.6" y1="-4.6" x2="2.6" y2="-1.75" width="0.127" layer="21"/>
+<hole x="-1.27" y="-1.34" drill="1.3"/>
+</package>
+<package name="MX150L_RIGHT_ANGLE-10">
+<pad name="1" x="17.1958" y="2.921" drill="1.524"/>
+<pad name="2" x="23.0378" y="2.921" drill="1.524"/>
+<pad name="6" x="17.1958" y="-2.921" drill="1.524"/>
+<pad name="7" x="23.0378" y="-2.921" drill="1.524"/>
+<hole x="0" y="0" drill="4.7752"/>
+<hole x="57.7596" y="0" drill="4.7752"/>
+<wire x1="-3.81" y1="-12.446" x2="61.5696" y2="-12.446" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="7.8994" x2="61.5696" y2="7.8994" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="7.8994" x2="-3.81" y2="-12.446" width="0.127" layer="21"/>
+<wire x1="61.5696" y1="7.8994" x2="61.5696" y2="-12.446" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-12.7" x2="12.7" y2="-25.4" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-25.4" x2="44.45" y2="-25.4" width="0.127" layer="21"/>
+<wire x1="44.45" y1="-25.4" x2="44.45" y2="-12.7" width="0.127" layer="21"/>
+<pad name="3" x="28.8798" y="2.921" drill="1.524"/>
+<pad name="4" x="34.7218" y="2.921" drill="1.524"/>
+<pad name="8" x="28.8798" y="-2.921" drill="1.524"/>
+<pad name="9" x="34.7218" y="-2.921" drill="1.524"/>
+<pad name="5" x="40.5638" y="2.921" drill="1.524"/>
+<pad name="10" x="40.5638" y="-2.921" drill="1.524"/>
+</package>
+<package name="NANO-FIT_VERTICAL-4">
+<description>105312-1204 Nano-Fit™ Vertical Header, Through Hole, Dual Row, 4 Circuits</description>
+<pad name="P$1" x="-1.25" y="0" drill="1.2"/>
+<pad name="P$2" x="1.25" y="0" drill="1.2"/>
+<pad name="P$3" x="-1.25" y="2.5" drill="1.2"/>
+<pad name="P$4" x="1.25" y="2.5" drill="1.2"/>
+<wire x1="-3" y1="4.25" x2="3" y2="4.25" width="0.127" layer="21"/>
+<wire x1="3" y1="4.25" x2="3" y2="2.32" width="0.127" layer="21"/>
+<wire x1="-3" y1="4.25" x2="-3" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-3" y1="-1.75" x2="-2.6" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="-1.75" x2="2.6" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="2.6" y1="-1.75" x2="3" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="3" y1="-1.75" x2="3" y2="2.3" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="-1.75" x2="-2.6" y2="-4.6" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="-4.6" x2="2.6" y2="-4.6" width="0.127" layer="21"/>
+<wire x1="2.6" y1="-4.6" x2="2.6" y2="-1.75" width="0.127" layer="21"/>
+<hole x="0" y="-1.34" drill="1.3"/>
+</package>
+<package name="MX150L_RIGHT_ANGLE-4">
+<pad name="P$1" x="17.6784" y="2.921" drill="1.524"/>
+<pad name="P$2" x="23.5204" y="2.921" drill="1.524"/>
+<pad name="P$3" x="17.6784" y="-2.921" drill="1.524"/>
+<pad name="P$4" x="23.5204" y="-2.921" drill="1.524"/>
+<hole x="0" y="0" drill="4.7752"/>
+<hole x="41.2496" y="0" drill="4.7752"/>
+<wire x1="-3.81" y1="-12.446" x2="45.0596" y2="-12.446" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="7.8994" x2="45.0596" y2="7.8994" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="7.8994" x2="-3.81" y2="-12.446" width="0.127" layer="21"/>
+<wire x1="45.0596" y1="7.8994" x2="45.0596" y2="-12.446" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-12.7" x2="12.7" y2="-25.4" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-25.4" x2="27.94" y2="-25.4" width="0.127" layer="21"/>
+<wire x1="27.94" y1="-25.4" x2="27.94" y2="-12.7" width="0.127" layer="21"/>
+</package>
+<package name="MINIFIT_5566-8">
+<description>&lt;b&gt;Mini-Fit Junior connector 8 pole&lt;/b&gt;&lt;p&gt;
+Source: http://www.molex.com</description>
+<wire x1="-8.9" y1="4.5" x2="8.9" y2="4.5" width="0.254" layer="21"/>
+<wire x1="8.9" y1="4.5" x2="8.9" y2="-2.2" width="0.254" layer="21"/>
+<wire x1="8.9" y1="-3.3" x2="8.9" y2="-4.9" width="0.254" layer="21"/>
+<wire x1="8.9" y1="-4.9" x2="-8.9" y2="-4.9" width="0.254" layer="21"/>
+<wire x1="-8.9" y1="-4.9" x2="-8.9" y2="4.5" width="0.254" layer="21"/>
+<wire x1="8.9" y1="-2.2" x2="8.9" y2="-3.3" width="0.254" layer="21" curve="-180"/>
+<wire x1="-2.1" y1="6.3" x2="2.1" y2="6.3" width="0.254" layer="27"/>
+<wire x1="-2.1" y1="6.3" x2="-2.1" y2="4.6" width="0.254" layer="27"/>
+<wire x1="2.1" y1="6.3" x2="2.1" y2="4.6" width="0.254" layer="27"/>
+<pad name="1" x="6.3" y="-2.75" drill="1.4" shape="square"/>
+<pad name="2" x="2.1" y="-2.75" drill="1.4" shape="square"/>
+<pad name="3" x="-2.1" y="-2.75" drill="1.4" shape="square"/>
+<pad name="4" x="-6.3" y="-2.75" drill="1.4" shape="square"/>
+<pad name="5" x="6.3" y="2.75" drill="1.4" shape="square"/>
+<pad name="6" x="2.1" y="2.75" drill="1.4" shape="square"/>
+<pad name="7" x="-2.1" y="2.75" drill="1.4" shape="square"/>
+<pad name="8" x="-6.3" y="2.75" drill="1.4" shape="square"/>
+<text x="8.89" y="-5.08" size="1.27" layer="25" align="top-right">&gt;NAME</text>
+<text x="0" y="6.35" size="1.27" layer="27" align="bottom-center">&gt;VALUE</text>
+</package>
+<package name="NANO-FIT_RIGHT_ANGLE-8">
+<pad name="6" x="1.25" y="2.5" drill="1.2" shape="square"/>
+<pad name="5" x="3.75" y="2.5" drill="1.2" shape="square"/>
+<pad name="1" x="3.75" y="0" drill="1.2" shape="square"/>
+<pad name="2" x="1.25" y="0" drill="1.2" shape="square"/>
+<pad name="3" x="-1.25" y="0" drill="1.2" shape="square"/>
+<pad name="7" x="-1.25" y="2.5" drill="1.2" shape="square"/>
+<pad name="8" x="-3.75" y="2.5" drill="1.2" shape="square"/>
+<pad name="4" x="-3.75" y="0" drill="1.2" shape="square"/>
+<hole x="-3.75" y="-7.49" drill="1.7"/>
+<hole x="3.75" y="-7.49" drill="1.7"/>
+<wire x1="-5" y1="4" x2="5" y2="4" width="0.127" layer="21"/>
+<wire x1="5" y1="4" x2="5" y2="-2" width="0.127" layer="21"/>
+<wire x1="5" y1="-2" x2="5.74" y2="-2" width="0.127" layer="21"/>
+<wire x1="5.74" y1="-2" x2="5.74" y2="-10" width="0.127" layer="21"/>
+<wire x1="5.74" y1="-10" x2="-5.74" y2="-10" width="0.127" layer="21"/>
+<wire x1="-5.74" y1="-10" x2="-5.74" y2="-2" width="0.127" layer="21"/>
+<wire x1="-5.74" y1="-2" x2="-5" y2="-2" width="0.127" layer="21"/>
+<wire x1="-5" y1="-2" x2="-5" y2="4" width="0.127" layer="21"/>
+</package>
+<package name="NANO-FIT_RIGHT_ANGLE-8-SURFACE">
+<smd name="2" x="1.25" y="0.04" dx="1.24" dy="2.5" layer="1"/>
+<smd name="1" x="3.75" y="0.04" dx="1.24" dy="2.5" layer="1"/>
+<smd name="5" x="3.75" y="3.34" dx="1.24" dy="2.5" layer="1"/>
+<smd name="6" x="1.25" y="3.34" dx="1.24" dy="2.5" layer="1"/>
+<smd name="7" x="-1.25" y="3.3" dx="1.24" dy="2.5" layer="1"/>
+<smd name="8" x="-3.75" y="3.3" dx="1.24" dy="2.5" layer="1"/>
+<smd name="3" x="-1.25" y="0" dx="1.24" dy="2.5" layer="1"/>
+<smd name="4" x="-3.75" y="0" dx="1.24" dy="2.5" layer="1"/>
+<smd name="P$9" x="-6.02" y="-4.93" dx="8.2" dy="1.1" layer="1" rot="R90"/>
+<smd name="P$10" x="6.02" y="-4.93" dx="8.2" dy="1.1" layer="1" rot="R90"/>
+<wire x1="-5" y1="5" x2="-5" y2="0" width="0.127" layer="21"/>
+<wire x1="-5" y1="0" x2="-7" y2="0" width="0.127" layer="21"/>
+<wire x1="-7" y1="0" x2="-7" y2="-10" width="0.127" layer="21"/>
+<wire x1="-7" y1="-10" x2="-3" y2="-10" width="0.127" layer="21"/>
+<wire x1="-3" y1="-10" x2="-3" y2="-11" width="0.127" layer="21"/>
+<wire x1="-3" y1="-11" x2="3" y2="-11" width="0.127" layer="21"/>
+<wire x1="3" y1="-11" x2="3" y2="-10" width="0.127" layer="21"/>
+<wire x1="3" y1="-10" x2="7" y2="-10" width="0.127" layer="21"/>
+<wire x1="7" y1="-10" x2="7" y2="0" width="0.127" layer="21"/>
+<wire x1="7" y1="0" x2="5" y2="0" width="0.127" layer="21"/>
+<wire x1="5" y1="0" x2="5" y2="5" width="0.127" layer="21"/>
+<wire x1="5" y1="5" x2="-5" y2="5" width="0.127" layer="21"/>
+<smd name="P$11" x="-3.75" y="3.3" dx="1.24" dy="2.5" layer="1"/>
+</package>
+<package name="NANO-FIT_VERTICAL-8">
+<pad name="P$3" x="1.25" y="0" drill="1.2"/>
+<pad name="P$2" x="-1.25" y="0" drill="1.2"/>
+<pad name="P$6" x="-1.25" y="2.5" drill="1.2"/>
+<pad name="P$7" x="1.25" y="2.5" drill="1.2"/>
+<pad name="P$8" x="3.75" y="2.5" drill="1.2"/>
+<pad name="P$4" x="3.75" y="0" drill="1.2"/>
+<pad name="P$1" x="-3.75" y="0" drill="1.2"/>
+<pad name="P$5" x="-3.75" y="2.5" drill="1.2"/>
+<wire x1="-5.5" y1="4.25" x2="5.5" y2="4.25" width="0.127" layer="21"/>
+<wire x1="-5.5" y1="4.25" x2="-5.5" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-5.5" y1="-1.75" x2="-2.6" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="-1.75" x2="2.6" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="2.6" y1="-1.75" x2="5.5" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="5.5" y1="-1.75" x2="5.5" y2="4.25" width="0.127" layer="21"/>
+<wire x1="2.6" y1="-4.6" x2="-2.6" y2="-4.6" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="-4.6" x2="-2.6" y2="-1.75" width="0.127" layer="21"/>
+<wire x1="2.6" y1="-4.6" x2="2.6" y2="-1.75" width="0.127" layer="21"/>
+<hole x="0" y="-1.34" drill="1.3"/>
+</package>
+<package name="DURACLIK_RIGHT_ANGLE-8">
+<smd name="1" x="7" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="2" x="5" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="3" x="3" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="4" x="1" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="5" x="-1" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="6" x="-3" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="7" x="-5" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="8" x="-7" y="8.13" dx="3.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="P$9" x="-9.55" y="2.65" dx="5.3" dy="1.7" layer="1" rot="R90"/>
+<smd name="P$10" x="9.55" y="2.65" dx="5.3" dy="1.7" layer="1" rot="R90"/>
+<wire x1="-11" y1="6" x2="-11" y2="-1" width="0.127" layer="21"/>
+<wire x1="-11" y1="-1" x2="11" y2="-1" width="0.127" layer="21"/>
+<wire x1="11" y1="-1" x2="11" y2="7" width="0.127" layer="21"/>
+<wire x1="8" y1="10" x2="8" y2="6" width="0.127" layer="21"/>
+<wire x1="8" y1="6" x2="-8" y2="6" width="0.127" layer="21"/>
+<wire x1="-8" y1="6" x2="-8" y2="10" width="0.127" layer="21"/>
+<wire x1="-8" y1="10" x2="-9" y2="10" width="0.127" layer="21"/>
+<wire x1="-9" y1="10" x2="-11" y2="6" width="0.127" layer="21"/>
+<wire x1="11" y1="7" x2="9" y2="10" width="0.127" layer="21"/>
+<wire x1="9" y1="10" x2="8" y2="10" width="0.127" layer="21"/>
+</package>
+<package name="DURACLIK_VERTICAL-8">
+<smd name="1" x="7" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="2" x="5" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="3" x="3" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="4" x="1" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="5" x="-1" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="6" x="-3" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="7" x="-5" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="8" x="-7" y="7.68" dx="2.2" dy="1.2" layer="1" rot="R90"/>
+<smd name="P$1" x="10.6" y="2.1" dx="4.2" dy="2" layer="1" rot="R90"/>
+<smd name="P$2" x="-10.6" y="2.1" dx="4.2" dy="2" layer="1" rot="R90"/>
+<wire x1="12" y1="5" x2="12" y2="-1" width="0.127" layer="21"/>
+<wire x1="12" y1="-1" x2="-12" y2="-1" width="0.127" layer="21"/>
+<wire x1="-12" y1="-1" x2="-12" y2="5" width="0.127" layer="21"/>
+<wire x1="-12" y1="5" x2="-9" y2="9" width="0.127" layer="21"/>
+<wire x1="-9" y1="9" x2="-8" y2="9" width="0.127" layer="21"/>
+<wire x1="-8" y1="9" x2="-8" y2="6" width="0.127" layer="21"/>
+<wire x1="-8" y1="6" x2="8" y2="6" width="0.127" layer="21"/>
+<wire x1="8" y1="6" x2="8" y2="9" width="0.127" layer="21"/>
+<wire x1="8" y1="9" x2="9" y2="9" width="0.127" layer="21"/>
+<wire x1="9" y1="9" x2="12" y2="5" width="0.127" layer="21"/>
+</package>
+<package name="MX150L_VERTICAL-8">
+<description>19428-0014
+&lt;br&gt;
+&lt;br&gt;
+MX150L™ Vertical PCB Header</description>
+<pad name="3" x="2.921" y="2.9972" drill="1.778" diameter="3.81"/>
+<pad name="4" x="8.763" y="2.9972" drill="1.778" diameter="3.81"/>
+<wire x1="-20.5613" y1="15.24" x2="20.5613" y2="15.24" width="0.127" layer="21"/>
+<wire x1="-20.5613" y1="-15.24" x2="20.5613" y2="-15.24" width="0.127" layer="21"/>
+<hole x="-24.3713" y="0" drill="4.191"/>
+<hole x="24.3713" y="0" drill="4.191"/>
+<wire x1="-20.5613" y1="15.24" x2="-29.4513" y2="0" width="0.127" layer="21"/>
+<wire x1="-20.5613" y1="-15.24" x2="-29.4513" y2="0" width="0.127" layer="21"/>
+<wire x1="20.5613" y1="-15.24" x2="29.4513" y2="0" width="0.127" layer="21"/>
+<wire x1="20.5613" y1="15.24" x2="29.4513" y2="0" width="0.127" layer="21"/>
+<circle x="-24.3713" y="0" radius="4" width="0.127" layer="21"/>
+<circle x="24.3713" y="0" radius="4" width="0.127" layer="21"/>
+<pad name="7" x="2.921" y="-2.9972" drill="1.778" diameter="3.81"/>
+<pad name="8" x="8.763" y="-2.9972" drill="1.778" diameter="3.81"/>
+<pad name="1" x="-8.763" y="2.9972" drill="1.778" diameter="3.81"/>
+<pad name="2" x="-2.921" y="2.9972" drill="1.778" diameter="3.81"/>
+<pad name="5" x="-8.763" y="-2.9972" drill="1.778" diameter="3.81"/>
+<pad name="6" x="-2.921" y="-2.9972" drill="1.778" diameter="3.81"/>
+<circle x="-24.3713" y="0" radius="4" width="0.127" layer="22"/>
+<circle x="24.3713" y="0" radius="4" width="0.127" layer="22"/>
+<hole x="-14.605" y="2.921" drill="1.524"/>
+</package>
+<package name="MX150L_RIGHT_ANGLE-8">
+<pad name="1" x="16.9418" y="2.921" drill="1.524"/>
+<pad name="2" x="22.7838" y="2.921" drill="1.524"/>
+<pad name="6" x="22.7838" y="-2.921" drill="1.524"/>
+<pad name="7" x="28.6258" y="-2.921" drill="1.524"/>
+<hole x="0" y="0" drill="4.7752"/>
+<hole x="51.4096" y="0" drill="4.7752"/>
+<wire x1="-3.81" y1="-12.446" x2="56.4896" y2="-12.446" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="7.8994" x2="56.4896" y2="7.8994" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="7.8994" x2="-3.81" y2="-12.446" width="0.127" layer="21"/>
+<wire x1="56.4896" y1="7.8994" x2="56.4896" y2="-12.446" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-12.7" x2="12.7" y2="-25.4" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-25.4" x2="38.1" y2="-25.4" width="0.127" layer="21"/>
+<wire x1="38.1" y1="-25.4" x2="38.1" y2="-12.7" width="0.127" layer="21"/>
+<pad name="3" x="28.6258" y="2.921" drill="1.524"/>
+<pad name="4" x="34.4678" y="2.921" drill="1.524"/>
+<pad name="8" x="34.4678" y="-2.921" drill="1.524"/>
+<pad name="5" x="16.9418" y="-2.921" drill="1.524"/>
 </package>
 </packages>
 <symbols>
@@ -2146,6 +2291,17 @@ Source: http://www.molex.com</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="MX150-RIGHT_ANGLE-4" package="MX150L_RIGHT_ANGLE-4">
+<connects>
+<connect gate="-1" pin="S" pad="P$1"/>
+<connect gate="-2" pin="S" pad="P$2"/>
+<connect gate="-3" pin="S" pad="P$3"/>
+<connect gate="-4" pin="S" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="5V_REGULATOR_LM340-N" uservalue="yes">
@@ -2362,66 +2518,6 @@ Contact Amperage: 8A at 30VDC
 <connect gate="G$1" pin="7" pad="7"/>
 <connect gate="G$1" pin="COIL+" pad="COIL+"/>
 <connect gate="G$1" pin="COIL-" pad="COIL-"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="CONNECTOR-2" prefix="X">
-<description>&lt;b&gt;Mini-Fit Junior connector 2 pole&lt;/b&gt;&lt;p&gt;
-Source: http://www.molex.com</description>
-<gates>
-<gate name="-1" symbol="MV" x="0" y="2.54" addlevel="always"/>
-<gate name="-2" symbol="M" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="MINIFIT_5566-2">
-<connects>
-<connect gate="-1" pin="S" pad="1"/>
-<connect gate="-2" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name="">
-<attribute name="MF" value="" constant="no"/>
-<attribute name="MPN" value="" constant="no"/>
-<attribute name="OC_FARNELL" value="1822072" constant="no"/>
-<attribute name="OC_NEWARK" value="unknown" constant="no"/>
-</technology>
-</technologies>
-</device>
-<device name="NANO-FIT_VERTICAL-2" package="NANO-FIT_VERTICAL-2">
-<connects>
-<connect gate="-1" pin="S" pad="P$1"/>
-<connect gate="-2" pin="S" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="NANO-FIT_RIGHT_ANGLE-2" package="NANO-FIT_RIGHT_ANGLE-2">
-<connects>
-<connect gate="-1" pin="S" pad="1"/>
-<connect gate="-2" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="DURACLIK_RIGHT_ANGLE-2" package="DURACLIK_RIGHT_ANGLE-2">
-<connects>
-<connect gate="-1" pin="S" pad="1"/>
-<connect gate="-2" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="DURACLIK_VERTICAL-2" package="DURACLIK_VERTICAL-2">
-<connects>
-<connect gate="-1" pin="S" pad="1"/>
-<connect gate="-2" pin="S" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3134,6 +3230,23 @@ Source: http://www.molex.com</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="MX150L-RIGHT_ANGLE-10" package="MX150L_RIGHT_ANGLE-10">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-10" pin="S" pad="10"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+<connect gate="-7" pin="S" pad="7"/>
+<connect gate="-8" pin="S" pad="8"/>
+<connect gate="-9" pin="S" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="JUMPER">
@@ -3199,6 +3312,147 @@ Source: http://www.molex.com</description>
 <connect gate="1" pin="P1" pad="A2"/>
 <connect gate="1" pin="S" pad="B1"/>
 <connect gate="1" pin="S1" pad="B2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CONNECTOR-8" prefix="X">
+<description>&lt;b&gt;Mini-Fit Junior connector 8 pole&lt;/b&gt;&lt;p&gt;
+Source: http://www.molex.com</description>
+<gates>
+<gate name="-1" symbol="MV" x="0" y="7.62" addlevel="always"/>
+<gate name="-2" symbol="M" x="0" y="5.08" addlevel="always"/>
+<gate name="-3" symbol="M" x="0" y="2.54" addlevel="always"/>
+<gate name="-4" symbol="M" x="0" y="0" addlevel="always"/>
+<gate name="-5" symbol="M" x="0" y="-2.54" addlevel="always"/>
+<gate name="-6" symbol="M" x="0" y="-5.08" addlevel="always"/>
+<gate name="-7" symbol="M" x="0" y="-7.62" addlevel="always"/>
+<gate name="-8" symbol="M" x="0" y="-10.16" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="MINIFIT_5566-8">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+<connect gate="-7" pin="S" pad="7"/>
+<connect gate="-8" pin="S" pad="8"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="" constant="no"/>
+<attribute name="OC_FARNELL" value="unknown" constant="no"/>
+<attribute name="OC_NEWARK" value="unknown" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="NANO-FIT_RIGHT_ANGLE-8" package="NANO-FIT_RIGHT_ANGLE-8">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+<connect gate="-7" pin="S" pad="7"/>
+<connect gate="-8" pin="S" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NANO-FIT_RIGHT_ANGLE-8-SURFACE" package="NANO-FIT_RIGHT_ANGLE-8-SURFACE">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+<connect gate="-7" pin="S" pad="7"/>
+<connect gate="-8" pin="S" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="NANO-FIT_VERTICAL-8" package="NANO-FIT_VERTICAL-8">
+<connects>
+<connect gate="-1" pin="S" pad="P$1"/>
+<connect gate="-2" pin="S" pad="P$2"/>
+<connect gate="-3" pin="S" pad="P$3"/>
+<connect gate="-4" pin="S" pad="P$4"/>
+<connect gate="-5" pin="S" pad="P$5"/>
+<connect gate="-6" pin="S" pad="P$6"/>
+<connect gate="-7" pin="S" pad="P$7"/>
+<connect gate="-8" pin="S" pad="P$8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DURACLIK_RIGHT_ANGLE-8" package="DURACLIK_RIGHT_ANGLE-8">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+<connect gate="-7" pin="S" pad="7"/>
+<connect gate="-8" pin="S" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DURACLIK_VERTICAL-8" package="DURACLIK_VERTICAL-8">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+<connect gate="-7" pin="S" pad="7"/>
+<connect gate="-8" pin="S" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="MX150L_VERTICAL-8" package="MX150L_VERTICAL-8">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+<connect gate="-7" pin="S" pad="7"/>
+<connect gate="-8" pin="S" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="MX150L_RIGHT_ANGLE-8" package="MX150L_RIGHT_ANGLE-8">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+<connect gate="-7" pin="S" pad="7"/>
+<connect gate="-8" pin="S" pad="8"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3454,8 +3708,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="P+13" library="supply1" deviceset="+12V" device=""/>
 <part name="P+14" library="supply1" deviceset="+12V" device=""/>
 <part name="P+5" library="supply1" deviceset="+12V" device=""/>
-<part name="X1" library="HyTechDevices" deviceset="CONNECTOR-2" device=""/>
-<part name="GND25" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="D4" library="HyTechDevices" deviceset="DIODE" device="0805"/>
 <part name="D5" library="HyTechDevices" deviceset="DIODE" device="0805"/>
 <part name="D6" library="HyTechDevices" deviceset="DIODE" device="0805"/>
@@ -3476,8 +3728,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="GND31" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="U$6" library="HyTechDevices" deviceset="G5LE" device=""/>
 <part name="U$7" library="HyTechDevices" deviceset="G5LE" device=""/>
-<part name="X3" library="HyTechDevices" deviceset="CONNECTOR-10" device="MX150L_VERTICAL-10"/>
-<part name="X4" library="HyTechDevices" deviceset="CONNECTOR-10" device="MX150L_VERTICAL-10"/>
+<part name="X3" library="HyTechDevices" deviceset="CONNECTOR-10" device="MX150L-RIGHT_ANGLE-10" value="CONNECTOR-10MX150L-RIGHT_ANGLE-10"/>
 <part name="GND32" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND33" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="SUPPLY4" library="supply2" deviceset="GND1" device=""/>
@@ -3546,6 +3797,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="LED18" library="HyTechDevices" deviceset="LED" device="-0805" value="RED"/>
 <part name="GND45" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="R31" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1.2K"/>
+<part name="X1" library="HyTechDevices" deviceset="CONNECTOR-8" device="MX150L_RIGHT_ANGLE-8"/>
 </parts>
 <sheets>
 <sheet>
@@ -3680,9 +3932,6 @@ GPIO_SSR not installed</text>
 <instance part="P+13" gate="1" x="411.48" y="170.18" rot="R180"/>
 <instance part="P+14" gate="1" x="137.16" y="200.66" rot="R180"/>
 <instance part="P+5" gate="1" x="355.6" y="104.14" rot="R90"/>
-<instance part="X1" gate="-2" x="48.26" y="78.74" rot="MR0"/>
-<instance part="X1" gate="-1" x="48.26" y="81.28" rot="MR0"/>
-<instance part="GND25" gate="1" x="53.34" y="76.2"/>
 <instance part="D4" gate="1" x="134.62" y="137.16"/>
 <instance part="D5" gate="1" x="393.7" y="60.96"/>
 <instance part="D6" gate="1" x="322.58" y="63.5"/>
@@ -3713,16 +3962,6 @@ GPIO_SSR not installed</text>
 <instance part="X3" gate="-8" x="48.26" y="50.8" rot="MR0"/>
 <instance part="X3" gate="-9" x="48.26" y="48.26" rot="MR0"/>
 <instance part="X3" gate="-10" x="48.26" y="45.72" rot="MR0"/>
-<instance part="X4" gate="-1" x="48.26" y="154.94" rot="MR0"/>
-<instance part="X4" gate="-2" x="48.26" y="152.4" rot="MR0"/>
-<instance part="X4" gate="-3" x="48.26" y="149.86" rot="MR0"/>
-<instance part="X4" gate="-4" x="48.26" y="147.32" rot="MR0"/>
-<instance part="X4" gate="-5" x="48.26" y="144.78" rot="MR0"/>
-<instance part="X4" gate="-6" x="48.26" y="142.24" rot="MR0"/>
-<instance part="X4" gate="-7" x="48.26" y="139.7" rot="MR0"/>
-<instance part="X4" gate="-8" x="48.26" y="137.16" rot="MR0"/>
-<instance part="X4" gate="-9" x="48.26" y="134.62" rot="MR0"/>
-<instance part="X4" gate="-10" x="48.26" y="132.08" rot="MR0"/>
 <instance part="GND32" gate="1" x="71.12" y="149.86" rot="R90"/>
 <instance part="GND33" gate="1" x="71.12" y="142.24" rot="R90"/>
 <instance part="SUPPLY4" gate="G$1" x="228.6" y="-10.16" rot="R90"/>
@@ -3791,6 +4030,14 @@ GPIO_SSR not installed</text>
 <instance part="LED18" gate="LED" x="485.14" y="45.72" rot="R90"/>
 <instance part="GND45" gate="1" x="495.3" y="45.72" rot="MR270"/>
 <instance part="R31" gate="G$1" x="474.98" y="45.72" rot="MR180"/>
+<instance part="X1" gate="-1" x="48.26" y="149.86" rot="MR0"/>
+<instance part="X1" gate="-2" x="48.26" y="147.32" rot="MR0"/>
+<instance part="X1" gate="-3" x="48.26" y="144.78" rot="MR0"/>
+<instance part="X1" gate="-4" x="48.26" y="142.24" rot="MR0"/>
+<instance part="X1" gate="-5" x="48.26" y="139.7" rot="MR0"/>
+<instance part="X1" gate="-6" x="48.26" y="137.16" rot="MR0"/>
+<instance part="X1" gate="-7" x="48.26" y="134.62" rot="MR0"/>
+<instance part="X1" gate="-8" x="48.26" y="132.08" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -3930,11 +4177,6 @@ GPIO_SSR not installed</text>
 <wire x1="337.82" y1="101.6" x2="335.28" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X1" gate="-2" pin="S"/>
-<pinref part="GND25" gate="1" pin="GND"/>
-<wire x1="53.34" y1="78.74" x2="50.8" y2="78.74" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="XB" gate="G$1" pin="GND"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <wire x1="53.34" y1="180.34" x2="55.88" y2="180.34" width="0.1524" layer="91"/>
@@ -3963,14 +4205,14 @@ GPIO_SSR not installed</text>
 <wire x1="38.1" y1="228.6" x2="45.72" y2="228.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X4" gate="-3" pin="S"/>
 <pinref part="GND32" gate="1" pin="GND"/>
 <wire x1="68.58" y1="149.86" x2="50.8" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-1" pin="S"/>
 </segment>
 <segment>
-<pinref part="X4" gate="-6" pin="S"/>
 <pinref part="GND33" gate="1" pin="GND"/>
 <wire x1="68.58" y1="142.24" x2="50.8" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-4" pin="S"/>
 </segment>
 <segment>
 <pinref part="U$6" gate="G$1" pin="COIL+"/>
@@ -4123,9 +4365,9 @@ GPIO_SSR not installed</text>
 <wire x1="294.64" y1="228.6" x2="294.64" y2="215.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X4" gate="-7" pin="S"/>
 <wire x1="50.8" y1="139.7" x2="53.34" y2="139.7" width="0.1524" layer="91"/>
 <label x="53.34" y="139.7" size="1.27" layer="95" xref="yes"/>
+<pinref part="X1" gate="-5" pin="S"/>
 </segment>
 <segment>
 <pinref part="BUS1" gate="-3" pin="S"/>
@@ -4140,9 +4382,9 @@ GPIO_SSR not installed</text>
 </net>
 <net name="CANH" class="0">
 <segment>
-<pinref part="X4" gate="-8" pin="S"/>
 <wire x1="50.8" y1="137.16" x2="53.34" y2="137.16" width="0.1524" layer="91"/>
 <label x="53.34" y="137.16" size="1.27" layer="95" xref="yes"/>
+<pinref part="X1" gate="-6" pin="S"/>
 </segment>
 <segment>
 <pinref part="CAN_TRANSCEIVER" gate="G$1" pin="7"/>
@@ -4164,9 +4406,9 @@ GPIO_SSR not installed</text>
 </net>
 <net name="12V_F1" class="0">
 <segment>
-<pinref part="X4" gate="-5" pin="S"/>
 <wire x1="53.34" y1="144.78" x2="50.8" y2="144.78" width="0.1524" layer="91"/>
 <label x="53.34" y="144.78" size="1.27" layer="95" xref="yes"/>
+<pinref part="X1" gate="-3" pin="S"/>
 </segment>
 <segment>
 <pinref part="BUS1" gate="-1" pin="S"/>
@@ -4180,9 +4422,9 @@ GPIO_SSR not installed</text>
 </net>
 <net name="12V_F2" class="0">
 <segment>
-<pinref part="X4" gate="-4" pin="S"/>
 <wire x1="53.34" y1="147.32" x2="50.8" y2="147.32" width="0.1524" layer="91"/>
 <label x="53.34" y="147.32" size="1.27" layer="95" xref="yes"/>
+<pinref part="X1" gate="-2" pin="S"/>
 </segment>
 <segment>
 <pinref part="BUS2" gate="-1" pin="S"/>
@@ -4658,14 +4900,9 @@ GPIO_SSR not installed</text>
 </net>
 <net name="12VSUPPLY_BRB" class="0">
 <segment>
-<pinref part="X4" gate="-2" pin="S"/>
-<wire x1="53.34" y1="152.4" x2="50.8" y2="152.4" width="0.1524" layer="91"/>
-<label x="53.34" y="152.4" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="X1" gate="-1" pin="S"/>
-<wire x1="50.8" y1="81.28" x2="53.34" y2="81.28" width="0.1524" layer="91"/>
-<label x="53.34" y="81.28" size="1.27" layer="95" xref="yes"/>
+<wire x1="53.34" y1="134.62" x2="50.8" y2="134.62" width="0.1524" layer="91"/>
+<label x="53.34" y="134.62" size="1.27" layer="95" xref="yes"/>
+<pinref part="X1" gate="-7" pin="S"/>
 </segment>
 <segment>
 <pinref part="FH_FUSE" gate="G$1" pin="P2"/>
@@ -4903,11 +5140,6 @@ GPIO_SSR not installed</text>
 </net>
 <net name="GPIO_2" class="0">
 <segment>
-<pinref part="X4" gate="-9" pin="S"/>
-<wire x1="50.8" y1="134.62" x2="53.34" y2="134.62" width="0.1524" layer="91"/>
-<label x="53.34" y="134.62" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
 <pinref part="U$11" gate="G$1" pin="P$2"/>
 <wire x1="246.38" y1="132.08" x2="254" y2="132.08" width="0.1524" layer="91"/>
 <label x="254" y="132.08" size="1.27" layer="95" xref="yes"/>
@@ -5023,9 +5255,9 @@ GPIO_SSR not installed</text>
 <label x="401.32" y="78.74" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="X4" gate="-10" pin="S"/>
 <wire x1="50.8" y1="132.08" x2="53.34" y2="132.08" width="0.1524" layer="91"/>
 <label x="53.34" y="132.08" size="1.27" layer="95" xref="yes"/>
+<pinref part="X1" gate="-8" pin="S"/>
 </segment>
 <segment>
 <pinref part="S1" gate="1" pin="P"/>
@@ -5034,13 +5266,6 @@ GPIO_SSR not installed</text>
 <wire x1="370.84" y1="119.38" x2="365.76" y2="119.38" width="0.1524" layer="91"/>
 <junction x="370.84" y="119.38"/>
 <label x="365.76" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="12VSUPPLY_FSAE" class="0">
-<segment>
-<pinref part="X4" gate="-1" pin="S"/>
-<wire x1="53.34" y1="154.94" x2="50.8" y2="154.94" width="0.1524" layer="91"/>
-<label x="53.34" y="154.94" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SHUTDOWN_A" class="0">
