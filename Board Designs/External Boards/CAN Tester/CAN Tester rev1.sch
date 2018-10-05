@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="dots" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -2367,19 +2367,19 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <part name="U1" library="HyTechDevices" deviceset="ISO1050CAN" device="" value="ISOLATED CAN TRANSCIEVER"/>
 <part name="INCOMING" library="HyTechDevices" deviceset="LED" device="-0805" value="YELLOW"/>
 <part name="OUTGOING" library="HyTechDevices" deviceset="LED" device="-0805" value="BLUE"/>
-<part name="ACKERR" library="HyTechDevices" deviceset="LED" device="-0805" value="RED"/>
+<part name="ACKERR" library="HyTechDevices" deviceset="LED" device="-0805" value="ORANGE"/>
 <part name="LINE_OK" library="HyTechDevices" deviceset="LED" device="-0805" value="GREEN"/>
 <part name="SPARE" library="HyTechDevices" deviceset="LED" device="-0805" value="WHITE"/>
 <part name="MODE_SWITCH" library="HyTechDevices" deviceset="BTN_10-XX" device=""/>
 <part name="SPARE_BUTTON" library="HyTechDevices" deviceset="BTN_10-XX" device=""/>
 <part name="CAN_TERMINATION_RESISTOR" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="120"/>
-<part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="55"/>
-<part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="55"/>
-<part name="R3" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="55"/>
-<part name="R4" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="55"/>
-<part name="R5" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="55"/>
-<part name="R_MODE_SWITCH" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="25K"/>
-<part name="R_SPARE_BUTTON" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="25K"/>
+<part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="68"/>
+<part name="R2" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="68"/>
+<part name="R3" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="68"/>
+<part name="R4" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="68"/>
+<part name="R5" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="68"/>
+<part name="R_MODE_SWITCH" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="27K"/>
+<part name="R_SPARE_BUTTON" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="27K"/>
 <part name="M2" library="HyTechDevices" deviceset="CONNECTOR-4" device="NANO-FIT-VERTICAL-4" value="Nanofit"/>
 <part name="M1" library="HyTechDevices" deviceset="CONNECTOR-4" device="" value="Minifit"/>
 <part name="U4" library="HyTechDevices" deviceset="HD44780LCD" device="-1602" value="CHARACTER_LCD"/>
@@ -2408,56 +2408,172 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <instances>
 <instance part="U3" gate="G$1" x="96.52" y="27.94"/>
 <instance part="U1" gate="G$1" x="91.44" y="2.54"/>
-<instance part="INCOMING" gate="LED" x="157.48" y="-10.16" rot="R90"/>
-<instance part="OUTGOING" gate="LED" x="157.48" y="0" rot="R90"/>
-<instance part="ACKERR" gate="LED" x="157.48" y="10.16" rot="R90"/>
-<instance part="LINE_OK" gate="LED" x="157.48" y="20.32" rot="R90"/>
-<instance part="SPARE" gate="LED" x="157.48" y="30.48" rot="R90"/>
-<instance part="MODE_SWITCH" gate="1" x="162.56" y="68.58" rot="R270"/>
-<instance part="SPARE_BUTTON" gate="1" x="162.56" y="48.26" rot="R270"/>
-<instance part="CAN_TERMINATION_RESISTOR" gate="G$1" x="58.42" y="0" rot="R180"/>
-<instance part="R1" gate="G$1" x="144.78" y="-10.16" rot="R180"/>
-<instance part="R2" gate="G$1" x="144.78" y="0" rot="R180"/>
-<instance part="R3" gate="G$1" x="144.78" y="10.16" rot="R180"/>
-<instance part="R4" gate="G$1" x="144.78" y="20.32" rot="R180"/>
-<instance part="R5" gate="G$1" x="144.78" y="30.48" rot="R180"/>
-<instance part="R_MODE_SWITCH" gate="G$1" x="162.56" y="60.96"/>
-<instance part="R_SPARE_BUTTON" gate="G$1" x="162.56" y="40.64"/>
-<instance part="M2" gate="-1" x="111.76" y="99.06"/>
-<instance part="M2" gate="-2" x="111.76" y="96.52"/>
-<instance part="M2" gate="-3" x="111.76" y="93.98"/>
-<instance part="M2" gate="-4" x="111.76" y="91.44"/>
-<instance part="M1" gate="-1" x="111.76" y="86.36"/>
-<instance part="M1" gate="-2" x="111.76" y="83.82"/>
-<instance part="M1" gate="-3" x="111.76" y="81.28"/>
-<instance part="M1" gate="-4" x="111.76" y="78.74"/>
-<instance part="U4" gate="G$1" x="43.18" y="43.18" rot="R270"/>
-<instance part="5V_REGULATOR" gate="G$1" x="177.8" y="99.06" smashed="yes">
+<instance part="INCOMING" gate="LED" x="157.48" y="-10.16" rot="R90">
+<attribute name="NAME" x="162.052" y="-6.604" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="162.052" y="-4.445" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="OUTGOING" gate="LED" x="157.48" y="0" rot="R90">
+<attribute name="NAME" x="162.052" y="3.556" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="162.052" y="5.715" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="ACKERR" gate="LED" x="157.48" y="10.16" rot="R90">
+<attribute name="NAME" x="162.052" y="13.716" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="162.052" y="15.875" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="LINE_OK" gate="LED" x="157.48" y="20.32" rot="R90">
+<attribute name="NAME" x="162.052" y="23.876" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="162.052" y="26.035" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="SPARE" gate="LED" x="157.48" y="30.48" rot="R90">
+<attribute name="NAME" x="162.052" y="34.036" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="162.052" y="36.195" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="MODE_SWITCH" gate="1" x="162.56" y="68.58" rot="R270">
+<attribute name="NAME" x="160.02" y="74.93" size="1.778" layer="95"/>
+<attribute name="VALUE" x="165.735" y="72.39" size="1.778" layer="96"/>
+</instance>
+<instance part="SPARE_BUTTON" gate="1" x="162.56" y="48.26" rot="R270">
+<attribute name="NAME" x="160.02" y="54.61" size="1.778" layer="95"/>
+<attribute name="VALUE" x="165.735" y="52.07" size="1.778" layer="96"/>
+</instance>
+<instance part="CAN_TERMINATION_RESISTOR" gate="G$1" x="58.42" y="0" rot="R180">
+<attribute name="NAME" x="62.23" y="-1.4986" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="62.23" y="3.302" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R1" gate="G$1" x="144.78" y="-10.16" rot="R180">
+<attribute name="NAME" x="148.59" y="-11.6586" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="148.59" y="-6.858" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R2" gate="G$1" x="144.78" y="0" rot="R180">
+<attribute name="NAME" x="148.59" y="-1.4986" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="148.59" y="3.302" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R3" gate="G$1" x="144.78" y="10.16" rot="R180">
+<attribute name="NAME" x="148.59" y="8.6614" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="148.59" y="13.462" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R4" gate="G$1" x="144.78" y="20.32" rot="R180">
+<attribute name="NAME" x="148.59" y="18.8214" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="148.59" y="23.622" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R5" gate="G$1" x="144.78" y="30.48" rot="R180">
+<attribute name="NAME" x="148.59" y="28.9814" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="148.59" y="33.782" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R_MODE_SWITCH" gate="G$1" x="162.56" y="60.96">
+<attribute name="NAME" x="158.75" y="62.4586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="158.75" y="57.658" size="1.778" layer="96"/>
+</instance>
+<instance part="R_SPARE_BUTTON" gate="G$1" x="162.56" y="40.64">
+<attribute name="NAME" x="158.75" y="42.1386" size="1.778" layer="95"/>
+<attribute name="VALUE" x="158.75" y="37.338" size="1.778" layer="96"/>
+</instance>
+<instance part="M2" gate="-1" x="111.76" y="99.06">
+<attribute name="NAME" x="114.3" y="98.298" size="1.524" layer="95"/>
+<attribute name="VALUE" x="110.998" y="100.457" size="1.778" layer="96"/>
+</instance>
+<instance part="M2" gate="-2" x="111.76" y="96.52">
+<attribute name="NAME" x="114.3" y="95.758" size="1.524" layer="95"/>
+</instance>
+<instance part="M2" gate="-3" x="111.76" y="93.98">
+<attribute name="NAME" x="114.3" y="93.218" size="1.524" layer="95"/>
+</instance>
+<instance part="M2" gate="-4" x="111.76" y="91.44">
+<attribute name="NAME" x="114.3" y="90.678" size="1.524" layer="95"/>
+</instance>
+<instance part="M1" gate="-1" x="111.76" y="86.36">
+<attribute name="NAME" x="114.3" y="85.598" size="1.524" layer="95"/>
+<attribute name="VALUE" x="110.998" y="87.757" size="1.778" layer="96"/>
+</instance>
+<instance part="M1" gate="-2" x="111.76" y="83.82">
+<attribute name="NAME" x="114.3" y="83.058" size="1.524" layer="95"/>
+</instance>
+<instance part="M1" gate="-3" x="111.76" y="81.28">
+<attribute name="NAME" x="114.3" y="80.518" size="1.524" layer="95"/>
+</instance>
+<instance part="M1" gate="-4" x="111.76" y="78.74">
+<attribute name="NAME" x="114.3" y="77.978" size="1.524" layer="95"/>
+</instance>
+<instance part="U4" gate="G$1" x="43.18" y="43.18" rot="R270">
+<attribute name="NAME" x="30.48" y="68.58" size="2.1844" layer="95" font="vector" rot="R270"/>
+<attribute name="VALUE" x="30.48" y="53.34" size="2.1844" layer="96" font="vector" rot="R270"/>
+</instance>
+<instance part="5V_REGULATOR" gate="G$1" x="177.8" y="99.06">
 <attribute name="NAME" x="169.672" y="102.362" size="1.778" layer="95"/>
 <attribute name="VALUE" x="180.34" y="88.9" size="1.778" layer="96"/>
 </instance>
-<instance part="GND1" gate="1" x="177.8" y="83.82"/>
-<instance part="GND2" gate="1" x="167.64" y="-22.86"/>
-<instance part="GND3" gate="1" x="185.42" y="35.56"/>
-<instance part="+3V1" gate="G$1" x="193.04" y="45.72" rot="R270"/>
-<instance part="GND4" gate="1" x="182.88" y="55.88"/>
-<instance part="+3V2" gate="G$1" x="193.04" y="66.04" rot="R270"/>
-<instance part="GND5" gate="1" x="101.6" y="-7.62"/>
-<instance part="CONTRAST_POT" gate="G$1" x="45.72" y="88.9" rot="R90"/>
-<instance part="GND6" gate="1" x="73.66" y="55.88" rot="R90"/>
-<instance part="GND7" gate="1" x="73.66" y="27.94" rot="R90"/>
-<instance part="GND8" gate="1" x="73.66" y="66.04" rot="R90"/>
-<instance part="C1" gate="G$1" x="167.64" y="91.44"/>
-<instance part="C2" gate="G$1" x="187.96" y="91.44"/>
-<instance part="M3" gate="-1" x="142.24" y="99.06"/>
-<instance part="M3" gate="-2" x="142.24" y="96.52"/>
-<instance part="M3" gate="-3" x="142.24" y="93.98"/>
-<instance part="M3" gate="-4" x="142.24" y="91.44"/>
-<instance part="M4" gate="-1" x="142.24" y="86.36"/>
-<instance part="M4" gate="-2" x="142.24" y="83.82"/>
-<instance part="M4" gate="-3" x="142.24" y="81.28"/>
-<instance part="M4" gate="-4" x="142.24" y="78.74"/>
-<instance part="JP1" gate="G$1" x="45.72" y="7.62" rot="R270"/>
+<instance part="GND1" gate="1" x="177.8" y="83.82">
+<attribute name="VALUE" x="175.26" y="81.28" size="1.778" layer="96"/>
+</instance>
+<instance part="GND2" gate="1" x="167.64" y="-22.86">
+<attribute name="VALUE" x="165.1" y="-25.4" size="1.778" layer="96"/>
+</instance>
+<instance part="GND3" gate="1" x="185.42" y="35.56">
+<attribute name="VALUE" x="182.88" y="33.02" size="1.778" layer="96"/>
+</instance>
+<instance part="+3V1" gate="G$1" x="193.04" y="45.72" rot="R270">
+<attribute name="VALUE" x="187.96" y="48.26" size="1.778" layer="96"/>
+</instance>
+<instance part="GND4" gate="1" x="182.88" y="55.88">
+<attribute name="VALUE" x="180.34" y="53.34" size="1.778" layer="96"/>
+</instance>
+<instance part="+3V2" gate="G$1" x="193.04" y="66.04" rot="R270">
+<attribute name="VALUE" x="187.96" y="68.58" size="1.778" layer="96"/>
+</instance>
+<instance part="GND5" gate="1" x="101.6" y="-7.62">
+<attribute name="VALUE" x="99.06" y="-10.16" size="1.778" layer="96"/>
+</instance>
+<instance part="CONTRAST_POT" gate="G$1" x="45.72" y="88.9" rot="R90">
+<attribute name="NAME" x="49.53" y="82.931" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="49.53" y="85.09" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="GND6" gate="1" x="73.66" y="55.88" rot="R90">
+<attribute name="VALUE" x="76.2" y="53.34" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND7" gate="1" x="73.66" y="27.94" rot="R90">
+<attribute name="VALUE" x="76.2" y="25.4" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="GND8" gate="1" x="73.66" y="66.04" rot="R90">
+<attribute name="VALUE" x="76.2" y="63.5" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="C1" gate="G$1" x="167.64" y="91.44">
+<attribute name="NAME" x="169.164" y="94.361" size="1.778" layer="95"/>
+<attribute name="VALUE" x="169.164" y="89.281" size="1.778" layer="96"/>
+</instance>
+<instance part="C2" gate="G$1" x="187.96" y="91.44">
+<attribute name="NAME" x="189.484" y="94.361" size="1.778" layer="95"/>
+<attribute name="VALUE" x="189.484" y="89.281" size="1.778" layer="96"/>
+</instance>
+<instance part="M3" gate="-1" x="142.24" y="99.06">
+<attribute name="NAME" x="144.78" y="98.298" size="1.524" layer="95"/>
+<attribute name="VALUE" x="141.478" y="100.457" size="1.778" layer="96"/>
+</instance>
+<instance part="M3" gate="-2" x="142.24" y="96.52">
+<attribute name="NAME" x="144.78" y="95.758" size="1.524" layer="95"/>
+</instance>
+<instance part="M3" gate="-3" x="142.24" y="93.98">
+<attribute name="NAME" x="144.78" y="93.218" size="1.524" layer="95"/>
+</instance>
+<instance part="M3" gate="-4" x="142.24" y="91.44">
+<attribute name="NAME" x="144.78" y="90.678" size="1.524" layer="95"/>
+</instance>
+<instance part="M4" gate="-1" x="142.24" y="86.36">
+<attribute name="NAME" x="144.78" y="85.598" size="1.524" layer="95"/>
+<attribute name="VALUE" x="141.478" y="87.757" size="1.778" layer="96"/>
+</instance>
+<instance part="M4" gate="-2" x="142.24" y="83.82">
+<attribute name="NAME" x="144.78" y="83.058" size="1.524" layer="95"/>
+</instance>
+<instance part="M4" gate="-3" x="142.24" y="81.28">
+<attribute name="NAME" x="144.78" y="80.518" size="1.524" layer="95"/>
+</instance>
+<instance part="M4" gate="-4" x="142.24" y="78.74">
+<attribute name="NAME" x="144.78" y="77.978" size="1.524" layer="95"/>
+</instance>
+<instance part="JP1" gate="G$1" x="45.72" y="7.62" rot="R270">
+<attribute name="VALUE" x="40.64" y="10.16" size="1.778" layer="96" rot="R270"/>
+<attribute name="NAME" x="51.562" y="10.16" size="1.778" layer="95" rot="R270"/>
+</instance>
 </instances>
 <busses>
 </busses>
