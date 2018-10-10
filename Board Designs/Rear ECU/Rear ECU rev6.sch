@@ -261,48 +261,6 @@ Source: http://www.molex.com</description>
 <pad name="2" x="0" y="0" drill="1" diameter="1.8796"/>
 <pad name="3" x="2.54" y="0" drill="1" diameter="1.8796"/>
 </package>
-<package name="TEENSY_3.2_SIMPLE">
-<pad name="AGND" x="16.51" y="31.75" drill="0.8" shape="long"/>
-<pad name="D13" x="16.51" y="1.27" drill="0.8" shape="long"/>
-<pad name="A0" x="16.51" y="3.81" drill="0.8" shape="long"/>
-<pad name="A1" x="16.51" y="6.35" drill="0.8" shape="long"/>
-<pad name="A2" x="16.51" y="8.89" drill="0.8" shape="long"/>
-<pad name="A3" x="16.51" y="11.43" drill="0.8" shape="long"/>
-<pad name="A4" x="16.51" y="13.97" drill="0.8" shape="long"/>
-<pad name="A5" x="16.51" y="16.51" drill="0.8" shape="long"/>
-<pad name="A6" x="16.51" y="19.05" drill="0.8" shape="long"/>
-<pad name="A7" x="16.51" y="21.59" drill="0.8" shape="long"/>
-<pad name="A8" x="16.51" y="24.13" drill="0.8" shape="long"/>
-<pad name="D12" x="1.27" y="1.27" drill="0.8" shape="long"/>
-<pad name="D11" x="1.27" y="3.81" drill="0.8" shape="long"/>
-<pad name="D5" x="1.27" y="19.05" drill="0.8" shape="long"/>
-<pad name="D4(CANRX)" x="1.27" y="21.59" drill="0.8" shape="long"/>
-<pad name="D3(CANTX)" x="1.27" y="24.13" drill="0.8" shape="long"/>
-<pad name="D2" x="1.27" y="26.67" drill="0.8" shape="long"/>
-<pad name="GND" x="1.27" y="34.29" drill="0.8" shape="long"/>
-<pad name="VIN" x="16.51" y="34.29" drill="0.8" shape="long"/>
-<pad name="3.3V" x="16.51" y="29.21" drill="0.8" shape="long"/>
-<pad name="A9" x="16.51" y="26.67" drill="0.8" shape="long"/>
-<pad name="D0(RX1)" x="1.27" y="31.75" drill="0.8" shape="long" rot="R180"/>
-<pad name="D1(TX1)" x="1.27" y="29.21" drill="0.8" shape="long" rot="R180"/>
-<pad name="D10(TX2)" x="1.27" y="6.35" drill="0.8" shape="long"/>
-<pad name="D6" x="1.27" y="16.51" drill="0.8" shape="long" rot="R180"/>
-<pad name="D7(RX3)" x="1.27" y="13.97" drill="0.8" shape="long" rot="R180"/>
-<pad name="D8(TX3)" x="1.27" y="11.43" drill="0.8" shape="long" rot="R180"/>
-<pad name="D9(RX2)" x="1.27" y="8.89" drill="0.8" shape="long" rot="R180"/>
-<wire x1="17.78" y1="35.56" x2="17.78" y2="0" width="0.127" layer="21"/>
-<wire x1="17.78" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
-<wire x1="0" y1="0" x2="0" y2="35.56" width="0.127" layer="21"/>
-<wire x1="5.08" y1="36.322" x2="12.7" y2="36.322" width="0.127" layer="21"/>
-<wire x1="12.7" y1="36.322" x2="12.7" y2="35.56" width="0.127" layer="21"/>
-<wire x1="5.08" y1="35.56" x2="5.08" y2="36.322" width="0.127" layer="21"/>
-<wire x1="0" y1="35.56" x2="5.08" y2="35.56" width="0.127" layer="21"/>
-<wire x1="12.7" y1="35.56" x2="17.78" y2="35.56" width="0.127" layer="21"/>
-<text x="10.16" y="7.62" size="2.54" layer="51" rot="R90">Teensy 3.2</text>
-<wire x1="5.08" y1="35.56" x2="5.08" y2="30.48" width="0.127" layer="21"/>
-<wire x1="5.08" y1="30.48" x2="12.7" y2="30.48" width="0.127" layer="21"/>
-<wire x1="12.7" y1="30.48" x2="12.7" y2="35.56" width="0.127" layer="21"/>
-</package>
 <package name="DIL08">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
 <wire x1="5.08" y1="2.921" x2="-5.08" y2="2.921" width="0.1524" layer="21"/>
@@ -1776,6 +1734,73 @@ MX150L™ Vertical PCB Header</description>
 <pad name="8" x="34.4678" y="-2.921" drill="1.524"/>
 <pad name="5" x="16.9418" y="-2.921" drill="1.524"/>
 </package>
+<package name="TEENSY_3.5_EXT">
+<pad name="AGND" x="16.51" y="57.15" drill="0.8" shape="long"/>
+<pad name="D13" x="16.51" y="26.67" drill="0.8" shape="long"/>
+<pad name="A0" x="16.51" y="29.21" drill="0.8" shape="long"/>
+<pad name="A1" x="16.51" y="31.75" drill="0.8" shape="long"/>
+<pad name="A2" x="16.51" y="34.29" drill="0.8" shape="long"/>
+<pad name="A3" x="16.51" y="36.83" drill="0.8" shape="long"/>
+<pad name="A4" x="16.51" y="39.37" drill="0.8" shape="long"/>
+<pad name="A5" x="16.51" y="41.91" drill="0.8" shape="long"/>
+<pad name="A6" x="16.51" y="44.45" drill="0.8" shape="long"/>
+<pad name="A7" x="16.51" y="46.99" drill="0.8" shape="long"/>
+<pad name="A8" x="16.51" y="49.53" drill="0.8" shape="long"/>
+<pad name="D12" x="1.27" y="26.67" drill="0.8" shape="long"/>
+<pad name="D11" x="1.27" y="29.21" drill="0.8" shape="long"/>
+<pad name="D5" x="1.27" y="44.45" drill="0.8" shape="long"/>
+<pad name="D4(CANRX)" x="1.27" y="46.99" drill="0.8" shape="long"/>
+<pad name="D3(CANTX)" x="1.27" y="49.53" drill="0.8" shape="long"/>
+<pad name="D2" x="1.27" y="52.07" drill="0.8" shape="long"/>
+<pad name="GND" x="1.27" y="59.69" drill="0.8" shape="long"/>
+<pad name="VIN" x="16.51" y="59.69" drill="0.8" shape="long"/>
+<pad name="3.3V" x="16.51" y="54.61" drill="0.8" shape="long"/>
+<pad name="A9" x="16.51" y="52.07" drill="0.8" shape="long"/>
+<pad name="D0(RX1)" x="1.27" y="57.15" drill="0.8" shape="long" rot="R180"/>
+<pad name="D1(TX1)" x="1.27" y="54.61" drill="0.8" shape="long" rot="R180"/>
+<pad name="D10(TX2)" x="1.27" y="31.75" drill="0.8" shape="long"/>
+<pad name="D6" x="1.27" y="41.91" drill="0.8" shape="long" rot="R180"/>
+<pad name="D7(RX3)" x="1.27" y="39.37" drill="0.8" shape="long" rot="R180"/>
+<pad name="D8(TX3)" x="1.27" y="36.83" drill="0.8" shape="long" rot="R180"/>
+<pad name="D9(RX2)" x="1.27" y="34.29" drill="0.8" shape="long" rot="R180"/>
+<wire x1="17.78" y1="60.96" x2="17.78" y2="0" width="0.127" layer="21"/>
+<wire x1="17.78" y1="0" x2="0" y2="0" width="0.127" layer="21"/>
+<wire x1="0" y1="0" x2="0" y2="60.96" width="0.127" layer="21"/>
+<wire x1="5.08" y1="61.722" x2="12.7" y2="61.722" width="0.127" layer="21"/>
+<wire x1="12.7" y1="61.722" x2="12.7" y2="60.96" width="0.127" layer="21"/>
+<wire x1="5.08" y1="60.96" x2="5.08" y2="61.722" width="0.127" layer="21"/>
+<wire x1="0" y1="60.96" x2="5.08" y2="60.96" width="0.127" layer="21"/>
+<wire x1="12.7" y1="60.96" x2="17.78" y2="60.96" width="0.127" layer="21"/>
+<text x="10.16" y="24.13" size="2.54" layer="51" rot="R90">Teensy 3.5</text>
+<wire x1="5.08" y1="60.96" x2="5.08" y2="55.88" width="0.127" layer="21"/>
+<wire x1="5.08" y1="55.88" x2="12.7" y2="55.88" width="0.127" layer="21"/>
+<wire x1="12.7" y1="55.88" x2="12.7" y2="60.96" width="0.127" layer="21"/>
+<pad name="3.3V_1" x="1.27" y="24.13" drill="0.8" shape="long"/>
+<pad name="D24" x="1.27" y="21.59" drill="0.8" shape="long"/>
+<pad name="D25" x="1.27" y="19.05" drill="0.8" shape="long"/>
+<pad name="D26" x="1.27" y="16.51" drill="0.8" shape="long"/>
+<pad name="D27" x="1.27" y="13.97" drill="0.8" shape="long"/>
+<pad name="D28" x="1.27" y="11.43" drill="0.8" shape="long"/>
+<pad name="D29" x="1.27" y="8.89" drill="0.8" shape="long"/>
+<pad name="D30" x="1.27" y="6.35" drill="0.8" shape="long"/>
+<pad name="A12" x="1.27" y="3.81" drill="0.8" shape="long"/>
+<pad name="A13" x="1.27" y="1.27" drill="0.8" shape="long"/>
+<pad name="GND_1" x="16.51" y="24.13" drill="0.8" shape="long"/>
+<pad name="A22" x="16.51" y="21.59" drill="0.8" shape="long"/>
+<pad name="A21" x="16.51" y="19.05" drill="0.8" shape="long"/>
+<pad name="A20" x="16.51" y="16.51" drill="0.8" shape="long"/>
+<pad name="A19" x="16.51" y="13.97" drill="0.8" shape="long"/>
+<pad name="A18" x="16.51" y="11.43" drill="0.8" shape="long"/>
+<pad name="A17" x="16.51" y="8.89" drill="0.8" shape="long"/>
+<pad name="A16" x="16.51" y="6.35" drill="0.8" shape="long"/>
+<pad name="A15" x="16.51" y="3.81" drill="0.8" shape="long"/>
+<pad name="A14" x="16.51" y="1.27" drill="0.8" shape="long"/>
+<pad name="VBAT" x="3.81" y="13.97" drill="0.8" shape="long" rot="R90"/>
+<pad name="3.3V_2" x="6.35" y="13.97" drill="0.8" shape="long" rot="R90"/>
+<pad name="GND_2" x="8.89" y="13.97" drill="0.8" shape="long" rot="R90"/>
+<pad name="PROG" x="11.43" y="13.97" drill="0.8" shape="long" rot="R90"/>
+<pad name="RST" x="13.97" y="13.97" drill="0.8" shape="long" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MV">
@@ -1802,41 +1827,6 @@ MX150L™ Vertical PCB Header</description>
 <text x="-2.032" y="-4.318" size="1.524" layer="95">GND</text>
 <text x="-4.445" y="-0.635" size="1.524" layer="95">IN</text>
 <text x="0.635" y="-0.635" size="1.524" layer="95">OUT</text>
-</symbol>
-<symbol name="TEENSY_3.2_SIMPLE">
-<pin name="D0(RX1)" x="-2.54" y="35.56" visible="pin" length="short"/>
-<pin name="D1(TX1)" x="-2.54" y="33.02" visible="pin" length="short"/>
-<pin name="GND" x="-2.54" y="38.1" visible="pin" length="short"/>
-<wire x1="0" y1="40.64" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
-<wire x1="20.32" y1="0" x2="20.32" y2="40.64" width="0.254" layer="94"/>
-<wire x1="20.32" y1="40.64" x2="0" y2="40.64" width="0.254" layer="94"/>
-<text x="5.08" y="1.27" size="1.778" layer="95">Teensy 3.2</text>
-<pin name="D2" x="-2.54" y="30.48" visible="pin" length="short"/>
-<pin name="D3(CANTX)" x="-2.54" y="27.94" visible="pin" length="short"/>
-<pin name="D4(CANRX)" x="-2.54" y="25.4" visible="pin" length="short"/>
-<pin name="D5" x="-2.54" y="22.86" visible="pin" length="short"/>
-<pin name="D6" x="-2.54" y="20.32" visible="pin" length="short"/>
-<pin name="D7(RX3)" x="-2.54" y="17.78" visible="pin" length="short"/>
-<pin name="D8(TX3)" x="-2.54" y="15.24" visible="pin" length="short"/>
-<pin name="D9(RX2)" x="-2.54" y="12.7" visible="pin" length="short"/>
-<pin name="D10(TX2)" x="-2.54" y="10.16" visible="pin" length="short"/>
-<pin name="D11" x="-2.54" y="7.62" visible="pin" length="short"/>
-<pin name="D12" x="-2.54" y="5.08" visible="pin" length="short"/>
-<pin name="D13" x="22.86" y="5.08" visible="pin" length="short" rot="R180"/>
-<pin name="A0" x="22.86" y="7.62" visible="pin" length="short" rot="R180"/>
-<pin name="A1" x="22.86" y="10.16" visible="pin" length="short" rot="R180"/>
-<pin name="A2" x="22.86" y="12.7" visible="pin" length="short" rot="R180"/>
-<pin name="A3" x="22.86" y="15.24" visible="pin" length="short" rot="R180"/>
-<pin name="A4" x="22.86" y="17.78" visible="pin" length="short" rot="R180"/>
-<pin name="A6" x="22.86" y="22.86" visible="pin" length="short" rot="R180"/>
-<pin name="A5" x="22.86" y="20.32" visible="pin" length="short" rot="R180"/>
-<pin name="A7" x="22.86" y="25.4" visible="pin" length="short" rot="R180"/>
-<pin name="A9" x="22.86" y="30.48" visible="pin" length="short" rot="R180"/>
-<pin name="A8" x="22.86" y="27.94" visible="pin" length="short" rot="R180"/>
-<pin name="3.3V" x="22.86" y="33.02" visible="pin" length="short" rot="R180"/>
-<pin name="VIN" x="22.86" y="38.1" visible="pin" length="short" rot="R180"/>
-<pin name="AGND" x="22.86" y="35.56" visible="pin" length="short" rot="R180"/>
 </symbol>
 <symbol name="MCP2551">
 <wire x1="0" y1="11.43" x2="0" y2="-1.27" width="0.254" layer="94"/>
@@ -2208,6 +2198,66 @@ MX150L™ Vertical PCB Header</description>
 <pin name="S1" x="2.54" y="5.08" visible="pad" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="P1" x="2.54" y="-5.08" visible="pad" length="short" direction="pas" swaplevel="2" rot="R90"/>
 </symbol>
+<symbol name="TEENSY_3.5_SIMPLE_RTC">
+<pin name="D0(RX1)" x="-2.54" y="66.04" visible="pin" length="short"/>
+<pin name="D1(TX1)" x="-2.54" y="63.5" visible="pin" length="short"/>
+<pin name="GND" x="-2.54" y="68.58" visible="pin" length="short"/>
+<wire x1="0" y1="73.66" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="73.66" width="0.254" layer="94"/>
+<wire x1="20.32" y1="73.66" x2="0" y2="73.66" width="0.254" layer="94"/>
+<text x="5.08" y="70.866" size="1.778" layer="95">Teensy 3.5</text>
+<pin name="D2" x="-2.54" y="60.96" visible="pin" length="short"/>
+<pin name="D3(CANTX)" x="-2.54" y="58.42" visible="pin" length="short"/>
+<pin name="D4(CANRX)" x="-2.54" y="55.88" visible="pin" length="short"/>
+<pin name="D5" x="-2.54" y="53.34" visible="pin" length="short"/>
+<pin name="D6" x="-2.54" y="50.8" visible="pin" length="short"/>
+<pin name="D7(RX3)" x="-2.54" y="48.26" visible="pin" length="short"/>
+<pin name="D8(TX3)" x="-2.54" y="45.72" visible="pin" length="short"/>
+<pin name="D9(RX2)" x="-2.54" y="43.18" visible="pin" length="short"/>
+<pin name="D10(TX2)" x="-2.54" y="40.64" visible="pin" length="short"/>
+<pin name="D11" x="-2.54" y="38.1" visible="pin" length="short"/>
+<pin name="D12" x="-2.54" y="35.56" visible="pin" length="short"/>
+<pin name="D13" x="22.86" y="35.56" visible="pin" length="short" rot="R180"/>
+<pin name="A0" x="22.86" y="38.1" visible="pin" length="short" rot="R180"/>
+<pin name="A1" x="22.86" y="40.64" visible="pin" length="short" rot="R180"/>
+<pin name="A2" x="22.86" y="43.18" visible="pin" length="short" rot="R180"/>
+<pin name="A3" x="22.86" y="45.72" visible="pin" length="short" rot="R180"/>
+<pin name="A4" x="22.86" y="48.26" visible="pin" length="short" rot="R180"/>
+<pin name="A6" x="22.86" y="53.34" visible="pin" length="short" rot="R180"/>
+<pin name="A5" x="22.86" y="50.8" visible="pin" length="short" rot="R180"/>
+<pin name="A7" x="22.86" y="55.88" visible="pin" length="short" rot="R180"/>
+<pin name="A9" x="22.86" y="60.96" visible="pin" length="short" rot="R180"/>
+<pin name="A8" x="22.86" y="58.42" visible="pin" length="short" rot="R180"/>
+<pin name="3.3V" x="22.86" y="63.5" visible="pin" length="short" rot="R180"/>
+<pin name="VIN" x="22.86" y="68.58" visible="pin" length="short" rot="R180"/>
+<pin name="AGND" x="22.86" y="66.04" visible="pin" length="short" rot="R180"/>
+<pin name="3.3V_1" x="-2.54" y="33.02" visible="pin" length="short"/>
+<pin name="D24" x="-2.54" y="30.48" visible="pin" length="short"/>
+<pin name="D25" x="-2.54" y="27.94" visible="pin" length="short"/>
+<pin name="D26" x="-2.54" y="25.4" visible="pin" length="short"/>
+<pin name="D27" x="-2.54" y="22.86" visible="pin" length="short"/>
+<pin name="D28" x="-2.54" y="20.32" visible="pin" length="short"/>
+<pin name="D29" x="-2.54" y="17.78" visible="pin" length="short"/>
+<pin name="D30" x="-2.54" y="15.24" visible="pin" length="short"/>
+<pin name="A12" x="-2.54" y="12.7" visible="pin" length="short"/>
+<pin name="A13" x="-2.54" y="10.16" visible="pin" length="short"/>
+<pin name="A14" x="22.86" y="10.16" visible="pin" length="short" rot="R180"/>
+<pin name="A15" x="22.86" y="12.7" visible="pin" length="short" rot="R180"/>
+<pin name="A16" x="22.86" y="15.24" visible="pin" length="short" rot="R180"/>
+<pin name="A17" x="22.86" y="17.78" visible="pin" length="short" rot="R180"/>
+<pin name="A18" x="22.86" y="20.32" visible="pin" length="short" rot="R180"/>
+<pin name="A19" x="22.86" y="22.86" visible="pin" length="short" rot="R180"/>
+<pin name="A20" x="22.86" y="25.4" visible="pin" length="short" rot="R180"/>
+<pin name="A21" x="22.86" y="27.94" visible="pin" length="short" rot="R180"/>
+<pin name="A22" x="22.86" y="30.48" visible="pin" length="short" rot="R180"/>
+<pin name="GND_1" x="22.86" y="33.02" visible="pin" length="short" rot="R180"/>
+<pin name="VBAT" x="5.08" y="-2.54" visible="pin" length="short" rot="R90"/>
+<pin name="3.3V_2" x="7.62" y="-2.54" visible="pin" length="short" rot="R90"/>
+<pin name="GND_2" x="10.16" y="-2.54" visible="pin" length="short" rot="R90"/>
+<pin name="PROG" x="12.7" y="-2.54" visible="pin" length="short" rot="R90"/>
+<pin name="RST" x="15.24" y="-2.54" visible="pin" length="short" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="CONNECTOR-4" prefix="X">
@@ -2344,49 +2394,6 @@ MAX voltage in: 35V</description>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="IN" pad="1"/>
 <connect gate="G$1" pin="OUT" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="TEENSY_3.2_SIMPLE">
-<description>Simple version of the Teensy 3.2 board that only uses the 2 main rows of pins, not the inner pins or the pins opposite the usb port.</description>
-<gates>
-<gate name="G$1" symbol="TEENSY_3.2_SIMPLE" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TEENSY_3.2_SIMPLE">
-<connects>
-<connect gate="G$1" pin="3.3V" pad="3.3V"/>
-<connect gate="G$1" pin="A0" pad="A0"/>
-<connect gate="G$1" pin="A1" pad="A1"/>
-<connect gate="G$1" pin="A2" pad="A2"/>
-<connect gate="G$1" pin="A3" pad="A3"/>
-<connect gate="G$1" pin="A4" pad="A4"/>
-<connect gate="G$1" pin="A5" pad="A5"/>
-<connect gate="G$1" pin="A6" pad="A6"/>
-<connect gate="G$1" pin="A7" pad="A7"/>
-<connect gate="G$1" pin="A8" pad="A8"/>
-<connect gate="G$1" pin="A9" pad="A9"/>
-<connect gate="G$1" pin="AGND" pad="AGND"/>
-<connect gate="G$1" pin="D0(RX1)" pad="D0(RX1)"/>
-<connect gate="G$1" pin="D1(TX1)" pad="D1(TX1)"/>
-<connect gate="G$1" pin="D10(TX2)" pad="D10(TX2)"/>
-<connect gate="G$1" pin="D11" pad="D11"/>
-<connect gate="G$1" pin="D12" pad="D12"/>
-<connect gate="G$1" pin="D13" pad="D13"/>
-<connect gate="G$1" pin="D2" pad="D2"/>
-<connect gate="G$1" pin="D3(CANTX)" pad="D3(CANTX)"/>
-<connect gate="G$1" pin="D4(CANRX)" pad="D4(CANRX)"/>
-<connect gate="G$1" pin="D5" pad="D5"/>
-<connect gate="G$1" pin="D6" pad="D6"/>
-<connect gate="G$1" pin="D7(RX3)" pad="D7(RX3)"/>
-<connect gate="G$1" pin="D8(TX3)" pad="D8(TX3)"/>
-<connect gate="G$1" pin="D9(RX2)" pad="D9(RX2)"/>
-<connect gate="G$1" pin="GND" pad="GND"/>
-<connect gate="G$1" pin="VIN" pad="VIN"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3460,6 +3467,74 @@ Source: http://www.molex.com</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="TEENSY_3.5_EXT">
+<description>Simple version of the Teensy 3.5 board that only uses the 2 main rows of pins, plus the perpendicular row with VBat.</description>
+<gates>
+<gate name="G$1" symbol="TEENSY_3.5_SIMPLE_RTC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TEENSY_3.5_EXT">
+<connects>
+<connect gate="G$1" pin="3.3V" pad="3.3V"/>
+<connect gate="G$1" pin="3.3V_1" pad="3.3V_1"/>
+<connect gate="G$1" pin="3.3V_2" pad="3.3V_2"/>
+<connect gate="G$1" pin="A0" pad="A0"/>
+<connect gate="G$1" pin="A1" pad="A1"/>
+<connect gate="G$1" pin="A12" pad="A12"/>
+<connect gate="G$1" pin="A13" pad="A13"/>
+<connect gate="G$1" pin="A14" pad="A14"/>
+<connect gate="G$1" pin="A15" pad="A15"/>
+<connect gate="G$1" pin="A16" pad="A16"/>
+<connect gate="G$1" pin="A17" pad="A17"/>
+<connect gate="G$1" pin="A18" pad="A18"/>
+<connect gate="G$1" pin="A19" pad="A19"/>
+<connect gate="G$1" pin="A2" pad="A2"/>
+<connect gate="G$1" pin="A20" pad="A20"/>
+<connect gate="G$1" pin="A21" pad="A21"/>
+<connect gate="G$1" pin="A22" pad="A22"/>
+<connect gate="G$1" pin="A3" pad="A3"/>
+<connect gate="G$1" pin="A4" pad="A4"/>
+<connect gate="G$1" pin="A5" pad="A5"/>
+<connect gate="G$1" pin="A6" pad="A6"/>
+<connect gate="G$1" pin="A7" pad="A7"/>
+<connect gate="G$1" pin="A8" pad="A8"/>
+<connect gate="G$1" pin="A9" pad="A9"/>
+<connect gate="G$1" pin="AGND" pad="AGND"/>
+<connect gate="G$1" pin="D0(RX1)" pad="D0(RX1)"/>
+<connect gate="G$1" pin="D1(TX1)" pad="D1(TX1)"/>
+<connect gate="G$1" pin="D10(TX2)" pad="D10(TX2)"/>
+<connect gate="G$1" pin="D11" pad="D11"/>
+<connect gate="G$1" pin="D12" pad="D12"/>
+<connect gate="G$1" pin="D13" pad="D13"/>
+<connect gate="G$1" pin="D2" pad="D2"/>
+<connect gate="G$1" pin="D24" pad="D24"/>
+<connect gate="G$1" pin="D25" pad="D25"/>
+<connect gate="G$1" pin="D26" pad="D26"/>
+<connect gate="G$1" pin="D27" pad="D27"/>
+<connect gate="G$1" pin="D28" pad="D28"/>
+<connect gate="G$1" pin="D29" pad="D29"/>
+<connect gate="G$1" pin="D3(CANTX)" pad="D3(CANTX)"/>
+<connect gate="G$1" pin="D30" pad="D30"/>
+<connect gate="G$1" pin="D4(CANRX)" pad="D4(CANRX)"/>
+<connect gate="G$1" pin="D5" pad="D5"/>
+<connect gate="G$1" pin="D6" pad="D6"/>
+<connect gate="G$1" pin="D7(RX3)" pad="D7(RX3)"/>
+<connect gate="G$1" pin="D8(TX3)" pad="D8(TX3)"/>
+<connect gate="G$1" pin="D9(RX2)" pad="D9(RX2)"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GND_1" pad="GND_1"/>
+<connect gate="G$1" pin="GND_2" pad="GND_2"/>
+<connect gate="G$1" pin="PROG" pad="PROG"/>
+<connect gate="G$1" pin="RST" pad="RST"/>
+<connect gate="G$1" pin="VBAT" pad="VBAT"/>
+<connect gate="G$1" pin="VIN" pad="VIN"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="HyTechSymbols">
@@ -3627,7 +3702,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="BUS1" library="HyTechDevices" deviceset="CONNECTOR-4" device=""/>
 <part name="REG" library="HyTechDevices" deviceset="5V_REGULATOR_LM340-N" device="LM340MPX-5.0/NOPB" value="5V"/>
 <part name="GND1" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="U$3" library="HyTechDevices" deviceset="TEENSY_3.2_SIMPLE" device=""/>
 <part name="GND10" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="CAN_TRANSCEIVER" library="HyTechDevices" deviceset="MCP2551" device="" value="MCP2551"/>
 <part name="GND12" library="HyTechSymbols" deviceset="GND" device=""/>
@@ -3667,7 +3741,6 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="LED5" library="HyTechDevices" deviceset="LED" device="-0805" value="Yellow"/>
 <part name="R14" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="820"/>
 <part name="GND6" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="R15" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="120"/>
 <part name="C1" library="HyTechDevices" deviceset="CAP" device="0805" value=".22uF"/>
 <part name="C2" library="HyTechDevices" deviceset="CAP" device="0805" value=".1uF"/>
 <part name="GND7" library="HyTechSymbols" deviceset="GND" device=""/>
@@ -3754,22 +3827,14 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="C6" library="HyTechDevices" deviceset="CAP" device="0805" value=".1uF"/>
 <part name="GND39" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+19" library="supply1" deviceset="+12V" device=""/>
-<part name="FH_FUSE" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE" value="8A"/>
-<part name="P+18" library="supply1" deviceset="+12V" device=""/>
 <part name="P+20" library="supply1" deviceset="+12V" device=""/>
 <part name="P+21" library="supply1" deviceset="+12V" device=""/>
-<part name="GPIO_SSR2" library="HyTechDevices" deviceset="CPC1002N" device=""/>
 <part name="GPIO_SSR1" library="HyTechDevices" deviceset="CPC1002N" device=""/>
 <part name="P+11" library="supply1" deviceset="+12V" device=""/>
-<part name="P+22" library="supply1" deviceset="+12V" device=""/>
 <part name="U$10" library="HyTechDevices" deviceset="JUMPER" device="" value="JUMPER"/>
-<part name="U$11" library="HyTechDevices" deviceset="JUMPER" device="" value="JUMPER"/>
 <part name="R29" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="43"/>
-<part name="R30" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="43"/>
 <part name="LED14" library="HyTechDevices" deviceset="LED" device="-0805" value="Red"/>
-<part name="LED15" library="HyTechDevices" deviceset="LED" device="-0805" value="Red"/>
 <part name="GND40" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="GND41" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+25" library="supply1" deviceset="+5V" device=""/>
 <part name="P+26" library="supply1" deviceset="+5V" device=""/>
 <part name="S1" library="HyTechDevices" deviceset="BTN_10-XX" device="SMD"/>
@@ -3798,11 +3863,11 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="GND45" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="R31" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1.2K"/>
 <part name="X1" library="HyTechDevices" deviceset="CONNECTOR-8" device="MX150L_RIGHT_ANGLE-8"/>
+<part name="U$4" library="HyTechDevices" deviceset="TEENSY_3.5_EXT" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="149.86" y="220.98" size="1.778" layer="97">Install FH_FUSE for Formula Hybrid</text>
 <wire x1="0" y1="162.56" x2="96.52" y2="162.56" width="0.1524" layer="90"/>
 <wire x1="96.52" y1="162.56" x2="96.52" y2="0" width="0.1524" layer="90"/>
 <wire x1="96.52" y1="0" x2="0" y2="0" width="0.1524" layer="90"/>
@@ -3848,7 +3913,6 @@ GPIO_SSR not installed</text>
 <instance part="BUS1" gate="-4" x="48.26" y="111.76" rot="MR0"/>
 <instance part="REG" gate="G$1" x="152.4" y="208.28"/>
 <instance part="GND1" gate="1" x="152.4" y="195.58"/>
-<instance part="U$3" gate="G$1" x="337.82" y="182.88"/>
 <instance part="GND10" gate="1" x="335.28" y="223.52" rot="R180"/>
 <instance part="CAN_TRANSCEIVER" gate="G$1" x="314.96" y="218.44" rot="R180"/>
 <instance part="GND12" gate="1" x="325.12" y="213.36" rot="R90"/>
@@ -3891,7 +3955,6 @@ GPIO_SSR not installed</text>
 <instance part="LED5" gate="LED" x="340.36" y="66.04" rot="R180"/>
 <instance part="R14" gate="G$1" x="340.36" y="55.88" rot="R90"/>
 <instance part="GND6" gate="1" x="342.9" y="73.66" rot="R90"/>
-<instance part="R15" gate="G$1" x="289.56" y="228.6" rot="MR180"/>
 <instance part="C1" gate="G$1" x="137.16" y="210.82"/>
 <instance part="C2" gate="G$1" x="162.56" y="210.82"/>
 <instance part="GND7" gate="1" x="172.72" y="215.9" rot="R90"/>
@@ -3912,7 +3975,7 @@ GPIO_SSR not installed</text>
 <instance part="P+1" gate="1" x="320.04" y="228.6"/>
 <instance part="P+2" gate="1" x="419.1" y="228.6" rot="R270"/>
 <instance part="P+3" gate="1" x="162.56" y="200.66" rot="R180"/>
-<instance part="P+4" gate="1" x="365.76" y="223.52" rot="R270"/>
+<instance part="P+4" gate="1" x="365.76" y="220.98" rot="R270"/>
 <instance part="GND21" gate="1" x="403.86" y="124.46" rot="R180"/>
 <instance part="R19" gate="G$1" x="403.86" y="114.3" rot="R90"/>
 <instance part="R18" gate="G$1" x="335.28" y="116.84" rot="R90"/>
@@ -3987,22 +4050,14 @@ GPIO_SSR not installed</text>
 <instance part="C6" gate="G$1" x="10.16" y="220.98" rot="R90"/>
 <instance part="GND39" gate="1" x="10.16" y="231.14" rot="R90"/>
 <instance part="P+19" gate="1" x="20.32" y="195.58" rot="R270"/>
-<instance part="FH_FUSE" gate="G$1" x="162.56" y="228.6" rot="MR0"/>
-<instance part="P+18" gate="1" x="180.34" y="228.6" rot="R270"/>
 <instance part="P+20" gate="1" x="88.9" y="119.38" rot="R270"/>
 <instance part="P+21" gate="1" x="88.9" y="96.52" rot="R270"/>
-<instance part="GPIO_SSR2" gate="G$1" x="241.3" y="121.92"/>
 <instance part="GPIO_SSR1" gate="G$1" x="241.3" y="160.02"/>
 <instance part="P+11" gate="1" x="256.54" y="162.56" rot="R270"/>
-<instance part="P+22" gate="1" x="256.54" y="124.46" rot="R270"/>
 <instance part="U$10" gate="G$1" x="241.3" y="172.72"/>
-<instance part="U$11" gate="G$1" x="241.3" y="134.62"/>
 <instance part="R29" gate="G$1" x="233.68" y="144.78" rot="MR180"/>
-<instance part="R30" gate="G$1" x="233.68" y="106.68" rot="MR180"/>
 <instance part="LED14" gate="LED" x="243.84" y="144.78" rot="R90"/>
-<instance part="LED15" gate="LED" x="243.84" y="106.68" rot="R90"/>
 <instance part="GND40" gate="1" x="254" y="144.78" rot="R90"/>
-<instance part="GND41" gate="1" x="254" y="106.68" rot="R90"/>
 <instance part="P+25" gate="1" x="335.28" y="91.44" rot="R270"/>
 <instance part="P+26" gate="1" x="406.4" y="88.9" rot="R270"/>
 <instance part="S1" gate="1" x="375.92" y="119.38" rot="R270"/>
@@ -4038,6 +4093,7 @@ GPIO_SSR not installed</text>
 <instance part="X1" gate="-6" x="48.26" y="137.16" rot="MR0"/>
 <instance part="X1" gate="-7" x="48.26" y="134.62" rot="MR0"/>
 <instance part="X1" gate="-8" x="48.26" y="132.08" rot="MR0"/>
+<instance part="U$4" gate="G$1" x="337.82" y="152.4"/>
 </instances>
 <busses>
 </busses>
@@ -4049,18 +4105,14 @@ GPIO_SSR not installed</text>
 <wire x1="152.4" y1="200.66" x2="152.4" y2="198.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="GND"/>
-<pinref part="GND10" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="R9" gate="G$1" pin="1"/>
 <pinref part="GND26" gate="1" pin="GND"/>
 <wire x1="398.78" y1="218.44" x2="396.24" y2="218.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="AGND"/>
 <wire x1="363.22" y1="218.44" x2="360.68" y2="218.44" width="0.1524" layer="91"/>
 <pinref part="GND29" gate="1" pin="GND"/>
+<pinref part="U$4" gate="G$1" pin="AGND"/>
 </segment>
 <segment>
 <pinref part="CAN_TRANSCEIVER" gate="G$1" pin="2"/>
@@ -4258,11 +4310,6 @@ GPIO_SSR not installed</text>
 <wire x1="251.46" y1="144.78" x2="248.92" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="LED15" gate="LED" pin="C"/>
-<pinref part="GND41" gate="1" pin="GND"/>
-<wire x1="251.46" y1="106.68" x2="248.92" y2="106.68" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="S1" gate="1" pin="S"/>
 <pinref part="S1" gate="1" pin="S1"/>
 <wire x1="381" y1="119.38" x2="381" y2="116.84" width="0.1524" layer="91"/>
@@ -4305,21 +4352,25 @@ GPIO_SSR not installed</text>
 <pinref part="LED17" gate="LED" pin="C"/>
 <wire x1="477.52" y1="73.66" x2="474.98" y2="73.66" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND10" gate="1" pin="GND"/>
+<pinref part="U$4" gate="G$1" pin="GND"/>
+</segment>
 </net>
 <net name="N$2" class="0">
 <segment>
 <pinref part="CAN_TRANSCEIVER" gate="G$1" pin="4"/>
-<pinref part="U$3" gate="G$1" pin="D4(CANRX)"/>
 <wire x1="317.5" y1="218.44" x2="330.2" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="330.2" y1="218.44" x2="330.2" y2="208.28" width="0.1524" layer="91"/>
 <wire x1="330.2" y1="208.28" x2="335.28" y2="208.28" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="D4(CANRX)"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="D3(CANTX)"/>
 <pinref part="CAN_TRANSCEIVER" gate="G$1" pin="1"/>
 <wire x1="335.28" y1="210.82" x2="317.5" y2="210.82" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="D3(CANTX)"/>
 </segment>
 </net>
 <net name="IMD_COIL_PWR" class="0">
@@ -4358,11 +4409,9 @@ GPIO_SSR not installed</text>
 </net>
 <net name="CANL" class="0">
 <segment>
-<pinref part="R15" gate="G$1" pin="2"/>
 <pinref part="CAN_TRANSCEIVER" gate="G$1" pin="6"/>
 <wire x1="294.64" y1="215.9" x2="297.18" y2="215.9" width="0.1524" layer="91"/>
 <label x="294.64" y="215.9" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="294.64" y1="228.6" x2="294.64" y2="215.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="50.8" y1="139.7" x2="53.34" y2="139.7" width="0.1524" layer="91"/>
@@ -4389,9 +4438,7 @@ GPIO_SSR not installed</text>
 <segment>
 <pinref part="CAN_TRANSCEIVER" gate="G$1" pin="7"/>
 <label x="284.48" y="213.36" size="1.27" layer="95" rot="R180" xref="yes"/>
-<pinref part="R15" gate="G$1" pin="1"/>
 <wire x1="297.18" y1="213.36" x2="284.48" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="284.48" y1="213.36" x2="284.48" y2="228.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="BUS1" gate="-4" pin="S"/>
@@ -4474,9 +4521,9 @@ GPIO_SSR not installed</text>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="388.62" y1="203.2" x2="388.62" y2="190.5" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="A0"/>
 <wire x1="388.62" y1="190.5" x2="360.68" y2="190.5" width="0.1524" layer="91"/>
 <junction x="388.62" y="190.5"/>
+<pinref part="U$4" gate="G$1" pin="A0"/>
 </segment>
 </net>
 <net name="BMS_OK_READ" class="0">
@@ -4484,10 +4531,10 @@ GPIO_SSR not installed</text>
 <pinref part="R3" gate="G$1" pin="2"/>
 <pinref part="R4" gate="G$1" pin="1"/>
 <wire x1="396.24" y1="190.5" x2="396.24" y2="193.04" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="A1"/>
 <wire x1="396.24" y1="193.04" x2="396.24" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="360.68" y1="193.04" x2="396.24" y2="193.04" width="0.1524" layer="91"/>
 <junction x="396.24" y="193.04"/>
+<pinref part="U$4" gate="G$1" pin="A1"/>
 </segment>
 </net>
 <net name="SHUTDOWN_OUT_READ" class="0">
@@ -4495,10 +4542,10 @@ GPIO_SSR not installed</text>
 <pinref part="R6" gate="G$1" pin="1"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="403.86" y1="203.2" x2="403.86" y2="195.58" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="A2"/>
 <wire x1="403.86" y1="195.58" x2="403.86" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="360.68" y1="195.58" x2="403.86" y2="195.58" width="0.1524" layer="91"/>
 <junction x="403.86" y="195.58"/>
+<pinref part="U$4" gate="G$1" pin="A2"/>
 </segment>
 </net>
 <net name="12VSUPPLY_READ" class="0">
@@ -4506,23 +4553,23 @@ GPIO_SSR not installed</text>
 <pinref part="R8" gate="G$1" pin="1"/>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="411.48" y1="203.2" x2="411.48" y2="198.12" width="0.1524" layer="91"/>
-<pinref part="U$3" gate="G$1" pin="A3"/>
 <wire x1="411.48" y1="198.12" x2="411.48" y2="190.5" width="0.1524" layer="91"/>
 <wire x1="360.68" y1="198.12" x2="411.48" y2="198.12" width="0.1524" layer="91"/>
 <junction x="411.48" y="198.12"/>
+<pinref part="U$4" gate="G$1" pin="A3"/>
 </segment>
 </net>
 <net name="N$15" class="0">
 <segment>
 <pinref part="R9" gate="G$1" pin="2"/>
 <pinref part="BOARD_TEMP" gate="G$1" pin="2"/>
-<pinref part="U$3" gate="G$1" pin="A5"/>
 <wire x1="360.68" y1="203.2" x2="383.54" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="383.54" y1="203.2" x2="383.54" y2="218.44" width="0.1524" layer="91"/>
 <wire x1="383.54" y1="218.44" x2="383.54" y2="228.6" width="0.1524" layer="91"/>
 <wire x1="386.08" y1="218.44" x2="383.54" y2="218.44" width="0.1524" layer="91"/>
 <junction x="383.54" y="218.44"/>
 <wire x1="383.54" y1="228.6" x2="391.16" y2="228.6" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="A5"/>
 </segment>
 </net>
 <net name="OKHS" class="0">
@@ -4595,9 +4642,9 @@ GPIO_SSR not installed</text>
 <label x="190.5" y="132.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="D6"/>
 <wire x1="335.28" y1="203.2" x2="332.74" y2="203.2" width="0.1524" layer="91"/>
 <label x="332.74" y="203.2" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$4" gate="G$1" pin="D6"/>
 </segment>
 </net>
 <net name="INVERTER_SUPPLY" class="0">
@@ -4745,9 +4792,9 @@ GPIO_SSR not installed</text>
 <wire x1="162.56" y1="203.2" x2="162.56" y2="208.28" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="VIN"/>
 <pinref part="P+4" gate="1" pin="+5V"/>
-<wire x1="363.22" y1="223.52" x2="360.68" y2="220.98" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="220.98" x2="360.68" y2="220.98" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="VIN"/>
 </segment>
 <segment>
 <pinref part="BOARD_TEMP" gate="G$1" pin="1"/>
@@ -4868,19 +4915,9 @@ GPIO_SSR not installed</text>
 <pinref part="P+19" gate="1" pin="+12V"/>
 </segment>
 <segment>
-<pinref part="FH_FUSE" gate="G$1" pin="P1"/>
-<pinref part="P+18" gate="1" pin="+12V"/>
-<wire x1="177.8" y1="228.6" x2="172.72" y2="228.6" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GPIO_SSR1" gate="G$1" pin="DC+"/>
 <pinref part="P+11" gate="1" pin="+12V"/>
 <wire x1="254" y1="162.56" x2="251.46" y2="162.56" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="GPIO_SSR2" gate="G$1" pin="DC+"/>
-<pinref part="P+22" gate="1" pin="+12V"/>
-<wire x1="254" y1="124.46" x2="251.46" y2="124.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="FUSE_BUS_1" gate="G$1" pin="P1"/>
@@ -4905,11 +4942,6 @@ GPIO_SSR not installed</text>
 <pinref part="X1" gate="-7" pin="S"/>
 </segment>
 <segment>
-<pinref part="FH_FUSE" gate="G$1" pin="P2"/>
-<wire x1="152.4" y1="228.6" x2="149.86" y2="228.6" width="0.1524" layer="91"/>
-<label x="149.86" y="228.6" size="1.27" layer="95" rot="MR0" xref="yes"/>
-</segment>
-<segment>
 <pinref part="SHUTDWN_FUSE" gate="G$1" pin="P2"/>
 <wire x1="208.28" y1="210.82" x2="205.74" y2="210.82" width="0.1524" layer="91"/>
 <label x="205.74" y="210.82" size="1.27" layer="95" rot="MR0" xref="yes"/>
@@ -4917,9 +4949,9 @@ GPIO_SSR not installed</text>
 </net>
 <net name="XB8" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="D7(RX3)"/>
 <wire x1="335.28" y1="200.66" x2="332.74" y2="200.66" width="0.1524" layer="91"/>
 <label x="332.74" y="200.66" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$4" gate="G$1" pin="D7(RX3)"/>
 </segment>
 <segment>
 <pinref part="XB" gate="G$1" pin="DO8"/>
@@ -4929,9 +4961,9 @@ GPIO_SSR not installed</text>
 </net>
 <net name="XBDO" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="D9(RX2)"/>
 <wire x1="335.28" y1="195.58" x2="332.74" y2="195.58" width="0.1524" layer="91"/>
 <label x="332.74" y="195.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$4" gate="G$1" pin="D9(RX2)"/>
 </segment>
 <segment>
 <pinref part="XB" gate="G$1" pin="DOUT"/>
@@ -4941,9 +4973,9 @@ GPIO_SSR not installed</text>
 </net>
 <net name="XBDI" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="D10(TX2)"/>
 <wire x1="335.28" y1="193.04" x2="332.74" y2="193.04" width="0.1524" layer="91"/>
 <label x="332.74" y="193.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$4" gate="G$1" pin="D10(TX2)"/>
 </segment>
 <segment>
 <pinref part="XB" gate="G$1" pin="DIN"/>
@@ -5056,10 +5088,10 @@ GPIO_SSR not installed</text>
 <label x="167.64" y="40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="D2"/>
 <wire x1="335.28" y1="213.36" x2="332.74" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="332.74" y1="213.36" x2="332.74" y2="231.14" width="0.1524" layer="91"/>
 <label x="332.74" y="231.14" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$4" gate="G$1" pin="D2"/>
 </segment>
 </net>
 <net name="RELAY_CTRL1" class="0">
@@ -5069,9 +5101,9 @@ GPIO_SSR not installed</text>
 <label x="167.64" y="5.08" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="A9"/>
 <wire x1="360.68" y1="213.36" x2="363.22" y2="213.36" width="0.1524" layer="91"/>
 <label x="363.22" y="213.36" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$4" gate="G$1" pin="A9"/>
 </segment>
 </net>
 <net name="FAN2-" class="0">
@@ -5138,23 +5170,11 @@ GPIO_SSR not installed</text>
 <wire x1="167.64" y1="45.72" x2="170.18" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="GPIO_2" class="0">
-<segment>
-<pinref part="U$11" gate="G$1" pin="P$2"/>
-<wire x1="246.38" y1="132.08" x2="254" y2="132.08" width="0.1524" layer="91"/>
-<label x="254" y="132.08" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="GPIO_SSR2" gate="G$1" pin="DC-"/>
-<wire x1="251.46" y1="119.38" x2="254" y2="119.38" width="0.1524" layer="91"/>
-<label x="254" y="119.38" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="BRAKE_LIGHT_CTRL" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="D12"/>
 <wire x1="335.28" y1="187.96" x2="332.74" y2="187.96" width="0.1524" layer="91"/>
 <label x="332.74" y="187.96" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$4" gate="G$1" pin="D12"/>
 </segment>
 <segment>
 <pinref part="R10" gate="G$1" pin="2"/>
@@ -5162,28 +5182,11 @@ GPIO_SSR not installed</text>
 <label x="149.86" y="157.48" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GPIO_CTRL2" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="D5"/>
-<wire x1="335.28" y1="205.74" x2="332.74" y2="205.74" width="0.1524" layer="91"/>
-<label x="332.74" y="205.74" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$11" gate="G$1" pin="P$1"/>
-<wire x1="241.3" y1="132.08" x2="228.6" y2="132.08" width="0.1524" layer="91"/>
-<label x="228.6" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="GPIO_SSR2" gate="G$1" pin="CONTROL+"/>
-<wire x1="231.14" y1="124.46" x2="228.6" y2="124.46" width="0.1524" layer="91"/>
-<label x="228.6" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="GPIO_CTRL1" class="0">
 <segment>
-<pinref part="U$3" gate="G$1" pin="A4"/>
 <wire x1="363.22" y1="200.66" x2="360.68" y2="200.66" width="0.1524" layer="91"/>
 <label x="363.22" y="200.66" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$4" gate="G$1" pin="A4"/>
 </segment>
 <segment>
 <pinref part="U$10" gate="G$1" pin="P$1"/>
@@ -5221,26 +5224,11 @@ GPIO_SSR not installed</text>
 <wire x1="228.6" y1="157.48" x2="228.6" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="GPIO_SSR2" gate="G$1" pin="CONTROL-"/>
-<wire x1="231.14" y1="119.38" x2="228.6" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="R30" gate="G$1" pin="1"/>
-<wire x1="228.6" y1="119.38" x2="228.6" y2="106.68" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$13" class="0">
 <segment>
 <pinref part="R29" gate="G$1" pin="2"/>
 <pinref part="LED14" gate="LED" pin="A"/>
 <wire x1="241.3" y1="144.78" x2="238.76" y2="144.78" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="R30" gate="G$1" pin="2"/>
-<pinref part="LED15" gate="LED" pin="A"/>
-<wire x1="241.3" y1="106.68" x2="238.76" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LATCH_EXT_BUTTON" class="0">
@@ -5313,9 +5301,9 @@ GPIO_SSR not installed</text>
 <label x="167.64" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="A8"/>
 <wire x1="360.68" y1="210.82" x2="363.22" y2="210.82" width="0.1524" layer="91"/>
 <label x="363.22" y="210.82" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$4" gate="G$1" pin="A8"/>
 </segment>
 </net>
 <net name="N$40" class="0">
@@ -5339,9 +5327,9 @@ GPIO_SSR not installed</text>
 <label x="434.34" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$3" gate="G$1" pin="A7"/>
 <wire x1="360.68" y1="208.28" x2="363.22" y2="208.28" width="0.1524" layer="91"/>
 <label x="363.22" y="208.28" size="0.8128" layer="95" xref="yes"/>
+<pinref part="U$4" gate="G$1" pin="A7"/>
 </segment>
 </net>
 <net name="N$46" class="0">
