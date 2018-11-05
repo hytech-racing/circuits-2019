@@ -9622,12 +9622,14 @@ Source: Mitsubishi M5218AL/P/FP</description>
 </package>
 <package name="AUTOSPORT_12-04">
 <circle x="0" y="0" radius="8.72" width="0.127" layer="21"/>
-<pad name="P$1" x="0" y="3.81" drill="1.75"/>
-<pad name="P$2" x="3.7084" y="0.889" drill="1.75"/>
-<pad name="P$3" x="0" y="-2.1082" drill="1.75"/>
-<pad name="P$4" x="-3.7084" y="0.889" drill="1.75"/>
-<hole x="-14.55" y="0" drill="3.6"/>
-<hole x="14.55" y="0" drill="3.6"/>
+<pad name="P$1" x="0" y="3.81" drill="2"/>
+<pad name="P$2" x="3.7084" y="0.889" drill="2"/>
+<pad name="P$3" x="0" y="-2.1082" drill="2"/>
+<pad name="P$4" x="-3.7084" y="0.889" drill="2"/>
+<hole x="-14.55" y="0" drill="3.3"/>
+<hole x="14.55" y="0" drill="3.3"/>
+<circle x="-14.55" y="0" radius="3" width="0.127" layer="40"/>
+<circle x="14.55" y="0" radius="3" width="0.127" layer="40"/>
 </package>
 <package name="AUTOSPORT_14-35">
 <circle x="0" y="0" radius="10.3" width="0.127" layer="21"/>
@@ -9668,8 +9670,10 @@ Source: Mitsubishi M5218AL/P/FP</description>
 <pad name="P$35" x="-2.286" y="-0.1016" drill="1"/>
 <pad name="P$36" x="-1.143" y="1.8796" drill="1"/>
 <pad name="P$37" x="0" y="-0.1016" drill="1"/>
-<hole x="-16.25" y="0" drill="3.6"/>
-<hole x="16.25" y="0" drill="3.6"/>
+<hole x="-16.25" y="0" drill="3.3"/>
+<hole x="16.25" y="0" drill="3.3"/>
+<circle x="-16.25" y="0" radius="3" width="0.127" layer="40"/>
+<circle x="16.25" y="0" radius="3" width="0.127" layer="40"/>
 </package>
 </packages>
 <symbols>
@@ -20327,6 +20331,41 @@ Source: http://www.molex.com</description>
 </gates>
 <devices>
 <device name="DIP" package="DIL28-3">
+<connects>
+<connect gate="G$1" pin="!CS" pad="11"/>
+<connect gate="G$1" pin="!RESET" pad="18"/>
+<connect gate="G$1" pin="A0" pad="15"/>
+<connect gate="G$1" pin="A1" pad="16"/>
+<connect gate="G$1" pin="A2" pad="17"/>
+<connect gate="G$1" pin="GPA0" pad="21"/>
+<connect gate="G$1" pin="GPA1" pad="22"/>
+<connect gate="G$1" pin="GPA2" pad="23"/>
+<connect gate="G$1" pin="GPA3" pad="24"/>
+<connect gate="G$1" pin="GPA4" pad="25"/>
+<connect gate="G$1" pin="GPA5" pad="26"/>
+<connect gate="G$1" pin="GPA6" pad="27"/>
+<connect gate="G$1" pin="GPA7" pad="28"/>
+<connect gate="G$1" pin="GPB0" pad="1"/>
+<connect gate="G$1" pin="GPB1" pad="2"/>
+<connect gate="G$1" pin="GPB2" pad="3"/>
+<connect gate="G$1" pin="GPB3" pad="4"/>
+<connect gate="G$1" pin="GPB4" pad="5"/>
+<connect gate="G$1" pin="GPB5" pad="6"/>
+<connect gate="G$1" pin="GPB6" pad="7"/>
+<connect gate="G$1" pin="GPB7" pad="8"/>
+<connect gate="G$1" pin="INTA" pad="20"/>
+<connect gate="G$1" pin="INTB" pad="19"/>
+<connect gate="G$1" pin="SCK" pad="12"/>
+<connect gate="G$1" pin="SI" pad="13"/>
+<connect gate="G$1" pin="SO" pad="14"/>
+<connect gate="G$1" pin="VDD" pad="9"/>
+<connect gate="G$1" pin="VSS" pad="10"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOIC_WIDE" package="SOIC-28W">
 <connects>
 <connect gate="G$1" pin="!CS" pad="11"/>
 <connect gate="G$1" pin="!RESET" pad="18"/>
