@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.3.1">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -9434,6 +9434,64 @@ Source: Mitsubishi M5218AL/P/FP</description>
 <smd name="P$7" x="18.5" y="-15.5" dx="3" dy="1" layer="1" rot="R90"/>
 <smd name="P$8" x="20.5" y="-15.5" dx="3" dy="1" layer="1" rot="R90"/>
 </package>
+<package name="MX150L-RIGHT_ANGLE-4">
+<pad name="P$1" x="17.6784" y="2.921" drill="1.524"/>
+<pad name="P$2" x="23.5204" y="2.921" drill="1.524"/>
+<pad name="P$3" x="17.6784" y="-2.921" drill="1.524"/>
+<pad name="P$4" x="23.5204" y="-2.921" drill="1.524"/>
+<hole x="0" y="0" drill="4.7752"/>
+<hole x="41.2496" y="0" drill="4.7752"/>
+<wire x1="-3.81" y1="-12.446" x2="45.0596" y2="-12.446" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="7.8994" x2="45.0596" y2="7.8994" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="7.8994" x2="-3.81" y2="-12.446" width="0.127" layer="21"/>
+<wire x1="45.0596" y1="7.8994" x2="45.0596" y2="-12.446" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-12.7" x2="12.7" y2="-25.4" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-25.4" x2="27.94" y2="-25.4" width="0.127" layer="21"/>
+<wire x1="27.94" y1="-25.4" x2="27.94" y2="-12.7" width="0.127" layer="21"/>
+</package>
+<package name="MX150L-RIGHT_ANGLE-10">
+<pad name="1" x="17.1958" y="2.921" drill="1.524"/>
+<pad name="2" x="23.0378" y="2.921" drill="1.524"/>
+<pad name="6" x="17.1958" y="-2.921" drill="1.524"/>
+<pad name="7" x="23.0378" y="-2.921" drill="1.524"/>
+<hole x="0" y="0" drill="4.7752"/>
+<hole x="57.7596" y="0" drill="4.7752"/>
+<wire x1="-3.81" y1="-12.446" x2="61.5696" y2="-12.446" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="7.8994" x2="61.5696" y2="7.8994" width="0.127" layer="21"/>
+<wire x1="-3.81" y1="7.8994" x2="-3.81" y2="-12.446" width="0.127" layer="21"/>
+<wire x1="61.5696" y1="7.8994" x2="61.5696" y2="-12.446" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-12.7" x2="12.7" y2="-25.4" width="0.127" layer="21"/>
+<wire x1="12.7" y1="-25.4" x2="44.45" y2="-25.4" width="0.127" layer="21"/>
+<wire x1="44.45" y1="-25.4" x2="44.45" y2="-12.7" width="0.127" layer="21"/>
+<pad name="3" x="28.8798" y="2.921" drill="1.524"/>
+<pad name="4" x="34.7218" y="2.921" drill="1.524"/>
+<pad name="8" x="28.8798" y="-2.921" drill="1.524"/>
+<pad name="9" x="34.7218" y="-2.921" drill="1.524"/>
+<pad name="5" x="40.5638" y="2.921" drill="1.524"/>
+<pad name="10" x="40.5638" y="-2.921" drill="1.524"/>
+</package>
+<package name="TB6612FNG_BREAKOUT">
+<pad name="6" x="-7.62" y="-3.81" drill="1.016" shape="long"/>
+<pad name="5" x="-7.62" y="-1.27" drill="1.016" shape="long"/>
+<pad name="4" x="-7.62" y="1.27" drill="1.016" shape="long"/>
+<pad name="3" x="-7.62" y="3.81" drill="1.016" shape="long"/>
+<pad name="2" x="-7.62" y="6.35" drill="1.016" shape="long"/>
+<pad name="1" x="-7.62" y="8.89" drill="1.016" shape="long"/>
+<pad name="7" x="-7.62" y="-6.35" drill="1.016" shape="long"/>
+<pad name="8" x="-7.62" y="-8.89" drill="1.016" shape="long"/>
+<pad name="9" x="7.62" y="-8.89" drill="1.016" shape="long"/>
+<pad name="10" x="7.62" y="-6.35" drill="1.016" shape="long"/>
+<pad name="11" x="7.62" y="-3.81" drill="1.016" shape="long"/>
+<pad name="12" x="7.62" y="-1.27" drill="1.016" shape="long"/>
+<pad name="13" x="7.62" y="1.27" drill="1.016" shape="long"/>
+<pad name="14" x="7.62" y="3.81" drill="1.016" shape="long"/>
+<pad name="15" x="7.62" y="6.35" drill="1.016" shape="long"/>
+<pad name="16" x="7.62" y="8.89" drill="1.016" shape="long"/>
+<wire x1="-10.16" y1="10.16" x2="-10.16" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="-10.16" x2="10.16" y2="-10.16" width="0.127" layer="21"/>
+<wire x1="10.16" y1="-10.16" x2="10.16" y2="10.16" width="0.127" layer="21"/>
+<wire x1="10.16" y1="10.16" x2="-10.16" y2="10.16" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_NANO">
@@ -12838,6 +12896,44 @@ Demo Board</text>
 <pin name="SDA" x="-7.62" y="-5.08" visible="pin" length="short" direction="pas"/>
 <pin name="SCL" x="-7.62" y="-2.54" visible="pin" length="short" direction="pas"/>
 </symbol>
+<symbol name="TB6612FNG_BREAKOUT">
+<wire x1="0" y1="0" x2="0" y2="22.86" width="0.254" layer="94"/>
+<wire x1="0" y1="22.86" x2="20.32" y2="22.86" width="0.254" layer="94"/>
+<wire x1="20.32" y1="22.86" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="2.54" x2="20.32" y2="0" width="0.254" layer="94"/>
+<wire x1="20.32" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="VM" x="-5.08" y="20.32" length="middle"/>
+<pin name="VCC" x="-5.08" y="17.78" length="middle"/>
+<pin name="GND1" x="-5.08" y="15.24" length="middle"/>
+<pin name="A01" x="-5.08" y="12.7" length="middle"/>
+<pin name="A02" x="-5.08" y="10.16" length="middle"/>
+<pin name="B02" x="-5.08" y="7.62" length="middle"/>
+<pin name="B01" x="-5.08" y="5.08" length="middle"/>
+<pin name="GND2" x="-5.08" y="2.54" length="middle"/>
+<pin name="GND3" x="25.4" y="2.54" length="middle" rot="R180"/>
+<pin name="PWMB" x="25.4" y="5.08" length="middle" rot="R180"/>
+<pin name="BIN2" x="25.4" y="7.62" length="middle" rot="R180"/>
+<pin name="BIN1" x="25.4" y="10.16" length="middle" rot="R180"/>
+<pin name="STBY" x="25.4" y="12.7" length="middle" rot="R180"/>
+<pin name="AIN1" x="25.4" y="15.24" length="middle" rot="R180"/>
+<pin name="AIN2" x="25.4" y="17.78" length="middle" rot="R180"/>
+<pin name="PWMA" x="25.4" y="20.32" length="middle" rot="R180"/>
+</symbol>
+<symbol name="MAX7480">
+<description>8th-Order Lowpass Butterworth Filter</description>
+<wire x1="0" y1="0" x2="15.24" y2="0" width="0.1524" layer="94"/>
+<wire x1="15.24" y1="0" x2="15.24" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="15.24" y1="-12.7" x2="0" y2="-12.7" width="0.1524" layer="94"/>
+<wire x1="0" y1="-12.7" x2="0" y2="0" width="0.1524" layer="94"/>
+<pin name="COM" x="-5.08" y="-2.54" length="middle"/>
+<pin name="IN" x="-5.08" y="-5.08" length="middle"/>
+<pin name="GND" x="-5.08" y="-7.62" length="middle"/>
+<pin name="VDD" x="-5.08" y="-10.16" length="middle"/>
+<pin name="OUT" x="20.32" y="-10.16" length="middle" rot="R180"/>
+<pin name="OS" x="20.32" y="-7.62" length="middle" rot="R180"/>
+<pin name="!SHDN" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="CLK" x="20.32" y="-2.54" length="middle" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="ARDUINO_NANO">
@@ -14846,6 +14942,17 @@ Source: http://www.molex.com</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="MX150-RIGHT_ANGLE-4" package="MX150L-RIGHT_ANGLE-4">
+<connects>
+<connect gate="-1" pin="S" pad="P$1"/>
+<connect gate="-2" pin="S" pad="P$2"/>
+<connect gate="-3" pin="S" pad="P$3"/>
+<connect gate="-4" pin="S" pad="P$4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="CONNECTOR-6" prefix="X">
@@ -15325,6 +15432,23 @@ Source: http://www.molex.com</description>
 </technologies>
 </device>
 <device name="MX150L_VERTICAL-10" package="MX150L_VERTICAL-10">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-10" pin="S" pad="10"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
+<connect gate="-5" pin="S" pad="5"/>
+<connect gate="-6" pin="S" pad="6"/>
+<connect gate="-7" pin="S" pad="7"/>
+<connect gate="-8" pin="S" pad="8"/>
+<connect gate="-9" pin="S" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="MX150L-RIGHT_ANGLE-10" package="MX150L-RIGHT_ANGLE-10">
 <connects>
 <connect gate="-1" pin="S" pad="1"/>
 <connect gate="-10" pin="S" pad="10"/>
@@ -19665,6 +19789,59 @@ MAX voltage: 100V</description>
 <connect gate="G$1" pin="VCC2" pad="3"/>
 <connect gate="G$1" pin="VCC3" pad="5"/>
 <connect gate="G$1" pin="VCC4" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TB6612FNG_BREAKOUT">
+<gates>
+<gate name="G$1" symbol="TB6612FNG_BREAKOUT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TB6612FNG_BREAKOUT">
+<connects>
+<connect gate="G$1" pin="A01" pad="4"/>
+<connect gate="G$1" pin="A02" pad="5"/>
+<connect gate="G$1" pin="AIN1" pad="14"/>
+<connect gate="G$1" pin="AIN2" pad="15"/>
+<connect gate="G$1" pin="B01" pad="7"/>
+<connect gate="G$1" pin="B02" pad="6"/>
+<connect gate="G$1" pin="BIN1" pad="12"/>
+<connect gate="G$1" pin="BIN2" pad="11"/>
+<connect gate="G$1" pin="GND1" pad="3"/>
+<connect gate="G$1" pin="GND2" pad="8"/>
+<connect gate="G$1" pin="GND3" pad="9"/>
+<connect gate="G$1" pin="PWMA" pad="16"/>
+<connect gate="G$1" pin="PWMB" pad="10"/>
+<connect gate="G$1" pin="STBY" pad="13"/>
+<connect gate="G$1" pin="VCC" pad="2"/>
+<connect gate="G$1" pin="VM" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX7480" uservalue="yes">
+<description>8th-order lowpass butterworth filter</description>
+<gates>
+<gate name="G$1" symbol="MAX7480" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOIC-08">
+<connects>
+<connect gate="G$1" pin="!SHDN" pad="7"/>
+<connect gate="G$1" pin="CLK" pad="8"/>
+<connect gate="G$1" pin="COM" pad="1"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="IN" pad="2"/>
+<connect gate="G$1" pin="OS" pad="6"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
