@@ -3059,6 +3059,13 @@ Note: The Sparkfun version includes many other packages including surface mount 
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="102,1,48.26,63.5,VDD,+3V3,,,,"/>
+<approved hash="102,1,48.26,66.04,VSS,GND_ISOLATED,,,,"/>
+<approved hash="113,1,149.541,70.8254,MODE_SWITCH,,,,,"/>
+<approved hash="113,1,150.381,50.5054,SPARE_BUTTON,,,,,"/>
+<approved hash="113,1,172.72,85.8622,5V_REGULATOR,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
