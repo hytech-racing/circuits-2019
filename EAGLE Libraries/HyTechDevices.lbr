@@ -14871,6 +14871,16 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <technology name=""/>
 </technologies>
 </device>
+<device name="SOT" package="SOT23">
+<connects>
+<connect gate="G$1" pin="BASE" pad="1"/>
+<connect gate="G$1" pin="COLLECTOR" pad="3"/>
+<connect gate="G$1" pin="EMITTER" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="BJT_PNP">
