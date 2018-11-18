@@ -3528,11 +3528,11 @@ Source: http://www.molex.com</description>
 <part name="P+6" library="supply1" deviceset="+12V" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="U$3" library="HyTechDevices" deviceset="SN74LVC1G08" device=""/>
-<part name="P+9" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="HV+UNFUSED" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2" value="HV+UNFUSED"/>
 <part name="HV-UNFUSED" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2" value="HV-UNFUSED"/>
 <part name="RELAY_JUMP" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2" value="RELAY_JUMPER"/>
 <part name="RELAY" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2" value="RELAY_JUMPER"/>
+<part name="+3V3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4058,9 +4058,6 @@ for Precharge</text>
 <attribute name="NAME" x="130.175" y="-164.465" size="1.778" layer="95"/>
 <attribute name="VALUE" x="130.175" y="-177.165" size="1.778" layer="96"/>
 </instance>
-<instance part="P+9" gate="1" x="149.86" y="-167.64" smashed="yes" rot="MR90">
-<attribute name="VALUE" x="144.78" y="-165.1" size="1.778" layer="96" rot="MR180"/>
-</instance>
 <instance part="HV+UNFUSED" gate="-2" x="200.66" y="-83.82" smashed="yes" rot="R180">
 <attribute name="NAME" x="198.12" y="-83.058" size="1.524" layer="95" rot="R180"/>
 </instance>
@@ -4088,6 +4085,9 @@ for Precharge</text>
 <instance part="RELAY" gate="-1" x="68.58" y="20.32" smashed="yes">
 <attribute name="NAME" x="71.12" y="19.558" size="1.524" layer="95"/>
 <attribute name="VALUE" x="67.818" y="21.717" size="1.778" layer="96"/>
+</instance>
+<instance part="+3V3" gate="G$1" x="149.86" y="-167.64" smashed="yes" rot="R270">
+<attribute name="VALUE" x="144.78" y="-165.1" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -4412,11 +4412,6 @@ for Precharge</text>
 <pinref part="P+5" gate="1" pin="+5V"/>
 <pinref part="U$1" gate="G$1" pin="!SHDN"/>
 <wire x1="86.36" y1="-66.04" x2="83.82" y2="-66.04" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$3" gate="G$1" pin="5"/>
-<pinref part="P+9" gate="1" pin="+5V"/>
-<wire x1="144.78" y1="-167.64" x2="147.32" y2="-167.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TRIM" class="0">
@@ -4953,6 +4948,11 @@ for Precharge</text>
 <pinref part="U$9" gate="G$1" pin="3.3V"/>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 <wire x1="101.6" y1="-177.8" x2="91.44" y2="-177.8" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="5"/>
+<wire x1="144.78" y1="-167.64" x2="147.32" y2="-167.64" width="0.1524" layer="91"/>
+<pinref part="+3V3" gate="G$1" pin="+3V3"/>
 </segment>
 </net>
 <net name="CS_MCP3208" class="0">
