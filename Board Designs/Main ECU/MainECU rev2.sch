@@ -1703,20 +1703,6 @@ Source: Mitsubishi M5218AL/P/FP</description>
 <rectangle x1="2.9718" y1="-2.8956" x2="3.3782" y2="-1.8796" layer="51"/>
 <rectangle x1="4.2418" y1="-2.8956" x2="4.6482" y2="-1.8796" layer="51"/>
 </package>
-<package name="SOT-23-5">
-<description>&lt;a href="https://github.com/open-ephys/eagle-libraries"&gt;Source&lt;/a&gt;</description>
-<wire x1="0.7" y1="1.5" x2="0.7" y2="-1.5" width="0.1524" layer="21"/>
-<wire x1="0.7" y1="-1.5" x2="-0.7" y2="-1.5" width="0.1524" layer="21"/>
-<wire x1="-0.7" y1="-1.5" x2="-0.7" y2="1.5" width="0.1524" layer="21"/>
-<wire x1="-0.7" y1="1.5" x2="0.7" y2="1.5" width="0.1524" layer="21"/>
-<circle x="-1.2" y="1.7" radius="0.2236" width="0.1524" layer="21"/>
-<smd name="2" x="-1.35" y="0" dx="1" dy="0.55" layer="1"/>
-<smd name="1" x="-1.35" y="0.95" dx="1" dy="0.55" layer="1"/>
-<smd name="3" x="-1.35" y="-0.95" dx="1" dy="0.55" layer="1"/>
-<smd name="4" x="1.35" y="-0.95" dx="1" dy="0.55" layer="1"/>
-<text x="-0.0254" y="-0.073" size="0.762" layer="25" font="vector" rot="R270" align="center">&gt;NAME</text>
-<smd name="5" x="1.35" y="0.95" dx="1" dy="0.55" layer="1"/>
-</package>
 <package name="DIL28-3">
 <description>Standard 28-pin DIP package.&lt;br&gt;
 IC needs to have legs bent before insertion.</description>
@@ -2600,50 +2586,6 @@ Source: transistor-fet.lbr</description>
 <pin name="A1" x="15.24" y="-12.7" length="short" rot="R180"/>
 <pin name="A0" x="15.24" y="-15.24" length="short" rot="R180"/>
 <pin name="SO" x="-10.16" y="-15.24" length="short"/>
-</symbol>
-<symbol name="SN74LVC1G06">
-<wire x1="0" y1="1.27" x2="0" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="-2.54" x2="0" y2="-6.35" width="0.254" layer="94"/>
-<wire x1="0" y1="-6.35" x2="12.7" y2="-6.35" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-6.35" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="12.7" y1="-5.08" x2="12.7" y2="1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="1.27" x2="12.7" y2="1.27" width="0.254" layer="94"/>
-<pin name="1" x="-2.54" y="0" visible="pad" length="short" direction="pas"/>
-<pin name="2" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas"/>
-<pin name="3" x="-2.54" y="-5.08" visible="pad" length="short" direction="pas"/>
-<pin name="4" x="15.24" y="-5.08" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="5" x="15.24" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
-<text x="0.635" y="3.175" size="1.778" layer="95">&gt;NAME</text>
-<text x="0.762" y="-5.715" size="1.27" layer="94">GND</text>
-<text x="11.43" y="0.635" size="1.27" layer="94" rot="R180">VCC</text>
-<text x="0.762" y="-0.635" size="1.27" layer="94">N.C.</text>
-<wire x1="0" y1="-2.54" x2="5.334" y2="-2.54" width="0.127" layer="94"/>
-<wire x1="10.16" y1="-5.08" x2="12.7" y2="-5.08" width="0.127" layer="94"/>
-<wire x1="5.334" y1="-2.54" x2="5.588" y2="-2.286" width="0.127" layer="94"/>
-<wire x1="5.588" y1="-2.286" x2="5.842" y2="-2.794" width="0.127" layer="94"/>
-<wire x1="5.842" y1="-2.794" x2="6.096" y2="-2.286" width="0.127" layer="94"/>
-<wire x1="6.096" y1="-2.286" x2="6.35" y2="-2.794" width="0.127" layer="94"/>
-<wire x1="6.35" y1="-2.794" x2="6.604" y2="-2.286" width="0.127" layer="94"/>
-<wire x1="6.604" y1="-2.286" x2="6.858" y2="-2.794" width="0.127" layer="94"/>
-<wire x1="6.858" y1="-2.794" x2="7.112" y2="-2.54" width="0.127" layer="94"/>
-<wire x1="7.112" y1="-2.54" x2="7.874" y2="-2.54" width="0.127" layer="94"/>
-<wire x1="7.874" y1="-2.54" x2="7.874" y2="-3.81" width="0.127" layer="94"/>
-<wire x1="7.874" y1="-3.81" x2="8.89" y2="-3.81" width="0.127" layer="94"/>
-<wire x1="8.89" y1="-2.794" x2="8.89" y2="-3.81" width="0.127" layer="94"/>
-<wire x1="8.89" y1="-3.81" x2="8.89" y2="-4.826" width="0.127" layer="94"/>
-<wire x1="10.16" y1="-5.08" x2="8.89" y2="-3.81" width="0.127" layer="94"/>
-<wire x1="8.89" y1="-3.81" x2="10.16" y2="-2.286" width="0.127" layer="94"/>
-<wire x1="10.16" y1="-2.286" x2="10.16" y2="-1.778" width="0.127" layer="94"/>
-<wire x1="9.398" y1="-1.778" x2="10.16" y2="-1.778" width="0.127" layer="94"/>
-<wire x1="10.16" y1="-1.778" x2="10.922" y2="-1.778" width="0.127" layer="94"/>
-<wire x1="9.652" y1="-1.397" x2="10.668" y2="-1.397" width="0.127" layer="94"/>
-<wire x1="9.906" y1="-1.016" x2="10.414" y2="-1.016" width="0.127" layer="94"/>
-<polygon width="0.0762" layer="94">
-<vertex x="9.144" y="-2.921"/>
-<vertex x="9.652" y="-3.429"/>
-<vertex x="9.652" y="-2.921"/>
-</polygon>
-<text x="0.635" y="-9.525" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="N-CHANNEL_MOSFET">
 <wire x1="-2.54" y1="-2.54" x2="-1.2192" y2="-2.54" width="0.1524" layer="94"/>
@@ -4093,29 +4035,6 @@ It is replaced by MCP2561.
 </device>
 </devices>
 </deviceset>
-<deviceset name="SN74LVC1G06">
-<description>TI SN74LVC1G06 Single Inverter Buffer/Driver With Open-Drain Output
-&lt;br&gt;
-&lt;br&gt;
-&lt;a href="http://www.ti.com/lit/ds/symlink/sn74lvc1g06.pdf"&gt;Datasheet&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="SN74LVC1G06" x="0" y="-7.62"/>
-</gates>
-<devices>
-<device name="" package="SOT-23-5">
-<connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="N-CHANNEL_MOSFET">
 <description>Generic N-Channel MOSFET</description>
 <gates>
@@ -4546,7 +4465,6 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <part name="GND23" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="5ASHUTDOWNFUSE" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE"/>
-<part name="P+8" library="supply1" deviceset="+12V" device=""/>
 <part name="U$9" library="HyTechDevices" deviceset="ACS715_CURRENT_SENSOR" device=""/>
 <part name="U$10" library="HyTechDevices" deviceset="ACS715_CURRENT_SENSOR" device=""/>
 <part name="GND25" library="HyTechSymbols" deviceset="GND" device=""/>
@@ -4634,9 +4552,6 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <part name="P+34" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND60" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+35" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="U$25" library="HyTechDevices" deviceset="SN74LVC1G06" device=""/>
-<part name="P+36" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="GND61" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="LED14" library="HyTechDevices" deviceset="LED" device="-0805" value="Blue"/>
 <part name="R45" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2.3k"/>
 <part name="GND62" library="HyTechSymbols" deviceset="GND" device=""/>
@@ -4701,12 +4616,6 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <part name="U$12" library="HyTechDevices" deviceset="JUMPER" device=""/>
 <part name="U$13" library="HyTechDevices" deviceset="JUMPER" device=""/>
 <part name="U$14" library="HyTechDevices" deviceset="JUMPER" device=""/>
-<part name="Q9" library="HyTechDevices" deviceset="BJT_NPN" device="SOT"/>
-<part name="U$8" library="HyTechDevices" deviceset="BJT_PNP" device="SOT"/>
-<part name="R16" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2.2k"/>
-<part name="R46" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
-<part name="R47" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1.2k"/>
-<part name="GND11" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+9" library="supply1" deviceset="+12V" device=""/>
 <part name="Q10" library="HyTechDevices" deviceset="BJT_NPN" device="SOT"/>
 <part name="U$15" library="HyTechDevices" deviceset="BJT_PNP" device="SOT"/>
@@ -4714,6 +4623,15 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <part name="R48" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="R49" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1.2k"/>
 <part name="GND12" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="U$8" library="HyTechDevices" deviceset="G5LE" device=""/>
+<part name="GND11" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="INVERTER_SSR" library="HyTechDevices" deviceset="CPC1002N" device=""/>
+<part name="LED6" library="HyTechDevices" deviceset="LED" device="-0805" value="Red"/>
+<part name="GND17" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="R16" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="43"/>
+<part name="P+8" library="supply1" deviceset="+12V" device=""/>
+<part name="P+12" library="supply1" deviceset="+12V" device=""/>
+<part name="D4" library="HyTechDevices" deviceset="DIODE" device="0805"/>
 </parts>
 <sheets>
 <sheet>
@@ -4774,19 +4692,17 @@ only one per signal on
 <wire x1="287.02" y1="198.12" x2="175.26" y2="198.12" width="0.1524" layer="90"/>
 <wire x1="175.26" y1="198.12" x2="175.26" y2="109.22" width="0.1524" layer="90"/>
 <text x="175.26" y="198.12" size="1.778" layer="90">IO Expander/ADC</text>
-<text x="55.88" y="127" size="1.016" layer="95">Pedals 5V</text>
-<text x="60.96" y="96.52" size="1.016" layer="95">CAN for
+<text x="63.5" y="88.9" size="1.016" layer="95">Pedals 5V</text>
+<text x="58.42" y="91.44" size="1.016" layer="95">CANL for
 Motor Controller</text>
 <text x="134.62" y="231.14" size="1.016" layer="91">5.3uF for 10Hz filter</text>
 <text x="137.16" y="203.2" size="1.016" layer="91">5.3uF for 10Hz filter</text>
 <text x="127" y="175.26" size="1.016" layer="91">5.3uF for 10Hz filter</text>
-<text x="55.88" y="81.28" size="1.27" layer="96">12V for Dash</text>
+<text x="58.42" y="73.66" size="1.27" layer="96">12V for Dash</text>
 <text x="119.38" y="101.6" size="1.27" layer="96">Check Values, Switching V is 5V</text>
 <text x="91.44" y="-35.56" size="2.032" layer="96">Dash 5, 6, 7, 8 Can be inputs or outputs
 For input, solder jumper.
 For output, solder transistor and resistor.</text>
-<text x="190.5" y="215.9" size="1.27" layer="96">Inverter takes &lt;1Amp, so 
-1.2Amp rated PNP will work</text>
 </plain>
 <instances>
 <instance part="X1" gate="-13" x="45.72" y="129.54" rot="MR0"/>
@@ -4900,7 +4816,6 @@ For output, solder transistor and resistor.</text>
 <instance part="GND23" gate="1" x="35.56" y="203.2" rot="R90"/>
 <instance part="P+6" gate="1" x="5.08" y="203.2" rot="R90"/>
 <instance part="5ASHUTDOWNFUSE" gate="G$1" x="22.86" y="187.96"/>
-<instance part="P+8" gate="1" x="231.14" y="233.68"/>
 <instance part="U$9" gate="G$1" x="335.28" y="226.06"/>
 <instance part="U$10" gate="G$1" x="327.66" y="177.8"/>
 <instance part="GND25" gate="1" x="370.84" y="175.26" rot="R90"/>
@@ -4983,14 +4898,11 @@ For output, solder transistor and resistor.</text>
 <instance part="5ABOARDFUSE" gate="G$1" x="22.86" y="180.34"/>
 <instance part="P+2" gate="1" x="40.64" y="180.34" rot="R270"/>
 <instance part="GND59" gate="1" x="58.42" y="119.38"/>
-<instance part="P+22" gate="1" x="63.5" y="124.46" rot="R270"/>
+<instance part="P+22" gate="1" x="58.42" y="88.9" rot="R270"/>
 <instance part="U$17" gate="G$1" x="248.92" y="142.24"/>
 <instance part="P+34" gate="1" x="231.14" y="139.7" rot="R90"/>
 <instance part="GND60" gate="1" x="233.68" y="137.16" rot="R270"/>
 <instance part="P+35" gate="1" x="271.78" y="134.62" rot="R270"/>
-<instance part="U$25" gate="G$1" x="195.58" y="121.92"/>
-<instance part="P+36" gate="1" x="215.9" y="121.92" rot="R270"/>
-<instance part="GND61" gate="1" x="187.96" y="116.84" rot="R270"/>
 <instance part="LED14" gate="LED" x="406.4" y="35.56" rot="R180"/>
 <instance part="R45" gate="G$1" x="406.4" y="48.26" rot="R270"/>
 <instance part="GND62" gate="1" x="393.7" y="53.34" rot="R270"/>
@@ -5004,7 +4916,7 @@ For output, solder transistor and resistor.</text>
 <instance part="X4" gate="-4" x="45.72" y="15.24" rot="MR0"/>
 <instance part="GND63" gate="1" x="68.58" y="35.56" rot="R90"/>
 <instance part="P+37" gate="1" x="68.58" y="38.1" rot="R270"/>
-<instance part="P+38" gate="1" x="60.96" y="139.7" rot="R270"/>
+<instance part="P+38" gate="1" x="55.88" y="132.08" rot="R270"/>
 <instance part="GND64" gate="1" x="269.24" y="124.46"/>
 <instance part="P+1" gate="1" x="149.86" y="152.4" rot="R270"/>
 <instance part="GND65" gate="1" x="68.58" y="83.82" rot="R90"/>
@@ -5050,7 +4962,7 @@ For output, solder transistor and resistor.</text>
 <instance part="Q4" gate="G$1" x="114.3" y="48.26" rot="R180"/>
 <instance part="Q5" gate="G$1" x="114.3" y="33.02" rot="R180"/>
 <instance part="GND37" gate="1" x="109.22" y="101.6" rot="R180"/>
-<instance part="P+30" gate="1" x="53.34" y="81.28" rot="R270"/>
+<instance part="P+30" gate="1" x="55.88" y="73.66" rot="R270"/>
 <instance part="R41" gate="G$1" x="124.46" y="17.78" rot="MR0"/>
 <instance part="Q6" gate="G$1" x="114.3" y="17.78" rot="R180"/>
 <instance part="R42" gate="G$1" x="124.46" y="2.54" rot="MR0"/>
@@ -5061,12 +4973,6 @@ For output, solder transistor and resistor.</text>
 <instance part="U$12" gate="G$1" x="116.84" y="27.94"/>
 <instance part="U$13" gate="G$1" x="116.84" y="-2.54"/>
 <instance part="U$14" gate="G$1" x="116.84" y="-17.78"/>
-<instance part="Q9" gate="G$1" x="218.44" y="208.28"/>
-<instance part="U$8" gate="G$1" x="238.76" y="215.9"/>
-<instance part="R16" gate="G$1" x="208.28" y="208.28" rot="R180"/>
-<instance part="R46" gate="G$1" x="220.98" y="223.52" rot="R270"/>
-<instance part="R47" gate="G$1" x="228.6" y="215.9"/>
-<instance part="GND11" gate="1" x="226.06" y="203.2" rot="R90"/>
 <instance part="P+9" gate="1" x="231.14" y="266.7"/>
 <instance part="Q10" gate="G$1" x="218.44" y="241.3"/>
 <instance part="U$15" gate="G$1" x="238.76" y="248.92"/>
@@ -5074,6 +4980,15 @@ For output, solder transistor and resistor.</text>
 <instance part="R48" gate="G$1" x="220.98" y="256.54" rot="R270"/>
 <instance part="R49" gate="G$1" x="228.6" y="248.92"/>
 <instance part="GND12" gate="1" x="223.52" y="233.68" rot="R90"/>
+<instance part="U$8" gate="G$1" x="190.5" y="220.98" rot="R270"/>
+<instance part="GND11" gate="1" x="182.88" y="213.36"/>
+<instance part="INVERTER_SSR" gate="G$1" x="220.98" y="223.52" rot="R180"/>
+<instance part="LED6" gate="LED" x="248.92" y="226.06" rot="R90"/>
+<instance part="GND17" gate="1" x="259.08" y="226.06" rot="R90"/>
+<instance part="R16" gate="G$1" x="238.76" y="226.06"/>
+<instance part="P+8" gate="1" x="180.34" y="205.74" rot="R90"/>
+<instance part="P+12" gate="1" x="203.2" y="220.98" rot="R90"/>
+<instance part="D4" gate="1" x="195.58" y="226.06"/>
 </instances>
 <busses>
 </busses>
@@ -5353,11 +5268,6 @@ For output, solder transistor and resistor.</text>
 <pinref part="GND60" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$25" gate="G$1" pin="3"/>
-<wire x1="193.04" y1="116.84" x2="190.5" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="GND61" gate="1" pin="GND"/>
-</segment>
-<segment>
 <pinref part="R45" gate="G$1" pin="1"/>
 <pinref part="GND62" gate="1" pin="GND"/>
 <wire x1="396.24" y1="53.34" x2="406.4" y2="53.34" width="0.1524" layer="91"/>
@@ -5513,14 +5423,23 @@ For output, solder transistor and resistor.</text>
 <junction x="109.22" y="7.62"/>
 </segment>
 <segment>
-<pinref part="Q9" gate="G$1" pin="EMITTER"/>
-<pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="220.98" y1="203.2" x2="223.52" y2="203.2" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="Q10" gate="G$1" pin="EMITTER"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="220.98" y1="236.22" x2="220.98" y2="233.68" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$8" gate="G$1" pin="COIL-"/>
+<pinref part="GND11" gate="1" pin="GND"/>
+<wire x1="182.88" y1="215.9" x2="185.42" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="226.06" x2="182.88" y2="215.9" width="0.1524" layer="91"/>
+<junction x="182.88" y="215.9"/>
+<pinref part="D4" gate="1" pin="A"/>
+<wire x1="182.88" y1="226.06" x2="190.5" y2="226.06" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="LED6" gate="LED" pin="C"/>
+<pinref part="GND17" gate="1" pin="GND"/>
+<wire x1="256.54" y1="226.06" x2="254" y2="226.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -5576,26 +5495,6 @@ For output, solder transistor and resistor.</text>
 <pinref part="P+37" gate="1" pin="+12V"/>
 </segment>
 <segment>
-<pinref part="P+38" gate="1" pin="+12V"/>
-<wire x1="48.26" y1="139.7" x2="58.42" y2="139.7" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-9" pin="S"/>
-</segment>
-<segment>
-<pinref part="X1" gate="-32" pin="S"/>
-<wire x1="48.26" y1="81.28" x2="50.8" y2="81.28" width="0.1524" layer="91"/>
-<pinref part="P+30" gate="1" pin="+12V"/>
-</segment>
-<segment>
-<pinref part="R46" gate="G$1" pin="1"/>
-<pinref part="P+8" gate="1" pin="+12V"/>
-<wire x1="220.98" y1="228.6" x2="231.14" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="231.14" y1="228.6" x2="231.14" y2="231.14" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="E"/>
-<wire x1="231.14" y1="228.6" x2="241.3" y2="228.6" width="0.1524" layer="91"/>
-<wire x1="241.3" y1="228.6" x2="241.3" y2="220.98" width="0.1524" layer="91"/>
-<junction x="231.14" y="228.6"/>
-</segment>
-<segment>
 <pinref part="R48" gate="G$1" pin="1"/>
 <pinref part="P+9" gate="1" pin="+12V"/>
 <wire x1="220.98" y1="261.62" x2="231.14" y2="261.62" width="0.1524" layer="91"/>
@@ -5604,6 +5503,26 @@ For output, solder transistor and resistor.</text>
 <wire x1="231.14" y1="261.62" x2="241.3" y2="261.62" width="0.1524" layer="91"/>
 <wire x1="241.3" y1="261.62" x2="241.3" y2="254" width="0.1524" layer="91"/>
 <junction x="231.14" y="261.62"/>
+</segment>
+<segment>
+<pinref part="U$8" gate="G$1" pin="P"/>
+<pinref part="P+8" gate="1" pin="+12V"/>
+<wire x1="185.42" y1="205.74" x2="182.88" y2="205.74" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="INVERTER_SSR" gate="G$1" pin="DC+"/>
+<pinref part="P+12" gate="1" pin="+12V"/>
+<wire x1="205.74" y1="220.98" x2="210.82" y2="220.98" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X1" gate="-12" pin="S"/>
+<pinref part="P+38" gate="1" pin="+12V"/>
+<wire x1="53.34" y1="132.08" x2="48.26" y2="132.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X1" gate="-35" pin="S"/>
+<pinref part="P+30" gate="1" pin="+12V"/>
+<wire x1="53.34" y1="73.66" x2="48.26" y2="73.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PUMP1-" class="0">
@@ -5714,11 +5633,9 @@ For output, solder transistor and resistor.</text>
 <label x="193.04" y="144.78" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<label x="53.34" y="111.76" size="1.016" layer="95" xref="yes"/>
-<wire x1="48.26" y1="111.76" x2="50.8" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-20" pin="S"/>
-<junction x="50.8" y="111.76"/>
-<wire x1="50.8" y1="111.76" x2="53.34" y2="111.76" width="0.1524" layer="91"/>
+<label x="53.34" y="81.28" size="1.016" layer="95" xref="yes"/>
+<wire x1="48.26" y1="81.28" x2="53.34" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-32" pin="S"/>
 </segment>
 </net>
 <net name="OKHS" class="0">
@@ -5737,9 +5654,9 @@ For output, solder transistor and resistor.</text>
 <label x="185.42" y="144.78" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
-<label x="50.8" y="137.16" size="1.016" layer="95" xref="yes"/>
-<wire x1="48.26" y1="137.16" x2="50.8" y2="137.16" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-10" pin="S"/>
+<label x="53.34" y="76.2" size="1.016" layer="95" xref="yes"/>
+<wire x1="48.26" y1="76.2" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-34" pin="S"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -5905,20 +5822,6 @@ For output, solder transistor and resistor.</text>
 <wire x1="81.28" y1="228.6" x2="83.82" y2="228.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="P+22" gate="1" pin="+5V"/>
-<wire x1="48.26" y1="124.46" x2="53.34" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="124.46" x2="60.96" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="129.54" x2="53.34" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="127" x2="53.34" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="127" x2="53.34" y2="127" width="0.1524" layer="91"/>
-<wire x1="53.34" y1="127" x2="53.34" y2="124.46" width="0.1524" layer="91"/>
-<junction x="53.34" y="127"/>
-<junction x="53.34" y="124.46"/>
-<pinref part="X1" gate="-13" pin="S"/>
-<pinref part="X1" gate="-14" pin="S"/>
-<pinref part="X1" gate="-15" pin="S"/>
-</segment>
-<segment>
 <pinref part="U$17" gate="G$1" pin="VDD"/>
 <pinref part="P+34" gate="1" pin="+5V"/>
 <wire x1="238.76" y1="139.7" x2="233.68" y2="139.7" width="0.1524" layer="91"/>
@@ -5927,11 +5830,6 @@ For output, solder transistor and resistor.</text>
 <pinref part="P+35" gate="1" pin="+5V"/>
 <pinref part="U$17" gate="G$1" pin="!RESET"/>
 <wire x1="269.24" y1="134.62" x2="264.16" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$25" gate="G$1" pin="5"/>
-<wire x1="210.82" y1="121.92" x2="213.36" y2="121.92" width="0.1524" layer="91"/>
-<pinref part="P+36" gate="1" pin="+5V"/>
 </segment>
 <segment>
 <pinref part="P+1" gate="1" pin="+5V"/>
@@ -5979,6 +5877,19 @@ For output, solder transistor and resistor.</text>
 <pinref part="U$26" gate="G$1" pin="!SHDN"/>
 <wire x1="129.54" y1="193.04" x2="134.62" y2="193.04" width="0.1524" layer="91"/>
 <pinref part="P+29" gate="1" pin="+5V"/>
+</segment>
+<segment>
+<pinref part="P+22" gate="1" pin="+5V"/>
+<pinref part="X1" gate="-29" pin="S"/>
+<wire x1="55.88" y1="88.9" x2="50.8" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-28" pin="S"/>
+<wire x1="50.8" y1="88.9" x2="48.26" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="91.44" x2="50.8" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="91.44" x2="50.8" y2="88.9" width="0.1524" layer="91"/>
+<junction x="50.8" y="88.9"/>
+<pinref part="X1" gate="-30" pin="S"/>
+<wire x1="48.26" y1="86.36" x2="50.8" y2="86.36" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="86.36" x2="50.8" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="IMD_PWR_STEP" class="0">
@@ -6029,9 +5940,9 @@ For output, solder transistor and resistor.</text>
 <label x="276.86" y="365.76" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<label x="53.34" y="149.86" size="1.016" layer="95" xref="yes"/>
-<pinref part="X1" gate="-5" pin="S"/>
-<wire x1="48.26" y1="149.86" x2="53.34" y2="149.86" width="0.1524" layer="91"/>
+<label x="50.8" y="68.58" size="1.016" layer="95" xref="yes"/>
+<wire x1="48.26" y1="68.58" x2="50.8" y2="68.58" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-37" pin="S"/>
 </segment>
 </net>
 <net name="SHUTDOWN_A" class="0">
@@ -6091,9 +6002,9 @@ For output, solder transistor and resistor.</text>
 <label x="375.92" y="281.94" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="53.34" y="154.94" size="1.016" layer="95" xref="yes"/>
-<wire x1="48.26" y1="154.94" x2="53.34" y2="154.94" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-3" pin="S"/>
+<label x="55.88" y="144.78" size="1.016" layer="95" xref="yes"/>
+<wire x1="48.26" y1="144.78" x2="55.88" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-7" pin="S"/>
 </segment>
 </net>
 <net name="N$43" class="0">
@@ -6124,33 +6035,33 @@ For output, solder transistor and resistor.</text>
 <pinref part="U$15" gate="G$1" pin="C"/>
 </segment>
 <segment>
-<label x="53.34" y="142.24" size="1.016" layer="95" xref="yes"/>
-<wire x1="48.26" y1="142.24" x2="53.34" y2="142.24" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-8" pin="S"/>
+<label x="53.34" y="134.62" size="1.016" layer="95" xref="yes"/>
+<wire x1="48.26" y1="134.62" x2="53.34" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-11" pin="S"/>
 </segment>
 </net>
 <net name="INVERTER_CTRL" class="0">
-<segment>
-<label x="200.66" y="208.28" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="203.2" y1="208.28" x2="200.66" y2="208.28" width="0.1524" layer="91"/>
-<pinref part="R16" gate="G$1" pin="2"/>
-</segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="D6"/>
 <wire x1="119.38" y1="134.62" x2="114.3" y2="134.62" width="0.1524" layer="91"/>
 <label x="114.3" y="134.62" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="INVERTER_SSR" gate="G$1" pin="CONTROL+"/>
+<wire x1="231.14" y1="220.98" x2="236.22" y2="220.98" width="0.1524" layer="91"/>
+<label x="236.22" y="220.98" size="1.016" layer="95" xref="yes"/>
+</segment>
 </net>
 <net name="INVERTER_SUPPLY" class="0">
 <segment>
-<label x="246.38" y="210.82" size="1.27" layer="95" xref="yes"/>
-<wire x1="241.3" y1="210.82" x2="246.38" y2="210.82" width="0.1524" layer="91"/>
-<pinref part="U$8" gate="G$1" pin="C"/>
+<label x="53.34" y="139.7" size="1.016" layer="95" xref="yes"/>
+<wire x1="48.26" y1="139.7" x2="53.34" y2="139.7" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-9" pin="S"/>
 </segment>
 <segment>
-<label x="53.34" y="152.4" size="1.016" layer="95" xref="yes"/>
-<wire x1="48.26" y1="152.4" x2="53.34" y2="152.4" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-4" pin="S"/>
+<pinref part="U$8" gate="G$1" pin="S"/>
+<wire x1="200.66" y1="203.2" x2="205.74" y2="203.2" width="0.1524" layer="91"/>
+<label x="205.74" y="203.2" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="BRAKE_LIGHT_CTRL" class="0">
@@ -6247,9 +6158,9 @@ For output, solder transistor and resistor.</text>
 <label x="86.36" y="147.32" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<label x="50.8" y="134.62" size="1.016" layer="95" xref="yes"/>
-<wire x1="48.26" y1="134.62" x2="50.8" y2="134.62" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-11" pin="S"/>
+<label x="50.8" y="129.54" size="1.016" layer="95" xref="yes"/>
+<wire x1="48.26" y1="129.54" x2="50.8" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-13" pin="S"/>
 </segment>
 <segment>
 <pinref part="X3" gate="-3" pin="S"/>
@@ -6262,9 +6173,9 @@ For output, solder transistor and resistor.</text>
 <label x="66.04" y="33.02" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="50.8" y="99.06" size="1.016" layer="95" xref="yes"/>
-<wire x1="48.26" y1="99.06" x2="50.8" y2="99.06" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-25" pin="S"/>
+<label x="53.34" y="93.98" size="1.016" layer="95" xref="yes"/>
+<wire x1="48.26" y1="93.98" x2="53.34" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-27" pin="S"/>
 </segment>
 </net>
 <net name="CANH" class="0">
@@ -6279,9 +6190,14 @@ For output, solder transistor and resistor.</text>
 <wire x1="88.9" y1="144.78" x2="86.36" y2="144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<label x="50.8" y="132.08" size="1.016" layer="95" xref="yes"/>
-<wire x1="48.26" y1="132.08" x2="50.8" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-12" pin="S"/>
+<label x="55.88" y="124.46" size="1.016" layer="95" xref="yes"/>
+<pinref part="X1" gate="-15" pin="S"/>
+<wire x1="55.88" y1="124.46" x2="50.8" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-14" pin="S"/>
+<wire x1="50.8" y1="124.46" x2="48.26" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="127" x2="50.8" y2="127" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="127" x2="50.8" y2="124.46" width="0.1524" layer="91"/>
+<junction x="50.8" y="124.46"/>
 </segment>
 <segment>
 <pinref part="X3" gate="-4" pin="S"/>
@@ -6292,11 +6208,6 @@ For output, solder transistor and resistor.</text>
 <wire x1="58.42" y1="15.24" x2="58.42" y2="30.48" width="0.1524" layer="91"/>
 <junction x="58.42" y="30.48"/>
 <label x="66.04" y="30.48" size="1.016" layer="95" xref="yes"/>
-</segment>
-<segment>
-<label x="50.8" y="96.52" size="1.016" layer="95" xref="yes"/>
-<wire x1="48.26" y1="96.52" x2="50.8" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-26" pin="S"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -6368,9 +6279,9 @@ For output, solder transistor and resistor.</text>
 <junction x="76.2" y="218.44"/>
 </segment>
 <segment>
-<label x="53.34" y="147.32" size="1.016" layer="95" xref="yes"/>
-<wire x1="48.26" y1="147.32" x2="53.34" y2="147.32" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-6" pin="S"/>
+<label x="53.34" y="99.06" size="1.016" layer="95" xref="yes"/>
+<wire x1="48.26" y1="99.06" x2="53.34" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-25" pin="S"/>
 </segment>
 </net>
 <net name="SIGNAL_BRAKE" class="0">
@@ -6380,9 +6291,9 @@ For output, solder transistor and resistor.</text>
 <wire x1="73.66" y1="190.5" x2="71.12" y2="190.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<label x="53.34" y="157.48" size="1.016" layer="95" xref="yes"/>
-<wire x1="48.26" y1="157.48" x2="53.34" y2="157.48" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-2" pin="S"/>
+<label x="53.34" y="137.16" size="1.016" layer="95" xref="yes"/>
+<wire x1="48.26" y1="137.16" x2="53.34" y2="137.16" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-10" pin="S"/>
 </segment>
 </net>
 <net name="SIGNAL_ACCEL1" class="0">
@@ -6402,9 +6313,9 @@ For output, solder transistor and resistor.</text>
 <junction x="76.2" y="238.76"/>
 </segment>
 <segment>
-<label x="53.34" y="144.78" size="1.016" layer="95" xref="yes"/>
-<wire x1="48.26" y1="144.78" x2="53.34" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-7" pin="S"/>
+<label x="53.34" y="96.52" size="1.016" layer="95" xref="yes"/>
+<wire x1="48.26" y1="96.52" x2="53.34" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-26" pin="S"/>
 </segment>
 </net>
 <net name="SCK_TEENSY" class="0">
@@ -6776,9 +6687,9 @@ For output, solder transistor and resistor.</text>
 </net>
 <net name="DASH_CTRL2" class="0">
 <segment>
-<pinref part="U$17" gate="G$1" pin="GPA1"/>
-<wire x1="264.16" y1="144.78" x2="269.24" y2="144.78" width="0.1524" layer="91"/>
-<label x="269.24" y="144.78" size="1.016" layer="95" xref="yes"/>
+<label x="233.68" y="157.48" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="238.76" y1="157.48" x2="233.68" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="U$17" gate="G$1" pin="GPB1"/>
 </segment>
 <segment>
 <pinref part="R36" gate="G$1" pin="1"/>
@@ -6788,9 +6699,9 @@ For output, solder transistor and resistor.</text>
 </net>
 <net name="DASH_CTRL3" class="0">
 <segment>
-<pinref part="U$17" gate="G$1" pin="GPA2"/>
-<wire x1="264.16" y1="147.32" x2="269.24" y2="147.32" width="0.1524" layer="91"/>
-<label x="269.24" y="147.32" size="1.016" layer="95" xref="yes"/>
+<label x="233.68" y="154.94" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="238.76" y1="154.94" x2="233.68" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="U$17" gate="G$1" pin="GPB2"/>
 </segment>
 <segment>
 <pinref part="R38" gate="G$1" pin="1"/>
@@ -6800,9 +6711,9 @@ For output, solder transistor and resistor.</text>
 </net>
 <net name="DASH_CTRL4" class="0">
 <segment>
-<pinref part="U$17" gate="G$1" pin="GPA3"/>
-<wire x1="264.16" y1="149.86" x2="269.24" y2="149.86" width="0.1524" layer="91"/>
-<label x="269.24" y="149.86" size="1.016" layer="95" xref="yes"/>
+<label x="233.68" y="152.4" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="238.76" y1="152.4" x2="233.68" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="U$17" gate="G$1" pin="GPB3"/>
 </segment>
 <segment>
 <pinref part="R39" gate="G$1" pin="1"/>
@@ -6817,16 +6728,16 @@ For output, solder transistor and resistor.</text>
 <pinref part="R43" gate="G$1" pin="2"/>
 </segment>
 <segment>
-<label x="53.34" y="104.14" size="1.016" layer="95" xref="yes"/>
-<wire x1="48.26" y1="104.14" x2="53.34" y2="104.14" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-23" pin="S"/>
+<label x="55.88" y="154.94" size="1.016" layer="95" xref="yes"/>
+<wire x1="48.26" y1="154.94" x2="55.88" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-3" pin="S"/>
 </segment>
 </net>
 <net name="DASH_IO2" class="0">
 <segment>
-<label x="53.34" y="101.6" size="1.016" layer="95" xref="yes"/>
-<wire x1="48.26" y1="101.6" x2="53.34" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-24" pin="S"/>
+<label x="55.88" y="152.4" size="1.016" layer="95" rot="MR180" xref="yes"/>
+<wire x1="48.26" y1="152.4" x2="55.88" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-4" pin="S"/>
 </segment>
 <segment>
 <label x="91.44" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -6836,9 +6747,9 @@ For output, solder transistor and resistor.</text>
 </net>
 <net name="DASH_IO3" class="0">
 <segment>
-<label x="53.34" y="106.68" size="1.016" layer="95" xref="yes"/>
-<wire x1="48.26" y1="106.68" x2="53.34" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-22" pin="S"/>
+<label x="55.88" y="149.86" size="1.016" layer="95" xref="yes"/>
+<wire x1="48.26" y1="149.86" x2="55.88" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-5" pin="S"/>
 </segment>
 <segment>
 <wire x1="91.44" y1="55.88" x2="111.76" y2="55.88" width="0.1524" layer="91"/>
@@ -6849,9 +6760,9 @@ For output, solder transistor and resistor.</text>
 </net>
 <net name="DASH_IO4" class="0">
 <segment>
-<label x="53.34" y="109.22" size="1.016" layer="95" xref="yes"/>
-<wire x1="48.26" y1="109.22" x2="53.34" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-21" pin="S"/>
+<label x="55.88" y="147.32" size="1.016" layer="95" xref="yes"/>
+<wire x1="48.26" y1="147.32" x2="55.88" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-6" pin="S"/>
 </segment>
 <segment>
 <wire x1="91.44" y1="40.64" x2="111.76" y2="40.64" width="0.1524" layer="91"/>
@@ -6862,10 +6773,10 @@ For output, solder transistor and resistor.</text>
 </net>
 <net name="DASH_IO5" class="0">
 <segment>
-<label x="53.34" y="78.74" size="1.016" layer="95" xref="yes"/>
-<wire x1="50.8" y1="78.74" x2="53.34" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-33" pin="S"/>
-<wire x1="50.8" y1="78.74" x2="48.26" y2="78.74" width="0.1524" layer="91"/>
+<label x="55.88" y="157.48" size="1.016" layer="95" xref="yes"/>
+<wire x1="53.34" y1="157.48" x2="55.88" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="157.48" x2="48.26" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-2" pin="S"/>
 </segment>
 <segment>
 <wire x1="91.44" y1="25.4" x2="111.76" y2="25.4" width="0.1524" layer="91"/>
@@ -6879,10 +6790,9 @@ For output, solder transistor and resistor.</text>
 </net>
 <net name="DASH_IO6" class="0">
 <segment>
-<label x="53.34" y="76.2" size="1.016" layer="95" xref="yes"/>
-<wire x1="50.8" y1="76.2" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-34" pin="S"/>
-<wire x1="50.8" y1="76.2" x2="48.26" y2="76.2" width="0.1524" layer="91"/>
+<label x="53.34" y="111.76" size="1.016" layer="95" xref="yes"/>
+<wire x1="53.34" y1="111.76" x2="48.26" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-20" pin="S"/>
 </segment>
 <segment>
 <wire x1="91.44" y1="10.16" x2="111.76" y2="10.16" width="0.1524" layer="91"/>
@@ -6903,9 +6813,9 @@ For output, solder transistor and resistor.</text>
 </net>
 <net name="DASH_IO7" class="0">
 <segment>
-<label x="53.34" y="93.98" size="1.016" layer="95" xref="yes"/>
-<wire x1="48.26" y1="93.98" x2="53.34" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-27" pin="S"/>
+<label x="53.34" y="109.22" size="1.016" layer="95" xref="yes"/>
+<wire x1="48.26" y1="109.22" x2="53.34" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-21" pin="S"/>
 </segment>
 <segment>
 <wire x1="91.44" y1="-5.08" x2="111.76" y2="-5.08" width="0.1524" layer="91"/>
@@ -6924,9 +6834,9 @@ For output, solder transistor and resistor.</text>
 <label x="132.08" y="93.98" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U$17" gate="G$1" pin="GPA0"/>
-<wire x1="264.16" y1="142.24" x2="269.24" y2="142.24" width="0.1524" layer="91"/>
-<label x="269.24" y="142.24" size="1.016" layer="95" xref="yes"/>
+<label x="233.68" y="160.02" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="238.76" y1="160.02" x2="233.68" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="U$17" gate="G$1" pin="GPB0"/>
 </segment>
 </net>
 <net name="N$59" class="0">
@@ -6935,13 +6845,6 @@ For output, solder transistor and resistor.</text>
 <wire x1="104.14" y1="86.36" x2="111.76" y2="86.36" width="0.1524" layer="91"/>
 <wire x1="111.76" y1="88.9" x2="111.76" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="COLLECTOR"/>
-</segment>
-</net>
-<net name="DFASH_IO8" class="0">
-<segment>
-<label x="53.34" y="91.44" size="1.016" layer="95" xref="yes"/>
-<wire x1="48.26" y1="91.44" x2="53.34" y2="91.44" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-28" pin="S"/>
 </segment>
 </net>
 <net name="12VUNFUSED" class="0">
@@ -6963,79 +6866,62 @@ For output, solder transistor and resistor.</text>
 </net>
 <net name="DASH_CTRL9" class="0">
 <segment>
-<pinref part="U$17" gate="G$1" pin="GPB0"/>
-<wire x1="238.76" y1="160.02" x2="233.68" y2="160.02" width="0.1524" layer="91"/>
-<label x="233.68" y="160.02" size="1.016" layer="95" rot="R180" xref="yes"/>
+<label x="269.24" y="142.24" size="1.016" layer="95" xref="yes"/>
+<wire x1="264.16" y1="142.24" x2="269.24" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="U$17" gate="G$1" pin="GPA0"/>
 </segment>
 <segment>
-<label x="53.34" y="86.36" size="1.016" layer="95" xref="yes"/>
-<wire x1="48.26" y1="86.36" x2="53.34" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-30" pin="S"/>
+<label x="53.34" y="101.6" size="1.016" layer="95" xref="yes"/>
+<wire x1="48.26" y1="101.6" x2="53.34" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-24" pin="S"/>
 </segment>
 </net>
 <net name="DASH_CTRL10" class="0">
 <segment>
-<pinref part="U$17" gate="G$1" pin="GPB1"/>
-<wire x1="238.76" y1="157.48" x2="233.68" y2="157.48" width="0.1524" layer="91"/>
-<label x="233.68" y="157.48" size="1.016" layer="95" rot="R180" xref="yes"/>
+<label x="269.24" y="144.78" size="1.016" layer="95" xref="yes"/>
+<wire x1="264.16" y1="144.78" x2="269.24" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="U$17" gate="G$1" pin="GPA1"/>
 </segment>
 <segment>
-<label x="53.34" y="88.9" size="1.016" layer="95" xref="yes"/>
-<wire x1="48.26" y1="88.9" x2="53.34" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-29" pin="S"/>
+<label x="53.34" y="78.74" size="1.016" layer="95" xref="yes"/>
+<wire x1="48.26" y1="78.74" x2="53.34" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-33" pin="S"/>
 </segment>
 </net>
 <net name="DASH_CTRL11" class="0">
 <segment>
-<pinref part="U$17" gate="G$1" pin="GPB2"/>
-<wire x1="238.76" y1="154.94" x2="233.68" y2="154.94" width="0.1524" layer="91"/>
-<label x="233.68" y="154.94" size="1.016" layer="95" rot="R180" xref="yes"/>
+<label x="269.24" y="147.32" size="1.016" layer="95" xref="yes"/>
+<wire x1="264.16" y1="147.32" x2="269.24" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="U$17" gate="G$1" pin="GPA2"/>
 </segment>
 <segment>
-<label x="50.8" y="71.12" size="1.016" layer="95" xref="yes"/>
-<wire x1="48.26" y1="71.12" x2="50.8" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-36" pin="S"/>
+<label x="53.34" y="142.24" size="1.016" layer="95" xref="yes"/>
+<wire x1="48.26" y1="142.24" x2="53.34" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-8" pin="S"/>
 </segment>
 </net>
 <net name="DASH_CTRL12" class="0">
 <segment>
-<pinref part="U$17" gate="G$1" pin="GPB3"/>
-<wire x1="238.76" y1="152.4" x2="233.68" y2="152.4" width="0.1524" layer="91"/>
-<label x="233.68" y="152.4" size="1.016" layer="95" rot="R180" xref="yes"/>
+<label x="269.24" y="149.86" size="1.016" layer="95" xref="yes"/>
+<wire x1="264.16" y1="149.86" x2="269.24" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="U$17" gate="G$1" pin="GPA3"/>
 </segment>
 <segment>
-<label x="50.8" y="73.66" size="1.016" layer="95" xref="yes"/>
-<wire x1="48.26" y1="73.66" x2="50.8" y2="73.66" width="0.1524" layer="91"/>
-<pinref part="X1" gate="-35" pin="S"/>
+<label x="53.34" y="104.14" size="1.016" layer="95" xref="yes"/>
+<wire x1="48.26" y1="104.14" x2="53.34" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-23" pin="S"/>
 </segment>
 </net>
-<net name="CHIP_SELECT_INVERTED" class="0">
-<segment>
-<pinref part="U$25" gate="G$1" pin="4"/>
-<wire x1="210.82" y1="116.84" x2="213.36" y2="116.84" width="0.1524" layer="91"/>
-<label x="213.36" y="116.84" size="1.016" layer="95" xref="yes"/>
-</segment>
+<net name="CHIP_SELECT2" class="0">
 <segment>
 <pinref part="U$17" gate="G$1" pin="!CS"/>
 <wire x1="238.76" y1="134.62" x2="231.14" y2="134.62" width="0.1524" layer="91"/>
 <label x="231.14" y="134.62" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
-</net>
-<net name="CHIP_SELECT" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="D10(TX2)"/>
-<wire x1="119.38" y1="124.46" x2="111.76" y2="124.46" width="0.1524" layer="91"/>
 <label x="111.76" y="124.46" size="1.016" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<pinref part="U$25" gate="G$1" pin="2"/>
-<wire x1="193.04" y1="119.38" x2="190.5" y2="119.38" width="0.1524" layer="91"/>
-<label x="190.5" y="119.38" size="1.016" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
-<wire x1="266.7" y1="172.72" x2="269.24" y2="172.72" width="0.1524" layer="91"/>
-<pinref part="U$18" gate="G$1" pin="!CS!/SHDN"/>
-<label x="269.24" y="172.72" size="1.27" layer="95" xref="yes"/>
+<wire x1="119.38" y1="124.46" x2="111.76" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="D10(TX2)"/>
 </segment>
 </net>
 <net name="N$35" class="0">
@@ -7257,29 +7143,29 @@ For output, solder transistor and resistor.</text>
 <wire x1="111.76" y1="-20.32" x2="116.84" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="111.76" y="-20.32"/>
 </segment>
+<segment>
+<label x="53.34" y="106.68" size="1.016" layer="95" xref="yes"/>
+<wire x1="48.26" y1="106.68" x2="53.34" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="X1" gate="-22" pin="S"/>
+</segment>
 </net>
 <net name="DASH_CTRL8_OUT" class="0">
 <segment>
-<pinref part="U$17" gate="G$1" pin="GPA7"/>
-<wire x1="264.16" y1="160.02" x2="269.24" y2="160.02" width="0.1524" layer="91"/>
-<label x="269.24" y="160.02" size="1.016" layer="95" xref="yes"/>
+<label x="233.68" y="142.24" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="238.76" y1="142.24" x2="233.68" y2="142.24" width="0.1524" layer="91"/>
+<pinref part="U$17" gate="G$1" pin="GPB7"/>
 </segment>
 <segment>
 <pinref part="R44" gate="G$1" pin="1"/>
 <wire x1="132.08" y1="-12.7" x2="129.54" y2="-12.7" width="0.1524" layer="91"/>
 <label x="132.08" y="-12.7" size="1.27" layer="95" xref="yes"/>
 </segment>
-<segment>
-<pinref part="U$14" gate="G$1" pin="P$2"/>
-<wire x1="121.92" y1="-20.32" x2="132.08" y2="-20.32" width="0.1524" layer="91"/>
-<label x="132.08" y="-20.32" size="1.27" layer="95" xref="yes"/>
-</segment>
 </net>
 <net name="DASH_CTRL7_OUT" class="0">
 <segment>
-<pinref part="U$17" gate="G$1" pin="GPA6"/>
-<wire x1="264.16" y1="157.48" x2="269.24" y2="157.48" width="0.1524" layer="91"/>
-<label x="269.24" y="157.48" size="1.016" layer="95" xref="yes"/>
+<label x="233.68" y="144.78" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="238.76" y1="144.78" x2="233.68" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="U$17" gate="G$1" pin="GPB6"/>
 </segment>
 <segment>
 <pinref part="R42" gate="G$1" pin="1"/>
@@ -7289,9 +7175,9 @@ For output, solder transistor and resistor.</text>
 </net>
 <net name="DASH_CTRL6_OUT" class="0">
 <segment>
-<pinref part="U$17" gate="G$1" pin="GPA5"/>
-<wire x1="264.16" y1="154.94" x2="269.24" y2="154.94" width="0.1524" layer="91"/>
-<label x="269.24" y="154.94" size="1.016" layer="95" xref="yes"/>
+<label x="233.68" y="147.32" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="238.76" y1="147.32" x2="233.68" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="U$17" gate="G$1" pin="GPB5"/>
 </segment>
 <segment>
 <pinref part="R41" gate="G$1" pin="1"/>
@@ -7301,9 +7187,9 @@ For output, solder transistor and resistor.</text>
 </net>
 <net name="DASH_CTRL5_OUT" class="0">
 <segment>
-<pinref part="U$17" gate="G$1" pin="GPA4"/>
-<wire x1="264.16" y1="152.4" x2="269.24" y2="152.4" width="0.1524" layer="91"/>
-<label x="269.24" y="152.4" size="1.016" layer="95" xref="yes"/>
+<label x="233.68" y="149.86" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="238.76" y1="149.86" x2="233.68" y2="149.86" width="0.1524" layer="91"/>
+<pinref part="U$17" gate="G$1" pin="GPB4"/>
 </segment>
 <segment>
 <pinref part="R40" gate="G$1" pin="1"/>
@@ -7313,16 +7199,21 @@ For output, solder transistor and resistor.</text>
 </net>
 <net name="DASH_CTRL8_IN" class="0">
 <segment>
-<pinref part="U$17" gate="G$1" pin="GPB7"/>
-<wire x1="238.76" y1="142.24" x2="233.68" y2="142.24" width="0.1524" layer="91"/>
-<label x="233.68" y="142.24" size="1.016" layer="95" rot="R180" xref="yes"/>
+<label x="269.24" y="160.02" size="1.016" layer="95" xref="yes"/>
+<wire x1="264.16" y1="160.02" x2="269.24" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="U$17" gate="G$1" pin="GPA7"/>
+</segment>
+<segment>
+<pinref part="U$14" gate="G$1" pin="P$2"/>
+<wire x1="121.92" y1="-20.32" x2="132.08" y2="-20.32" width="0.1524" layer="91"/>
+<label x="132.08" y="-20.32" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="DASH_CTRL7_IN" class="0">
 <segment>
-<pinref part="U$17" gate="G$1" pin="GPB6"/>
-<wire x1="238.76" y1="144.78" x2="233.68" y2="144.78" width="0.1524" layer="91"/>
-<label x="233.68" y="144.78" size="1.016" layer="95" rot="R180" xref="yes"/>
+<label x="269.24" y="157.48" size="1.016" layer="95" xref="yes"/>
+<wire x1="264.16" y1="157.48" x2="269.24" y2="157.48" width="0.1524" layer="91"/>
+<pinref part="U$17" gate="G$1" pin="GPA6"/>
 </segment>
 <segment>
 <pinref part="U$13" gate="G$1" pin="P$2"/>
@@ -7332,9 +7223,9 @@ For output, solder transistor and resistor.</text>
 </net>
 <net name="DASH_CTRL6_IN" class="0">
 <segment>
-<pinref part="U$17" gate="G$1" pin="GPB5"/>
-<wire x1="238.76" y1="147.32" x2="233.68" y2="147.32" width="0.1524" layer="91"/>
-<label x="233.68" y="147.32" size="1.016" layer="95" rot="R180" xref="yes"/>
+<label x="269.24" y="154.94" size="1.016" layer="95" xref="yes"/>
+<wire x1="264.16" y1="154.94" x2="269.24" y2="154.94" width="0.1524" layer="91"/>
+<pinref part="U$17" gate="G$1" pin="GPA5"/>
 </segment>
 <segment>
 <pinref part="U$11" gate="G$1" pin="P$2"/>
@@ -7344,39 +7235,14 @@ For output, solder transistor and resistor.</text>
 </net>
 <net name="DASH_CTRL5_IN" class="0">
 <segment>
-<pinref part="U$17" gate="G$1" pin="GPB4"/>
-<wire x1="238.76" y1="149.86" x2="233.68" y2="149.86" width="0.1524" layer="91"/>
-<label x="233.68" y="149.86" size="1.016" layer="95" rot="R180" xref="yes"/>
+<label x="269.24" y="152.4" size="1.016" layer="95" xref="yes"/>
+<wire x1="264.16" y1="152.4" x2="269.24" y2="152.4" width="0.1524" layer="91"/>
+<pinref part="U$17" gate="G$1" pin="GPA4"/>
 </segment>
 <segment>
 <pinref part="U$12" gate="G$1" pin="P$2"/>
 <wire x1="121.92" y1="25.4" x2="132.08" y2="25.4" width="0.1524" layer="91"/>
 <label x="132.08" y="25.4" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
-<net name="N$26" class="0">
-<segment>
-<pinref part="R16" gate="G$1" pin="1"/>
-<pinref part="Q9" gate="G$1" pin="BASE"/>
-<wire x1="215.9" y1="208.28" x2="213.36" y2="208.28" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$27" class="0">
-<segment>
-<pinref part="R46" gate="G$1" pin="2"/>
-<pinref part="Q9" gate="G$1" pin="COLLECTOR"/>
-<wire x1="220.98" y1="218.44" x2="220.98" y2="215.9" width="0.1524" layer="91"/>
-<pinref part="R47" gate="G$1" pin="1"/>
-<wire x1="220.98" y1="215.9" x2="220.98" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="215.9" x2="220.98" y2="215.9" width="0.1524" layer="91"/>
-<junction x="220.98" y="215.9"/>
-</segment>
-</net>
-<net name="N$28" class="0">
-<segment>
-<pinref part="R47" gate="G$1" pin="2"/>
-<pinref part="U$8" gate="G$1" pin="B"/>
-<wire x1="233.68" y1="215.9" x2="236.22" y2="215.9" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -7402,6 +7268,43 @@ For output, solder transistor and resistor.</text>
 <pinref part="R49" gate="G$1" pin="2"/>
 <pinref part="U$15" gate="G$1" pin="B"/>
 <wire x1="233.68" y1="248.92" x2="236.22" y2="248.92" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="CHIP_SELECT1" class="0">
+<segment>
+<wire x1="266.7" y1="172.72" x2="269.24" y2="172.72" width="0.1524" layer="91"/>
+<pinref part="U$18" gate="G$1" pin="!CS!/SHDN"/>
+<label x="269.24" y="172.72" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<label x="111.76" y="127" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="119.38" y1="127" x2="111.76" y2="127" width="0.1524" layer="91"/>
+<pinref part="U$1" gate="G$1" pin="D9(RX2)"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="INVERTER_SSR" gate="G$1" pin="DC-"/>
+<pinref part="U$8" gate="G$1" pin="COIL+"/>
+<pinref part="D4" gate="1" pin="C"/>
+<wire x1="198.12" y1="226.06" x2="200.66" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="200.66" y1="226.06" x2="200.66" y2="215.9" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="226.06" x2="200.66" y2="226.06" width="0.1524" layer="91"/>
+<junction x="200.66" y="226.06"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="INVERTER_SSR" gate="G$1" pin="CONTROL-"/>
+<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="231.14" y1="226.06" x2="233.68" y2="226.06" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="LED6" gate="LED" pin="A"/>
+<pinref part="R16" gate="G$1" pin="2"/>
+<wire x1="246.38" y1="226.06" x2="243.84" y2="226.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
