@@ -2363,12 +2363,12 @@ Note: The Sparkfun version includes many other packages including surface mount 
 </classes>
 <parts>
 <part name="U3" library="HyTechDevices" deviceset="TEENSY_3.2_SIMPLE" device=""/>
-<part name="U1" library="HyTechDevices" deviceset="ISO1050CAN" device="" value="ISOLATED CAN TRANSCIEVER"/>
+<part name="U1" library="HyTechDevices" deviceset="ISO1050CAN" device="" value="ISOCAN"/>
 <part name="INCOMING" library="HyTechDevices" deviceset="LED" device="-0805" value="YELLOW"/>
 <part name="OUTGOING" library="HyTechDevices" deviceset="LED" device="-0805" value="BLUE"/>
 <part name="ACKERR" library="HyTechDevices" deviceset="LED" device="-0805" value="ORANGE"/>
 <part name="LINE_OK" library="HyTechDevices" deviceset="LED" device="-0805" value="GREEN"/>
-<part name="SPARE" library="HyTechDevices" deviceset="LED" device="-0805" value="WHITE"/>
+<part name="SPARE_LED" library="HyTechDevices" deviceset="LED" device="-0805" value="WHITE"/>
 <part name="MODE_SWITCH" library="HyTechDevices" deviceset="BTN_10-XX" device=""/>
 <part name="SPARE_BUTTON" library="HyTechDevices" deviceset="BTN_10-XX" device=""/>
 <part name="CAN_TERMINATION_RESISTOR" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="120"/>
@@ -2379,19 +2379,19 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <part name="R5" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2.3K"/>
 <part name="R_MODE_SWITCH" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10K"/>
 <part name="R_SPARE_BUTTON" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10K"/>
-<part name="M2" library="HyTechDevices" deviceset="CONNECTOR-4" device="NANO-FIT-VERTICAL-4" value="Nanofit-1"/>
+<part name="M3" library="HyTechDevices" deviceset="CONNECTOR-4" device="NANO-FIT-VERTICAL-4" value="Nanofit-1"/>
 <part name="M1" library="HyTechDevices" deviceset="CONNECTOR-4" device="" value="Minifit-1"/>
 <part name="U4" library="HyTechDevices" deviceset="HD44780LCD" device="-1602" value="CHARACTER_LCD"/>
 <part name="5V_REGULATOR" library="HyTechDevices" deviceset="5VREG_LM340-N" device="LM340MPX-5.0/NOPB"/>
 <part name="CONTRAST_POT" library="HyTechDevices" deviceset="TRIMPOT" device="3386" value="10k"/>
-<part name="C1" library="HyTechDevices" deviceset="CAP" device="0805" value="10 uF"/>
-<part name="C2" library="HyTechDevices" deviceset="CAP" device="0805" value="10 uF"/>
-<part name="M3" library="HyTechDevices" deviceset="CONNECTOR-4" device="NANO-FIT-VERTICAL-4" value="Nanofit-2"/>
-<part name="M4" library="HyTechDevices" deviceset="CONNECTOR-4" device="" value="Minifit-2"/>
+<part name="C1" library="HyTechDevices" deviceset="CAP" device="0805" value="10 μF"/>
+<part name="C2" library="HyTechDevices" deviceset="CAP" device="0805" value="10 μF"/>
+<part name="M4" library="HyTechDevices" deviceset="CONNECTOR-4" device="NANO-FIT-VERTICAL-4" value="Nanofit-2"/>
+<part name="M2" library="HyTechDevices" deviceset="CONNECTOR-4" device="" value="Minifit-2"/>
 <part name="JP1" library="HyTechDevices" deviceset="M02" device=""/>
 <part name="U$1" library="HyTechDevices" deviceset="NCS1S1205SC-12V-5VCONVERTER" device=""/>
-<part name="C3" library="HyTechDevices" deviceset="CAP" device="0805" value="10 uF"/>
-<part name="C4" library="HyTechDevices" deviceset="CAP" device="0805" value="10 uF"/>
+<part name="C3" library="HyTechDevices" deviceset="CAP" device="0805" value="10 μF"/>
+<part name="C4" library="HyTechDevices" deviceset="CAP" device="0805" value="10 μF"/>
 </parts>
 <sheets>
 <sheet>
@@ -2416,7 +2416,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <attribute name="NAME" x="162.052" y="23.876" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="162.052" y="26.035" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="SPARE" gate="LED" x="157.48" y="30.48" smashed="yes" rot="R90">
+<instance part="SPARE_LED" gate="LED" x="157.48" y="30.48" smashed="yes" rot="R90">
 <attribute name="NAME" x="162.052" y="34.036" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="162.052" y="36.195" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -2460,17 +2460,17 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <attribute name="NAME" x="143.51" y="42.1386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="143.51" y="37.338" size="1.778" layer="96"/>
 </instance>
-<instance part="M2" gate="-1" x="33.02" y="93.98" smashed="yes">
+<instance part="M3" gate="-1" x="33.02" y="93.98" smashed="yes">
 <attribute name="NAME" x="35.56" y="93.218" size="1.524" layer="95"/>
 <attribute name="VALUE" x="32.258" y="95.377" size="1.778" layer="96"/>
 </instance>
-<instance part="M2" gate="-2" x="33.02" y="91.44" smashed="yes">
+<instance part="M3" gate="-2" x="33.02" y="91.44" smashed="yes">
 <attribute name="NAME" x="35.56" y="90.678" size="1.524" layer="95"/>
 </instance>
-<instance part="M2" gate="-3" x="33.02" y="88.9" smashed="yes">
+<instance part="M3" gate="-3" x="33.02" y="88.9" smashed="yes">
 <attribute name="NAME" x="35.56" y="88.138" size="1.524" layer="95"/>
 </instance>
-<instance part="M2" gate="-4" x="33.02" y="86.36" smashed="yes">
+<instance part="M3" gate="-4" x="33.02" y="86.36" smashed="yes">
 <attribute name="NAME" x="35.56" y="85.598" size="1.524" layer="95"/>
 </instance>
 <instance part="M1" gate="-1" x="33.02" y="81.28" smashed="yes">
@@ -2506,30 +2506,30 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <attribute name="NAME" x="184.404" y="84.201" size="1.778" layer="95"/>
 <attribute name="VALUE" x="184.404" y="79.121" size="1.778" layer="96"/>
 </instance>
-<instance part="M3" gate="-1" x="58.42" y="93.98" smashed="yes">
+<instance part="M4" gate="-1" x="58.42" y="93.98" smashed="yes">
 <attribute name="NAME" x="60.96" y="93.218" size="1.524" layer="95"/>
 <attribute name="VALUE" x="57.658" y="95.377" size="1.778" layer="96"/>
 </instance>
-<instance part="M3" gate="-2" x="58.42" y="91.44" smashed="yes">
+<instance part="M4" gate="-2" x="58.42" y="91.44" smashed="yes">
 <attribute name="NAME" x="60.96" y="90.678" size="1.524" layer="95"/>
 </instance>
-<instance part="M3" gate="-3" x="58.42" y="88.9" smashed="yes">
+<instance part="M4" gate="-3" x="58.42" y="88.9" smashed="yes">
 <attribute name="NAME" x="60.96" y="88.138" size="1.524" layer="95"/>
 </instance>
-<instance part="M3" gate="-4" x="58.42" y="86.36" smashed="yes">
+<instance part="M4" gate="-4" x="58.42" y="86.36" smashed="yes">
 <attribute name="NAME" x="60.96" y="85.598" size="1.524" layer="95"/>
 </instance>
-<instance part="M4" gate="-1" x="58.42" y="81.28" smashed="yes">
+<instance part="M2" gate="-1" x="58.42" y="81.28" smashed="yes">
 <attribute name="NAME" x="60.96" y="80.518" size="1.524" layer="95"/>
 <attribute name="VALUE" x="57.658" y="82.677" size="1.778" layer="96"/>
 </instance>
-<instance part="M4" gate="-2" x="58.42" y="78.74" smashed="yes">
+<instance part="M2" gate="-2" x="58.42" y="78.74" smashed="yes">
 <attribute name="NAME" x="60.96" y="77.978" size="1.524" layer="95"/>
 </instance>
-<instance part="M4" gate="-3" x="58.42" y="76.2" smashed="yes">
+<instance part="M2" gate="-3" x="58.42" y="76.2" smashed="yes">
 <attribute name="NAME" x="60.96" y="75.438" size="1.524" layer="95"/>
 </instance>
-<instance part="M4" gate="-4" x="58.42" y="73.66" smashed="yes">
+<instance part="M2" gate="-4" x="58.42" y="73.66" smashed="yes">
 <attribute name="NAME" x="60.96" y="72.898" size="1.524" layer="95"/>
 </instance>
 <instance part="JP1" gate="G$1" x="96.52" y="7.62" smashed="yes" rot="R270">
@@ -2563,7 +2563,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 </net>
 <net name="CANL" class="0">
 <segment>
-<pinref part="M2" gate="-3" pin="S"/>
+<pinref part="M3" gate="-3" pin="S"/>
 <wire x1="30.48" y1="88.9" x2="25.4" y2="88.9" width="0.1524" layer="91"/>
 <label x="25.4" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -2578,12 +2578,12 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <label x="121.92" y="17.78" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
-<pinref part="M3" gate="-3" pin="S"/>
+<pinref part="M4" gate="-3" pin="S"/>
 <wire x1="55.88" y1="88.9" x2="50.8" y2="88.9" width="0.1524" layer="91"/>
 <label x="50.8" y="88.9" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="M4" gate="-3" pin="S"/>
+<pinref part="M2" gate="-3" pin="S"/>
 <wire x1="55.88" y1="76.2" x2="50.8" y2="76.2" width="0.1524" layer="91"/>
 <label x="50.8" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -2600,7 +2600,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <label x="121.92" y="20.32" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 <segment>
-<pinref part="M2" gate="-4" pin="S"/>
+<pinref part="M3" gate="-4" pin="S"/>
 <wire x1="30.48" y1="86.36" x2="25.4" y2="86.36" width="0.1524" layer="91"/>
 <label x="25.4" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -2610,12 +2610,12 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <label x="25.4" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="M3" gate="-4" pin="S"/>
+<pinref part="M4" gate="-4" pin="S"/>
 <wire x1="55.88" y1="86.36" x2="50.8" y2="86.36" width="0.1524" layer="91"/>
 <label x="50.8" y="86.36" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="M4" gate="-4" pin="S"/>
+<pinref part="M2" gate="-4" pin="S"/>
 <wire x1="55.88" y1="73.66" x2="50.8" y2="73.66" width="0.1524" layer="91"/>
 <label x="50.8" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -2640,7 +2640,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <net name="N$2" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
-<pinref part="SPARE" gate="LED" pin="A"/>
+<pinref part="SPARE_LED" gate="LED" pin="A"/>
 <wire x1="149.86" y1="30.48" x2="154.94" y2="30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -2745,24 +2745,24 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <label x="22.86" y="2.54" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="152.4" y1="66.04" x2="160.02" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="66.04" x2="165.1" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="152.4" y1="68.58" x2="160.02" y2="68.58" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="68.58" x2="160.02" y2="66.04" width="0.1524" layer="91"/>
-<junction x="160.02" y="66.04"/>
+<wire x1="152.4" y1="66.04" x2="157.48" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="66.04" x2="165.1" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="68.58" x2="157.48" y2="68.58" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="68.58" x2="157.48" y2="66.04" width="0.1524" layer="91"/>
+<junction x="157.48" y="66.04"/>
 <pinref part="MODE_SWITCH" gate="1" pin="S"/>
 <pinref part="MODE_SWITCH" gate="1" pin="S1"/>
 <label x="165.1" y="66.04" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="SPARE_BUTTON" gate="1" pin="S1"/>
-<wire x1="152.4" y1="45.72" x2="160.02" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="45.72" x2="165.1" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="152.4" y1="45.72" x2="157.48" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="45.72" x2="162.56" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="SPARE_BUTTON" gate="1" pin="S"/>
-<wire x1="152.4" y1="48.26" x2="160.02" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="160.02" y1="48.26" x2="160.02" y2="45.72" width="0.1524" layer="91"/>
-<junction x="160.02" y="45.72"/>
-<label x="165.1" y="45.72" size="1.27" layer="95" xref="yes"/>
+<wire x1="152.4" y1="48.26" x2="157.48" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="48.26" x2="157.48" y2="45.72" width="0.1524" layer="91"/>
+<junction x="157.48" y="45.72"/>
+<label x="162.56" y="45.72" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -2842,7 +2842,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 </net>
 <net name="+12V" class="0">
 <segment>
-<pinref part="M2" gate="-1" pin="S"/>
+<pinref part="M3" gate="-1" pin="S"/>
 <wire x1="30.48" y1="93.98" x2="25.4" y2="93.98" width="0.1524" layer="91"/>
 <label x="25.4" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -2861,12 +2861,12 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <junction x="162.56" y="88.9"/>
 </segment>
 <segment>
-<pinref part="M3" gate="-1" pin="S"/>
+<pinref part="M4" gate="-1" pin="S"/>
 <wire x1="55.88" y1="93.98" x2="50.8" y2="93.98" width="0.1524" layer="91"/>
 <label x="50.8" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="M4" gate="-1" pin="S"/>
+<pinref part="M2" gate="-1" pin="S"/>
 <wire x1="55.88" y1="81.28" x2="50.8" y2="81.28" width="0.1524" layer="91"/>
 <label x="50.8" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -2936,7 +2936,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <label x="88.9" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="SPARE" gate="LED" pin="C"/>
+<pinref part="SPARE_LED" gate="LED" pin="C"/>
 <wire x1="162.56" y1="30.48" x2="167.64" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="LINE_OK" gate="LED" pin="C"/>
 <wire x1="162.56" y1="20.32" x2="167.64" y2="20.32" width="0.1524" layer="91"/>
@@ -3020,17 +3020,17 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <label x="76.2" y="83.82" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="M4" gate="-2" pin="S"/>
+<pinref part="M2" gate="-2" pin="S"/>
 <wire x1="55.88" y1="78.74" x2="50.8" y2="78.74" width="0.1524" layer="91"/>
 <label x="50.8" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="M3" gate="-2" pin="S"/>
+<pinref part="M4" gate="-2" pin="S"/>
 <wire x1="55.88" y1="91.44" x2="50.8" y2="91.44" width="0.1524" layer="91"/>
 <label x="50.8" y="91.44" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="M2" gate="-2" pin="S"/>
+<pinref part="M3" gate="-2" pin="S"/>
 <wire x1="30.48" y1="91.44" x2="25.4" y2="91.44" width="0.1524" layer="91"/>
 <label x="25.4" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
