@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -9626,10 +9626,11 @@ Source: Mitsubishi M5218AL/P/FP</description>
 <pad name="P$2" x="3.7084" y="0.889" drill="2"/>
 <pad name="P$3" x="0" y="-2.1082" drill="2"/>
 <pad name="P$4" x="-3.7084" y="0.889" drill="2"/>
-<hole x="-14.55" y="0" drill="3.3"/>
-<hole x="14.55" y="0" drill="3.3"/>
-<circle x="-14.55" y="0" radius="3" width="0.127" layer="40"/>
-<circle x="14.55" y="0" radius="3" width="0.127" layer="40"/>
+<hole x="-10.2884" y="-10.2884" drill="3.3"/>
+<hole x="10.2884" y="10.2884" drill="3.3"/>
+<circle x="-10.2884" y="-10.2884" radius="3" width="0.127" layer="40"/>
+<circle x="10.2884" y="10.2884" radius="3" width="0.127" layer="40"/>
+<circle x="0" y="0" radius="13" width="0.127" layer="21"/>
 </package>
 <package name="AUTOSPORT_14-35">
 <circle x="0" y="0" radius="10.3" width="0.127" layer="21"/>
@@ -9670,10 +9671,11 @@ Source: Mitsubishi M5218AL/P/FP</description>
 <pad name="P$35" x="-2.286" y="-0.1016" drill="1"/>
 <pad name="P$36" x="-1.143" y="1.8796" drill="1"/>
 <pad name="P$37" x="0" y="-0.1016" drill="1"/>
-<hole x="-16.25" y="0" drill="3.3"/>
-<hole x="16.25" y="0" drill="3.3"/>
-<circle x="-16.25" y="0" radius="3" width="0.127" layer="40"/>
-<circle x="16.25" y="0" radius="3" width="0.127" layer="40"/>
+<hole x="-11.4905" y="-11.4905" drill="3.3"/>
+<hole x="11.4905" y="11.4905" drill="3.3"/>
+<circle x="-11.4905" y="-11.4905" radius="3" width="0.127" layer="40"/>
+<circle x="11.4905" y="11.4905" radius="3" width="0.127" layer="40"/>
+<circle x="0" y="0" radius="14.5" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
