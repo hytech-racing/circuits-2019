@@ -9677,6 +9677,21 @@ Source: Mitsubishi M5218AL/P/FP</description>
 <circle x="11.4905" y="11.4905" radius="3" width="0.127" layer="40"/>
 <circle x="0" y="0" radius="14.5" width="0.127" layer="21"/>
 </package>
+<package name="HM2102NLT">
+<description>SMD Transformer</description>
+<smd name="P$1" x="0" y="0" dx="2.1844" dy="1.0668" layer="1" rot="R90"/>
+<smd name="P$2" x="2" y="0" dx="2.1844" dy="1.0668" layer="1" rot="R90"/>
+<smd name="P$3" x="4" y="0" dx="2.1844" dy="1.0668" layer="1" rot="R90"/>
+<smd name="P$4" x="6" y="0" dx="2.1844" dy="1.0668" layer="1" rot="R90"/>
+<smd name="P$5" x="8" y="0" dx="2.1844" dy="1.0668" layer="1" rot="R90"/>
+<smd name="P$6" x="10" y="0" dx="2.1844" dy="1.0668" layer="1" rot="R90"/>
+<smd name="P$7" x="10" y="14.25" dx="2.1844" dy="1.0668" layer="1" rot="R90"/>
+<smd name="P$8" x="8" y="14.25" dx="2.1844" dy="1.0668" layer="1" rot="R90"/>
+<smd name="P$9" x="6" y="14.25" dx="2.1844" dy="1.0668" layer="1" rot="R90"/>
+<smd name="P$10" x="4" y="14.25" dx="2.1844" dy="1.0668" layer="1" rot="R90"/>
+<smd name="P$11" x="2" y="14.25" dx="2.1844" dy="1.0668" layer="1" rot="R90"/>
+<smd name="P$12" x="0" y="14.25" dx="2.1844" dy="1.0668" layer="1" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="ARDUINO_NANO">
@@ -20455,6 +20470,39 @@ Source: http://www.molex.com</description>
 <connect gate="G$1" pin="OS" pad="6"/>
 <connect gate="G$1" pin="OUT" pad="5"/>
 <connect gate="G$1" pin="VDD" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="HM2102NLT">
+<description>&lt;b&gt;2 Channel SMT Transformer&lt;/b&gt;&lt;br/&gt;
+Turns ratio: 1CT: 1CT&lt;br/&gt;
+Isolation Voltage: 4300 VDC&lt;br/&gt;
+Inductance: 150 uH&lt;br/&gt;
+Leakage Inductance: 0.50 uH max
+&lt;p&gt;&lt;a href="https://www.mouser.com/datasheet/2/336/HM2102NL-1218600.pdf"&gt;DataSheet&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="TRANSFORMER" x="5.08" y="17.78"/>
+<gate name="G$2" symbol="TRANSFORMER" x="5.08" y="-17.78"/>
+</gates>
+<devices>
+<device name="" package="HM2102NLT">
+<connects>
+<connect gate="G$1" pin="MCT" pad="P$2"/>
+<connect gate="G$1" pin="MX+" pad="P$1"/>
+<connect gate="G$1" pin="MX-" pad="P$3"/>
+<connect gate="G$1" pin="TCT" pad="P$11"/>
+<connect gate="G$1" pin="TD+" pad="P$12"/>
+<connect gate="G$1" pin="TD-" pad="P$10"/>
+<connect gate="G$2" pin="MCT" pad="P$5"/>
+<connect gate="G$2" pin="MX+" pad="P$4"/>
+<connect gate="G$2" pin="MX-" pad="P$6"/>
+<connect gate="G$2" pin="TCT" pad="P$8"/>
+<connect gate="G$2" pin="TD+" pad="P$9"/>
+<connect gate="G$2" pin="TD-" pad="P$7"/>
 </connects>
 <technologies>
 <technology name=""/>
