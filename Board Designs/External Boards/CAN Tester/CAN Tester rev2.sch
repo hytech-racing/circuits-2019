@@ -2398,7 +2398,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <plain>
 </plain>
 <instances>
-<instance part="U3" gate="G$1" x="96.52" y="27.94" smashed="yes"/>
+<instance part="U3" gate="G$1" x="93.98" y="27.94" smashed="yes"/>
 <instance part="U1" gate="G$1" x="93.98" y="12.7" smashed="yes"/>
 <instance part="INCOMING" gate="LED" x="157.48" y="-10.16" smashed="yes" rot="R90">
 <attribute name="NAME" x="162.052" y="-6.604" size="1.778" layer="95" rot="R180"/>
@@ -2552,8 +2552,8 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <net name="CANTX" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="D3(CANTX)"/>
-<wire x1="93.98" y1="55.88" x2="88.9" y2="55.88" width="0.1524" layer="91"/>
-<label x="88.9" y="55.88" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<wire x1="91.44" y1="55.88" x2="86.36" y2="55.88" width="0.1524" layer="91"/>
+<label x="86.36" y="55.88" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="TXD"/>
@@ -2628,8 +2628,8 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <net name="CANRX" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="D4(CANRX)"/>
-<wire x1="93.98" y1="53.34" x2="88.9" y2="53.34" width="0.1524" layer="91"/>
-<label x="88.9" y="53.34" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
+<wire x1="91.44" y1="53.34" x2="86.36" y2="53.34" width="0.1524" layer="91"/>
+<label x="86.36" y="53.34" size="1.27" layer="95" font="vector" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="RXD"/>
@@ -2647,7 +2647,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <net name="N$1" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="A0"/>
-<wire x1="119.38" y1="35.56" x2="129.54" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="35.56" x2="129.54" y2="35.56" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="35.56" x2="129.54" y2="-10.16" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="2"/>
 <wire x1="129.54" y1="-10.16" x2="139.7" y2="-10.16" width="0.1524" layer="91"/>
@@ -2656,7 +2656,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <net name="N$4" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="A1"/>
-<wire x1="119.38" y1="38.1" x2="132.08" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="38.1" x2="132.08" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="132.08" y1="38.1" x2="132.08" y2="0" width="0.1524" layer="91"/>
 <pinref part="R2" gate="G$1" pin="2"/>
 <wire x1="132.08" y1="0" x2="139.7" y2="0" width="0.1524" layer="91"/>
@@ -2665,7 +2665,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <net name="N$5" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="A2"/>
-<wire x1="119.38" y1="40.64" x2="134.62" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="40.64" x2="134.62" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="134.62" y1="40.64" x2="134.62" y2="10.16" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <wire x1="134.62" y1="10.16" x2="139.7" y2="10.16" width="0.1524" layer="91"/>
@@ -2674,7 +2674,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <net name="N$6" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="A3"/>
-<wire x1="119.38" y1="43.18" x2="137.16" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="43.18" x2="137.16" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="137.16" y1="43.18" x2="137.16" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="R4" gate="G$1" pin="2"/>
 <wire x1="137.16" y1="20.32" x2="139.7" y2="20.32" width="0.1524" layer="91"/>
@@ -2683,7 +2683,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <net name="N$7" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="A4"/>
-<wire x1="119.38" y1="45.72" x2="139.7" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="45.72" x2="139.7" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="R5" gate="G$1" pin="2"/>
 <wire x1="139.7" y1="45.72" x2="139.7" y2="30.48" width="0.1524" layer="91"/>
 </segment>
@@ -2720,14 +2720,14 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <segment>
 <pinref part="U3" gate="G$1" pin="A5"/>
 <pinref part="SPARE_BUTTON" gate="1" pin="P"/>
-<wire x1="119.38" y1="48.26" x2="142.24" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="48.26" x2="142.24" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="+3V3" class="0">
+<net name="+3V3_ISOLATED" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="3.3V"/>
-<wire x1="119.38" y1="60.96" x2="124.46" y2="60.96" width="0.1524" layer="91"/>
-<label x="124.46" y="60.96" size="1.27" layer="95" xref="yes"/>
+<wire x1="116.84" y1="60.96" x2="121.92" y2="60.96" width="0.1524" layer="91"/>
+<label x="121.92" y="60.96" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U4" gate="G$1" pin="VDD"/>
@@ -2768,7 +2768,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <net name="N$13" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="A6"/>
-<wire x1="119.38" y1="50.8" x2="139.7" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="50.8" x2="139.7" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="50.8" x2="139.7" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="68.58" x2="142.24" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="MODE_SWITCH" gate="1" pin="P"/>
@@ -2792,7 +2792,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <wire x1="48.26" y1="58.42" x2="68.58" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="58.42" x2="68.58" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="D5"/>
-<wire x1="68.58" y1="50.8" x2="93.98" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="50.8" x2="91.44" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -2801,43 +2801,43 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <wire x1="48.26" y1="53.34" x2="66.04" y2="53.34" width="0.1524" layer="91"/>
 <wire x1="66.04" y1="53.34" x2="66.04" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="D6"/>
-<wire x1="66.04" y1="48.26" x2="93.98" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="66.04" y1="48.26" x2="91.44" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="DB4"/>
-<wire x1="48.26" y1="40.64" x2="83.82" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="83.82" y1="40.64" x2="83.82" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="40.64" x2="81.28" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="40.64" x2="81.28" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="D7(RX3)"/>
-<wire x1="83.82" y1="45.72" x2="93.98" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="45.72" x2="91.44" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$20" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="DB5"/>
-<wire x1="48.26" y1="38.1" x2="86.36" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="86.36" y1="38.1" x2="86.36" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="38.1" x2="83.82" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="38.1" x2="83.82" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="D8(TX3)"/>
-<wire x1="86.36" y1="43.18" x2="93.98" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="83.82" y1="43.18" x2="91.44" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$21" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="DB6"/>
-<wire x1="48.26" y1="35.56" x2="88.9" y2="35.56" width="0.1524" layer="91"/>
-<wire x1="88.9" y1="35.56" x2="88.9" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="35.56" x2="86.36" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="35.56" x2="86.36" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="D9(RX2)"/>
-<wire x1="88.9" y1="40.64" x2="93.98" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="86.36" y1="40.64" x2="91.44" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$22" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="DB7"/>
-<wire x1="48.26" y1="33.02" x2="91.44" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="91.44" y1="33.02" x2="91.44" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="33.02" x2="88.9" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="33.02" x2="88.9" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="U3" gate="G$1" pin="D10(TX2)"/>
-<wire x1="91.44" y1="38.1" x2="93.98" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="88.9" y1="38.1" x2="91.44" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -2911,8 +2911,8 @@ Note: The Sparkfun version includes many other packages including surface mount 
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="VIN"/>
-<wire x1="119.38" y1="66.04" x2="124.46" y2="66.04" width="0.1524" layer="91"/>
-<label x="124.46" y="66.04" size="1.27" layer="95" xref="yes"/>
+<wire x1="116.84" y1="66.04" x2="121.92" y2="66.04" width="0.1524" layer="91"/>
+<label x="121.92" y="66.04" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="VCC1"/>
@@ -2932,8 +2932,8 @@ Note: The Sparkfun version includes many other packages including surface mount 
 </segment>
 <segment>
 <pinref part="U3" gate="G$1" pin="GND"/>
-<wire x1="93.98" y1="66.04" x2="88.9" y2="66.04" width="0.1524" layer="91"/>
-<label x="88.9" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="91.44" y1="66.04" x2="86.36" y2="66.04" width="0.1524" layer="91"/>
+<label x="86.36" y="66.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="SPARE_LED" gate="LED" pin="C"/>
@@ -3060,7 +3060,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 </sheet>
 </sheets>
 <errors>
-<approved hash="102,1,48.26,63.5,VDD,+3V3,,,,"/>
+<approved hash="102,1,48.26,63.5,VDD,+3V3_ISOLATED,,,,"/>
 <approved hash="102,1,48.26,66.04,VSS,GND_ISOLATED,,,,"/>
 <approved hash="113,1,149.541,70.8254,MODE_SWITCH,,,,,"/>
 <approved hash="113,1,150.381,50.5054,SPARE_BUTTON,,,,,"/>
