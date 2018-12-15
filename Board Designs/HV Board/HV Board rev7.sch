@@ -1160,6 +1160,10 @@ Nano-Fit™ Vertical Header, Through Hole, Single Row</description>
 <smd name="P$10" x="4" y="14.25" dx="2.1844" dy="1.0668" layer="1" rot="R90"/>
 <smd name="P$11" x="2" y="14.25" dx="2.1844" dy="1.0668" layer="1" rot="R90"/>
 <smd name="P$12" x="0" y="14.25" dx="2.1844" dy="1.0668" layer="1" rot="R90"/>
+<wire x1="-2.4" y1="12.97" x2="12.4" y2="12.97" width="0.1524" layer="21"/>
+<wire x1="12.4" y1="12.97" x2="12.4" y2="1.29" width="0.1524" layer="21"/>
+<wire x1="12.4" y1="1.29" x2="-2.4" y2="1.29" width="0.1524" layer="21"/>
+<wire x1="-2.4" y1="1.29" x2="-2.4" y2="12.97" width="0.1524" layer="21"/>
 </package>
 <package name="0805">
 <smd name="1" x="-1.025" y="0" dx="1.4" dy="1.5" layer="1"/>
@@ -3604,7 +3608,7 @@ Source: http://www.molex.com</description>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="MAIN" library="HyTechDevices" deviceset="CONNECTOR-10" device="NANO-FIT_VERTICAL-10" value="MAIN"/>
 <part name="ISO_SPI" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2" value="ISO_SPI"/>
-<part name="IMD" library="HyTechDevices" deviceset="CONNECTOR-6" device="NANO-FIT_VERTICAL-6" value="IMD"/>
+<part name="IMD" library="HyTechDevices" deviceset="CONNECTOR-6" device="NANO-FIT_VERTICAL-6" value="CONNECTOR-6NANO-FIT_VERTICAL-6"/>
 <part name="P+6" library="supply1" deviceset="+12V" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
 <part name="U$3" library="HyTechDevices" deviceset="SN74LVC1G08" device=""/>

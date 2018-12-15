@@ -9702,6 +9702,10 @@ Source: Mitsubishi M5218AL/P/FP</description>
 <smd name="P$10" x="4" y="14.25" dx="2.1844" dy="1.0668" layer="1" rot="R90"/>
 <smd name="P$11" x="2" y="14.25" dx="2.1844" dy="1.0668" layer="1" rot="R90"/>
 <smd name="P$12" x="0" y="14.25" dx="2.1844" dy="1.0668" layer="1" rot="R90"/>
+<wire x1="-2.4" y1="12.97" x2="12.4" y2="12.97" width="0.1524" layer="21"/>
+<wire x1="12.4" y1="12.97" x2="12.4" y2="1.29" width="0.1524" layer="21"/>
+<wire x1="12.4" y1="1.29" x2="-2.4" y2="1.29" width="0.1524" layer="21"/>
+<wire x1="-2.4" y1="1.29" x2="-2.4" y2="12.97" width="0.1524" layer="21"/>
 </package>
 <package name="SSOP28" urn="urn:adsk.eagle:footprint:3793/1">
 <description>&lt;b&gt;28-Lead Shrink Small Outline Package SSOP&lt;/b&gt; (RS-28)&lt;p&gt;
