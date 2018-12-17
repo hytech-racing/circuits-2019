@@ -1732,7 +1732,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <wire x1="342.9" y1="0" x2="342.9" y2="157.48" width="1.27" layer="90"/>
 <text x="2.54" y="160.02" size="7.62" layer="90">A Mode</text>
 <text x="205.74" y="160.02" size="7.62" layer="90">B Mode</text>
-<text x="167.64" y="177.8" size="7.62" layer="90" align="center">Warning: install only the 2 connectors for one mode</text>
+<text x="167.64" y="187.96" size="7.62" layer="90" align="center">Warning: only install Mode A or Mode B connectors
+Do not use connectors from both modes</text>
 </plain>
 <instances>
 <instance part="CELL9" gate="G$1" x="165.1" y="78.74" smashed="yes" rot="R180">
@@ -2722,4 +2723,10 @@ In this library the device names are the same as the pin names of the symbols, t
 </sheets>
 </schematic>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
