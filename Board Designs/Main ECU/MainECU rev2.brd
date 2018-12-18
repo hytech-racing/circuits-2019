@@ -836,6 +836,9 @@ Button</text>
 <text x="26.543" y="48.387" size="0.8128" layer="51" rot="R90" align="top-right">Software</text>
 <dimension x1="0" y1="0" x2="0" y2="78.918" x3="-1.524" y3="39.459" textsize="1.778" layer="47"/>
 <dimension x1="0" y1="78.918" x2="120.63" y2="78.918" x3="60.315" y3="81.025996875" textsize="1.778" layer="47"/>
+<rectangle x1="107.442" y1="66.802" x2="119.634" y2="77.47" layer="29"/>
+<rectangle x1="107.442" y1="48.26" x2="119.634" y2="57.912" layer="29"/>
+<rectangle x1="107.188" y1="36.83" x2="119.634" y2="46.228" layer="29"/>
 </plain>
 <libraries>
 <library name="HyTechDevices">
@@ -3582,7 +3585,6 @@ design rules under a new name.</description>
 <via x="100.076" y="30.226" extent="1-16" drill="0.35"/>
 <wire x1="100.076" y1="31.496" x2="99.822" y2="31.75" width="0.254" layer="16"/>
 <wire x1="100.076" y1="30.226" x2="100.076" y2="31.496" width="0.254" layer="16"/>
-<wire x1="99.314" y1="31.75" x2="99.822" y2="31.75" width="0.254" layer="16"/>
 <wire x1="101.854" y1="20.828" x2="101.092" y2="20.066" width="0.254" layer="1"/>
 <wire x1="101.092" y1="20.066" x2="64.008" y2="20.066" width="0.254" layer="1"/>
 </signal>
@@ -4457,14 +4459,12 @@ design rules under a new name.</description>
 <wire x1="1.778" y1="18.034" x2="3.556" y2="19.812" width="0.254" layer="16"/>
 <wire x1="102.362" y1="33.782" x2="102.362" y2="36.576" width="0.254" layer="1"/>
 <via x="102.362" y="36.576" extent="1-16" drill="0.35"/>
-<wire x1="103.378" y1="38.862" x2="103.378" y2="41.656" width="0.254" layer="16"/>
+<wire x1="102.616" y1="38.1" x2="102.616" y2="68.326" width="0.254" layer="16"/>
 <wire x1="102.362" y1="37.846" x2="102.362" y2="36.576" width="0.254" layer="16"/>
-<wire x1="102.362" y1="37.846" x2="103.378" y2="38.862" width="0.254" layer="16"/>
+<wire x1="102.362" y1="37.846" x2="102.616" y2="38.1" width="0.254" layer="16"/>
 <wire x1="104.5464" y1="9.5504" x2="112.014" y2="17.018" width="0.254" layer="1"/>
-<wire x1="102.616" y1="42.418" x2="103.378" y2="41.656" width="0.254" layer="16"/>
 <wire x1="99.06" y1="69.596" x2="101.346" y2="69.596" width="0.254" layer="16"/>
 <wire x1="101.346" y1="69.596" x2="102.616" y2="68.326" width="0.254" layer="16"/>
-<wire x1="102.616" y1="68.326" x2="102.616" y2="42.418" width="0.254" layer="16"/>
 <wire x1="112.014" y1="17.018" x2="112.014" y2="24.13" width="0.254" layer="1"/>
 <wire x1="112.014" y1="24.13" x2="102.362" y2="33.782" width="0.254" layer="1"/>
 <wire x1="2.794" y1="7.9756" x2="1.778" y2="8.9916" width="0.254" layer="16"/>
@@ -4936,13 +4936,12 @@ design rules under a new name.</description>
 <via x="112.776" y="57.912" extent="1-16" drill="1.016"/>
 <via x="113.03" y="77.216" extent="1-16" drill="1.016"/>
 <via x="108.458" y="77.216" extent="1-16" drill="1.016"/>
-<via x="108.712" y="67.564" extent="1-16" drill="1.016"/>
+<via x="108.458" y="67.564" extent="1-16" drill="1.016"/>
 <via x="113.03" y="67.564" extent="1-16" drill="1.016"/>
-<via x="108.712" y="57.912" extent="1-16" drill="1.016"/>
-<via x="108.712" y="48.768" extent="1-16" drill="1.016"/>
-<via x="108.712" y="46.228" extent="1-16" drill="1.016"/>
+<via x="108.458" y="57.912" extent="1-16" drill="1.016"/>
+<via x="108.204" y="48.768" extent="1-16" drill="1.016"/>
+<via x="108.204" y="45.974" extent="1-16" drill="1.016"/>
 <via x="108.458" y="37.338" extent="1-16" drill="1.016"/>
-<wire x1="112.776" y1="37.592" x2="108.458" y2="37.338" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>
