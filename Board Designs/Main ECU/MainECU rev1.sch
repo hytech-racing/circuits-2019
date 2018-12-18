@@ -1919,6 +1919,18 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/39677768AD7714_c.pdf</de
 <rectangle x1="-3.7529" y1="2.6416" x2="-3.3973" y2="3.937" layer="51"/>
 <rectangle x1="-4.4028" y1="2.6416" x2="-4.0472" y2="3.937" layer="51"/>
 </package>
+<package name="CR-2450/G1AN">
+<circle x="0" y="0" radius="12.446" width="0.254" layer="21"/>
+<pad name="-" x="0" y="-5.08" drill="0.8" shape="long" rot="R90"/>
+<pad name="+_1" x="5.08" y="12.7" drill="0.8" shape="long" rot="R90"/>
+<pad name="+_0" x="-5.08" y="12.7" drill="0.8" shape="long" rot="R90"/>
+<wire x1="-0.635" y1="2.54" x2="-0.635" y2="0" width="0.254" layer="21"/>
+<wire x1="-0.635" y1="0" x2="-0.635" y2="-2.54" width="0.254" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="0.635" y2="0" width="0.254" layer="21"/>
+<wire x1="0.635" y1="0" x2="0.635" y2="-1.27" width="0.254" layer="21"/>
+<wire x1="0.635" y1="0" x2="3.175" y2="0" width="0.254" layer="21"/>
+<wire x1="-0.635" y1="0" x2="-3.175" y2="0" width="0.254" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MV">
@@ -2591,6 +2603,12 @@ Source: http://www.analog.com/UploadedFiles/Data_Sheets/39677768AD7714_c.pdf</de
 <vertex x="9.652" y="-2.921"/>
 </polygon>
 <text x="0.635" y="-9.525" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="CR-2450/G1AN">
+<circle x="0" y="0" radius="7.62" width="0.254" layer="94"/>
+<pin name="+" x="-10.16" y="0" visible="pin" length="short"/>
+<pin name="-" x="10.16" y="0" visible="pin" length="short" rot="R180"/>
+<text x="-5.842" y="-2.54" size="1.27" layer="94">CR-2450/G1AN</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -4076,6 +4094,23 @@ It is replaced by MCP2561.
 </device>
 </devices>
 </deviceset>
+<deviceset name="CR-2450/G1AN">
+<description>Panasonic CR2450 Battery through hole.</description>
+<gates>
+<gate name="G$1" symbol="CR-2450/G1AN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CR-2450/G1AN">
+<connects>
+<connect gate="G$1" pin="+" pad="+_0 +_1"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="HyTechSymbols">
@@ -4469,6 +4504,7 @@ It is replaced by MCP2561.
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="GND65" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND66" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="U$26" library="HyTechDevices" deviceset="CR-2450/G1AN" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4578,7 +4614,7 @@ Motor Controller</text>
 <instance part="X2" gate="-3" x="45.72" y="55.88" rot="MR0"/>
 <instance part="X2" gate="-4" x="45.72" y="53.34" rot="MR0"/>
 <instance part="U$1" gate="G$1" x="121.92" y="114.3"/>
-<instance part="U$2" gate="G$1" x="342.9" y="50.8"/>
+<instance part="U$2" gate="G$1" x="342.9" y="55.88"/>
 <instance part="U$3" gate="G$1" x="378.46" y="20.32"/>
 <instance part="ADXL345_BREAKOUT" gate="G$1" x="355.6" y="152.4" rot="R180"/>
 <instance part="U$6" gate="G$1" x="83.82" y="284.48" rot="R270"/>
@@ -4657,7 +4693,7 @@ Motor Controller</text>
 <instance part="R31" gate="G$1" x="386.08" y="292.1" rot="MR180"/>
 <instance part="GND1" gate="1" x="50.8" y="48.26"/>
 <instance part="GND4" gate="1" x="116.84" y="157.48" rot="R180"/>
-<instance part="GND7" gate="1" x="337.82" y="124.46" rot="R180"/>
+<instance part="GND7" gate="1" x="337.82" y="129.54" rot="R180"/>
 <instance part="GND8" gate="1" x="353.06" y="5.08"/>
 <instance part="REG" gate="G$1" x="22.86" y="233.68"/>
 <instance part="GND9" gate="1" x="22.86" y="220.98"/>
@@ -4700,9 +4736,9 @@ Motor Controller</text>
 <instance part="R2" gate="G$1" x="368.3" y="228.6" rot="MR90"/>
 <instance part="R3" gate="G$1" x="355.6" y="190.5" rot="MR180"/>
 <instance part="R4" gate="G$1" x="363.22" y="182.88" rot="MR90"/>
-<instance part="CAN_TRANSCEIVER" gate="G$1" x="322.58" y="116.84" rot="R180"/>
-<instance part="GND16" gate="1" x="330.2" y="111.76" rot="R90"/>
-<instance part="GND18" gate="1" x="299.72" y="109.22" rot="R270"/>
+<instance part="CAN_TRANSCEIVER" gate="G$1" x="322.58" y="121.92" rot="R180"/>
+<instance part="GND16" gate="1" x="330.2" y="116.84" rot="R90"/>
+<instance part="GND18" gate="1" x="299.72" y="114.3" rot="R270"/>
 <instance part="CAN_TRANSCEIVER1" gate="G$1" x="106.68" y="149.86" rot="R180"/>
 <instance part="GND26" gate="1" x="111.76" y="144.78" rot="R90"/>
 <instance part="GND27" gate="1" x="83.82" y="142.24" rot="R270"/>
@@ -4759,7 +4795,7 @@ Motor Controller</text>
 <instance part="GND51" gate="1" x="312.42" y="25.4"/>
 <instance part="C11" gate="G$1" x="299.72" y="12.7" rot="R90"/>
 <instance part="C13" gate="G$1" x="299.72" y="38.1" rot="R90"/>
-<instance part="GND52" gate="1" x="299.72" y="48.26" rot="R90"/>
+<instance part="GND52" gate="1" x="299.72" y="53.34" rot="R90"/>
 <instance part="P+28" gate="1" x="309.88" y="12.7" rot="R270"/>
 <instance part="LED11" gate="LED" x="342.9" y="10.16" rot="MR90"/>
 <instance part="R30" gate="G$1" x="330.2" y="10.16" rot="MR180"/>
@@ -4826,6 +4862,7 @@ Motor Controller</text>
 <instance part="P+1" gate="1" x="149.86" y="152.4" rot="R270"/>
 <instance part="GND65" gate="1" x="66.04" y="71.12" rot="R90"/>
 <instance part="GND66" gate="1" x="58.42" y="200.66"/>
+<instance part="U$26" gate="G$1" x="353.06" y="43.18"/>
 </instances>
 <busses>
 </busses>
@@ -4880,9 +4917,9 @@ Motor Controller</text>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="GND"/>
-<wire x1="340.36" y1="119.38" x2="337.82" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="340.36" y1="124.46" x2="337.82" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="GND7" gate="1" pin="GND"/>
-<wire x1="337.82" y1="119.38" x2="337.82" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="124.46" x2="337.82" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND"/>
@@ -5052,12 +5089,12 @@ Motor Controller</text>
 <segment>
 <pinref part="CAN_TRANSCEIVER" gate="G$1" pin="2"/>
 <pinref part="GND16" gate="1" pin="GND"/>
-<wire x1="327.66" y1="111.76" x2="325.12" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="327.66" y1="116.84" x2="325.12" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CAN_TRANSCEIVER" gate="G$1" pin="8"/>
 <pinref part="GND18" gate="1" pin="GND"/>
-<wire x1="302.26" y1="109.22" x2="304.8" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="114.3" x2="304.8" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CAN_TRANSCEIVER1" gate="G$1" pin="2"/>
@@ -5144,8 +5181,8 @@ Motor Controller</text>
 <pinref part="C11" gate="G$1" pin="1"/>
 <pinref part="C13" gate="G$1" pin="1"/>
 <wire x1="294.64" y1="12.7" x2="294.64" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="294.64" y1="38.1" x2="294.64" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="294.64" y1="48.26" x2="297.18" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="38.1" x2="294.64" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="53.34" x2="297.18" y2="53.34" width="0.1524" layer="91"/>
 <junction x="294.64" y="38.1"/>
 <pinref part="GND52" gate="1" pin="GND"/>
 </segment>
@@ -6133,8 +6170,8 @@ Motor Controller</text>
 <label x="375.92" y="238.76" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="335.28" y="60.96" size="1.016" layer="95" rot="R180" xref="yes"/>
-<wire x1="340.36" y1="60.96" x2="335.28" y2="60.96" width="0.1524" layer="91"/>
+<label x="335.28" y="66.04" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="340.36" y1="66.04" x2="335.28" y2="66.04" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="A13"/>
 </segment>
 </net>
@@ -6149,16 +6186,16 @@ Motor Controller</text>
 <label x="370.84" y="190.5" size="1.016" layer="95" xref="yes"/>
 </segment>
 <segment>
-<label x="335.28" y="63.5" size="1.016" layer="95" rot="R180" xref="yes"/>
-<wire x1="340.36" y1="63.5" x2="335.28" y2="63.5" width="0.1524" layer="91"/>
+<label x="335.28" y="68.58" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="340.36" y1="68.58" x2="335.28" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="A12"/>
 </segment>
 </net>
 <net name="CANL" class="0">
 <segment>
 <pinref part="CAN_TRANSCEIVER" gate="G$1" pin="6"/>
-<wire x1="302.26" y1="114.3" x2="304.8" y2="114.3" width="0.1524" layer="91"/>
-<label x="302.26" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="302.26" y1="119.38" x2="304.8" y2="119.38" width="0.1524" layer="91"/>
+<label x="302.26" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="CAN_TRANSCEIVER1" gate="G$1" pin="6"/>
@@ -6189,8 +6226,8 @@ Motor Controller</text>
 <net name="CANH" class="0">
 <segment>
 <pinref part="CAN_TRANSCEIVER" gate="G$1" pin="7"/>
-<label x="302.26" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="304.8" y1="111.76" x2="302.26" y2="111.76" width="0.1524" layer="91"/>
+<label x="302.26" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="304.8" y1="116.84" x2="302.26" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="CAN_TRANSCEIVER1" gate="G$1" pin="7"/>
@@ -6221,19 +6258,19 @@ Motor Controller</text>
 <net name="N$13" class="0">
 <segment>
 <pinref part="CAN_TRANSCEIVER" gate="G$1" pin="4"/>
-<wire x1="325.12" y1="116.84" x2="335.28" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="335.28" y1="116.84" x2="335.28" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="121.92" x2="335.28" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="121.92" x2="335.28" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="D4(CANRX)"/>
-<wire x1="335.28" y1="106.68" x2="340.36" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="111.76" x2="340.36" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$14" class="0">
 <segment>
 <pinref part="CAN_TRANSCEIVER" gate="G$1" pin="1"/>
-<wire x1="325.12" y1="109.22" x2="335.28" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="335.28" y1="109.22" x2="337.82" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="114.3" x2="335.28" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="335.28" y1="114.3" x2="337.82" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="D3(CANTX)"/>
-<wire x1="337.82" y1="109.22" x2="340.36" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="337.82" y1="114.3" x2="340.36" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -6549,9 +6586,9 @@ Motor Controller</text>
 </segment>
 <segment>
 <pinref part="CAN_TRANSCEIVER" gate="G$1" pin="3"/>
-<wire x1="325.12" y1="114.3" x2="327.66" y2="114.3" width="0.1524" layer="91"/>
-<label x="327.66" y="124.46" size="1.016" layer="95" rot="R180" xref="yes"/>
-<wire x1="327.66" y1="114.3" x2="327.66" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="119.38" x2="327.66" y2="119.38" width="0.1524" layer="91"/>
+<label x="327.66" y="129.54" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="327.66" y1="119.38" x2="327.66" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C9" gate="G$1" pin="1"/>
@@ -6572,8 +6609,8 @@ Motor Controller</text>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="VIN"/>
-<wire x1="365.76" y1="119.38" x2="370.84" y2="119.38" width="0.1524" layer="91"/>
-<label x="370.84" y="119.38" size="1.016" layer="95" xref="yes"/>
+<wire x1="365.76" y1="124.46" x2="370.84" y2="124.46" width="0.1524" layer="91"/>
+<label x="370.84" y="124.46" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -6598,8 +6635,8 @@ Motor Controller</text>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="D9(RX2)"/>
-<wire x1="340.36" y1="93.98" x2="337.82" y2="93.98" width="0.1524" layer="91"/>
-<label x="337.82" y="93.98" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="340.36" y1="99.06" x2="337.82" y2="99.06" width="0.1524" layer="91"/>
+<label x="337.82" y="99.06" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="XBDI" class="0">
@@ -6610,8 +6647,8 @@ Motor Controller</text>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="D10(TX2)"/>
-<wire x1="340.36" y1="91.44" x2="337.82" y2="91.44" width="0.1524" layer="91"/>
-<label x="337.82" y="91.44" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="340.36" y1="96.52" x2="337.82" y2="96.52" width="0.1524" layer="91"/>
+<label x="337.82" y="96.52" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="XB8" class="0">
@@ -6622,8 +6659,8 @@ Motor Controller</text>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="D7(RX3)"/>
-<wire x1="337.82" y1="99.06" x2="340.36" y2="99.06" width="0.1524" layer="91"/>
-<label x="337.82" y="99.06" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="337.82" y1="104.14" x2="340.36" y2="104.14" width="0.1524" layer="91"/>
+<label x="337.82" y="104.14" size="1.016" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$45" class="0">
@@ -6667,8 +6704,8 @@ Motor Controller</text>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="A5"/>
-<wire x1="365.76" y1="101.6" x2="370.84" y2="101.6" width="0.1524" layer="91"/>
-<label x="370.84" y="101.6" size="1.016" layer="95" xref="yes"/>
+<wire x1="365.76" y1="106.68" x2="370.84" y2="106.68" width="0.1524" layer="91"/>
+<label x="370.84" y="106.68" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SDA" class="0">
@@ -6683,8 +6720,8 @@ Motor Controller</text>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="A4"/>
-<wire x1="365.76" y1="99.06" x2="370.84" y2="99.06" width="0.1524" layer="91"/>
-<label x="370.84" y="99.06" size="1.016" layer="95" xref="yes"/>
+<wire x1="365.76" y1="104.14" x2="370.84" y2="104.14" width="0.1524" layer="91"/>
+<label x="370.84" y="104.14" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="3.3V" class="0">
@@ -6698,8 +6735,8 @@ Motor Controller</text>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="3.3V"/>
-<wire x1="365.76" y1="114.3" x2="370.84" y2="114.3" width="0.1524" layer="91"/>
-<label x="370.84" y="114.3" size="1.016" layer="95" xref="yes"/>
+<wire x1="365.76" y1="119.38" x2="370.84" y2="119.38" width="0.1524" layer="91"/>
+<label x="370.84" y="119.38" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="DASH_CTRL2" class="0">
@@ -7145,6 +7182,25 @@ Motor Controller</text>
 <pinref part="5AFUSE" gate="G$1" pin="1"/>
 <wire x1="48.26" y1="119.38" x2="53.34" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="X1" gate="-17" pin="S"/>
+</segment>
+</net>
+<net name="N$41" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="3.3V_2"/>
+<wire x1="350.52" y1="53.34" x2="350.52" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="48.26" x2="350.52" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="350.52" y1="45.72" x2="342.9" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="U$26" gate="G$1" pin="+"/>
+<wire x1="342.9" y1="45.72" x2="342.9" y2="43.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$64" class="0">
+<segment>
+<pinref part="U$26" gate="G$1" pin="-"/>
+<wire x1="363.22" y1="43.18" x2="363.22" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="45.72" x2="353.06" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="GND_2"/>
+<wire x1="353.06" y1="45.72" x2="353.06" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
