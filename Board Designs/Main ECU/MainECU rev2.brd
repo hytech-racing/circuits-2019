@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.1.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2843,36 +2843,17 @@ design rules under a new name.</description>
 <contactref element="U$7" pad="3"/>
 <contactref element="U$4" pad="3"/>
 <contactref element="U$6" pad="3"/>
-<polygon width="2.032" layer="1">
-<vertex x="103.632" y="77.47"/>
-<vertex x="119.634" y="77.47"/>
-<vertex x="119.634" y="33.782"/>
-<vertex x="103.632" y="33.782"/>
-</polygon>
-<wire x1="104.394" y1="69.596" x2="104.648" y2="69.342" width="2.032" layer="1"/>
-<polygon width="2.032" layer="16">
-<vertex x="104.394" y="77.47"/>
-<vertex x="120.142" y="77.47"/>
-<vertex x="120.142" y="34.29"/>
-<vertex x="104.394" y="34.29"/>
-</polygon>
-<via x="104.902" y="67.31" extent="1-16" drill="1.016"/>
-<via x="113.03" y="67.564" extent="1-16" drill="1.016"/>
-<via x="105.156" y="57.404" extent="1-16" drill="1.016"/>
-<via x="105.156" y="48.768" extent="1-16" drill="1.016"/>
-<via x="105.156" y="46.482" extent="1-16" drill="1.016"/>
-<via x="105.41" y="37.338" extent="1-16" drill="1.016"/>
-<via x="113.03" y="37.338" extent="1-16" drill="1.016"/>
-<via x="113.284" y="46.482" extent="1-16" drill="1.016"/>
-<via x="113.284" y="48.768" extent="1-16" drill="1.016"/>
-<via x="113.03" y="57.404" extent="1-16" drill="1.016"/>
-<via x="113.03" y="76.454" extent="1-16" drill="1.016"/>
-<via x="105.156" y="76.454" extent="1-16" drill="1.016"/>
-<wire x1="99.06" y1="74.676" x2="104.14" y2="74.676" width="2.032" layer="1"/>
-<wire x1="99.06" y1="55.88" x2="104.902" y2="55.88" width="2.032" layer="1"/>
-<wire x1="99.06" y1="44.196" x2="105.156" y2="44.196" width="2.032" layer="1"/>
-<wire x1="101.981" y1="65.598" x2="104.968" y2="65.598" width="3.048" layer="1"/>
 <wire x1="100.711" y1="65.598" x2="101.981" y2="65.598" width="0.508" layer="1"/>
+<wire x1="99.06" y1="44.196" x2="102.616" y2="44.196" width="2.54" layer="1"/>
+<wire x1="102.616" y1="44.196" x2="104.14" y2="45.72" width="2.54" layer="1"/>
+<wire x1="104.14" y1="45.72" x2="104.14" y2="55.88" width="2.54" layer="1"/>
+<wire x1="104.14" y1="55.88" x2="104.14" y2="65.786" width="2.54" layer="1"/>
+<wire x1="104.14" y1="65.786" x2="104.14" y2="73.66" width="2.54" layer="1"/>
+<wire x1="104.14" y1="73.66" x2="103.124" y2="74.676" width="2.54" layer="1"/>
+<wire x1="103.124" y1="74.676" x2="99.06" y2="74.676" width="2.54" layer="1"/>
+<wire x1="99.06" y1="55.88" x2="104.14" y2="55.88" width="2.54" layer="1"/>
+<wire x1="101.981" y1="65.598" x2="103.952" y2="65.598" width="3.048" layer="1"/>
+<wire x1="103.952" y1="65.598" x2="104.14" y2="65.786" width="3.048" layer="1"/>
 </signal>
 <signal name="IMD_COIL_PWR">
 <contactref element="IMD_SHUTDOWN" pad="COIL-"/>
@@ -4936,6 +4917,33 @@ design rules under a new name.</description>
 <wire x1="74.676" y1="41.85" x2="74.676" y2="22.606" width="0.254" layer="1"/>
 <wire x1="74.676" y1="22.606" x2="73.914" y2="21.844" width="0.254" layer="1"/>
 </signal>
+<signal name="HEATSINK">
+<polygon width="2.032" layer="1">
+<vertex x="108.458" y="77.724"/>
+<vertex x="119.38" y="77.724"/>
+<vertex x="119.38" y="34.036"/>
+<vertex x="108.458" y="34.036"/>
+</polygon>
+<polygon width="2.032" layer="16">
+<vertex x="104.394" y="77.724"/>
+<vertex x="119.888" y="77.724"/>
+<vertex x="119.888" y="34.544"/>
+<vertex x="104.394" y="34.544"/>
+</polygon>
+<via x="112.776" y="37.592" extent="1-16" drill="1.016"/>
+<via x="113.03" y="45.974" extent="1-16" drill="1.016"/>
+<via x="113.03" y="48.768" extent="1-16" drill="1.016"/>
+<via x="112.776" y="57.912" extent="1-16" drill="1.016"/>
+<via x="113.03" y="77.216" extent="1-16" drill="1.016"/>
+<via x="108.458" y="77.216" extent="1-16" drill="1.016"/>
+<via x="108.712" y="67.564" extent="1-16" drill="1.016"/>
+<via x="113.03" y="67.564" extent="1-16" drill="1.016"/>
+<via x="108.712" y="57.912" extent="1-16" drill="1.016"/>
+<via x="108.712" y="48.768" extent="1-16" drill="1.016"/>
+<via x="108.712" y="46.228" extent="1-16" drill="1.016"/>
+<via x="108.458" y="37.338" extent="1-16" drill="1.016"/>
+<wire x1="112.776" y1="37.592" x2="108.458" y2="37.338" width="0" layer="19" extent="1-1"/>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
@@ -4944,18 +4952,6 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
-<errors>
-<approved hash="21,19,763f73c3723e8e3f"/>
-<approved hash="23,1,8be8c728c8418481"/>
-<approved hash="4,16,103afbc2e46fd691"/>
-<approved hash="4,1,3bf18494d82407ac"/>
-<approved hash="4,1,2ce5c21ddba2e8b0"/>
-<approved hash="4,1,1bc8a6d5f97b2661"/>
-<approved hash="4,1,103afbc2e46fd691"/>
-<approved hash="4,16,3bf18494d82407ac"/>
-<approved hash="4,16,2ce5c21ddba2e8b0"/>
-<approved hash="4,16,1bc8a6d5f97b2661"/>
-</errors>
 </board>
 </drawing>
 <compatibility>
