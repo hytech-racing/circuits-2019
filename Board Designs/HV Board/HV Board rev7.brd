@@ -3681,8 +3681,7 @@ Voltage PCB Area</text>
 <pad name="7TRIM" x="53.34" y="-30.48" drill="1.3" shape="square"/>
 <pad name="8SENSE-" x="53.34" y="-38.1" drill="1.3" shape="square" rot="R90"/>
 <pad name="9VOUT-" x="53.34" y="-48.26" drill="2.8" shape="square"/>
-<text x="29.21" y="-30.48" size="3.81" layer="21" align="center">Vicor
-VI-J71-CZ</text>
+<text x="29.21" y="-6.35" size="2.54" layer="27" align="center">&gt;VALUE</text>
 <text x="7.62" y="-13.97" size="1.27" layer="21">IN+</text>
 <text x="7.62" y="-24.13" size="1.27" layer="21">Gate In</text>
 <text x="7.62" y="-39.37" size="1.27" layer="21">Gate Out</text>
@@ -4185,7 +4184,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="24.003" y="44.958" size="0.6096" layer="26" rot="MR270" align="bottom-center"/>
 <attribute name="VALUE" x="25.527" y="45.466" size="0.6096" layer="28" rot="MR90" align="bottom-center"/>
 </element>
-<element name="U$5" library="HyTechDevices" package="HV_DCDC_VI-J71-CZ" value="HV_DCDC_VI-J71-CZ" x="98.171" y="70.866" smashed="yes" rot="MR0"/>
+<element name="U$5" library="HyTechDevices" package="HV_DCDC_VI-J71-CZ" value="HV_DCDC_VI-J71-CZ" x="98.171" y="70.866" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="78.994" y="27.813" size="2.032" layer="28" rot="MR0" align="center"/>
+</element>
 <element name="DISCH+" library="HyTechDevices" package="NANO-FIT_VERTICAL-2" value="DISCHARGE+" x="93.853" y="68.58" smashed="yes">
 <attribute name="VALUE" x="93.472" y="63.119" size="1.016" layer="27" font="vector" align="center"/>
 </element>
@@ -5565,6 +5566,7 @@ design rules under a new name.</description>
 <approved hash="5,1,34b657d65934b1b6"/>
 <approved hash="5,1,bf8a69b931b42440"/>
 <approved hash="5,1,542527d4405de1bf"/>
+<approved hash="4,1,c6e00bbd50f6cf4b"/>
 </errors>
 </board>
 </drawing>

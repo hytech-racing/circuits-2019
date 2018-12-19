@@ -243,8 +243,7 @@
 <pad name="7TRIM" x="53.34" y="-30.48" drill="1.3" shape="square"/>
 <pad name="8SENSE-" x="53.34" y="-38.1" drill="1.3" shape="square" rot="R90"/>
 <pad name="9VOUT-" x="53.34" y="-48.26" drill="2.8" shape="square"/>
-<text x="29.21" y="-30.48" size="3.81" layer="21" align="center">Vicor
-VI-J71-CZ</text>
+<text x="29.21" y="-6.35" size="2.54" layer="27" align="center">&gt;VALUE</text>
 <text x="7.62" y="-13.97" size="1.27" layer="21">IN+</text>
 <text x="7.62" y="-24.13" size="1.27" layer="21">Gate In</text>
 <text x="7.62" y="-39.37" size="1.27" layer="21">Gate Out</text>
