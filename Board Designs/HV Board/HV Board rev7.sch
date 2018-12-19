@@ -3959,9 +3959,9 @@ pin 3 and 4: Discharge- connector</text>
 <attribute name="NAME" x="124.46" y="-228.6" size="1.778" layer="95"/>
 <attribute name="VALUE" x="137.16" y="-251.587" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="R40" gate="G$1" x="145.22" y="-242.7" smashed="yes" rot="R270">
-<attribute name="NAME" x="146.7186" y="-238.89" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="141.918" y="-238.89" size="1.778" layer="96" rot="R270"/>
+<instance part="R40" gate="G$1" x="144.78" y="-241.3" smashed="yes" rot="R270">
+<attribute name="NAME" x="146.2786" y="-237.49" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="141.478" y="-237.49" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="C2" gate="G$1" x="109.22" y="-35.56" smashed="yes">
 <attribute name="NAME" x="110.744" y="-32.639" size="1.778" layer="95"/>
@@ -4851,7 +4851,7 @@ pin 3 and 4: Discharge- connector</text>
 <junction x="86.36" y="-218.44"/>
 </segment>
 </net>
-<net name="N$33" class="0">
+<net name="IM" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="IM"/>
 <wire x1="73.66" y1="-238.76" x2="81.28" y2="-238.76" width="0.1524" layer="91"/>
@@ -4863,7 +4863,7 @@ pin 3 and 4: Discharge- connector</text>
 <pinref part="U$2" gate="G$1" pin="TD-"/>
 </segment>
 </net>
-<net name="N$34" class="0">
+<net name="IP" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="IP"/>
 <wire x1="73.66" y1="-236.22" x2="86.36" y2="-236.22" width="0.1524" layer="91"/>
@@ -4880,8 +4880,7 @@ pin 3 and 4: Discharge- connector</text>
 <pinref part="U$2" gate="G$1" pin="MX+"/>
 <wire x1="144.78" y1="-231.14" x2="142.24" y2="-231.14" width="0.1524" layer="91"/>
 <pinref part="R40" gate="G$1" pin="1"/>
-<wire x1="145.22" y1="-237.62" x2="144.78" y2="-237.62" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="-237.62" x2="144.78" y2="-231.14" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="-236.22" x2="144.78" y2="-231.14" width="0.1524" layer="91"/>
 <junction x="144.78" y="-231.14"/>
 </segment>
 <segment>
@@ -4898,8 +4897,7 @@ pin 3 and 4: Discharge- connector</text>
 <wire x1="147.32" y1="-251.46" x2="144.78" y2="-251.46" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="-251.46" x2="142.24" y2="-251.46" width="0.1524" layer="91"/>
 <pinref part="R40" gate="G$1" pin="2"/>
-<wire x1="145.22" y1="-247.78" x2="144.78" y2="-247.78" width="0.1524" layer="91"/>
-<wire x1="144.78" y1="-247.78" x2="144.78" y2="-251.46" width="0.1524" layer="91"/>
+<wire x1="144.78" y1="-246.38" x2="144.78" y2="-251.46" width="0.1524" layer="91"/>
 <junction x="144.78" y="-251.46"/>
 </segment>
 <segment>
