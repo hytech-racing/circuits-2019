@@ -1346,36 +1346,6 @@ FUSE</text>
 <text x="-0.8255" y="4.5085" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.0795" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
-<package name="TO-220">
-<pad name="1" x="-2.54" y="0" drill="1" diameter="1.8796" shape="square"/>
-<pad name="2" x="0" y="0" drill="1" diameter="1.8796"/>
-<pad name="3" x="2.54" y="0" drill="1" diameter="1.8796"/>
-<wire x1="-5.08" y1="3.81" x2="5.08" y2="3.81" width="0.127" layer="21"/>
-<wire x1="5.08" y1="3.81" x2="5.08" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="5.08" y1="-3.81" x2="-5.08" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-3.81" x2="-5.08" y2="3.81" width="0.127" layer="21"/>
-</package>
-<package name="TO-220-SINK">
-<wire x1="5.08" y1="-1.905" x2="-5.08" y2="-1.905" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="-1.905" x2="-5.08" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="1.905" x2="-5.08" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="2.54" x2="5.08" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="1.905" x2="5.08" y2="-1.905" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="1.905" x2="-5.08" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="2.54" x2="8.255" y2="2.54" width="0.2032" layer="51"/>
-<wire x1="8.255" y1="2.54" x2="8.255" y2="-5.715" width="0.2032" layer="51"/>
-<wire x1="8.255" y1="-5.715" x2="9.525" y2="-5.715" width="0.2032" layer="51"/>
-<wire x1="9.525" y1="-5.715" x2="9.525" y2="3.81" width="0.2032" layer="51"/>
-<wire x1="9.525" y1="3.81" x2="-9.525" y2="3.81" width="0.2032" layer="51"/>
-<wire x1="-9.525" y1="3.81" x2="-9.525" y2="-5.715" width="0.2032" layer="51"/>
-<wire x1="-9.525" y1="-5.715" x2="-8.255" y2="-5.715" width="0.2032" layer="51"/>
-<wire x1="-8.255" y1="-5.715" x2="-8.255" y2="2.54" width="0.2032" layer="51"/>
-<wire x1="-8.255" y1="2.54" x2="-5.08" y2="2.54" width="0.2032" layer="51"/>
-<pad name="1" x="-2.54" y="0" drill="1" diameter="1.8796" shape="square"/>
-<pad name="2" x="0" y="0" drill="1" diameter="1.8796"/>
-<pad name="3" x="2.54" y="0" drill="1" diameter="1.8796"/>
-</package>
 <package name="CAP-PTH-SMALL">
 <wire x1="1.27" y1="0.635" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
 <pad name="1" x="0" y="0" drill="0.7" diameter="1.651"/>
@@ -3490,53 +3460,6 @@ Contact Amperage: 8A at 30VDC
 </device>
 </devices>
 </deviceset>
-<deviceset name="5V_REGULATOR_LM340-N" uservalue="yes">
-<description>&lt;b&gt;Voltage Regulator&lt;/b&gt;
-
-&lt;p&gt;5v linear voltage regulator
-
-&lt;a href="http://www.mouser.com/ProductDetail/Texas-Instruments/LM340MPX-50-NOPB/?qs=X1J7HmVL2ZGZwtTFRQ9ItA%3D%3D"&gt;Datasheet &lt;/a&gt;
-&lt;br&gt;
-&lt;br&gt;
-MAX current out: 1.5A
-&lt;br&gt;
-MAX voltage in: 35V</description>
-<gates>
-<gate name="G$1" symbol="VOLTAGE_REGULATOR" x="5.08" y="5.08"/>
-</gates>
-<devices>
-<device name="LM340MPX-5.0/NOPB" package="SOT223">
-<connects>
-<connect gate="G$1" pin="GND" pad="2 4"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="LM340T-5.0/NOPB" package="TO-220">
-<connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="LM340T-5.0/NOPB_SINK" package="TO-220-SINK">
-<connects>
-<connect gate="G$1" pin="GND" pad="2"/>
-<connect gate="G$1" pin="IN" pad="1"/>
-<connect gate="G$1" pin="OUT" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="CAP" prefix="C" uservalue="yes">
 <description>&lt;b&gt;Capacitor&lt;/b&gt;
 Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
@@ -4439,7 +4362,7 @@ It is replaced by MCP2561.
 <part name="C6" library="HyTechDevices" deviceset="CAP" device="0805" value="1uF"/>
 <part name="GND49" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND50" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="REG2" library="HyTechDevices" deviceset="5V_REGULATOR_LM340-N" device="LM340MPX-5.0/NOPB" value="5V"/>
+<part name="REG2" library="HyTechDevices" deviceset="OKI-78SR" device="" value="5V"/>
 <part name="GND51" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="C11" library="HyTechDevices" deviceset="CAP" device="0805" value=".22uF"/>
 <part name="C13" library="HyTechDevices" deviceset="CAP" device="0805" value=".1uF"/>
