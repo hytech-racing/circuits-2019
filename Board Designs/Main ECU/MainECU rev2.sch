@@ -4549,9 +4549,9 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="GND65" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND66" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="U$4" library="HyTechDevices" deviceset="N-CHANNEL_MOSFET" device="_HOR_HOLE"/>
-<part name="U$7" library="HyTechDevices" deviceset="N-CHANNEL_MOSFET" device="_HOR_HOLE"/>
-<part name="U$6" library="HyTechDevices" deviceset="N-CHANNEL_MOSFET" device="_HOR_HOLE"/>
+<part name="U$4" library="HyTechDevices" deviceset="N-CHANNEL_MOSFET" device="_HOR_HOLE" value="N-CHANNEL_MOSFET_FQP30N06L"/>
+<part name="U$7" library="HyTechDevices" deviceset="N-CHANNEL_MOSFET" device="_HOR_HOLE" value="N-CHANNEL_MOSFET_FQP30N06L"/>
+<part name="U$6" library="HyTechDevices" deviceset="N-CHANNEL_MOSFET" device="_HOR_HOLE" value="N-CHANNEL_MOSFET_FQP30N06L"/>
 <part name="R24" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="R27" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="R28" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
@@ -4584,19 +4584,19 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <part name="R38" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2.2k"/>
 <part name="R39" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2.2k"/>
 <part name="R40" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2.2k"/>
-<part name="Q1" library="HyTechDevices" deviceset="BJT_NPN" device="SOT"/>
-<part name="Q2" library="HyTechDevices" deviceset="BJT_NPN" device="SOT"/>
-<part name="Q3" library="HyTechDevices" deviceset="BJT_NPN" device="SOT"/>
-<part name="Q4" library="HyTechDevices" deviceset="BJT_NPN" device="SOT"/>
-<part name="Q5" library="HyTechDevices" deviceset="BJT_NPN" device="SOT"/>
+<part name="Q1" library="HyTechDevices" deviceset="BJT_NPN" device="SOT" value="MMBT3904LT3G"/>
+<part name="Q2" library="HyTechDevices" deviceset="BJT_NPN" device="SOT" value="MMBT3904LT3G"/>
+<part name="Q3" library="HyTechDevices" deviceset="BJT_NPN" device="SOT" value="MMBT3904LT3G"/>
+<part name="Q4" library="HyTechDevices" deviceset="BJT_NPN" device="SOT" value="MMBT3904LT3G"/>
+<part name="Q5" library="HyTechDevices" deviceset="BJT_NPN" device="SOT" value="MMBT3904LT3G"/>
 <part name="GND37" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+30" library="supply1" deviceset="+12V" device=""/>
 <part name="R41" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2.2k"/>
-<part name="Q6" library="HyTechDevices" deviceset="BJT_NPN" device="SOT"/>
+<part name="Q6" library="HyTechDevices" deviceset="BJT_NPN" device="SOT" value="MMBT3904LT3G"/>
 <part name="R42" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2.2k"/>
-<part name="Q7" library="HyTechDevices" deviceset="BJT_NPN" device="SOT"/>
+<part name="Q7" library="HyTechDevices" deviceset="BJT_NPN" device="SOT" value="MMBT3904LT3G"/>
 <part name="R44" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2.2k"/>
-<part name="Q8" library="HyTechDevices" deviceset="BJT_NPN" device="SOT"/>
+<part name="Q8" library="HyTechDevices" deviceset="BJT_NPN" device="SOT" value="MMBT3904LT3G"/>
 <part name="U$11" library="HyTechDevices" deviceset="JUMPER" device=""/>
 <part name="U$12" library="HyTechDevices" deviceset="JUMPER" device=""/>
 <part name="U$13" library="HyTechDevices" deviceset="JUMPER" device=""/>
