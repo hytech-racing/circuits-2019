@@ -4675,7 +4675,7 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <text x="165.1" y="165.1" size="3.81" layer="90">Power</text>
 <text x="434.34" y="248.92" size="1.778" layer="97">ECU Current Sensor</text>
 <text x="426.72" y="200.66" size="1.778" layer="97">Cooling Current Sensor</text>
-<text x="266.7" y="233.68" size="1.778" layer="91">⇦ Pullup/down resistors to 
+<text x="266.7" y="233.68" size="1.778" layer="91">Pullup/down resistors to 
 detect open circuit. Install
 only one per signal on
  ACCEL1 and ACCEL2.</text>
