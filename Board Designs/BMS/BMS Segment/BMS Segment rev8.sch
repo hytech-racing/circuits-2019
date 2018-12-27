@@ -2010,6 +2010,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <class number="0" name="default" width="0" drill="0">
 </class>
 <class number="1" name="unfused_hv" width="0" drill="0">
+<clearance class="0" value="0.0254"/>
 <clearance class="1" value="3.2004"/>
 </class>
 </classes>
