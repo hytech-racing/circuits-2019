@@ -135,6 +135,7 @@
 <layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="156" name="HVSpacing" color="12" fill="1" visible="yes" active="yes"/>
 <layer number="191" name="mNets" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="192" name="mBusses" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="193" name="mPins" color="7" fill="1" visible="yes" active="yes"/>
@@ -3577,7 +3578,7 @@ Source: http://www.molex.com</description>
 <part name="GND3" library="supply1" deviceset="GND" device=""/>
 <part name="C6" library="HyTechDevices" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
-<part name="C7" library="HyTechDevices" deviceset="CAP" device="0805" value="53pF"/>
+<part name="C7" library="HyTechDevices" deviceset="CAP" device="0805" value="530pF"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
 <part name="MAIN" library="HyTechDevices" deviceset="CONNECTOR-10" device="NANO-FIT_VERTICAL-10" value="MAIN"/>
 <part name="ISO_SPI" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2" value="ISO_SPI"/>
@@ -3655,6 +3656,8 @@ Thin wires: Grounded Low Voltage</text>
 (Externally Fused)</text>
 <text x="195.58" y="-73.66" size="1.778" layer="97">Capacitor used
 for Precharge</text>
+<text x="101.6" y="-76.2" size="1.778" layer="97">fclk (kHz) = 53 * 1000 / C7; C7 in pF
+corner frequency = fclk / 100 = 1 kHz</text>
 </plain>
 <instances>
 <instance part="IC1" gate="G$1" x="121.92" y="-30.48" smashed="yes">
@@ -3985,8 +3988,8 @@ for Precharge</text>
 <attribute name="VALUE" x="58.42" y="-86.36" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="C6" gate="G$1" x="119.38" y="-63.5" smashed="yes" rot="MR270">
-<attribute name="NAME" x="119.761" y="-61.976" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="121.539" y="-65.024" size="1.778" layer="96" rot="MR270"/>
+<attribute name="NAME" x="120.396" y="-58.801" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="118.364" y="-66.421" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="GND10" gate="1" x="124.46" y="-63.5" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="127" y="-60.96" size="1.778" layer="96" rot="MR270"/>
