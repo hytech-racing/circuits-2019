@@ -4841,7 +4841,7 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 <part name="U$13" library="HyTechDevices" deviceset="JUMPER" device=""/>
 <part name="U$14" library="HyTechDevices" deviceset="JUMPER" device=""/>
 <part name="P+9" library="supply1" deviceset="+12V" device=""/>
-<part name="Q10" library="HyTechDevices" deviceset="BJT_NPN" device="SOT"/>
+<part name="Q10" library="HyTechDevices" deviceset="BJT_NPN" device="SOT" value="MMBT3904LT3G"/>
 <part name="U$15" library="HyTechDevices" deviceset="BJT_PNP" device="SOT"/>
 <part name="R10" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2.2k"/>
 <part name="R48" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
@@ -5241,13 +5241,13 @@ For output, solder transistor and resistor.</text>
 <instance part="GND2" gate="1" x="124.46" y="259.08" smashed="yes" rot="R90">
 <attribute name="VALUE" x="127" y="256.54" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SOFTWARE_SHUTOFF" gate="G$1" x="182.88" y="193.04" smashed="yes" rot="R270"/>
-<instance part="P+23" gate="1" x="167.64" y="200.66" smashed="yes" rot="MR270">
-<attribute name="VALUE" x="172.72" y="203.2" size="1.778" layer="96" rot="MR0"/>
+<instance part="SOFTWARE_SHUTOFF" gate="G$1" x="180.34" y="193.04" smashed="yes" rot="R270"/>
+<instance part="P+23" gate="1" x="165.1" y="200.66" smashed="yes" rot="MR270">
+<attribute name="VALUE" x="170.18" y="203.2" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="D10" gate="1" x="185.42" y="200.66" smashed="yes" rot="R180">
-<attribute name="NAME" x="189.23" y="198.9074" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="189.23" y="204.2414" size="1.778" layer="96" rot="R180"/>
+<instance part="D10" gate="1" x="182.88" y="200.66" smashed="yes" rot="R180">
+<attribute name="NAME" x="186.69" y="198.9074" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="186.69" y="204.2414" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="LED17" gate="LED" x="205.74" y="210.82" smashed="yes" rot="MR90">
 <attribute name="NAME" x="201.168" y="214.376" size="1.778" layer="95" rot="MR180"/>
@@ -5931,12 +5931,12 @@ For output, solder transistor and resistor.</text>
 <instance part="GND56" gate="1" x="203.2" y="55.88" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="205.74" y="53.34" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="Q11" gate="G$1" x="208.28" y="200.66" smashed="yes" rot="MR0">
-<attribute name="NAME" x="204.47" y="200.66" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="207.01" y="195.58" size="1.778" layer="96" rot="MR180"/>
+<instance part="Q11" gate="G$1" x="205.74" y="200.66" smashed="yes" rot="MR0">
+<attribute name="NAME" x="201.93" y="200.66" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="204.47" y="195.58" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="GND11" gate="1" x="205.74" y="190.5" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="208.28" y="187.96" size="1.778" layer="96" rot="MR0"/>
+<instance part="GND11" gate="1" x="203.2" y="190.5" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="205.74" y="187.96" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="R50" gate="G$1" x="215.9" y="200.66" smashed="yes" rot="R180">
 <attribute name="NAME" x="219.71" y="199.1614" size="1.778" layer="95" rot="R180"/>
@@ -6510,7 +6510,7 @@ For output, solder transistor and resistor.</text>
 <segment>
 <pinref part="Q11" gate="G$1" pin="EMITTER"/>
 <pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="205.74" y1="195.58" x2="205.74" y2="193.04" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="195.58" x2="203.2" y2="193.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="312.42" y1="7.62" x2="314.96" y2="7.62" width="0.1524" layer="91"/>
@@ -6658,12 +6658,12 @@ For output, solder transistor and resistor.</text>
 </segment>
 <segment>
 <pinref part="D10" gate="1" pin="C"/>
-<wire x1="182.88" y1="200.66" x2="177.8" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="180.34" y1="200.66" x2="175.26" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="SOFTWARE_SHUTOFF" gate="G$1" pin="COIL-"/>
-<wire x1="177.8" y1="200.66" x2="177.8" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="175.26" y1="200.66" x2="175.26" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="P+23" gate="1" pin="+12V"/>
-<wire x1="170.18" y1="200.66" x2="177.8" y2="200.66" width="0.1524" layer="91"/>
-<junction x="177.8" y="200.66"/>
+<wire x1="167.64" y1="200.66" x2="175.26" y2="200.66" width="0.1524" layer="91"/>
+<junction x="175.26" y="200.66"/>
 </segment>
 <segment>
 <pinref part="U$5" gate="G$1" pin="VCC"/>
@@ -6758,7 +6758,7 @@ For output, solder transistor and resistor.</text>
 <net name="SHUTDOWN_C" class="0">
 <segment>
 <pinref part="IMD_SHUTDOWN1" gate="G$1" pin="5"/>
-<wire x1="119.38" y1="177.8" x2="177.8" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="177.8" x2="175.26" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="SOFTWARE_SHUTOFF" gate="G$1" pin="P"/>
 <label x="144.78" y="177.8" size="1.778" layer="95"/>
 </segment>
@@ -7151,13 +7151,13 @@ For output, solder transistor and resistor.</text>
 <net name="SHUTDOWN_D" class="0">
 <segment>
 <pinref part="SOFTWARE_SHUTOFF" gate="G$1" pin="S"/>
-<wire x1="193.04" y1="175.26" x2="198.12" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="175.26" x2="195.58" y2="175.26" width="0.1524" layer="91"/>
 <pinref part="R31" gate="G$1" pin="1"/>
-<wire x1="198.12" y1="175.26" x2="200.66" y2="175.26" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="182.88" x2="198.12" y2="182.88" width="0.1524" layer="91"/>
-<wire x1="198.12" y1="182.88" x2="198.12" y2="175.26" width="0.1524" layer="91"/>
-<junction x="198.12" y="175.26"/>
-<label x="200.66" y="175.26" size="1.27" layer="95" xref="yes"/>
+<wire x1="195.58" y1="175.26" x2="198.12" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="182.88" x2="195.58" y2="182.88" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="182.88" x2="195.58" y2="175.26" width="0.1524" layer="91"/>
+<junction x="195.58" y="175.26"/>
+<label x="198.12" y="175.26" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <label x="55.88" y="149.86" size="1.016" layer="95" xref="yes"/>
@@ -8482,18 +8482,19 @@ For output, solder transistor and resistor.</text>
 <segment>
 <pinref part="Q11" gate="G$1" pin="BASE"/>
 <pinref part="R50" gate="G$1" pin="2"/>
+<wire x1="208.28" y1="200.66" x2="210.82" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$27" class="0">
 <segment>
 <pinref part="SOFTWARE_SHUTOFF" gate="G$1" pin="COIL+"/>
 <pinref part="D10" gate="1" pin="A"/>
-<wire x1="190.5" y1="200.66" x2="193.04" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="200.66" x2="193.04" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="200.66" x2="190.5" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="200.66" x2="190.5" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="Q11" gate="G$1" pin="COLLECTOR"/>
-<wire x1="205.74" y1="205.74" x2="193.04" y2="205.74" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="205.74" x2="193.04" y2="200.66" width="0.1524" layer="91"/>
-<junction x="193.04" y="200.66"/>
+<wire x1="203.2" y1="205.74" x2="190.5" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="205.74" x2="190.5" y2="200.66" width="0.1524" layer="91"/>
+<junction x="190.5" y="200.66"/>
 </segment>
 </net>
 <net name="CS1_5V" class="0">
