@@ -4559,21 +4559,21 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <part name="GND14" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND34" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="U$27" library="HyTechDevices" deviceset="MAX7480" device=""/>
-<part name="C3" library="HyTechDevices" deviceset="CAP" device="0805" value="5.3uF"/>
+<part name="C3" library="HyTechDevices" deviceset="CAP" device="0805" value="47pF"/>
 <part name="C4" library="HyTechDevices" deviceset="CAP" device="0805" value=".1uF"/>
 <part name="C12" library="HyTechDevices" deviceset="CAP" device="0805" value=".1uF"/>
 <part name="GND33" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+15" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="U$28" library="HyTechDevices" deviceset="MAX7480" device=""/>
-<part name="C14" library="HyTechDevices" deviceset="CAP" device="0805" value="5.3uF"/>
+<part name="C14" library="HyTechDevices" deviceset="CAP" device="0805" value="47pF"/>
 <part name="C15" library="HyTechDevices" deviceset="CAP" device="0805" value=".1uF"/>
 <part name="C16" library="HyTechDevices" deviceset="CAP" device="0805" value=".1uF"/>
 <part name="GND35" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="P+17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="U$26" library="HyTechDevices" deviceset="MAX7480" device=""/>
-<part name="C17" library="HyTechDevices" deviceset="CAP" device="0805" value="5.3uF"/>
+<part name="C17" library="HyTechDevices" deviceset="CAP" device="0805" value="47pF"/>
 <part name="C18" library="HyTechDevices" deviceset="CAP" device="0805" value=".1uF"/>
 <part name="C19" library="HyTechDevices" deviceset="CAP" device="0805" value=".1uF"/>
 <part name="GND36" library="HyTechSymbols" deviceset="GND" device=""/>
@@ -4687,9 +4687,9 @@ only one per signal on
 <text x="66.04" y="93.98" size="1.016" layer="95">Pedals 5V</text>
 <text x="58.42" y="93.98" size="1.016" layer="95">CANL for
 Motor Controller</text>
-<text x="350.52" y="241.3" size="1.016" layer="91">5.3uF for 10Hz filter</text>
-<text x="353.06" y="213.36" size="1.016" layer="91">5.3uF for 10Hz filter</text>
-<text x="342.9" y="185.42" size="1.016" layer="91">5.3uF for 10Hz filter</text>
+<text x="350.52" y="241.3" size="1.016" layer="91">47pF for ~10Hz filter (11.3Hz)</text>
+<text x="353.06" y="213.36" size="1.016" layer="91">47pF for ~10Hz filter (11.3Hz)</text>
+<text x="342.9" y="185.42" size="1.016" layer="91">47pF for ~10Hz filter (11.3Hz)</text>
 <text x="58.42" y="76.2" size="1.27" layer="96">12V for Dash</text>
 <text x="127" y="149.86" size="1.27" layer="96">Check Values, Switching V is 5V</text>
 <text x="99.06" y="12.7" size="2.032" layer="96">Dash 5, 6, 7, 8 Can be inputs or outputs
