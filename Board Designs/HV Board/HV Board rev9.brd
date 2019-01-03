@@ -440,7 +440,7 @@
 <rectangle x1="46.3423" y1="68.4911" x2="47.1805" y2="68.5673" layer="52" rot="R180"/>
 <text x="56.134" y="26.67" size="2.1844" layer="52" rot="MR270">GLV</text>
 <text x="57.912" y="25.654" size="2.1844" layer="52" rot="MR90" align="bottom-right">TS</text>
-<text x="1.778" y="61.214" size="1.143" layer="51" font="vector" rot="R270" align="center">2019_hv_board_rev7</text>
+<text x="1.778" y="61.214" size="1.143" layer="51" font="vector" rot="R270" align="center">2019_hv_board_rev9</text>
 <text x="83.2866" y="53.213" size="1.4224" layer="52" font="vector" rot="MR0" align="center">DANGER 
 HIGH VOLTAGE</text>
 <text x="83.2104" y="53.213" size="1.4224" layer="51" font="vector" align="center">DANGER 
@@ -449,9 +449,9 @@ HIGH VOLTAGE</text>
 PCB AREA</text>
 <text x="84.3534" y="44.069" size="1.397" layer="51" font="vector" rot="R180" align="bottom-center">TRACTIVE SYSTEM
 PCB AREA</text>
-<text x="100.965" y="6.731" size="1.143" layer="51" font="vector" rot="R180" align="bottom-center">Grounded Low 
+<text x="100.838" y="5.207" size="1.143" layer="51" font="vector" rot="R180" align="center">Grounded Low 
 Voltage PCB Area</text>
-<text x="100.584" y="2.794" size="1.143" layer="52" font="vector" rot="SMR0" align="bottom-center">Grounded Low 
+<text x="100.838" y="5.207" size="1.143" layer="52" font="vector" rot="SMR0" align="center">Grounded Low 
 Voltage PCB Area</text>
 <wire x1="37.846" y1="70.866" x2="37.846" y2="55.88" width="0.8128" layer="52"/>
 <wire x1="37.846" y1="55.88" x2="17.78" y2="55.88" width="0.8128" layer="52"/>
@@ -3532,7 +3532,7 @@ Voltage PCB Area</text>
 <wire x1="0" y1="71.374" x2="118.618" y2="71.374" width="0" layer="20"/>
 <dimension x1="0" y1="71.374" x2="118.618" y2="71.374" x3="59.309" y3="75.311" textsize="1.778" layer="47"/>
 <dimension x1="0" y1="0" x2="0" y2="71.374" x3="-3.81" y3="35.687" textsize="1.778" layer="47"/>
-<dimension x1="25.146" y1="49.149" x2="25.527" y2="58.166" x3="24.955834375" y3="53.673584375" textsize="1.778" layer="156"/>
+<dimension x1="25.527" y1="49.276" x2="25.527" y2="58.166" x3="25.14599375" y3="53.721" textsize="1.778" layer="156"/>
 <hole x="32.512" y="50.927" drill="3.2"/>
 <text x="11.303" y="30.353" size="1.4224" layer="51" rot="R90">IMD</text>
 <dimension x1="68.961" y1="14.351" x2="53.213" y2="14.351" x3="61.087" y3="13.589" textsize="1.778" layer="156"/>
@@ -3549,7 +3549,7 @@ Voltage PCB Area</text>
 <text x="38.735" y="68.961" size="0.889" layer="51" rot="R270">GLV</text>
 <text x="38.735" y="66.548" size="0.889" layer="52" rot="MR90">GLV</text>
 <dimension x1="80.391" y1="12.065" x2="80.391" y2="2.032" x3="78.867" y3="7.0485" textsize="1.778" layer="156"/>
-<dimension x1="25.527" y1="60.198" x2="14.986" y2="59.69" x3="20.1518" y3="62.11648125" textsize="1.778" layer="156"/>
+<dimension x1="25.527" y1="59.69" x2="14.986" y2="59.69" x3="20.2565" y3="61.86500625" textsize="1.778" layer="156"/>
 </plain>
 <libraries>
 <library name="HyTechDevices">
