@@ -190,7 +190,7 @@
 <wire x1="121.158" y1="0" x2="121.158" y2="79.756" width="0" layer="20"/>
 <wire x1="121.158" y1="79.756" x2="0" y2="79.756" width="0" layer="20"/>
 <wire x1="0" y1="79.756" x2="0" y2="0" width="0" layer="20"/>
-<text x="1.778" y="4.572" size="1.3208" layer="51" font="vector">HyTech 2019 Main ECU rev1b</text>
+<text x="1.778" y="4.572" size="1.3208" layer="51" font="vector">HyTech 2019 Main ECU rev3</text>
 <text x="1.778" y="2.032" size="1.3208" layer="51" font="vector">Designed By Parker Jones</text>
 <text x="25.146" y="26.162" size="0.8128" layer="51" rot="R90">MQTT</text>
 <text x="28.448" y="25.908" size="0.8128" layer="51" rot="R90">Assoc</text>
