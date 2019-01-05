@@ -4932,7 +4932,7 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 <part name="U$14" library="HyTechDevices" deviceset="JUMPER" device=""/>
 <part name="P+9" library="supply1" deviceset="+12V" device=""/>
 <part name="Q10" library="HyTechDevices" deviceset="BJT_NPN" device="SOT" value="MMBT3904LT3G"/>
-<part name="U$15" library="HyTechDevices" deviceset="BJT_PNP" device="SOT"/>
+<part name="U$15" library="HyTechDevices" deviceset="BJT_PNP" device="SOT" value="SMMBT2907ALT1G"/>
 <part name="R10" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2.2k"/>
 <part name="R48" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="R49" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1.2k"/>

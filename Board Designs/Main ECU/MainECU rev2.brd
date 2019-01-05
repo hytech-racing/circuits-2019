@@ -2169,7 +2169,7 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="59.6392" y="67.945" size="0.3048" layer="27" rot="R90" align="top-center"/>
 </element>
 <element name="Q10" library="HyTechDevices" package="SOT23" value="MMBT3904LT3G" x="59.182" y="49.022" smashed="yes" rot="MR0"/>
-<element name="U$15" library="HyTechDevices" package="SOT23" value="BJT_PNPSOT" x="58.928" y="54.61" smashed="yes" rot="MR90"/>
+<element name="U$15" library="HyTechDevices" package="SOT23" value="SMMBT2907ALT1G" x="58.928" y="54.61" smashed="yes" rot="MR90"/>
 <element name="R10" library="HyTechDevices" package="0805" value="2.2k" x="64.262" y="46.228" smashed="yes">
 <attribute name="NAME" x="64.262" y="46.9519" size="0.3048" layer="25" align="bottom-center"/>
 <attribute name="VALUE" x="64.262" y="45.5168" size="0.3048" layer="27" align="top-center"/>
