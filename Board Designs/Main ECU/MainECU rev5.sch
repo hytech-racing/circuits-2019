@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="8.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8590,9 +8590,9 @@ to limit current or drop voltage</text>
 <segment>
 <pinref part="U$16" gate="G$1" pin="+"/>
 <wire x1="441.96" y1="45.72" x2="441.96" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="441.96" y1="55.88" x2="449.58" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="3.3V_2"/>
-<wire x1="449.58" y1="55.88" x2="449.58" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="441.96" y1="55.88" x2="447.04" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="U$2" gate="G$1" pin="VBAT"/>
+<wire x1="447.04" y1="55.88" x2="447.04" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$61" class="0">

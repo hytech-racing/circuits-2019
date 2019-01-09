@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="8.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1758,9 +1758,6 @@ design rules under a new name.</description>
 <param name="checkRestrict" value="1"/>
 <param name="checkStop" value="0"/>
 <param name="checkValues" value="0"/>
-<param name="checkNames" value="1"/>
-<param name="checkWireStubs" value="1"/>
-<param name="checkPolygonWidth" value="0"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -5403,14 +5400,22 @@ design rules under a new name.</description>
 <signal name="N$60">
 <contactref element="U$16" pad="+_0"/>
 <contactref element="U$16" pad="+_1"/>
-<contactref element="U$2" pad="3.3V_2"/>
-<wire x1="72.39" y1="13.208" x2="69.85" y2="13.208" width="0.254" layer="16"/>
 <wire x1="69.85" y1="13.208" x2="68.834" y2="14.224" width="0.254" layer="16"/>
 <wire x1="68.834" y1="14.224" x2="60.706" y2="14.224" width="0.254" layer="16"/>
 <wire x1="59.182" y1="15.748" x2="60.706" y2="14.224" width="0.254" layer="16"/>
 <wire x1="49.9872" y1="17.78" x2="52.0192" y2="15.748" width="0.254" layer="16"/>
 <wire x1="52.0192" y1="15.748" x2="59.182" y2="15.748" width="0.254" layer="16"/>
-<wire x1="49.9872" y1="7.62" x2="52.0192" y2="15.748" width="0" layer="19" extent="16-16"/>
+<contactref element="U$2" pad="VBAT"/>
+<via x="69.85" y="13.208" extent="1-16" drill="0.35"/>
+<wire x1="69.85" y1="13.208" x2="72.39" y2="15.748" width="0.254" layer="1"/>
+<wire x1="52.0192" y1="15.748" x2="52.9082" y2="14.859" width="0.254" layer="16"/>
+<wire x1="52.9082" y1="14.859" x2="52.9082" y2="14.7574" width="0.254" layer="16"/>
+<via x="52.9082" y="14.7574" extent="1-16" drill="0.35"/>
+<wire x1="52.9082" y1="14.7574" x2="52.9082" y2="12.2174" width="0.254" layer="1"/>
+<wire x1="50.9016" y1="10.2108" x2="50.9016" y2="8.4074" width="0.254" layer="1"/>
+<wire x1="52.9082" y1="12.2174" x2="50.9016" y2="10.2108" width="0.254" layer="1"/>
+<wire x1="50.9016" y1="8.4074" x2="50.7746" y2="8.4074" width="0.254" layer="1"/>
+<wire x1="50.7746" y1="8.4074" x2="49.9872" y2="7.62" width="0.254" layer="1"/>
 </signal>
 <signal name="N$61">
 <contactref element="U$2" pad="GND_2"/>
@@ -5937,28 +5942,21 @@ design rules under a new name.</description>
 <wire x1="118.9838" y1="62.992" x2="117.611" y2="62.992" width="0.254" layer="16"/>
 </signal>
 </signals>
-<mfgpreviewcolors>
-<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
-<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
-<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
-<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
-<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
-</mfgpreviewcolors>
 <errors>
-<approved hash="4,1,fee5ff45dbb6ccfd"/>
-<approved hash="4,1,2feeb7c3d1f8f295"/>
-<approved hash="4,1,c32cda04fd69eabe"/>
-<approved hash="4,1,0db99884ffb9d3de"/>
-<approved hash="4,16,fee5ff45dbb6ccfd"/>
-<approved hash="4,16,2feeb7c3d1f8f295"/>
-<approved hash="4,16,c32cda04fd69eabe"/>
-<approved hash="4,16,0db99884ffb9d3de"/>
-<approved hash="4,16,b16251a770a1a4b1"/>
 <approved hash="4,16,90d2a2cf432fa2c9"/>
-<approved hash="4,1,b3f4452422e6a3df"/>
-<approved hash="4,1,af7847a23deca35b"/>
-<approved hash="4,1,b2e052237f1da5b7"/>
 <approved hash="21,19,7c2781db86247a24"/>
+<approved hash="4,1,b3f4452422e6a3df"/>
+<approved hash="4,1,fee5ff45dbb6ccfd"/>
+<approved hash="4,1,0db99884ffb9d3de"/>
+<approved hash="4,1,c32cda04fd69eabe"/>
+<approved hash="4,1,af7847a23deca35b"/>
+<approved hash="4,1,2feeb7c3d1f8f295"/>
+<approved hash="4,1,b2e052237f1da5b7"/>
+<approved hash="4,16,fee5ff45dbb6ccfd"/>
+<approved hash="4,16,0db99884ffb9d3de"/>
+<approved hash="4,16,c32cda04fd69eabe"/>
+<approved hash="4,16,b16251a770a1a4b1"/>
+<approved hash="4,16,2feeb7c3d1f8f295"/>
 </errors>
 </board>
 </drawing>
