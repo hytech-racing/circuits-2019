@@ -4462,8 +4462,8 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <part name="GND41" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="C7" library="HyTechDevices" deviceset="CAP" device="0805"/>
 <part name="C8" library="HyTechDevices" deviceset="CAP" device="0805"/>
-<part name="C9" library="HyTechDevices" deviceset="CAP" device="0805"/>
-<part name="C10" library="HyTechDevices" deviceset="CAP" device="0805"/>
+<part name="C9" library="HyTechDevices" deviceset="CAP" device="0805" value="0.1uF"/>
+<part name="C10" library="HyTechDevices" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="GND46" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND47" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND15" library="HyTechSymbols" deviceset="GND" device=""/>
@@ -4538,7 +4538,7 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <part name="GND60" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+35" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="LED14" library="HyTechDevices" deviceset="LED" device="-0805" value="Blue"/>
-<part name="R45" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2.3k"/>
+<part name="R45" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="33"/>
 <part name="GND62" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="X3" library="HyTechDevices" deviceset="CONNECTOR-4" device="NANO-FIT-VERTICAL-4"/>
 <part name="X4" library="HyTechDevices" deviceset="CONNECTOR-4" device="NANO-FIT-VERTICAL-4"/>
@@ -4624,7 +4624,7 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <part name="C21" library="HyTechDevices" deviceset="CAP" device="0805" value=".1uF"/>
 <part name="GND40" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+32" library="supply1" deviceset="+12V" device=""/>
-<part name="C11" library="HyTechDevices" deviceset="CAP" device="0805"/>
+<part name="C11" library="HyTechDevices" deviceset="CAP" device="0805" value="1uF"/>
 <part name="CAN_TRANSCEIVER2" library="HyTechDevices" deviceset="MCP2551" device="" value="MCP2551"/>
 <part name="GND51" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND52" library="HyTechSymbols" deviceset="GND" device=""/>
@@ -4673,8 +4673,8 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <wire x1="251.46" y1="165.1" x2="165.1" y2="165.1" width="0.1524" layer="90"/>
 <wire x1="165.1" y1="165.1" x2="165.1" y2="43.18" width="0.1524" layer="90"/>
 <text x="165.1" y="165.1" size="3.81" layer="90">Power</text>
-<text x="434.34" y="248.92" size="1.778" layer="97">ECU Current Sensor</text>
-<text x="426.72" y="200.66" size="1.778" layer="97">Cooling Current Sensor</text>
+<text x="431.8" y="248.92" size="1.778" layer="97">ECU Current Sensor</text>
+<text x="424.18" y="200.66" size="1.778" layer="97">Cooling Current Sensor</text>
 <text x="266.7" y="233.68" size="1.778" layer="91">Pullup/down resistors to 
 detect open circuit. Install
 only one per signal on
@@ -4696,6 +4696,8 @@ Motor Controller</text>
 For input, solder jumper.
 For output, solder transistor and resistor.</text>
 <text x="58.42" y="88.9" size="1.016" layer="95">Pedals 5V</text>
+<text x="439.42" y="58.42" size="1.778" layer="91" align="top-right">Do not connect RTC batt to 3.3V_2➡
+Must cut line and connect to VBAT➡</text>
 </plain>
 <instances>
 <instance part="X1" gate="-13" x="45.72" y="129.54" smashed="yes" rot="MR0">
@@ -5087,11 +5089,11 @@ For output, solder transistor and resistor.</text>
 <attribute name="NAME" x="465.836" y="197.739" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="465.836" y="202.819" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND46" gate="1" x="462.28" y="203.2" smashed="yes" rot="R270">
-<attribute name="VALUE" x="459.74" y="205.74" size="1.778" layer="96" rot="R270"/>
+<instance part="GND46" gate="1" x="457.2" y="203.2" smashed="yes" rot="R270">
+<attribute name="VALUE" x="454.66" y="205.74" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="GND47" gate="1" x="464.82" y="251.46" smashed="yes" rot="R270">
-<attribute name="VALUE" x="462.28" y="254" size="1.778" layer="96" rot="R270"/>
+<instance part="GND47" gate="1" x="459.74" y="251.46" smashed="yes" rot="R270">
+<attribute name="VALUE" x="457.2" y="254" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="GND15" gate="1" x="416.56" y="182.88" smashed="yes">
 <attribute name="VALUE" x="414.02" y="180.34" size="1.778" layer="96"/>
@@ -5157,8 +5159,8 @@ For output, solder transistor and resistor.</text>
 <instance part="P+13" gate="1" x="363.22" y="160.02" smashed="yes" rot="R270">
 <attribute name="VALUE" x="358.14" y="162.56" size="1.778" layer="96"/>
 </instance>
-<instance part="GND30" gate="1" x="370.84" y="167.64" smashed="yes" rot="R180">
-<attribute name="VALUE" x="373.38" y="170.18" size="1.778" layer="96" rot="R180"/>
+<instance part="GND30" gate="1" x="375.92" y="160.02" smashed="yes" rot="R90">
+<attribute name="VALUE" x="378.46" y="157.48" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="ACC2_PU" gate="G$1" x="284.48" y="220.98" smashed="yes" rot="MR0">
 <attribute name="NAME" x="288.29" y="222.4786" size="1.778" layer="95" rot="MR0"/>
@@ -5648,9 +5650,9 @@ For output, solder transistor and resistor.</text>
 <instance part="P+32" gate="1" x="408.94" y="12.7" smashed="yes" rot="R270">
 <attribute name="VALUE" x="403.86" y="15.24" size="1.778" layer="96"/>
 </instance>
-<instance part="C11" gate="G$1" x="360.68" y="165.1" smashed="yes" rot="R270">
-<attribute name="NAME" x="363.601" y="163.576" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="358.521" y="163.576" size="1.778" layer="96" rot="R270"/>
+<instance part="C11" gate="G$1" x="370.84" y="167.64" smashed="yes" rot="R180">
+<attribute name="NAME" x="369.316" y="164.719" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="369.316" y="169.799" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="CAN_TRANSCEIVER2" gate="G$1" x="485.14" y="76.2" smashed="yes" rot="MR180">
 <attribute name="NAME" x="488.315" y="64.135" size="1.778" layer="95" rot="MR180"/>
@@ -5806,7 +5808,7 @@ For output, solder transistor and resistor.</text>
 <segment>
 <pinref part="GND46" gate="1" pin="GND"/>
 <pinref part="C10" gate="G$1" pin="2"/>
-<wire x1="464.82" y1="203.2" x2="467.36" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="459.74" y1="203.2" x2="467.36" y2="203.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND41" gate="1" pin="GND"/>
@@ -5826,7 +5828,7 @@ For output, solder transistor and resistor.</text>
 <segment>
 <pinref part="GND47" gate="1" pin="GND"/>
 <pinref part="C9" gate="G$1" pin="2"/>
-<wire x1="467.36" y1="251.46" x2="472.44" y2="251.46" width="0.1524" layer="91"/>
+<wire x1="462.28" y1="251.46" x2="472.44" y2="251.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$10" gate="G$1" pin="IP-"/>
@@ -5864,13 +5866,13 @@ For output, solder transistor and resistor.</text>
 </segment>
 <segment>
 <pinref part="U$18" gate="G$1" pin="AGND"/>
-<wire x1="370.84" y1="165.1" x2="370.84" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="GND30" gate="1" pin="GND"/>
-<junction x="370.84" y="154.94"/>
-<wire x1="370.84" y1="154.94" x2="355.6" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="1"/>
-<wire x1="365.76" y1="165.1" x2="370.84" y2="165.1" width="0.1524" layer="91"/>
-<junction x="370.84" y="165.1"/>
+<wire x1="370.84" y1="154.94" x2="355.6" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="370.84" y1="162.56" x2="370.84" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="370.84" y1="160.02" x2="370.84" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="370.84" y1="160.02" x2="373.38" y2="160.02" width="0.1524" layer="91"/>
+<junction x="370.84" y="160.02"/>
 </segment>
 <segment>
 <pinref part="ACC1_PD" gate="G$1" pin="2"/>
@@ -6405,18 +6407,18 @@ For output, solder transistor and resistor.</text>
 <pinref part="BMS_LATCH_SSR" gate="G$1" pin="DC-"/>
 <pinref part="IMD_SHUTDOWN1" gate="G$1" pin="4"/>
 <wire x1="104.14" y1="210.82" x2="104.14" y2="220.98" width="0.1524" layer="91"/>
-<wire x1="119.38" y1="187.96" x2="147.32" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="147.32" y1="187.96" x2="139.7" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="187.96" x2="139.7" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="187.96" x2="147.32" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="187.96" x2="139.7" y2="200.66" width="0.1524" layer="91"/>
 <junction x="104.14" y="210.82"/>
 <pinref part="R17" gate="G$1" pin="1"/>
-<junction x="147.32" y="187.96"/>
 <label x="111.76" y="210.82" size="1.778" layer="95"/>
 <wire x1="139.7" y1="200.66" x2="139.7" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="139.7" y1="210.82" x2="104.14" y2="210.82" width="0.1524" layer="91"/>
 <pinref part="D5" gate="1" pin="C"/>
 <wire x1="132.08" y1="200.66" x2="139.7" y2="200.66" width="0.1524" layer="91"/>
 <junction x="139.7" y="200.66"/>
+<junction x="139.7" y="187.96"/>
 </segment>
 </net>
 <net name="BMS_PWR_STEP" class="0">
@@ -6491,7 +6493,9 @@ For output, solder transistor and resistor.</text>
 <pinref part="U$18" gate="G$1" pin="VREF"/>
 <wire x1="358.14" y1="157.48" x2="355.6" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="2"/>
-<wire x1="358.14" y1="165.1" x2="358.14" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="370.84" y1="170.18" x2="370.84" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="370.84" y1="172.72" x2="358.14" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="358.14" y1="172.72" x2="358.14" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$23" gate="G$1" pin="VDD"/>
@@ -7202,14 +7206,13 @@ For output, solder transistor and resistor.</text>
 <wire x1="434.34" y1="38.1" x2="424.18" y2="38.1" width="0.1524" layer="91"/>
 <wire x1="424.18" y1="38.1" x2="419.1" y2="38.1" width="0.1524" layer="91"/>
 <junction x="424.18" y="38.1"/>
-<label x="419.1" y="55.88" size="1.016" layer="95" xref="yes"/>
-<wire x1="419.1" y1="38.1" x2="419.1" y2="55.88" width="0.1524" layer="91"/>
+<label x="419.1" y="48.26" size="1.016" layer="95" xref="yes"/>
+<wire x1="419.1" y1="38.1" x2="419.1" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="C21" gate="G$1" pin="2"/>
 <junction x="401.32" y="38.1"/>
 <pinref part="REG3" gate="G$1" pin="OUT"/>
 <wire x1="401.32" y1="35.56" x2="401.32" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="406.4" y1="38.1" x2="401.32" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="406.4" y1="38.1" x2="419.1" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="401.32" y1="38.1" x2="419.1" y2="38.1" width="0.1524" layer="91"/>
 <junction x="419.1" y="38.1"/>
 </segment>
 <segment>

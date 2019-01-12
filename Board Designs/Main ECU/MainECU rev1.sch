@@ -4298,8 +4298,8 @@ It is replaced by MCP2561.
 <part name="GND41" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="C7" library="HyTechDevices" deviceset="CAP" device="0805"/>
 <part name="C8" library="HyTechDevices" deviceset="CAP" device="0805"/>
-<part name="C9" library="HyTechDevices" deviceset="CAP" device="0805"/>
-<part name="C10" library="HyTechDevices" deviceset="CAP" device="0805"/>
+<part name="C9" library="HyTechDevices" deviceset="CAP" device="0805" value="0.1uF"/>
+<part name="C10" library="HyTechDevices" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="GND46" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND47" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND15" library="HyTechSymbols" deviceset="GND" device=""/>
@@ -4416,7 +4416,7 @@ It is replaced by MCP2561.
 <part name="P+36" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND61" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="LED14" library="HyTechDevices" deviceset="LED" device="-0805" value="Blue"/>
-<part name="R45" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2.3k"/>
+<part name="R45" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="33"/>
 <part name="GND62" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="X3" library="HyTechDevices" deviceset="CONNECTOR-4" device="NANO-FIT-VERTICAL-4"/>
 <part name="X4" library="HyTechDevices" deviceset="CONNECTOR-4" device="NANO-FIT-VERTICAL-4"/>
@@ -4493,6 +4493,8 @@ DASH_IO{7,8} output voltage</text>
 <text x="55.88" y="132.08" size="1.016" layer="95">Pedals 5V</text>
 <text x="60.96" y="99.06" size="1.016" layer="95">CAN for
 Motor Controller</text>
+<text x="340.36" y="53.34" size="1.778" layer="91" align="top-right">Do not connect RTC batt to 3.3V_2➡
+Must cut line and connect to VBAT➡</text>
 </plain>
 <instances>
 <instance part="X1" gate="-13" x="45.72" y="129.54" smashed="yes" rot="MR0">
@@ -5009,11 +5011,11 @@ Motor Controller</text>
 <attribute name="NAME" x="366.776" y="197.739" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="366.776" y="202.819" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND46" gate="1" x="363.22" y="203.2" smashed="yes" rot="R270">
-<attribute name="VALUE" x="360.68" y="205.74" size="1.778" layer="96" rot="R270"/>
+<instance part="GND46" gate="1" x="358.14" y="203.2" smashed="yes" rot="R270">
+<attribute name="VALUE" x="355.6" y="205.74" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="GND47" gate="1" x="365.76" y="251.46" smashed="yes" rot="R270">
-<attribute name="VALUE" x="363.22" y="254" size="1.778" layer="96" rot="R270"/>
+<instance part="GND47" gate="1" x="360.68" y="251.46" smashed="yes" rot="R270">
+<attribute name="VALUE" x="358.14" y="254" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="GND15" gate="1" x="317.5" y="182.88" smashed="yes">
 <attribute name="VALUE" x="314.96" y="180.34" size="1.778" layer="96"/>
@@ -5243,8 +5245,8 @@ Motor Controller</text>
 <attribute name="NAME" x="296.799" y="39.624" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="301.879" y="39.624" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND52" gate="1" x="299.72" y="53.34" smashed="yes" rot="R90">
-<attribute name="VALUE" x="302.26" y="50.8" size="1.778" layer="96" rot="R90"/>
+<instance part="GND52" gate="1" x="299.72" y="58.42" smashed="yes" rot="R90">
+<attribute name="VALUE" x="302.26" y="55.88" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="P+28" gate="1" x="309.88" y="12.7" smashed="yes" rot="R270">
 <attribute name="VALUE" x="304.8" y="15.24" size="1.778" layer="96"/>
@@ -5650,7 +5652,7 @@ Motor Controller</text>
 <segment>
 <pinref part="GND46" gate="1" pin="GND"/>
 <pinref part="C10" gate="G$1" pin="2"/>
-<wire x1="365.76" y1="203.2" x2="368.3" y2="203.2" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="203.2" x2="368.3" y2="203.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND41" gate="1" pin="GND"/>
@@ -5670,7 +5672,7 @@ Motor Controller</text>
 <segment>
 <pinref part="GND47" gate="1" pin="GND"/>
 <pinref part="C9" gate="G$1" pin="2"/>
-<wire x1="368.3" y1="251.46" x2="373.38" y2="251.46" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="251.46" x2="373.38" y2="251.46" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$10" gate="G$1" pin="IP-"/>
@@ -5772,8 +5774,8 @@ Motor Controller</text>
 <pinref part="C11" gate="G$1" pin="1"/>
 <pinref part="C13" gate="G$1" pin="1"/>
 <wire x1="294.64" y1="12.7" x2="294.64" y2="38.1" width="0.1524" layer="91"/>
-<wire x1="294.64" y1="38.1" x2="294.64" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="294.64" y1="53.34" x2="297.18" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="38.1" x2="294.64" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="58.42" x2="297.18" y2="58.42" width="0.1524" layer="91"/>
 <junction x="294.64" y="38.1"/>
 <pinref part="GND52" gate="1" pin="GND"/>
 </segment>
@@ -6333,18 +6335,18 @@ Motor Controller</text>
 <pinref part="BMS_LATCH_SSR" gate="G$1" pin="DC-"/>
 <pinref part="IMD_SHUTDOWN1" gate="G$1" pin="4"/>
 <wire x1="279.4" y1="317.5" x2="279.4" y2="327.66" width="0.1524" layer="91"/>
-<wire x1="294.64" y1="294.64" x2="322.58" y2="294.64" width="0.1524" layer="91"/>
-<wire x1="322.58" y1="294.64" x2="314.96" y2="294.64" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="294.64" x2="314.96" y2="294.64" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="294.64" x2="322.58" y2="294.64" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="294.64" x2="314.96" y2="307.34" width="0.1524" layer="91"/>
 <junction x="279.4" y="317.5"/>
 <pinref part="R17" gate="G$1" pin="1"/>
-<junction x="322.58" y="294.64"/>
 <label x="287.02" y="317.5" size="1.778" layer="95"/>
 <wire x1="314.96" y1="307.34" x2="314.96" y2="317.5" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="317.5" x2="279.4" y2="317.5" width="0.1524" layer="91"/>
 <pinref part="D5" gate="1" pin="C"/>
 <wire x1="307.34" y1="307.34" x2="314.96" y2="307.34" width="0.1524" layer="91"/>
 <junction x="314.96" y="307.34"/>
+<junction x="314.96" y="294.64"/>
 </segment>
 </net>
 <net name="BMS_PWR_STEP" class="0">

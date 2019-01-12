@@ -4380,8 +4380,8 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 <part name="GND41" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="C7" library="HyTechDevices" deviceset="CAP" device="0805"/>
 <part name="C8" library="HyTechDevices" deviceset="CAP" device="0805"/>
-<part name="C9" library="HyTechDevices" deviceset="CAP" device="0805"/>
-<part name="C10" library="HyTechDevices" deviceset="CAP" device="0805"/>
+<part name="C9" library="HyTechDevices" deviceset="CAP" device="0805" value="0.1uF"/>
+<part name="C10" library="HyTechDevices" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="GND46" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND47" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND15" library="HyTechSymbols" deviceset="GND" device=""/>
@@ -4492,7 +4492,7 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 <part name="GND60" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+35" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="LED14" library="HyTechDevices" deviceset="LED" device="-0805" value="Blue"/>
-<part name="R45" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2.3k"/>
+<part name="R45" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="33"/>
 <part name="GND62" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="X3" library="HyTechDevices" deviceset="CONNECTOR-4" device="NANO-FIT-VERTICAL-4"/>
 <part name="X4" library="HyTechDevices" deviceset="CONNECTOR-4" device="NANO-FIT-VERTICAL-4"/>
@@ -4562,8 +4562,8 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 <wire x1="175.26" y1="289.56" x2="175.26" y2="226.06" width="0.1524" layer="90"/>
 <text x="0" y="269.24" size="1.778" layer="90">Power</text>
 <text x="175.26" y="289.56" size="1.778" layer="90">Relays</text>
-<text x="335.28" y="271.78" size="1.778" layer="97">ECU Current Sensor</text>
-<text x="327.66" y="223.52" size="1.778" layer="97">Cooling Current Sensor</text>
+<text x="332.74" y="271.78" size="1.778" layer="97">ECU Current Sensor</text>
+<text x="325.12" y="223.52" size="1.778" layer="97">Cooling Current Sensor</text>
 <text x="76.2" y="261.62" size="1.778" layer="91">⇩ Pullup/down resistors to detect open circuit. Install
 only one per signal on ACCEL1 and ACCEL2.</text>
 <wire x1="175.26" y1="111.76" x2="287.02" y2="111.76" width="0.1524" layer="90"/>
@@ -4580,6 +4580,8 @@ DASH_IO{7,8} output voltage</text>
 Motor Controller</text>
 <text x="58.42" y="99.06" size="1.27" layer="96">12V for Dash</text>
 <text x="58.42" y="111.76" size="1.016" layer="95">Pedals 5V</text>
+<text x="340.36" y="76.2" size="1.778" layer="91" align="top-right">Do not connect RTC batt to 3.3V_2➡
+Must cut line and connect to VBAT➡</text>
 </plain>
 <instances>
 <instance part="X2" gate="-1" x="45.72" y="83.82" smashed="yes" rot="MR0">
@@ -4984,11 +4986,11 @@ Motor Controller</text>
 <attribute name="NAME" x="366.776" y="220.599" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="366.776" y="225.679" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND46" gate="1" x="363.22" y="226.06" smashed="yes" rot="R270">
-<attribute name="VALUE" x="360.68" y="228.6" size="1.778" layer="96" rot="R270"/>
+<instance part="GND46" gate="1" x="358.14" y="226.06" smashed="yes" rot="R270">
+<attribute name="VALUE" x="355.6" y="228.6" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="GND47" gate="1" x="365.76" y="274.32" smashed="yes" rot="R270">
-<attribute name="VALUE" x="363.22" y="276.86" size="1.778" layer="96" rot="R270"/>
+<instance part="GND47" gate="1" x="360.68" y="274.32" smashed="yes" rot="R270">
+<attribute name="VALUE" x="358.14" y="276.86" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="GND15" gate="1" x="317.5" y="205.74" smashed="yes">
 <attribute name="VALUE" x="314.96" y="203.2" size="1.778" layer="96"/>
@@ -5218,8 +5220,8 @@ Motor Controller</text>
 <attribute name="NAME" x="296.799" y="62.484" size="1.778" layer="95" rot="R90"/>
 <attribute name="VALUE" x="301.879" y="62.484" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND52" gate="1" x="299.72" y="76.2" smashed="yes" rot="R90">
-<attribute name="VALUE" x="302.26" y="73.66" size="1.778" layer="96" rot="R90"/>
+<instance part="GND52" gate="1" x="299.72" y="81.28" smashed="yes" rot="R90">
+<attribute name="VALUE" x="302.26" y="78.74" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="P+28" gate="1" x="309.88" y="35.56" smashed="yes" rot="R270">
 <attribute name="VALUE" x="304.8" y="38.1" size="1.778" layer="96"/>
@@ -5743,7 +5745,7 @@ Motor Controller</text>
 <segment>
 <pinref part="GND46" gate="1" pin="GND"/>
 <pinref part="C10" gate="G$1" pin="2"/>
-<wire x1="365.76" y1="226.06" x2="368.3" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="226.06" x2="368.3" y2="226.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND41" gate="1" pin="GND"/>
@@ -5762,7 +5764,7 @@ Motor Controller</text>
 <segment>
 <pinref part="GND47" gate="1" pin="GND"/>
 <pinref part="C9" gate="G$1" pin="2"/>
-<wire x1="368.3" y1="274.32" x2="373.38" y2="274.32" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="274.32" x2="373.38" y2="274.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$10" gate="G$1" pin="IP-"/>
@@ -5864,8 +5866,8 @@ Motor Controller</text>
 <pinref part="C11" gate="G$1" pin="1"/>
 <pinref part="C13" gate="G$1" pin="1"/>
 <wire x1="294.64" y1="35.56" x2="294.64" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="294.64" y1="60.96" x2="294.64" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="294.64" y1="76.2" x2="297.18" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="60.96" x2="294.64" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="81.28" x2="297.18" y2="81.28" width="0.1524" layer="91"/>
 <junction x="294.64" y="60.96"/>
 <pinref part="GND52" gate="1" pin="GND"/>
 </segment>
@@ -6429,18 +6431,18 @@ Motor Controller</text>
 <pinref part="BMS_LATCH_SSR" gate="G$1" pin="DC-"/>
 <pinref part="IMD_SHUTDOWN1" gate="G$1" pin="4"/>
 <wire x1="279.4" y1="340.36" x2="279.4" y2="350.52" width="0.1524" layer="91"/>
-<wire x1="294.64" y1="317.5" x2="322.58" y2="317.5" width="0.1524" layer="91"/>
-<wire x1="322.58" y1="317.5" x2="314.96" y2="317.5" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="317.5" x2="314.96" y2="317.5" width="0.1524" layer="91"/>
+<wire x1="314.96" y1="317.5" x2="322.58" y2="317.5" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="317.5" x2="314.96" y2="330.2" width="0.1524" layer="91"/>
 <junction x="279.4" y="340.36"/>
 <pinref part="R17" gate="G$1" pin="1"/>
-<junction x="322.58" y="317.5"/>
 <label x="287.02" y="340.36" size="1.778" layer="95"/>
 <wire x1="314.96" y1="330.2" x2="314.96" y2="340.36" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="340.36" x2="279.4" y2="340.36" width="0.1524" layer="91"/>
 <pinref part="D5" gate="1" pin="C"/>
 <wire x1="307.34" y1="330.2" x2="314.96" y2="330.2" width="0.1524" layer="91"/>
 <junction x="314.96" y="330.2"/>
+<junction x="314.96" y="317.5"/>
 </segment>
 </net>
 <net name="BMS_PWR_STEP" class="0">

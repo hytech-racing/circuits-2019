@@ -1900,7 +1900,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="57.8739" y="23.876" size="0.3048" layer="25" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" x="56.4388" y="23.876" size="0.3048" layer="27" rot="R270" align="top-center"/>
 </element>
-<element name="C10" library="HyTechDevices" package="0805" value="" x="99.822" y="66.802" smashed="yes" rot="MR0">
+<element name="C10" library="HyTechDevices" package="0805" value="0.1uF" x="99.822" y="66.802" smashed="yes" rot="MR0">
 <attribute name="NAME" x="99.822" y="67.5259" size="0.3048" layer="26" rot="MR0" align="bottom-center" display="off"/>
 <attribute name="VALUE" x="99.822" y="66.0908" size="0.3048" layer="28" rot="MR0" align="top-center"/>
 </element>
@@ -1924,7 +1924,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="86.9061" y="32.258" size="0.3048" layer="25" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="88.3412" y="32.258" size="0.3048" layer="27" rot="R90" align="top-center"/>
 </element>
-<element name="C9" library="HyTechDevices" package="0805" value="" x="98.044" y="25.4" smashed="yes" rot="R180">
+<element name="C9" library="HyTechDevices" package="0805" value="0.1uF" x="98.044" y="25.4" smashed="yes" rot="R180">
 <attribute name="NAME" x="98.044" y="24.6761" size="0.3048" layer="25" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="98.044" y="26.1112" size="0.3048" layer="27" rot="R180" align="top-center"/>
 </element>
@@ -2075,7 +2075,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="79.756" y="67.1449" size="0.3048" layer="26" rot="MR0" align="bottom-center"/>
 <attribute name="VALUE" x="79.756" y="65.7098" size="0.3048" layer="28" rot="MR0" align="top-center"/>
 </element>
-<element name="R45" library="HyTechDevices" package="0805" value="2.3k" x="24.638" y="33.782" smashed="yes" rot="R270">
+<element name="R45" library="HyTechDevices" package="0805" value="33" x="24.638" y="33.782" smashed="yes" rot="R270">
 <attribute name="NAME" x="25.3619" y="33.782" size="0.3048" layer="25" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" x="23.9268" y="33.782" size="0.3048" layer="27" rot="R270" align="top-center"/>
 </element>
@@ -2274,7 +2274,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="47.8409" y="32.385" size="0.3048" layer="25" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" x="46.4058" y="32.385" size="0.3048" layer="27" rot="R270" align="top-center"/>
 </element>
-<element name="C11" library="HyTechDevices" package="0805" value="" x="46.99" y="35.814" smashed="yes">
+<element name="C11" library="HyTechDevices" package="0805" value="1uF" x="46.99" y="35.814" smashed="yes">
 <attribute name="NAME" x="46.99" y="36.5379" size="0.3048" layer="25" align="bottom-center"/>
 <attribute name="VALUE" x="46.99" y="35.1028" size="0.3048" layer="27" align="top-center"/>
 </element>
@@ -2287,12 +2287,12 @@ design rules under a new name.</description>
 <attribute name="VALUE" x="61.722" y="14.6812" size="0.3048" layer="27" rot="R180" align="top-center"/>
 </element>
 <element name="Q9" library="HyTechDevices" package="SOT23" value="MMBT3904LT3G" x="10.033" y="55.118" smashed="yes" rot="MR0"/>
-<element name="R47" library="HyTechDevices" package="0805" value="2.2k" x="10.033" y="51.054" smashed="yes" rot="MR90">
+<element name="R47" library="HyTechDevices" package="0805" value="1k" x="10.033" y="51.054" smashed="yes" rot="MR90">
 <attribute name="NAME" x="10.7569" y="51.054" size="0.3048" layer="26" rot="MR90" align="bottom-center"/>
 <attribute name="VALUE" x="9.3218" y="51.054" size="0.3048" layer="28" rot="MR90" align="top-center"/>
 </element>
 <element name="Q11" library="HyTechDevices" package="SOT23" value="MMBT3904LT3G" x="11.303" y="71.374" smashed="yes" rot="MR0"/>
-<element name="R50" library="HyTechDevices" package="0805" value="2.2k" x="10.668" y="67.056" smashed="yes" rot="MR90">
+<element name="R50" library="HyTechDevices" package="0805" value="1k" x="10.668" y="67.056" smashed="yes" rot="MR90">
 <attribute name="NAME" x="11.3919" y="67.056" size="0.3048" layer="26" rot="MR90" align="bottom-center"/>
 <attribute name="VALUE" x="9.9568" y="67.056" size="0.3048" layer="28" rot="MR90" align="top-center"/>
 </element>
