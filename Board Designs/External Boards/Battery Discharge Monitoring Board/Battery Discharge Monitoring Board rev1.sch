@@ -2765,7 +2765,7 @@ Coil voltage: 75% - 170% of nominal voltage
 <part name="GND28" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+14" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="R11" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="120"/>
-<part name="Q1" library="HyTechDevices" deviceset="BJT_NPN" device="SOT"/>
+<part name="Q1" library="HyTechDevices" deviceset="BJT_NPN" device="SOT" value="LMMBT3904LT3G"/>
 <part name="R12" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1k"/>
 <part name="GND29" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$8" library="HyTechDevices" deviceset="G5LE" device=""/>
@@ -2773,21 +2773,21 @@ Coil voltage: 75% - 170% of nominal voltage
 <part name="CONT_1" library="HyTechDevices" deviceset="CONNECTOR-2" device=""/>
 <part name="GND30" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="GND26" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="Q2" library="HyTechDevices" deviceset="BJT_NPN" device="SOT"/>
+<part name="Q2" library="HyTechDevices" deviceset="BJT_NPN" device="SOT" value="LMMBT3904LT3G"/>
 <part name="R9" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1k"/>
 <part name="GND31" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$9" library="HyTechDevices" deviceset="G5LE" device=""/>
 <part name="P+16" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="CONT_2" library="HyTechDevices" deviceset="CONNECTOR-2" device=""/>
 <part name="GND32" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="Q3" library="HyTechDevices" deviceset="BJT_NPN" device="SOT"/>
+<part name="Q3" library="HyTechDevices" deviceset="BJT_NPN" device="SOT" value="LMMBT3904LT3G"/>
 <part name="R10" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1k"/>
 <part name="GND33" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$10" library="HyTechDevices" deviceset="G5LE" device=""/>
 <part name="P+17" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="CONT_3" library="HyTechDevices" deviceset="CONNECTOR-2" device=""/>
 <part name="GND34" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="Q4" library="HyTechDevices" deviceset="BJT_NPN" device="SOT"/>
+<part name="Q4" library="HyTechDevices" deviceset="BJT_NPN" device="SOT" value="LMMBT3904LT3G"/>
 <part name="R13" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1k"/>
 <part name="GND35" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="U$11" library="HyTechDevices" deviceset="G5LE" device=""/>
@@ -3196,7 +3196,7 @@ Coil voltage: 75% - 170% of nominal voltage
 </instance>
 <instance part="Q1" gate="G$1" x="236.22" y="142.24" smashed="yes">
 <attribute name="NAME" x="240.03" y="142.24" size="1.778" layer="95"/>
-<attribute name="VALUE" x="240.03" y="139.7" size="1.778" layer="96"/>
+<attribute name="VALUE" x="229.87" y="147.32" size="1.778" layer="96"/>
 </instance>
 <instance part="R12" gate="G$1" x="226.06" y="142.24" smashed="yes">
 <attribute name="NAME" x="222.25" y="143.7386" size="1.778" layer="95"/>
@@ -3224,7 +3224,7 @@ Coil voltage: 75% - 170% of nominal voltage
 </instance>
 <instance part="Q2" gate="G$1" x="236.22" y="104.14" smashed="yes">
 <attribute name="NAME" x="240.03" y="104.14" size="1.778" layer="95"/>
-<attribute name="VALUE" x="240.03" y="101.6" size="1.778" layer="96"/>
+<attribute name="VALUE" x="229.87" y="109.22" size="1.778" layer="96"/>
 </instance>
 <instance part="R9" gate="G$1" x="226.06" y="104.14" smashed="yes">
 <attribute name="NAME" x="222.25" y="105.6386" size="1.778" layer="95"/>
@@ -3249,7 +3249,7 @@ Coil voltage: 75% - 170% of nominal voltage
 </instance>
 <instance part="Q3" gate="G$1" x="236.22" y="63.5" smashed="yes">
 <attribute name="NAME" x="240.03" y="63.5" size="1.778" layer="95"/>
-<attribute name="VALUE" x="240.03" y="60.96" size="1.778" layer="96"/>
+<attribute name="VALUE" x="229.87" y="68.58" size="1.778" layer="96"/>
 </instance>
 <instance part="R10" gate="G$1" x="226.06" y="63.5" smashed="yes">
 <attribute name="NAME" x="222.25" y="64.9986" size="1.778" layer="95"/>
@@ -3274,7 +3274,7 @@ Coil voltage: 75% - 170% of nominal voltage
 </instance>
 <instance part="Q4" gate="G$1" x="236.22" y="25.4" smashed="yes">
 <attribute name="NAME" x="240.03" y="25.4" size="1.778" layer="95"/>
-<attribute name="VALUE" x="240.03" y="22.86" size="1.778" layer="96"/>
+<attribute name="VALUE" x="229.87" y="30.48" size="1.778" layer="96"/>
 </instance>
 <instance part="R13" gate="G$1" x="226.06" y="25.4" smashed="yes">
 <attribute name="NAME" x="222.25" y="26.8986" size="1.778" layer="95"/>
