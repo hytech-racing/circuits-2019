@@ -4160,7 +4160,6 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 <net name="SPI_CLK" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="CLK"/>
-<label x="109.22" y="175.26" size="1.27" layer="95" xref="yes"/>
 <pinref part="U$12" gate="G$1" pin="B1"/>
 <wire x1="116.84" y1="175.26" x2="106.68" y2="175.26" width="0.1524" layer="91"/>
 </segment>
@@ -4178,7 +4177,6 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 <net name="SPI_MISO" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="DOUT"/>
-<label x="109.22" y="172.72" size="1.27" layer="95" xref="yes"/>
 <pinref part="U$12" gate="G$1" pin="B2"/>
 <wire x1="116.84" y1="172.72" x2="106.68" y2="172.72" width="0.1524" layer="91"/>
 </segment>
@@ -4196,7 +4194,6 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 <net name="SPI_MOSI" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="DIN"/>
-<label x="109.22" y="170.18" size="1.27" layer="95" xref="yes"/>
 <pinref part="U$12" gate="G$1" pin="B3"/>
 <wire x1="106.68" y1="170.18" x2="116.84" y2="170.18" width="0.1524" layer="91"/>
 </segment>
@@ -4214,7 +4211,6 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 <net name="SPI_CS" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="!CS!/SHDN"/>
-<label x="109.22" y="167.64" size="1.27" layer="95" xref="yes"/>
 <pinref part="U$12" gate="G$1" pin="B4"/>
 <wire x1="116.84" y1="167.64" x2="106.68" y2="167.64" width="0.1524" layer="91"/>
 </segment>
