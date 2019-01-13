@@ -4143,6 +4143,7 @@ for Precharge</text>
 </instance>
 <instance part="R41" gate="G$1" x="116.84" y="33.02" smashed="yes">
 <attribute name="NAME" x="113.03" y="34.5186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="113.03" y="29.718" size="1.778" layer="96"/>
 </instance>
 <instance part="GND29" gate="1" x="124.46" y="30.48" smashed="yes">
 <attribute name="VALUE" x="121.92" y="27.94" size="1.778" layer="96"/>

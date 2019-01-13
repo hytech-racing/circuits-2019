@@ -2139,23 +2139,23 @@ DC/DC</text>
 <wire x1="10.714" y1="-2.624" x2="10.968" y2="-3.894" width="0.1524" layer="94" curve="-180"/>
 <text x="-12.016" y="-6.624" size="1.4224" layer="94">DBT71210 NC</text>
 <text x="4.302" y="6.604" size="1.4224" layer="94">-</text>
-<text x="1.262" y="-10.252" size="1.4224" layer="94">+</text>
+<text x="3.802" y="-10.252" size="1.4224" layer="94">+</text>
 <wire x1="-15.24" y1="5.08" x2="-15.24" y2="0" width="0.1524" layer="94"/>
 <wire x1="-15.24" y1="0" x2="-15.24" y2="-6.92" width="0.1524" layer="94"/>
 <wire x1="29.08" y1="0" x2="25.4" y2="0" width="0.1524" layer="94"/>
 <wire x1="10.7" y1="2.4" x2="10.7" y2="3.3" width="0.1524" layer="94"/>
-<wire x1="-15.24" y1="0" x2="0.46" y2="0" width="0.1524" layer="94"/>
-<wire x1="5.06" y1="5.6" x2="5.06" y2="3.3" width="0.1524" layer="94"/>
-<wire x1="5.06" y1="3.3" x2="10.7" y2="3.3" width="0.1524" layer="94"/>
+<wire x1="-15.24" y1="0" x2="3" y2="0" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="5.6" x2="5.08" y2="3.3" width="0.1524" layer="94"/>
+<wire x1="5.08" y1="3.3" x2="10.7" y2="3.3" width="0.1524" layer="94"/>
 <wire x1="10.9" y1="-4" x2="10.9" y2="-5.7" width="0.1524" layer="94"/>
 <wire x1="10.9" y1="-5.7" x2="5.08" y2="-5.7" width="0.1524" layer="94"/>
 <wire x1="5.08" y1="-5.7" x2="5.08" y2="-6.3" width="0.1524" layer="94"/>
 <wire x1="29" y1="0" x2="9.4" y2="0" width="0.1524" layer="94"/>
-<text x="-14.7" y="0" size="1.4224" layer="96">CONTACT1</text>
-<text x="5.08" y="-5.08" size="1.4224" layer="96">COIL+</text>
-<text x="0" y="2.54" size="1.4224" layer="96">COIL-</text>
-<text x="14.74" y="0" size="1.4224" layer="96">CONTACT2</text>
-<wire x1="0.5" y1="0" x2="9.5" y2="0.5" width="0.1524" layer="94"/>
+<text x="-14.7" y="0.254" size="1.4224" layer="96">CONTACT1</text>
+<text x="3.81" y="-5.08" size="1.4224" layer="96">COIL+</text>
+<text x="-1.27" y="2.54" size="1.4224" layer="96">COIL-</text>
+<text x="14.74" y="0.254" size="1.4224" layer="96">CONTACT2</text>
+<wire x1="3.04" y1="0" x2="9.5" y2="1.77" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="TXB0104">
 <pin name="VCCA" x="-5.08" y="-2.54" length="middle"/>
@@ -4129,6 +4129,7 @@ corner frequency = fclk / 100 = 1 kHz</text>
 </instance>
 <instance part="R41" gate="G$1" x="116.84" y="33.02" smashed="yes">
 <attribute name="NAME" x="113.03" y="34.5186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="113.03" y="29.718" size="1.778" layer="96"/>
 </instance>
 <instance part="GND29" gate="1" x="124.46" y="30.48" smashed="yes">
 <attribute name="VALUE" x="121.92" y="27.94" size="1.778" layer="96"/>
