@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.3.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4578,6 +4578,26 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 </device>
 </devices>
 </deviceset>
+<deviceset name="DMG3406L" prefix="Q" uservalue="yes">
+<description>&lt;b&gt;Generic NPN MOSFET&lt;/b&gt;
+&lt;p&gt;
+DMG3406L (SOT-23, 2.8 A 30V)&lt;br&gt;</description>
+<gates>
+<gate name="G$1" symbol="NPN_BJT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOT" package="SOT23">
+<connects>
+<connect gate="G$1" pin="BASE" pad="1"/>
+<connect gate="G$1" pin="COLLECTOR" pad="2"/>
+<connect gate="G$1" pin="EMITTER" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="HyTechSymbols">
@@ -5008,6 +5028,7 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 <part name="R52" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1.2k"/>
 <part name="GND79" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="FLIP1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="Q1" library="HyTechDevices" deviceset="DMG3406L" device="SOT"/>
 </parts>
 <sheets>
 <sheet>
@@ -6167,6 +6188,10 @@ to limit current or drop voltage</text>
 </instance>
 <instance part="FLIP1" gate="1" x="317.5" y="7.62" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="312.42" y="5.08" size="1.778" layer="96" rot="MR180"/>
+</instance>
+<instance part="Q1" gate="G$1" x="210.82" y="76.2" smashed="yes" rot="MR0">
+<attribute name="NAME" x="207.01" y="76.2" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="207.01" y="73.66" size="1.778" layer="96" rot="MR0"/>
 </instance>
 </instances>
 <busses>
