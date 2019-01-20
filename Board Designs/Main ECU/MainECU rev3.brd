@@ -1821,7 +1821,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="69.088" y="70.8279" size="0.3048" layer="26" rot="MR0" align="bottom-center"/>
 <attribute name="VALUE" x="69.088" y="69.3928" size="0.3048" layer="28" rot="MR0" align="top-center"/>
 </element>
-<element name="C1" library="HyTechDevices" package="0805" value=".22uF" x="65.532" y="29.591" smashed="yes">
+<element name="C1" library="HyTechDevices" package="0805" value="10uF" x="65.532" y="29.591" smashed="yes">
 <attribute name="NAME" x="65.532" y="30.3149" size="0.3048" layer="25" align="bottom-center"/>
 <attribute name="VALUE" x="65.532" y="28.8798" size="0.3048" layer="27" align="top-center"/>
 </element>
@@ -1829,7 +1829,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="86.868" y="58.2041" size="0.3048" layer="25" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="86.868" y="59.6392" size="0.3048" layer="27" rot="R180" align="top-center"/>
 </element>
-<element name="C11" library="HyTechDevices" package="0805" value=".22uF" x="49.911" y="46.609" smashed="yes" rot="R270">
+<element name="C11" library="HyTechDevices" package="0805" value="10uF" x="49.911" y="46.609" smashed="yes" rot="R270">
 <attribute name="NAME" x="50.6349" y="46.609" size="0.3048" layer="25" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" x="49.1998" y="46.609" size="0.3048" layer="27" rot="R270" align="top-center"/>
 </element>
@@ -1837,11 +1837,11 @@ design rules under a new name.</description>
 <attribute name="NAME" x="65.278" y="70.3199" size="0.3048" layer="26" rot="MR0" align="bottom-center"/>
 <attribute name="VALUE" x="65.278" y="68.8848" size="0.3048" layer="28" rot="MR0" align="top-center"/>
 </element>
-<element name="C13" library="HyTechDevices" package="0805" value=".1uF" x="43.688" y="20.32" smashed="yes" rot="R90">
+<element name="C13" library="HyTechDevices" package="0805" value="10uF" x="43.688" y="20.32" smashed="yes" rot="R90">
 <attribute name="NAME" x="42.9641" y="20.32" size="0.3048" layer="25" rot="R90" align="bottom-center"/>
 <attribute name="VALUE" x="44.3992" y="20.32" size="0.3048" layer="27" rot="R90" align="top-center"/>
 </element>
-<element name="C2" library="HyTechDevices" package="0805" value=".1uF" x="60.071" y="30.226" smashed="yes" rot="R270">
+<element name="C2" library="HyTechDevices" package="0805" value="10uF" x="60.071" y="30.226" smashed="yes" rot="R270">
 <attribute name="NAME" x="60.7949" y="30.226" size="0.3048" layer="25" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" x="59.3598" y="30.226" size="0.3048" layer="27" rot="R270" align="top-center"/>
 </element>

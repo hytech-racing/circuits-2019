@@ -4268,8 +4268,8 @@ It is replaced by MCP2561.
 <part name="GND8" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="REG" library="HyTechDevices" deviceset="OKI-78SR" device="" value="5V"/>
 <part name="GND9" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="C1" library="HyTechDevices" deviceset="CAP" device="0805" value=".22uF"/>
-<part name="C2" library="HyTechDevices" deviceset="CAP" device="0805" value=".1uF"/>
+<part name="C1" library="HyTechDevices" deviceset="CAP" device="0805" value="10uF"/>
+<part name="C2" library="HyTechDevices" deviceset="CAP" device="0805" value="10uF"/>
 <part name="GND10" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="P+14" library="supply1" deviceset="+12V" device=""/>
@@ -4364,8 +4364,8 @@ It is replaced by MCP2561.
 <part name="GND50" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="REG2" library="HyTechDevices" deviceset="OKI-78SR" device="" value="5V"/>
 <part name="GND51" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="C11" library="HyTechDevices" deviceset="CAP" device="0805" value=".22uF"/>
-<part name="C13" library="HyTechDevices" deviceset="CAP" device="0805" value=".1uF"/>
+<part name="C11" library="HyTechDevices" deviceset="CAP" device="0805" value="10uF"/>
+<part name="C13" library="HyTechDevices" deviceset="CAP" device="0805" value="10uF"/>
 <part name="GND52" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+28" library="supply1" deviceset="+12V" device=""/>
 <part name="LED11" library="HyTechDevices" deviceset="LED" device="-0805" value="Green"/>

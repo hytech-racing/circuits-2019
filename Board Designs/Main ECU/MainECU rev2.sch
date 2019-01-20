@@ -4446,8 +4446,8 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <part name="GND8" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="REG" library="HyTechDevices" deviceset="OKI-78SR" device="" value="5V"/>
 <part name="GND9" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="C1" library="HyTechDevices" deviceset="CAP" device="0805" value=".22uF"/>
-<part name="C2" library="HyTechDevices" deviceset="CAP" device="0805" value=".1uF"/>
+<part name="C1" library="HyTechDevices" deviceset="CAP" device="0805" value="10uF"/>
+<part name="C2" library="HyTechDevices" deviceset="CAP" device="0805" value="10uF"/>
 <part name="GND10" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+3" library="supply1" deviceset="+5V" device=""/>
 <part name="P+14" library="supply1" deviceset="+12V" device=""/>
@@ -4620,8 +4620,8 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <part name="U$16" library="HyTechDevices" deviceset="CR-2450/G1AN" device=""/>
 <part name="REG3" library="HyTechDevices" deviceset="OKI-78SR" device="" value="5V"/>
 <part name="GND39" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="C20" library="HyTechDevices" deviceset="CAP" device="0805" value=".22uF"/>
-<part name="C21" library="HyTechDevices" deviceset="CAP" device="0805" value=".1uF"/>
+<part name="C20" library="HyTechDevices" deviceset="CAP" device="0805" value="10uF"/>
+<part name="C21" library="HyTechDevices" deviceset="CAP" device="0805" value="10uF"/>
 <part name="GND40" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+32" library="supply1" deviceset="+12V" device=""/>
 <part name="C11" library="HyTechDevices" deviceset="CAP" device="0805" value="1uF"/>
