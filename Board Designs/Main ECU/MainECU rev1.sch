@@ -4218,7 +4218,7 @@ It is replaced by MCP2561.
 <part name="GND13" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="BMS_SSR" library="HyTechDevices" deviceset="CPC1002N" device=""/>
 <part name="GND3" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="R11" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="43"/>
+<part name="R11" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="150"/>
 <part name="R12" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="33"/>
 <part name="BMS_LATCH_SSR" library="HyTechDevices" deviceset="CPC1002N" device=""/>
 <part name="R13" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="33"/>
@@ -4226,11 +4226,11 @@ It is replaced by MCP2561.
 <part name="LED2" library="HyTechDevices" deviceset="LED" device="-0805" value="White"/>
 <part name="LED3" library="HyTechDevices" deviceset="LED" device="-0805" value="Green"/>
 <part name="LED5" library="HyTechDevices" deviceset="LED" device="-0805" value="Yellow"/>
-<part name="R14" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="820"/>
+<part name="R14" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2k"/>
 <part name="GND6" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="IMD_SHUTDOWN1" library="HyTechDevices" deviceset="G2RL-2-DC12" device=""/>
 <part name="GND19" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="R17" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="820"/>
+<part name="R17" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="20k"/>
 <part name="LED7" library="HyTechDevices" deviceset="LED" device="-0805" value="Green"/>
 <part name="GND20" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND21" library="HyTechSymbols" deviceset="GND" device=""/>
@@ -4240,7 +4240,7 @@ It is replaced by MCP2561.
 <part name="IMD_SSR" library="HyTechDevices" deviceset="CPC1002N" device=""/>
 <part name="LED9" library="HyTechDevices" deviceset="LED" device="-0805" value="Yellow"/>
 <part name="GND24" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="R21" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="820"/>
+<part name="R21" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2k"/>
 <part name="P+10" library="supply1" deviceset="+12V" device=""/>
 <part name="P+5" library="supply1" deviceset="+12V" device=""/>
 <part name="D5" library="HyTechDevices" deviceset="DIODE" device="0805"/>
@@ -4261,7 +4261,7 @@ It is replaced by MCP2561.
 <part name="GND44" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="LED18" library="HyTechDevices" deviceset="LED" device="-0805" value="RED"/>
 <part name="GND45" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="R31" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1.2K"/>
+<part name="R31" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="6.8k"/>
 <part name="GND1" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND4" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND7" library="HyTechSymbols" deviceset="GND" device=""/>
@@ -4372,7 +4372,7 @@ It is replaced by MCP2561.
 <part name="R30" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="33"/>
 <part name="GND53" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="LED10" library="HyTechDevices" deviceset="LED" device="-0805" value="Red"/>
-<part name="R32" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100"/>
+<part name="R32" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1.2k"/>
 <part name="GND54" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="R33" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="4.7k"/>
 <part name="R34" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="4.7k"/>
@@ -4416,7 +4416,7 @@ It is replaced by MCP2561.
 <part name="P+36" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND61" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="LED14" library="HyTechDevices" deviceset="LED" device="-0805" value="Blue"/>
-<part name="R45" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="33"/>
+<part name="R45" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="0"/>
 <part name="GND62" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="X3" library="HyTechDevices" deviceset="CONNECTOR-4" device="NANO-FIT-VERTICAL-4"/>
 <part name="X4" library="HyTechDevices" deviceset="CONNECTOR-4" device="NANO-FIT-VERTICAL-4"/>
