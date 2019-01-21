@@ -1347,15 +1347,6 @@ FUSE</text>
 <text x="-0.8255" y="4.5085" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-1.0795" y="-0.1905" size="0.4064" layer="27">&gt;VALUE</text>
 </package>
-<package name="TO-220">
-<pad name="1" x="-2.54" y="0" drill="1" diameter="1.8796" shape="square"/>
-<pad name="2" x="0" y="0" drill="1" diameter="1.8796"/>
-<pad name="3" x="2.54" y="0" drill="1" diameter="1.8796"/>
-<wire x1="-5.08" y1="3.81" x2="5.08" y2="3.81" width="0.127" layer="21"/>
-<wire x1="5.08" y1="3.81" x2="5.08" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="5.08" y1="-3.81" x2="-5.08" y2="-3.81" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-3.81" x2="-5.08" y2="3.81" width="0.127" layer="21"/>
-</package>
 <package name="TO-220-SINK">
 <wire x1="5.08" y1="-1.905" x2="-5.08" y2="-1.905" width="0.2032" layer="21"/>
 <wire x1="-5.08" y1="-1.905" x2="-5.08" y2="1.905" width="0.2032" layer="21"/>
@@ -1959,30 +1950,6 @@ Source: transistor-fet.lbr</description>
 <circle x="0" y="11.176" radius="4.191" width="0" layer="42"/>
 <circle x="0" y="11.176" radius="4.191" width="0" layer="43"/>
 <hole x="0" y="11.176" drill="3.302"/>
-</package>
-<package name="TO-264_MAX247">
-<description>&lt;b&gt;TO−3BPL (TO−264)&lt;/b&gt;
-&lt;br&gt;250VDC &lt;br&gt;16A Continuous
-&lt;p&gt;
-&lt;a href="http://www.mouser.com/ds/2/308/MJL21193-D-95048.pdf"&gt;MJL21194 Datasheet&lt;/a&gt;
-&lt;/p&gt;
-
-&lt;p&gt;
-&lt;b&gt;MAX247&lt;/b&gt;
-&lt;br&gt;710V &lt;br&gt;130A Continuous
-&lt;p&gt;
-&lt;a href="http://www.st.com/web/en/resource/technical/document/datasheet/DM00048681.pdf"&gt;STY139N65M5 Datasheet&lt;/a&gt;
-&lt;/p&gt;</description>
-<text x="-11.43" y="2.54" size="1.27" layer="21">&gt;NAME</text>
-<text x="2.54" y="2.54" size="1.27" layer="21">&gt;VALUE</text>
-<pad name="P2" x="0" y="0" drill="1.5" diameter="2.54"/>
-<pad name="P3" x="5.461" y="0" drill="1.5" diameter="2.54"/>
-<pad name="P1" x="-5.461" y="0" drill="1.5" diameter="2.54"/>
-<wire x1="-11.43" y1="2.54" x2="10.16" y2="2.54" width="0.127" layer="21"/>
-<wire x1="10.16" y1="2.54" x2="10.16" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="10.16" y1="-2.54" x2="-11.43" y2="-2.54" width="0.127" layer="21"/>
-<wire x1="-11.43" y1="-2.54" x2="-11.43" y2="2.54" width="0.127" layer="21"/>
-<text x="-7.62" y="-1.27" size="1.27" layer="21">1</text>
 </package>
 <package name="SOT23">
 <description>&lt;B&gt; SOT-23 &lt;/B&gt;</description>
@@ -2781,25 +2748,6 @@ Same pad spacing as SOIC-16, but larger footprint</description>
 <pin name="P$2" x="5.08" y="-2.54" visible="off" length="short" rot="R90"/>
 <text x="0" y="0.508" size="1.27" layer="94">JUMP</text>
 </symbol>
-<symbol name="PNP_BJT">
-<wire x1="2.0861" y1="1.6779" x2="1.5781" y2="2.5941" width="0.1524" layer="94"/>
-<wire x1="1.5781" y1="2.5941" x2="0.5159" y2="1.478" width="0.1524" layer="94"/>
-<wire x1="0.5159" y1="1.478" x2="2.0861" y2="1.6779" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="2.54" x2="1.808" y2="2.1239" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="0.508" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="1.905" y1="1.778" x2="1.524" y2="2.413" width="0.254" layer="94"/>
-<wire x1="1.524" y1="2.413" x2="0.762" y2="1.651" width="0.254" layer="94"/>
-<wire x1="0.762" y1="1.651" x2="1.778" y2="1.778" width="0.254" layer="94"/>
-<wire x1="1.778" y1="1.778" x2="1.524" y2="2.159" width="0.254" layer="94"/>
-<wire x1="1.524" y1="2.159" x2="1.143" y2="1.905" width="0.254" layer="94"/>
-<wire x1="1.143" y1="1.905" x2="1.524" y2="1.905" width="0.254" layer="94"/>
-<text x="3.81" y="0" size="1.778" layer="95">&gt;NAME</text>
-<text x="3.81" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
-<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-<pin name="E" x="2.54" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
-<pin name="C" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
-</symbol>
 <symbol name="CR-2450/G1AN">
 <circle x="0" y="0" radius="7.62" width="0.254" layer="94"/>
 <pin name="+" x="-10.16" y="0" visible="pin" length="short"/>
@@ -2883,6 +2831,23 @@ Same pad spacing as SOIC-16, but larger footprint</description>
 <pin name="C2" x="20.32" y="-7.62" visible="pin" length="short" direction="pas" rot="R180"/>
 <pin name="EM1" x="20.32" y="-5.08" visible="pin" length="short" direction="pas" rot="R180"/>
 <pin name="C1" x="20.32" y="-2.54" visible="pin" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="P-CHANNEL_MOSFET">
+<wire x1="-2.54" y1="-2.54" x2="-1.2192" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="0.762" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0" y2="-0.762" width="0.254" layer="94"/>
+<wire x1="0" y1="3.683" x2="0" y2="1.397" width="0.254" layer="94"/>
+<wire x1="0.635" y1="0.635" x2="1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="0.635" y1="-0.635" x2="1.905" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-1.397" x2="0" y2="-3.683" width="0.254" layer="94"/>
+<wire x1="-1.143" y1="2.54" x2="-1.143" y2="-2.54" width="0.254" layer="94"/>
+<text x="-3.81" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<pin name="D" x="5.08" y="2.54" visible="off" length="middle" direction="pas" rot="R180"/>
+<pin name="S" x="5.08" y="-2.54" visible="off" length="middle" direction="pas" rot="R180"/>
+<pin name="G" x="-5.08" y="-2.54" visible="off" length="short" direction="pas"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4282,80 +4247,6 @@ It is replaced by MCP2561.
 </device>
 </devices>
 </deviceset>
-<deviceset name="BJT_NPN" prefix="Q" uservalue="yes">
-<description>&lt;b&gt;Generic NPN BJT&lt;/b&gt;
-&lt;p&gt;
-MMBT2222A - TRANS-08049 (SOT-23, 1A 40V)&lt;br&gt;
-MPSA42 - TRANS-09116 (SOT-23, 500mA 300V)&lt;br&gt;
-MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
-&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    BC547 -
-    &lt;a href="http://www.sparkfun.com/products/8928"&gt;COM-08928&lt;/a&gt;
-    (TO-92 45V 100mA) (1.Collector 2.Base 3.Emitter)
-  &lt;/li&gt;
-  &lt;li&gt;
-    2N3904 -
-    &lt;a href="http://www.sparkfun.com/products/521"&gt;COM-00521&lt;/a&gt;
-    (TO-92 40V 200mA) (1.Emitter 2.Base 3.Collector)
-  &lt;/li&gt;
-  &lt;li&gt;
-    P2N2222A -
-    &lt;a href="http://www.sparkfun.com/products/12852"&gt;COM-12852&lt;/a&gt;
-    (TO-92 40V 600mA) (1.Collector 2.Base 3.Emitter)
-  &lt;/li&gt;
-
-&lt;/ul&gt;
-&lt;br&gt;
-&lt;br&gt;
-&lt;a href="https://github.com/sparkfun/SparkFun-Eagle-Libraries"&gt;Source: Sparkfun&lt;/a&gt;</description>
-<gates>
-<gate name="G$1" symbol="NPN_BJT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="MJL21194G" package="TO-264_MAX247">
-<connects>
-<connect gate="G$1" pin="BASE" pad="P1"/>
-<connect gate="G$1" pin="COLLECTOR" pad="P2"/>
-<connect gate="G$1" pin="EMITTER" pad="P3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="TIP120(SINK)" package="TO-220-SINK">
-<connects>
-<connect gate="G$1" pin="BASE" pad="1"/>
-<connect gate="G$1" pin="COLLECTOR" pad="2"/>
-<connect gate="G$1" pin="EMITTER" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="TIP120" package="TO-220">
-<connects>
-<connect gate="G$1" pin="BASE" pad="1"/>
-<connect gate="G$1" pin="COLLECTOR" pad="2"/>
-<connect gate="G$1" pin="EMITTER" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SOT" package="SOT23">
-<connects>
-<connect gate="G$1" pin="BASE" pad="1"/>
-<connect gate="G$1" pin="COLLECTOR" pad="3"/>
-<connect gate="G$1" pin="EMITTER" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="JUMPER">
 <description>Jumper for changing operation of a device</description>
 <gates>
@@ -4384,34 +4275,6 @@ MMBT5088LT1G - TRANS-11160 (SOT-23, 50 mA 30V)&lt;br&gt;
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
 <connect gate="G$1" pin="P$2" pad="P$2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="BJT_PNP">
-<description>&lt;b&gt;Generic PNP BJT&lt;/b&gt;</description>
-<gates>
-<gate name="G$1" symbol="PNP_BJT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="" package="TO-220">
-<connects>
-<connect gate="G$1" pin="B" pad="1"/>
-<connect gate="G$1" pin="C" pad="2"/>
-<connect gate="G$1" pin="E" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="SOT" package="SOT23">
-<connects>
-<connect gate="G$1" pin="B" pad="1"/>
-<connect gate="G$1" pin="C" pad="3"/>
-<connect gate="G$1" pin="E" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4591,6 +4454,25 @@ DMG3406L (SOT-23, 2.8 A 30V)&lt;br&gt;</description>
 <connect gate="G$1" pin="BASE" pad="1"/>
 <connect gate="G$1" pin="COLLECTOR" pad="2"/>
 <connect gate="G$1" pin="EMITTER" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="P-CHANNEL_MOSFET_DMP3099L-7">
+<description>&lt;B&gt; Diodes Incorporated P-Channel Enhancement Mode MOSFET &lt;/B&gt;
+&lt;P&gt; &lt;a href="http://www.mouser.com/ds/2/115/DMP3099L-266220.pdf"&gt;Datasheet</description>
+<gates>
+<gate name="G$1" symbol="P-CHANNEL_MOSFET" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4951,11 +4833,9 @@ DMG3406L (SOT-23, 2.8 A 30V)&lt;br&gt;</description>
 <part name="U$13" library="HyTechDevices" deviceset="JUMPER" device=""/>
 <part name="U$14" library="HyTechDevices" deviceset="JUMPER" device=""/>
 <part name="P+9" library="supply1" deviceset="+12V" device=""/>
-<part name="Q10" library="HyTechDevices" deviceset="BJT_NPN" device="SOT" value="MMBT3904LT3G"/>
-<part name="U$15" library="HyTechDevices" deviceset="BJT_PNP" device="SOT" value="SMMBT2907ALT1G"/>
-<part name="R10" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2.2k"/>
+<part name="R10" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="R48" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
-<part name="R49" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1.2k"/>
+<part name="R49" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="GND12" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="U$8" library="HyTechDevices" deviceset="G5LE" device=""/>
 <part name="LED6" library="HyTechDevices" deviceset="LED" device="-0805" value="Red"/>
@@ -4976,12 +4856,10 @@ DMG3406L (SOT-23, 2.8 A 30V)&lt;br&gt;</description>
 <part name="GND51" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND52" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="R46" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="120"/>
-<part name="Q9" library="HyTechDevices" deviceset="BJT_NPN" device="SOT" value="MMBT3904LT3G"/>
-<part name="R47" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1k"/>
+<part name="R47" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="GND56" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="Q11" library="HyTechDevices" deviceset="BJT_NPN" device="SOT" value="MMBT3904LT3G"/>
 <part name="GND11" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="R50" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1k"/>
+<part name="R50" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="FLIP" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND43" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="U$25" library="HyTechDevices" deviceset="TXB0104" device="TSSOP"/>
@@ -5028,7 +4906,14 @@ DMG3406L (SOT-23, 2.8 A 30V)&lt;br&gt;</description>
 <part name="R52" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1.2k"/>
 <part name="GND79" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="FLIP1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="Q1" library="HyTechDevices" deviceset="DMG3406L" device="SOT"/>
+<part name="Q9" library="HyTechDevices" deviceset="DMG3406L" device="SOT"/>
+<part name="GND42" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="Q11" library="HyTechDevices" deviceset="DMG3406L" device="SOT"/>
+<part name="GND80" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="GND81" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="Q10" library="HyTechDevices" deviceset="DMG3406L" device="SOT"/>
+<part name="U$15" library="HyTechDevices" deviceset="P-CHANNEL_MOSFET_DMP3099L-7" device=""/>
+<part name="GND82" library="HyTechSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5928,25 +5813,17 @@ to limit current or drop voltage</text>
 <instance part="P+9" gate="1" x="218.44" y="119.38" smashed="yes">
 <attribute name="VALUE" x="215.9" y="114.3" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="Q10" gate="G$1" x="205.74" y="93.98" smashed="yes">
-<attribute name="NAME" x="209.55" y="93.98" size="1.778" layer="95"/>
-<attribute name="VALUE" x="209.55" y="91.44" size="1.778" layer="96"/>
-</instance>
-<instance part="U$15" gate="G$1" x="226.06" y="101.6" smashed="yes">
-<attribute name="NAME" x="229.87" y="101.6" size="1.778" layer="95"/>
-<attribute name="VALUE" x="229.87" y="99.06" size="1.778" layer="96"/>
-</instance>
-<instance part="R10" gate="G$1" x="195.58" y="93.98" smashed="yes" rot="R180">
-<attribute name="NAME" x="199.39" y="92.4814" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="199.39" y="97.282" size="1.778" layer="96" rot="R180"/>
+<instance part="R10" gate="G$1" x="195.58" y="101.6" smashed="yes" rot="R270">
+<attribute name="NAME" x="197.0786" y="105.41" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="192.278" y="105.41" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="R48" gate="G$1" x="208.28" y="109.22" smashed="yes" rot="R270">
 <attribute name="NAME" x="209.7786" y="113.03" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="204.978" y="113.03" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R49" gate="G$1" x="215.9" y="101.6" smashed="yes">
-<attribute name="NAME" x="212.09" y="103.0986" size="1.778" layer="95"/>
-<attribute name="VALUE" x="212.09" y="98.298" size="1.778" layer="96"/>
+<instance part="R49" gate="G$1" x="218.44" y="93.98" smashed="yes" rot="R90">
+<attribute name="NAME" x="216.9414" y="90.17" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="221.742" y="90.17" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="GND12" gate="1" x="210.82" y="86.36" smashed="yes" rot="R90">
 <attribute name="VALUE" x="213.36" y="83.82" size="1.778" layer="96" rot="R90"/>
@@ -6012,27 +5889,19 @@ to limit current or drop voltage</text>
 <attribute name="NAME" x="517.1186" y="77.47" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="512.318" y="77.47" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="Q9" gate="G$1" x="205.74" y="66.04" smashed="yes" rot="MR0">
-<attribute name="NAME" x="201.93" y="66.04" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="204.47" y="60.96" size="1.778" layer="96" rot="MR180"/>
-</instance>
-<instance part="R47" gate="G$1" x="215.9" y="66.04" smashed="yes" rot="R180">
-<attribute name="NAME" x="219.71" y="64.5414" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="219.71" y="69.342" size="1.778" layer="96" rot="R180"/>
+<instance part="R47" gate="G$1" x="213.36" y="58.42" smashed="yes" rot="R270">
+<attribute name="NAME" x="214.8586" y="62.23" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="210.058" y="62.23" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="GND56" gate="1" x="203.2" y="55.88" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="205.74" y="53.34" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="Q11" gate="G$1" x="205.74" y="200.66" smashed="yes" rot="MR0">
-<attribute name="NAME" x="201.93" y="200.66" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="204.47" y="195.58" size="1.778" layer="96" rot="MR180"/>
-</instance>
 <instance part="GND11" gate="1" x="203.2" y="190.5" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="205.74" y="187.96" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="R50" gate="G$1" x="215.9" y="200.66" smashed="yes" rot="R180">
-<attribute name="NAME" x="219.71" y="199.1614" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="219.71" y="203.962" size="1.778" layer="96" rot="R180"/>
+<instance part="R50" gate="G$1" x="215.9" y="193.04" smashed="yes" rot="R270">
+<attribute name="NAME" x="217.3986" y="196.85" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="212.598" y="196.85" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="FLIP" gate="1" x="330.2" y="22.86" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="325.12" y="20.32" size="1.778" layer="96" rot="MR180"/>
@@ -6189,9 +6058,32 @@ to limit current or drop voltage</text>
 <instance part="FLIP1" gate="1" x="317.5" y="7.62" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="312.42" y="5.08" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="Q1" gate="G$1" x="210.82" y="76.2" smashed="yes" rot="MR0">
-<attribute name="NAME" x="207.01" y="76.2" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="207.01" y="73.66" size="1.778" layer="96" rot="MR0"/>
+<instance part="Q9" gate="G$1" x="205.74" y="66.04" smashed="yes" rot="MR0">
+<attribute name="NAME" x="201.93" y="66.04" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="201.93" y="63.5" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="GND42" gate="1" x="213.36" y="48.26" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="215.9" y="45.72" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="Q11" gate="G$1" x="205.74" y="200.66" smashed="yes" rot="MR0">
+<attribute name="NAME" x="201.93" y="200.66" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="201.93" y="198.12" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="GND80" gate="1" x="210.82" y="187.96" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="208.28" y="185.42" size="1.778" layer="96" rot="MR90"/>
+</instance>
+<instance part="GND81" gate="1" x="195.58" y="111.76" smashed="yes" rot="MR180">
+<attribute name="VALUE" x="193.04" y="114.3" size="1.778" layer="96" rot="MR180"/>
+</instance>
+<instance part="Q10" gate="G$1" x="205.74" y="93.98" smashed="yes">
+<attribute name="NAME" x="209.55" y="93.98" size="1.778" layer="95"/>
+<attribute name="VALUE" x="209.55" y="91.44" size="1.778" layer="96"/>
+</instance>
+<instance part="U$15" gate="G$1" x="228.6" y="104.14" smashed="yes">
+<attribute name="NAME" x="234.95" y="106.68" size="1.778" layer="95"/>
+</instance>
+<instance part="GND82" gate="1" x="218.44" y="83.82" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="220.98" y="81.28" size="1.778" layer="96" rot="MR0"/>
 </instance>
 </instances>
 <busses>
@@ -6586,9 +6478,9 @@ to limit current or drop voltage</text>
 <junction x="342.9" y="208.28"/>
 </segment>
 <segment>
-<pinref part="Q10" gate="G$1" pin="EMITTER"/>
 <pinref part="GND12" gate="1" pin="GND"/>
 <wire x1="208.28" y1="88.9" x2="208.28" y2="86.36" width="0.1524" layer="91"/>
+<pinref part="Q10" gate="G$1" pin="EMITTER"/>
 </segment>
 <segment>
 <pinref part="LED6" gate="LED" pin="C"/>
@@ -6619,14 +6511,14 @@ to limit current or drop voltage</text>
 <wire x1="505.46" y1="68.58" x2="502.92" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="Q9" gate="G$1" pin="EMITTER"/>
 <pinref part="GND56" gate="1" pin="GND"/>
 <wire x1="203.2" y1="58.42" x2="203.2" y2="60.96" width="0.1524" layer="91"/>
+<pinref part="Q9" gate="G$1" pin="EMITTER"/>
 </segment>
 <segment>
-<pinref part="Q11" gate="G$1" pin="EMITTER"/>
 <pinref part="GND11" gate="1" pin="GND"/>
 <wire x1="203.2" y1="195.58" x2="203.2" y2="193.04" width="0.1524" layer="91"/>
+<pinref part="Q11" gate="G$1" pin="EMITTER"/>
 </segment>
 <segment>
 <pinref part="GND43" gate="1" pin="GND"/>
@@ -6735,6 +6627,26 @@ to limit current or drop voltage</text>
 <pinref part="GND79" gate="1" pin="GND"/>
 <wire x1="584.2" y1="139.7" x2="581.66" y2="139.7" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="GND42" gate="1" pin="GND"/>
+<wire x1="213.36" y1="50.8" x2="213.36" y2="53.34" width="0.1524" layer="91"/>
+<pinref part="R47" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="GND80" gate="1" pin="GND"/>
+<wire x1="215.9" y1="187.96" x2="213.36" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="R50" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="GND81" gate="1" pin="GND"/>
+<wire x1="195.58" y1="109.22" x2="195.58" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="R10" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="GND82" gate="1" pin="GND"/>
+<wire x1="218.44" y1="86.36" x2="218.44" y2="88.9" width="0.1524" layer="91"/>
+<pinref part="R49" gate="G$1" pin="1"/>
+</segment>
 </net>
 <net name="+12V" class="0">
 <segment>
@@ -6780,10 +6692,10 @@ to limit current or drop voltage</text>
 <pinref part="P+9" gate="1" pin="+12V"/>
 <wire x1="208.28" y1="114.3" x2="218.44" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="218.44" y1="114.3" x2="218.44" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="U$15" gate="G$1" pin="E"/>
-<wire x1="218.44" y1="114.3" x2="228.6" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="114.3" x2="228.6" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="114.3" x2="233.68" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="114.3" x2="233.68" y2="106.68" width="0.1524" layer="91"/>
 <junction x="218.44" y="114.3"/>
+<pinref part="U$15" gate="G$1" pin="D"/>
 </segment>
 <segment>
 <pinref part="U$8" gate="G$1" pin="P"/>
@@ -7338,12 +7250,16 @@ to limit current or drop voltage</text>
 <segment>
 <pinref part="R50" gate="G$1" pin="1"/>
 <label x="226.06" y="200.66" size="1.27" layer="95" xref="yes"/>
-<wire x1="220.98" y1="200.66" x2="223.52" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="198.12" x2="215.9" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="200.66" x2="223.52" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="200.66" x2="226.06" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="R26" gate="G$1" pin="1"/>
 <wire x1="220.98" y1="210.82" x2="223.52" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="210.82" x2="223.52" y2="200.66" width="0.1524" layer="91"/>
 <junction x="223.52" y="200.66"/>
+<pinref part="Q11" gate="G$1" pin="BASE"/>
+<wire x1="215.9" y1="200.66" x2="208.28" y2="200.66" width="0.1524" layer="91"/>
+<junction x="215.9" y="200.66"/>
 </segment>
 </net>
 <net name="N$46" class="0">
@@ -7379,9 +7295,9 @@ to limit current or drop voltage</text>
 </net>
 <net name="BRAKE_LIGHT" class="0">
 <segment>
-<wire x1="228.6" y1="96.52" x2="233.68" y2="96.52" width="0.1524" layer="91"/>
-<label x="233.68" y="96.52" size="1.27" layer="95" xref="yes"/>
-<pinref part="U$15" gate="G$1" pin="C"/>
+<wire x1="233.68" y1="101.6" x2="236.22" y2="101.6" width="0.1524" layer="91"/>
+<label x="236.22" y="101.6" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$15" gate="G$1" pin="S"/>
 </segment>
 <segment>
 <label x="27.94" y="139.7" size="1.016" layer="95" xref="yes"/>
@@ -7396,14 +7312,18 @@ to limit current or drop voltage</text>
 <label x="322.58" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<pinref part="R47" gate="G$1" pin="1"/>
-<wire x1="220.98" y1="66.04" x2="223.52" y2="66.04" width="0.1524" layer="91"/>
 <label x="226.06" y="66.04" size="1.27" layer="95" rot="MR180" xref="yes"/>
 <pinref part="R16" gate="G$1" pin="1"/>
 <wire x1="223.52" y1="66.04" x2="226.06" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="58.42" x2="226.06" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="58.42" x2="223.52" y2="66.04" width="0.1524" layer="91"/>
+<pinref part="Q9" gate="G$1" pin="BASE"/>
+<pinref part="R47" gate="G$1" pin="1"/>
 <junction x="223.52" y="66.04"/>
+<wire x1="208.28" y1="66.04" x2="213.36" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="66.04" x2="213.36" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="213.36" y1="66.04" x2="223.52" y2="66.04" width="0.1524" layer="91"/>
+<junction x="213.36" y="66.04"/>
 </segment>
 </net>
 <net name="INVERTER_SUPPLY" class="0">
@@ -7420,9 +7340,13 @@ to limit current or drop voltage</text>
 </net>
 <net name="BRAKE_LIGHT_CTRL" class="0">
 <segment>
-<wire x1="190.5" y1="93.98" x2="187.96" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="96.52" x2="195.58" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="93.98" x2="187.96" y2="93.98" width="0.1524" layer="91"/>
 <label x="187.96" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R10" gate="G$1" pin="2"/>
+<pinref part="Q10" gate="G$1" pin="BASE"/>
+<wire x1="195.58" y1="93.98" x2="203.2" y2="93.98" width="0.1524" layer="91"/>
+<junction x="195.58" y="93.98"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="D7(RX3)"/>
@@ -8579,29 +8503,19 @@ to limit current or drop voltage</text>
 <label x="96.52" y="60.96" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="R10" gate="G$1" pin="1"/>
-<pinref part="Q10" gate="G$1" pin="BASE"/>
-<wire x1="203.2" y1="93.98" x2="200.66" y2="93.98" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$17" class="0">
-<segment>
-<pinref part="R48" gate="G$1" pin="2"/>
-<pinref part="Q10" gate="G$1" pin="COLLECTOR"/>
-<wire x1="208.28" y1="104.14" x2="208.28" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="R49" gate="G$1" pin="1"/>
-<wire x1="208.28" y1="101.6" x2="208.28" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="210.82" y1="101.6" x2="208.28" y2="101.6" width="0.1524" layer="91"/>
-<junction x="208.28" y="101.6"/>
-</segment>
-</net>
 <net name="N$58" class="0">
 <segment>
 <pinref part="R49" gate="G$1" pin="2"/>
-<pinref part="U$15" gate="G$1" pin="B"/>
-<wire x1="220.98" y1="101.6" x2="223.52" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="99.06" x2="218.44" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="101.6" x2="223.52" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="U$15" gate="G$1" pin="G"/>
+<pinref part="R48" gate="G$1" pin="2"/>
+<wire x1="208.28" y1="104.14" x2="208.28" y2="101.6" width="0.1524" layer="91"/>
+<pinref part="Q10" gate="G$1" pin="COLLECTOR"/>
+<wire x1="208.28" y1="101.6" x2="208.28" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="101.6" x2="208.28" y2="101.6" width="0.1524" layer="91"/>
+<junction x="218.44" y="101.6"/>
+<junction x="208.28" y="101.6"/>
 </segment>
 </net>
 <net name="N$28" class="0">
@@ -8684,31 +8598,17 @@ to limit current or drop voltage</text>
 <label x="30.48" y="15.24" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="N$65" class="0">
-<segment>
-<pinref part="Q9" gate="G$1" pin="BASE"/>
-<pinref part="R47" gate="G$1" pin="2"/>
-<wire x1="210.82" y1="66.04" x2="208.28" y2="66.04" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$66" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="COIL-"/>
 <wire x1="172.72" y1="76.2" x2="172.72" y2="63.5" width="0.1524" layer="91"/>
 <pinref part="D4" gate="1" pin="A"/>
-<pinref part="Q9" gate="G$1" pin="COLLECTOR"/>
 <wire x1="172.72" y1="76.2" x2="175.26" y2="76.2" width="0.1524" layer="91"/>
 <junction x="172.72" y="76.2"/>
 <wire x1="172.72" y1="76.2" x2="172.72" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="172.72" y1="81.28" x2="203.2" y2="81.28" width="0.1524" layer="91"/>
 <wire x1="203.2" y1="81.28" x2="203.2" y2="71.12" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$26" class="0">
-<segment>
-<pinref part="Q11" gate="G$1" pin="BASE"/>
-<pinref part="R50" gate="G$1" pin="2"/>
-<wire x1="208.28" y1="200.66" x2="210.82" y2="200.66" width="0.1524" layer="91"/>
+<pinref part="Q9" gate="G$1" pin="COLLECTOR"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -8717,10 +8617,10 @@ to limit current or drop voltage</text>
 <pinref part="D10" gate="1" pin="A"/>
 <wire x1="187.96" y1="200.66" x2="190.5" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="200.66" x2="190.5" y2="187.96" width="0.1524" layer="91"/>
-<pinref part="Q11" gate="G$1" pin="COLLECTOR"/>
 <wire x1="203.2" y1="205.74" x2="190.5" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="205.74" x2="190.5" y2="200.66" width="0.1524" layer="91"/>
 <junction x="190.5" y="200.66"/>
+<pinref part="Q11" gate="G$1" pin="COLLECTOR"/>
 </segment>
 </net>
 <net name="CS1_5V" class="0">
