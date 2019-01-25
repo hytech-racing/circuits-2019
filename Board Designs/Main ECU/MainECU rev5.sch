@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.3.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2724,24 +2724,6 @@ Same pad spacing as SOIC-16, but larger footprint</description>
 <pin name="!SHDN" x="20.32" y="-5.08" length="middle" rot="R180"/>
 <pin name="CLK" x="20.32" y="-2.54" length="middle" rot="R180"/>
 </symbol>
-<symbol name="NPN_BJT">
-<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
-<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
-<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
-<wire x1="1.54" y1="-2.04" x2="0.308" y2="-1.424" width="0.1524" layer="94"/>
-<wire x1="1.524" y1="-2.413" x2="2.286" y2="-2.413" width="0.254" layer="94"/>
-<wire x1="2.286" y1="-2.413" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
-<wire x1="1.778" y1="-1.778" x2="1.524" y2="-2.286" width="0.254" layer="94"/>
-<wire x1="1.524" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="94"/>
-<wire x1="1.905" y1="-2.286" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
-<text x="3.81" y="0" size="1.778" layer="95">&gt;NAME</text>
-<text x="3.81" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
-<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
-<pin name="BASE" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
-<pin name="EMITTER" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
-<pin name="COLLECTOR" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
-</symbol>
 <symbol name="JUMPER">
 <wire x1="0" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
 <pin name="P$1" x="0" y="-2.54" visible="off" length="short" rot="R90"/>
@@ -4441,26 +4423,6 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 </device>
 </devices>
 </deviceset>
-<deviceset name="DMG3406L" prefix="Q" uservalue="yes">
-<description>&lt;b&gt;Generic NPN MOSFET&lt;/b&gt;
-&lt;p&gt;
-DMG3406L (SOT-23, 2.8 A 30V)&lt;br&gt;</description>
-<gates>
-<gate name="G$1" symbol="NPN_BJT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="SOT" package="SOT23">
-<connects>
-<connect gate="G$1" pin="BASE" pad="1"/>
-<connect gate="G$1" pin="COLLECTOR" pad="2"/>
-<connect gate="G$1" pin="EMITTER" pad="3"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
 <deviceset name="P-CHANNEL_MOSFET_DMP3099L-7">
 <description>&lt;B&gt; Diodes Incorporated P-Channel Enhancement Mode MOSFET &lt;/B&gt;
 &lt;P&gt; &lt;a href="http://www.mouser.com/ds/2/115/DMP3099L-266220.pdf"&gt;Datasheet</description>
@@ -4469,6 +4431,26 @@ DMG3406L (SOT-23, 2.8 A 30V)&lt;br&gt;</description>
 </gates>
 <devices>
 <device name="" package="SOT23">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DMG3406L" prefix="Q" uservalue="yes">
+<description>&lt;b&gt;Generic NPN MOSFET&lt;/b&gt;
+&lt;p&gt;
+DMG3406L (SOT-23, 2.8 A 30V)&lt;br&gt;</description>
+<gates>
+<gate name="G$1" symbol="N-CHANNEL_MOSFET" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="SOT" package="SOT23">
 <connects>
 <connect gate="G$1" pin="D" pad="3"/>
 <connect gate="G$1" pin="G" pad="1"/>
@@ -4835,7 +4817,6 @@ DMG3406L (SOT-23, 2.8 A 30V)&lt;br&gt;</description>
 <part name="P+9" library="supply1" deviceset="+12V" device=""/>
 <part name="R10" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="R48" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
-<part name="R49" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="GND12" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="U$8" library="HyTechDevices" deviceset="G5LE" device=""/>
 <part name="LED6" library="HyTechDevices" deviceset="LED" device="-0805" value="Red"/>
@@ -4906,17 +4887,16 @@ DMG3406L (SOT-23, 2.8 A 30V)&lt;br&gt;</description>
 <part name="R52" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1.2k"/>
 <part name="GND79" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="FLIP1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
-<part name="Q9" library="HyTechDevices" deviceset="DMG3406L" device="SOT"/>
 <part name="GND42" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="Q11" library="HyTechDevices" deviceset="DMG3406L" device="SOT"/>
 <part name="GND80" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND81" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="Q10" library="HyTechDevices" deviceset="DMG3406L" device="SOT"/>
 <part name="U$15" library="HyTechDevices" deviceset="P-CHANNEL_MOSFET_DMP3099L-7" device=""/>
-<part name="GND82" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="MTK3339_BREAKOUT" library="HyTechDevices" deviceset="M09" device=""/>
 <part name="GND83" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="R53" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
+<part name="Q9" library="HyTechDevices" deviceset="DMG3406L" device="SOT"/>
+<part name="Q10" library="HyTechDevices" deviceset="DMG3406L" device="SOT"/>
+<part name="Q11" library="HyTechDevices" deviceset="DMG3406L" device="SOT"/>
 </parts>
 <sheets>
 <sheet>
@@ -5816,42 +5796,38 @@ to limit current or drop voltage</text>
 <instance part="P+9" gate="1" x="218.44" y="119.38" smashed="yes">
 <attribute name="VALUE" x="215.9" y="114.3" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R10" gate="G$1" x="195.58" y="101.6" smashed="yes" rot="R270">
-<attribute name="NAME" x="197.0786" y="105.41" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="192.278" y="105.41" size="1.778" layer="96" rot="R270"/>
+<instance part="R10" gate="G$1" x="193.04" y="86.36" smashed="yes" rot="MR90">
+<attribute name="NAME" x="194.5386" y="82.55" size="1.778" layer="95" rot="MR90"/>
+<attribute name="VALUE" x="189.738" y="82.55" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="R48" gate="G$1" x="208.28" y="109.22" smashed="yes" rot="R270">
 <attribute name="NAME" x="209.7786" y="113.03" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="204.978" y="113.03" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R49" gate="G$1" x="218.44" y="93.98" smashed="yes" rot="R90">
-<attribute name="NAME" x="216.9414" y="90.17" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="221.742" y="90.17" size="1.778" layer="96" rot="R90"/>
+<instance part="GND12" gate="1" x="210.82" y="91.44" smashed="yes" rot="R90">
+<attribute name="VALUE" x="213.36" y="88.9" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND12" gate="1" x="210.82" y="86.36" smashed="yes" rot="R90">
-<attribute name="VALUE" x="213.36" y="83.82" size="1.778" layer="96" rot="R90"/>
+<instance part="U$8" gate="G$1" x="177.8" y="53.34" smashed="yes" rot="R270"/>
+<instance part="LED6" gate="LED" x="238.76" y="35.56" smashed="yes" rot="R270">
+<attribute name="NAME" x="234.188" y="32.004" size="1.778" layer="95"/>
+<attribute name="VALUE" x="234.188" y="29.845" size="1.778" layer="96"/>
 </instance>
-<instance part="U$8" gate="G$1" x="177.8" y="68.58" smashed="yes" rot="R270"/>
-<instance part="LED6" gate="LED" x="233.68" y="50.8" smashed="yes" rot="R270">
-<attribute name="NAME" x="229.108" y="47.244" size="1.778" layer="95"/>
-<attribute name="VALUE" x="229.108" y="45.085" size="1.778" layer="96"/>
+<instance part="GND17" gate="1" x="228.6" y="33.02" smashed="yes">
+<attribute name="VALUE" x="226.06" y="30.48" size="1.778" layer="96"/>
 </instance>
-<instance part="GND17" gate="1" x="223.52" y="48.26" smashed="yes">
-<attribute name="VALUE" x="220.98" y="45.72" size="1.778" layer="96"/>
+<instance part="R16" gate="G$1" x="236.22" y="43.18" smashed="yes">
+<attribute name="NAME" x="232.41" y="44.6786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="232.41" y="39.878" size="1.778" layer="96"/>
 </instance>
-<instance part="R16" gate="G$1" x="231.14" y="58.42" smashed="yes">
-<attribute name="NAME" x="227.33" y="59.9186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="227.33" y="55.118" size="1.778" layer="96"/>
+<instance part="P+8" gate="1" x="167.64" y="38.1" smashed="yes" rot="R90">
+<attribute name="VALUE" x="172.72" y="35.56" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="P+8" gate="1" x="167.64" y="53.34" smashed="yes" rot="R90">
-<attribute name="VALUE" x="172.72" y="50.8" size="1.778" layer="96" rot="R180"/>
+<instance part="P+12" gate="1" x="195.58" y="60.96" smashed="yes" rot="R270">
+<attribute name="VALUE" x="190.5" y="63.5" size="1.778" layer="96"/>
 </instance>
-<instance part="P+12" gate="1" x="195.58" y="76.2" smashed="yes" rot="R270">
-<attribute name="VALUE" x="190.5" y="78.74" size="1.778" layer="96"/>
-</instance>
-<instance part="D4" gate="1" x="180.34" y="76.2" smashed="yes">
-<attribute name="NAME" x="176.53" y="77.9526" size="1.778" layer="95"/>
-<attribute name="VALUE" x="176.53" y="72.6186" size="1.778" layer="96"/>
+<instance part="D4" gate="1" x="180.34" y="60.96" smashed="yes">
+<attribute name="NAME" x="176.53" y="62.7126" size="1.778" layer="95"/>
+<attribute name="VALUE" x="176.53" y="57.3786" size="1.778" layer="96"/>
 </instance>
 <instance part="U$16" gate="G$1" x="454.66" y="45.72" smashed="yes"/>
 <instance part="REG3" gate="G$1" x="401.32" y="27.94" smashed="yes" rot="R90">
@@ -5892,15 +5868,15 @@ to limit current or drop voltage</text>
 <attribute name="NAME" x="517.1186" y="77.47" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="512.318" y="77.47" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R47" gate="G$1" x="213.36" y="58.42" smashed="yes" rot="R270">
-<attribute name="NAME" x="214.8586" y="62.23" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="210.058" y="62.23" size="1.778" layer="96" rot="R270"/>
+<instance part="R47" gate="G$1" x="218.44" y="43.18" smashed="yes" rot="R270">
+<attribute name="NAME" x="219.9386" y="46.99" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="215.138" y="46.99" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="GND56" gate="1" x="203.2" y="55.88" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="205.74" y="53.34" size="1.778" layer="96" rot="MR0"/>
+<instance part="GND56" gate="1" x="203.2" y="45.72" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="205.74" y="43.18" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="GND11" gate="1" x="203.2" y="190.5" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="205.74" y="187.96" size="1.778" layer="96" rot="MR0"/>
+<instance part="GND11" gate="1" x="198.12" y="195.58" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="200.66" y="193.04" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="R50" gate="G$1" x="215.9" y="193.04" smashed="yes" rot="R270">
 <attribute name="NAME" x="217.3986" y="196.85" size="1.778" layer="95" rot="R270"/>
@@ -6061,32 +6037,17 @@ to limit current or drop voltage</text>
 <instance part="FLIP1" gate="1" x="317.5" y="7.62" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="312.42" y="5.08" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="Q9" gate="G$1" x="205.74" y="66.04" smashed="yes" rot="MR0">
-<attribute name="NAME" x="201.93" y="66.04" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="201.93" y="63.5" size="1.778" layer="96" rot="MR0"/>
-</instance>
-<instance part="GND42" gate="1" x="213.36" y="48.26" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="215.9" y="45.72" size="1.778" layer="96" rot="MR0"/>
-</instance>
-<instance part="Q11" gate="G$1" x="205.74" y="200.66" smashed="yes" rot="MR0">
-<attribute name="NAME" x="201.93" y="200.66" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="201.93" y="198.12" size="1.778" layer="96" rot="MR0"/>
+<instance part="GND42" gate="1" x="218.44" y="33.02" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="220.98" y="30.48" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="GND80" gate="1" x="210.82" y="187.96" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="208.28" y="185.42" size="1.778" layer="96" rot="MR90"/>
 </instance>
-<instance part="GND81" gate="1" x="195.58" y="111.76" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="193.04" y="114.3" size="1.778" layer="96" rot="MR180"/>
-</instance>
-<instance part="Q10" gate="G$1" x="205.74" y="93.98" smashed="yes">
-<attribute name="NAME" x="209.55" y="93.98" size="1.778" layer="95"/>
-<attribute name="VALUE" x="209.55" y="91.44" size="1.778" layer="96"/>
+<instance part="GND81" gate="1" x="193.04" y="76.2" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="195.58" y="73.66" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="U$15" gate="G$1" x="228.6" y="104.14" smashed="yes">
 <attribute name="NAME" x="234.95" y="106.68" size="1.778" layer="95"/>
-</instance>
-<instance part="GND82" gate="1" x="218.44" y="83.82" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="220.98" y="81.28" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="MTK3339_BREAKOUT" gate="G$1" x="515.62" y="210.82" smashed="yes" rot="R180">
 <attribute name="VALUE" x="520.7" y="223.52" size="1.778" layer="96" rot="R180"/>
@@ -6098,6 +6059,18 @@ to limit current or drop voltage</text>
 <instance part="R53" gate="G$1" x="502.92" y="218.44" smashed="yes">
 <attribute name="NAME" x="499.11" y="219.9386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="499.11" y="215.138" size="1.778" layer="96"/>
+</instance>
+<instance part="Q9" gate="G$1" x="208.28" y="53.34" smashed="yes" rot="MR0">
+<attribute name="NAME" x="212.09" y="58.42" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="212.09" y="45.72" size="1.778" layer="95" rot="MR0"/>
+</instance>
+<instance part="Q10" gate="G$1" x="203.2" y="96.52" smashed="yes">
+<attribute name="NAME" x="199.39" y="101.6" size="1.778" layer="95"/>
+<attribute name="VALUE" x="199.39" y="88.9" size="1.778" layer="95"/>
+</instance>
+<instance part="Q11" gate="G$1" x="203.2" y="203.2" smashed="yes" rot="MR0">
+<attribute name="NAME" x="209.55" y="205.74" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="207.01" y="195.58" size="1.778" layer="95" rot="MR0"/>
 </instance>
 </instances>
 <busses>
@@ -6493,13 +6466,13 @@ to limit current or drop voltage</text>
 </segment>
 <segment>
 <pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="208.28" y1="88.9" x2="208.28" y2="86.36" width="0.1524" layer="91"/>
-<pinref part="Q10" gate="G$1" pin="EMITTER"/>
+<wire x1="208.28" y1="93.98" x2="208.28" y2="91.44" width="0.1524" layer="91"/>
+<pinref part="Q10" gate="G$1" pin="S"/>
 </segment>
 <segment>
 <pinref part="LED6" gate="LED" pin="C"/>
 <pinref part="GND17" gate="1" pin="GND"/>
-<wire x1="223.52" y1="50.8" x2="228.6" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="35.56" x2="233.68" y2="35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="REG3" gate="G$1" pin="GND"/>
@@ -6526,13 +6499,13 @@ to limit current or drop voltage</text>
 </segment>
 <segment>
 <pinref part="GND56" gate="1" pin="GND"/>
-<wire x1="203.2" y1="58.42" x2="203.2" y2="60.96" width="0.1524" layer="91"/>
-<pinref part="Q9" gate="G$1" pin="EMITTER"/>
+<wire x1="203.2" y1="48.26" x2="203.2" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="Q9" gate="G$1" pin="S"/>
 </segment>
 <segment>
 <pinref part="GND11" gate="1" pin="GND"/>
-<wire x1="203.2" y1="195.58" x2="203.2" y2="193.04" width="0.1524" layer="91"/>
-<pinref part="Q11" gate="G$1" pin="EMITTER"/>
+<wire x1="198.12" y1="200.66" x2="198.12" y2="198.12" width="0.1524" layer="91"/>
+<pinref part="Q11" gate="G$1" pin="S"/>
 </segment>
 <segment>
 <pinref part="GND43" gate="1" pin="GND"/>
@@ -6643,7 +6616,7 @@ to limit current or drop voltage</text>
 </segment>
 <segment>
 <pinref part="GND42" gate="1" pin="GND"/>
-<wire x1="213.36" y1="50.8" x2="213.36" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="35.56" x2="218.44" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="R47" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -6653,13 +6626,8 @@ to limit current or drop voltage</text>
 </segment>
 <segment>
 <pinref part="GND81" gate="1" pin="GND"/>
-<wire x1="195.58" y1="109.22" x2="195.58" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="78.74" x2="193.04" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="1"/>
-</segment>
-<segment>
-<pinref part="GND82" gate="1" pin="GND"/>
-<wire x1="218.44" y1="86.36" x2="218.44" y2="88.9" width="0.1524" layer="91"/>
-<pinref part="R49" gate="G$1" pin="1"/>
 </segment>
 <segment>
 <pinref part="MTK3339_BREAKOUT" gate="G$1" pin="7"/>
@@ -6719,17 +6687,17 @@ to limit current or drop voltage</text>
 <segment>
 <pinref part="U$8" gate="G$1" pin="P"/>
 <pinref part="P+8" gate="1" pin="+12V"/>
-<wire x1="172.72" y1="53.34" x2="170.18" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="38.1" x2="170.18" y2="38.1" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+12" gate="1" pin="+12V"/>
 <pinref part="U$8" gate="G$1" pin="COIL+"/>
 <pinref part="D4" gate="1" pin="C"/>
-<wire x1="182.88" y1="76.2" x2="190.5" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="76.2" x2="190.5" y2="76.2" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="63.5" x2="190.5" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="63.5" x2="190.5" y2="76.2" width="0.1524" layer="91"/>
-<junction x="190.5" y="76.2"/>
+<wire x1="182.88" y1="60.96" x2="190.5" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="60.96" x2="190.5" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="48.26" x2="190.5" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="48.26" x2="190.5" y2="60.96" width="0.1524" layer="91"/>
+<junction x="190.5" y="60.96"/>
 </segment>
 <segment>
 <pinref part="P+38" gate="1" pin="+12V"/>
@@ -7276,9 +7244,9 @@ to limit current or drop voltage</text>
 <wire x1="220.98" y1="210.82" x2="223.52" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="210.82" x2="223.52" y2="200.66" width="0.1524" layer="91"/>
 <junction x="223.52" y="200.66"/>
-<pinref part="Q11" gate="G$1" pin="BASE"/>
 <wire x1="215.9" y1="200.66" x2="208.28" y2="200.66" width="0.1524" layer="91"/>
 <junction x="215.9" y="200.66"/>
+<pinref part="Q11" gate="G$1" pin="G"/>
 </segment>
 </net>
 <net name="N$46" class="0">
@@ -7331,18 +7299,18 @@ to limit current or drop voltage</text>
 <label x="322.58" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<label x="226.06" y="66.04" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<label x="231.14" y="50.8" size="1.27" layer="95" rot="MR180" xref="yes"/>
 <pinref part="R16" gate="G$1" pin="1"/>
-<wire x1="223.52" y1="66.04" x2="226.06" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="58.42" x2="226.06" y2="58.42" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="58.42" x2="223.52" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="Q9" gate="G$1" pin="BASE"/>
+<wire x1="228.6" y1="50.8" x2="231.14" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="43.18" x2="231.14" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="43.18" x2="228.6" y2="50.8" width="0.1524" layer="91"/>
 <pinref part="R47" gate="G$1" pin="1"/>
-<junction x="223.52" y="66.04"/>
-<wire x1="208.28" y1="66.04" x2="213.36" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="66.04" x2="213.36" y2="63.5" width="0.1524" layer="91"/>
-<wire x1="213.36" y1="66.04" x2="223.52" y2="66.04" width="0.1524" layer="91"/>
-<junction x="213.36" y="66.04"/>
+<junction x="228.6" y="50.8"/>
+<wire x1="213.36" y1="50.8" x2="218.44" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="50.8" x2="218.44" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="50.8" x2="228.6" y2="50.8" width="0.1524" layer="91"/>
+<junction x="218.44" y="50.8"/>
+<pinref part="Q9" gate="G$1" pin="G"/>
 </segment>
 </net>
 <net name="INVERTER_SUPPLY" class="0">
@@ -7353,19 +7321,19 @@ to limit current or drop voltage</text>
 </segment>
 <segment>
 <pinref part="U$8" gate="G$1" pin="S"/>
-<wire x1="187.96" y1="50.8" x2="193.04" y2="50.8" width="0.1524" layer="91"/>
-<label x="193.04" y="50.8" size="1.016" layer="95" xref="yes"/>
+<wire x1="187.96" y1="35.56" x2="193.04" y2="35.56" width="0.1524" layer="91"/>
+<label x="193.04" y="35.56" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="BRAKE_LIGHT_CTRL" class="0">
 <segment>
-<wire x1="195.58" y1="96.52" x2="195.58" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="195.58" y1="93.98" x2="187.96" y2="93.98" width="0.1524" layer="91"/>
-<label x="187.96" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="193.04" y1="91.44" x2="193.04" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="93.98" x2="185.42" y2="93.98" width="0.1524" layer="91"/>
+<label x="185.42" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R10" gate="G$1" pin="2"/>
-<pinref part="Q10" gate="G$1" pin="BASE"/>
-<wire x1="195.58" y1="93.98" x2="203.2" y2="93.98" width="0.1524" layer="91"/>
-<junction x="195.58" y="93.98"/>
+<wire x1="193.04" y1="93.98" x2="198.12" y2="93.98" width="0.1524" layer="91"/>
+<junction x="193.04" y="93.98"/>
+<pinref part="Q10" gate="G$1" pin="G"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="D7(RX3)"/>
@@ -8534,24 +8502,20 @@ to limit current or drop voltage</text>
 </net>
 <net name="N$58" class="0">
 <segment>
-<pinref part="R49" gate="G$1" pin="2"/>
-<wire x1="218.44" y1="99.06" x2="218.44" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="101.6" x2="223.52" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="U$15" gate="G$1" pin="G"/>
 <pinref part="R48" gate="G$1" pin="2"/>
 <wire x1="208.28" y1="104.14" x2="208.28" y2="101.6" width="0.1524" layer="91"/>
-<pinref part="Q10" gate="G$1" pin="COLLECTOR"/>
 <wire x1="208.28" y1="101.6" x2="208.28" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="101.6" x2="208.28" y2="101.6" width="0.1524" layer="91"/>
-<junction x="218.44" y="101.6"/>
+<wire x1="223.52" y1="101.6" x2="208.28" y2="101.6" width="0.1524" layer="91"/>
 <junction x="208.28" y="101.6"/>
+<pinref part="Q10" gate="G$1" pin="D"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
 <pinref part="LED6" gate="LED" pin="A"/>
 <pinref part="R16" gate="G$1" pin="2"/>
-<wire x1="236.22" y1="50.8" x2="236.22" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="241.3" y1="35.56" x2="241.3" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VBAT_RTC" class="0">
@@ -8636,14 +8600,14 @@ to limit current or drop voltage</text>
 <net name="N$66" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="COIL-"/>
-<wire x1="172.72" y1="76.2" x2="172.72" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="60.96" x2="172.72" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="D4" gate="1" pin="A"/>
-<wire x1="172.72" y1="76.2" x2="175.26" y2="76.2" width="0.1524" layer="91"/>
-<junction x="172.72" y="76.2"/>
-<wire x1="172.72" y1="76.2" x2="172.72" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="81.28" x2="203.2" y2="81.28" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="81.28" x2="203.2" y2="71.12" width="0.1524" layer="91"/>
-<pinref part="Q9" gate="G$1" pin="COLLECTOR"/>
+<wire x1="172.72" y1="60.96" x2="175.26" y2="60.96" width="0.1524" layer="91"/>
+<junction x="172.72" y="60.96"/>
+<wire x1="172.72" y1="60.96" x2="172.72" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="66.04" x2="203.2" y2="66.04" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="66.04" x2="203.2" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="Q9" gate="G$1" pin="D"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -8652,10 +8616,10 @@ to limit current or drop voltage</text>
 <pinref part="D10" gate="1" pin="A"/>
 <wire x1="187.96" y1="200.66" x2="190.5" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="200.66" x2="190.5" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="205.74" x2="190.5" y2="205.74" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="205.74" x2="190.5" y2="205.74" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="205.74" x2="190.5" y2="200.66" width="0.1524" layer="91"/>
 <junction x="190.5" y="200.66"/>
-<pinref part="Q11" gate="G$1" pin="COLLECTOR"/>
+<pinref part="Q11" gate="G$1" pin="D"/>
 </segment>
 </net>
 <net name="CS1_5V" class="0">
