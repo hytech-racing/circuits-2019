@@ -8212,9 +8212,19 @@ MX150L™ Vertical PCB Header</description>
 <pad name="2" x="0" y="0" drill="1" diameter="1.8796"/>
 <pad name="3" x="2.54" y="0" drill="1" diameter="1.8796"/>
 <wire x1="-5.08" y1="5.334" x2="5.08" y2="5.334" width="0.127" layer="21"/>
-<wire x1="5.08" y1="5.334" x2="5.08" y2="-3.302" width="0.127" layer="21"/>
-<wire x1="5.08" y1="-3.302" x2="-5.08" y2="-3.302" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-3.302" x2="-5.08" y2="5.334" width="0.127" layer="21"/>
+<wire x1="5.08" y1="5.334" x2="5.08" y2="2.794" width="0.127" layer="21"/>
+<wire x1="5.08" y1="2.794" x2="5.08" y2="1.27" width="0.127" layer="21"/>
+<wire x1="5.08" y1="1.27" x2="5.08" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-1.27" x2="5.08" y2="-3.302" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-3.302" x2="3.81" y2="-3.302" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-3.302" x2="-2.54" y2="-3.302" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-3.302" x2="-5.08" y2="-3.302" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-3.302" x2="-5.08" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-1.27" x2="-5.08" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="1.27" x2="-5.08" y2="2.794" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="2.794" x2="-5.08" y2="5.334" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="2.794" x2="5.08" y2="2.794" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="1.27" x2="5.08" y2="1.27" width="0.127" layer="21"/>
 </package>
 <package name="RASPBERRY_PI_HEADER">
 <description>Raspberry Pi Header</description>
@@ -18502,17 +18512,31 @@ Source: Adafruit</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="TLV1117LV33">
-<description>Texas Instruments TLV1117LV33 3.3V Linear Regulator</description>
+<deviceset name="LM3940">
+<description>Texas Instruments LM3940 3.3V Linear Regulator
+&lt;p&gt;
+&lt;a href="http://www.ti.com/lit/ds/symlink/lm3940.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;p&gt;
+Use with 0.47µF input capacitor and 33µF output capacitor.</description>
 <gates>
 <gate name="G$1" symbol="VOLTAGE_REGULATOR" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SOT223">
 <connects>
-<connect gate="G$1" pin="GND" pad="1"/>
-<connect gate="G$1" pin="IN" pad="3"/>
-<connect gate="G$1" pin="OUT" pad="2 4"/>
+<connect gate="G$1" pin="GND" pad="2 4"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO-220" package="TO-220">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -20059,8 +20083,8 @@ Output Current: 50 mA (max)
 </device>
 </devices>
 </deviceset>
-<deviceset name="OKI-78SR">
-<description>Murata OKI-78SR Non-Isolated Switching Regulator DC/DC - &lt;a href="https://power.murata.com/data/power/oki-78sr.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<deviceset name="OKI-78SR-5">
+<description>Murata OKI-78SR 5V 1.5A Non-Isolated Switching Regulator DC/DC - &lt;a href="https://power.murata.com/data/power/oki-78sr.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="VOLTAGE_REGULATOR" x="0" y="0"/>
 </gates>

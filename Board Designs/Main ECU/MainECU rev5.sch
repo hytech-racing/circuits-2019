@@ -1276,9 +1276,19 @@ FUSE</text>
 <pad name="2" x="0" y="0" drill="1" diameter="1.8796"/>
 <pad name="3" x="2.54" y="0" drill="1" diameter="1.8796"/>
 <wire x1="-5.08" y1="5.334" x2="5.08" y2="5.334" width="0.127" layer="21"/>
-<wire x1="5.08" y1="5.334" x2="5.08" y2="-3.302" width="0.127" layer="21"/>
-<wire x1="5.08" y1="-3.302" x2="-5.08" y2="-3.302" width="0.127" layer="21"/>
-<wire x1="-5.08" y1="-3.302" x2="-5.08" y2="5.334" width="0.127" layer="21"/>
+<wire x1="5.08" y1="5.334" x2="5.08" y2="2.794" width="0.127" layer="21"/>
+<wire x1="5.08" y1="2.794" x2="5.08" y2="1.27" width="0.127" layer="21"/>
+<wire x1="5.08" y1="1.27" x2="5.08" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-1.27" x2="5.08" y2="-3.302" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-3.302" x2="3.81" y2="-3.302" width="0.127" layer="21"/>
+<wire x1="3.81" y1="-3.302" x2="-2.54" y2="-3.302" width="0.127" layer="21"/>
+<wire x1="-2.54" y1="-3.302" x2="-5.08" y2="-3.302" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-3.302" x2="-5.08" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-1.27" x2="-5.08" y2="1.27" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="1.27" x2="-5.08" y2="2.794" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="2.794" x2="-5.08" y2="5.334" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="2.794" x2="5.08" y2="2.794" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="1.27" x2="5.08" y2="1.27" width="0.127" layer="21"/>
 </package>
 <package name="SOT223">
 <description>&lt;b&gt;SOT-223&lt;/b&gt;
@@ -2173,6 +2183,15 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
 <rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
 <rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+</package>
+<package name="TO-220">
+<pad name="1" x="-2.54" y="0" drill="1" diameter="1.8796" shape="square"/>
+<pad name="2" x="0" y="0" drill="1" diameter="1.8796"/>
+<pad name="3" x="2.54" y="0" drill="1" diameter="1.8796"/>
+<wire x1="-5.08" y1="3.81" x2="5.08" y2="3.81" width="0.127" layer="21"/>
+<wire x1="5.08" y1="3.81" x2="5.08" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-3.81" x2="-5.08" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-3.81" x2="-5.08" y2="3.81" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -3766,8 +3785,8 @@ Contact Amperage: 8A at 30VDC
 </device>
 </devices>
 </deviceset>
-<deviceset name="OKI-78SR">
-<description>Murata OKI-78SR Non-Isolated Switching Regulator DC/DC - &lt;a href="https://power.murata.com/data/power/oki-78sr.pdf"&gt;Datasheet&lt;/a&gt;</description>
+<deviceset name="OKI-78SR-5">
+<description>Murata OKI-78SR 5V 1.5A Non-Isolated Switching Regulator DC/DC - &lt;a href="https://power.murata.com/data/power/oki-78sr.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
 <gate name="G$1" symbol="VOLTAGE_REGULATOR" x="0" y="0"/>
 </gates>
@@ -4099,17 +4118,31 @@ It is replaced by MCP2561.
 </device>
 </devices>
 </deviceset>
-<deviceset name="TLV1117LV33">
-<description>Texas Instruments TLV1117LV33 3.3V Linear Regulator</description>
+<deviceset name="LM3940">
+<description>Texas Instruments LM3940 3.3V Linear Regulator
+&lt;p&gt;
+&lt;a href="http://www.ti.com/lit/ds/symlink/lm3940.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;p&gt;
+Use with 0.47µF input capacitor and 33µF output capacitor.</description>
 <gates>
 <gate name="G$1" symbol="VOLTAGE_REGULATOR" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="SOT223">
 <connects>
-<connect gate="G$1" pin="GND" pad="1"/>
-<connect gate="G$1" pin="IN" pad="3"/>
-<connect gate="G$1" pin="OUT" pad="2 4"/>
+<connect gate="G$1" pin="GND" pad="2 4"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TO-220" package="TO-220">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4801,7 +4834,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <part name="GND4" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND7" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND8" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="REG" library="HyTechDevices" deviceset="OKI-78SR" device="" value="5V"/>
+<part name="REG" library="HyTechDevices" deviceset="OKI-78SR-5" device="" value="5V"/>
 <part name="GND9" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="C1" library="HyTechDevices" deviceset="CAP" device="0805" value="10uF"/>
 <part name="C2" library="HyTechDevices" deviceset="CAP" device="0805" value="10uF"/>
@@ -4869,7 +4902,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <part name="D2" library="HyTechDevices" deviceset="DIODE" device="0805"/>
 <part name="D3" library="HyTechDevices" deviceset="DIODE" device="0805"/>
 <part name="P+27" library="supply1" deviceset="+12V" device=""/>
-<part name="REG1" library="HyTechDevices" deviceset="TLV1117LV33" device=""/>
+<part name="REG1" library="HyTechDevices" deviceset="LM3940" device=""/>
 <part name="C5" library="HyTechDevices" deviceset="CAP" device="0805" value="1uF"/>
 <part name="C6" library="HyTechDevices" deviceset="CAP" device="0805" value="1uF"/>
 <part name="GND49" library="HyTechSymbols" deviceset="GND" device=""/>
@@ -4961,7 +4994,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <part name="P+12" library="supply1" deviceset="+12V" device=""/>
 <part name="D4" library="HyTechDevices" deviceset="DIODE" device="0805"/>
 <part name="U$16" library="HyTechDevices" deviceset="CR-2450/G1AN" device=""/>
-<part name="REG3" library="HyTechDevices" deviceset="OKI-78SR" device="" value="5V"/>
+<part name="REG3" library="HyTechDevices" deviceset="OKI-78SR-5" device="" value="5V"/>
 <part name="GND39" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="C20" library="HyTechDevices" deviceset="CAP" device="0805" value="10uF"/>
 <part name="C21" library="HyTechDevices" deviceset="CAP" device="0805" value="10uF"/>
@@ -5102,7 +5135,7 @@ Motor Controller</text>
 <text x="358.14" y="205.74" size="1.016" layer="91">47nF for ~10Hz filter (11.3Hz)</text>
 <text x="358.14" y="172.72" size="1.016" layer="91">47nF for ~10Hz filter (11.3Hz)</text>
 <text x="33.02" y="76.2" size="1.27" layer="96">12V for Dash</text>
-<text x="81.28" y="12.7" size="2.032" layer="96">Dash 5, 6, 7, 8 Can be inputs or outputs
+<text x="81.28" y="15.24" size="2.032" layer="96">Dash 5, 6, 7, 8 Can be inputs or outputs
 For input, solder jumper.
 For output, solder resistor (R40-R43).</text>
 <text x="33.02" y="88.9" size="1.016" layer="95">Pedals 5V</text>
@@ -5110,6 +5143,9 @@ For output, solder resistor (R40-R43).</text>
 <text x="462.28" y="139.7" size="1.016" layer="91">470pF for ~1kHz filter (1.13kHz)</text>
 <text x="119.38" y="154.94" size="2.032" layer="96">Install resistors or LEDs here
 to limit current or drop voltage</text>
+<text x="81.28" y="2.54" size="2.032" layer="96">WARNING: INSTALL ONLY JUMPER (J1-J4) OR
+RESISTOR (R40-R43) ON DASH CHANNELS 5-8.
+DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 </plain>
 <instances>
 <instance part="X1" gate="-13" x="20.32" y="129.54" smashed="yes" rot="MR0">
