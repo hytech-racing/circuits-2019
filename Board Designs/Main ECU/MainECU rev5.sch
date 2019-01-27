@@ -5073,6 +5073,8 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <part name="P+40" library="supply1" deviceset="+5V" device=""/>
 <part name="R49" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="120"/>
 <part name="CAN_TERM_JMP" library="HyTechDevices" deviceset="M02" device="_SLIM" value="M02_SLIM"/>
+<part name="BRAKE_PU" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
+<part name="P+41" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6271,6 +6273,13 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <attribute name="VALUE" x="424.18" y="81.28" size="1.778" layer="96" rot="R90"/>
 <attribute name="NAME" x="413.258" y="81.28" size="1.778" layer="95" rot="R90"/>
 </instance>
+<instance part="BRAKE_PU" gate="G$1" x="284.48" y="175.26" smashed="yes" rot="MR0">
+<attribute name="NAME" x="288.29" y="176.7586" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="288.29" y="171.958" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="P+41" gate="1" x="266.7" y="175.26" smashed="yes" rot="MR270">
+<attribute name="VALUE" x="271.78" y="177.8" size="1.778" layer="96" rot="MR0"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7369,6 +7378,11 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <pinref part="P+40" gate="1" pin="+5V"/>
 <wire x1="-15.24" y1="101.6" x2="-10.16" y2="101.6" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="BRAKE_PU" gate="G$1" pin="2"/>
+<pinref part="P+41" gate="1" pin="+5V"/>
+<wire x1="269.24" y1="175.26" x2="279.4" y2="175.26" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="IMD_PWR_STEP" class="0">
 <segment>
@@ -7768,9 +7782,14 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 </net>
 <net name="SIGNAL_BRAKE" class="0">
 <segment>
-<label x="289.56" y="187.96" size="1.27" layer="95" xref="yes"/>
+<label x="294.64" y="187.96" size="1.27" layer="95" xref="yes"/>
 <pinref part="U$23" gate="G$1" pin="VINB+"/>
-<wire x1="289.56" y1="187.96" x2="287.02" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="294.64" y1="187.96" x2="292.1" y2="187.96" width="0.1524" layer="91"/>
+<pinref part="BRAKE_PU" gate="G$1" pin="1"/>
+<wire x1="292.1" y1="187.96" x2="287.02" y2="187.96" width="0.1524" layer="91"/>
+<junction x="292.1" y="187.96"/>
+<wire x1="289.56" y1="175.26" x2="292.1" y2="175.26" width="0.1524" layer="91"/>
+<wire x1="292.1" y1="175.26" x2="292.1" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <label x="27.94" y="142.24" size="1.016" layer="95" xref="yes"/>
