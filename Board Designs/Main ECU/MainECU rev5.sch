@@ -4822,11 +4822,11 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <part name="GND2" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="SOFTWARE_SHUTOFF" library="HyTechDevices" deviceset="G5LE" device=""/>
 <part name="P+23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
-<part name="D10" library="HyTechDevices" deviceset="DIODE" device="0805"/>
-<part name="LED17" library="HyTechDevices" deviceset="LED" device="-0805" value="RED"/>
+<part name="D7" library="HyTechDevices" deviceset="DIODE" device="0805"/>
+<part name="LED17" library="HyTechDevices" deviceset="LED" device="-0805" value="Red"/>
 <part name="R26" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1.2K"/>
 <part name="GND44" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="LED18" library="HyTechDevices" deviceset="LED" device="-0805" value="RED"/>
+<part name="LED18" library="HyTechDevices" deviceset="LED" device="-0805" value="Red"/>
 <part name="GND45" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="R31" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="6.8k"/>
 <part name="GND1" library="HyTechSymbols" deviceset="GND" device=""/>
@@ -5017,9 +5017,9 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <part name="GND61" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+28" library="supply1" deviceset="+12V" device=""/>
 <part name="P+31" library="supply1" deviceset="+12V" device=""/>
-<part name="D7" library="HyTechDevices" deviceset="DIODE_ZENER" device="" value="MMBZ5246BLT1G"/>
 <part name="D8" library="HyTechDevices" deviceset="DIODE_ZENER" device="" value="MMBZ5246BLT1G"/>
 <part name="D9" library="HyTechDevices" deviceset="DIODE_ZENER" device="" value="MMBZ5246BLT1G"/>
+<part name="D10" library="HyTechDevices" deviceset="DIODE_ZENER" device="" value="MMBZ5246BLT1G"/>
 <part name="GND67" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND68" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND69" library="HyTechSymbols" deviceset="GND" device=""/>
@@ -5156,9 +5156,10 @@ For output, solder resistor (R40-R43).</text>
 <text x="462.28" y="139.7" size="1.016" layer="91">470pF for ~1kHz filter (1.13kHz)</text>
 <text x="119.38" y="154.94" size="2.032" layer="96">Install resistors or LEDs here
 to limit current or drop voltage</text>
-<text x="81.28" y="2.54" size="2.032" layer="96">WARNING: INSTALL ONLY JUMPER (J1-J4) OR
+<text x="81.28" y="2.54" size="2.032" layer="91">WARNING: INSTALL ONLY JUMPER (J1-J4) OR
 RESISTOR (R40-R43) ON DASH CHANNELS 5-8.
 DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
+<text x="568.96" y="76.2" size="1.778" layer="91">Alternate stocked: NCP18XV103J0SRB</text>
 </plain>
 <instances>
 <instance part="X1" gate="-13" x="20.32" y="129.54" smashed="yes" rot="MR0">
@@ -5428,7 +5429,7 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <instance part="P+23" gate="1" x="165.1" y="200.66" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="170.18" y="203.2" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="D10" gate="1" x="182.88" y="200.66" smashed="yes" rot="R180">
+<instance part="D7" gate="1" x="182.88" y="200.66" smashed="yes" rot="R180">
 <attribute name="NAME" x="186.69" y="198.9074" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="186.69" y="204.2414" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -6100,15 +6101,15 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <instance part="P+31" gate="1" x="591.82" y="106.68" smashed="yes" rot="R270">
 <attribute name="VALUE" x="586.74" y="109.22" size="1.778" layer="96"/>
 </instance>
-<instance part="D7" gate="G$1" x="589.28" y="246.38" smashed="yes">
+<instance part="D8" gate="G$1" x="589.28" y="246.38" smashed="yes">
 <attribute name="NAME" x="585.47" y="248.1326" size="1.778" layer="95"/>
 <attribute name="VALUE" x="585.47" y="242.7986" size="1.778" layer="96"/>
 </instance>
-<instance part="D8" gate="G$1" x="589.28" y="215.9" smashed="yes">
+<instance part="D9" gate="G$1" x="589.28" y="215.9" smashed="yes">
 <attribute name="NAME" x="585.47" y="217.6526" size="1.778" layer="95"/>
 <attribute name="VALUE" x="585.47" y="212.3186" size="1.778" layer="96"/>
 </instance>
-<instance part="D9" gate="G$1" x="589.28" y="185.42" smashed="yes">
+<instance part="D10" gate="G$1" x="589.28" y="185.42" smashed="yes">
 <attribute name="NAME" x="585.47" y="187.1726" size="1.778" layer="95"/>
 <attribute name="VALUE" x="585.47" y="181.8386" size="1.778" layer="96"/>
 </instance>
@@ -6645,7 +6646,7 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <pinref part="R28" gate="G$1" pin="1"/>
 <pinref part="GND34" gate="1" pin="GND"/>
 <wire x1="579.12" y1="248.92" x2="579.12" y2="246.38" width="0.1524" layer="91"/>
-<pinref part="D7" gate="G$1" pin="A"/>
+<pinref part="D8" gate="G$1" pin="A"/>
 <wire x1="579.12" y1="246.38" x2="579.12" y2="243.84" width="0.1524" layer="91"/>
 <wire x1="584.2" y1="246.38" x2="579.12" y2="246.38" width="0.1524" layer="91"/>
 <junction x="579.12" y="246.38"/>
@@ -6654,7 +6655,7 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <pinref part="R24" gate="G$1" pin="1"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="579.12" y1="218.44" x2="579.12" y2="215.9" width="0.1524" layer="91"/>
-<pinref part="D8" gate="G$1" pin="A"/>
+<pinref part="D9" gate="G$1" pin="A"/>
 <wire x1="579.12" y1="215.9" x2="579.12" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="584.2" y1="215.9" x2="579.12" y2="215.9" width="0.1524" layer="91"/>
 <junction x="579.12" y="215.9"/>
@@ -6663,7 +6664,7 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <pinref part="R27" gate="G$1" pin="1"/>
 <pinref part="GND14" gate="1" pin="GND"/>
 <wire x1="579.12" y1="187.96" x2="579.12" y2="185.42" width="0.1524" layer="91"/>
-<pinref part="D9" gate="G$1" pin="A"/>
+<pinref part="D10" gate="G$1" pin="A"/>
 <wire x1="579.12" y1="185.42" x2="579.12" y2="182.88" width="0.1524" layer="91"/>
 <wire x1="584.2" y1="185.42" x2="579.12" y2="185.42" width="0.1524" layer="91"/>
 <junction x="579.12" y="185.42"/>
@@ -7009,7 +7010,7 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <pinref part="P+32" gate="1" pin="+12V"/>
 </segment>
 <segment>
-<pinref part="D10" gate="1" pin="C"/>
+<pinref part="D7" gate="1" pin="C"/>
 <wire x1="180.34" y1="200.66" x2="175.26" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="SOFTWARE_SHUTOFF" gate="G$1" pin="COIL-"/>
 <wire x1="175.26" y1="200.66" x2="175.26" y2="187.96" width="0.1524" layer="91"/>
@@ -8945,7 +8946,7 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <net name="N$27" class="0">
 <segment>
 <pinref part="SOFTWARE_SHUTOFF" gate="G$1" pin="COIL+"/>
-<pinref part="D10" gate="1" pin="A"/>
+<pinref part="D7" gate="1" pin="A"/>
 <wire x1="187.96" y1="200.66" x2="190.5" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="190.5" y1="200.66" x2="190.5" y2="187.96" width="0.1524" layer="91"/>
 <wire x1="198.12" y1="205.74" x2="190.5" y2="205.74" width="0.1524" layer="91"/>
@@ -9087,7 +9088,7 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <wire x1="579.12" y1="231.14" x2="576.58" y2="231.14" width="0.1524" layer="91"/>
 <wire x1="579.12" y1="231.14" x2="579.12" y2="228.6" width="0.1524" layer="91"/>
 <junction x="579.12" y="231.14"/>
-<pinref part="D8" gate="G$1" pin="C"/>
+<pinref part="D9" gate="G$1" pin="C"/>
 <wire x1="591.82" y1="215.9" x2="594.36" y2="215.9" width="0.1524" layer="91"/>
 <wire x1="594.36" y1="215.9" x2="594.36" y2="231.14" width="0.1524" layer="91"/>
 <junction x="594.36" y="231.14"/>
@@ -9108,7 +9109,7 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <wire x1="579.12" y1="261.62" x2="576.58" y2="261.62" width="0.1524" layer="91"/>
 <wire x1="579.12" y1="259.08" x2="579.12" y2="261.62" width="0.1524" layer="91"/>
 <junction x="579.12" y="261.62"/>
-<pinref part="D7" gate="G$1" pin="C"/>
+<pinref part="D8" gate="G$1" pin="C"/>
 <wire x1="591.82" y1="246.38" x2="594.36" y2="246.38" width="0.1524" layer="91"/>
 <wire x1="594.36" y1="246.38" x2="594.36" y2="261.62" width="0.1524" layer="91"/>
 <junction x="594.36" y="261.62"/>
@@ -9129,7 +9130,7 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <wire x1="579.12" y1="200.66" x2="576.58" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="579.12" y1="200.66" x2="579.12" y2="198.12" width="0.1524" layer="91"/>
 <junction x="579.12" y="200.66"/>
-<pinref part="D9" gate="G$1" pin="C"/>
+<pinref part="D10" gate="G$1" pin="C"/>
 <wire x1="591.82" y1="185.42" x2="594.36" y2="185.42" width="0.1524" layer="91"/>
 <wire x1="594.36" y1="185.42" x2="594.36" y2="200.66" width="0.1524" layer="91"/>
 <junction x="594.36" y="200.66"/>
