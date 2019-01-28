@@ -4790,20 +4790,19 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <part name="GND13" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="BMS_SSR" library="HyTechDevices" deviceset="CPC1002N" device=""/>
 <part name="GND3" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="R11" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="150"/>
-<part name="R12" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="33"/>
+<part name="R11" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="510"/>
+<part name="R12" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1k"/>
 <part name="BMS_LATCH_SSR" library="HyTechDevices" deviceset="CPC1002N" device=""/>
-<part name="R13" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="33"/>
+<part name="R13" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1k"/>
 <part name="LED1" library="HyTechDevices" deviceset="LED" device="-0805" value="White"/>
-<part name="LED2" library="HyTechDevices" deviceset="LED" device="-0805" value="White"/>
 <part name="LED3" library="HyTechDevices" deviceset="LED" device="-0805" value="Green"/>
 <part name="LED5" library="HyTechDevices" deviceset="LED" device="-0805" value="Yellow"/>
 <part name="R14" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2k"/>
 <part name="GND6" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="IMD_SHUTDOWN1" library="HyTechDevices" deviceset="G2RL-2-DC12" device=""/>
 <part name="GND19" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="R17" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="820"/>
-<part name="LED7" library="HyTechDevices" deviceset="LED" device="-0805" value="20k"/>
+<part name="R17" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="20k"/>
+<part name="LED7" library="HyTechDevices" deviceset="LED" device="-0805" value="Green"/>
 <part name="GND20" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND21" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="R19" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
@@ -4812,7 +4811,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <part name="IMD_SSR" library="HyTechDevices" deviceset="CPC1002N" device=""/>
 <part name="LED9" library="HyTechDevices" deviceset="LED" device="-0805" value="Yellow"/>
 <part name="GND24" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="R21" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2k"/>
+<part name="R21" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="3.3k"/>
 <part name="P+10" library="supply1" deviceset="+12V" device=""/>
 <part name="P+5" library="supply1" deviceset="+12V" device=""/>
 <part name="D5" library="HyTechDevices" deviceset="DIODE" device="0805"/>
@@ -5075,6 +5074,18 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <part name="CAN_TERM_JMP" library="HyTechDevices" deviceset="M02" device="_SLIM" value="M02_SLIM"/>
 <part name="BRAKE_PU" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="P+41" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="D11" library="HyTechDevices" deviceset="DIODE_ZENER" device="" value="MMBZ5246BLT1G"/>
+<part name="D12" library="HyTechDevices" deviceset="DIODE_ZENER" device="" value="MMBZ5246BLT1G"/>
+<part name="D13" library="HyTechDevices" deviceset="DIODE_ZENER" device="" value="MMBZ5246BLT1G"/>
+<part name="GND84" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="D14" library="HyTechDevices" deviceset="DIODE_ZENER" device="" value="MMBZ5246BLT1G"/>
+<part name="GND85" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="R54" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="5.1k"/>
+<part name="P+42" library="supply1" deviceset="+5V" device=""/>
+<part name="R55" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2k"/>
+<part name="R56" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="33"/>
+<part name="GND86" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="GND88" library="HyTechSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5302,8 +5313,8 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <attribute name="NAME" x="119.38" y="247.65" size="1.778" layer="95" font="vector" rot="MR0"/>
 <attribute name="VALUE" x="119.38" y="233.68" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
-<instance part="GND3" gate="1" x="147.32" y="238.76" smashed="yes" rot="R90">
-<attribute name="VALUE" x="149.86" y="236.22" size="1.778" layer="96" rot="R90"/>
+<instance part="GND3" gate="1" x="223.52" y="226.06" smashed="yes" rot="R90">
+<attribute name="VALUE" x="226.06" y="223.52" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R11" gate="G$1" x="129.54" y="246.38" smashed="yes">
 <attribute name="NAME" x="125.73" y="247.8786" size="1.778" layer="95"/>
@@ -5321,17 +5332,13 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <attribute name="NAME" x="135.89" y="230.0986" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="135.89" y="225.298" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="LED1" gate="LED" x="58.42" y="220.98" smashed="yes" rot="R90">
-<attribute name="NAME" x="62.992" y="224.536" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="62.992" y="226.695" size="1.778" layer="96" rot="R180"/>
+<instance part="LED1" gate="LED" x="213.36" y="246.38" smashed="yes" rot="R90">
+<attribute name="NAME" x="217.932" y="249.936" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="217.932" y="252.095" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="LED2" gate="LED" x="129.54" y="218.44" smashed="yes" rot="R90">
-<attribute name="NAME" x="134.112" y="221.996" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="134.112" y="224.155" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="LED3" gate="LED" x="137.16" y="238.76" smashed="yes" rot="R90">
-<attribute name="NAME" x="141.732" y="242.316" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="141.732" y="244.475" size="1.778" layer="96" rot="R180"/>
+<instance part="LED3" gate="LED" x="213.36" y="226.06" smashed="yes" rot="R90">
+<attribute name="NAME" x="217.932" y="229.616" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="217.932" y="231.775" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="LED5" gate="LED" x="76.2" y="205.74" smashed="yes" rot="R180">
 <attribute name="NAME" x="72.644" y="210.312" size="1.778" layer="95" rot="R270"/>
@@ -5379,12 +5386,12 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <attribute name="NAME" x="48.26" y="250.19" size="1.778" layer="95" font="vector" rot="MR0"/>
 <attribute name="VALUE" x="48.26" y="236.22" size="1.778" layer="96" font="vector" rot="MR0"/>
 </instance>
-<instance part="LED9" gate="LED" x="66.04" y="241.3" smashed="yes" rot="R90">
-<attribute name="NAME" x="70.612" y="244.856" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="70.612" y="247.015" size="1.778" layer="96" rot="R180"/>
+<instance part="LED9" gate="LED" x="213.36" y="236.22" smashed="yes" rot="R90">
+<attribute name="NAME" x="217.932" y="239.776" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="217.932" y="241.935" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND24" gate="1" x="76.2" y="241.3" smashed="yes" rot="R90">
-<attribute name="VALUE" x="78.74" y="238.76" size="1.778" layer="96" rot="R90"/>
+<instance part="GND24" gate="1" x="223.52" y="236.22" smashed="yes" rot="R90">
+<attribute name="VALUE" x="226.06" y="233.68" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="R21" gate="G$1" x="58.42" y="248.92" smashed="yes" rot="MR0">
 <attribute name="NAME" x="62.23" y="250.4186" size="1.778" layer="95" rot="MR0"/>
@@ -5410,12 +5417,12 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <instance part="P+26" gate="1" x="142.24" y="228.6" smashed="yes" rot="R270">
 <attribute name="VALUE" x="144.78" y="226.06" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="S1" gate="1" x="111.76" y="259.08" smashed="yes" rot="R270">
-<attribute name="NAME" x="109.22" y="265.43" size="1.778" layer="95"/>
-<attribute name="VALUE" x="114.935" y="262.89" size="1.778" layer="96"/>
+<instance part="S1" gate="1" x="226.06" y="259.08" smashed="yes" rot="R270">
+<attribute name="NAME" x="223.52" y="265.43" size="1.778" layer="95"/>
+<attribute name="VALUE" x="229.235" y="262.89" size="1.778" layer="96"/>
 </instance>
-<instance part="GND2" gate="1" x="124.46" y="259.08" smashed="yes" rot="R90">
-<attribute name="VALUE" x="127" y="256.54" size="1.778" layer="96" rot="R90"/>
+<instance part="GND2" gate="1" x="238.76" y="259.08" smashed="yes" rot="R90">
+<attribute name="VALUE" x="241.3" y="256.54" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="SOFTWARE_SHUTOFF" gate="G$1" x="180.34" y="193.04" smashed="yes" rot="R270"/>
 <instance part="P+23" gate="1" x="165.1" y="200.66" smashed="yes" rot="MR270">
@@ -5425,16 +5432,16 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <attribute name="NAME" x="186.69" y="198.9074" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="186.69" y="204.2414" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="LED17" gate="LED" x="205.74" y="210.82" smashed="yes" rot="MR90">
-<attribute name="NAME" x="201.168" y="214.376" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="201.168" y="216.535" size="1.778" layer="96" rot="MR180"/>
+<instance part="LED17" gate="LED" x="205.74" y="213.36" smashed="yes" rot="MR90">
+<attribute name="NAME" x="201.168" y="216.916" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="201.168" y="219.075" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="R26" gate="G$1" x="215.9" y="210.82" smashed="yes" rot="R180">
-<attribute name="NAME" x="219.71" y="209.3214" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="219.71" y="214.122" size="1.778" layer="96" rot="R180"/>
+<instance part="R26" gate="G$1" x="215.9" y="213.36" smashed="yes" rot="R180">
+<attribute name="NAME" x="219.71" y="211.8614" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="219.71" y="216.662" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND44" gate="1" x="195.58" y="210.82" smashed="yes" rot="R270">
-<attribute name="VALUE" x="193.04" y="213.36" size="1.778" layer="96" rot="R270"/>
+<instance part="GND44" gate="1" x="198.12" y="210.82" smashed="yes">
+<attribute name="VALUE" x="195.58" y="208.28" size="1.778" layer="96"/>
 </instance>
 <instance part="LED18" gate="LED" x="228.6" y="182.88" smashed="yes" rot="R90">
 <attribute name="NAME" x="233.172" y="186.436" size="1.778" layer="95" rot="R180"/>
@@ -5497,9 +5504,9 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <instance part="P+6" gate="1" x="246.38" y="127" smashed="yes" rot="R180">
 <attribute name="VALUE" x="243.84" y="124.46" size="1.778" layer="96"/>
 </instance>
-<instance part="5ASHUTDOWNFUSE" gate="G$1" x="223.52" y="132.08" smashed="yes">
-<attribute name="NAME" x="218.44" y="133.35" size="1.27" layer="95"/>
-<attribute name="VALUE" x="226.06" y="133.35" size="1.27" layer="96"/>
+<instance part="5ASHUTDOWNFUSE" gate="G$1" x="190.5" y="127" smashed="yes">
+<attribute name="NAME" x="185.42" y="128.27" size="1.27" layer="95"/>
+<attribute name="VALUE" x="193.04" y="128.27" size="1.27" layer="96"/>
 </instance>
 <instance part="U$9" gate="G$1" x="419.1" y="241.3" smashed="yes"/>
 <instance part="U$10" gate="G$1" x="419.1" y="208.28" smashed="yes"/>
@@ -5755,12 +5762,12 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <instance part="GND58" gate="1" x="35.56" y="86.36" smashed="yes" rot="R90">
 <attribute name="VALUE" x="38.1" y="83.82" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="5ABOARDFUSE" gate="G$1" x="223.52" y="124.46" smashed="yes">
-<attribute name="NAME" x="218.44" y="125.73" size="1.27" layer="95"/>
-<attribute name="VALUE" x="226.06" y="125.73" size="1.27" layer="96"/>
+<instance part="5ABOARDFUSE" gate="G$1" x="190.5" y="119.38" smashed="yes">
+<attribute name="NAME" x="185.42" y="120.65" size="1.27" layer="95"/>
+<attribute name="VALUE" x="193.04" y="120.65" size="1.27" layer="96"/>
 </instance>
-<instance part="P+2" gate="1" x="241.3" y="124.46" smashed="yes" rot="R270">
-<attribute name="VALUE" x="236.22" y="127" size="1.778" layer="96"/>
+<instance part="P+2" gate="1" x="208.28" y="119.38" smashed="yes" rot="R270">
+<attribute name="VALUE" x="203.2" y="121.92" size="1.778" layer="96"/>
 </instance>
 <instance part="GND59" gate="1" x="33.02" y="124.46" smashed="yes">
 <attribute name="VALUE" x="30.48" y="121.92" size="1.778" layer="96"/>
@@ -5974,41 +5981,41 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <instance part="J1" gate="G$1" x="111.76" y="63.5" smashed="yes" rot="MR0"/>
 <instance part="J3" gate="G$1" x="111.76" y="43.18" smashed="yes" rot="MR0"/>
 <instance part="J4" gate="G$1" x="111.76" y="33.02" smashed="yes" rot="MR0"/>
-<instance part="P+9" gate="1" x="218.44" y="119.38" smashed="yes">
-<attribute name="VALUE" x="215.9" y="114.3" size="1.778" layer="96" rot="R90"/>
+<instance part="P+9" gate="1" x="233.68" y="114.3" smashed="yes">
+<attribute name="VALUE" x="231.14" y="109.22" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R10" gate="G$1" x="193.04" y="86.36" smashed="yes" rot="MR90">
-<attribute name="NAME" x="194.5386" y="82.55" size="1.778" layer="95" rot="MR90"/>
-<attribute name="VALUE" x="189.738" y="82.55" size="1.778" layer="96" rot="MR90"/>
+<instance part="R10" gate="G$1" x="195.58" y="76.2" smashed="yes" rot="MR90">
+<attribute name="NAME" x="197.0786" y="72.39" size="1.778" layer="95" rot="MR90"/>
+<attribute name="VALUE" x="192.278" y="72.39" size="1.778" layer="96" rot="MR90"/>
 </instance>
-<instance part="R48" gate="G$1" x="208.28" y="109.22" smashed="yes" rot="R270">
-<attribute name="NAME" x="209.7786" y="113.03" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="204.978" y="113.03" size="1.778" layer="96" rot="R270"/>
+<instance part="R48" gate="G$1" x="208.28" y="104.14" smashed="yes" rot="R270">
+<attribute name="NAME" x="209.7786" y="107.95" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="204.978" y="107.95" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="GND12" gate="1" x="210.82" y="91.44" smashed="yes" rot="R90">
-<attribute name="VALUE" x="213.36" y="88.9" size="1.778" layer="96" rot="R90"/>
+<instance part="GND12" gate="1" x="208.28" y="83.82" smashed="yes">
+<attribute name="VALUE" x="205.74" y="81.28" size="1.778" layer="96"/>
 </instance>
-<instance part="INVERTER_PWR_RELAY" gate="G$1" x="177.8" y="53.34" smashed="yes" rot="R270"/>
-<instance part="LED6" gate="LED" x="238.76" y="35.56" smashed="yes" rot="R270">
-<attribute name="NAME" x="234.188" y="32.004" size="1.778" layer="95"/>
-<attribute name="VALUE" x="234.188" y="29.845" size="1.778" layer="96"/>
+<instance part="INVERTER_PWR_RELAY" gate="G$1" x="177.8" y="43.18" smashed="yes" rot="R270"/>
+<instance part="LED6" gate="LED" x="241.3" y="25.4" smashed="yes" rot="R270">
+<attribute name="NAME" x="236.728" y="21.844" size="1.778" layer="95"/>
+<attribute name="VALUE" x="236.728" y="19.685" size="1.778" layer="96"/>
 </instance>
-<instance part="GND17" gate="1" x="228.6" y="33.02" smashed="yes">
-<attribute name="VALUE" x="226.06" y="30.48" size="1.778" layer="96"/>
+<instance part="GND17" gate="1" x="231.14" y="22.86" smashed="yes">
+<attribute name="VALUE" x="228.6" y="20.32" size="1.778" layer="96"/>
 </instance>
-<instance part="R16" gate="G$1" x="236.22" y="43.18" smashed="yes">
-<attribute name="NAME" x="232.41" y="44.6786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="232.41" y="39.878" size="1.778" layer="96"/>
+<instance part="R16" gate="G$1" x="238.76" y="33.02" smashed="yes">
+<attribute name="NAME" x="234.95" y="34.5186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="234.95" y="29.718" size="1.778" layer="96"/>
 </instance>
-<instance part="P+8" gate="1" x="167.64" y="38.1" smashed="yes" rot="R90">
-<attribute name="VALUE" x="172.72" y="35.56" size="1.778" layer="96" rot="R180"/>
+<instance part="P+8" gate="1" x="167.64" y="27.94" smashed="yes" rot="R90">
+<attribute name="VALUE" x="172.72" y="25.4" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="P+12" gate="1" x="195.58" y="60.96" smashed="yes" rot="R270">
-<attribute name="VALUE" x="190.5" y="63.5" size="1.778" layer="96"/>
+<instance part="P+12" gate="1" x="195.58" y="50.8" smashed="yes" rot="R270">
+<attribute name="VALUE" x="190.5" y="53.34" size="1.778" layer="96"/>
 </instance>
-<instance part="D4" gate="1" x="180.34" y="60.96" smashed="yes">
-<attribute name="NAME" x="176.53" y="62.7126" size="1.778" layer="95"/>
-<attribute name="VALUE" x="176.53" y="57.3786" size="1.778" layer="96"/>
+<instance part="D4" gate="1" x="180.34" y="50.8" smashed="yes">
+<attribute name="NAME" x="176.53" y="52.5526" size="1.778" layer="95"/>
+<attribute name="VALUE" x="176.53" y="47.2186" size="1.778" layer="96"/>
 </instance>
 <instance part="U$16" gate="G$1" x="454.66" y="45.72" smashed="yes"/>
 <instance part="REG3" gate="G$1" x="401.32" y="27.94" smashed="yes" rot="R90">
@@ -6049,19 +6056,19 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <attribute name="NAME" x="517.1186" y="77.47" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="512.318" y="77.47" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="R47" gate="G$1" x="218.44" y="43.18" smashed="yes" rot="R270">
-<attribute name="NAME" x="219.9386" y="46.99" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="215.138" y="46.99" size="1.778" layer="96" rot="R270"/>
+<instance part="R47" gate="G$1" x="223.52" y="33.02" smashed="yes" rot="R270">
+<attribute name="NAME" x="225.0186" y="36.83" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="220.218" y="36.83" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="GND56" gate="1" x="203.2" y="45.72" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="205.74" y="43.18" size="1.778" layer="96" rot="MR0"/>
+<instance part="GND56" gate="1" x="203.2" y="35.56" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="205.74" y="33.02" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="GND11" gate="1" x="198.12" y="195.58" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="200.66" y="193.04" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="R50" gate="G$1" x="215.9" y="193.04" smashed="yes" rot="R270">
-<attribute name="NAME" x="217.3986" y="196.85" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="212.598" y="196.85" size="1.778" layer="96" rot="R270"/>
+<instance part="R50" gate="G$1" x="210.82" y="193.04" smashed="yes" rot="R270">
+<attribute name="NAME" x="212.3186" y="196.85" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="207.518" y="196.85" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="FLIP" gate="1" x="330.2" y="22.86" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="325.12" y="20.32" size="1.778" layer="96" rot="MR180"/>
@@ -6218,17 +6225,17 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <instance part="FLIP1" gate="1" x="317.5" y="7.62" smashed="yes" rot="MR90">
 <attribute name="VALUE" x="312.42" y="5.08" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="GND42" gate="1" x="218.44" y="33.02" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="220.98" y="30.48" size="1.778" layer="96" rot="MR0"/>
+<instance part="GND42" gate="1" x="223.52" y="22.86" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="226.06" y="20.32" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="GND80" gate="1" x="210.82" y="187.96" smashed="yes" rot="MR90">
-<attribute name="VALUE" x="208.28" y="185.42" size="1.778" layer="96" rot="MR90"/>
+<instance part="GND80" gate="1" x="203.2" y="187.96" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="200.66" y="185.42" size="1.778" layer="96" rot="MR90"/>
 </instance>
-<instance part="GND81" gate="1" x="193.04" y="76.2" smashed="yes" rot="MR0">
-<attribute name="VALUE" x="195.58" y="73.66" size="1.778" layer="96" rot="MR0"/>
+<instance part="GND81" gate="1" x="195.58" y="63.5" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="198.12" y="60.96" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="Q12" gate="G$1" x="228.6" y="104.14" smashed="yes">
-<attribute name="NAME" x="234.95" y="106.68" size="1.778" layer="95"/>
+<instance part="Q12" gate="G$1" x="228.6" y="99.06" smashed="yes">
+<attribute name="NAME" x="234.95" y="101.6" size="1.778" layer="95"/>
 </instance>
 <instance part="MTK3339_BREAKOUT" gate="G$1" x="515.62" y="210.82" smashed="yes" rot="R180">
 <attribute name="VALUE" x="520.7" y="223.52" size="1.778" layer="96" rot="R180"/>
@@ -6241,13 +6248,13 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <attribute name="NAME" x="499.11" y="219.9386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="499.11" y="215.138" size="1.778" layer="96"/>
 </instance>
-<instance part="Q9" gate="G$1" x="208.28" y="53.34" smashed="yes" rot="MR0">
-<attribute name="NAME" x="212.09" y="58.42" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="212.09" y="45.72" size="1.778" layer="95" rot="MR0"/>
+<instance part="Q9" gate="G$1" x="208.28" y="43.18" smashed="yes" rot="MR0">
+<attribute name="NAME" x="212.09" y="48.26" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="212.09" y="35.56" size="1.778" layer="95" rot="MR0"/>
 </instance>
-<instance part="Q11" gate="G$1" x="203.2" y="96.52" smashed="yes">
-<attribute name="NAME" x="199.39" y="101.6" size="1.778" layer="95"/>
-<attribute name="VALUE" x="199.39" y="88.9" size="1.778" layer="95"/>
+<instance part="Q11" gate="G$1" x="203.2" y="91.44" smashed="yes">
+<attribute name="NAME" x="199.39" y="96.52" size="1.778" layer="95"/>
+<attribute name="VALUE" x="199.39" y="83.82" size="1.778" layer="95"/>
 </instance>
 <instance part="Q10" gate="G$1" x="203.2" y="203.2" smashed="yes" rot="MR0">
 <attribute name="NAME" x="209.55" y="205.74" size="1.778" layer="95" rot="MR0"/>
@@ -6279,6 +6286,49 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 </instance>
 <instance part="P+41" gate="1" x="266.7" y="175.26" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="271.78" y="177.8" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="D11" gate="G$1" x="215.9" y="104.14" smashed="yes" rot="R90">
+<attribute name="NAME" x="214.1474" y="100.33" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="219.4814" y="100.33" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="D12" gate="G$1" x="187.96" y="76.2" smashed="yes" rot="R90">
+<attribute name="NAME" x="186.2074" y="72.39" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="191.5414" y="72.39" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="D13" gate="G$1" x="231.14" y="195.58" smashed="yes" rot="MR0">
+<attribute name="NAME" x="234.95" y="197.3326" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="234.95" y="191.9986" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="GND84" gate="1" x="238.76" y="193.04" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="241.3" y="190.5" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="D14" gate="G$1" x="220.98" y="15.24" smashed="yes" rot="MR0">
+<attribute name="NAME" x="224.79" y="16.9926" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="224.79" y="11.6586" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="GND85" gate="1" x="228.6" y="12.7" smashed="yes" rot="MR0">
+<attribute name="VALUE" x="231.14" y="10.16" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="R54" gate="G$1" x="203.2" y="246.38" smashed="yes">
+<attribute name="NAME" x="199.39" y="247.8786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="199.39" y="243.078" size="1.778" layer="96"/>
+</instance>
+<instance part="P+42" gate="1" x="195.58" y="248.92" smashed="yes">
+<attribute name="VALUE" x="198.12" y="251.46" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="R55" gate="G$1" x="203.2" y="236.22" smashed="yes">
+<attribute name="NAME" x="199.39" y="237.7186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="199.39" y="232.918" size="1.778" layer="96"/>
+</instance>
+<instance part="R56" gate="G$1" x="203.2" y="226.06" smashed="yes">
+<attribute name="NAME" x="199.39" y="227.5586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="199.39" y="222.758" size="1.778" layer="96"/>
+</instance>
+<instance part="GND86" gate="1" x="55.88" y="238.76" smashed="yes">
+<attribute name="VALUE" x="53.34" y="236.22" size="1.778" layer="96"/>
+</instance>
+<instance part="GND88" gate="1" x="127" y="236.22" smashed="yes">
+<attribute name="VALUE" x="124.46" y="233.68" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -6318,7 +6368,7 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <segment>
 <pinref part="LED3" gate="LED" pin="C"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-<wire x1="144.78" y1="238.76" x2="142.24" y2="238.76" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="226.06" x2="218.44" y2="226.06" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND6" gate="1" pin="GND"/>
@@ -6352,15 +6402,15 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <segment>
 <pinref part="LED9" gate="LED" pin="C"/>
 <pinref part="GND24" gate="1" pin="GND"/>
-<wire x1="73.66" y1="241.3" x2="71.12" y2="241.3" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="236.22" x2="218.44" y2="236.22" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="S1" gate="1" pin="S"/>
 <pinref part="S1" gate="1" pin="S1"/>
-<wire x1="116.84" y1="259.08" x2="116.84" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="259.08" x2="231.14" y2="256.54" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-<wire x1="121.92" y1="259.08" x2="116.84" y2="259.08" width="0.1524" layer="91"/>
-<junction x="116.84" y="259.08"/>
+<wire x1="236.22" y1="259.08" x2="231.14" y2="259.08" width="0.1524" layer="91"/>
+<junction x="231.14" y="259.08"/>
 </segment>
 <segment>
 <pinref part="GND45" gate="1" pin="GND"/>
@@ -6370,7 +6420,7 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <segment>
 <pinref part="GND44" gate="1" pin="GND"/>
 <pinref part="LED17" gate="LED" pin="C"/>
-<wire x1="198.12" y1="210.82" x2="200.66" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="198.12" y1="213.36" x2="200.66" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="REG" gate="G$1" pin="GND"/>
@@ -6674,13 +6724,13 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 </segment>
 <segment>
 <pinref part="GND12" gate="1" pin="GND"/>
-<wire x1="208.28" y1="93.98" x2="208.28" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="88.9" x2="208.28" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="Q11" gate="G$1" pin="S"/>
 </segment>
 <segment>
 <pinref part="LED6" gate="LED" pin="C"/>
 <pinref part="GND17" gate="1" pin="GND"/>
-<wire x1="228.6" y1="35.56" x2="233.68" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="231.14" y1="25.4" x2="236.22" y2="25.4" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="REG3" gate="G$1" pin="GND"/>
@@ -6707,7 +6757,7 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 </segment>
 <segment>
 <pinref part="GND56" gate="1" pin="GND"/>
-<wire x1="203.2" y1="48.26" x2="203.2" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="38.1" x2="203.2" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="Q9" gate="G$1" pin="S"/>
 </segment>
 <segment>
@@ -6824,18 +6874,23 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 </segment>
 <segment>
 <pinref part="GND42" gate="1" pin="GND"/>
-<wire x1="218.44" y1="35.56" x2="218.44" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="25.4" x2="223.52" y2="27.94" width="0.1524" layer="91"/>
 <pinref part="R47" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="GND80" gate="1" pin="GND"/>
-<wire x1="215.9" y1="187.96" x2="213.36" y2="187.96" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="187.96" x2="205.74" y2="187.96" width="0.1524" layer="91"/>
 <pinref part="R50" gate="G$1" pin="2"/>
 </segment>
 <segment>
 <pinref part="GND81" gate="1" pin="GND"/>
-<wire x1="193.04" y1="78.74" x2="193.04" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="66.04" x2="195.58" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="R10" gate="G$1" pin="1"/>
+<wire x1="195.58" y1="68.58" x2="195.58" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="68.58" x2="187.96" y2="68.58" width="0.1524" layer="91"/>
+<junction x="195.58" y="68.58"/>
+<pinref part="D12" gate="G$1" pin="A"/>
+<wire x1="187.96" y1="68.58" x2="187.96" y2="71.12" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="MTK3339_BREAKOUT" gate="G$1" pin="7"/>
@@ -6846,6 +6901,26 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <pinref part="U$12" gate="G$1" pin="P$1"/>
 <pinref part="GND82" gate="1" pin="GND"/>
 <wire x1="-12.7" y1="96.52" x2="-10.16" y2="96.52" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D13" gate="G$1" pin="A"/>
+<pinref part="GND84" gate="1" pin="GND"/>
+<wire x1="238.76" y1="195.58" x2="236.22" y2="195.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D14" gate="G$1" pin="A"/>
+<pinref part="GND85" gate="1" pin="GND"/>
+<wire x1="228.6" y1="15.24" x2="226.06" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IMD_SSR" gate="G$1" pin="CONTROL-"/>
+<pinref part="GND86" gate="1" pin="GND"/>
+<wire x1="55.88" y1="241.3" x2="50.8" y2="241.3" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="BMS_SSR" gate="G$1" pin="CONTROL-"/>
+<pinref part="GND88" gate="1" pin="GND"/>
+<wire x1="127" y1="238.76" x2="121.92" y2="238.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -6874,7 +6949,7 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 </segment>
 <segment>
 <pinref part="5ABOARDFUSE" gate="G$1" pin="2"/>
-<wire x1="228.6" y1="124.46" x2="238.76" y2="124.46" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="119.38" x2="205.74" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="1" pin="+12V"/>
 </segment>
 <segment>
@@ -6890,27 +6965,30 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <segment>
 <pinref part="R48" gate="G$1" pin="1"/>
 <pinref part="P+9" gate="1" pin="+12V"/>
-<wire x1="208.28" y1="114.3" x2="218.44" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="114.3" x2="218.44" y2="116.84" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="114.3" x2="233.68" y2="114.3" width="0.1524" layer="91"/>
-<wire x1="233.68" y1="114.3" x2="233.68" y2="106.68" width="0.1524" layer="91"/>
-<junction x="218.44" y="114.3"/>
+<wire x1="208.28" y1="109.22" x2="215.9" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="109.22" x2="233.68" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="109.22" x2="233.68" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="109.22" x2="233.68" y2="101.6" width="0.1524" layer="91"/>
+<junction x="233.68" y="109.22"/>
 <pinref part="Q12" gate="G$1" pin="D"/>
+<pinref part="D11" gate="G$1" pin="C"/>
+<wire x1="215.9" y1="106.68" x2="215.9" y2="109.22" width="0.1524" layer="91"/>
+<junction x="215.9" y="109.22"/>
 </segment>
 <segment>
 <pinref part="INVERTER_PWR_RELAY" gate="G$1" pin="P"/>
 <pinref part="P+8" gate="1" pin="+12V"/>
-<wire x1="172.72" y1="38.1" x2="170.18" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="27.94" x2="170.18" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="P+12" gate="1" pin="+12V"/>
 <pinref part="INVERTER_PWR_RELAY" gate="G$1" pin="COIL+"/>
 <pinref part="D4" gate="1" pin="C"/>
-<wire x1="182.88" y1="60.96" x2="190.5" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="60.96" x2="190.5" y2="60.96" width="0.1524" layer="91"/>
-<wire x1="187.96" y1="48.26" x2="190.5" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="190.5" y1="48.26" x2="190.5" y2="60.96" width="0.1524" layer="91"/>
-<junction x="190.5" y="60.96"/>
+<wire x1="182.88" y1="50.8" x2="190.5" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="193.04" y1="50.8" x2="190.5" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="38.1" x2="190.5" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="38.1" x2="190.5" y2="50.8" width="0.1524" layer="91"/>
+<junction x="190.5" y="50.8"/>
 </segment>
 <segment>
 <pinref part="P+38" gate="1" pin="+12V"/>
@@ -7105,6 +7183,11 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <wire x1="22.86" y1="83.82" x2="27.94" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="X1" gate="-31" pin="S"/>
 </segment>
+<segment>
+<pinref part="R56" gate="G$1" pin="1"/>
+<wire x1="198.12" y1="226.06" x2="195.58" y2="226.06" width="0.1524" layer="91"/>
+<label x="195.58" y="226.06" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="OKHS" class="0">
 <segment>
@@ -7126,19 +7209,10 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <wire x1="22.86" y1="78.74" x2="27.94" y2="78.74" width="0.1524" layer="91"/>
 <pinref part="X1" gate="-33" pin="S"/>
 </segment>
-</net>
-<net name="N$2" class="0">
 <segment>
-<pinref part="IMD_LATCH_SSR" gate="G$1" pin="CONTROL-"/>
-<pinref part="LED1" gate="LED" pin="A"/>
-<wire x1="55.88" y1="220.98" x2="53.34" y2="223.52" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="BMS_SSR" gate="G$1" pin="CONTROL-"/>
-<pinref part="LED3" gate="LED" pin="A"/>
-<wire x1="134.62" y1="238.76" x2="121.92" y2="238.76" width="0.1524" layer="91"/>
+<pinref part="R55" gate="G$1" pin="1"/>
+<wire x1="198.12" y1="236.22" x2="195.58" y2="236.22" width="0.1524" layer="91"/>
+<label x="195.58" y="236.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="N$18" class="0">
@@ -7160,13 +7234,6 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <pinref part="IMD_LATCH_SSR" gate="G$1" pin="CONTROL+"/>
 <wire x1="53.34" y1="228.6" x2="55.88" y2="231.14" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="1"/>
-</segment>
-</net>
-<net name="N$16" class="0">
-<segment>
-<pinref part="LED2" gate="LED" pin="A"/>
-<pinref part="BMS_LATCH_SSR" gate="G$1" pin="CONTROL-"/>
-<wire x1="127" y1="218.44" x2="124.46" y2="220.98" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -7383,6 +7450,11 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <pinref part="P+41" gate="1" pin="+5V"/>
 <wire x1="269.24" y1="175.26" x2="279.4" y2="175.26" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R54" gate="G$1" pin="1"/>
+<wire x1="198.12" y1="246.38" x2="195.58" y2="246.38" width="0.1524" layer="91"/>
+<pinref part="P+42" gate="1" pin="+5V"/>
+</segment>
 </net>
 <net name="IMD_PWR_STEP" class="0">
 <segment>
@@ -7398,13 +7470,6 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <label x="27.94" y="195.58" size="1.778" layer="95" rot="R90"/>
 </segment>
 </net>
-<net name="N$34" class="0">
-<segment>
-<pinref part="LED9" gate="LED" pin="A"/>
-<pinref part="IMD_SSR" gate="G$1" pin="CONTROL-"/>
-<wire x1="63.5" y1="241.3" x2="50.8" y2="241.3" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$31" class="0">
 <segment>
 <pinref part="IMD_SSR" gate="G$1" pin="CONTROL+"/>
@@ -7415,26 +7480,31 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <net name="LATCH_EXT_BUTTON" class="0">
 <segment>
 <pinref part="LED1" gate="LED" pin="C"/>
-<wire x1="63.5" y1="220.98" x2="66.04" y2="220.98" width="0.1524" layer="91"/>
-<label x="66.04" y="220.98" size="1.27" layer="95" xref="yes"/>
-</segment>
-<segment>
-<pinref part="LED2" gate="LED" pin="C"/>
-<wire x1="134.62" y1="218.44" x2="137.16" y2="218.44" width="0.1524" layer="91"/>
-<label x="137.16" y="218.44" size="1.27" layer="95" xref="yes"/>
+<wire x1="218.44" y1="246.38" x2="226.06" y2="246.38" width="0.1524" layer="91"/>
+<label x="226.06" y="246.38" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="S1" gate="1" pin="P"/>
 <pinref part="S1" gate="1" pin="P1"/>
-<wire x1="106.68" y1="259.08" x2="106.68" y2="256.54" width="0.1524" layer="91"/>
-<wire x1="106.68" y1="259.08" x2="101.6" y2="259.08" width="0.1524" layer="91"/>
-<junction x="106.68" y="259.08"/>
-<label x="101.6" y="259.08" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="220.98" y1="259.08" x2="220.98" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="259.08" x2="215.9" y2="259.08" width="0.1524" layer="91"/>
+<junction x="220.98" y="259.08"/>
+<label x="215.9" y="259.08" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <label x="27.94" y="68.58" size="1.016" layer="95" xref="yes"/>
 <wire x1="22.86" y1="68.58" x2="27.94" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="X1" gate="-37" pin="S"/>
+</segment>
+<segment>
+<pinref part="IMD_LATCH_SSR" gate="G$1" pin="CONTROL-"/>
+<wire x1="53.34" y1="223.52" x2="55.88" y2="223.52" width="0.1524" layer="91"/>
+<label x="55.88" y="223.52" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="BMS_LATCH_SSR" gate="G$1" pin="CONTROL-"/>
+<wire x1="124.46" y1="220.98" x2="127" y2="220.98" width="0.1524" layer="91"/>
+<label x="127" y="220.98" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="SHUTDOWN_A" class="0">
@@ -7445,8 +7515,8 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 </segment>
 <segment>
 <pinref part="5ASHUTDOWNFUSE" gate="G$1" pin="2"/>
-<wire x1="228.6" y1="132.08" x2="231.14" y2="132.08" width="0.1524" layer="91"/>
-<label x="231.14" y="132.08" size="1.016" layer="95" xref="yes"/>
+<wire x1="195.58" y1="127" x2="198.12" y2="127" width="0.1524" layer="91"/>
+<label x="198.12" y="127" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$40" class="0">
@@ -7465,23 +7535,28 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <segment>
 <pinref part="R50" gate="G$1" pin="1"/>
 <label x="226.06" y="200.66" size="1.27" layer="95" xref="yes"/>
-<wire x1="215.9" y1="198.12" x2="215.9" y2="200.66" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="200.66" x2="223.52" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="198.12" x2="210.82" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="210.82" y1="200.66" x2="218.44" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="200.66" x2="223.52" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="223.52" y1="200.66" x2="226.06" y2="200.66" width="0.1524" layer="91"/>
 <pinref part="R26" gate="G$1" pin="1"/>
-<wire x1="220.98" y1="210.82" x2="223.52" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="210.82" x2="223.52" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="213.36" x2="223.52" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="213.36" x2="223.52" y2="200.66" width="0.1524" layer="91"/>
 <junction x="223.52" y="200.66"/>
-<wire x1="215.9" y1="200.66" x2="208.28" y2="200.66" width="0.1524" layer="91"/>
-<junction x="215.9" y="200.66"/>
+<wire x1="210.82" y1="200.66" x2="208.28" y2="200.66" width="0.1524" layer="91"/>
+<junction x="210.82" y="200.66"/>
 <pinref part="Q10" gate="G$1" pin="G"/>
+<pinref part="D13" gate="G$1" pin="C"/>
+<wire x1="228.6" y1="195.58" x2="218.44" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="218.44" y1="195.58" x2="218.44" y2="200.66" width="0.1524" layer="91"/>
+<junction x="218.44" y="200.66"/>
 </segment>
 </net>
 <net name="N$46" class="0">
 <segment>
 <pinref part="LED17" gate="LED" pin="A"/>
 <pinref part="R26" gate="G$1" pin="2"/>
-<wire x1="208.28" y1="210.82" x2="210.82" y2="210.82" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="213.36" x2="210.82" y2="213.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SHUTDOWN_D" class="0">
@@ -7510,8 +7585,8 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 </net>
 <net name="BRAKE_LIGHT" class="0">
 <segment>
-<wire x1="233.68" y1="101.6" x2="236.22" y2="101.6" width="0.1524" layer="91"/>
-<label x="236.22" y="101.6" size="1.27" layer="95" xref="yes"/>
+<wire x1="233.68" y1="96.52" x2="236.22" y2="96.52" width="0.1524" layer="91"/>
+<label x="236.22" y="96.52" size="1.27" layer="95" xref="yes"/>
 <pinref part="Q12" gate="G$1" pin="S"/>
 </segment>
 <segment>
@@ -7527,18 +7602,23 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <label x="322.58" y="48.26" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<label x="231.14" y="50.8" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<label x="231.14" y="40.64" size="1.27" layer="95" rot="MR180" xref="yes"/>
 <pinref part="R16" gate="G$1" pin="1"/>
-<wire x1="228.6" y1="50.8" x2="231.14" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="43.18" x2="231.14" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="228.6" y1="43.18" x2="228.6" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="40.64" x2="231.14" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="33.02" x2="233.68" y2="33.02" width="0.1524" layer="91"/>
+<wire x1="228.6" y1="33.02" x2="228.6" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="R47" gate="G$1" pin="1"/>
-<junction x="228.6" y="50.8"/>
-<wire x1="213.36" y1="50.8" x2="218.44" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="50.8" x2="218.44" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="218.44" y1="50.8" x2="228.6" y2="50.8" width="0.1524" layer="91"/>
-<junction x="218.44" y="50.8"/>
+<junction x="228.6" y="40.64"/>
+<wire x1="213.36" y1="40.64" x2="215.9" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="40.64" x2="223.52" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="40.64" x2="223.52" y2="38.1" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="40.64" x2="228.6" y2="40.64" width="0.1524" layer="91"/>
+<junction x="223.52" y="40.64"/>
 <pinref part="Q9" gate="G$1" pin="G"/>
+<pinref part="D14" gate="G$1" pin="C"/>
+<wire x1="218.44" y1="15.24" x2="215.9" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="15.24" x2="215.9" y2="40.64" width="0.1524" layer="91"/>
+<junction x="215.9" y="40.64"/>
 </segment>
 </net>
 <net name="INVERTER_SUPPLY" class="0">
@@ -7549,19 +7629,24 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 </segment>
 <segment>
 <pinref part="INVERTER_PWR_RELAY" gate="G$1" pin="S"/>
-<wire x1="187.96" y1="35.56" x2="193.04" y2="35.56" width="0.1524" layer="91"/>
-<label x="193.04" y="35.56" size="1.016" layer="95" xref="yes"/>
+<wire x1="187.96" y1="25.4" x2="193.04" y2="25.4" width="0.1524" layer="91"/>
+<label x="193.04" y="25.4" size="1.016" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="BRAKE_LIGHT_CTRL" class="0">
 <segment>
-<wire x1="193.04" y1="91.44" x2="193.04" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="193.04" y1="93.98" x2="185.42" y2="93.98" width="0.1524" layer="91"/>
-<label x="185.42" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="195.58" y1="88.9" x2="185.42" y2="88.9" width="0.1524" layer="91"/>
+<label x="185.42" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R10" gate="G$1" pin="2"/>
-<wire x1="193.04" y1="93.98" x2="198.12" y2="93.98" width="0.1524" layer="91"/>
-<junction x="193.04" y="93.98"/>
+<wire x1="195.58" y1="88.9" x2="198.12" y2="88.9" width="0.1524" layer="91"/>
+<junction x="195.58" y="88.9"/>
 <pinref part="Q11" gate="G$1" pin="G"/>
+<wire x1="195.58" y1="88.9" x2="195.58" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="83.82" x2="195.58" y2="81.28" width="0.1524" layer="91"/>
+<pinref part="D12" gate="G$1" pin="C"/>
+<wire x1="187.96" y1="83.82" x2="187.96" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="187.96" y1="83.82" x2="195.58" y2="83.82" width="0.1524" layer="91"/>
+<junction x="195.58" y="83.82"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="D7(RX3)"/>
@@ -8374,13 +8459,13 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 </segment>
 <segment>
 <pinref part="5ASHUTDOWNFUSE" gate="G$1" pin="1"/>
-<wire x1="218.44" y1="132.08" x2="215.9" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="185.42" y1="127" x2="182.88" y2="127" width="0.1524" layer="91"/>
 <pinref part="5ABOARDFUSE" gate="G$1" pin="1"/>
-<wire x1="215.9" y1="132.08" x2="215.9" y2="124.46" width="0.1524" layer="91"/>
-<wire x1="215.9" y1="124.46" x2="218.44" y2="124.46" width="0.1524" layer="91"/>
-<label x="213.36" y="132.08" size="1.016" layer="95" rot="R180" xref="yes"/>
-<wire x1="215.9" y1="132.08" x2="213.36" y2="132.08" width="0.1524" layer="91"/>
-<junction x="215.9" y="132.08"/>
+<wire x1="182.88" y1="127" x2="182.88" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="182.88" y1="119.38" x2="185.42" y2="119.38" width="0.1524" layer="91"/>
+<label x="180.34" y="127" size="1.016" layer="95" rot="R180" xref="yes"/>
+<wire x1="182.88" y1="127" x2="180.34" y2="127" width="0.1524" layer="91"/>
+<junction x="182.88" y="127"/>
 </segment>
 </net>
 <net name="DASH_CTRL9" class="0">
@@ -8747,18 +8832,22 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <segment>
 <pinref part="Q12" gate="G$1" pin="G"/>
 <pinref part="R48" gate="G$1" pin="2"/>
-<wire x1="208.28" y1="104.14" x2="208.28" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="208.28" y1="101.6" x2="208.28" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="223.52" y1="101.6" x2="208.28" y2="101.6" width="0.1524" layer="91"/>
-<junction x="208.28" y="101.6"/>
+<wire x1="208.28" y1="99.06" x2="208.28" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="208.28" y1="96.52" x2="208.28" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="96.52" x2="215.9" y2="96.52" width="0.1524" layer="91"/>
+<junction x="208.28" y="96.52"/>
 <pinref part="Q11" gate="G$1" pin="D"/>
+<pinref part="D11" gate="G$1" pin="A"/>
+<wire x1="215.9" y1="96.52" x2="208.28" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="215.9" y1="99.06" x2="215.9" y2="96.52" width="0.1524" layer="91"/>
+<junction x="215.9" y="96.52"/>
 </segment>
 </net>
 <net name="N$28" class="0">
 <segment>
 <pinref part="LED6" gate="LED" pin="A"/>
 <pinref part="R16" gate="G$1" pin="2"/>
-<wire x1="241.3" y1="35.56" x2="241.3" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="243.84" y1="25.4" x2="243.84" y2="33.02" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VBAT_RTC" class="0">
@@ -8843,13 +8932,13 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <net name="N$66" class="0">
 <segment>
 <pinref part="INVERTER_PWR_RELAY" gate="G$1" pin="COIL-"/>
-<wire x1="172.72" y1="60.96" x2="172.72" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="50.8" x2="172.72" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="D4" gate="1" pin="A"/>
-<wire x1="172.72" y1="60.96" x2="175.26" y2="60.96" width="0.1524" layer="91"/>
-<junction x="172.72" y="60.96"/>
-<wire x1="172.72" y1="60.96" x2="172.72" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="172.72" y1="66.04" x2="203.2" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="203.2" y1="66.04" x2="203.2" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="50.8" x2="175.26" y2="50.8" width="0.1524" layer="91"/>
+<junction x="172.72" y="50.8"/>
+<wire x1="172.72" y1="50.8" x2="172.72" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="172.72" y1="55.88" x2="203.2" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="55.88" x2="203.2" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="Q9" gate="G$1" pin="D"/>
 </segment>
 </net>
@@ -9204,6 +9293,27 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <pinref part="CAN_TERM_JMP" gate="G$1" pin="2"/>
 <pinref part="R49" gate="G$1" pin="2"/>
 <wire x1="416.56" y1="91.44" x2="414.02" y2="91.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$2" class="0">
+<segment>
+<pinref part="LED1" gate="LED" pin="A"/>
+<wire x1="210.82" y1="246.38" x2="208.28" y2="246.38" width="0.1524" layer="91"/>
+<pinref part="R54" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="LED9" gate="LED" pin="A"/>
+<pinref part="R55" gate="G$1" pin="2"/>
+<wire x1="208.28" y1="236.22" x2="210.82" y2="236.22" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$9" class="0">
+<segment>
+<pinref part="LED3" gate="LED" pin="A"/>
+<pinref part="R56" gate="G$1" pin="2"/>
+<wire x1="208.28" y1="226.06" x2="210.82" y2="226.06" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
