@@ -4993,6 +4993,8 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <part name="R13" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1k"/>
 <part name="D18" library="HyTechDevices" deviceset="DIODE_ZENER" device="" value="MMBZ5246BLT1G"/>
 <part name="GND87" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="J5" library="HyTechDevices" deviceset="JUMPER" device=""/>
+<part name="J6" library="HyTechDevices" deviceset="JUMPER" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5039,7 +5041,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <text x="165.1" y="165.1" size="3.81" layer="90">Power</text>
 <text x="416.56" y="264.16" size="1.778" layer="97">ECU Current Sensor</text>
 <text x="416.56" y="231.14" size="1.778" layer="97">Cooling Current Sensor</text>
-<text x="264.16" y="236.22" size="1.778" layer="91">Pullup/down resistors to 
+<text x="264.16" y="236.22" size="1.778" layer="97">Pullup/down resistors to 
 detect open circuit. Install
 only one per signal on
  ACCEL1 and ACCEL2.</text>
@@ -5051,22 +5053,28 @@ only one per signal on
 <text x="40.64" y="93.98" size="1.016" layer="95">Pedals 5V</text>
 <text x="33.02" y="93.98" size="1.016" layer="95">CANL for
 Motor Controller</text>
-<text x="358.14" y="238.76" size="1.016" layer="91">47nF for ~10Hz filter (11.3Hz)</text>
-<text x="358.14" y="205.74" size="1.016" layer="91">47nF for ~10Hz filter (11.3Hz)</text>
-<text x="358.14" y="172.72" size="1.016" layer="91">47nF for ~10Hz filter (11.3Hz)</text>
+<text x="358.14" y="238.76" size="1.016" layer="97">47nF for ~10Hz filter (11.3Hz)</text>
+<text x="358.14" y="205.74" size="1.016" layer="97">47nF for ~10Hz filter (11.3Hz)</text>
+<text x="358.14" y="172.72" size="1.016" layer="97">47nF for ~10Hz filter (11.3Hz)</text>
 <text x="33.02" y="76.2" size="1.27" layer="96">12V for Dash</text>
-<text x="81.28" y="15.24" size="2.032" layer="96">Dash 5, 6, 7, 8 Can be inputs or outputs
+<text x="81.28" y="15.24" size="2.032" layer="97">Dash 5, 6, 7, 8 Can be inputs or outputs
 For input, solder jumper.
 For output, solder resistor (R40-R43).</text>
 <text x="33.02" y="88.9" size="1.016" layer="95">Pedals 5V</text>
-<text x="462.28" y="172.72" size="1.016" layer="91">470pF for ~1kHz filter (1.13kHz)</text>
-<text x="462.28" y="139.7" size="1.016" layer="91">470pF for ~1kHz filter (1.13kHz)</text>
-<text x="119.38" y="154.94" size="2.032" layer="96">Install resistors or LEDs here
+<text x="462.28" y="172.72" size="1.016" layer="97">470pF for ~1kHz filter (1.13kHz)</text>
+<text x="462.28" y="139.7" size="1.016" layer="97">470pF for ~1kHz filter (1.13kHz)</text>
+<text x="119.38" y="154.94" size="2.032" layer="97">Install resistors or LEDs here
 to limit current or drop voltage</text>
-<text x="81.28" y="2.54" size="2.032" layer="91">WARNING: INSTALL ONLY JUMPER (J1-J4) OR
+<text x="81.28" y="2.54" size="2.032" layer="97">WARNING: INSTALL ONLY JUMPER (J1-J4) OR
 RESISTOR (R40-R43) ON DASH CHANNELS 5-8.
 DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
-<text x="568.96" y="76.2" size="1.778" layer="91">Alternate stocked: NCP18XV103J0SRB</text>
+<text x="568.96" y="76.2" size="1.778" layer="97">Alternate stocked: NCP18XV103J0SRB</text>
+<text x="485.14" y="134.62" size="2.032" layer="97">Install jumpers above to bypass
+optional filter circuit to left
+
+WARNING: INSTALL ONLY
+JUMPERS (J5-J6) OR FILTER
+CIRCUIT</text>
 </plain>
 <instances>
 <instance part="X1" gate="-13" x="20.32" y="129.54" smashed="yes" rot="MR0">
@@ -6225,6 +6233,8 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <instance part="GND87" gate="1" x="86.36" y="220.98" smashed="yes">
 <attribute name="VALUE" x="83.82" y="218.44" size="1.778" layer="96"/>
 </instance>
+<instance part="J5" gate="G$1" x="513.08" y="180.34" smashed="yes" rot="MR0"/>
+<instance part="J6" gate="G$1" x="513.08" y="167.64" smashed="yes" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -7541,6 +7551,11 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <wire x1="396.24" y1="195.58" x2="398.78" y2="195.58" width="0.1524" layer="91"/>
 <label x="398.78" y="195.58" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="J6" gate="G$1" pin="P$2"/>
+<wire x1="508" y1="165.1" x2="505.46" y2="165.1" width="0.1524" layer="91"/>
+<label x="505.46" y="165.1" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="COOLINGSENSE" class="0">
 <segment>
@@ -7558,6 +7573,11 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <wire x1="421.64" y1="180.34" x2="421.64" y2="167.64" width="0.1524" layer="91"/>
 <wire x1="421.64" y1="167.64" x2="416.56" y2="167.64" width="0.1524" layer="91"/>
 <label x="416.56" y="167.64" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J5" gate="G$1" pin="P$2"/>
+<wire x1="508" y1="177.8" x2="505.46" y2="177.8" width="0.1524" layer="91"/>
+<label x="505.46" y="177.8" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="CANL" class="0">
@@ -9042,6 +9062,13 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <wire x1="441.96" y1="71.12" x2="436.88" y2="71.12" width="0.1524" layer="91"/>
 <label x="436.88" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="J6" gate="G$1" pin="P$1"/>
+<label x="515.62" y="160.02" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="513.08" y1="165.1" x2="518.16" y2="165.1" width="0.1524" layer="91"/>
+<wire x1="518.16" y1="160.02" x2="515.62" y2="160.02" width="0.1524" layer="91"/>
+<wire x1="518.16" y1="165.1" x2="518.16" y2="160.02" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="COOLINGSENSE_FILT" class="0">
 <segment>
@@ -9053,6 +9080,13 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <pinref part="U$2" gate="G$1" pin="A12"/>
 <wire x1="441.96" y1="73.66" x2="436.88" y2="73.66" width="0.1524" layer="91"/>
 <label x="436.88" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="J5" gate="G$1" pin="P$1"/>
+<label x="515.62" y="172.72" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="513.08" y1="177.8" x2="518.16" y2="177.8" width="0.1524" layer="91"/>
+<wire x1="518.16" y1="177.8" x2="518.16" y2="172.72" width="0.1524" layer="91"/>
+<wire x1="518.16" y1="172.72" x2="515.62" y2="172.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$69" class="0">
