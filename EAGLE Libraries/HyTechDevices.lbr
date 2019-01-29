@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -3541,20 +3541,6 @@ Part of the DO-204 family of packages for lead-mounted axial devices with round 
 <smd name="P$1" x="0" y="0" dx="6.35" dy="3.175" layer="1"/>
 <text x="-3.175" y="-3.175" size="1.27" layer="25">&gt;NAME</text>
 </package>
-<package name="JW2SN">
-<wire x1="-1.2954" y1="-2.6543" x2="-1.2954" y2="10.16" width="0.127" layer="21"/>
-<wire x1="-1.2954" y1="-2.6543" x2="27.3558" y2="-2.6543" width="0.127" layer="21"/>
-<wire x1="27.3558" y1="-2.6543" x2="27.3558" y2="10.16" width="0.127" layer="21"/>
-<wire x1="27.3558" y1="10.16" x2="-1.2954" y2="10.16" width="0.127" layer="21"/>
-<pad name="2" x="10.0076" y="0" drill="1.5" shape="square"/>
-<pad name="3" x="5.0038" y="0" drill="1.5" shape="square"/>
-<pad name="4" x="0" y="0" drill="1.5" shape="square"/>
-<pad name="5" x="0" y="7.493" drill="1.5" shape="square"/>
-<pad name="6" x="5.0038" y="7.493" drill="1.5" shape="square"/>
-<pad name="7" x="10.0076" y="7.493" drill="1.5" shape="square"/>
-<pad name="COIL+" x="25.019" y="0" drill="1.5" shape="square"/>
-<pad name="COIL-" x="25.019" y="7.493" drill="1.5" shape="square"/>
-</package>
 <package name="DC/DC-EIGHTH_BRICK">
 <description>&lt;H2&gt;Eighth-Brick 8 pin&lt;/h2&gt;</description>
 <wire x1="-3.556" y1="3.81" x2="54.61" y2="3.81" width="0.127" layer="21"/>
@@ -6721,7 +6707,7 @@ Source: transistor-fet.lbr</description>
 <hole x="4.1021" y="0" drill="1.27"/>
 <hole x="-4.1021" y="0" drill="1.27"/>
 </package>
-<package name="G2RL-2">
+<package name="RELAY_DPDT">
 <wire x1="-1.2954" y1="-2.6543" x2="-1.2954" y2="10.16" width="0.127" layer="21"/>
 <wire x1="-1.2954" y1="-2.6543" x2="27.3558" y2="-2.6543" width="0.127" layer="21"/>
 <wire x1="27.3558" y1="-2.6543" x2="27.3558" y2="10.16" width="0.127" layer="21"/>
@@ -10402,56 +10388,6 @@ DC/DC</text>
 <rectangle x1="0" y1="0" x2="5.08" y2="5.08" layer="94"/>
 <pin name="P$1" x="-2.54" y="2.54" length="middle"/>
 </symbol>
-<symbol name="JW2SN">
-<circle x="15.24" y="0" radius="0.635" width="0.254" layer="94"/>
-<circle x="17.78" y="5.08" radius="0.635" width="0.254" layer="94"/>
-<circle x="12.7" y="5.08" radius="0.635" width="0.254" layer="94"/>
-<circle x="25.4" y="0" radius="0.635" width="0.254" layer="94"/>
-<circle x="27.94" y="5.08" radius="0.635" width="0.254" layer="94"/>
-<circle x="22.86" y="5.08" radius="0.635" width="0.254" layer="94"/>
-<wire x1="0" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="7.62" y1="5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
-<wire x1="10.16" y1="5.08" x2="10.16" y2="0" width="0.254" layer="94"/>
-<wire x1="10.16" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
-<wire x1="5.08" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="0" x2="0" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="0" x2="7.62" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="5.08" y2="10.16" width="0.254" layer="94"/>
-<wire x1="5.08" y1="0" x2="5.08" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="15.24" y1="-5.08" x2="15.24" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="17.78" y1="10.16" x2="17.78" y2="5.842" width="0.254" layer="94"/>
-<wire x1="12.7" y1="10.16" x2="12.7" y2="5.842" width="0.254" layer="94"/>
-<wire x1="14.9225" y1="0.635" x2="13.0175" y2="4.445" width="0.254" layer="94"/>
-<wire x1="25.4" y1="-5.08" x2="25.4" y2="-0.762" width="0.254" layer="94"/>
-<wire x1="27.94" y1="10.16" x2="27.94" y2="5.842" width="0.254" layer="94"/>
-<wire x1="22.86" y1="10.16" x2="22.86" y2="5.842" width="0.254" layer="94"/>
-<wire x1="25.0825" y1="0.635" x2="23.1775" y2="4.445" width="0.254" layer="94"/>
-<pin name="2" x="12.7" y="10.16" visible="off" length="point" swaplevel="2"/>
-<pin name="3" x="15.24" y="-5.08" visible="off" length="point" swaplevel="3"/>
-<pin name="4" x="17.78" y="10.16" visible="off" length="point" swaplevel="4"/>
-<pin name="5" x="27.94" y="10.16" visible="off" length="point" swaplevel="5"/>
-<pin name="6" x="25.4" y="-5.08" visible="off" length="point" swaplevel="6"/>
-<pin name="7" x="22.86" y="10.16" visible="off" length="point" swaplevel="7"/>
-<pin name="COIL+" x="5.08" y="10.16" visible="off" length="point" swaplevel="1" rot="R180"/>
-<pin name="COIL-" x="5.08" y="-5.08" visible="off" length="point" swaplevel="8" rot="R180"/>
-<polygon width="0.0254" layer="94">
-<vertex x="12.954" y="3.556"/>
-<vertex x="13.716" y="4.064"/>
-<vertex x="12.954" y="4.572"/>
-</polygon>
-<polygon width="0.0254" layer="94">
-<vertex x="23.114" y="3.556"/>
-<vertex x="23.876" y="4.064"/>
-<vertex x="23.114" y="4.572"/>
-</polygon>
-<wire x1="-2.54" y1="7.62" x2="30.48" y2="7.62" width="0.254" layer="94"/>
-<wire x1="30.48" y1="7.62" x2="30.48" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="30.48" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
-<text x="33.02" y="-5.08" size="1.778" layer="94" rot="R90">&gt;VALUE</text>
-</symbol>
 <symbol name="DC/DC-EIGHTH_BRICK">
 <description>&lt;H2&gt;Eighth Brick DC/DC 8 pin&lt;/h2&gt;</description>
 <wire x1="0" y1="0" x2="0" y2="25.4" width="0.254" layer="94"/>
@@ -11474,7 +11410,7 @@ DC/DC</text>
 <text x="-3.81" y="-7.62" size="1.778" layer="95">&gt;VALUE</text>
 </symbol>
 <symbol name="P-CHANNEL_MOSFET">
-<wire x1="-2.54" y1="-2.54" x2="-1.2192" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-1.2192" y2="2.54" width="0.1524" layer="94"/>
 <wire x1="0" y1="0.762" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-0.762" width="0.254" layer="94"/>
 <wire x1="0" y1="3.683" x2="0" y2="1.397" width="0.254" layer="94"/>
@@ -11482,13 +11418,13 @@ DC/DC</text>
 <wire x1="0.635" y1="-0.635" x2="1.905" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="1.905" y2="0" width="0.1524" layer="94"/>
 <wire x1="1.905" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
 <wire x1="0" y1="-1.397" x2="0" y2="-3.683" width="0.254" layer="94"/>
 <wire x1="-1.143" y1="2.54" x2="-1.143" y2="-2.54" width="0.254" layer="94"/>
 <text x="-3.81" y="5.08" size="1.778" layer="95">&gt;NAME</text>
-<pin name="D" x="5.08" y="2.54" visible="off" length="middle" direction="pas" rot="R180"/>
-<pin name="S" x="5.08" y="-2.54" visible="off" length="middle" direction="pas" rot="R180"/>
-<pin name="G" x="-5.08" y="-2.54" visible="off" length="short" direction="pas"/>
+<pin name="S" x="5.08" y="2.54" visible="off" length="middle" direction="pas" rot="R180"/>
+<pin name="D" x="5.08" y="-2.54" visible="off" length="middle" direction="pas" rot="R180"/>
+<pin name="G" x="-5.08" y="2.54" visible="off" length="short" direction="pas"/>
 </symbol>
 <symbol name="5504-12-1-NC-RELAY">
 <description>&lt;h2&gt;Relay 5504-12-1 NC&lt;/h2&gt;</description>
@@ -12222,7 +12158,7 @@ DC/DC</text>
 <pin name="S" x="5.08" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
 <pin name="O" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
 </symbol>
-<symbol name="G2RL-2">
+<symbol name="RELAY_DPDT">
 <circle x="15.24" y="0" radius="0.635" width="0.254" layer="94"/>
 <circle x="17.78" y="5.08" radius="0.635" width="0.254" layer="94"/>
 <circle x="12.7" y="5.08" radius="0.635" width="0.254" layer="94"/>
@@ -12270,7 +12206,7 @@ DC/DC</text>
 <wire x1="30.48" y1="7.62" x2="30.48" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="30.48" y1="-2.54" x2="-2.54" y2="-2.54" width="0.254" layer="94"/>
 <wire x1="-2.54" y1="-2.54" x2="-2.54" y2="7.62" width="0.254" layer="94"/>
-<text x="33.02" y="-3.81" size="1.778" layer="94" rot="R90">&gt;VALUE</text>
+<text x="33.02" y="2.54" size="1.778" layer="94" rot="R90" align="bottom-center">&gt;VALUE</text>
 </symbol>
 <symbol name="FUSE_HOLDER-1">
 <wire x1="0" y1="0" x2="-5.08" y2="0" width="0.254" layer="94" curve="-180"/>
@@ -14494,10 +14430,10 @@ Standard 7805 5V regulator. IGO (Input Ground Output). Spark Fun Electronics SKU
 &lt;br&gt;
 &lt;a href="http://www.mouser.com/ProductDetail/Panasonic-Industrial-Devices/JW2SN-DC9V"&gt;Product Page&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="JW2SN" x="0" y="0"/>
+<gate name="G$1" symbol="RELAY_DPDT" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="JW2SN">
+<device name="" package="RELAY_DPDT">
 <connects>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
@@ -14522,10 +14458,10 @@ Standard 7805 5V regulator. IGO (Input Ground Output). Spark Fun Electronics SKU
 &lt;br&gt;
 &lt;a href="http://www.mouser.com/ProductDetail/Panasonic-Industrial-Devices/JW2SN-DC12V"&gt;Product Page&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="JW2SN" x="0" y="0"/>
+<gate name="G$1" symbol="RELAY_DPDT" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="JW2SN">
+<device name="" package="RELAY_DPDT">
 <connects>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
@@ -14550,19 +14486,19 @@ Standard 7805 5V regulator. IGO (Input Ground Output). Spark Fun Electronics SKU
 &lt;br&gt;
 &lt;a href="http://www.mouser.com/ProductDetail/Panasonic-Industrial-Devices/JW2SN-DC5V"&gt;Product Page&lt;/a&gt;</description>
 <gates>
-<gate name="-1" symbol="JW2SN" x="0" y="0"/>
+<gate name="G$1" symbol="RELAY_DPDT" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="JW2SN">
+<device name="" package="RELAY_DPDT">
 <connects>
-<connect gate="-1" pin="2" pad="2"/>
-<connect gate="-1" pin="3" pad="3"/>
-<connect gate="-1" pin="4" pad="4"/>
-<connect gate="-1" pin="5" pad="5"/>
-<connect gate="-1" pin="6" pad="6"/>
-<connect gate="-1" pin="7" pad="7"/>
-<connect gate="-1" pin="COIL+" pad="COIL+"/>
-<connect gate="-1" pin="COIL-" pad="COIL-"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="COIL+" pad="COIL+"/>
+<connect gate="G$1" pin="COIL-" pad="COIL-"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -18683,10 +18619,10 @@ Contact Amperage: 8A at 30VDC
 &lt;br&gt;
 &lt;a href="https://www.omron.com/ecb/products/pdf/en-g2rl.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="G2RL-2" x="0" y="0"/>
+<gate name="G$1" symbol="RELAY_DPDT" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="G2RL-2">
+<device name="" package="RELAY_DPDT">
 <connects>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
@@ -18712,10 +18648,10 @@ Contact Amperage: 8A at 30VDC
 &lt;br&gt;
 &lt;a href="https://www.omron.com/ecb/products/pdf/en-g2rl.pdf"&gt;Datasheet&lt;/a&gt;</description>
 <gates>
-<gate name="G$1" symbol="G2RL-2" x="0" y="0"/>
+<gate name="G$1" symbol="RELAY_DPDT" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="G2RL-2">
+<device name="" package="RELAY_DPDT">
 <connects>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
@@ -21251,6 +21187,90 @@ DMG3406L (SOT-23, 2.8 A 30V)&lt;br&gt;</description>
 <connect gate="G$1" pin="D" pad="3"/>
 <connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RT424005">
+<description>TE/Schrack Double Pull Double Throw Relay 5VDC
+&lt;br&gt;
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/418/NG_DS_RT2_1014-736201.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.te.com/usa-en/product-5-1393243-9.html"&gt;Product Page&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="RELAY_DPDT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RELAY_DPDT">
+<connects>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="COIL+" pad="COIL+"/>
+<connect gate="G$1" pin="COIL-" pad="COIL-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RT424009">
+<description>TE/Schrack Double Pull Double Throw Relay 9VDC
+&lt;br&gt;
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/418/NG_DS_RT2_1014-736201.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.te.com/usa-en/product-6-1393243-2.html"&gt;Product Page&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="RELAY_DPDT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RELAY_DPDT">
+<connects>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="COIL+" pad="COIL+"/>
+<connect gate="G$1" pin="COIL-" pad="COIL-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RT424012">
+<description>TE/Schrack Double Pull Double Throw Relay 12VDC
+&lt;br&gt;
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/418/NG_DS_RT2_1014-736201.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.te.com/usa-en/product-6-1393243-3.html"&gt;Product Page&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="RELAY_DPDT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RELAY_DPDT">
+<connects>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="COIL+" pad="COIL+"/>
+<connect gate="G$1" pin="COIL-" pad="COIL-"/>
 </connects>
 <technologies>
 <technology name=""/>
