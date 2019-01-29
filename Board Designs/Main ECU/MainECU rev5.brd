@@ -1973,27 +1973,27 @@ design rules under a new name.</description>
 <attribute name="NAME" x="29.718" y="11.684" size="0.635" layer="26" font="vector" rot="MR180" align="bottom-center"/>
 <attribute name="VALUE" x="29.718" y="17.018" size="0.6096" layer="28" font="vector" rot="MR0" align="bottom-center"/>
 </element>
-<element name="D1" library="HyTechDevices" package="0805_D" value="DIODE0805" x="28.194" y="51.435" smashed="yes" rot="MR270">
+<element name="D1" library="HyTechDevices" package="0805_D" value="TS4148 RYG" x="28.194" y="51.435" smashed="yes" rot="MR270">
 <attribute name="NAME" x="27.2161" y="51.435" size="0.635" layer="26" font="vector" rot="MR270" align="bottom-center"/>
 <attribute name="VALUE" x="28.9052" y="51.435" size="0.3048" layer="28" font="vector" rot="MR270" align="top-center"/>
 </element>
-<element name="D7" library="HyTechDevices" package="0805_D" value="DIODE0805" x="15.24" y="70.104" smashed="yes" rot="MR90">
+<element name="D7" library="HyTechDevices" package="0805_D" value="TS4148 RYG" x="15.24" y="70.104" smashed="yes" rot="MR90">
 <attribute name="NAME" x="16.0909" y="70.104" size="0.635" layer="26" font="vector" rot="MR90" align="bottom-center"/>
 <attribute name="VALUE" x="14.5288" y="70.104" size="0.3048" layer="28" font="vector" rot="MR90" align="top-center"/>
 </element>
-<element name="D2" library="HyTechDevices" package="0805_D" value="DIODE0805" x="42.418" y="50.419" smashed="yes" rot="MR270">
+<element name="D2" library="HyTechDevices" package="0805_D" value="TS4148 RYG" x="42.418" y="50.419" smashed="yes" rot="MR270">
 <attribute name="NAME" x="41.4401" y="50.419" size="0.635" layer="26" font="vector" rot="MR270" align="bottom-center"/>
 <attribute name="VALUE" x="43.1292" y="50.419" size="0.3048" layer="28" font="vector" rot="MR270" align="top-center"/>
 </element>
-<element name="D3" library="HyTechDevices" package="0805_D" value="DIODE0805" x="17.653" y="73.279" smashed="yes" rot="MR180">
+<element name="D3" library="HyTechDevices" package="0805_D" value="TS4148 RYG" x="17.653" y="73.279" smashed="yes" rot="MR180">
 <attribute name="NAME" x="17.653" y="72.3011" size="0.635" layer="26" font="vector" rot="MR180" align="bottom-center"/>
 <attribute name="VALUE" x="17.653" y="73.9902" size="0.3048" layer="28" font="vector" rot="MR180" align="top-center"/>
 </element>
-<element name="D5" library="HyTechDevices" package="0805_D" value="DIODE0805" x="36.322" y="76.962" smashed="yes" rot="MR180">
+<element name="D5" library="HyTechDevices" package="0805_D" value="TS4148 RYG" x="36.322" y="76.962" smashed="yes" rot="MR180">
 <attribute name="NAME" x="36.322" y="76.1111" size="0.635" layer="26" font="vector" rot="MR180" align="bottom-center"/>
 <attribute name="VALUE" x="36.322" y="77.6732" size="0.3048" layer="28" font="vector" rot="MR180" align="top-center"/>
 </element>
-<element name="D6" library="HyTechDevices" package="0805_D" value="DIODE0805" x="35.687" y="62.23" smashed="yes" rot="MR270">
+<element name="D6" library="HyTechDevices" package="0805_D" value="TS4148 RYG" x="35.687" y="62.23" smashed="yes" rot="MR270">
 <attribute name="NAME" x="36.5379" y="62.23" size="0.635" layer="26" font="vector" rot="MR90" align="bottom-center"/>
 <attribute name="VALUE" x="36.3982" y="62.23" size="0.3048" layer="28" font="vector" rot="MR270" align="top-center"/>
 </element>
@@ -2311,7 +2311,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="3.4671" y="54.356" size="0.635" layer="26" font="vector" rot="MR270" align="bottom-center"/>
 <attribute name="VALUE" x="5.2832" y="54.356" size="0.3048" layer="28" font="vector" rot="MR270" align="top-center"/>
 </element>
-<element name="D4" library="HyTechDevices" package="0805_D" value="DIODE0805" x="15.494" y="53.086" smashed="yes" rot="MR270">
+<element name="D4" library="HyTechDevices" package="0805_D" value="TS4148 RYG" x="15.494" y="53.086" smashed="yes" rot="MR270">
 <attribute name="NAME" x="14.5161" y="53.086" size="0.635" layer="26" font="vector" rot="MR270" align="bottom-center"/>
 <attribute name="VALUE" x="16.2052" y="53.086" size="0.3048" layer="28" font="vector" rot="MR270" align="top-center"/>
 </element>

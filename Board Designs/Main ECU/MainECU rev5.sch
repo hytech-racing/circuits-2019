@@ -4814,15 +4814,15 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <part name="R21" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="3.3k"/>
 <part name="P+10" library="supply1" deviceset="+12V" device=""/>
 <part name="P+5" library="supply1" deviceset="+12V" device=""/>
-<part name="D5" library="HyTechDevices" deviceset="DIODE" device="0805"/>
-<part name="D6" library="HyTechDevices" deviceset="DIODE" device="0805"/>
+<part name="D5" library="HyTechDevices" deviceset="DIODE" device="0805" value="TS4148 RYG"/>
+<part name="D6" library="HyTechDevices" deviceset="DIODE" device="0805" value="TS4148 RYG"/>
 <part name="P+25" library="supply1" deviceset="+5V" device=""/>
 <part name="P+26" library="supply1" deviceset="+5V" device=""/>
 <part name="S1" library="HyTechDevices" deviceset="BTN_10-XX" device="SMD"/>
 <part name="GND2" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="SOFTWARE_SHUTOFF" library="HyTechDevices" deviceset="G5LE" device=""/>
 <part name="P+23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
-<part name="D7" library="HyTechDevices" deviceset="DIODE" device="0805"/>
+<part name="D7" library="HyTechDevices" deviceset="DIODE" device="0805" value="TS4148 RYG"/>
 <part name="LED17" library="HyTechDevices" deviceset="LED" device="-0805" value="Red"/>
 <part name="R26" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1.2K"/>
 <part name="GND44" library="HyTechSymbols" deviceset="GND" device=""/>
@@ -4897,9 +4897,9 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <part name="GND48" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="R23" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="43k"/>
 <part name="R29" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="12k"/>
-<part name="D1" library="HyTechDevices" deviceset="DIODE" device="0805"/>
-<part name="D2" library="HyTechDevices" deviceset="DIODE" device="0805"/>
-<part name="D3" library="HyTechDevices" deviceset="DIODE" device="0805"/>
+<part name="D1" library="HyTechDevices" deviceset="DIODE" device="0805" value="TS4148 RYG"/>
+<part name="D2" library="HyTechDevices" deviceset="DIODE" device="0805" value="TS4148 RYG"/>
+<part name="D3" library="HyTechDevices" deviceset="DIODE" device="0805" value="TS4148 RYG"/>
 <part name="P+27" library="supply1" deviceset="+12V" device=""/>
 <part name="REG1" library="HyTechDevices" deviceset="LM3940" device=""/>
 <part name="C5" library="HyTechDevices" deviceset="CAP" device="0805" value="1uF"/>
@@ -4991,7 +4991,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <part name="R16" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1.2k"/>
 <part name="P+8" library="supply1" deviceset="+12V" device=""/>
 <part name="P+12" library="supply1" deviceset="+12V" device=""/>
-<part name="D4" library="HyTechDevices" deviceset="DIODE" device="0805"/>
+<part name="D4" library="HyTechDevices" deviceset="DIODE" device="0805" value="TS4148 RYG"/>
 <part name="U$16" library="HyTechDevices" deviceset="CR-2450/G1AN" device=""/>
 <part name="REG3" library="HyTechDevices" deviceset="OKI-78SR-5" device="" value="5V"/>
 <part name="GND39" library="HyTechSymbols" deviceset="GND" device=""/>

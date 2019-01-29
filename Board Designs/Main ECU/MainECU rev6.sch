@@ -2821,7 +2821,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <pin name="C1" x="20.32" y="-2.54" visible="pin" length="short" direction="pas" rot="R180"/>
 </symbol>
 <symbol name="P-CHANNEL_MOSFET">
-<wire x1="-2.54" y1="-2.54" x2="-1.2192" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-1.2192" y2="2.54" width="0.1524" layer="94"/>
 <wire x1="0" y1="0.762" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-0.762" width="0.254" layer="94"/>
 <wire x1="0" y1="3.683" x2="0" y2="1.397" width="0.254" layer="94"/>
@@ -2835,7 +2835,7 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <text x="-3.81" y="5.08" size="1.778" layer="95">&gt;NAME</text>
 <pin name="S" x="5.08" y="2.54" visible="off" length="middle" direction="pas" rot="R180"/>
 <pin name="D" x="5.08" y="-2.54" visible="off" length="middle" direction="pas" rot="R180"/>
-<pin name="G" x="-5.08" y="-2.54" visible="off" length="short" direction="pas"/>
+<pin name="G" x="-5.08" y="2.54" visible="off" length="short" direction="pas"/>
 </symbol>
 <symbol name="TEST_POINT">
 <circle x="1.27" y="0" radius="1.27" width="0.254" layer="94"/>
@@ -6092,8 +6092,8 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <instance part="GND81" gate="1" x="195.58" y="63.5" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="198.12" y="60.96" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="Q12" gate="G$1" x="228.6" y="99.06" smashed="yes">
-<attribute name="NAME" x="234.95" y="101.6" size="1.778" layer="95"/>
+<instance part="Q12" gate="G$1" x="228.6" y="93.98" smashed="yes">
+<attribute name="NAME" x="234.95" y="96.52" size="1.778" layer="95"/>
 </instance>
 <instance part="MTK3339_BREAKOUT" gate="G$1" x="515.62" y="210.82" smashed="yes" rot="R180">
 <attribute name="VALUE" x="520.7" y="223.52" size="1.778" layer="96" rot="R180"/>
@@ -6203,8 +6203,8 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <instance part="GND86" gate="1" x="86.36" y="238.76" smashed="yes">
 <attribute name="VALUE" x="83.82" y="236.22" size="1.778" layer="96"/>
 </instance>
-<instance part="Q1" gate="G$1" x="114.3" y="248.92" smashed="yes">
-<attribute name="NAME" x="120.65" y="251.46" size="1.778" layer="95"/>
+<instance part="Q1" gate="G$1" x="114.3" y="243.84" smashed="yes">
+<attribute name="NAME" x="120.65" y="246.38" size="1.778" layer="95"/>
 </instance>
 <instance part="Q2" gate="G$1" x="78.74" y="243.84" smashed="yes">
 <attribute name="NAME" x="74.93" y="248.92" size="1.778" layer="95"/>
@@ -6849,7 +6849,7 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <wire x1="215.9" y1="106.68" x2="215.9" y2="109.22" width="0.1524" layer="91"/>
 <junction x="215.9" y="109.22"/>
 <pinref part="Q12" gate="G$1" pin="S"/>
-<wire x1="233.68" y1="101.6" x2="233.68" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="96.52" x2="233.68" y2="109.22" width="0.1524" layer="91"/>
 <junction x="233.68" y="109.22"/>
 </segment>
 <segment>
@@ -6957,7 +6957,7 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <wire x1="106.68" y1="256.54" x2="106.68" y2="259.08" width="0.1524" layer="91"/>
 <junction x="106.68" y="259.08"/>
 <pinref part="Q1" gate="G$1" pin="S"/>
-<wire x1="119.38" y1="251.46" x2="119.38" y2="259.08" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="246.38" x2="119.38" y2="259.08" width="0.1524" layer="91"/>
 <junction x="119.38" y="259.08"/>
 </segment>
 </net>
@@ -7417,9 +7417,9 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 </net>
 <net name="BRAKE_LIGHT" class="0">
 <segment>
-<label x="236.22" y="96.52" size="1.27" layer="95" xref="yes"/>
+<label x="236.22" y="91.44" size="1.27" layer="95" xref="yes"/>
 <pinref part="Q12" gate="G$1" pin="D"/>
-<wire x1="233.68" y1="96.52" x2="236.22" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="91.44" x2="236.22" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <label x="27.94" y="139.7" size="1.016" layer="95" xref="yes"/>
@@ -9155,7 +9155,7 @@ DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <pinref part="D5" gate="1" pin="C"/>
 <wire x1="119.38" y1="223.52" x2="109.22" y2="223.52" width="0.1524" layer="91"/>
 <pinref part="Q1" gate="G$1" pin="D"/>
-<wire x1="119.38" y1="246.38" x2="119.38" y2="223.52" width="0.1524" layer="91"/>
+<wire x1="119.38" y1="241.3" x2="119.38" y2="223.52" width="0.1524" layer="91"/>
 <junction x="119.38" y="223.52"/>
 </segment>
 </net>
