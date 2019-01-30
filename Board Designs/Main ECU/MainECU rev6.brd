@@ -8,7 +8,7 @@
 </settings>
 <grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
 <layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
 <layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
@@ -28,11 +28,11 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
@@ -46,9 +46,9 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -821,7 +821,7 @@
 <rectangle x1="17.2339" y1="5.7785" x2="17.9197" y2="5.8547" layer="51"/>
 <rectangle x1="18.9865" y1="5.7785" x2="19.3675" y2="5.8547" layer="51"/>
 <rectangle x1="20.5105" y1="5.7785" x2="20.9677" y2="5.8547" layer="51"/>
-<text x="24.638" y="3.81" size="1.397" layer="51" font="vector">HyTech 2019 Main ECU rev5</text>
+<text x="24.638" y="3.81" size="1.397" layer="51" font="vector">HyTech 2019 Main ECU rev6</text>
 <text x="24.638" y="2.032" size="1.397" layer="51" font="vector">Designed by Parker Jones</text>
 <text x="32.258" y="48.387" size="0.8128" layer="51" font="vector" rot="R270">Shutdown B</text>
 <text x="34.163" y="48.387" size="0.8128" layer="51" font="vector" rot="R90" align="top-right">IMD OK</text>
@@ -1955,9 +1955,9 @@ design rules under a new name.</description>
 <attribute name="NAME" x="16.0909" y="69.8754" size="0.635" layer="26" font="vector" rot="MR90" align="bottom-center"/>
 <attribute name="VALUE" x="14.5288" y="69.8754" size="0.3048" layer="28" font="vector" rot="MR90" align="top-center"/>
 </element>
-<element name="D2" library="HyTechDevices" package="0805_D" value="TS4148 RYG" x="42.418" y="50.419" smashed="yes" rot="MR270">
-<attribute name="NAME" x="41.4401" y="50.419" size="0.635" layer="26" font="vector" rot="MR270" align="bottom-center"/>
-<attribute name="VALUE" x="43.1292" y="50.419" size="0.3048" layer="28" font="vector" rot="MR270" align="top-center"/>
+<element name="D2" library="HyTechDevices" package="0805_D" value="TS4148 RYG" x="42.418" y="50.8" smashed="yes" rot="MR270">
+<attribute name="NAME" x="41.4401" y="50.546" size="0.635" layer="26" font="vector" rot="MR270" align="bottom-center"/>
+<attribute name="VALUE" x="43.1292" y="50.8" size="0.3048" layer="28" font="vector" rot="MR270" align="top-center"/>
 </element>
 <element name="D3" library="HyTechDevices" package="0805_D" value="TS4148 RYG" x="17.653" y="73.279" smashed="yes" rot="MR180">
 <attribute name="NAME" x="17.653" y="72.3011" size="0.635" layer="26" font="vector" rot="MR180" align="bottom-center"/>
@@ -3512,11 +3512,11 @@ design rules under a new name.</description>
 <wire x1="62.23" y1="54.991" x2="62.484" y2="55.245" width="0.254" layer="1"/>
 <wire x1="59.182" y1="54.991" x2="62.23" y2="54.991" width="0.254" layer="1"/>
 <contactref element="R56" pad="1"/>
-<wire x1="42.418" y1="51.319" x2="41.391" y2="51.319" width="0.254" layer="16"/>
-<wire x1="41.391" y1="51.319" x2="41.021" y2="51.689" width="0.254" layer="16"/>
-<wire x1="37.338" y1="50.537" x2="41.636" y2="50.537" width="0.254" layer="16"/>
-<wire x1="41.636" y1="50.537" x2="42.418" y2="51.319" width="0.254" layer="16"/>
-<wire x1="42.418" y1="51.319" x2="43.4395" y2="50.2975" width="0.254" layer="16"/>
+<wire x1="42.418" y1="51.7" x2="41.032" y2="51.7" width="0.254" layer="16"/>
+<wire x1="41.021" y1="51.689" x2="41.032" y2="51.7" width="0.254" layer="16"/>
+<wire x1="37.338" y1="50.537" x2="41.255" y2="50.537" width="0.254" layer="16"/>
+<wire x1="41.255" y1="50.537" x2="42.418" y2="51.7" width="0.254" layer="16"/>
+<wire x1="42.418" y1="51.7" x2="43.4395" y2="50.6785" width="0.254" layer="16"/>
 <contactref element="Q2" pad="1"/>
 <contactref element="D18" pad="3"/>
 <wire x1="35.56" y1="63.516" x2="33.893" y2="63.516" width="0.254" layer="16"/>
@@ -3529,7 +3529,7 @@ design rules under a new name.</description>
 <wire x1="41.402" y1="56.642" x2="34.528" y2="63.516" width="0.254" layer="1"/>
 <wire x1="34.528" y1="63.516" x2="33.893" y2="63.516" width="0.254" layer="1"/>
 <via x="33.893" y="63.516" extent="1-16" drill="0.35"/>
-<wire x1="43.4395" y1="50.2975" x2="43.4395" y2="49.1435" width="0.254" layer="16"/>
+<wire x1="43.4395" y1="50.6785" x2="43.4395" y2="49.1435" width="0.254" layer="16"/>
 <wire x1="44.9525" y1="47.6305" x2="45.593" y2="47.6305" width="0.254" layer="16"/>
 <wire x1="43.4395" y1="49.1435" x2="44.9525" y2="47.6305" width="0.254" layer="16"/>
 <wire x1="45.593" y1="47.6305" x2="46.228" y2="46.9955" width="0.254" layer="16"/>
@@ -4611,7 +4611,7 @@ design rules under a new name.</description>
 <signal name="N$11">
 <contactref element="R7" pad="1"/>
 <contactref element="D2" pad="C"/>
-<wire x1="42.418" y1="49.519" x2="42.418" y2="47.888" width="0.254" layer="16"/>
+<wire x1="42.418" y1="49.9" x2="42.418" y2="47.888" width="0.254" layer="16"/>
 </signal>
 <signal name="N$33">
 <contactref element="R15" pad="1"/>
@@ -5485,9 +5485,9 @@ design rules under a new name.</description>
 <wire x1="60.96" y1="65.913" x2="63.373" y2="65.913" width="0.254" layer="16"/>
 <wire x1="63.373" y1="65.913" x2="64.8744" y2="67.4144" width="0.254" layer="16"/>
 <wire x1="69.723" y1="71.755" x2="67.564" y2="69.596" width="0.254" layer="16"/>
-<wire x1="65.405" y1="69.596" x2="67.564" y2="69.596" width="0.254" layer="16"/>
-<wire x1="64.8744" y1="69.0654" x2="65.405" y2="69.596" width="0.254" layer="16"/>
-<wire x1="64.8744" y1="67.4144" x2="64.8744" y2="69.0654" width="0.254" layer="16"/>
+<wire x1="65.786" y1="69.596" x2="67.564" y2="69.596" width="0.254" layer="16"/>
+<wire x1="64.8744" y1="68.6844" x2="65.786" y2="69.596" width="0.254" layer="16"/>
+<wire x1="64.8744" y1="67.4144" x2="64.8744" y2="68.6844" width="0.254" layer="16"/>
 </signal>
 <signal name="DASH_IO8">
 <contactref element="J4" pad="1"/>
@@ -5495,11 +5495,7 @@ design rules under a new name.</description>
 <wire x1="67.515134375" y1="62.69970625" x2="66.3214375" y2="63.893403125" width="0.254" layer="1"/>
 <wire x1="66.3214375" y1="63.893403125" x2="66.29681875" y2="63.893403125" width="0.254" layer="1"/>
 <contactref element="U$30" pad="9"/>
-<wire x1="81.128" y1="77.47" x2="80.645" y2="77.47" width="0.254" layer="16"/>
-<wire x1="80.645" y1="77.47" x2="78.994" y2="75.819" width="0.254" layer="16"/>
 <wire x1="58.928" y1="66.92" x2="60.988921875" y2="66.92" width="0.254" layer="1"/>
-<wire x1="78.994" y1="75.819" x2="77.851" y2="75.819" width="0.254" layer="16"/>
-<wire x1="77.851" y1="75.819" x2="76.454" y2="74.422" width="0.254" layer="16"/>
 <via x="76.454" y="74.422" extent="1-16" drill="0.35"/>
 <wire x1="76.454" y1="74.422" x2="76.454" y2="74.041" width="0.254" layer="1"/>
 <wire x1="76.454" y1="74.041" x2="72.898" y2="70.485" width="0.254" layer="1"/>
@@ -5516,6 +5512,8 @@ design rules under a new name.</description>
 <wire x1="64.643" y1="64.77" x2="65.278" y2="65.405" width="0.254" layer="1"/>
 <wire x1="65.278" y1="64.912221875" x2="65.278" y2="65.405" width="0.254" layer="1"/>
 <wire x1="66.29681875" y1="63.893403125" x2="65.278" y2="64.912221875" width="0.254" layer="1"/>
+<wire x1="81.128" y1="77.47" x2="79.502" y2="77.47" width="0.254" layer="16"/>
+<wire x1="79.502" y1="77.47" x2="76.454" y2="74.422" width="0.254" layer="16"/>
 </signal>
 <signal name="DASH_CTRL8_OUT">
 <contactref element="R43" pad="1"/>
