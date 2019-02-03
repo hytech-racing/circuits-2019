@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.3.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -1467,6 +1467,87 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <rectangle x1="-1.4091" y1="2.25" x2="-1.2059" y2="3.121" layer="51"/>
 <rectangle x1="-2.0591" y1="2.25" x2="-1.8559" y2="3.121" layer="51"/>
 </package>
+<package name="B3F-10XX">
+<description>&lt;b&gt;OMRON SWITCH&lt;/b&gt;</description>
+<wire x1="3.302" y1="-0.762" x2="3.048" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="3.302" y1="-0.762" x2="3.302" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="3.048" y1="0.762" x2="3.302" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="3.048" y1="1.016" x2="3.048" y2="2.54" width="0.1524" layer="51"/>
+<wire x1="-3.302" y1="0.762" x2="-3.048" y2="0.762" width="0.1524" layer="21"/>
+<wire x1="-3.302" y1="0.762" x2="-3.302" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="-3.048" y1="-0.762" x2="-3.302" y2="-0.762" width="0.1524" layer="21"/>
+<wire x1="3.048" y1="2.54" x2="2.54" y2="3.048" width="0.1524" layer="51"/>
+<wire x1="2.54" y1="-3.048" x2="3.048" y2="-2.54" width="0.1524" layer="51"/>
+<wire x1="3.048" y1="-2.54" x2="3.048" y2="-1.016" width="0.1524" layer="51"/>
+<wire x1="-2.54" y1="3.048" x2="-3.048" y2="2.54" width="0.1524" layer="51"/>
+<wire x1="-3.048" y1="2.54" x2="-3.048" y2="1.016" width="0.1524" layer="51"/>
+<wire x1="-2.54" y1="-3.048" x2="-3.048" y2="-2.54" width="0.1524" layer="51"/>
+<wire x1="-3.048" y1="-2.54" x2="-3.048" y2="-1.016" width="0.1524" layer="51"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.0508" layer="51"/>
+<wire x1="1.27" y1="-1.27" x2="-1.27" y2="-1.27" width="0.0508" layer="51"/>
+<wire x1="1.27" y1="-1.27" x2="1.27" y2="1.27" width="0.0508" layer="51"/>
+<wire x1="-1.27" y1="1.27" x2="1.27" y2="1.27" width="0.0508" layer="51"/>
+<wire x1="-1.27" y1="3.048" x2="-1.27" y2="2.794" width="0.0508" layer="21"/>
+<wire x1="1.27" y1="2.794" x2="-1.27" y2="2.794" width="0.0508" layer="21"/>
+<wire x1="1.27" y1="2.794" x2="1.27" y2="3.048" width="0.0508" layer="21"/>
+<wire x1="1.143" y1="-2.794" x2="-1.27" y2="-2.794" width="0.0508" layer="21"/>
+<wire x1="1.143" y1="-2.794" x2="1.143" y2="-3.048" width="0.0508" layer="21"/>
+<wire x1="-1.27" y1="-2.794" x2="-1.27" y2="-3.048" width="0.0508" layer="21"/>
+<wire x1="2.54" y1="-3.048" x2="2.159" y2="-3.048" width="0.1524" layer="51"/>
+<wire x1="-2.54" y1="-3.048" x2="-2.159" y2="-3.048" width="0.1524" layer="51"/>
+<wire x1="-2.159" y1="-3.048" x2="-1.27" y2="-3.048" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="3.048" x2="-2.159" y2="3.048" width="0.1524" layer="51"/>
+<wire x1="2.54" y1="3.048" x2="2.159" y2="3.048" width="0.1524" layer="51"/>
+<wire x1="2.159" y1="3.048" x2="1.27" y2="3.048" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="3.048" x2="-1.27" y2="3.048" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="3.048" x2="-2.159" y2="3.048" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-3.048" x2="1.143" y2="-3.048" width="0.1524" layer="21"/>
+<wire x1="1.143" y1="-3.048" x2="2.159" y2="-3.048" width="0.1524" layer="21"/>
+<wire x1="3.048" y1="-0.762" x2="3.048" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="3.048" y1="0.762" x2="3.048" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-3.048" y1="-0.762" x2="-3.048" y2="-1.016" width="0.1524" layer="21"/>
+<wire x1="-3.048" y1="0.762" x2="-3.048" y2="1.016" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="-2.159" x2="1.27" y2="-2.159" width="0.1524" layer="51"/>
+<wire x1="1.27" y1="2.286" x2="-1.27" y2="2.286" width="0.1524" layer="51"/>
+<wire x1="-2.413" y1="1.27" x2="-2.413" y2="0.508" width="0.1524" layer="51"/>
+<wire x1="-2.413" y1="-0.508" x2="-2.413" y2="-1.27" width="0.1524" layer="51"/>
+<wire x1="-2.413" y1="0.508" x2="-2.159" y2="-0.381" width="0.1524" layer="51"/>
+<circle x="0" y="0" radius="1.778" width="0.1524" layer="21"/>
+<circle x="-2.159" y="-2.159" radius="0.508" width="0.1524" layer="51"/>
+<circle x="2.159" y="-2.032" radius="0.508" width="0.1524" layer="51"/>
+<circle x="2.159" y="2.159" radius="0.508" width="0.1524" layer="51"/>
+<circle x="-2.159" y="2.159" radius="0.508" width="0.1524" layer="51"/>
+<circle x="0" y="0" radius="0.635" width="0.0508" layer="51"/>
+<circle x="0" y="0" radius="0.254" width="0.1524" layer="21"/>
+<pad name="1" x="-3.2512" y="2.2606" drill="1.016" shape="long"/>
+<pad name="3" x="-3.2512" y="-2.2606" drill="1.016" shape="long"/>
+<pad name="2" x="3.2512" y="2.2606" drill="1.016" shape="long"/>
+<pad name="4" x="3.2512" y="-2.2606" drill="1.016" shape="long"/>
+<text x="-3.048" y="3.683" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-3.048" y="-5.08" size="1.27" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-4.318" y="1.651" size="1.27" layer="51" ratio="10">1</text>
+<text x="3.556" y="1.524" size="1.27" layer="51" ratio="10">2</text>
+<text x="-4.572" y="-2.794" size="1.27" layer="51" ratio="10">3</text>
+<text x="3.556" y="-2.794" size="1.27" layer="51" ratio="10">4</text>
+</package>
+<package name="TACTILE_SWITCH_SMD_6.2MM_TALL">
+<description>Source: Sparkfun Library
+
+&lt;h3&gt;Momentary Switch (Pushbutton) - SPST - SMD, 6.2mm Square&lt;/h3&gt;
+&lt;p&gt;Normally-open (NO) SPST momentary switches (buttons, pushbuttons).&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://www.apem.com/files/apem/brochures/ADTS6-ADTSM-KTSC6.pdf"&gt;Datasheet&lt;/a&gt; (ADTSM63NVTR)&lt;/p&gt;</description>
+<wire x1="-3" y1="-3" x2="3" y2="-3" width="0.2032" layer="21"/>
+<wire x1="3" y1="-3" x2="3" y2="3" width="0.2032" layer="21"/>
+<wire x1="3" y1="3" x2="-3" y2="3" width="0.2032" layer="21"/>
+<wire x1="-3" y1="3" x2="-3" y2="-3" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="1.75" width="0.2032" layer="21"/>
+<smd name="A1" x="-3.975" y="-2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
+<smd name="A2" x="3.975" y="-2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
+<smd name="B1" x="-3.975" y="2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
+<smd name="B2" x="3.975" y="2.25" dx="1.3" dy="1.55" layer="1" rot="R90"/>
+<text x="0" y="3.175" size="0.6096" layer="25" font="vector" ratio="20" align="bottom-center">&gt;Name</text>
+<text x="0" y="-3.175" size="0.6096" layer="27" font="vector" ratio="20" align="top-center">&gt;Value</text>
+</package>
 </packages>
 <symbols>
 <symbol name="TEENSY_3.2_SIMPLE">
@@ -1766,6 +1847,27 @@ Yageo CFR series &lt;a href="http://www.yageo.com/pdf/yageo/Leaded-R_CFR_2008.pd
 <wire x1="0" y1="0" x2="0" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="0" y1="-20.32" x2="17.78" y2="-20.32" width="0.254" layer="94"/>
 <wire x1="17.78" y1="-20.32" x2="17.78" y2="0" width="0.254" layer="94"/>
+</symbol>
+<symbol name="TS2">
+<wire x1="0" y1="1.905" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="1.905" x2="-3.175" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="-1.905" x2="-3.175" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="1.905" x2="-4.445" y2="0" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="0" x2="-4.445" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
+<wire x1="-4.445" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="2.54" x2="0" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-1.27" y2="1.905" width="0.254" layer="94"/>
+<circle x="0" y="-2.54" radius="0.127" width="0.4064" layer="94"/>
+<circle x="0" y="2.54" radius="0.127" width="0.4064" layer="94"/>
+<text x="-6.35" y="-2.54" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="-3.81" y="3.175" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="P" x="0" y="-5.08" visible="pad" length="short" direction="pas" swaplevel="2" rot="R90"/>
+<pin name="S" x="0" y="5.08" visible="pad" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="S1" x="2.54" y="5.08" visible="pad" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="P1" x="2.54" y="-5.08" visible="pad" length="short" direction="pas" swaplevel="2" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2752,6 +2854,41 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 </device>
 </devices>
 </deviceset>
+<deviceset name="BTN_10-XX" prefix="S" uservalue="yes">
+<description>Small momentary tactile push button</description>
+<gates>
+<gate name="1" symbol="TS2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="B3F-10XX">
+<connects>
+<connect gate="1" pin="P" pad="3"/>
+<connect gate="1" pin="P1" pad="4"/>
+<connect gate="1" pin="S" pad="1"/>
+<connect gate="1" pin="S1" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="MF" value="" constant="no"/>
+<attribute name="MPN" value="B3F-1000" constant="no"/>
+<attribute name="OC_FARNELL" value="176432" constant="no"/>
+<attribute name="OC_NEWARK" value="36M3542" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="SMD" package="TACTILE_SWITCH_SMD_6.2MM_TALL">
+<connects>
+<connect gate="1" pin="P" pad="A1"/>
+<connect gate="1" pin="P1" pad="A2"/>
+<connect gate="1" pin="S" pad="B1"/>
+<connect gate="1" pin="S1" pad="B2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="supply1" urn="urn:adsk.eagle:library:371">
@@ -2899,8 +3036,8 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND11" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
-<part name="C1" library="HyTechDevices" deviceset="CAP" device="0805"/>
-<part name="C2" library="HyTechDevices" deviceset="CAP" device="0805"/>
+<part name="C1" library="HyTechDevices" deviceset="CAP" device="0805" value="0.1 uF"/>
+<part name="C2" library="HyTechDevices" deviceset="CAP" device="0805" value="0.33 uF"/>
 <part name="P+7" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="C3" library="HyTechDevices" deviceset="CAP" device="0805" value="100 nF"/>
 <part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1.5k"/>
@@ -3026,6 +3163,12 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 <part name="+3V3" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND52" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
+<part name="R26" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
+<part name="R27" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
+<part name="R28" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
+<part name="R29" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
+<part name="S1" library="HyTechDevices" deviceset="BTN_10-XX" device="SMD"/>
+<part name="GND53" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3654,6 +3797,29 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 <instance part="P+24" gate="1" x="116.84" y="182.88" smashed="yes">
 <attribute name="VALUE" x="119.38" y="185.42" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="R26" gate="G$1" x="22.86" y="93.98" smashed="yes">
+<attribute name="NAME" x="16.51" y="90.3986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="21.59" y="90.678" size="1.778" layer="96"/>
+</instance>
+<instance part="R27" gate="G$1" x="22.86" y="104.14" smashed="yes">
+<attribute name="NAME" x="16.51" y="100.5586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="21.59" y="100.838" size="1.778" layer="96"/>
+</instance>
+<instance part="R28" gate="G$1" x="22.86" y="114.3" smashed="yes">
+<attribute name="NAME" x="16.51" y="110.7186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="21.59" y="110.998" size="1.778" layer="96"/>
+</instance>
+<instance part="R29" gate="G$1" x="22.86" y="124.46" smashed="yes">
+<attribute name="NAME" x="16.51" y="120.8786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="21.59" y="121.158" size="1.778" layer="96"/>
+</instance>
+<instance part="S1" gate="1" x="134.62" y="200.66" smashed="yes" rot="R90">
+<attribute name="NAME" x="137.16" y="194.31" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="131.445" y="196.85" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="GND53" gate="1" x="127" y="198.12" smashed="yes">
+<attribute name="VALUE" x="124.46" y="195.58" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -3782,21 +3948,33 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 <pinref part="VOLTAGE1" gate="-2" pin="S"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="30.48" y1="124.46" x2="33.02" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="R29" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="124.46" x2="30.48" y2="124.46" width="0.1524" layer="91"/>
+<junction x="30.48" y="124.46"/>
 </segment>
 <segment>
 <pinref part="VOLTAGE2" gate="-2" pin="S"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="30.48" y1="114.3" x2="33.02" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="R28" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="114.3" x2="30.48" y2="114.3" width="0.1524" layer="91"/>
+<junction x="30.48" y="114.3"/>
 </segment>
 <segment>
 <pinref part="VOLTAGE3" gate="-2" pin="S"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="30.48" y1="104.14" x2="33.02" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="R27" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="104.14" x2="30.48" y2="104.14" width="0.1524" layer="91"/>
+<junction x="30.48" y="104.14"/>
 </segment>
 <segment>
 <pinref part="VOLTAGE4" gate="-2" pin="S"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="30.48" y1="93.98" x2="33.02" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="R26" gate="G$1" pin="2"/>
+<wire x1="27.94" y1="93.98" x2="30.48" y2="93.98" width="0.1524" layer="91"/>
+<junction x="30.48" y="93.98"/>
 </segment>
 <segment>
 <pinref part="U$2" gate="G$1" pin="DGND"/>
@@ -4024,6 +4202,11 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 <wire x1="147.32" y1="162.56" x2="144.78" y2="162.56" width="0.1524" layer="91"/>
 <pinref part="U$12" gate="G$1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="GND53" gate="1" pin="GND"/>
+<wire x1="127" y1="200.66" x2="129.54" y2="200.66" width="0.1524" layer="91"/>
+<pinref part="S1" gate="1" pin="S"/>
+</segment>
 </net>
 <net name="CUR_SENSE_1" class="0">
 <segment>
@@ -4112,8 +4295,12 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 <net name="VOLT_SENSE_1" class="0">
 <segment>
 <pinref part="VOLTAGE1" gate="-1" pin="S"/>
-<wire x1="33.02" y1="127" x2="30.48" y2="127" width="0.1524" layer="91"/>
-<label x="30.48" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="33.02" y1="127" x2="17.78" y2="127" width="0.1524" layer="91"/>
+<label x="15.24" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="R29" gate="G$1" pin="1"/>
+<wire x1="17.78" y1="127" x2="15.24" y2="127" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="124.46" x2="17.78" y2="127" width="0.1524" layer="91"/>
+<junction x="17.78" y="127"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="VINA+"/>
@@ -4124,8 +4311,12 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 <net name="VOLT_SENSE_2" class="0">
 <segment>
 <pinref part="VOLTAGE2" gate="-1" pin="S"/>
-<wire x1="33.02" y1="116.84" x2="30.48" y2="116.84" width="0.1524" layer="91"/>
-<label x="30.48" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="33.02" y1="116.84" x2="17.78" y2="116.84" width="0.1524" layer="91"/>
+<label x="15.24" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="R28" gate="G$1" pin="1"/>
+<wire x1="17.78" y1="116.84" x2="15.24" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="114.3" x2="17.78" y2="116.84" width="0.1524" layer="91"/>
+<junction x="17.78" y="116.84"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="VINB+"/>
@@ -4136,8 +4327,12 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 <net name="VOLT_SENSE_3" class="0">
 <segment>
 <pinref part="VOLTAGE3" gate="-1" pin="S"/>
-<wire x1="33.02" y1="106.68" x2="30.48" y2="106.68" width="0.1524" layer="91"/>
-<label x="30.48" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="33.02" y1="106.68" x2="17.78" y2="106.68" width="0.1524" layer="91"/>
+<label x="15.24" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="R27" gate="G$1" pin="1"/>
+<wire x1="17.78" y1="106.68" x2="15.24" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="104.14" x2="17.78" y2="106.68" width="0.1524" layer="91"/>
+<junction x="17.78" y="106.68"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="VINA+"/>
@@ -4148,8 +4343,12 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 <net name="VOLT_SENSE_4" class="0">
 <segment>
 <pinref part="VOLTAGE4" gate="-1" pin="S"/>
-<wire x1="33.02" y1="96.52" x2="30.48" y2="96.52" width="0.1524" layer="91"/>
-<label x="30.48" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="33.02" y1="96.52" x2="17.78" y2="96.52" width="0.1524" layer="91"/>
+<label x="15.24" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="R26" gate="G$1" pin="1"/>
+<wire x1="17.78" y1="96.52" x2="15.24" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="96.52" x2="17.78" y2="93.98" width="0.1524" layer="91"/>
+<junction x="17.78" y="96.52"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="VINB+"/>
@@ -4158,11 +4357,6 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 </segment>
 </net>
 <net name="SPI_CLK" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="CLK"/>
-<pinref part="U$12" gate="G$1" pin="B1"/>
-<wire x1="116.84" y1="175.26" x2="106.68" y2="175.26" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="D13"/>
 <wire x1="170.18" y1="185.42" x2="167.64" y2="185.42" width="0.1524" layer="91"/>
@@ -4176,11 +4370,6 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 </net>
 <net name="SPI_MISO" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="DOUT"/>
-<pinref part="U$12" gate="G$1" pin="B2"/>
-<wire x1="116.84" y1="172.72" x2="106.68" y2="172.72" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$1" pin="D12"/>
 <wire x1="142.24" y1="185.42" x2="139.7" y2="185.42" width="0.1524" layer="91"/>
 <label x="139.7" y="185.42" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -4193,11 +4382,6 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 </net>
 <net name="SPI_MOSI" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="DIN"/>
-<pinref part="U$12" gate="G$1" pin="B3"/>
-<wire x1="106.68" y1="170.18" x2="116.84" y2="170.18" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U$1" gate="G$1" pin="D11"/>
 <wire x1="142.24" y1="187.96" x2="139.7" y2="187.96" width="0.1524" layer="91"/>
 <label x="139.7" y="187.96" size="1.27" layer="95" rot="R180" xref="yes"/>
@@ -4209,11 +4393,6 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 </segment>
 </net>
 <net name="SPI_CS" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="!CS!/SHDN"/>
-<pinref part="U$12" gate="G$1" pin="B4"/>
-<wire x1="116.84" y1="167.64" x2="106.68" y2="167.64" width="0.1524" layer="91"/>
-</segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="D10(TX2)"/>
 <wire x1="142.24" y1="190.5" x2="139.7" y2="190.5" width="0.1524" layer="91"/>
@@ -4842,6 +5021,41 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 <pinref part="U$1" gate="G$1" pin="AGND"/>
 <wire x1="170.18" y1="215.9" x2="167.64" y2="215.9" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="CLK"/>
+<pinref part="U$12" gate="G$1" pin="B1"/>
+<wire x1="106.68" y1="175.26" x2="116.84" y2="175.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$18" class="0">
+<segment>
+<pinref part="U$12" gate="G$1" pin="B2"/>
+<pinref part="U$2" gate="G$1" pin="DOUT"/>
+<wire x1="116.84" y1="172.72" x2="106.68" y2="172.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="DIN"/>
+<pinref part="U$12" gate="G$1" pin="B3"/>
+<wire x1="106.68" y1="170.18" x2="116.84" y2="170.18" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$20" class="0">
+<segment>
+<pinref part="U$12" gate="G$1" pin="B4"/>
+<pinref part="U$2" gate="G$1" pin="!CS!/SHDN"/>
+<wire x1="116.84" y1="167.64" x2="106.68" y2="167.64" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$21" class="0">
+<segment>
+<pinref part="S1" gate="1" pin="P"/>
+<pinref part="U$1" gate="G$1" pin="D6"/>
+<wire x1="139.7" y1="200.66" x2="142.24" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
