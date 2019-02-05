@@ -3633,6 +3633,34 @@ Schurter 0751.0110 Brass Fuse Clip
 </device>
 </devices>
 </deviceset>
+<deviceset name="RT424012">
+<description>TE/Schrack Double Pull Double Throw Relay 12VDC
+&lt;br&gt;
+&lt;br&gt;
+&lt;a href="https://www.mouser.com/datasheet/2/418/NG_DS_RT2_1014-736201.pdf"&gt;Datasheet&lt;/a&gt;
+&lt;br&gt;
+&lt;a href="https://www.te.com/usa-en/product-6-1393243-3.html"&gt;Product Page&lt;/a&gt;</description>
+<gates>
+<gate name="G$1" symbol="RELAY_DPDT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RELAY_DPDT">
+<connects>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="COIL+" pad="COIL+"/>
+<connect gate="G$1" pin="COIL-" pad="COIL-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 <deviceset name="RT424009">
 <description>TE/Schrack Double Pull Double Throw Relay 9VDC
 &lt;br&gt;
@@ -4696,14 +4724,14 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <part name="U$3" library="HyTechDevices" deviceset="XBEE" device=""/>
 <part name="ADXL345_BREAKOUT" library="HyTechDevices" deviceset="M09" device=""/>
 <part name="5AFUSE" library="HyTechDevices" deviceset="FUSE" device="_MINIBLADE"/>
-<part name="IMD_SHUTDOWN" library="HyTechDevices" deviceset="RT424009" device=""/>
+<part name="IMD_SHUTDOWN_RLY" library="HyTechDevices" deviceset="RT424009" device=""/>
 <part name="GND3" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="LED1" library="HyTechDevices" deviceset="LED" device="-0805" value="White"/>
 <part name="LED3" library="HyTechDevices" deviceset="LED" device="-0805" value="Green"/>
 <part name="LED5" library="HyTechDevices" deviceset="LED" device="-0805" value="Yellow"/>
 <part name="R14" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2k"/>
 <part name="GND6" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="IMD_SHUTDOWN1" library="HyTechDevices" deviceset="RT424009" device=""/>
+<part name="BMS_SHUTDOWN_RLY" library="HyTechDevices" deviceset="RT424012" device=""/>
 <part name="GND19" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="R17" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="20k"/>
 <part name="LED7" library="HyTechDevices" deviceset="LED" device="-0805" value="Green"/>
@@ -4717,7 +4745,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <part name="D6" library="HyTechDevices" deviceset="DIODE" device="0805" value="TS4148 RYG"/>
 <part name="S1" library="HyTechDevices" deviceset="BTN_10-XX" device="SMD"/>
 <part name="GND2" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="SOFTWARE_SHUTOFF" library="HyTechDevices" deviceset="G5LE" device=""/>
+<part name="SOFTWARE_SHUTDOWN_RLY" library="HyTechDevices" deviceset="G5LE" device=""/>
 <part name="P+23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="D7" library="HyTechDevices" deviceset="DIODE" device="0805" value="TS4148 RYG"/>
 <part name="LED17" library="HyTechDevices" deviceset="LED" device="-0805" value="Red"/>
@@ -5008,6 +5036,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <part name="R62" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="12k"/>
 <part name="D22" library="HyTechDevices" deviceset="DIODE" device="0805" value="TS4148 RYG"/>
 <part name="GND21" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="D23" library="HyTechDevices" deviceset="DIODE" device="0805" value="TS4148 RYG"/>
 </parts>
 <sheets>
 <sheet>
@@ -5088,6 +5117,9 @@ optional filter circuit to left
 WARNING: INSTALL ONLY
 JUMPERS (J5-J6) OR FILTER
 CIRCUIT</text>
+<text x="53.34" y="195.58" size="2.032" layer="97">D23 is optional depending
+on feedback from TE w.r.t.
+coil voltage limits</text>
 </plain>
 <instances>
 <instance part="X1" gate="-13" x="20.32" y="129.54" smashed="yes" rot="MR0">
@@ -5228,7 +5260,7 @@ CIRCUIT</text>
 <attribute name="NAME" x="27.94" y="120.65" size="1.27" layer="95"/>
 <attribute name="VALUE" x="35.56" y="120.65" size="1.27" layer="96"/>
 </instance>
-<instance part="IMD_SHUTDOWN" gate="G$1" x="22.86" y="218.44" smashed="yes" rot="R270">
+<instance part="IMD_SHUTDOWN_RLY" gate="G$1" x="22.86" y="218.44" smashed="yes" rot="R270">
 <attribute name="VALUE" x="25.4" y="185.42" size="1.778" layer="94" align="bottom-center"/>
 </instance>
 <instance part="GND3" gate="1" x="218.44" y="231.14" smashed="yes" rot="R90">
@@ -5253,7 +5285,7 @@ CIRCUIT</text>
 <instance part="GND6" gate="1" x="78.74" y="180.34" smashed="yes">
 <attribute name="VALUE" x="76.2" y="177.8" size="1.778" layer="96"/>
 </instance>
-<instance part="IMD_SHUTDOWN1" gate="G$1" x="104.14" y="215.9" smashed="yes" rot="R270">
+<instance part="BMS_SHUTDOWN_RLY" gate="G$1" x="104.14" y="215.9" smashed="yes" rot="R270">
 <attribute name="VALUE" x="106.68" y="182.88" size="1.778" layer="94" align="bottom-center"/>
 </instance>
 <instance part="GND19" gate="1" x="119.38" y="195.58" smashed="yes">
@@ -5303,7 +5335,7 @@ CIRCUIT</text>
 <instance part="GND2" gate="1" x="228.6" y="261.62" smashed="yes" rot="R90">
 <attribute name="VALUE" x="231.14" y="259.08" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SOFTWARE_SHUTOFF" gate="G$1" x="175.26" y="203.2" smashed="yes" rot="R270"/>
+<instance part="SOFTWARE_SHUTDOWN_RLY" gate="G$1" x="175.26" y="203.2" smashed="yes" rot="R270"/>
 <instance part="P+23" gate="1" x="160.02" y="210.82" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="165.1" y="213.36" size="1.778" layer="96" rot="MR0"/>
 </instance>
@@ -6203,8 +6235,8 @@ CIRCUIT</text>
 <attribute name="NAME" x="194.31" y="232.6386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="194.31" y="227.838" size="1.778" layer="96"/>
 </instance>
-<instance part="GND13" gate="1" x="38.1" y="198.12" smashed="yes">
-<attribute name="VALUE" x="35.56" y="195.58" size="1.778" layer="96"/>
+<instance part="GND13" gate="1" x="45.72" y="203.2" smashed="yes" rot="R180">
+<attribute name="VALUE" x="48.26" y="205.74" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="D15" gate="1" x="7.62" y="213.36" smashed="yes" rot="MR0">
 <attribute name="NAME" x="11.43" y="215.1126" size="1.778" layer="95" rot="MR0"/>
@@ -6298,6 +6330,10 @@ CIRCUIT</text>
 </instance>
 <instance part="GND21" gate="1" x="292.1" y="68.58" smashed="yes" rot="R90">
 <attribute name="VALUE" x="294.64" y="66.04" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="D23" gate="1" x="40.64" y="200.66" smashed="yes">
+<attribute name="NAME" x="36.83" y="202.4126" size="1.778" layer="95"/>
+<attribute name="VALUE" x="36.83" y="197.0786" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -6869,12 +6905,7 @@ CIRCUIT</text>
 <wire x1="228.6" y1="15.24" x2="226.06" y2="15.24" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IMD_SHUTDOWN" gate="G$1" pin="4"/>
-<pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="38.1" y1="200.66" x2="33.02" y2="200.66" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="IMD_SHUTDOWN1" gate="G$1" pin="4"/>
+<pinref part="BMS_SHUTDOWN_RLY" gate="G$1" pin="4"/>
 <pinref part="GND19" gate="1" pin="GND"/>
 <wire x1="119.38" y1="198.12" x2="114.3" y2="198.12" width="0.1524" layer="91"/>
 </segment>
@@ -6900,6 +6931,11 @@ CIRCUIT</text>
 <pinref part="GND21" gate="1" pin="GND"/>
 <wire x1="289.56" y1="68.58" x2="287.02" y2="68.58" width="0.1524" layer="91"/>
 <junction x="287.02" y="68.58"/>
+</segment>
+<segment>
+<pinref part="D23" gate="1" pin="C"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+<wire x1="43.18" y1="200.66" x2="45.72" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -6980,7 +7016,7 @@ CIRCUIT</text>
 <segment>
 <pinref part="D7" gate="1" pin="C"/>
 <wire x1="175.26" y1="210.82" x2="170.18" y2="210.82" width="0.1524" layer="91"/>
-<pinref part="SOFTWARE_SHUTOFF" gate="G$1" pin="COIL-"/>
+<pinref part="SOFTWARE_SHUTDOWN_RLY" gate="G$1" pin="COIL-"/>
 <wire x1="170.18" y1="210.82" x2="170.18" y2="198.12" width="0.1524" layer="91"/>
 <pinref part="P+23" gate="1" pin="+12V"/>
 <wire x1="162.56" y1="210.82" x2="170.18" y2="210.82" width="0.1524" layer="91"/>
@@ -7113,9 +7149,9 @@ CIRCUIT</text>
 </net>
 <net name="SHUTDOWN_C" class="0">
 <segment>
-<pinref part="IMD_SHUTDOWN1" gate="G$1" pin="5"/>
+<pinref part="BMS_SHUTDOWN_RLY" gate="G$1" pin="5"/>
 <wire x1="114.3" y1="187.96" x2="129.54" y2="187.96" width="0.1524" layer="91"/>
-<pinref part="SOFTWARE_SHUTOFF" gate="G$1" pin="P"/>
+<pinref part="SOFTWARE_SHUTDOWN_RLY" gate="G$1" pin="P"/>
 <label x="139.7" y="187.96" size="1.778" layer="95"/>
 <pinref part="R17" gate="G$1" pin="1"/>
 <wire x1="129.54" y1="187.96" x2="170.18" y2="187.96" width="0.1524" layer="91"/>
@@ -7166,7 +7202,7 @@ CIRCUIT</text>
 <pinref part="D6" gate="1" pin="C"/>
 <wire x1="27.94" y1="226.06" x2="38.1" y2="226.06" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="226.06" x2="38.1" y2="213.36" width="0.1524" layer="91"/>
-<pinref part="IMD_SHUTDOWN" gate="G$1" pin="COIL+"/>
+<pinref part="IMD_SHUTDOWN_RLY" gate="G$1" pin="COIL+"/>
 <wire x1="38.1" y1="213.36" x2="33.02" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="213.36" x2="40.64" y2="213.36" width="0.1524" layer="91"/>
 <junction x="38.1" y="213.36"/>
@@ -7200,9 +7236,9 @@ CIRCUIT</text>
 </net>
 <net name="BMS_PWR_STEP" class="0">
 <segment>
-<pinref part="IMD_SHUTDOWN1" gate="G$1" pin="3"/>
+<pinref part="BMS_SHUTDOWN_RLY" gate="G$1" pin="3"/>
 <wire x1="96.52" y1="200.66" x2="99.06" y2="200.66" width="0.1524" layer="91"/>
-<pinref part="IMD_SHUTDOWN1" gate="G$1" pin="COIL-"/>
+<pinref part="BMS_SHUTDOWN_RLY" gate="G$1" pin="COIL-"/>
 <wire x1="96.52" y1="223.52" x2="96.52" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="96.52" y1="210.82" x2="96.52" y2="200.66" width="0.1524" layer="91"/>
 <wire x1="99.06" y1="210.82" x2="96.52" y2="210.82" width="0.1524" layer="91"/>
@@ -7215,8 +7251,8 @@ CIRCUIT</text>
 </net>
 <net name="SHUTDOWN_B" class="0">
 <segment>
-<pinref part="IMD_SHUTDOWN1" gate="G$1" pin="6"/>
-<pinref part="IMD_SHUTDOWN" gate="G$1" pin="5"/>
+<pinref part="BMS_SHUTDOWN_RLY" gate="G$1" pin="6"/>
+<pinref part="IMD_SHUTDOWN_RLY" gate="G$1" pin="5"/>
 <wire x1="33.02" y1="190.5" x2="53.34" y2="190.5" width="0.1524" layer="91"/>
 <label x="63.5" y="190.5" size="1.778" layer="95"/>
 <pinref part="R14" gate="G$1" pin="1"/>
@@ -7393,10 +7429,10 @@ CIRCUIT</text>
 </net>
 <net name="IMD_PWR_STEP" class="0">
 <segment>
-<pinref part="IMD_SHUTDOWN" gate="G$1" pin="3"/>
+<pinref part="IMD_SHUTDOWN_RLY" gate="G$1" pin="3"/>
 <wire x1="17.78" y1="203.2" x2="15.24" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="203.2" x2="15.24" y2="213.36" width="0.1524" layer="91"/>
-<pinref part="IMD_SHUTDOWN" gate="G$1" pin="COIL-"/>
+<pinref part="IMD_SHUTDOWN_RLY" gate="G$1" pin="COIL-"/>
 <wire x1="15.24" y1="213.36" x2="17.78" y2="213.36" width="0.1524" layer="91"/>
 <wire x1="15.24" y1="226.06" x2="15.24" y2="213.36" width="0.1524" layer="91"/>
 <junction x="15.24" y="213.36"/>
@@ -7438,7 +7474,7 @@ CIRCUIT</text>
 </net>
 <net name="SHUTDOWN_A" class="0">
 <segment>
-<pinref part="IMD_SHUTDOWN" gate="G$1" pin="6"/>
+<pinref part="IMD_SHUTDOWN_RLY" gate="G$1" pin="6"/>
 <label x="15.24" y="193.04" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="17.78" y1="193.04" x2="15.24" y2="193.04" width="0.1524" layer="91"/>
 </segment>
@@ -7490,7 +7526,7 @@ CIRCUIT</text>
 </net>
 <net name="SHUTDOWN_D" class="0">
 <segment>
-<pinref part="SOFTWARE_SHUTOFF" gate="G$1" pin="S"/>
+<pinref part="SOFTWARE_SHUTDOWN_RLY" gate="G$1" pin="S"/>
 <wire x1="185.42" y1="185.42" x2="190.5" y2="185.42" width="0.1524" layer="91"/>
 <pinref part="R31" gate="G$1" pin="1"/>
 <wire x1="190.5" y1="185.42" x2="193.04" y2="185.42" width="0.1524" layer="91"/>
@@ -8898,7 +8934,7 @@ CIRCUIT</text>
 </net>
 <net name="N$27" class="0">
 <segment>
-<pinref part="SOFTWARE_SHUTOFF" gate="G$1" pin="COIL+"/>
+<pinref part="SOFTWARE_SHUTDOWN_RLY" gate="G$1" pin="COIL+"/>
 <pinref part="D7" gate="1" pin="A"/>
 <wire x1="182.88" y1="210.82" x2="185.42" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="185.42" y1="210.82" x2="185.42" y2="198.12" width="0.1524" layer="91"/>
@@ -9285,7 +9321,7 @@ CIRCUIT</text>
 </net>
 <net name="BMS_OK_SW" class="0">
 <segment>
-<pinref part="IMD_SHUTDOWN1" gate="G$1" pin="COIL+"/>
+<pinref part="BMS_SHUTDOWN_RLY" gate="G$1" pin="COIL+"/>
 <wire x1="114.3" y1="210.82" x2="119.38" y2="210.82" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="210.82" x2="119.38" y2="223.52" width="0.1524" layer="91"/>
 <pinref part="D5" gate="1" pin="C"/>
@@ -9395,6 +9431,13 @@ CIRCUIT</text>
 <pinref part="R61" gate="G$1" pin="1"/>
 <pinref part="D22" gate="1" pin="C"/>
 <wire x1="287.02" y1="30.48" x2="287.02" y2="27.94" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$60" class="0">
+<segment>
+<pinref part="IMD_SHUTDOWN_RLY" gate="G$1" pin="4"/>
+<pinref part="D23" gate="1" pin="A"/>
+<wire x1="33.02" y1="200.66" x2="35.56" y2="200.66" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
