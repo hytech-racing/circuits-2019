@@ -2260,7 +2260,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="C2_B" library="HyTechDevices" deviceset="CAP" device="0805" value="1uF"/>
 <part name="C1_B" library="HyTechDevices" deviceset="CAP" device="0805" value="1uF"/>
 <part name="RB1_B" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1K2"/>
-<part name="RB2_B" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="800R"/>
+<part name="RB2_B" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="806R"/>
 <part name="R1_B" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100R"/>
 <part name="U$2" library="HyTechDevices" deviceset="LTC6804-2" device=""/>
 <part name="C4_B" library="HyTechDevices" deviceset="CAP" device="0805" value="10nF"/>
@@ -2335,7 +2335,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="C2_A" library="HyTechDevices" deviceset="CAP" device="0805" value="1uF"/>
 <part name="C1_A" library="HyTechDevices" deviceset="CAP" device="0805" value="1uF"/>
 <part name="RB1_A" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1K2"/>
-<part name="RB2_A" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="800R"/>
+<part name="RB2_A" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="806R"/>
 <part name="R1_A" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100R"/>
 <part name="U$1" library="HyTechDevices" deviceset="LTC6804-2" device=""/>
 <part name="C4_A" library="HyTechDevices" deviceset="CAP" device="0805" value="10nF"/>
@@ -2404,7 +2404,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY56" library="supply1" deviceset="V-" device=""/>
 <part name="SUPPLY57" library="supply1" deviceset="V-" device=""/>
 <part name="SUPPLY58" library="supply1" deviceset="V-" device=""/>
-<part name="J" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
+<part name="J" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="Jumper"/>
 <part name="SUPPLY39" library="supply1" deviceset="V-" device=""/>
 <part name="SUPPLY59" library="supply2" deviceset="V-" device=""/>
 <part name="SUPPLY60" library="supply2" deviceset="V-" device=""/>
@@ -3059,7 +3059,7 @@ to set chip address</text>
 </instance>
 <instance part="J" gate="G$1" x="-172.72" y="276.86" smashed="yes">
 <attribute name="NAME" x="-176.53" y="278.3586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-176.53" y="273.558" size="1.778" layer="96"/>
+<attribute name="VALUE" x="-173.99" y="273.558" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY39" gate="1" x="-101.6" y="134.62" smashed="yes">
 <attribute name="VALUE" x="-101.6" y="132.08" size="1.778" layer="96" rot="R180"/>
