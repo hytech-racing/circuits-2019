@@ -3698,7 +3698,6 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 <part name="P+4" library="supply1" deviceset="+12V" device=""/>
 <part name="D1" library="HyTechDevices" deviceset="DIODE" device="DO-41" value="DIODE"/>
 <part name="C1" library="HyTechDevices" deviceset="CAP" device="" value="180µF"/>
-<part name="D2" library="HyTechDevices" deviceset="DIODE" device="0805"/>
 <part name="R27" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="120"/>
 <part name="GND13" library="HyTech 2016" deviceset="GND" device=""/>
 <part name="U$7" library="HyTechDevices" deviceset="MCP2551" device=""/>
@@ -3787,6 +3786,7 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 <part name="R6" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="43k"/>
 <part name="R7" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="12k"/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
+<part name="D2" library="HyTechDevices" deviceset="DIODE" device="0805" value="TS4148 RYG"/>
 </parts>
 <sheets>
 <sheet>
@@ -3976,10 +3976,6 @@ corner frequency = fclk / 100 = 1 kHz</text>
 <instance part="C1" gate="G$1" x="223.52" y="-76.2" smashed="yes">
 <attribute name="NAME" x="225.044" y="-73.279" size="1.778" layer="95"/>
 <attribute name="VALUE" x="225.044" y="-78.359" size="1.778" layer="96"/>
-</instance>
-<instance part="D2" gate="1" x="276.86" y="-78.74" smashed="yes" rot="R180">
-<attribute name="NAME" x="283.21" y="-80.4926" size="1.778" layer="95" rot="R180"/>
-<attribute name="VALUE" x="280.67" y="-75.1586" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R27" gate="G$1" x="25.4" y="-228.6" smashed="yes" rot="MR90">
 <attribute name="NAME" x="26.8986" y="-232.41" size="1.778" layer="95" rot="MR90"/>
@@ -4360,6 +4356,10 @@ corner frequency = fclk / 100 = 1 kHz</text>
 </instance>
 <instance part="GND20" gate="1" x="38.1" y="-99.06" smashed="yes" rot="R270">
 <attribute name="VALUE" x="35.56" y="-96.52" size="1.778" layer="96" rot="R270"/>
+</instance>
+<instance part="D2" gate="1" x="276.86" y="-78.74" smashed="yes" rot="R180">
+<attribute name="NAME" x="280.67" y="-80.4926" size="1.778" layer="95" rot="R180"/>
+<attribute name="VALUE" x="285.75" y="-75.1586" size="1.778" layer="96" rot="R180"/>
 </instance>
 </instances>
 <busses>
@@ -4792,13 +4792,13 @@ corner frequency = fclk / 100 = 1 kHz</text>
 </net>
 <net name="SHUTDOWN7" class="0">
 <segment>
-<pinref part="D2" gate="1" pin="C"/>
 <wire x1="266.7" y1="-78.74" x2="266.7" y2="-72.26" width="0.1524" layer="91"/>
-<wire x1="274.32" y1="-78.74" x2="266.7" y2="-78.74" width="0.1524" layer="91"/>
 <label x="264.16" y="-78.74" size="1.778" layer="95" rot="R180" xref="yes"/>
 <wire x1="266.7" y1="-78.74" x2="264.16" y2="-78.74" width="0.1524" layer="91"/>
-<junction x="266.7" y="-78.74"/>
 <pinref part="U$4" gate="G$1" pin="COIL+"/>
+<pinref part="D2" gate="1" pin="C"/>
+<wire x1="274.32" y1="-78.74" x2="266.7" y2="-78.74" width="0.1524" layer="91"/>
+<junction x="266.7" y="-78.74"/>
 </segment>
 <segment>
 <pinref part="INTERLOCK" gate="-2" pin="S"/>
@@ -5212,9 +5212,9 @@ corner frequency = fclk / 100 = 1 kHz</text>
 </net>
 <net name="DISCHARGE_RELAY_GND" class="0">
 <segment>
-<pinref part="D2" gate="1" pin="A"/>
 <wire x1="281.94" y1="-78.74" x2="287.02" y2="-78.74" width="0.1524" layer="91"/>
 <label x="287.02" y="-78.74" size="1.778" layer="95" xref="yes"/>
+<pinref part="D2" gate="1" pin="A"/>
 </segment>
 <segment>
 <pinref part="RELAYS" gate="-2" pin="S"/>
