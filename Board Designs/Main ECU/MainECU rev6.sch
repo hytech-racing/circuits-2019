@@ -5036,7 +5036,9 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <part name="R62" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="12k"/>
 <part name="D22" library="HyTechDevices" deviceset="DIODE" device="0805" value="TS4148 RYG"/>
 <part name="GND21" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="D23" library="HyTechDevices" deviceset="DIODE" device="0805" value="TS4148 RYG"/>
+<part name="J7" library="HyTechDevices" deviceset="JUMPER" device=""/>
+<part name="J8" library="HyTechDevices" deviceset="JUMPER" device=""/>
+<part name="R63" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
 </parts>
 <sheets>
 <sheet>
@@ -5099,7 +5101,7 @@ Motor Controller</text>
 <text x="358.14" y="205.74" size="1.016" layer="97">47nF for ~10Hz filter (11.3Hz)</text>
 <text x="358.14" y="172.72" size="1.016" layer="97">47nF for ~10Hz filter (11.3Hz)</text>
 <text x="33.02" y="76.2" size="1.27" layer="96">12V for Dash</text>
-<text x="81.28" y="15.24" size="2.032" layer="97">Dash 5, 6, 7, 8 Can be inputs or outputs
+<text x="60.96" y="15.24" size="2.032" layer="97">Dash 5, 6, 7, 8 Can be inputs or outputs
 For input, solder jumper.
 For output, solder resistor (R40-R43).</text>
 <text x="33.02" y="88.9" size="1.016" layer="95">Pedals 5V</text>
@@ -5107,7 +5109,7 @@ For output, solder resistor (R40-R43).</text>
 <text x="462.28" y="139.7" size="1.016" layer="97">470pF for ~1kHz filter (1.13kHz)</text>
 <text x="119.38" y="154.94" size="2.032" layer="97">Install resistors or LEDs here
 to limit current or drop voltage</text>
-<text x="81.28" y="2.54" size="2.032" layer="97">WARNING: INSTALL ONLY JUMPER (J1-J4) OR
+<text x="60.96" y="2.54" size="2.032" layer="97">WARNING: INSTALL ONLY JUMPER (J1-J4) OR
 RESISTOR (R40-R43) ON DASH CHANNELS 5-8.
 DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <text x="568.96" y="76.2" size="1.778" layer="97">Alternate stocked: NCP18XV103J0SRB</text>
@@ -5117,9 +5119,16 @@ optional filter circuit to left
 WARNING: INSTALL ONLY
 JUMPERS (J5-J6) OR FILTER
 CIRCUIT</text>
-<text x="53.34" y="195.58" size="2.032" layer="97">D23 is optional depending
+<text x="53.34" y="195.58" size="2.032" layer="97">R63 is optional depending
 on feedback from TE w.r.t.
 coil voltage limits</text>
+<text x="111.76" y="33.02" size="2.032" layer="97">To configure Dash 11 or 12 as 5V
+input/output, solder jumper (J5 or J6).
+If configuring as 12V input, do not
+solder jumper.</text>
+<text x="111.76" y="20.32" size="2.032" layer="97">WARNING: DO NOT INSTALL
+JUMPER (J5 OR J6) IF CONNECTING
+CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 </plain>
 <instances>
 <instance part="X1" gate="-13" x="20.32" y="129.54" smashed="yes" rot="MR0">
@@ -5503,18 +5512,18 @@ coil voltage limits</text>
 <instance part="GND28" gate="1" x="546.1" y="86.36" smashed="yes" rot="R270">
 <attribute name="VALUE" x="543.56" y="88.9" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="U$18" gate="G$1" x="330.2" y="149.86" smashed="yes">
-<attribute name="NAME" x="332.74" y="149.86" size="1.778" layer="95"/>
-<attribute name="VALUE" x="332.74" y="124.46" size="1.778" layer="95"/>
+<instance part="U$18" gate="G$1" x="330.2" y="152.4" smashed="yes">
+<attribute name="NAME" x="332.74" y="152.4" size="1.778" layer="95"/>
+<attribute name="VALUE" x="332.74" y="127" size="1.778" layer="95"/>
 </instance>
-<instance part="GND29" gate="1" x="358.14" y="127" smashed="yes">
-<attribute name="VALUE" x="355.6" y="124.46" size="1.778" layer="96"/>
+<instance part="GND29" gate="1" x="358.14" y="129.54" smashed="yes">
+<attribute name="VALUE" x="355.6" y="127" size="1.778" layer="96"/>
 </instance>
-<instance part="P+13" gate="1" x="365.76" y="144.78" smashed="yes" rot="R270">
-<attribute name="VALUE" x="360.68" y="147.32" size="1.778" layer="96"/>
+<instance part="P+13" gate="1" x="365.76" y="147.32" smashed="yes" rot="R270">
+<attribute name="VALUE" x="360.68" y="149.86" size="1.778" layer="96"/>
 </instance>
-<instance part="GND30" gate="1" x="350.52" y="154.94" smashed="yes">
-<attribute name="VALUE" x="347.98" y="152.4" size="1.778" layer="96"/>
+<instance part="GND30" gate="1" x="350.52" y="157.48" smashed="yes">
+<attribute name="VALUE" x="347.98" y="154.94" size="1.778" layer="96"/>
 </instance>
 <instance part="ACC2_PU" gate="G$1" x="281.94" y="223.52" smashed="yes" rot="MR0">
 <attribute name="NAME" x="285.75" y="225.0186" size="1.778" layer="95" rot="MR0"/>
@@ -5561,55 +5570,55 @@ coil voltage limits</text>
 <instance part="P+24" gate="1" x="266.7" y="223.52" smashed="yes" rot="MR270">
 <attribute name="VALUE" x="271.78" y="226.06" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="R5" gate="G$1" x="274.32" y="127" smashed="yes" rot="R90">
-<attribute name="NAME" x="272.8214" y="123.19" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="277.622" y="123.19" size="1.778" layer="96" rot="R90"/>
+<instance part="R5" gate="G$1" x="274.32" y="129.54" smashed="yes" rot="R90">
+<attribute name="NAME" x="272.8214" y="125.73" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="277.622" y="125.73" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R6" gate="G$1" x="274.32" y="149.86" smashed="yes" rot="R90">
-<attribute name="NAME" x="272.8214" y="146.05" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="277.622" y="146.05" size="1.778" layer="96" rot="R90"/>
+<instance part="R6" gate="G$1" x="274.32" y="152.4" smashed="yes" rot="R90">
+<attribute name="NAME" x="272.8214" y="148.59" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="277.622" y="148.59" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R7" gate="G$1" x="281.94" y="127" smashed="yes" rot="R90">
-<attribute name="NAME" x="280.4414" y="123.19" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="285.242" y="123.19" size="1.778" layer="96" rot="R90"/>
+<instance part="R7" gate="G$1" x="281.94" y="129.54" smashed="yes" rot="R90">
+<attribute name="NAME" x="280.4414" y="125.73" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="285.242" y="125.73" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R8" gate="G$1" x="281.94" y="149.86" smashed="yes" rot="R90">
-<attribute name="NAME" x="280.4414" y="146.05" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="285.242" y="146.05" size="1.778" layer="96" rot="R90"/>
+<instance part="R8" gate="G$1" x="281.94" y="152.4" smashed="yes" rot="R90">
+<attribute name="NAME" x="280.4414" y="148.59" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="285.242" y="148.59" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R15" gate="G$1" x="289.56" y="127" smashed="yes" rot="R90">
-<attribute name="NAME" x="288.0614" y="123.19" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="292.862" y="123.19" size="1.778" layer="96" rot="R90"/>
+<instance part="R15" gate="G$1" x="289.56" y="129.54" smashed="yes" rot="R90">
+<attribute name="NAME" x="288.0614" y="125.73" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="292.862" y="125.73" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R22" gate="G$1" x="289.56" y="149.86" smashed="yes" rot="R90">
-<attribute name="NAME" x="288.0614" y="146.05" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="292.862" y="146.05" size="1.778" layer="96" rot="R90"/>
+<instance part="R22" gate="G$1" x="289.56" y="152.4" smashed="yes" rot="R90">
+<attribute name="NAME" x="288.0614" y="148.59" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="292.862" y="148.59" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="GND48" gate="1" x="304.8" y="152.4" smashed="yes">
-<attribute name="VALUE" x="302.26" y="149.86" size="1.778" layer="96"/>
+<instance part="GND48" gate="1" x="304.8" y="154.94" smashed="yes">
+<attribute name="VALUE" x="302.26" y="152.4" size="1.778" layer="96"/>
 </instance>
-<instance part="R23" gate="G$1" x="297.18" y="127" smashed="yes" rot="R90">
-<attribute name="NAME" x="295.6814" y="123.19" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="300.482" y="123.19" size="1.778" layer="96" rot="R90"/>
+<instance part="R23" gate="G$1" x="297.18" y="129.54" smashed="yes" rot="R90">
+<attribute name="NAME" x="295.6814" y="125.73" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="300.482" y="125.73" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R29" gate="G$1" x="297.18" y="149.86" smashed="yes" rot="R90">
-<attribute name="NAME" x="295.6814" y="146.05" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="300.482" y="146.05" size="1.778" layer="96" rot="R90"/>
+<instance part="R29" gate="G$1" x="297.18" y="152.4" smashed="yes" rot="R90">
+<attribute name="NAME" x="295.6814" y="148.59" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="300.482" y="148.59" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="D1" gate="1" x="274.32" y="109.22" smashed="yes" rot="R90">
-<attribute name="NAME" x="272.5674" y="105.41" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="277.9014" y="105.41" size="1.778" layer="96" rot="R90"/>
+<instance part="D1" gate="1" x="274.32" y="111.76" smashed="yes" rot="R90">
+<attribute name="NAME" x="272.5674" y="107.95" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="277.9014" y="107.95" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="D2" gate="1" x="281.94" y="109.22" smashed="yes" rot="R90">
-<attribute name="NAME" x="280.1874" y="105.41" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="285.5214" y="105.41" size="1.778" layer="96" rot="R90"/>
+<instance part="D2" gate="1" x="281.94" y="111.76" smashed="yes" rot="R90">
+<attribute name="NAME" x="280.1874" y="107.95" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="285.5214" y="107.95" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="D3" gate="1" x="289.56" y="109.22" smashed="yes" rot="R90">
-<attribute name="NAME" x="287.8074" y="105.41" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="293.1414" y="105.41" size="1.778" layer="96" rot="R90"/>
+<instance part="D3" gate="1" x="289.56" y="111.76" smashed="yes" rot="R90">
+<attribute name="NAME" x="287.8074" y="107.95" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="293.1414" y="107.95" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="P+27" gate="1" x="297.18" y="111.76" smashed="yes" rot="R180">
-<attribute name="VALUE" x="299.72" y="116.84" size="1.778" layer="96" rot="R270"/>
+<instance part="P+27" gate="1" x="297.18" y="114.3" smashed="yes" rot="R180">
+<attribute name="VALUE" x="299.72" y="119.38" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="REG1" gate="G$1" x="434.34" y="30.48" smashed="yes" rot="MR270">
 <attribute name="NAME" x="441.96" y="27.94" size="1.778" layer="95" rot="MR270"/>
@@ -5694,7 +5703,7 @@ coil voltage limits</text>
 <attribute name="VALUE" x="304.8" y="91.44" size="1.778" layer="96"/>
 </instance>
 <instance part="P+35" gate="1" x="360.68" y="93.98" smashed="yes" rot="R270">
-<attribute name="VALUE" x="355.6" y="96.52" size="1.778" layer="96"/>
+<attribute name="VALUE" x="360.68" y="91.44" size="1.778" layer="96"/>
 </instance>
 <instance part="LED14" gate="LED" x="505.46" y="35.56" smashed="yes" rot="R180">
 <attribute name="NAME" x="501.904" y="40.132" size="1.778" layer="95" rot="R270"/>
@@ -5888,10 +5897,10 @@ coil voltage limits</text>
 <attribute name="NAME" x="82.55" y="77.6986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="82.55" y="72.898" size="1.778" layer="96"/>
 </instance>
-<instance part="J2" gate="G$1" x="111.76" y="53.34" smashed="yes" rot="MR0"/>
-<instance part="J1" gate="G$1" x="111.76" y="63.5" smashed="yes" rot="MR0"/>
-<instance part="J3" gate="G$1" x="111.76" y="43.18" smashed="yes" rot="MR0"/>
-<instance part="J4" gate="G$1" x="111.76" y="33.02" smashed="yes" rot="MR0"/>
+<instance part="J2" gate="G$1" x="86.36" y="53.34" smashed="yes" rot="MR0"/>
+<instance part="J1" gate="G$1" x="86.36" y="63.5" smashed="yes" rot="MR0"/>
+<instance part="J3" gate="G$1" x="86.36" y="43.18" smashed="yes" rot="MR0"/>
+<instance part="J4" gate="G$1" x="86.36" y="33.02" smashed="yes" rot="MR0"/>
 <instance part="P+9" gate="1" x="233.68" y="114.3" smashed="yes">
 <attribute name="VALUE" x="231.14" y="109.22" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -5950,9 +5959,9 @@ coil voltage limits</text>
 <instance part="P+32" gate="1" x="408.94" y="12.7" smashed="yes" rot="R270">
 <attribute name="VALUE" x="403.86" y="15.24" size="1.778" layer="96"/>
 </instance>
-<instance part="C11" gate="G$1" x="358.14" y="152.4" smashed="yes">
-<attribute name="NAME" x="359.664" y="155.321" size="1.778" layer="95"/>
-<attribute name="VALUE" x="359.664" y="150.241" size="1.778" layer="96"/>
+<instance part="C11" gate="G$1" x="358.14" y="154.94" smashed="yes">
+<attribute name="NAME" x="359.664" y="157.861" size="1.778" layer="95"/>
+<attribute name="VALUE" x="359.664" y="152.781" size="1.778" layer="96"/>
 </instance>
 <instance part="CAN_TRANSCEIVER2" gate="G$1" x="485.14" y="76.2" smashed="yes" rot="MR180">
 <attribute name="NAME" x="488.315" y="64.135" size="1.778" layer="95" rot="MR180"/>
@@ -6032,8 +6041,8 @@ coil voltage limits</text>
 <instance part="GND69" gate="1" x="342.9" y="246.38" smashed="yes" rot="R180">
 <attribute name="VALUE" x="345.44" y="248.92" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND70" gate="1" x="370.84" y="144.78" smashed="yes" rot="R180">
-<attribute name="VALUE" x="373.38" y="147.32" size="1.778" layer="96" rot="R180"/>
+<instance part="GND70" gate="1" x="370.84" y="147.32" smashed="yes" rot="R180">
+<attribute name="VALUE" x="373.38" y="149.86" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="U$20" gate="G$1" x="416.56" y="175.26" smashed="yes" rot="R180">
 <attribute name="NAME" x="415.925" y="173.355" size="1.778" layer="95" rot="R180"/>
@@ -6235,8 +6244,8 @@ coil voltage limits</text>
 <attribute name="NAME" x="194.31" y="232.6386" size="1.778" layer="95"/>
 <attribute name="VALUE" x="194.31" y="227.838" size="1.778" layer="96"/>
 </instance>
-<instance part="GND13" gate="1" x="45.72" y="203.2" smashed="yes" rot="R180">
-<attribute name="VALUE" x="48.26" y="205.74" size="1.778" layer="96" rot="R180"/>
+<instance part="GND13" gate="1" x="48.26" y="203.2" smashed="yes" rot="R180">
+<attribute name="VALUE" x="50.8" y="205.74" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="D15" gate="1" x="7.62" y="213.36" smashed="yes" rot="MR0">
 <attribute name="NAME" x="11.43" y="215.1126" size="1.778" layer="95" rot="MR0"/>
@@ -6331,9 +6340,11 @@ coil voltage limits</text>
 <instance part="GND21" gate="1" x="292.1" y="68.58" smashed="yes" rot="R90">
 <attribute name="VALUE" x="294.64" y="66.04" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="D23" gate="1" x="40.64" y="200.66" smashed="yes">
-<attribute name="NAME" x="36.83" y="202.4126" size="1.778" layer="95"/>
-<attribute name="VALUE" x="36.83" y="197.0786" size="1.778" layer="96"/>
+<instance part="J7" gate="G$1" x="137.16" y="63.5" smashed="yes" rot="MR0"/>
+<instance part="J8" gate="G$1" x="137.16" y="53.34" smashed="yes" rot="MR0"/>
+<instance part="R63" gate="G$1" x="40.64" y="200.66" smashed="yes">
+<attribute name="NAME" x="36.83" y="202.1586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="36.83" y="197.358" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -6502,17 +6513,17 @@ coil voltage limits</text>
 <segment>
 <pinref part="GND29" gate="1" pin="GND"/>
 <pinref part="U$18" gate="G$1" pin="DGND"/>
-<wire x1="355.6" y1="129.54" x2="358.14" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="132.08" x2="358.14" y2="132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$18" gate="G$1" pin="AGND"/>
-<wire x1="370.84" y1="142.24" x2="355.6" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="370.84" y1="144.78" x2="355.6" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="GND70" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="GND30" gate="1" pin="GND"/>
 <pinref part="C11" gate="G$1" pin="1"/>
-<wire x1="358.14" y1="157.48" x2="350.52" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="358.14" y1="160.02" x2="350.52" y2="160.02" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="ACC1_PD" gate="G$1" pin="2"/>
@@ -6532,16 +6543,16 @@ coil voltage limits</text>
 <segment>
 <pinref part="GND48" gate="1" pin="GND"/>
 <pinref part="R22" gate="G$1" pin="2"/>
-<wire x1="304.8" y1="154.94" x2="297.18" y2="154.94" width="0.1524" layer="91"/>
+<wire x1="304.8" y1="157.48" x2="297.18" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="R6" gate="G$1" pin="2"/>
 <pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="297.18" y1="154.94" x2="289.56" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="274.32" y1="154.94" x2="281.94" y2="154.94" width="0.1524" layer="91"/>
-<wire x1="289.56" y1="154.94" x2="281.94" y2="154.94" width="0.1524" layer="91"/>
-<junction x="289.56" y="154.94"/>
-<junction x="281.94" y="154.94"/>
+<wire x1="297.18" y1="157.48" x2="289.56" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="157.48" x2="281.94" y2="157.48" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="157.48" x2="281.94" y2="157.48" width="0.1524" layer="91"/>
+<junction x="289.56" y="157.48"/>
+<junction x="281.94" y="157.48"/>
 <pinref part="R29" gate="G$1" pin="2"/>
-<junction x="297.18" y="154.94"/>
+<junction x="297.18" y="157.48"/>
 </segment>
 <segment>
 <pinref part="GND49" gate="1" pin="GND"/>
@@ -6933,9 +6944,9 @@ coil voltage limits</text>
 <junction x="287.02" y="68.58"/>
 </segment>
 <segment>
-<pinref part="D23" gate="1" pin="C"/>
 <pinref part="GND13" gate="1" pin="GND"/>
-<wire x1="43.18" y1="200.66" x2="45.72" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="200.66" x2="48.26" y2="200.66" width="0.1524" layer="91"/>
+<pinref part="R63" gate="G$1" pin="2"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -6950,7 +6961,7 @@ coil voltage limits</text>
 <segment>
 <pinref part="P+27" gate="1" pin="+12V"/>
 <pinref part="R23" gate="G$1" pin="1"/>
-<wire x1="297.18" y1="121.92" x2="297.18" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="124.46" x2="297.18" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="5ABOARDFUSE" gate="G$1" pin="2"/>
@@ -7168,8 +7179,8 @@ coil voltage limits</text>
 <net name="BMS_OK" class="0">
 <segment>
 <pinref part="D2" gate="1" pin="A"/>
-<wire x1="281.94" y1="104.14" x2="281.94" y2="101.6" width="0.1524" layer="91"/>
-<label x="281.94" y="101.6" size="1.27" layer="95" rot="R270" xref="yes"/>
+<wire x1="281.94" y1="106.68" x2="281.94" y2="104.14" width="0.1524" layer="91"/>
+<label x="281.94" y="104.14" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <label x="27.94" y="83.82" size="1.016" layer="95" xref="yes"/>
@@ -7213,8 +7224,8 @@ coil voltage limits</text>
 </segment>
 <segment>
 <pinref part="D1" gate="1" pin="A"/>
-<wire x1="274.32" y1="101.6" x2="274.32" y2="104.14" width="0.1524" layer="91"/>
-<label x="274.32" y="101.6" size="1.27" layer="95" rot="R270" xref="yes"/>
+<wire x1="274.32" y1="104.14" x2="274.32" y2="106.68" width="0.1524" layer="91"/>
+<label x="274.32" y="104.14" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 <segment>
 <label x="27.94" y="78.74" size="1.016" layer="95" xref="yes"/>
@@ -7300,15 +7311,15 @@ coil voltage limits</text>
 <segment>
 <pinref part="P+13" gate="1" pin="+5V"/>
 <pinref part="U$18" gate="G$1" pin="VDD"/>
-<wire x1="358.14" y1="147.32" x2="355.6" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="358.14" y1="147.32" x2="358.14" y2="144.78" width="0.1524" layer="91"/>
-<junction x="358.14" y="147.32"/>
-<pinref part="U$18" gate="G$1" pin="VREF"/>
-<wire x1="358.14" y1="144.78" x2="355.6" y2="144.78" width="0.1524" layer="91"/>
-<pinref part="C11" gate="G$1" pin="2"/>
+<wire x1="358.14" y1="149.86" x2="355.6" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="358.14" y1="149.86" x2="358.14" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="363.22" y1="144.78" x2="358.14" y2="144.78" width="0.1524" layer="91"/>
-<junction x="358.14" y="144.78"/>
+<junction x="358.14" y="149.86"/>
+<pinref part="U$18" gate="G$1" pin="VREF"/>
+<wire x1="358.14" y1="147.32" x2="355.6" y2="147.32" width="0.1524" layer="91"/>
+<pinref part="C11" gate="G$1" pin="2"/>
+<wire x1="358.14" y1="152.4" x2="358.14" y2="149.86" width="0.1524" layer="91"/>
+<wire x1="363.22" y1="147.32" x2="358.14" y2="147.32" width="0.1524" layer="91"/>
+<junction x="358.14" y="147.32"/>
 </segment>
 <segment>
 <pinref part="U$23" gate="G$1" pin="VDD"/>
@@ -7542,8 +7553,8 @@ coil voltage limits</text>
 </segment>
 <segment>
 <pinref part="D3" gate="1" pin="A"/>
-<wire x1="289.56" y1="104.14" x2="289.56" y2="101.6" width="0.1524" layer="91"/>
-<label x="289.56" y="101.6" size="1.27" layer="95" rot="R270" xref="yes"/>
+<wire x1="289.56" y1="106.68" x2="289.56" y2="104.14" width="0.1524" layer="91"/>
+<label x="289.56" y="104.14" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="N$29" class="0">
@@ -7818,8 +7829,8 @@ coil voltage limits</text>
 </segment>
 <segment>
 <pinref part="U$18" gate="G$1" pin="CH7"/>
-<wire x1="325.12" y1="129.54" x2="322.58" y2="129.54" width="0.1524" layer="91"/>
-<label x="322.58" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="325.12" y1="132.08" x2="322.58" y2="132.08" width="0.1524" layer="91"/>
+<label x="322.58" y="132.08" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SIGNAL_ACCEL2" class="0">
@@ -7887,8 +7898,8 @@ coil voltage limits</text>
 <net name="MISO_TEENSY" class="0">
 <segment>
 <pinref part="U$18" gate="G$1" pin="DOUT"/>
-<wire x1="355.6" y1="137.16" x2="358.14" y2="137.16" width="0.1524" layer="91"/>
-<label x="358.14" y="137.16" size="1.27" layer="95" xref="yes"/>
+<wire x1="355.6" y1="139.7" x2="358.14" y2="139.7" width="0.1524" layer="91"/>
+<label x="358.14" y="139.7" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="D12"/>
@@ -7908,8 +7919,8 @@ coil voltage limits</text>
 <pinref part="U$26" gate="G$1" pin="OUT"/>
 </segment>
 <segment>
-<label x="322.58" y="147.32" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="325.12" y1="147.32" x2="322.58" y2="147.32" width="0.1524" layer="91"/>
+<label x="322.58" y="149.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="325.12" y1="149.86" x2="322.58" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="U$18" gate="G$1" pin="CH0"/>
 </segment>
 </net>
@@ -7920,8 +7931,8 @@ coil voltage limits</text>
 <pinref part="U$28" gate="G$1" pin="OUT"/>
 </segment>
 <segment>
-<label x="322.58" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="325.12" y1="142.24" x2="322.58" y2="142.24" width="0.1524" layer="91"/>
+<label x="322.58" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="325.12" y1="144.78" x2="322.58" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="U$18" gate="G$1" pin="CH2"/>
 </segment>
 </net>
@@ -7955,8 +7966,8 @@ coil voltage limits</text>
 <pinref part="U$27" gate="G$1" pin="OUT"/>
 </segment>
 <segment>
-<label x="322.58" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
-<wire x1="325.12" y1="144.78" x2="322.58" y2="144.78" width="0.1524" layer="91"/>
+<label x="322.58" y="147.32" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="325.12" y1="147.32" x2="322.58" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="U$18" gate="G$1" pin="CH1"/>
 </segment>
 </net>
@@ -7974,68 +7985,68 @@ coil voltage limits</text>
 <segment>
 <pinref part="R6" gate="G$1" pin="1"/>
 <pinref part="R5" gate="G$1" pin="2"/>
-<wire x1="274.32" y1="144.78" x2="274.32" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="147.32" x2="274.32" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="U$18" gate="G$1" pin="CH6"/>
-<wire x1="325.12" y1="132.08" x2="274.32" y2="132.08" width="0.1524" layer="91"/>
-<junction x="274.32" y="132.08"/>
-<label x="299.72" y="132.08" size="1.016" layer="95"/>
+<wire x1="325.12" y1="134.62" x2="274.32" y2="134.62" width="0.1524" layer="91"/>
+<junction x="274.32" y="134.62"/>
+<label x="299.72" y="134.62" size="1.016" layer="95"/>
 </segment>
 </net>
 <net name="BMS_OK_READ" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="2"/>
 <pinref part="R8" gate="G$1" pin="1"/>
-<wire x1="281.94" y1="132.08" x2="281.94" y2="134.62" width="0.1524" layer="91"/>
-<wire x1="281.94" y1="134.62" x2="281.94" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="134.62" x2="281.94" y2="137.16" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="137.16" x2="281.94" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="U$18" gate="G$1" pin="CH5"/>
-<wire x1="325.12" y1="134.62" x2="281.94" y2="134.62" width="0.1524" layer="91"/>
-<junction x="281.94" y="134.62"/>
-<label x="299.72" y="134.62" size="1.016" layer="95"/>
+<wire x1="325.12" y1="137.16" x2="281.94" y2="137.16" width="0.1524" layer="91"/>
+<junction x="281.94" y="137.16"/>
+<label x="299.72" y="137.16" size="1.016" layer="95"/>
 </segment>
 </net>
 <net name="SHUTDOWN_OUT_READ" class="0">
 <segment>
 <pinref part="R22" gate="G$1" pin="1"/>
 <pinref part="R15" gate="G$1" pin="2"/>
-<wire x1="289.56" y1="144.78" x2="289.56" y2="137.16" width="0.1524" layer="91"/>
-<wire x1="289.56" y1="137.16" x2="289.56" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="147.32" x2="289.56" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="139.7" x2="289.56" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="U$18" gate="G$1" pin="CH4"/>
-<wire x1="325.12" y1="137.16" x2="289.56" y2="137.16" width="0.1524" layer="91"/>
-<junction x="289.56" y="137.16"/>
-<label x="299.72" y="137.16" size="1.016" layer="95"/>
+<wire x1="325.12" y1="139.7" x2="289.56" y2="139.7" width="0.1524" layer="91"/>
+<junction x="289.56" y="139.7"/>
+<label x="299.72" y="139.7" size="1.016" layer="95"/>
 </segment>
 </net>
 <net name="12VSUPPLY_READ" class="0">
 <segment>
 <pinref part="R29" gate="G$1" pin="1"/>
 <pinref part="R23" gate="G$1" pin="2"/>
-<wire x1="297.18" y1="144.78" x2="297.18" y2="139.7" width="0.1524" layer="91"/>
-<wire x1="297.18" y1="139.7" x2="297.18" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="147.32" x2="297.18" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="142.24" x2="297.18" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="U$18" gate="G$1" pin="CH3"/>
-<wire x1="325.12" y1="139.7" x2="297.18" y2="139.7" width="0.1524" layer="91"/>
-<junction x="297.18" y="139.7"/>
-<label x="299.72" y="139.7" size="1.016" layer="95"/>
+<wire x1="325.12" y1="142.24" x2="297.18" y2="142.24" width="0.1524" layer="91"/>
+<junction x="297.18" y="142.24"/>
+<label x="299.72" y="142.24" size="1.016" layer="95"/>
 </segment>
 </net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="R5" gate="G$1" pin="1"/>
 <pinref part="D1" gate="1" pin="C"/>
-<wire x1="274.32" y1="121.92" x2="274.32" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="274.32" y1="124.46" x2="274.32" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
 <pinref part="D2" gate="1" pin="C"/>
-<wire x1="281.94" y1="121.92" x2="281.94" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="281.94" y1="124.46" x2="281.94" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$33" class="0">
 <segment>
 <pinref part="R15" gate="G$1" pin="1"/>
 <pinref part="D3" gate="1" pin="C"/>
-<wire x1="289.56" y1="121.92" x2="289.56" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="289.56" y1="124.46" x2="289.56" y2="114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="TELEMETRY5V" class="0">
@@ -8268,7 +8279,7 @@ coil voltage limits</text>
 <label x="472.44" y="124.46" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="DASH_CTRL2" class="0">
+<net name="DASH_2_SWITCH" class="0">
 <segment>
 <label x="322.58" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="327.66" y1="116.84" x2="322.58" y2="116.84" width="0.1524" layer="91"/>
@@ -8280,7 +8291,7 @@ coil voltage limits</text>
 <label x="78.74" y="139.7" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="DASH_CTRL3" class="0">
+<net name="DASH_3_SWITCH" class="0">
 <segment>
 <label x="322.58" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="327.66" y1="114.3" x2="322.58" y2="114.3" width="0.1524" layer="91"/>
@@ -8292,7 +8303,7 @@ coil voltage limits</text>
 <label x="78.74" y="129.54" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="DASH_CTRL4" class="0">
+<net name="DASH_4_SWITCH" class="0">
 <segment>
 <label x="322.58" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="327.66" y1="111.76" x2="322.58" y2="111.76" width="0.1524" layer="91"/>
@@ -8304,7 +8315,7 @@ coil voltage limits</text>
 <label x="78.74" y="119.38" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="DASH_IO1" class="0">
+<net name="DASH_1_OUT" class="0">
 <segment>
 <label x="144.78" y="144.78" size="1.27" layer="95" rot="MR180" xref="yes"/>
 <wire x1="142.24" y1="144.78" x2="144.78" y2="144.78" width="0.1524" layer="91"/>
@@ -8316,7 +8327,7 @@ coil voltage limits</text>
 <pinref part="X1" gate="-1" pin="S"/>
 </segment>
 </net>
-<net name="DASH_IO2" class="0">
+<net name="DASH_2_OUT" class="0">
 <segment>
 <label x="30.48" y="157.48" size="1.016" layer="95" rot="MR180" xref="yes"/>
 <wire x1="22.86" y1="157.48" x2="30.48" y2="157.48" width="0.1524" layer="91"/>
@@ -8328,7 +8339,7 @@ coil voltage limits</text>
 <pinref part="R37" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="DASH_IO3" class="0">
+<net name="DASH_3_OUT" class="0">
 <segment>
 <label x="30.48" y="154.94" size="1.016" layer="95" xref="yes"/>
 <wire x1="22.86" y1="154.94" x2="30.48" y2="154.94" width="0.1524" layer="91"/>
@@ -8340,7 +8351,7 @@ coil voltage limits</text>
 <wire x1="144.78" y1="129.54" x2="119.38" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="DASH_IO4" class="0">
+<net name="DASH_4_OUT" class="0">
 <segment>
 <label x="30.48" y="152.4" size="1.016" layer="95" xref="yes"/>
 <wire x1="22.86" y1="152.4" x2="30.48" y2="152.4" width="0.1524" layer="91"/>
@@ -8352,15 +8363,15 @@ coil voltage limits</text>
 <pinref part="U$29" gate="G$1" pin="EM4"/>
 </segment>
 </net>
-<net name="DASH_IO5" class="0">
+<net name="DASH_5_IO" class="0">
 <segment>
 <label x="30.48" y="116.84" size="1.016" layer="95" xref="yes"/>
 <wire x1="30.48" y1="116.84" x2="22.86" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="X1" gate="-18" pin="S"/>
 </segment>
 <segment>
-<wire x1="121.92" y1="60.96" x2="111.76" y2="60.96" width="0.1524" layer="91"/>
-<label x="121.92" y="60.96" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<wire x1="91.44" y1="60.96" x2="86.36" y2="60.96" width="0.1524" layer="91"/>
+<label x="91.44" y="60.96" size="1.27" layer="95" rot="MR180" xref="yes"/>
 <pinref part="J1" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
@@ -8369,15 +8380,15 @@ coil voltage limits</text>
 <label x="124.46" y="96.52" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="DASH_IO6" class="0">
+<net name="DASH_6_IO" class="0">
 <segment>
 <label x="30.48" y="114.3" size="1.016" layer="95" xref="yes"/>
 <wire x1="30.48" y1="114.3" x2="22.86" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="X1" gate="-19" pin="S"/>
 </segment>
 <segment>
-<wire x1="121.92" y1="50.8" x2="111.76" y2="50.8" width="0.1524" layer="91"/>
-<label x="121.92" y="50.8" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<wire x1="91.44" y1="50.8" x2="86.36" y2="50.8" width="0.1524" layer="91"/>
+<label x="91.44" y="50.8" size="1.27" layer="95" rot="MR180" xref="yes"/>
 <pinref part="J2" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
@@ -8394,15 +8405,15 @@ coil voltage limits</text>
 <wire x1="91.44" y1="142.24" x2="91.44" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="DASH_IO7" class="0">
+<net name="DASH_7_IO" class="0">
 <segment>
 <label x="30.48" y="111.76" size="1.016" layer="95" xref="yes"/>
 <wire x1="22.86" y1="111.76" x2="30.48" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="X1" gate="-20" pin="S"/>
 </segment>
 <segment>
-<wire x1="121.92" y1="40.64" x2="111.76" y2="40.64" width="0.1524" layer="91"/>
-<label x="121.92" y="40.64" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<wire x1="91.44" y1="40.64" x2="86.36" y2="40.64" width="0.1524" layer="91"/>
+<label x="91.44" y="40.64" size="1.27" layer="95" rot="MR180" xref="yes"/>
 <pinref part="J3" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
@@ -8411,7 +8422,7 @@ coil voltage limits</text>
 <label x="124.46" y="86.36" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="DASH_CTRL1" class="0">
+<net name="DASH_1_SWITCH" class="0">
 <segment>
 <pinref part="R35" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="149.86" x2="81.28" y2="149.86" width="0.1524" layer="91"/>
@@ -8448,7 +8459,7 @@ coil voltage limits</text>
 <junction x="182.88" y="127"/>
 </segment>
 </net>
-<net name="DASH_CTRL9" class="0">
+<net name="DASH_9_IO" class="0">
 <segment>
 <label x="358.14" y="101.6" size="1.27" layer="95" xref="yes"/>
 <wire x1="353.06" y1="101.6" x2="358.14" y2="101.6" width="0.1524" layer="91"/>
@@ -8460,7 +8471,7 @@ coil voltage limits</text>
 <pinref part="X1" gate="-23" pin="S"/>
 </segment>
 </net>
-<net name="DASH_CTRL10" class="0">
+<net name="DASH_10_IO" class="0">
 <segment>
 <label x="358.14" y="104.14" size="1.27" layer="95" xref="yes"/>
 <wire x1="353.06" y1="104.14" x2="358.14" y2="104.14" width="0.1524" layer="91"/>
@@ -8472,12 +8483,7 @@ coil voltage limits</text>
 <pinref part="X1" gate="-32" pin="S"/>
 </segment>
 </net>
-<net name="DASH_CTRL11" class="0">
-<segment>
-<label x="358.14" y="106.68" size="1.27" layer="95" xref="yes"/>
-<wire x1="353.06" y1="106.68" x2="358.14" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="U$17" gate="G$1" pin="GPA2"/>
-</segment>
+<net name="DASH_11_IO" class="0">
 <segment>
 <label x="27.94" y="147.32" size="1.016" layer="95" xref="yes"/>
 <wire x1="22.86" y1="147.32" x2="27.94" y2="147.32" width="0.1524" layer="91"/>
@@ -8488,13 +8494,13 @@ coil voltage limits</text>
 <label x="264.16" y="17.78" size="1.27" layer="95" rot="R270" xref="yes"/>
 <wire x1="264.16" y1="20.32" x2="264.16" y2="17.78" width="0.1524" layer="91"/>
 </segment>
-</net>
-<net name="DASH_CTRL12" class="0">
 <segment>
-<label x="358.14" y="109.22" size="1.27" layer="95" xref="yes"/>
-<wire x1="353.06" y1="109.22" x2="358.14" y2="109.22" width="0.1524" layer="91"/>
-<pinref part="U$17" gate="G$1" pin="GPA3"/>
+<pinref part="J7" gate="G$1" pin="P$1"/>
+<wire x1="137.16" y1="60.96" x2="142.24" y2="60.96" width="0.1524" layer="91"/>
+<label x="142.24" y="60.96" size="1.27" layer="95" xref="yes"/>
 </segment>
+</net>
+<net name="DASH_12_IO" class="0">
 <segment>
 <label x="30.48" y="106.68" size="1.016" layer="95" xref="yes"/>
 <wire x1="22.86" y1="106.68" x2="30.48" y2="106.68" width="0.1524" layer="91"/>
@@ -8504,6 +8510,11 @@ coil voltage limits</text>
 <pinref part="D20" gate="1" pin="A"/>
 <label x="271.78" y="17.78" size="1.27" layer="95" rot="R270" xref="yes"/>
 <wire x1="271.78" y1="20.32" x2="271.78" y2="17.78" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="J8" gate="G$1" pin="P$1"/>
+<wire x1="137.16" y1="50.8" x2="142.24" y2="50.8" width="0.1524" layer="91"/>
+<label x="142.24" y="50.8" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$35" class="0">
@@ -8705,10 +8716,10 @@ coil voltage limits</text>
 <pinref part="U$30" gate="G$1" pin="VCC4"/>
 </segment>
 </net>
-<net name="DASH_IO8" class="0">
+<net name="DASH_8_IO" class="0">
 <segment>
-<wire x1="121.92" y1="30.48" x2="111.76" y2="30.48" width="0.1524" layer="91"/>
-<label x="121.92" y="30.48" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<wire x1="91.44" y1="30.48" x2="86.36" y2="30.48" width="0.1524" layer="91"/>
+<label x="91.44" y="30.48" size="1.27" layer="95" rot="MR180" xref="yes"/>
 <pinref part="J4" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
@@ -8722,7 +8733,7 @@ coil voltage limits</text>
 <label x="124.46" y="81.28" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="DASH_CTRL8_OUT" class="0">
+<net name="DASH_8_SWITCH" class="0">
 <segment>
 <label x="322.58" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="327.66" y1="101.6" x2="322.58" y2="101.6" width="0.1524" layer="91"/>
@@ -8734,7 +8745,7 @@ coil voltage limits</text>
 <label x="78.74" y="76.2" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="DASH_CTRL7_OUT" class="0">
+<net name="DASH_7_SWITCH" class="0">
 <segment>
 <label x="322.58" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="327.66" y1="104.14" x2="322.58" y2="104.14" width="0.1524" layer="91"/>
@@ -8746,7 +8757,7 @@ coil voltage limits</text>
 <label x="78.74" y="86.36" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="DASH_CTRL6_OUT" class="0">
+<net name="DASH_6_SWITCH" class="0">
 <segment>
 <label x="322.58" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="327.66" y1="106.68" x2="322.58" y2="106.68" width="0.1524" layer="91"/>
@@ -8758,7 +8769,7 @@ coil voltage limits</text>
 <label x="78.74" y="96.52" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="DASH_CTRL5_OUT" class="0">
+<net name="DASH_5_SWITCH" class="0">
 <segment>
 <label x="322.58" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="327.66" y1="109.22" x2="322.58" y2="109.22" width="0.1524" layer="91"/>
@@ -8770,7 +8781,7 @@ coil voltage limits</text>
 <label x="78.74" y="106.68" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="DASH_CTRL8_IN" class="0">
+<net name="DASH_8_READ" class="0">
 <segment>
 <label x="358.14" y="119.38" size="1.27" layer="95" xref="yes"/>
 <wire x1="353.06" y1="119.38" x2="358.14" y2="119.38" width="0.1524" layer="91"/>
@@ -8778,11 +8789,11 @@ coil voltage limits</text>
 </segment>
 <segment>
 <pinref part="J4" gate="G$1" pin="P$2"/>
-<wire x1="106.68" y1="30.48" x2="96.52" y2="30.48" width="0.1524" layer="91"/>
-<label x="96.52" y="30.48" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="81.28" y1="30.48" x2="76.2" y2="30.48" width="0.1524" layer="91"/>
+<label x="76.2" y="30.48" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="DASH_CTRL7_IN" class="0">
+<net name="DASH_7_READ" class="0">
 <segment>
 <label x="358.14" y="116.84" size="1.27" layer="95" xref="yes"/>
 <wire x1="353.06" y1="116.84" x2="358.14" y2="116.84" width="0.1524" layer="91"/>
@@ -8790,11 +8801,11 @@ coil voltage limits</text>
 </segment>
 <segment>
 <pinref part="J3" gate="G$1" pin="P$2"/>
-<wire x1="106.68" y1="40.64" x2="96.52" y2="40.64" width="0.1524" layer="91"/>
-<label x="96.52" y="40.64" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="81.28" y1="40.64" x2="76.2" y2="40.64" width="0.1524" layer="91"/>
+<label x="76.2" y="40.64" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="DASH_CTRL6_IN" class="0">
+<net name="DASH_6_READ" class="0">
 <segment>
 <label x="358.14" y="114.3" size="1.27" layer="95" xref="yes"/>
 <wire x1="353.06" y1="114.3" x2="358.14" y2="114.3" width="0.1524" layer="91"/>
@@ -8802,11 +8813,11 @@ coil voltage limits</text>
 </segment>
 <segment>
 <pinref part="J2" gate="G$1" pin="P$2"/>
-<wire x1="106.68" y1="50.8" x2="96.52" y2="50.8" width="0.1524" layer="91"/>
-<label x="96.52" y="50.8" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="81.28" y1="50.8" x2="76.2" y2="50.8" width="0.1524" layer="91"/>
+<label x="76.2" y="50.8" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="DASH_CTRL5_IN" class="0">
+<net name="DASH_5_READ" class="0">
 <segment>
 <label x="358.14" y="111.76" size="1.27" layer="95" xref="yes"/>
 <wire x1="353.06" y1="111.76" x2="358.14" y2="111.76" width="0.1524" layer="91"/>
@@ -8814,8 +8825,8 @@ coil voltage limits</text>
 </segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="P$2"/>
-<wire x1="106.68" y1="60.96" x2="96.52" y2="60.96" width="0.1524" layer="91"/>
-<label x="96.52" y="60.96" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="81.28" y1="60.96" x2="76.2" y2="60.96" width="0.1524" layer="91"/>
+<label x="76.2" y="60.96" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="N$58" class="0">
@@ -8950,9 +8961,9 @@ coil voltage limits</text>
 <pinref part="U$25" gate="G$1" pin="B1"/>
 </segment>
 <segment>
-<wire x1="355.6" y1="132.08" x2="358.14" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="355.6" y1="134.62" x2="358.14" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="U$18" gate="G$1" pin="!CS!/SHDN"/>
-<label x="358.14" y="132.08" size="1.27" layer="95" xref="yes"/>
+<label x="358.14" y="134.62" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CS2_5V" class="0">
@@ -8975,8 +8986,8 @@ coil voltage limits</text>
 </segment>
 <segment>
 <pinref part="U$18" gate="G$1" pin="CLK"/>
-<wire x1="355.6" y1="139.7" x2="358.14" y2="139.7" width="0.1524" layer="91"/>
-<label x="358.14" y="139.7" size="1.27" layer="95" xref="yes"/>
+<wire x1="355.6" y1="142.24" x2="358.14" y2="142.24" width="0.1524" layer="91"/>
+<label x="358.14" y="142.24" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$17" gate="G$1" pin="SCK"/>
@@ -8992,8 +9003,8 @@ coil voltage limits</text>
 </segment>
 <segment>
 <pinref part="U$18" gate="G$1" pin="DIN"/>
-<wire x1="358.14" y1="134.62" x2="355.6" y2="134.62" width="0.1524" layer="91"/>
-<label x="358.14" y="134.62" size="1.27" layer="95" xref="yes"/>
+<wire x1="358.14" y1="137.16" x2="355.6" y2="137.16" width="0.1524" layer="91"/>
+<label x="358.14" y="137.16" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U$17" gate="G$1" pin="SI"/>
@@ -9353,12 +9364,15 @@ coil voltage limits</text>
 <wire x1="86.36" y1="246.38" x2="83.82" y2="246.38" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="DASH_CTRL11_READ" class="0">
+<net name="DASH11_READ" class="0">
 <segment>
 <pinref part="R21" gate="G$1" pin="1"/>
 <pinref part="R11" gate="G$1" pin="2"/>
-<wire x1="264.16" y1="55.88" x2="264.16" y2="40.64" width="0.1524" layer="91"/>
-<label x="264.16" y="40.64" size="1.016" layer="95" rot="R90"/>
+<wire x1="264.16" y1="55.88" x2="264.16" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="53.34" x2="264.16" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="264.16" y1="53.34" x2="261.62" y2="55.88" width="0.1524" layer="91"/>
+<label x="261.62" y="55.88" size="1.016" layer="95" rot="R270" xref="yes"/>
+<junction x="264.16" y="53.34"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="A0"/>
@@ -9373,7 +9387,7 @@ coil voltage limits</text>
 <wire x1="264.16" y1="30.48" x2="264.16" y2="27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="DASH_CTRL12_READ" class="0">
+<net name="DASH12_READ" class="0">
 <segment>
 <pinref part="U$1" gate="G$1" pin="A1"/>
 <wire x1="355.6" y1="38.1" x2="358.14" y2="38.1" width="0.1524" layer="91"/>
@@ -9382,8 +9396,11 @@ coil voltage limits</text>
 <segment>
 <pinref part="R58" gate="G$1" pin="1"/>
 <pinref part="R57" gate="G$1" pin="2"/>
-<wire x1="271.78" y1="55.88" x2="271.78" y2="40.64" width="0.1524" layer="91"/>
-<label x="271.78" y="40.64" size="1.016" layer="95" rot="R90"/>
+<wire x1="271.78" y1="55.88" x2="271.78" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="53.34" x2="271.78" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="271.78" y1="53.34" x2="269.24" y2="55.88" width="0.1524" layer="91"/>
+<label x="269.24" y="55.88" size="1.016" layer="95" rot="R270" xref="yes"/>
+<junction x="271.78" y="53.34"/>
 </segment>
 </net>
 <net name="SHUTDOWN_B_READ" class="0">
@@ -9395,8 +9412,11 @@ coil voltage limits</text>
 <segment>
 <pinref part="R60" gate="G$1" pin="1"/>
 <pinref part="R59" gate="G$1" pin="2"/>
-<wire x1="279.4" y1="55.88" x2="279.4" y2="40.64" width="0.1524" layer="91"/>
-<label x="279.4" y="40.64" size="1.016" layer="95" rot="R90"/>
+<wire x1="279.4" y1="55.88" x2="279.4" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="53.34" x2="279.4" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="279.4" y1="53.34" x2="276.86" y2="55.88" width="0.1524" layer="91"/>
+<label x="276.86" y="55.88" size="1.016" layer="95" rot="R270" xref="yes"/>
+<junction x="279.4" y="53.34"/>
 </segment>
 </net>
 <net name="SHUTDOWN_C_READ" class="0">
@@ -9408,8 +9428,11 @@ coil voltage limits</text>
 <segment>
 <pinref part="R62" gate="G$1" pin="1"/>
 <pinref part="R61" gate="G$1" pin="2"/>
-<wire x1="287.02" y1="55.88" x2="287.02" y2="40.64" width="0.1524" layer="91"/>
-<label x="287.02" y="40.64" size="1.016" layer="95" rot="R90"/>
+<wire x1="287.02" y1="55.88" x2="287.02" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="53.34" x2="287.02" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="287.02" y1="53.34" x2="284.48" y2="55.88" width="0.1524" layer="91"/>
+<label x="284.48" y="55.88" size="1.016" layer="95" rot="R270" xref="yes"/>
+<junction x="287.02" y="53.34"/>
 </segment>
 </net>
 <net name="N$5" class="0">
@@ -9436,8 +9459,32 @@ coil voltage limits</text>
 <net name="N$60" class="0">
 <segment>
 <pinref part="IMD_SHUTDOWN_RLY" gate="G$1" pin="4"/>
-<pinref part="D23" gate="1" pin="A"/>
 <wire x1="33.02" y1="200.66" x2="35.56" y2="200.66" width="0.1524" layer="91"/>
+<pinref part="R63" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="DASH_11_OPT" class="0">
+<segment>
+<wire x1="353.06" y1="106.68" x2="358.14" y2="106.68" width="0.1524" layer="91"/>
+<label x="358.14" y="106.68" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$17" gate="G$1" pin="GPA2"/>
+</segment>
+<segment>
+<pinref part="J7" gate="G$1" pin="P$2"/>
+<wire x1="132.08" y1="60.96" x2="127" y2="60.96" width="0.1524" layer="91"/>
+<label x="127" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="DASH_12_OPT" class="0">
+<segment>
+<wire x1="353.06" y1="109.22" x2="358.14" y2="109.22" width="0.1524" layer="91"/>
+<label x="358.14" y="109.22" size="1.27" layer="95" xref="yes"/>
+<pinref part="U$17" gate="G$1" pin="GPA3"/>
+</segment>
+<segment>
+<pinref part="J8" gate="G$1" pin="P$2"/>
+<wire x1="132.08" y1="50.8" x2="127" y2="50.8" width="0.1524" layer="91"/>
+<label x="127" y="50.8" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
