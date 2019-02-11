@@ -5053,7 +5053,6 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <part name="LED13" library="HyTechDevices" deviceset="LED" device="-0805" value="Red"/>
 <part name="R52" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1.2k"/>
 <part name="GND79" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="FLIP1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND42" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND80" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND81" library="HyTechSymbols" deviceset="GND" device=""/>
@@ -6252,9 +6251,6 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 </instance>
 <instance part="GND79" gate="1" x="584.2" y="137.16" smashed="yes">
 <attribute name="VALUE" x="581.66" y="134.62" size="1.778" layer="96"/>
-</instance>
-<instance part="FLIP1" gate="1" x="365.76" y="7.62" smashed="yes" rot="MR90">
-<attribute name="VALUE" x="360.68" y="5.08" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="GND42" gate="1" x="223.52" y="22.86" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="226.06" y="20.32" size="1.778" layer="96" rot="MR0"/>
@@ -7543,11 +7539,6 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <wire x1="360.68" y1="22.86" x2="375.92" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="FLIP" gate="1" pin="+5V"/>
 <pinref part="U$25" gate="G$1" pin="VCCB"/>
-</segment>
-<segment>
-<wire x1="360.68" y1="7.62" x2="363.22" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="U$25" gate="G$1" pin="OE"/>
-<pinref part="FLIP1" gate="1" pin="+5V"/>
 </segment>
 <segment>
 <pinref part="U$11" gate="G$1" pin="P$1"/>
@@ -9180,6 +9171,11 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <pinref part="U$1" gate="G$1" pin="3.3V"/>
 <wire x1="355.6" y1="60.96" x2="358.14" y2="60.96" width="0.1524" layer="91"/>
 <label x="358.14" y="60.96" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$25" gate="G$1" pin="OE"/>
+<wire x1="360.68" y1="7.62" x2="363.22" y2="7.62" width="0.1524" layer="91"/>
+<label x="363.22" y="7.62" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MOSI_TEENSY" class="0">

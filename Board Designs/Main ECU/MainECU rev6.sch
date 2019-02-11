@@ -4978,7 +4978,6 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <part name="LED13" library="HyTechDevices" deviceset="LED" device="-0805" value="Red"/>
 <part name="R52" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1.2k"/>
 <part name="GND79" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="FLIP1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND42" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND80" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND81" library="HyTechSymbols" deviceset="GND" device=""/>
@@ -5990,15 +5989,15 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <attribute name="NAME" x="207.2386" y="201.93" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="202.438" y="201.93" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="FLIP" gate="1" x="381" y="22.86" smashed="yes" rot="MR90">
-<attribute name="VALUE" x="375.92" y="20.32" size="1.778" layer="96" rot="MR180"/>
+<instance part="FLIP" gate="1" x="378.46" y="22.86" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="373.38" y="20.32" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="GND43" gate="1" x="332.74" y="5.08" smashed="yes">
-<attribute name="VALUE" x="330.2" y="2.54" size="1.778" layer="96"/>
+<instance part="GND43" gate="1" x="330.2" y="5.08" smashed="yes">
+<attribute name="VALUE" x="327.66" y="2.54" size="1.778" layer="96"/>
 </instance>
-<instance part="U$25" gate="G$1" x="340.36" y="25.4" smashed="yes">
-<attribute name="NAME" x="340.36" y="25.908" size="1.778" layer="95"/>
-<attribute name="VALUE" x="340.36" y="2.54" size="1.778" layer="96"/>
+<instance part="U$25" gate="G$1" x="337.82" y="25.4" smashed="yes">
+<attribute name="NAME" x="337.82" y="25.908" size="1.778" layer="95"/>
+<attribute name="VALUE" x="337.82" y="2.54" size="1.778" layer="96"/>
 </instance>
 <instance part="U$5" gate="G$1" x="563.88" y="162.56" smashed="yes">
 <attribute name="VALUE" x="563.88" y="163.068" size="1.778" layer="95"/>
@@ -6141,9 +6140,6 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 </instance>
 <instance part="GND79" gate="1" x="584.2" y="137.16" smashed="yes">
 <attribute name="VALUE" x="581.66" y="134.62" size="1.778" layer="96"/>
-</instance>
-<instance part="FLIP1" gate="1" x="368.3" y="7.62" smashed="yes" rot="MR90">
-<attribute name="VALUE" x="363.22" y="5.08" size="1.778" layer="96" rot="MR180"/>
 </instance>
 <instance part="GND42" gate="1" x="223.52" y="22.86" smashed="yes" rot="MR0">
 <attribute name="VALUE" x="226.06" y="20.32" size="1.778" layer="96" rot="MR0"/>
@@ -6771,7 +6767,7 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <segment>
 <pinref part="GND43" gate="1" pin="GND"/>
 <pinref part="U$25" gate="G$1" pin="GND"/>
-<wire x1="332.74" y1="7.62" x2="335.28" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="330.2" y1="7.62" x2="332.74" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$19" gate="G$1" pin="GND"/>
@@ -7413,14 +7409,9 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <junction x="27.94" y="91.44"/>
 </segment>
 <segment>
-<wire x1="363.22" y1="22.86" x2="378.46" y2="22.86" width="0.1524" layer="91"/>
+<wire x1="360.68" y1="22.86" x2="375.92" y2="22.86" width="0.1524" layer="91"/>
 <pinref part="FLIP" gate="1" pin="+5V"/>
 <pinref part="U$25" gate="G$1" pin="VCCB"/>
-</segment>
-<segment>
-<wire x1="363.22" y1="7.62" x2="365.76" y2="7.62" width="0.1524" layer="91"/>
-<pinref part="U$25" gate="G$1" pin="OE"/>
-<pinref part="FLIP1" gate="1" pin="+5V"/>
 </segment>
 <segment>
 <pinref part="U$11" gate="G$1" pin="P$1"/>
@@ -8956,8 +8947,8 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 </net>
 <net name="CS1_5V" class="0">
 <segment>
-<wire x1="363.22" y1="20.32" x2="365.76" y2="20.32" width="0.1524" layer="91"/>
-<label x="365.76" y="20.32" size="1.27" layer="95" xref="yes"/>
+<wire x1="360.68" y1="20.32" x2="363.22" y2="20.32" width="0.1524" layer="91"/>
+<label x="363.22" y="20.32" size="1.27" layer="95" xref="yes"/>
 <pinref part="U$25" gate="G$1" pin="B1"/>
 </segment>
 <segment>
@@ -8968,8 +8959,8 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 </net>
 <net name="CS2_5V" class="0">
 <segment>
-<wire x1="363.22" y1="17.78" x2="365.76" y2="17.78" width="0.1524" layer="91"/>
-<label x="365.76" y="17.78" size="1.27" layer="95" xref="yes"/>
+<wire x1="360.68" y1="17.78" x2="363.22" y2="17.78" width="0.1524" layer="91"/>
+<label x="363.22" y="17.78" size="1.27" layer="95" xref="yes"/>
 <pinref part="U$25" gate="G$1" pin="B2"/>
 </segment>
 <segment>
@@ -8980,8 +8971,8 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 </net>
 <net name="SCK_5V" class="0">
 <segment>
-<wire x1="363.22" y1="15.24" x2="365.76" y2="15.24" width="0.1524" layer="91"/>
-<label x="365.76" y="15.24" size="1.27" layer="95" xref="yes"/>
+<wire x1="360.68" y1="15.24" x2="363.22" y2="15.24" width="0.1524" layer="91"/>
+<label x="363.22" y="15.24" size="1.27" layer="95" xref="yes"/>
 <pinref part="U$25" gate="G$1" pin="B3"/>
 </segment>
 <segment>
@@ -8997,8 +8988,8 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 </net>
 <net name="MOSI_5V" class="0">
 <segment>
-<wire x1="363.22" y1="12.7" x2="365.76" y2="12.7" width="0.1524" layer="91"/>
-<label x="365.76" y="12.7" size="1.27" layer="95" xref="yes"/>
+<wire x1="360.68" y1="12.7" x2="363.22" y2="12.7" width="0.1524" layer="91"/>
+<label x="363.22" y="12.7" size="1.27" layer="95" xref="yes"/>
 <pinref part="U$25" gate="G$1" pin="B4"/>
 </segment>
 <segment>
@@ -9014,8 +9005,8 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 </net>
 <net name="CS1_TEENSY" class="0">
 <segment>
-<wire x1="335.28" y1="20.32" x2="332.74" y2="20.32" width="0.1524" layer="91"/>
-<label x="332.74" y="20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="332.74" y1="20.32" x2="330.2" y2="20.32" width="0.1524" layer="91"/>
+<label x="330.2" y="20.32" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$25" gate="G$1" pin="A1"/>
 </segment>
 <segment>
@@ -9026,8 +9017,8 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 </net>
 <net name="CS2_TEENSY" class="0">
 <segment>
-<wire x1="335.28" y1="17.78" x2="332.74" y2="17.78" width="0.1524" layer="91"/>
-<label x="332.74" y="17.78" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="332.74" y1="17.78" x2="330.2" y2="17.78" width="0.1524" layer="91"/>
+<label x="330.2" y="17.78" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$25" gate="G$1" pin="A2"/>
 </segment>
 <segment>
@@ -9038,14 +9029,19 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 </net>
 <net name="3.3V_MAIN_TEENSY" class="0">
 <segment>
-<wire x1="335.28" y1="22.86" x2="332.74" y2="22.86" width="0.1524" layer="91"/>
-<label x="332.74" y="22.86" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="332.74" y1="22.86" x2="330.2" y2="22.86" width="0.1524" layer="91"/>
+<label x="330.2" y="22.86" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$25" gate="G$1" pin="VCCA"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="3.3V"/>
 <wire x1="355.6" y1="60.96" x2="358.14" y2="60.96" width="0.1524" layer="91"/>
 <label x="358.14" y="60.96" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$25" gate="G$1" pin="OE"/>
+<wire x1="360.68" y1="7.62" x2="363.22" y2="7.62" width="0.1524" layer="91"/>
+<label x="363.22" y="7.62" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="MOSI_TEENSY" class="0">
@@ -9055,15 +9051,15 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <label x="325.12" y="35.56" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
-<wire x1="335.28" y1="12.7" x2="332.74" y2="12.7" width="0.1524" layer="91"/>
-<label x="332.74" y="12.7" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="332.74" y1="12.7" x2="330.2" y2="12.7" width="0.1524" layer="91"/>
+<label x="330.2" y="12.7" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$25" gate="G$1" pin="A4"/>
 </segment>
 </net>
 <net name="SCK_TEENSY" class="0">
 <segment>
-<wire x1="335.28" y1="15.24" x2="332.74" y2="15.24" width="0.1524" layer="91"/>
-<label x="332.74" y="15.24" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="332.74" y1="15.24" x2="330.2" y2="15.24" width="0.1524" layer="91"/>
+<label x="330.2" y="15.24" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$25" gate="G$1" pin="A3"/>
 </segment>
 <segment>
