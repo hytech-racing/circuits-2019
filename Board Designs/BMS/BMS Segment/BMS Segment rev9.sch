@@ -2264,7 +2264,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="R1_B" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100R"/>
 <part name="U$2" library="HyTechDevices" deviceset="LTC6804-2" device=""/>
 <part name="C4_B" library="HyTechDevices" deviceset="CAP" device="0805" value="10nF"/>
-<part name="C6_B" library="HyTechDevices" deviceset="CAP" device="0805" value="0.1uF"/>
+<part name="C6_B" library="HyTechDevices" deviceset="CAP" device="0805" value="0.1uF">
+<attribute name="VOLTAGE" value="100V"/>
+</part>
 <part name="F9" library="HyTechDevices" deviceset="0001.2704.11" device="" value="0001.2704.11"/>
 <part name="F8" library="HyTechDevices" deviceset="0001.2704.11" device="" value="0001.2704.11"/>
 <part name="F7" library="HyTechDevices" deviceset="0001.2704.11" device="" value="0001.2704.11"/>
@@ -2339,7 +2341,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="R1_A" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100R"/>
 <part name="U$1" library="HyTechDevices" deviceset="LTC6804-2" device=""/>
 <part name="C4_A" library="HyTechDevices" deviceset="CAP" device="0805" value="10nF"/>
-<part name="C6_A" library="HyTechDevices" deviceset="CAP" device="0805" value="0.1uF"/>
+<part name="C6_A" library="HyTechDevices" deviceset="CAP" device="0805" value="0.1uF">
+<attribute name="VOLTAGE" value="100V"/>
+</part>
 <part name="F18" library="HyTechDevices" deviceset="0001.2704.11" device="" value="0001.2704.11"/>
 <part name="F17" library="HyTechDevices" deviceset="0001.2704.11" device="" value="0001.2704.11"/>
 <part name="F16" library="HyTechDevices" deviceset="0001.2704.11" device="" value="0001.2704.11"/>
@@ -2423,13 +2427,17 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="THERM2_B" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2" value="Th1"/>
 <part name="THERM3_B" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2" value="Th1"/>
 <part name="U$3" library="HyTechDevices" deviceset="NSV1C201MZ4" device=""/>
-<part name="C7_A" library="HyTechDevices" deviceset="CAP" device="0805" value="0.1uF"/>
+<part name="C7_A" library="HyTechDevices" deviceset="CAP" device="0805" value="0.1uF">
+<attribute name="VOLTAGE" value="100V"/>
+</part>
 <part name="SUPPLY69" library="supply1" deviceset="V-" device=""/>
 <part name="RIN_A" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100R"/>
 <part name="C8_A" library="HyTechDevices" deviceset="CAP" device="0805" value="1uF"/>
 <part name="SUPPLY40" library="supply1" deviceset="V-" device=""/>
 <part name="U$4" library="HyTechDevices" deviceset="NSV1C201MZ4" device=""/>
-<part name="C7_B" library="HyTechDevices" deviceset="CAP" device="0805" value="0.1uF"/>
+<part name="C7_B" library="HyTechDevices" deviceset="CAP" device="0805" value="0.1uF">
+<attribute name="VOLTAGE" value="100V"/>
+</part>
 <part name="RIN_B" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100R"/>
 <part name="C8_B" library="HyTechDevices" deviceset="CAP" device="0805" value="1uF"/>
 <part name="SUPPLY2" library="supply2" deviceset="V-" device=""/>
@@ -2580,6 +2588,7 @@ to set chip address</text>
 <instance part="C6_B" gate="G$1" x="-109.22" y="101.6" smashed="yes" rot="R180">
 <attribute name="NAME" x="-110.744" y="98.679" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-110.744" y="103.759" size="1.778" layer="96" rot="R180"/>
+<attribute name="VOLTAGE" x="-110.744" y="106.68" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="F9" gate="G$1" x="-210.82" y="137.16" smashed="yes">
 <attribute name="NAME" x="-215.9" y="137.414" size="1.27" layer="95"/>
@@ -2838,6 +2847,7 @@ to set chip address</text>
 <instance part="C6_A" gate="G$1" x="-109.22" y="340.36" smashed="yes" rot="R180">
 <attribute name="NAME" x="-110.744" y="337.439" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="-110.744" y="342.519" size="1.778" layer="96" rot="R180"/>
+<attribute name="VOLTAGE" x="-110.744" y="345.44" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="F18" gate="G$1" x="-210.82" y="279.4" smashed="yes">
 <attribute name="NAME" x="-215.9" y="279.654" size="1.27" layer="95"/>
@@ -3143,6 +3153,7 @@ to set chip address</text>
 <instance part="C7_A" gate="G$1" x="-96.52" y="347.98" smashed="yes" rot="MR0">
 <attribute name="NAME" x="-98.044" y="350.901" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="-98.044" y="345.821" size="1.778" layer="96" rot="MR0"/>
+<attribute name="VOLTAGE" x="-98.044" y="342.9" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="SUPPLY69" gate="1" x="-96.52" y="340.36" smashed="yes">
 <attribute name="VALUE" x="-96.52" y="337.82" size="1.778" layer="96" rot="R180"/>
@@ -3165,6 +3176,7 @@ to set chip address</text>
 <instance part="C7_B" gate="G$1" x="-96.52" y="109.22" smashed="yes" rot="MR0">
 <attribute name="NAME" x="-98.044" y="112.141" size="1.778" layer="95" rot="MR0"/>
 <attribute name="VALUE" x="-98.044" y="107.061" size="1.778" layer="96" rot="MR0"/>
+<attribute name="VOLTAGE" x="-98.044" y="104.14" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="RIN_B" gate="G$1" x="-121.92" y="114.3" smashed="yes">
 <attribute name="NAME" x="-125.73" y="115.7986" size="1.778" layer="95"/>
