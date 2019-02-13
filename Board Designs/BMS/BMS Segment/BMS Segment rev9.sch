@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -2305,7 +2305,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY6" library="supply2" deviceset="V-" device=""/>
 <part name="RU1_B" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100R"/>
 <part name="TRANSFORMER" library="HyTechDevices" deviceset="HM2102NLT" device="" value="HM2102NLT"/>
-<part name="RM_B" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100R"/>
+<part name="RM_B" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100R">
+<attribute name="TYPE" value="TERMINATION"/>
+</part>
 <part name="R4_B" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="22R"/>
 <part name="R5_B" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="22R"/>
 <part name="R3_B" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="402R"/>
@@ -2379,7 +2381,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="R2_A" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100R"/>
 <part name="C5_A" library="HyTechDevices" deviceset="CAP" device="0805" value="10nF"/>
 <part name="RU1_A" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100R"/>
-<part name="RM_A" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100R"/>
+<part name="RM_A" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100R">
+<attribute name="TYPE" value="TERMINATION"/>
+</part>
 <part name="R4_A" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="22R"/>
 <part name="R5_A" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="22R"/>
 <part name="R3_A" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="402R"/>
@@ -2720,8 +2724,9 @@ to set chip address</text>
 <attribute name="VALUE" x="20.32" y="360.807" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="RM_B" gate="G$1" x="40.64" y="111.76" smashed="yes" rot="R270">
-<attribute name="NAME" x="42.1386" y="115.57" size="1.778" layer="95" rot="R270"/>
+<attribute name="NAME" x="45.1386" y="115.57" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="37.338" y="115.57" size="1.778" layer="96" rot="R270"/>
+<attribute name="TYPE" x="42.64" y="119.76" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="R4_B" gate="G$1" x="33.02" y="121.92" smashed="yes">
 <attribute name="NAME" x="29.21" y="123.4186" size="1.778" layer="95"/>
@@ -2968,8 +2973,9 @@ to set chip address</text>
 <attribute name="VALUE" x="-125.73" y="321.818" size="1.778" layer="96"/>
 </instance>
 <instance part="RM_A" gate="G$1" x="40.64" y="350.52" smashed="yes" rot="R270">
-<attribute name="NAME" x="42.1386" y="354.33" size="1.778" layer="95" rot="R270"/>
+<attribute name="NAME" x="44.6786" y="354.33" size="1.778" layer="95" rot="R270"/>
 <attribute name="VALUE" x="37.338" y="354.33" size="1.778" layer="96" rot="R270"/>
+<attribute name="TYPE" x="42.18" y="358.14" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="R4_A" gate="G$1" x="33.02" y="360.68" smashed="yes">
 <attribute name="NAME" x="29.21" y="362.1786" size="1.778" layer="95"/>
