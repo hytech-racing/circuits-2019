@@ -844,6 +844,7 @@
 <rectangle x1="20.5105" y1="5.6261" x2="20.9677" y2="5.7023" layer="51"/>
 <text x="20.574" y="40.005" size="0.8128" layer="51" font="vector" rot="R90" align="top-center">Shutdown Latch</text>
 <text x="24.638" y="0.635" size="0.762" layer="51" font="vector">Updates by Nathan Cheek, Soohyun Kim, Arvind Srinivasan</text>
+<text x="81.661" y="48.514" size="1.016" layer="51" font="vector" rot="R270" align="bottom-center">CAN</text>
 </plain>
 <libraries>
 <library name="HyTechDevices">
