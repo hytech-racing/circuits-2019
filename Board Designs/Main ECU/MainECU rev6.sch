@@ -2175,6 +2175,12 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <wire x1="5.08" y1="-3.81" x2="-5.08" y2="-3.81" width="0.127" layer="21"/>
 <wire x1="-5.08" y1="-3.81" x2="-5.08" y2="3.81" width="0.127" layer="21"/>
 </package>
+<package name="SOLDER_PAD_XSMALL">
+<description>Solder Pad
+0.1" x 0.05"</description>
+<smd name="P$1" x="0" y="0" dx="2.54" dy="1.27" layer="1"/>
+<text x="-3.175" y="-2.54" size="1.27" layer="25">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="MV">
@@ -2853,6 +2859,11 @@ will be further integrated into the Sparkfun Library for other footprints.  It c
 <text x="-2.54" y="5.842" size="1.778" layer="95">&gt;NAME</text>
 <pin name="1" x="7.62" y="0" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="7.62" y="2.54" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+<symbol name="SOLDER_PAD">
+<description>Solder pad used to solder wires onto PCB</description>
+<rectangle x1="0" y1="0" x2="5.08" y2="5.08" layer="94"/>
+<pin name="P$1" x="-2.54" y="2.54" visible="off" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4569,6 +4580,22 @@ Note: The Sparkfun version includes many other packages including surface mount 
 </device>
 </devices>
 </deviceset>
+<deviceset name="SOLDER_PAD">
+<description>Solder pad used to attach wires directly to PCB</description>
+<gates>
+<gate name="G$1" symbol="SOLDER_PAD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOLDER_PAD_XSMALL">
+<connects>
+<connect gate="G$1" pin="P$1" pad="P$1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 <library name="HyTechSymbols">
@@ -5038,6 +5065,8 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <part name="J7" library="HyTechDevices" deviceset="JUMPER" device=""/>
 <part name="J8" library="HyTechDevices" deviceset="JUMPER" device=""/>
 <part name="R63" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
+<part name="P1" library="HyTechDevices" deviceset="SOLDER_PAD" device=""/>
+<part name="P2" library="HyTechDevices" deviceset="SOLDER_PAD" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5100,7 +5129,7 @@ Motor Controller</text>
 <text x="358.14" y="205.74" size="1.016" layer="97">47nF for ~10Hz filter (11.3Hz)</text>
 <text x="358.14" y="172.72" size="1.016" layer="97">47nF for ~10Hz filter (11.3Hz)</text>
 <text x="33.02" y="76.2" size="1.27" layer="96">12V for Dash</text>
-<text x="60.96" y="15.24" size="2.032" layer="97">Dash 5, 6, 7, 8 Can be inputs or outputs
+<text x="58.42" y="15.24" size="2.032" layer="97">Dash 5, 6, 7, 8 Can be inputs or outputs
 For input, solder jumper.
 For output, solder resistor (R40-R43).</text>
 <text x="33.02" y="88.9" size="1.016" layer="95">Pedals 5V</text>
@@ -5108,7 +5137,7 @@ For output, solder resistor (R40-R43).</text>
 <text x="462.28" y="139.7" size="1.016" layer="97">470pF for ~1kHz filter (1.13kHz)</text>
 <text x="119.38" y="154.94" size="2.032" layer="97">Install resistors or LEDs here
 to limit current or drop voltage</text>
-<text x="60.96" y="2.54" size="2.032" layer="97">WARNING: INSTALL ONLY JUMPER (J1-J4) OR
+<text x="58.42" y="2.54" size="2.032" layer="97">WARNING: INSTALL ONLY JUMPER (J1-J4) OR
 RESISTOR (R40-R43) ON DASH CHANNELS 5-8.
 DO NOT INSTALL BOTH ON SINGLE CHANNEL</text>
 <text x="568.96" y="76.2" size="1.778" layer="97">Alternate stocked: NCP18XV103J0SRB</text>
@@ -5121,11 +5150,11 @@ CIRCUIT</text>
 <text x="53.34" y="195.58" size="2.032" layer="97">R63 is optional depending
 on feedback from TE w.r.t.
 coil voltage limits</text>
-<text x="111.76" y="33.02" size="2.032" layer="97">To configure Dash 11 or 12 as 5V
+<text x="109.22" y="33.02" size="2.032" layer="97">To configure Dash 11 or 12 as 5V
 input/output, solder jumper (J5 or J6).
 If configuring as 12V input, do not
 solder jumper.</text>
-<text x="111.76" y="20.32" size="2.032" layer="97">WARNING: DO NOT INSTALL
+<text x="109.22" y="20.32" size="2.032" layer="97">WARNING: DO NOT INSTALL
 JUMPER (J5 OR J6) IF CONNECTING
 CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 </plain>
@@ -5674,9 +5703,9 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <attribute name="NAME" x="82.55" y="151.3586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="82.55" y="146.558" size="1.778" layer="96"/>
 </instance>
-<instance part="R44" gate="G$1" x="137.16" y="144.78" smashed="yes">
-<attribute name="NAME" x="133.35" y="146.2786" size="1.778" layer="95"/>
-<attribute name="VALUE" x="133.35" y="141.478" size="1.778" layer="96"/>
+<instance part="R44" gate="G$1" x="132.08" y="144.78" smashed="yes">
+<attribute name="NAME" x="128.27" y="146.2786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="128.27" y="141.478" size="1.778" layer="96"/>
 </instance>
 <instance part="GND58" gate="1" x="35.56" y="86.36" smashed="yes" rot="R90">
 <attribute name="VALUE" x="38.1" y="83.82" size="1.778" layer="96" rot="R90"/>
@@ -5865,9 +5894,9 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <attribute name="NAME" x="82.55" y="141.1986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="82.55" y="136.398" size="1.778" layer="96"/>
 </instance>
-<instance part="R37" gate="G$1" x="137.16" y="134.62" smashed="yes">
-<attribute name="NAME" x="133.35" y="136.1186" size="1.778" layer="95"/>
-<attribute name="VALUE" x="133.35" y="131.318" size="1.778" layer="96"/>
+<instance part="R37" gate="G$1" x="132.08" y="134.62" smashed="yes">
+<attribute name="NAME" x="128.27" y="136.1186" size="1.778" layer="95"/>
+<attribute name="VALUE" x="128.27" y="131.318" size="1.778" layer="96"/>
 </instance>
 <instance part="R38" gate="G$1" x="86.36" y="129.54" smashed="yes">
 <attribute name="NAME" x="82.55" y="131.0386" size="1.778" layer="95"/>
@@ -5896,10 +5925,10 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <attribute name="NAME" x="82.55" y="77.6986" size="1.778" layer="95"/>
 <attribute name="VALUE" x="82.55" y="72.898" size="1.778" layer="96"/>
 </instance>
-<instance part="J2" gate="G$1" x="86.36" y="53.34" smashed="yes" rot="MR0"/>
-<instance part="J1" gate="G$1" x="86.36" y="63.5" smashed="yes" rot="MR0"/>
-<instance part="J3" gate="G$1" x="86.36" y="43.18" smashed="yes" rot="MR0"/>
-<instance part="J4" gate="G$1" x="86.36" y="33.02" smashed="yes" rot="MR0"/>
+<instance part="J2" gate="G$1" x="83.82" y="53.34" smashed="yes" rot="MR0"/>
+<instance part="J1" gate="G$1" x="83.82" y="63.5" smashed="yes" rot="MR0"/>
+<instance part="J3" gate="G$1" x="83.82" y="43.18" smashed="yes" rot="MR0"/>
+<instance part="J4" gate="G$1" x="83.82" y="33.02" smashed="yes" rot="MR0"/>
 <instance part="P+9" gate="1" x="233.68" y="114.3" smashed="yes">
 <attribute name="VALUE" x="231.14" y="109.22" size="1.778" layer="96" rot="R90"/>
 </instance>
@@ -6102,11 +6131,11 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <instance part="GND76" gate="1" x="93.98" y="73.66" smashed="yes">
 <attribute name="VALUE" x="91.44" y="71.12" size="1.778" layer="96"/>
 </instance>
-<instance part="P+33" gate="1" x="127" y="147.32" smashed="yes" rot="R270">
-<attribute name="VALUE" x="121.92" y="149.86" size="1.778" layer="96"/>
+<instance part="P+33" gate="1" x="114.3" y="152.4" smashed="yes" rot="R90">
+<attribute name="VALUE" x="119.38" y="149.86" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="P+36" gate="1" x="127" y="104.14" smashed="yes" rot="R270">
-<attribute name="VALUE" x="121.92" y="106.68" size="1.778" layer="96"/>
+<instance part="P+36" gate="1" x="114.3" y="109.22" smashed="yes" rot="R90">
+<attribute name="VALUE" x="119.38" y="106.68" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="LED4" gate="LED" x="563.88" y="170.18" smashed="yes" rot="R90">
 <attribute name="NAME" x="568.452" y="173.736" size="1.778" layer="95" rot="R180"/>
@@ -6336,12 +6365,14 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <instance part="GND21" gate="1" x="292.1" y="68.58" smashed="yes" rot="R90">
 <attribute name="VALUE" x="294.64" y="66.04" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="J7" gate="G$1" x="137.16" y="63.5" smashed="yes" rot="MR0"/>
-<instance part="J8" gate="G$1" x="137.16" y="53.34" smashed="yes" rot="MR0"/>
+<instance part="J7" gate="G$1" x="134.62" y="63.5" smashed="yes" rot="MR0"/>
+<instance part="J8" gate="G$1" x="134.62" y="53.34" smashed="yes" rot="MR0"/>
 <instance part="R63" gate="G$1" x="40.64" y="200.66" smashed="yes">
 <attribute name="NAME" x="36.83" y="202.1586" size="1.778" layer="95"/>
 <attribute name="VALUE" x="36.83" y="197.358" size="1.778" layer="96"/>
 </instance>
+<instance part="P1" gate="G$1" x="373.38" y="111.76" smashed="yes"/>
+<instance part="P2" gate="G$1" x="373.38" y="119.38" smashed="yes"/>
 </instances>
 <busses>
 </busses>
@@ -7041,7 +7072,7 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 </segment>
 <segment>
 <pinref part="P+33" gate="1" pin="+12V"/>
-<wire x1="124.46" y1="147.32" x2="121.92" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="152.4" x2="121.92" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="U$29" gate="G$1" pin="C1"/>
 <wire x1="119.38" y1="142.24" x2="121.92" y2="142.24" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="142.24" x2="121.92" y2="137.16" width="0.1524" layer="91"/>
@@ -7055,12 +7086,12 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <wire x1="119.38" y1="127" x2="121.92" y2="127" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="127" x2="121.92" y2="132.08" width="0.1524" layer="91"/>
 <junction x="121.92" y="132.08"/>
-<wire x1="121.92" y1="147.32" x2="121.92" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="152.4" x2="121.92" y2="142.24" width="0.1524" layer="91"/>
 <junction x="121.92" y="142.24"/>
 </segment>
 <segment>
 <pinref part="P+36" gate="1" pin="+12V"/>
-<wire x1="124.46" y1="104.14" x2="121.92" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="116.84" y1="109.22" x2="121.92" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="119.38" y1="99.06" x2="121.92" y2="99.06" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="99.06" x2="121.92" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="93.98" x2="119.38" y2="93.98" width="0.1524" layer="91"/>
@@ -7070,7 +7101,7 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <wire x1="119.38" y1="83.82" x2="121.92" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="121.92" y1="83.82" x2="121.92" y2="88.9" width="0.1524" layer="91"/>
 <junction x="121.92" y="88.9"/>
-<wire x1="121.92" y1="104.14" x2="121.92" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="109.22" x2="121.92" y2="99.06" width="0.1524" layer="91"/>
 <junction x="121.92" y="99.06"/>
 <pinref part="U$30" gate="G$1" pin="C4"/>
 <pinref part="U$30" gate="G$1" pin="C3"/>
@@ -8270,7 +8301,7 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <label x="472.44" y="124.46" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="DASH_2_SWITCH" class="0">
+<net name="DASH_2_INTER" class="0">
 <segment>
 <label x="322.58" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="327.66" y1="116.84" x2="322.58" y2="116.84" width="0.1524" layer="91"/>
@@ -8282,7 +8313,7 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <label x="78.74" y="139.7" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="DASH_3_SWITCH" class="0">
+<net name="DASH_3_INTER" class="0">
 <segment>
 <label x="322.58" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="327.66" y1="114.3" x2="322.58" y2="114.3" width="0.1524" layer="91"/>
@@ -8294,7 +8325,7 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <label x="78.74" y="129.54" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="DASH_4_SWITCH" class="0">
+<net name="DASH_4_INTER" class="0">
 <segment>
 <label x="322.58" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="327.66" y1="111.76" x2="322.58" y2="111.76" width="0.1524" layer="91"/>
@@ -8306,10 +8337,10 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <label x="78.74" y="119.38" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
-<net name="DASH_1_OUT" class="0">
+<net name="DASH_1_EXTERN" class="0">
 <segment>
-<label x="144.78" y="144.78" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<wire x1="142.24" y1="144.78" x2="144.78" y2="144.78" width="0.1524" layer="91"/>
+<label x="139.7" y="144.78" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<wire x1="137.16" y1="144.78" x2="139.7" y2="144.78" width="0.1524" layer="91"/>
 <pinref part="R44" gate="G$1" pin="2"/>
 </segment>
 <segment>
@@ -8318,51 +8349,51 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <pinref part="X1" gate="-1" pin="S"/>
 </segment>
 </net>
-<net name="DASH_2_OUT" class="0">
+<net name="DASH_2_EXTERN" class="0">
 <segment>
 <label x="30.48" y="157.48" size="1.016" layer="95" rot="MR180" xref="yes"/>
 <wire x1="22.86" y1="157.48" x2="30.48" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="X1" gate="-2" pin="S"/>
 </segment>
 <segment>
-<label x="144.78" y="134.62" size="1.27" layer="95" rot="MR180" xref="yes"/>
-<wire x1="142.24" y1="134.62" x2="144.78" y2="134.62" width="0.1524" layer="91"/>
+<label x="139.7" y="134.62" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<wire x1="137.16" y1="134.62" x2="139.7" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="R37" gate="G$1" pin="2"/>
 </segment>
 </net>
-<net name="DASH_3_OUT" class="0">
+<net name="DASH_3_EXTERN" class="0">
 <segment>
 <label x="30.48" y="154.94" size="1.016" layer="95" xref="yes"/>
 <wire x1="22.86" y1="154.94" x2="30.48" y2="154.94" width="0.1524" layer="91"/>
 <pinref part="X1" gate="-3" pin="S"/>
 </segment>
 <segment>
-<label x="144.78" y="129.54" size="1.27" layer="95" xref="yes"/>
+<label x="139.7" y="129.54" size="1.27" layer="95" xref="yes"/>
 <pinref part="U$29" gate="G$1" pin="EM3"/>
-<wire x1="144.78" y1="129.54" x2="119.38" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="139.7" y1="129.54" x2="119.38" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="DASH_4_OUT" class="0">
+<net name="DASH_4_EXTERN" class="0">
 <segment>
 <label x="30.48" y="152.4" size="1.016" layer="95" xref="yes"/>
 <wire x1="22.86" y1="152.4" x2="30.48" y2="152.4" width="0.1524" layer="91"/>
 <pinref part="X1" gate="-4" pin="S"/>
 </segment>
 <segment>
-<label x="144.78" y="124.46" size="1.27" layer="95" xref="yes"/>
-<wire x1="119.38" y1="124.46" x2="144.78" y2="124.46" width="0.1524" layer="91"/>
+<label x="139.7" y="124.46" size="1.27" layer="95" xref="yes"/>
+<wire x1="119.38" y1="124.46" x2="139.7" y2="124.46" width="0.1524" layer="91"/>
 <pinref part="U$29" gate="G$1" pin="EM4"/>
 </segment>
 </net>
-<net name="DASH_5_IO" class="0">
+<net name="DASH_5_EXTERN" class="0">
 <segment>
 <label x="30.48" y="116.84" size="1.016" layer="95" xref="yes"/>
 <wire x1="30.48" y1="116.84" x2="22.86" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="X1" gate="-18" pin="S"/>
 </segment>
 <segment>
-<wire x1="91.44" y1="60.96" x2="86.36" y2="60.96" width="0.1524" layer="91"/>
-<label x="91.44" y="60.96" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<wire x1="88.9" y1="60.96" x2="83.82" y2="60.96" width="0.1524" layer="91"/>
+<label x="88.9" y="60.96" size="1.27" layer="95" rot="MR180" xref="yes"/>
 <pinref part="J1" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
@@ -8371,15 +8402,15 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <label x="124.46" y="96.52" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="DASH_6_IO" class="0">
+<net name="DASH_6_EXTERN" class="0">
 <segment>
 <label x="30.48" y="114.3" size="1.016" layer="95" xref="yes"/>
 <wire x1="30.48" y1="114.3" x2="22.86" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="X1" gate="-19" pin="S"/>
 </segment>
 <segment>
-<wire x1="91.44" y1="50.8" x2="86.36" y2="50.8" width="0.1524" layer="91"/>
-<label x="91.44" y="50.8" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<wire x1="88.9" y1="50.8" x2="83.82" y2="50.8" width="0.1524" layer="91"/>
+<label x="88.9" y="50.8" size="1.27" layer="95" rot="MR180" xref="yes"/>
 <pinref part="J2" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
@@ -8396,15 +8427,15 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <wire x1="91.44" y1="142.24" x2="91.44" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="DASH_7_IO" class="0">
+<net name="DASH_7_EXTERN" class="0">
 <segment>
 <label x="30.48" y="111.76" size="1.016" layer="95" xref="yes"/>
 <wire x1="22.86" y1="111.76" x2="30.48" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="X1" gate="-20" pin="S"/>
 </segment>
 <segment>
-<wire x1="91.44" y1="40.64" x2="86.36" y2="40.64" width="0.1524" layer="91"/>
-<label x="91.44" y="40.64" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<wire x1="88.9" y1="40.64" x2="83.82" y2="40.64" width="0.1524" layer="91"/>
+<label x="88.9" y="40.64" size="1.27" layer="95" rot="MR180" xref="yes"/>
 <pinref part="J3" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
@@ -8413,7 +8444,7 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <label x="124.46" y="86.36" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="DASH_1_SWITCH" class="0">
+<net name="DASH_1_INTER" class="0">
 <segment>
 <pinref part="R35" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="149.86" x2="81.28" y2="149.86" width="0.1524" layer="91"/>
@@ -8428,9 +8459,9 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <net name="N$59" class="0">
 <segment>
 <pinref part="R44" gate="G$1" pin="1"/>
-<wire x1="132.08" y1="144.78" x2="132.08" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="127" y1="144.78" x2="127" y2="139.7" width="0.1524" layer="91"/>
 <pinref part="U$29" gate="G$1" pin="EM1"/>
-<wire x1="132.08" y1="139.7" x2="119.38" y2="139.7" width="0.1524" layer="91"/>
+<wire x1="127" y1="139.7" x2="119.38" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="12VUNFUSED" class="0">
@@ -8450,7 +8481,7 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <junction x="182.88" y="127"/>
 </segment>
 </net>
-<net name="DASH_9_IO" class="0">
+<net name="DASH_9_EXTERN" class="0">
 <segment>
 <label x="358.14" y="101.6" size="1.27" layer="95" xref="yes"/>
 <wire x1="353.06" y1="101.6" x2="358.14" y2="101.6" width="0.1524" layer="91"/>
@@ -8462,7 +8493,7 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <pinref part="X1" gate="-23" pin="S"/>
 </segment>
 </net>
-<net name="DASH_10_IO" class="0">
+<net name="DASH_10_EXTERN" class="0">
 <segment>
 <label x="358.14" y="104.14" size="1.27" layer="95" xref="yes"/>
 <wire x1="353.06" y1="104.14" x2="358.14" y2="104.14" width="0.1524" layer="91"/>
@@ -8474,7 +8505,7 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <pinref part="X1" gate="-32" pin="S"/>
 </segment>
 </net>
-<net name="DASH_11_IO" class="0">
+<net name="DASH_11_EXTERN" class="0">
 <segment>
 <label x="27.94" y="147.32" size="1.016" layer="95" xref="yes"/>
 <wire x1="22.86" y1="147.32" x2="27.94" y2="147.32" width="0.1524" layer="91"/>
@@ -8487,11 +8518,11 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 </segment>
 <segment>
 <pinref part="J7" gate="G$1" pin="P$1"/>
-<wire x1="137.16" y1="60.96" x2="142.24" y2="60.96" width="0.1524" layer="91"/>
-<label x="142.24" y="60.96" size="1.27" layer="95" xref="yes"/>
+<wire x1="134.62" y1="60.96" x2="139.7" y2="60.96" width="0.1524" layer="91"/>
+<label x="139.7" y="60.96" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="DASH_12_IO" class="0">
+<net name="DASH_12_EXTERN" class="0">
 <segment>
 <label x="30.48" y="106.68" size="1.016" layer="95" xref="yes"/>
 <wire x1="22.86" y1="106.68" x2="30.48" y2="106.68" width="0.1524" layer="91"/>
@@ -8504,8 +8535,8 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 </segment>
 <segment>
 <pinref part="J8" gate="G$1" pin="P$1"/>
-<wire x1="137.16" y1="50.8" x2="142.24" y2="50.8" width="0.1524" layer="91"/>
-<label x="142.24" y="50.8" size="1.27" layer="95" xref="yes"/>
+<wire x1="134.62" y1="50.8" x2="139.7" y2="50.8" width="0.1524" layer="91"/>
+<label x="139.7" y="50.8" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$35" class="0">
@@ -8656,7 +8687,7 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <segment>
 <pinref part="R37" gate="G$1" pin="1"/>
 <pinref part="U$29" gate="G$1" pin="EM2"/>
-<wire x1="132.08" y1="134.62" x2="119.38" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="127" y1="134.62" x2="119.38" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$52" class="0">
@@ -8707,10 +8738,10 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <pinref part="U$30" gate="G$1" pin="VCC4"/>
 </segment>
 </net>
-<net name="DASH_8_IO" class="0">
+<net name="DASH_8_EXTERN" class="0">
 <segment>
-<wire x1="91.44" y1="30.48" x2="86.36" y2="30.48" width="0.1524" layer="91"/>
-<label x="91.44" y="30.48" size="1.27" layer="95" rot="MR180" xref="yes"/>
+<wire x1="88.9" y1="30.48" x2="83.82" y2="30.48" width="0.1524" layer="91"/>
+<label x="88.9" y="30.48" size="1.27" layer="95" rot="MR180" xref="yes"/>
 <pinref part="J4" gate="G$1" pin="P$1"/>
 </segment>
 <segment>
@@ -8724,7 +8755,7 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <label x="124.46" y="81.28" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="DASH_8_SWITCH" class="0">
+<net name="DASH_8_INTER" class="0">
 <segment>
 <label x="322.58" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="327.66" y1="101.6" x2="322.58" y2="101.6" width="0.1524" layer="91"/>
@@ -8735,8 +8766,13 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <wire x1="78.74" y1="76.2" x2="81.28" y2="76.2" width="0.1524" layer="91"/>
 <label x="78.74" y="76.2" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
+<segment>
+<pinref part="J4" gate="G$1" pin="P$2"/>
+<wire x1="78.74" y1="30.48" x2="73.66" y2="30.48" width="0.1524" layer="91"/>
+<label x="73.66" y="30.48" size="1.27" layer="95" rot="MR0" xref="yes"/>
+</segment>
 </net>
-<net name="DASH_7_SWITCH" class="0">
+<net name="DASH_7_INTER" class="0">
 <segment>
 <label x="322.58" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="327.66" y1="104.14" x2="322.58" y2="104.14" width="0.1524" layer="91"/>
@@ -8747,8 +8783,13 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <wire x1="78.74" y1="86.36" x2="81.28" y2="86.36" width="0.1524" layer="91"/>
 <label x="78.74" y="86.36" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
+<segment>
+<pinref part="J3" gate="G$1" pin="P$2"/>
+<wire x1="78.74" y1="40.64" x2="73.66" y2="40.64" width="0.1524" layer="91"/>
+<label x="73.66" y="40.64" size="1.27" layer="95" rot="MR0" xref="yes"/>
+</segment>
 </net>
-<net name="DASH_6_SWITCH" class="0">
+<net name="DASH_6_INTER" class="0">
 <segment>
 <label x="322.58" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="327.66" y1="106.68" x2="322.58" y2="106.68" width="0.1524" layer="91"/>
@@ -8759,8 +8800,13 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <wire x1="78.74" y1="96.52" x2="81.28" y2="96.52" width="0.1524" layer="91"/>
 <label x="78.74" y="96.52" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
+<segment>
+<pinref part="J2" gate="G$1" pin="P$2"/>
+<wire x1="78.74" y1="50.8" x2="73.66" y2="50.8" width="0.1524" layer="91"/>
+<label x="73.66" y="50.8" size="1.27" layer="95" rot="MR0" xref="yes"/>
+</segment>
 </net>
-<net name="DASH_5_SWITCH" class="0">
+<net name="DASH_5_INTER" class="0">
 <segment>
 <label x="322.58" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 <wire x1="327.66" y1="109.22" x2="322.58" y2="109.22" width="0.1524" layer="91"/>
@@ -8771,53 +8817,10 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <wire x1="78.74" y1="106.68" x2="81.28" y2="106.68" width="0.1524" layer="91"/>
 <label x="78.74" y="106.68" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
-</net>
-<net name="DASH_8_READ" class="0">
-<segment>
-<label x="358.14" y="119.38" size="1.27" layer="95" xref="yes"/>
-<wire x1="353.06" y1="119.38" x2="358.14" y2="119.38" width="0.1524" layer="91"/>
-<pinref part="U$17" gate="G$1" pin="GPA7"/>
-</segment>
-<segment>
-<pinref part="J4" gate="G$1" pin="P$2"/>
-<wire x1="81.28" y1="30.48" x2="76.2" y2="30.48" width="0.1524" layer="91"/>
-<label x="76.2" y="30.48" size="1.27" layer="95" rot="MR0" xref="yes"/>
-</segment>
-</net>
-<net name="DASH_7_READ" class="0">
-<segment>
-<label x="358.14" y="116.84" size="1.27" layer="95" xref="yes"/>
-<wire x1="353.06" y1="116.84" x2="358.14" y2="116.84" width="0.1524" layer="91"/>
-<pinref part="U$17" gate="G$1" pin="GPA6"/>
-</segment>
-<segment>
-<pinref part="J3" gate="G$1" pin="P$2"/>
-<wire x1="81.28" y1="40.64" x2="76.2" y2="40.64" width="0.1524" layer="91"/>
-<label x="76.2" y="40.64" size="1.27" layer="95" rot="MR0" xref="yes"/>
-</segment>
-</net>
-<net name="DASH_6_READ" class="0">
-<segment>
-<label x="358.14" y="114.3" size="1.27" layer="95" xref="yes"/>
-<wire x1="353.06" y1="114.3" x2="358.14" y2="114.3" width="0.1524" layer="91"/>
-<pinref part="U$17" gate="G$1" pin="GPA5"/>
-</segment>
-<segment>
-<pinref part="J2" gate="G$1" pin="P$2"/>
-<wire x1="81.28" y1="50.8" x2="76.2" y2="50.8" width="0.1524" layer="91"/>
-<label x="76.2" y="50.8" size="1.27" layer="95" rot="MR0" xref="yes"/>
-</segment>
-</net>
-<net name="DASH_5_READ" class="0">
-<segment>
-<label x="358.14" y="111.76" size="1.27" layer="95" xref="yes"/>
-<wire x1="353.06" y1="111.76" x2="358.14" y2="111.76" width="0.1524" layer="91"/>
-<pinref part="U$17" gate="G$1" pin="GPA4"/>
-</segment>
 <segment>
 <pinref part="J1" gate="G$1" pin="P$2"/>
-<wire x1="81.28" y1="60.96" x2="76.2" y2="60.96" width="0.1524" layer="91"/>
-<label x="76.2" y="60.96" size="1.27" layer="95" rot="MR0" xref="yes"/>
+<wire x1="78.74" y1="60.96" x2="73.66" y2="60.96" width="0.1524" layer="91"/>
+<label x="73.66" y="60.96" size="1.27" layer="95" rot="MR0" xref="yes"/>
 </segment>
 </net>
 <net name="N$58" class="0">
@@ -9459,7 +9462,7 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <pinref part="R63" gate="G$1" pin="1"/>
 </segment>
 </net>
-<net name="DASH_11_OPT" class="0">
+<net name="DASH_11_INTER" class="0">
 <segment>
 <wire x1="353.06" y1="106.68" x2="358.14" y2="106.68" width="0.1524" layer="91"/>
 <label x="358.14" y="106.68" size="1.27" layer="95" xref="yes"/>
@@ -9467,11 +9470,11 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 </segment>
 <segment>
 <pinref part="J7" gate="G$1" pin="P$2"/>
-<wire x1="132.08" y1="60.96" x2="127" y2="60.96" width="0.1524" layer="91"/>
-<label x="127" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="129.54" y1="60.96" x2="124.46" y2="60.96" width="0.1524" layer="91"/>
+<label x="124.46" y="60.96" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="DASH_12_OPT" class="0">
+<net name="DASH_12_INTER" class="0">
 <segment>
 <wire x1="353.06" y1="109.22" x2="358.14" y2="109.22" width="0.1524" layer="91"/>
 <label x="358.14" y="109.22" size="1.27" layer="95" xref="yes"/>
@@ -9479,8 +9482,24 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 </segment>
 <segment>
 <pinref part="J8" gate="G$1" pin="P$2"/>
-<wire x1="132.08" y1="50.8" x2="127" y2="50.8" width="0.1524" layer="91"/>
-<label x="127" y="50.8" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="129.54" y1="50.8" x2="124.46" y2="50.8" width="0.1524" layer="91"/>
+<label x="124.46" y="50.8" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="N$72" class="0">
+<segment>
+<pinref part="P1" gate="G$1" pin="P$1"/>
+<wire x1="353.06" y1="111.76" x2="368.3" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="368.3" y1="111.76" x2="370.84" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="U$17" gate="G$1" pin="GPA4"/>
+</segment>
+</net>
+<net name="N$73" class="0">
+<segment>
+<pinref part="P2" gate="G$1" pin="P$1"/>
+<wire x1="363.22" y1="114.3" x2="353.06" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="370.84" y1="121.92" x2="363.22" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="U$17" gate="G$1" pin="GPA5"/>
 </segment>
 </net>
 </nets>
