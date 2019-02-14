@@ -189,7 +189,7 @@
 <board>
 <plain>
 <wire x1="0" y1="0" x2="118.618" y2="0" width="0" layer="20"/>
-<wire x1="55.372" y1="70.739" x2="55.372" y2="8.763" width="0.8128" layer="51"/>
+<wire x1="55.372" y1="70.739" x2="55.372" y2="8.89" width="0.8128" layer="51"/>
 <text x="52.959" y="27.813" size="2.54" layer="51" font="vector" rot="R90" align="center">GLV</text>
 <text x="57.785" y="27.813" size="2.54" layer="51" font="vector" rot="R90" align="center">TS</text>
 <wire x1="55.372" y1="70.866" x2="55.372" y2="8.89" width="0.8128" layer="52"/>
@@ -229,7 +229,7 @@ Voltage PCB Area</text>
 <wire x1="112.268" y1="8.89" x2="55.372" y2="8.89" width="0.8128" layer="52"/>
 <wire x1="95.25" y1="42.926" x2="95.25" y2="36.576" width="0.8128" layer="51"/>
 <wire x1="95.25" y1="42.926" x2="95.25" y2="36.576" width="0.8128" layer="52"/>
-<wire x1="55.372" y1="8.763" x2="112.268" y2="8.89" width="0.8128" layer="51"/>
+<wire x1="55.372" y1="8.89" x2="112.268" y2="8.89" width="0.8128" layer="51"/>
 <text x="74.295" y="60.706" size="1.4224" layer="51" font="vector" rot="R180" align="center">FUSED-</text>
 <text x="74.295" y="58.42" size="1.4224" layer="51" font="vector" rot="R180" align="center">IMD-</text>
 <text x="84.455" y="58.42" size="1.4224" layer="51" font="vector" align="center">IMD+</text>
