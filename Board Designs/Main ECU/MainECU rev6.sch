@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.3.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5064,7 +5064,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <part name="GND21" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="J7" library="HyTechDevices" deviceset="JUMPER" device=""/>
 <part name="J8" library="HyTechDevices" deviceset="JUMPER" device=""/>
-<part name="R63" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
+<part name="R63" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="20"/>
 <part name="P1" library="HyTechDevices" deviceset="SOLDER_PAD" device=""/>
 <part name="P2" library="HyTechDevices" deviceset="SOLDER_PAD" device=""/>
 </parts>
@@ -5147,9 +5147,6 @@ optional filter circuit to left
 WARNING: INSTALL ONLY
 JUMPERS (J5-J6) OR FILTER
 CIRCUIT</text>
-<text x="53.34" y="195.58" size="2.032" layer="97">R63 is optional depending
-on feedback from TE w.r.t.
-coil voltage limits</text>
 <text x="109.22" y="33.02" size="2.032" layer="97">To configure Dash 11 or 12 as 5V
 input/output, solder jumper (J5 or J6).
 If configuring as 12V input, do not
