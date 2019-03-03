@@ -2264,7 +2264,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="R1_B" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100R"/>
 <part name="U$2" library="HyTechDevices" deviceset="LTC6804-2" device=""/>
 <part name="C4_B" library="HyTechDevices" deviceset="CAP" device="0805" value="10nF"/>
-<part name="C6_B" library="HyTechDevices" deviceset="CAP" device="0805" value="0.1uF">
+<part name="C6_B" library="HyTechDevices" deviceset="CAP" device="0805" value="100nF">
 <attribute name="VOLTAGE" value="100V"/>
 </part>
 <part name="F9" library="HyTechDevices" deviceset="0001.2704.11" device="" value="0001.2704.11"/>
@@ -2296,8 +2296,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY8" library="supply2" deviceset="V-" device=""/>
 <part name="SUPPLY9" library="supply2" deviceset="V-" device=""/>
 <part name="ISOSPI_B" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2"/>
-<part name="THERM3" library="HyTechDevices" deviceset="THERMISTOR_NCP21" device="0603" value="10K"/>
-<part name="THERM4" library="HyTechDevices" deviceset="THERMISTOR_NCP21" device="0603" value="10K"/>
+<part name="THERM2" library="HyTechDevices" deviceset="THERMISTOR_NCP21" device="0603" value="10K"/>
+<part name="THERM1" library="HyTechDevices" deviceset="THERMISTOR_NCP21" device="0603" value="10K"/>
 <part name="SUPPLY10" library="supply2" deviceset="V-" device=""/>
 <part name="SUPPLY11" library="supply2" deviceset="V-" device=""/>
 <part name="R2_B" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100R"/>
@@ -2343,7 +2343,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="R1_A" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100R"/>
 <part name="U$1" library="HyTechDevices" deviceset="LTC6804-2" device=""/>
 <part name="C4_A" library="HyTechDevices" deviceset="CAP" device="0805" value="10nF"/>
-<part name="C6_A" library="HyTechDevices" deviceset="CAP" device="0805" value="0.1uF">
+<part name="C6_A" library="HyTechDevices" deviceset="CAP" device="0805" value="100nF">
 <attribute name="VOLTAGE" value="100V"/>
 </part>
 <part name="F18" library="HyTechDevices" deviceset="0001.2704.11" device="" value="0001.2704.11"/>
@@ -2374,8 +2374,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY36" library="supply1" deviceset="V-" device=""/>
 <part name="AMS_TEST_PORT1" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2" value="CONNECTOR-2NANO-FIT_VERTICAL-2"/>
 <part name="ISOSPI_A" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2"/>
-<part name="THERM1" library="HyTechDevices" deviceset="THERMISTOR_NCP21" device="0603" value="10K"/>
-<part name="THERM2" library="HyTechDevices" deviceset="THERMISTOR_NCP21" device="0603" value="10K"/>
+<part name="THERM4" library="HyTechDevices" deviceset="THERMISTOR_NCP21" device="0603" value="10K"/>
+<part name="THERM3" library="HyTechDevices" deviceset="THERMISTOR_NCP21" device="0603" value="10K"/>
 <part name="SUPPLY37" library="supply1" deviceset="V-" device=""/>
 <part name="SUPPLY38" library="supply1" deviceset="V-" device=""/>
 <part name="R2_A" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100R"/>
@@ -2412,7 +2412,9 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY56" library="supply1" deviceset="V-" device=""/>
 <part name="SUPPLY57" library="supply1" deviceset="V-" device=""/>
 <part name="SUPPLY58" library="supply1" deviceset="V-" device=""/>
-<part name="J" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="Jumper"/>
+<part name="J" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="0R">
+<attribute name="TYPE" value="JUMPER"/>
+</part>
 <part name="SUPPLY39" library="supply1" deviceset="V-" device=""/>
 <part name="SUPPLY59" library="supply2" deviceset="V-" device=""/>
 <part name="SUPPLY60" library="supply2" deviceset="V-" device=""/>
@@ -2431,7 +2433,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="THERM2_B" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2" value="Th1"/>
 <part name="THERM3_B" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2" value="Th1"/>
 <part name="U$3" library="HyTechDevices" deviceset="NSV1C201MZ4" device=""/>
-<part name="C7_A" library="HyTechDevices" deviceset="CAP" device="0805" value="0.1uF">
+<part name="C7_A" library="HyTechDevices" deviceset="CAP" device="0805" value="100nF">
 <attribute name="VOLTAGE" value="100V"/>
 </part>
 <part name="SUPPLY69" library="supply1" deviceset="V-" device=""/>
@@ -2439,7 +2441,7 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="C8_A" library="HyTechDevices" deviceset="CAP" device="0805" value="1uF"/>
 <part name="SUPPLY40" library="supply1" deviceset="V-" device=""/>
 <part name="U$4" library="HyTechDevices" deviceset="NSV1C201MZ4" device=""/>
-<part name="C7_B" library="HyTechDevices" deviceset="CAP" device="0805" value="0.1uF">
+<part name="C7_B" library="HyTechDevices" deviceset="CAP" device="0805" value="100nF">
 <attribute name="VOLTAGE" value="100V"/>
 </part>
 <part name="RIN_B" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="100R"/>
@@ -2686,11 +2688,11 @@ to set chip address</text>
 <attribute name="NAME" x="71.12" y="121.158" size="1.524" layer="95"/>
 <attribute name="VALUE" x="67.818" y="123.317" size="1.778" layer="96"/>
 </instance>
-<instance part="THERM3" gate="G$1" x="147.32" y="-2.54" smashed="yes">
+<instance part="THERM2" gate="G$1" x="147.32" y="-2.54" smashed="yes">
 <attribute name="NAME" x="143.002" y="0" size="1.778" layer="95"/>
 <attribute name="VALUE" x="144.78" y="-6.858" size="1.778" layer="96"/>
 </instance>
-<instance part="THERM4" gate="G$1" x="147.32" y="-22.86" smashed="yes">
+<instance part="THERM1" gate="G$1" x="147.32" y="-22.86" smashed="yes">
 <attribute name="NAME" x="143.002" y="-20.32" size="1.778" layer="95"/>
 <attribute name="VALUE" x="144.78" y="-27.178" size="1.778" layer="96"/>
 </instance>
@@ -2946,11 +2948,11 @@ to set chip address</text>
 <attribute name="NAME" x="71.12" y="359.918" size="1.524" layer="95"/>
 <attribute name="VALUE" x="67.818" y="362.077" size="1.778" layer="96"/>
 </instance>
-<instance part="THERM1" gate="G$1" x="147.32" y="236.22" smashed="yes">
+<instance part="THERM4" gate="G$1" x="147.32" y="236.22" smashed="yes">
 <attribute name="NAME" x="143.002" y="238.76" size="1.778" layer="95"/>
 <attribute name="VALUE" x="144.78" y="231.902" size="1.778" layer="96"/>
 </instance>
-<instance part="THERM2" gate="G$1" x="147.32" y="215.9" smashed="yes">
+<instance part="THERM3" gate="G$1" x="147.32" y="215.9" smashed="yes">
 <attribute name="NAME" x="143.002" y="218.44" size="1.778" layer="95"/>
 <attribute name="VALUE" x="144.78" y="211.582" size="1.778" layer="96"/>
 </instance>
@@ -3074,8 +3076,9 @@ to set chip address</text>
 <attribute name="VALUE" x="-88.9" y="162.56" size="1.778" layer="96"/>
 </instance>
 <instance part="J" gate="G$1" x="-172.72" y="276.86" smashed="yes">
-<attribute name="NAME" x="-176.53" y="278.3586" size="1.778" layer="95"/>
-<attribute name="VALUE" x="-173.99" y="273.558" size="1.778" layer="96"/>
+<attribute name="NAME" x="-178.53" y="274.3586" size="1.778" layer="95"/>
+<attribute name="VALUE" x="-172.99" y="274.558" size="1.778" layer="96"/>
+<attribute name="TYPE" x="-176.72" y="277.86" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY39" gate="1" x="-101.6" y="134.62" smashed="yes">
 <attribute name="VALUE" x="-101.6" y="132.08" size="1.778" layer="96" rot="R180"/>
@@ -3890,12 +3893,12 @@ to set chip address</text>
 <pinref part="THERM1_B" gate="-2" pin="S"/>
 </segment>
 <segment>
-<pinref part="THERM3" gate="G$1" pin="1"/>
+<pinref part="THERM2" gate="G$1" pin="1"/>
 <pinref part="SUPPLY10" gate="1" pin="V-"/>
 <wire x1="152.4" y1="-2.54" x2="154.94" y2="-2.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="THERM4" gate="G$1" pin="1"/>
+<pinref part="THERM1" gate="G$1" pin="1"/>
 <pinref part="SUPPLY11" gate="1" pin="V-"/>
 <wire x1="152.4" y1="-22.86" x2="154.94" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
@@ -4214,7 +4217,7 @@ to set chip address</text>
 </net>
 <net name="N$19" class="0">
 <segment>
-<pinref part="THERM3" gate="G$1" pin="2"/>
+<pinref part="THERM2" gate="G$1" pin="2"/>
 <wire x1="142.24" y1="-2.54" x2="140.97" y2="-2.54" width="0.1524" layer="91"/>
 <portref moduleinst="THERM_FILTER4" port="THERM"/>
 </segment>
@@ -4253,7 +4256,7 @@ to set chip address</text>
 <net name="N$17" class="0">
 <segment>
 <portref moduleinst="THERM_FILTER5" port="THERM"/>
-<pinref part="THERM4" gate="G$1" pin="2"/>
+<pinref part="THERM1" gate="G$1" pin="2"/>
 <wire x1="142.24" y1="-22.86" x2="140.97" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -4383,7 +4386,7 @@ to set chip address</text>
 </net>
 <net name="N$34" class="0">
 <segment>
-<pinref part="THERM1" gate="G$1" pin="2"/>
+<pinref part="THERM4" gate="G$1" pin="2"/>
 <wire x1="142.24" y1="236.22" x2="140.97" y2="236.22" width="0.1524" layer="91"/>
 <portref moduleinst="THERM_FILTER9" port="THERM"/>
 </segment>
@@ -4398,7 +4401,7 @@ to set chip address</text>
 <net name="N$36" class="0">
 <segment>
 <portref moduleinst="THERM_FILTER10" port="THERM"/>
-<pinref part="THERM2" gate="G$1" pin="2"/>
+<pinref part="THERM3" gate="G$1" pin="2"/>
 <wire x1="142.24" y1="215.9" x2="140.97" y2="215.9" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -4456,12 +4459,12 @@ to set chip address</text>
 <pinref part="SUPPLY39" gate="1" pin="V-"/>
 </segment>
 <segment>
-<pinref part="THERM2" gate="G$1" pin="1"/>
+<pinref part="THERM3" gate="G$1" pin="1"/>
 <pinref part="SUPPLY38" gate="1" pin="V-"/>
 <wire x1="152.4" y1="215.9" x2="154.94" y2="215.9" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="THERM1" gate="G$1" pin="1"/>
+<pinref part="THERM4" gate="G$1" pin="1"/>
 <pinref part="SUPPLY37" gate="1" pin="V-"/>
 <wire x1="152.4" y1="236.22" x2="154.94" y2="236.22" width="0.1524" layer="91"/>
 </segment>
