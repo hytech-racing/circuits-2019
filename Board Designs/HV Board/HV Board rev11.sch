@@ -1584,10 +1584,10 @@ Source: http://www.molex.com</description>
 <wire x1="0" y1="-15.8" x2="0" y2="0" width="0.1524" layer="21"/>
 <wire x1="0" y1="0" x2="60" y2="0" width="0.1524" layer="21"/>
 <wire x1="60" y1="0" x2="60" y2="-15.8" width="0.1524" layer="21"/>
-<pad name="CONTACT1" x="55.4" y="-7.9" drill="0.65" shape="square" rot="R180"/>
-<pad name="CONTACT2" x="4.6" y="-7.9" drill="0.65" shape="square" rot="R180"/>
-<pad name="COIL-" x="30" y="-2.8" drill="0.65" shape="square" rot="R180"/>
-<pad name="COIL+" x="30" y="-13" drill="0.65" shape="square" rot="R180"/>
+<pad name="CONTACT1" x="55.4" y="-7.9" drill="1" diameter="1.778" shape="square" rot="R180"/>
+<pad name="CONTACT2" x="4.6" y="-7.9" drill="1" diameter="1.778" shape="square" rot="R180"/>
+<pad name="COIL-" x="30" y="-2.8" drill="1" diameter="1.778" shape="square" rot="R180"/>
+<pad name="COIL+" x="30" y="-13" drill="1" diameter="1.778" shape="square" rot="R180"/>
 <text x="25" y="-10" size="1.4224" layer="21">DBT71210</text>
 </package>
 <package name="AUTOSPORT_12-04">
@@ -3787,6 +3787,7 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 <part name="R7" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="12k"/>
 <part name="GND20" library="supply1" deviceset="GND" device=""/>
 <part name="D2" library="HyTechDevices" deviceset="DIODE" device="0805" value="TS4148 RYG"/>
+<part name="D3" library="HyTechDevices" deviceset="DIODE" device="0805" value="TS4148 RYG"/>
 </parts>
 <sheets>
 <sheet>
@@ -4361,6 +4362,10 @@ corner frequency = fclk / 100 = 1 kHz</text>
 <attribute name="NAME" x="280.67" y="-80.4926" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="285.75" y="-75.1586" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="D3" gate="1" x="71.12" y="-91.44" smashed="yes">
+<attribute name="NAME" x="67.31" y="-89.6874" size="1.778" layer="95"/>
+<attribute name="VALUE" x="62.23" y="-95.0214" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -4790,7 +4795,7 @@ corner frequency = fclk / 100 = 1 kHz</text>
 <junction x="223.52" y="40.64"/>
 </segment>
 </net>
-<net name="SHUTDOWN7" class="0">
+<net name="SHUTDOWN_H" class="0">
 <segment>
 <wire x1="266.7" y1="-78.74" x2="266.7" y2="-72.26" width="0.1524" layer="91"/>
 <label x="264.16" y="-78.74" size="1.778" layer="95" rot="R180" xref="yes"/>
@@ -4815,13 +4820,8 @@ corner frequency = fclk / 100 = 1 kHz</text>
 <wire x1="91.44" y1="-167.64" x2="93.98" y2="-167.64" width="0.1524" layer="91"/>
 <junction x="93.98" y="-167.64"/>
 </segment>
-<segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<wire x1="43.18" y1="-91.44" x2="33.02" y2="-91.44" width="0.1524" layer="91"/>
-<label x="33.02" y="-91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
 </net>
-<net name="SHUTDOWN6" class="0">
+<net name="SHUTDOWN_G" class="0">
 <segment>
 <pinref part="INTERLOCK" gate="-1" pin="S"/>
 <label x="50.8" y="-160.02" size="1.778" layer="95"/>
@@ -4833,8 +4833,13 @@ corner frequency = fclk / 100 = 1 kHz</text>
 <wire x1="33.02" y1="38.1" x2="68.58" y2="38.1" width="0.1524" layer="91"/>
 <label x="68.58" y="38.1" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="43.18" y1="-91.44" x2="33.02" y2="-91.44" width="0.1524" layer="91"/>
+<label x="33.02" y="-91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
-<net name="SHUTDOWN7_EXT_OUT" class="0">
+<net name="CHARGE_ENABLE" class="0">
 <segment>
 <label x="33.02" y="48.26" size="1.778" layer="95"/>
 <label x="68.58" y="48.26" size="1.27" layer="95" xref="yes"/>
@@ -5412,9 +5417,16 @@ corner frequency = fclk / 100 = 1 kHz</text>
 <pinref part="R6" gate="G$1" pin="2"/>
 <pinref part="R7" gate="G$1" pin="2"/>
 <wire x1="53.34" y1="-99.06" x2="53.34" y2="-91.44" width="0.1524" layer="91"/>
+<pinref part="D3" gate="1" pin="A"/>
+<wire x1="53.34" y1="-91.44" x2="66.04" y2="-91.44" width="0.1524" layer="91"/>
 <junction x="53.34" y="-91.44"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="D3" gate="1" pin="C"/>
 <pinref part="U$6" gate="G$1" pin="CH3"/>
-<wire x1="53.34" y1="-91.44" x2="96.52" y2="-91.44" width="0.1524" layer="91"/>
+<wire x1="73.66" y1="-91.44" x2="96.52" y2="-91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
