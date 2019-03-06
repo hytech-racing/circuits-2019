@@ -4890,9 +4890,9 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="GND65" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND66" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="U$4" library="HyTechDevices" deviceset="N-CHANNEL_MOSFET" device="_HOR_HOLE" value="N-CHANNEL_MOSFET_FQP30N06L"/>
-<part name="U$7" library="HyTechDevices" deviceset="N-CHANNEL_MOSFET" device="_HOR_HOLE" value="N-CHANNEL_MOSFET_FQP30N06L"/>
-<part name="U$6" library="HyTechDevices" deviceset="N-CHANNEL_MOSFET" device="_HOR_HOLE" value="N-CHANNEL_MOSFET_FQP30N06L"/>
+<part name="U$4" library="HyTechDevices" deviceset="N-CHANNEL_MOSFET" device="_HOR_HOLE" value="N-CHANNEL_MOSFET_IRF1324PBF"/>
+<part name="U$7" library="HyTechDevices" deviceset="N-CHANNEL_MOSFET" device="_HOR_HOLE" value="N-CHANNEL_MOSFET_IRF1324PBF"/>
+<part name="U$6" library="HyTechDevices" deviceset="N-CHANNEL_MOSFET" device="_HOR_HOLE" value="N-CHANNEL_MOSFET_IRF1324PBF"/>
 <part name="R24" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="R27" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
 <part name="R28" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="10k"/>
@@ -5067,6 +5067,12 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <part name="R63" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="20"/>
 <part name="P1" library="HyTechDevices" deviceset="SOLDER_PAD" device=""/>
 <part name="P2" library="HyTechDevices" deviceset="SOLDER_PAD" device=""/>
+<part name="R64" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
+<part name="C27" library="HyTechDevices" deviceset="CAP" device="0805"/>
+<part name="R65" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
+<part name="C28" library="HyTechDevices" deviceset="CAP" device="0805"/>
+<part name="R66" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
+<part name="C29" library="HyTechDevices" deviceset="CAP" device="0805"/>
 </parts>
 <sheets>
 <sheet>
@@ -5154,6 +5160,9 @@ solder jumper.</text>
 <text x="109.22" y="20.32" size="2.032" layer="97">WARNING: DO NOT INSTALL
 JUMPER (J5 OR J6) IF CONNECTING
 CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
+<text x="584.2" y="233.68" size="2.032" layer="97">Choose R and C values 
+based on measured 
+spikes and circuit behavior</text>
 </plain>
 <instances>
 <instance part="X1" gate="-13" x="20.32" y="129.54" smashed="yes" rot="MR0">
@@ -6370,6 +6379,30 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 </instance>
 <instance part="P1" gate="G$1" x="373.38" y="111.76" smashed="yes"/>
 <instance part="P2" gate="G$1" x="373.38" y="119.38" smashed="yes"/>
+<instance part="R64" gate="G$1" x="553.72" y="254" smashed="yes" rot="R90">
+<attribute name="NAME" x="552.2214" y="250.19" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="557.022" y="250.19" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="C27" gate="G$1" x="561.34" y="248.92" smashed="yes" rot="R90">
+<attribute name="NAME" x="558.419" y="250.444" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="563.499" y="250.444" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R65" gate="G$1" x="553.72" y="223.52" smashed="yes" rot="R90">
+<attribute name="NAME" x="552.2214" y="219.71" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="557.022" y="219.71" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="C28" gate="G$1" x="561.34" y="218.44" smashed="yes" rot="R90">
+<attribute name="NAME" x="558.419" y="219.964" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="563.499" y="219.964" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R66" gate="G$1" x="553.72" y="193.04" smashed="yes" rot="R90">
+<attribute name="NAME" x="552.2214" y="189.23" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="557.022" y="189.23" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="C29" gate="G$1" x="561.34" y="187.96" smashed="yes" rot="R90">
+<attribute name="NAME" x="558.419" y="189.484" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="563.499" y="189.484" size="1.778" layer="96" rot="R90"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -7126,9 +7159,13 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 </net>
 <net name="PUMP1-" class="0">
 <segment>
-<wire x1="561.34" y1="195.58" x2="566.42" y2="195.58" width="0.1524" layer="91"/>
-<label x="561.34" y="195.58" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="566.42" y1="182.88" x2="566.42" y2="187.96" width="0.1524" layer="91"/>
+<label x="566.42" y="182.88" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$6" gate="G$1" pin="D"/>
+<pinref part="C29" gate="G$1" pin="2"/>
+<wire x1="566.42" y1="187.96" x2="566.42" y2="195.58" width="0.1524" layer="91"/>
+<wire x1="563.88" y1="187.96" x2="566.42" y2="187.96" width="0.1524" layer="91"/>
+<junction x="566.42" y="187.96"/>
 </segment>
 <segment>
 <pinref part="X2" gate="-2" pin="S"/>
@@ -7138,9 +7175,13 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 </net>
 <net name="FAN1-" class="0">
 <segment>
-<label x="561.34" y="226.06" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="566.42" y="213.36" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$7" gate="G$1" pin="D"/>
-<wire x1="566.42" y1="226.06" x2="561.34" y2="226.06" width="0.1524" layer="91"/>
+<wire x1="566.42" y1="226.06" x2="566.42" y2="218.44" width="0.1524" layer="91"/>
+<pinref part="C28" gate="G$1" pin="2"/>
+<wire x1="566.42" y1="218.44" x2="566.42" y2="213.36" width="0.1524" layer="91"/>
+<wire x1="563.88" y1="218.44" x2="566.42" y2="218.44" width="0.1524" layer="91"/>
+<junction x="566.42" y="218.44"/>
 </segment>
 <segment>
 <pinref part="5AFUSE" gate="G$1" pin="2"/>
@@ -7150,9 +7191,13 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 </net>
 <net name="FAN2-" class="0">
 <segment>
-<wire x1="561.34" y1="256.54" x2="566.42" y2="256.54" width="0.1524" layer="91"/>
-<label x="561.34" y="256.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+<wire x1="566.42" y1="243.84" x2="566.42" y2="248.92" width="0.1524" layer="91"/>
+<label x="566.42" y="243.84" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$4" gate="G$1" pin="D"/>
+<pinref part="C27" gate="G$1" pin="2"/>
+<wire x1="566.42" y1="248.92" x2="566.42" y2="256.54" width="0.1524" layer="91"/>
+<wire x1="563.88" y1="248.92" x2="566.42" y2="248.92" width="0.1524" layer="91"/>
+<junction x="566.42" y="248.92"/>
 </segment>
 <segment>
 <pinref part="X2" gate="-3" pin="S"/>
@@ -7162,19 +7207,34 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 </net>
 <net name="CURRENTSENSE2" class="0">
 <segment>
-<wire x1="566.42" y1="261.62" x2="561.34" y2="261.62" width="0.1524" layer="91"/>
+<wire x1="566.42" y1="261.62" x2="563.88" y2="261.62" width="0.1524" layer="91"/>
 <label x="561.34" y="261.62" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$4" gate="G$1" pin="S"/>
+<wire x1="563.88" y1="261.62" x2="561.34" y2="261.62" width="0.1524" layer="91"/>
+<wire x1="563.88" y1="261.62" x2="563.88" y2="259.08" width="0.1524" layer="91"/>
+<junction x="563.88" y="261.62"/>
+<pinref part="R64" gate="G$1" pin="2"/>
+<wire x1="563.88" y1="259.08" x2="553.72" y2="259.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="561.34" y1="231.14" x2="566.42" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="561.34" y1="231.14" x2="563.88" y2="231.14" width="0.1524" layer="91"/>
 <label x="561.34" y="231.14" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$7" gate="G$1" pin="S"/>
+<pinref part="R65" gate="G$1" pin="2"/>
+<wire x1="563.88" y1="231.14" x2="566.42" y2="231.14" width="0.1524" layer="91"/>
+<wire x1="553.72" y1="228.6" x2="563.88" y2="228.6" width="0.1524" layer="91"/>
+<wire x1="563.88" y1="228.6" x2="563.88" y2="231.14" width="0.1524" layer="91"/>
+<junction x="563.88" y="231.14"/>
 </segment>
 <segment>
-<wire x1="566.42" y1="200.66" x2="561.34" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="566.42" y1="200.66" x2="563.88" y2="200.66" width="0.1524" layer="91"/>
 <label x="561.34" y="200.66" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="U$6" gate="G$1" pin="S"/>
+<pinref part="R66" gate="G$1" pin="2"/>
+<wire x1="563.88" y1="200.66" x2="561.34" y2="200.66" width="0.1524" layer="91"/>
+<wire x1="553.72" y1="198.12" x2="563.88" y2="198.12" width="0.1524" layer="91"/>
+<wire x1="563.88" y1="198.12" x2="563.88" y2="200.66" width="0.1524" layer="91"/>
+<junction x="563.88" y="200.66"/>
 </segment>
 <segment>
 <pinref part="U$10" gate="G$1" pin="IP+"/>
@@ -9497,6 +9557,27 @@ CHANNEL 11 OR 12 TO &gt;5V SIGNAL.</text>
 <wire x1="363.22" y1="114.3" x2="353.06" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="370.84" y1="121.92" x2="363.22" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="U$17" gate="G$1" pin="GPA5"/>
+</segment>
+</net>
+<net name="N$65" class="0">
+<segment>
+<pinref part="R64" gate="G$1" pin="1"/>
+<pinref part="C27" gate="G$1" pin="1"/>
+<wire x1="553.72" y1="248.92" x2="556.26" y2="248.92" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$74" class="0">
+<segment>
+<pinref part="R65" gate="G$1" pin="1"/>
+<pinref part="C28" gate="G$1" pin="1"/>
+<wire x1="553.72" y1="218.44" x2="556.26" y2="218.44" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$75" class="0">
+<segment>
+<pinref part="C29" gate="G$1" pin="1"/>
+<pinref part="R66" gate="G$1" pin="1"/>
+<wire x1="556.26" y1="187.96" x2="553.72" y2="187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
