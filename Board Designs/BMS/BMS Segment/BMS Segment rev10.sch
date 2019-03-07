@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="mm"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -719,12 +719,14 @@ Source: http://www.molex.com</description>
 <wire x1="1.45" y1="0.65" x2="-1.45" y2="0.65" width="0.127" layer="21"/>
 <wire x1="-1.45" y1="0.65" x2="-1.45" y2="-0.65" width="0.127" layer="21"/>
 <wire x1="-1.45" y1="-0.65" x2="1.45" y2="-0.65" width="0.127" layer="21"/>
-<smd name="2" x="0.675" y="-1" dx="0.8" dy="0.9" layer="1"/>
-<smd name="1" x="-0.675" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="2" x="0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
+<smd name="1" x="-0.95" y="-1" dx="0.8" dy="0.9" layer="1"/>
 <smd name="3" x="0" y="1" dx="0.8" dy="0.9" layer="1"/>
+<text x="1.397" y="0.889" size="0.3048" layer="27" align="bottom-center">&gt;VALUE</text>
+<text x="0" y="0.3302" size="0.635" layer="25" align="top-center">&gt;NAME</text>
 </package>
 <package name="KEYSTONE5222">
-<smd name="P$1" x="0" y="0" dx="15.875" dy="17.78" layer="1"/>
+<smd name="P$1" x="0" y="0" dx="14.605" dy="16.51" layer="1"/>
 <text x="0" y="-6.604" size="0.508" layer="25" align="top-center">&gt;NAME</text>
 </package>
 <package name="NANO-FIT_RIGHT_ANGLE-2">
@@ -832,6 +834,7 @@ Nano-Fit™ Vertical Header, Through Hole, Single Row</description>
 <wire x1="12.4" y1="12.97" x2="12.4" y2="1.29" width="0.1524" layer="21"/>
 <wire x1="12.4" y1="1.29" x2="-2.4" y2="1.29" width="0.1524" layer="21"/>
 <wire x1="-2.4" y1="1.29" x2="-2.4" y2="12.97" width="0.1524" layer="21"/>
+<circle x="0" y="3.302" radius="0.635" width="0.127" layer="21"/>
 </package>
 <package name="PWR163">
 <smd name="PAD" x="0" y="0" dx="7.874" dy="8.509" layer="1"/>
@@ -1100,7 +1103,7 @@ Nano-Fit™ Vertical Header, Through Hole, Single Row</description>
 <pin name="V+" x="-2.54" y="-2.54" length="short"/>
 </symbol>
 <symbol name="P-CHANNEL_MOSFET">
-<wire x1="-2.54" y1="-2.54" x2="-1.2192" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-1.2192" y2="2.54" width="0.1524" layer="94"/>
 <wire x1="0" y1="0.762" x2="0" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="-0.762" width="0.254" layer="94"/>
 <wire x1="0" y1="3.683" x2="0" y2="1.397" width="0.254" layer="94"/>
@@ -1108,13 +1111,13 @@ Nano-Fit™ Vertical Header, Through Hole, Single Row</description>
 <wire x1="0.635" y1="-0.635" x2="1.905" y2="0" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="1.905" y2="0" width="0.1524" layer="94"/>
 <wire x1="1.905" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="0" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
 <wire x1="0" y1="-1.397" x2="0" y2="-3.683" width="0.254" layer="94"/>
 <wire x1="-1.143" y1="2.54" x2="-1.143" y2="-2.54" width="0.254" layer="94"/>
 <text x="-3.81" y="5.08" size="1.778" layer="95">&gt;NAME</text>
-<pin name="D" x="5.08" y="2.54" visible="off" length="middle" direction="pas" rot="R180"/>
-<pin name="S" x="5.08" y="-2.54" visible="off" length="middle" direction="pas" rot="R180"/>
-<pin name="G" x="-5.08" y="-2.54" visible="off" length="short" direction="pas"/>
+<pin name="S" x="5.08" y="2.54" visible="off" length="middle" direction="pas" rot="R180"/>
+<pin name="D" x="5.08" y="-2.54" visible="off" length="middle" direction="pas" rot="R180"/>
+<pin name="G" x="-5.08" y="2.54" visible="off" length="short" direction="pas"/>
 </symbol>
 <symbol name="FUSE">
 <description>Generic Fuse Symbol</description>
@@ -1664,7 +1667,7 @@ Variant 2: Addressable/Multi-Drop Configuration
 </device>
 </devices>
 </deviceset>
-<deviceset name="P-CHANNEL_MOSFET_DMP3099L-7">
+<deviceset name="P-CHANNEL_MOSFET_DMP3099L-7" prefix="Q">
 <description>&lt;B&gt; Diodes Incorporated P-Channel Enhancement Mode MOSFET &lt;/B&gt;
 &lt;P&gt; &lt;a href="http://www.mouser.com/ds/2/115/DMP3099L-266220.pdf"&gt;Datasheet</description>
 <gates>
@@ -2061,21 +2064,21 @@ In this library the device names are the same as the pin names of the symbols, t
 <sheets>
 <sheet>
 <plain>
-<text x="88.9" y="25.4" size="1.778" layer="97">Gate Drive</text>
+<text x="88.9" y="17.78" size="1.778" layer="97">Gate Drive</text>
 <text x="2.54" y="60.96" size="5.08" layer="97">See LTC6804 DATASHEET pg.61</text>
 <text x="88.9" y="43.18" size="1.778" layer="97">Cell Input</text>
 </plain>
 <instances>
-<instance part="GATE" gate="G$1" x="55.88" y="25.4" smashed="yes">
-<attribute name="NAME" x="52.07" y="26.8986" size="1.778" layer="95"/>
-<attribute name="VALUE" x="52.07" y="22.098" size="1.778" layer="96"/>
+<instance part="GATE" gate="G$1" x="55.88" y="17.78" smashed="yes">
+<attribute name="NAME" x="52.07" y="19.2786" size="1.778" layer="95"/>
+<attribute name="VALUE" x="52.07" y="14.478" size="1.778" layer="96"/>
 </instance>
-<instance part="DISCHARGE" gate="G$1" x="33.02" y="5.08" smashed="yes" rot="R270">
-<attribute name="NAME" x="34.5186" y="13.97" size="1.778" layer="95" rot="R270"/>
-<attribute name="VALUE" x="29.718" y="8.89" size="1.778" layer="96" rot="R270"/>
+<instance part="DISCHARGE" gate="G$1" x="27.94" y="-2.54" smashed="yes" rot="R270">
+<attribute name="NAME" x="29.4386" y="6.35" size="1.778" layer="95" rot="R270"/>
+<attribute name="VALUE" x="24.638" y="1.27" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="PFET" gate="G$1" x="40.64" y="22.86" smashed="yes" rot="R180">
-<attribute name="NAME" x="36.83" y="27.94" size="1.778" layer="95"/>
+<instance part="PFET" gate="G$1" x="43.18" y="15.24" smashed="yes" rot="MR0">
+<attribute name="NAME" x="39.37" y="10.16" size="1.778" layer="95" rot="MR180"/>
 </instance>
 <instance part="R" gate="G$1" x="55.88" y="43.18" smashed="yes">
 <attribute name="NAME" x="52.07" y="44.6786" size="1.778" layer="95"/>
@@ -2086,15 +2089,15 @@ In this library the device names are the same as the pin names of the symbols, t
 <attribute name="VALUE" x="70.104" y="33.401" size="1.778" layer="96"/>
 </instance>
 <instance part="SUPPLY1" gate="1" x="68.58" y="27.94" smashed="yes">
-<attribute name="VALUE" x="67.31" y="25.4" size="1.778" layer="96"/>
+<attribute name="VALUE" x="72.39" y="27.94" size="1.778" layer="96"/>
 </instance>
-<instance part="LED1" gate="LED" x="20.32" y="12.7" smashed="yes">
-<attribute name="NAME" x="23.876" y="8.128" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="26.035" y="8.128" size="1.778" layer="96" rot="R90"/>
+<instance part="LED1" gate="LED" x="15.24" y="5.08" smashed="yes">
+<attribute name="NAME" x="18.796" y="0.508" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="20.955" y="0.508" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="R1" gate="G$1" x="20.32" y="0" smashed="yes" rot="R90">
-<attribute name="NAME" x="18.8214" y="-3.81" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="23.622" y="-3.81" size="1.778" layer="96" rot="R90"/>
+<instance part="R1" gate="G$1" x="15.24" y="-7.62" smashed="yes" rot="R90">
+<attribute name="NAME" x="13.7414" y="-11.43" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="18.542" y="-11.43" size="1.778" layer="96" rot="R90"/>
 </instance>
 </instances>
 <busses>
@@ -2102,37 +2105,38 @@ In this library the device names are the same as the pin names of the symbols, t
 <nets>
 <net name="CELL+" class="0">
 <segment>
-<wire x1="35.56" y1="43.18" x2="35.56" y2="25.4" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="43.18" x2="27.94" y2="43.18" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="43.18" x2="27.94" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="PFET" gate="G$1" pin="S"/>
 <label x="27.94" y="43.18" size="1.778" layer="95" rot="R180" xref="yes"/>
 <pinref part="R" gate="G$1" pin="1"/>
-<wire x1="50.8" y1="43.18" x2="35.56" y2="43.18" width="0.1524" layer="91"/>
-<junction x="35.56" y="43.18"/>
+<wire x1="50.8" y1="43.18" x2="30.48" y2="43.18" width="0.1524" layer="91"/>
+<junction x="30.48" y="43.18"/>
+<wire x1="38.1" y1="17.78" x2="30.48" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="30.48" y1="17.78" x2="30.48" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GATE" class="0">
 <segment>
 <pinref part="GATE" gate="G$1" pin="1"/>
-<wire x1="45.72" y1="25.4" x2="50.8" y2="25.4" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="17.78" x2="50.8" y2="17.78" width="0.1524" layer="91"/>
 <pinref part="PFET" gate="G$1" pin="G"/>
 </segment>
 </net>
 <net name="S(N)" class="0">
 <segment>
 <pinref part="GATE" gate="G$1" pin="2"/>
-<wire x1="60.96" y1="25.4" x2="78.74" y2="25.4" width="0.1524" layer="91"/>
-<label x="78.74" y="25.4" size="1.778" layer="95" xref="yes"/>
+<wire x1="60.96" y1="17.78" x2="78.74" y2="17.78" width="0.1524" layer="91"/>
+<label x="78.74" y="17.78" size="1.778" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CELL-" class="0">
 <segment>
 <pinref part="DISCHARGE" gate="G$1" pin="2"/>
-<wire x1="33.02" y1="0" x2="33.02" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="-7.62" x2="27.94" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="20.32" y1="-5.08" x2="20.32" y2="-10.16" width="0.1524" layer="91"/>
-<label x="20.32" y="-10.16" size="1.778" layer="95" rot="R180" xref="yes"/>
-<wire x1="33.02" y1="-10.16" x2="20.32" y2="-10.16" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="-12.7" x2="15.24" y2="-17.78" width="0.1524" layer="91"/>
+<label x="15.24" y="-17.78" size="1.778" layer="95" rot="R180" xref="yes"/>
+<wire x1="27.94" y1="-17.78" x2="15.24" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="C(N)" class="0">
@@ -2157,19 +2161,19 @@ In this library the device names are the same as the pin names of the symbols, t
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="LED1" gate="LED" pin="C"/>
-<wire x1="20.32" y1="5.08" x2="20.32" y2="7.62" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="-2.54" x2="15.24" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
 <segment>
 <pinref part="LED1" gate="LED" pin="A"/>
 <pinref part="PFET" gate="G$1" pin="D"/>
-<wire x1="20.32" y1="15.24" x2="20.32" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="20.32" y1="20.32" x2="33.02" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="7.62" x2="15.24" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="12.7" x2="27.94" y2="12.7" width="0.1524" layer="91"/>
 <pinref part="DISCHARGE" gate="G$1" pin="1"/>
-<wire x1="33.02" y1="20.32" x2="35.56" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="33.02" y1="10.16" x2="33.02" y2="20.32" width="0.1524" layer="91"/>
-<junction x="33.02" y="20.32"/>
+<wire x1="27.94" y1="12.7" x2="38.1" y2="12.7" width="0.1524" layer="91"/>
+<wire x1="27.94" y1="2.54" x2="27.94" y2="12.7" width="0.1524" layer="91"/>
+<junction x="27.94" y="12.7"/>
 </segment>
 </net>
 </nets>
