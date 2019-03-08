@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.2.2">
+<eagle version="9.3.1">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -5073,6 +5073,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <part name="C28" library="HyTechDevices" deviceset="CAP" device="0805"/>
 <part name="R66" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES"/>
 <part name="C29" library="HyTechDevices" deviceset="CAP" device="0805"/>
+<part name="C30" library="HyTechDevices" deviceset="CAP" device="0805" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -6403,6 +6404,10 @@ on measured spikes and circuit behavior</text>
 <attribute name="NAME" x="549.656" y="192.659" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="549.656" y="197.739" size="1.778" layer="96" rot="R180"/>
 </instance>
+<instance part="C30" gate="G$1" x="365.76" y="154.94" smashed="yes">
+<attribute name="NAME" x="367.284" y="157.861" size="1.778" layer="95"/>
+<attribute name="VALUE" x="367.284" y="152.781" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -6581,6 +6586,9 @@ on measured spikes and circuit behavior</text>
 <pinref part="GND30" gate="1" pin="GND"/>
 <pinref part="C11" gate="G$1" pin="1"/>
 <wire x1="358.14" y1="160.02" x2="350.52" y2="160.02" width="0.1524" layer="91"/>
+<pinref part="C30" gate="G$1" pin="1"/>
+<wire x1="365.76" y1="160.02" x2="358.14" y2="160.02" width="0.1524" layer="91"/>
+<junction x="358.14" y="160.02"/>
 </segment>
 <segment>
 <pinref part="ACC1_PD" gate="G$1" pin="2"/>
@@ -7404,6 +7412,9 @@ on measured spikes and circuit behavior</text>
 <wire x1="358.14" y1="152.4" x2="358.14" y2="149.86" width="0.1524" layer="91"/>
 <wire x1="363.22" y1="147.32" x2="358.14" y2="147.32" width="0.1524" layer="91"/>
 <junction x="358.14" y="147.32"/>
+<pinref part="C30" gate="G$1" pin="2"/>
+<wire x1="358.14" y1="152.4" x2="365.76" y2="152.4" width="0.1524" layer="91"/>
+<junction x="358.14" y="152.4"/>
 </segment>
 <segment>
 <pinref part="U$23" gate="G$1" pin="VDD"/>
