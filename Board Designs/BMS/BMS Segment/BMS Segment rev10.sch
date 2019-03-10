@@ -2454,6 +2454,8 @@ In this library the device names are the same as the pin names of the symbols, t
 <part name="SUPPLY12" library="supply2" deviceset="V-" device=""/>
 <part name="U$5" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 <part name="U$6" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
+<part name="U$7" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
+<part name="U$8" library="HyTechDevices" deviceset="TEST_POINT" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3207,6 +3209,8 @@ to set chip address</text>
 </instance>
 <instance part="U$5" gate="G$1" x="-165.1" y="149.86" smashed="yes" rot="R180"/>
 <instance part="U$6" gate="G$1" x="-175.26" y="-88.9" smashed="yes" rot="R180"/>
+<instance part="U$7" gate="G$1" x="2.54" y="-33.02" smashed="yes" rot="R270"/>
+<instance part="U$8" gate="G$1" x="5.08" y="205.74" smashed="yes" rot="R270"/>
 </instances>
 <busses>
 </busses>
@@ -3313,8 +3317,11 @@ to set chip address</text>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="BASE"/>
-<wire x1="10.16" y1="-30.48" x2="-2.54" y2="-30.48" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="-30.48" x2="2.54" y2="-30.48" width="0.1524" layer="91"/>
 <label x="-2.54" y="-30.48" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$7" gate="G$1" pin="P$1"/>
+<wire x1="2.54" y1="-30.48" x2="-2.54" y2="-30.48" width="0.1524" layer="91"/>
+<junction x="2.54" y="-30.48"/>
 </segment>
 </net>
 <net name="V+_B" class="0">
@@ -5080,8 +5087,11 @@ to set chip address</text>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="BASE"/>
-<wire x1="10.16" y1="208.28" x2="-2.54" y2="208.28" width="0.1524" layer="91"/>
+<wire x1="10.16" y1="208.28" x2="5.08" y2="208.28" width="0.1524" layer="91"/>
 <label x="-2.54" y="208.28" size="1.778" layer="95" rot="R180" xref="yes"/>
+<pinref part="U$8" gate="G$1" pin="P$1"/>
+<wire x1="5.08" y1="208.28" x2="-2.54" y2="208.28" width="0.1524" layer="91"/>
+<junction x="5.08" y="208.28"/>
 </segment>
 </net>
 <net name="VREF2_A" class="0">
