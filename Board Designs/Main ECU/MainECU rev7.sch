@@ -5131,6 +5131,13 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <part name="GND52" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="C37" library="HyTechDevices" deviceset="CAP" device="0805" value="1uF"/>
 <part name="GND89" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="C38" library="HyTechDevices" deviceset="CAP" device="0805" value="0.1uF"/>
+<part name="GND90" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="C39" library="HyTechDevices" deviceset="CAP" device="0805" value="0.1uF"/>
+<part name="GND91" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="C40" library="HyTechDevices" deviceset="CAP" device="PTH3" value="470uF"/>
+<part name="GND92" library="HyTechSymbols" deviceset="GND" device=""/>
+<part name="P+5" library="supply1" deviceset="+12V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5727,16 +5734,16 @@ on measured spikes and circuit behavior</text>
 <instance part="GND50" gate="1" x="441.96" y="35.56" smashed="yes" rot="MR180">
 <attribute name="VALUE" x="439.42" y="38.1" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="LED11" gate="LED" x="441.96" y="10.16" smashed="yes" rot="MR90">
-<attribute name="NAME" x="437.388" y="13.716" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="437.388" y="15.875" size="1.778" layer="96" rot="MR180"/>
+<instance part="LED11" gate="LED" x="441.96" y="5.08" smashed="yes" rot="MR90">
+<attribute name="NAME" x="437.388" y="8.636" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="437.388" y="10.795" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="R30" gate="G$1" x="429.26" y="10.16" smashed="yes" rot="MR180">
-<attribute name="NAME" x="425.45" y="8.6614" size="1.778" layer="95" rot="MR180"/>
-<attribute name="VALUE" x="425.45" y="13.462" size="1.778" layer="96" rot="MR180"/>
+<instance part="R30" gate="G$1" x="429.26" y="5.08" smashed="yes" rot="MR180">
+<attribute name="NAME" x="425.45" y="3.5814" size="1.778" layer="95" rot="MR180"/>
+<attribute name="VALUE" x="425.45" y="8.382" size="1.778" layer="96" rot="MR180"/>
 </instance>
-<instance part="GND53" gate="1" x="419.1" y="10.16" smashed="yes" rot="MR90">
-<attribute name="VALUE" x="416.56" y="7.62" size="1.778" layer="96" rot="MR90"/>
+<instance part="GND53" gate="1" x="419.1" y="5.08" smashed="yes" rot="MR90">
+<attribute name="VALUE" x="416.56" y="2.54" size="1.778" layer="96" rot="MR90"/>
 </instance>
 <instance part="LED10" gate="LED" x="518.16" y="20.32" smashed="yes" rot="R180">
 <attribute name="NAME" x="514.604" y="24.892" size="1.778" layer="95" rot="R270"/>
@@ -5785,11 +5792,11 @@ on measured spikes and circuit behavior</text>
 <attribute name="VALUE" x="38.1" y="91.44" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="U$17" gate="G$1" x="337.82" y="101.6" smashed="yes"/>
-<instance part="P+34" gate="1" x="299.72" y="99.06" smashed="yes" rot="R90">
-<attribute name="VALUE" x="304.8" y="96.52" size="1.778" layer="96" rot="R180"/>
+<instance part="P+34" gate="1" x="294.64" y="99.06" smashed="yes" rot="R90">
+<attribute name="VALUE" x="299.72" y="104.14" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="GND60" gate="1" x="307.34" y="93.98" smashed="yes">
-<attribute name="VALUE" x="304.8" y="91.44" size="1.778" layer="96"/>
+<instance part="GND60" gate="1" x="309.88" y="93.98" smashed="yes">
+<attribute name="VALUE" x="307.34" y="91.44" size="1.778" layer="96"/>
 </instance>
 <instance part="P+35" gate="1" x="360.68" y="93.98" smashed="yes" rot="R270">
 <attribute name="VALUE" x="360.68" y="91.44" size="1.778" layer="96"/>
@@ -6476,12 +6483,12 @@ on measured spikes and circuit behavior</text>
 <instance part="GND88" gate="1" x="304.8" y="50.8" smashed="yes">
 <attribute name="VALUE" x="302.26" y="48.26" size="1.778" layer="96"/>
 </instance>
-<instance part="U$13" gate="G$1" x="2.54" y="10.16" smashed="yes" rot="MR0">
-<attribute name="NAME" x="7.62" y="15.24" size="1.778" layer="95" rot="MR0"/>
-<attribute name="VALUE" x="7.62" y="2.54" size="1.778" layer="96" rot="MR0"/>
+<instance part="U$13" gate="G$1" x="228.6" y="66.04" smashed="yes" rot="MR0">
+<attribute name="NAME" x="233.68" y="71.12" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="233.68" y="58.42" size="1.778" layer="96" rot="MR0"/>
 </instance>
-<instance part="GND26" gate="1" x="-5.08" y="12.7" smashed="yes" rot="R180">
-<attribute name="VALUE" x="-2.54" y="15.24" size="1.778" layer="96" rot="R180"/>
+<instance part="GND26" gate="1" x="220.98" y="68.58" smashed="yes" rot="R180">
+<attribute name="VALUE" x="223.52" y="71.12" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="GND51" gate="1" x="304.8" y="218.44" smashed="yes">
 <attribute name="VALUE" x="302.26" y="215.9" size="1.778" layer="96"/>
@@ -6495,6 +6502,30 @@ on measured spikes and circuit behavior</text>
 </instance>
 <instance part="GND89" gate="1" x="261.62" y="220.98" smashed="yes" rot="R180">
 <attribute name="VALUE" x="264.16" y="223.52" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="C38" gate="G$1" x="302.26" y="91.44" smashed="yes" rot="MR0">
+<attribute name="NAME" x="300.736" y="94.361" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="300.736" y="89.281" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="GND90" gate="1" x="302.26" y="83.82" smashed="yes">
+<attribute name="VALUE" x="299.72" y="81.28" size="1.778" layer="96"/>
+</instance>
+<instance part="C39" gate="G$1" x="421.64" y="15.24" smashed="yes" rot="MR0">
+<attribute name="NAME" x="420.116" y="18.161" size="1.778" layer="95" rot="MR0"/>
+<attribute name="VALUE" x="420.116" y="13.081" size="1.778" layer="96" rot="MR0"/>
+</instance>
+<instance part="GND91" gate="1" x="426.72" y="12.7" smashed="yes" rot="R90">
+<attribute name="VALUE" x="429.26" y="10.16" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="C40" gate="G$1" x="223.52" y="134.62" smashed="yes">
+<attribute name="NAME" x="225.044" y="137.541" size="1.778" layer="95"/>
+<attribute name="VALUE" x="225.044" y="132.461" size="1.778" layer="96"/>
+</instance>
+<instance part="GND92" gate="1" x="223.52" y="127" smashed="yes">
+<attribute name="VALUE" x="220.98" y="124.46" size="1.778" layer="96"/>
+</instance>
+<instance part="P+5" gate="1" x="228.6" y="144.78" smashed="yes" rot="R270">
+<attribute name="VALUE" x="223.52" y="147.32" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -6739,7 +6770,7 @@ on measured spikes and circuit behavior</text>
 <segment>
 <pinref part="R30" gate="G$1" pin="1"/>
 <pinref part="GND53" gate="1" pin="GND"/>
-<wire x1="421.64" y1="10.16" x2="424.18" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="421.64" y1="5.08" x2="424.18" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R32" gate="G$1" pin="1"/>
@@ -6753,7 +6784,7 @@ on measured spikes and circuit behavior</text>
 </segment>
 <segment>
 <pinref part="U$17" gate="G$1" pin="VSS"/>
-<wire x1="327.66" y1="96.52" x2="307.34" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="327.66" y1="96.52" x2="309.88" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="GND60" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -7118,12 +7149,27 @@ on measured spikes and circuit behavior</text>
 <segment>
 <pinref part="U$13" gate="G$1" pin="3"/>
 <pinref part="GND26" gate="1" pin="GND"/>
-<wire x1="-5.08" y1="10.16" x2="-2.54" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="220.98" y1="66.04" x2="223.52" y2="66.04" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C37" gate="G$1" pin="1"/>
 <pinref part="GND89" gate="1" pin="GND"/>
 <wire x1="261.62" y1="218.44" x2="261.62" y2="215.9" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C38" gate="G$1" pin="2"/>
+<pinref part="GND90" gate="1" pin="GND"/>
+<wire x1="302.26" y1="86.36" x2="302.26" y2="88.9" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C39" gate="G$1" pin="2"/>
+<wire x1="421.64" y1="12.7" x2="424.18" y2="12.7" width="0.1524" layer="91"/>
+<pinref part="GND91" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C40" gate="G$1" pin="2"/>
+<wire x1="223.52" y1="132.08" x2="223.52" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="GND92" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="+12V" class="0">
@@ -7275,6 +7321,12 @@ on measured spikes and circuit behavior</text>
 <pinref part="Q1" gate="G$1" pin="S"/>
 <wire x1="119.38" y1="246.38" x2="119.38" y2="259.08" width="0.1524" layer="91"/>
 <junction x="119.38" y="259.08"/>
+</segment>
+<segment>
+<pinref part="P+5" gate="1" pin="+12V"/>
+<wire x1="226.06" y1="144.78" x2="223.52" y2="144.78" width="0.1524" layer="91"/>
+<pinref part="C40" gate="G$1" pin="1"/>
+<wire x1="223.52" y1="144.78" x2="223.52" y2="139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PUMP1-" class="0">
@@ -7573,6 +7625,10 @@ on measured spikes and circuit behavior</text>
 <pinref part="U$17" gate="G$1" pin="VDD"/>
 <pinref part="P+34" gate="1" pin="+5V"/>
 <wire x1="327.66" y1="99.06" x2="302.26" y2="99.06" width="0.1524" layer="91"/>
+<pinref part="C38" gate="G$1" pin="1"/>
+<wire x1="302.26" y1="99.06" x2="297.18" y2="99.06" width="0.1524" layer="91"/>
+<wire x1="302.26" y1="96.52" x2="302.26" y2="99.06" width="0.1524" layer="91"/>
+<junction x="302.26" y="99.06"/>
 </segment>
 <segment>
 <pinref part="P+35" gate="1" pin="+5V"/>
@@ -7969,8 +8025,6 @@ on measured spikes and circuit behavior</text>
 <wire x1="25.4" y1="17.78" x2="30.48" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="17.78" x2="30.48" y2="33.02" width="0.1524" layer="91"/>
 <junction x="30.48" y="33.02"/>
-<pinref part="U$13" gate="G$1" pin="1"/>
-<wire x1="10.16" y1="12.7" x2="25.4" y2="12.7" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="12.7" x2="25.4" y2="17.78" width="0.1524" layer="91"/>
 <junction x="25.4" y="17.78"/>
 </segment>
@@ -7983,6 +8037,11 @@ on measured spikes and circuit behavior</text>
 <pinref part="R49" gate="G$1" pin="1"/>
 <wire x1="403.86" y1="91.44" x2="401.32" y2="91.44" width="0.1524" layer="91"/>
 <label x="401.32" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$13" gate="G$1" pin="1"/>
+<wire x1="236.22" y1="68.58" x2="238.76" y2="68.58" width="0.1524" layer="91"/>
+<label x="238.76" y="68.58" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="CANH" class="0">
@@ -8017,8 +8076,6 @@ on measured spikes and circuit behavior</text>
 <wire x1="27.94" y1="15.24" x2="33.02" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="15.24" x2="33.02" y2="30.48" width="0.1524" layer="91"/>
 <junction x="33.02" y="30.48"/>
-<pinref part="U$13" gate="G$1" pin="2"/>
-<wire x1="10.16" y1="7.62" x2="27.94" y2="7.62" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="7.62" x2="27.94" y2="15.24" width="0.1524" layer="91"/>
 <junction x="27.94" y="15.24"/>
 </segment>
@@ -8026,6 +8083,11 @@ on measured spikes and circuit behavior</text>
 <pinref part="CAN_TERM_JMP" gate="G$1" pin="1"/>
 <wire x1="419.1" y1="91.44" x2="421.64" y2="91.44" width="0.1524" layer="91"/>
 <label x="421.64" y="91.44" size="1.27" layer="95" xref="yes"/>
+</segment>
+<segment>
+<pinref part="U$13" gate="G$1" pin="2"/>
+<wire x1="236.22" y1="63.5" x2="238.76" y2="63.5" width="0.1524" layer="91"/>
+<label x="238.76" y="63.5" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -8388,11 +8450,13 @@ on measured spikes and circuit behavior</text>
 <wire x1="444.5" y1="30.48" x2="444.5" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="REG1" gate="G$1" pin="OUT"/>
 <wire x1="434.34" y1="22.86" x2="434.34" y2="20.32" width="0.1524" layer="91"/>
-<wire x1="434.34" y1="20.32" x2="429.26" y2="20.32" width="0.1524" layer="91"/>
 <pinref part="C6" gate="G$1" pin="2"/>
-<wire x1="429.26" y1="20.32" x2="424.18" y2="20.32" width="0.1524" layer="91"/>
+<wire x1="434.34" y1="20.32" x2="424.18" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="434.34" y1="20.32" x2="444.5" y2="20.32" width="0.1524" layer="91"/>
 <junction x="434.34" y="20.32"/>
+<pinref part="C39" gate="G$1" pin="1"/>
+<wire x1="424.18" y1="20.32" x2="421.64" y2="20.32" width="0.1524" layer="91"/>
+<junction x="424.18" y="20.32"/>
 </segment>
 </net>
 <net name="XBDO" class="0">
@@ -8435,16 +8499,16 @@ on measured spikes and circuit behavior</text>
 <segment>
 <pinref part="LED11" gate="LED" pin="C"/>
 <pinref part="R30" gate="G$1" pin="2"/>
-<wire x1="434.34" y1="10.16" x2="436.88" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="434.34" y1="5.08" x2="436.88" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$47" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="PWM0/RSSI"/>
 <wire x1="454.66" y1="17.78" x2="447.04" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="447.04" y1="17.78" x2="447.04" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="447.04" y1="17.78" x2="447.04" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="LED11" gate="LED" pin="A"/>
-<wire x1="447.04" y1="10.16" x2="444.5" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="447.04" y1="5.08" x2="444.5" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$49" class="0">
