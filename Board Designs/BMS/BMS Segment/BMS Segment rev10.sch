@@ -726,7 +726,7 @@ Source: http://www.molex.com</description>
 <text x="0" y="0.3302" size="0.635" layer="25" align="top-center">&gt;NAME</text>
 </package>
 <package name="KEYSTONE5222">
-<smd name="P$1" x="0" y="0" dx="14.605" dy="16.51" layer="1"/>
+<smd name="P$1" x="0" y="0" dx="12.805" dy="14.71" layer="1"/>
 <text x="0" y="-6.604" size="0.508" layer="25" align="top-center">&gt;NAME</text>
 </package>
 <package name="NANO-FIT_RIGHT_ANGLE-2">
