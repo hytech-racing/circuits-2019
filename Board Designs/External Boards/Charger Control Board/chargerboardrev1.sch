@@ -2432,8 +2432,8 @@ Connector</text>
 <instance part="R3" gate="G$1" x="-119.38" y="86.36" rot="R180"/>
 <instance part="R4" gate="G$1" x="-114.3" y="68.58" rot="R90"/>
 <instance part="GND9" gate="1" x="-114.3" y="58.42"/>
-<instance part="MMBZ5246BLT1G" gate="G$1" x="-121.92" y="68.58" rot="R90"/>
-<instance part="GND8" gate="1" x="-121.92" y="58.42"/>
+<instance part="MMBZ5246BLT1G" gate="G$1" x="-124.46" y="91.44" rot="R270"/>
+<instance part="GND8" gate="1" x="-124.46" y="101.6" rot="R180"/>
 <instance part="Q1" gate="G$1" x="-101.6" y="81.28"/>
 <instance part="R2" gate="G$1" x="-7.62" y="27.94"/>
 <instance part="LED1" gate="LED" x="-17.78" y="27.94" rot="R270"/>
@@ -2513,7 +2513,7 @@ Connector</text>
 </segment>
 <segment>
 <pinref part="MMBZ5246BLT1G" gate="G$1" pin="A"/>
-<wire x1="-121.92" y1="63.5" x2="-121.92" y2="60.96" width="0.1524" layer="91"/>
+<wire x1="-124.46" y1="96.52" x2="-124.46" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -2688,6 +2688,9 @@ Connector</text>
 <wire x1="-127" y1="86.36" x2="-124.46" y2="86.36" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="2"/>
 <label x="-127" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="MMBZ5246BLT1G" gate="G$1" pin="C"/>
+<wire x1="-124.46" y1="86.36" x2="-124.46" y2="88.9" width="0.1524" layer="91"/>
+<junction x="-124.46" y="86.36"/>
 </segment>
 <segment>
 <label x="-142.24" y="12.7" size="1.27" layer="95" xref="yes"/>
@@ -2706,10 +2709,7 @@ Connector</text>
 <junction x="-114.3" y="78.74"/>
 <pinref part="Q1" gate="G$1" pin="G"/>
 <wire x1="-114.3" y1="78.74" x2="-121.92" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="MMBZ5246BLT1G" gate="G$1" pin="C"/>
-<wire x1="-121.92" y1="78.74" x2="-121.92" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="-121.92" y1="78.74" x2="-127" y2="78.74" width="0.1524" layer="91"/>
-<junction x="-121.92" y="78.74"/>
 <label x="-127" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 <segment>
