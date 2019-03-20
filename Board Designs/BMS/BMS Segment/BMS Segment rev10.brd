@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mm" style="lines" multiple="1" display="yes" altdistance="2" altunitdist="mil" altunit="mm"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="2" altunitdist="mil" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -4170,7 +4170,7 @@ NEG</text>
 <wire x1="65.405" y1="1.016" x2="83.312" y2="1.016" width="0.4064" layer="51"/>
 <wire x1="83.312" y1="1.016" x2="83.312" y2="10.414" width="0.4064" layer="51"/>
 <wire x1="83.312" y1="10.414" x2="65.405" y2="10.414" width="0.4064" layer="51"/>
-<text x="68.834" y="5.588" size="6.35" layer="51" font="vector" align="center">#</text>
+<text x="68.76" y="5.588" size="6.35" layer="51" font="vector" align="center">#</text>
 <rectangle x1="70.485" y1="1.016" x2="83.312" y2="10.414" layer="51"/>
 <text x="97.79" y="34.036" size="1.016" layer="51" font="vector" rot="R270" align="center">DRIVE_B</text>
 <text x="95.631" y="160.655" size="1.016" layer="49" font="vector" align="center">DRIVE_A</text>
@@ -4724,12 +4724,12 @@ design rules under a new name.</description>
 <element name="DRAIN9:DISCHARGE" library="HyTechDevices" package="PWR163" value="5R" x="28.956" y="119.761" smashed="yes"/>
 <element name="ISOSPI_B" library="HyTechDevices" package="NANO-FIT_VERTICAL-2" value="CONNECTOR-2NANO-FIT_VERTICAL-2" x="104.394" y="112.662" smashed="yes"/>
 <element name="THERM2" library="HyTechDevices" package="0603" value="10K" x="51.054" y="98.298" smashed="yes" rot="R90">
-<attribute name="NAME" x="52.7431" y="98.298" size="1.016" layer="27" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="51.8569" y="98.302" size="1.016" layer="27" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" x="50.2412" y="98.298" size="1.016" layer="27" font="vector" rot="R90" align="bottom-center"/>
 </element>
 <element name="THERM1" library="HyTechDevices" package="0603" value="10K" x="51.054" y="45.339" smashed="yes" rot="R90">
-<attribute name="NAME" x="52.7431" y="45.339" size="1.016" layer="27" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="49.4792" y="45.339" size="1.016" layer="27" font="vector" rot="R90" align="top-center"/>
+<attribute name="NAME" x="51.8569" y="45.361" size="1.016" layer="27" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="50.3208" y="45.361" size="1.016" layer="27" font="vector" rot="R270" align="top-center"/>
 </element>
 <element name="DRAIN1:R" library="HyTechDevices" package="0805" value="100R" x="12.7" y="8.89" smashed="yes" rot="R180">
 <attribute name="NAME" x="12.7" y="8.1661" size="0.3048" layer="25" rot="R180" align="bottom-center"/>
@@ -5002,12 +5002,12 @@ design rules under a new name.</description>
 <element name="AMS_TEST_PORT1" library="HyTechDevices" package="NANO-FIT_VERTICAL-2" value="CONNECTOR-2NANO-FIT_VERTICAL-2" x="15.0798" y="242.2766" smashed="yes" rot="R270"/>
 <element name="ISOSPI_A" library="HyTechDevices" package="NANO-FIT_VERTICAL-2" value="CONNECTOR-2NANO-FIT_VERTICAL-2" x="104.394" y="148.984" smashed="yes" rot="R180"/>
 <element name="THERM4" library="HyTechDevices" package="0603" value="10K" x="51.054" y="205.232" smashed="yes" rot="R90">
-<attribute name="NAME" x="52.7431" y="205.232" size="1.016" layer="27" font="vector" rot="R90" align="bottom-center"/>
+<attribute name="NAME" x="51.8569" y="205.268" size="1.016" layer="27" font="vector" rot="R270" align="bottom-center"/>
 <attribute name="VALUE" x="49.7332" y="205.232" size="1.016" layer="27" font="vector" rot="R90" align="center"/>
 </element>
 <element name="THERM3" library="HyTechDevices" package="0603" value="10K" x="51.054" y="151.511" smashed="yes" rot="R90">
-<attribute name="NAME" x="52.6161" y="151.511" size="1.016" layer="27" font="vector" rot="R90" align="bottom-center"/>
-<attribute name="VALUE" x="50.2158" y="151.511" size="1.016" layer="27" font="vector" rot="R270" align="top-center"/>
+<attribute name="NAME" x="51.7839" y="151.489" size="1.016" layer="27" font="vector" rot="R270" align="bottom-center"/>
+<attribute name="VALUE" x="50.3158" y="151.511" size="1.016" layer="27" font="vector" rot="R270" align="top-center"/>
 </element>
 <element name="R2_A" library="HyTechDevices" package="0805" value="100R" x="94.869" y="176.53" smashed="yes">
 <attribute name="NAME" x="94.869" y="175.4759" size="0.3048" layer="25" align="bottom-center"/>
@@ -6689,10 +6689,9 @@ design rules under a new name.</description>
 <signal name="N$1">
 <contactref element="C4_B" pad="1"/>
 <contactref element="TRANSFORMER" pad="P$11"/>
-<wire x1="88.476" y1="127.027" x2="87.46" y2="126.011" width="0.4064" layer="1"/>
-<wire x1="87.46" y1="119.924" x2="87.46" y2="126.011" width="0.4064" layer="1"/>
-<wire x1="91.1854" y1="127.0064" x2="88.4966" y2="127.0064" width="0.4064" layer="1"/>
-<wire x1="88.4966" y1="127.0064" x2="88.476" y2="127.027" width="0.4064" layer="1"/>
+<wire x1="88.5554" y1="127.0064" x2="87.46" y2="125.911" width="0.4064" layer="1"/>
+<wire x1="87.46" y1="119.924" x2="87.46" y2="125.911" width="0.4064" layer="1"/>
+<wire x1="91.1854" y1="127.0064" x2="88.5554" y2="127.0064" width="0.4064" layer="1"/>
 </signal>
 <signal name="N$5">
 <contactref element="R4_B" pad="1"/>
@@ -7687,7 +7686,6 @@ design rules under a new name.</description>
 <wire x1="61.5" y1="240.48" x2="53.9096" y2="240.48" width="0.4064" layer="1"/>
 <wire x1="53.9096" y1="240.48" x2="53.8656" y2="240.524" width="0.4064" layer="1"/>
 <wire x1="53.8796" y1="240.538" x2="53.8656" y2="240.524" width="0.4064" layer="16"/>
-<wire x1="75.268" y1="240.538" x2="74.549" y2="240.538" width="0.4064" layer="16"/>
 <wire x1="74.549" y1="240.538" x2="53.8796" y2="240.538" width="0.4064" layer="16"/>
 <wire x1="75.66" y1="239.93" x2="74.941" y2="240.93" width="0.4064" layer="16"/>
 <wire x1="74.941" y1="240.93" x2="74.549" y2="240.538" width="0.4064" layer="16"/>
@@ -8652,6 +8650,9 @@ design rules under a new name.</description>
 <approved hash="4,16,afd0bf4dbf3dc1c0"/>
 <approved hash="4,16,bf2f3f68e0951a24"/>
 <approved hash="4,1,7d61e89d6a3bfbe6"/>
+<approved hash="4,16,3ed845084e802d50"/>
+<approved hash="4,16,3ad03d0008884f58"/>
+<approved hash="4,16,e67efb1f5528d96c"/>
 </errors>
 </board>
 </drawing>
