@@ -2400,6 +2400,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="C2" library="HyTechDevices" deviceset="CAP" device="0805" value="0.22uF"/>
 <part name="GND13" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="J1" library="HyTechDevices" deviceset="JUMPER" device=".1"/>
+<part name="GND14" library="HyTechSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2407,7 +2408,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <text x="-180.34" y="10.16" size="1.778" layer="91">Car Motorsport
 Connector</text>
 <text x="-50.8" y="86.36" size="1.778" layer="91" rot="R180">Powerswitch Tail</text>
-<text x="-86.36" y="5.08" size="1.778" layer="91">Charge toggle</text>
+<text x="-91.44" y="7.62" size="1.778" layer="91">Charge toggle</text>
 <text x="7.62" y="93.98" size="1.778" layer="91">5V Reg</text>
 </plain>
 <instances>
@@ -2441,8 +2442,8 @@ Connector</text>
 <instance part="LED" gate="LED" x="-17.78" y="35.56" rot="R270"/>
 <instance part="R5" gate="G$1" x="-7.62" y="35.56" rot="R180"/>
 <instance part="GND11" gate="1" x="-27.94" y="35.56" rot="R270"/>
-<instance part="X4" gate="-2" x="-63.5" y="7.62" rot="R180"/>
-<instance part="X4" gate="-1" x="-63.5" y="5.08" rot="R180"/>
+<instance part="X4" gate="-2" x="-68.58" y="10.16" rot="R180"/>
+<instance part="X4" gate="-1" x="-68.58" y="7.62" rot="R180"/>
 <instance part="U$3" gate="G$1" x="-45.72" y="5.08" rot="R180"/>
 <instance part="GND12" gate="1" x="-30.48" y="7.62" rot="R90"/>
 <instance part="R6" gate="G$1" x="-25.4" y="2.54" rot="R180"/>
@@ -2451,6 +2452,7 @@ Connector</text>
 <instance part="C2" gate="G$1" x="20.32" y="78.74"/>
 <instance part="GND13" gate="1" x="20.32" y="73.66"/>
 <instance part="J1" gate="G$1" x="-127" y="27.94" rot="R90"/>
+<instance part="GND14" gate="1" x="-60.96" y="10.16" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -2544,6 +2546,11 @@ Connector</text>
 <pinref part="C2" gate="G$1" pin="2"/>
 <pinref part="GND13" gate="1" pin="GND"/>
 </segment>
+<segment>
+<pinref part="X4" gate="-2" pin="S"/>
+<wire x1="-66.04" y1="10.16" x2="-63.5" y2="10.16" width="0.1524" layer="91"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="CANRX" class="0">
 <segment>
@@ -2619,6 +2626,11 @@ Connector</text>
 <wire x1="-152.4" y1="7.62" x2="-142.24" y2="7.62" width="0.1524" layer="91"/>
 <label x="-142.24" y="7.62" size="1.27" layer="95" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="DC+"/>
+<wire x1="-55.88" y1="2.54" x2="-60.96" y2="2.54" width="0.1524" layer="91"/>
+<label x="-60.96" y="2.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -2640,21 +2652,6 @@ Connector</text>
 <pinref part="R5" gate="G$1" pin="2"/>
 <pinref part="LED" gate="LED" pin="A"/>
 <wire x1="-12.7" y1="35.56" x2="-15.24" y2="35.56" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$7" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="DC-"/>
-<pinref part="X4" gate="-2" pin="S"/>
-<wire x1="-55.88" y1="7.62" x2="-60.96" y2="7.62" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="X4" gate="-1" pin="S"/>
-<pinref part="U$3" gate="G$1" pin="DC+"/>
-<wire x1="-55.88" y1="2.54" x2="-55.88" y2="5.08" width="0.1524" layer="91"/>
-<wire x1="-55.88" y1="5.08" x2="-60.96" y2="5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -2729,6 +2726,13 @@ Connector</text>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="J1" gate="G$1" pin="P$1"/>
+</segment>
+</net>
+<net name="N$7" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="DC-"/>
+<pinref part="X4" gate="-1" pin="S"/>
+<wire x1="-55.88" y1="7.62" x2="-66.04" y2="7.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

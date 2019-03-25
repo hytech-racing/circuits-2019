@@ -652,11 +652,11 @@ design rules under a new name.</description>
 <element name="LED1" library="HyTechDevices" package="LED-805" value="" x="130.81" y="3.81" rot="R180"/>
 <element name="LED" library="HyTechDevices" package="LED-805" value="" x="130.81" y="13.97" rot="R90"/>
 <element name="R5" library="HyTechDevices" package="0805" value="1.2k" x="135.89" y="13.97" rot="R180"/>
-<element name="X4" library="HyTechDevices" package="MINIFIT_5566-2" value="CONNECTOR-2" x="119.38" y="33.02">
-<attribute name="MF" value="" x="119.38" y="33.02" size="1.778" layer="27" display="off"/>
-<attribute name="MPN" value="" x="119.38" y="33.02" size="1.778" layer="27" display="off"/>
-<attribute name="OC_FARNELL" value="1822072" x="119.38" y="33.02" size="1.778" layer="27" display="off"/>
-<attribute name="OC_NEWARK" value="unknown" x="119.38" y="33.02" size="1.778" layer="27" display="off"/>
+<element name="X4" library="HyTechDevices" package="MINIFIT_5566-2" value="CONNECTOR-2" x="118.11" y="34.29" rot="R180">
+<attribute name="MF" value="" x="118.11" y="34.29" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MPN" value="" x="118.11" y="34.29" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_FARNELL" value="1822072" x="118.11" y="34.29" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OC_NEWARK" value="unknown" x="118.11" y="34.29" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
 <element name="U$3" library="HyTechDevices" package="SOP04" value="CPC1002N" x="129.54" y="36.83" rot="R90"/>
 <element name="R6" library="HyTechDevices" package="0805" value="330" x="135.89" y="35.56" rot="R180"/>
@@ -711,7 +711,6 @@ design rules under a new name.</description>
 <wire x1="132.3" y1="2.76" x2="130.81" y2="2.76" width="0.6096" layer="1"/>
 <wire x1="139.7" y1="36.83" x2="140.97" y2="36.83" width="0.6096" layer="1"/>
 <wire x1="140.97" y1="36.83" x2="142.24" y2="35.56" width="0.6096" layer="1"/>
-<wire x1="142.24" y1="35.56" x2="142.24" y2="34.29" width="0.6096" layer="1"/>
 <wire x1="140.97" y1="30.48" x2="138.43" y2="30.48" width="0.6096" layer="1"/>
 <wire x1="138.43" y1="30.48" x2="135.89" y2="27.94" width="0.6096" layer="1"/>
 <wire x1="135.89" y1="27.94" x2="135.23" y2="27.94" width="0.6096" layer="1"/>
@@ -731,9 +730,9 @@ design rules under a new name.</description>
 <wire x1="135.89" y1="6.35" x2="134.865" y2="5.325" width="0.6096" layer="1"/>
 <wire x1="126" y1="5.4" x2="126" y2="2.81" width="0.6096" layer="1"/>
 <wire x1="126" y1="2.81" x2="125.73" y2="2.54" width="0.6096" layer="1"/>
-<wire x1="111.76" y1="10.16" x2="114.3" y2="7.62" width="0.6096" layer="16"/>
-<wire x1="114.3" y1="7.62" x2="116.84" y2="5.08" width="0.6096" layer="16"/>
-<wire x1="114.3" y1="24.13" x2="119.38" y2="24.13" width="0.6096" layer="16"/>
+<wire x1="111.76" y1="10.16" x2="116.84" y2="5.08" width="0.6096" layer="16"/>
+<wire x1="114.3" y1="24.13" x2="118.11" y2="24.13" width="0.6096" layer="16"/>
+<wire x1="118.11" y1="24.13" x2="119.38" y2="24.13" width="0.6096" layer="16"/>
 <wire x1="118.11" y1="2.54" x2="116.84" y2="3.81" width="0.6096" layer="1"/>
 <wire x1="116.84" y1="3.81" x2="116.84" y2="5.08" width="0.6096" layer="1"/>
 <via x="116.84" y="5.08" extent="1-16" drill="0.35"/>
@@ -747,9 +746,10 @@ design rules under a new name.</description>
 <wire x1="138.43" y1="38.1" x2="139.7" y2="36.83" width="0.6096" layer="1"/>
 <wire x1="133.105" y1="33.02" x2="135.23" y2="30.895" width="0.6096" layer="1"/>
 <wire x1="135.23" y1="30.895" x2="135.23" y2="27.94" width="0.6096" layer="1"/>
-<wire x1="140.97" y1="36.83" x2="143.755" y2="36.83" width="0.6096" layer="1"/>
-<wire x1="142.24" y1="34.29" x2="142.24" y2="31.75" width="0.6096" layer="1"/>
-<wire x1="143.755" y1="36.83" x2="145.025" y2="36.83" width="0.6096" layer="1"/>
+<wire x1="140.97" y1="36.83" x2="145.025" y2="36.83" width="0.6096" layer="1"/>
+<wire x1="142.24" y1="35.56" x2="142.24" y2="31.75" width="0.6096" layer="1"/>
+<contactref element="X4" pad="2"/>
+<wire x1="118.11" y1="31.54" x2="118.11" y2="24.13" width="0.6096" layer="16"/>
 </signal>
 <signal name="CANRX">
 <contactref element="CAN_T" pad="4"/>
@@ -801,10 +801,13 @@ design rules under a new name.</description>
 <wire x1="115.57" y1="21.55" x2="124.26" y2="30.24" width="0.6096" layer="1"/>
 <wire x1="124.26" y1="30.24" x2="128.93" y2="30.24" width="0.6096" layer="1"/>
 <contactref element="C1" pad="1"/>
-<wire x1="128.93" y1="31.51" x2="129.355" y2="31.935" width="0.6096" layer="1"/>
 <wire x1="128.93" y1="30.24" x2="128.93" y2="31.51" width="0.6096" layer="1"/>
-<wire x1="129.355" y1="31.935" x2="130.44" y2="33.02" width="0.6096" layer="1"/>
+<wire x1="128.93" y1="31.51" x2="129.99" y2="32.57" width="0.6096" layer="1"/>
+<wire x1="129.99" y1="32.57" x2="130.44" y2="33.02" width="0.6096" layer="1"/>
 <wire x1="130.44" y1="33.02" x2="131.055" y2="33.02" width="0.6096" layer="1"/>
+<contactref element="U$3" pad="4"/>
+<wire x1="126.54" y1="35.56" x2="129.53" y2="32.57" width="0.6096" layer="1"/>
+<wire x1="129.53" y1="32.57" x2="129.99" y2="32.57" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$1">
 <contactref element="X3" pad="2"/>
@@ -823,19 +826,6 @@ design rules under a new name.</description>
 <contactref element="R5" pad="2"/>
 <contactref element="LED" pad="A"/>
 <wire x1="134.865" y1="13.97" x2="131.86" y2="13.97" width="0.6096" layer="1"/>
-</signal>
-<signal name="N$7">
-<contactref element="U$3" pad="3"/>
-<contactref element="X4" pad="2"/>
-<wire x1="121.71" y1="38.1" x2="119.38" y2="35.77" width="0.6096" layer="1"/>
-<wire x1="126.54" y1="38.1" x2="121.71" y2="38.1" width="0.6096" layer="1"/>
-</signal>
-<signal name="N$8">
-<contactref element="X4" pad="1"/>
-<contactref element="U$3" pad="4"/>
-<wire x1="126.54" y1="35.56" x2="124.46" y2="35.56" width="0.6096" layer="1"/>
-<wire x1="124.46" y1="35.56" x2="119.38" y2="30.48" width="0.6096" layer="1"/>
-<wire x1="119.38" y1="30.48" x2="119.38" y2="30.27" width="0.6096" layer="1"/>
 </signal>
 <signal name="N$10">
 <contactref element="U$3" pad="1"/>
@@ -900,6 +890,12 @@ design rules under a new name.</description>
 <contactref element="J1" pad="1"/>
 <wire x1="124.46" y1="21.835" x2="124.46" y2="19.05" width="0.6096" layer="1"/>
 </signal>
+<signal name="N$7">
+<contactref element="U$3" pad="3"/>
+<contactref element="X4" pad="1"/>
+<wire x1="119.17" y1="38.1" x2="126.54" y2="38.1" width="0.6096" layer="1"/>
+<wire x1="118.11" y1="37.04" x2="119.17" y2="38.1" width="0.6096" layer="1"/>
+</signal>
 </signals>
 <mfgpreviewcolors>
 <mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
@@ -908,6 +904,13 @@ design rules under a new name.</description>
 <mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
 <mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
 </mfgpreviewcolors>
+<errors>
+<approved hash="4,1,c8b3d99eb34c6ac4"/>
+<approved hash="4,1,82ca6fef83b91e85"/>
+<approved hash="4,1,54e8baca3376c590"/>
+<approved hash="4,16,c8b3d99eb34c6ac4"/>
+<approved hash="4,16,82ca6fef83b91e85"/>
+</errors>
 </board>
 </drawing>
 </eagle>
