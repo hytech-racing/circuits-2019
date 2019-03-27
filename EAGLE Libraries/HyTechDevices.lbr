@@ -7,7 +7,7 @@
 <setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -9994,19 +9994,11 @@ Same pad spacing as SOIC-16, but larger footprint</description>
 </package>
 <package name="KT12-1A-40L-THT">
 <wire x1="0" y1="0" x2="30.2" y2="0" width="0.127" layer="21"/>
-<dimension x1="0" y1="0" x2="0" y2="10.2" x3="-2.3" y3="5.1" textsize="1.27" layer="20" dtype="vertical"/>
 <wire x1="0" y1="10.2" x2="30.2" y2="10.2" width="0.127" layer="21"/>
 <wire x1="0" y1="10.2" x2="0" y2="0" width="0.127" layer="21"/>
 <wire x1="30.2" y1="0" x2="30.2" y2="10.2" width="0.127" layer="21"/>
-<dimension x1="0" y1="0" x2="30.2" y2="0" x3="15.1" y3="-3.6" textsize="1.27" layer="20" dtype="horizontal"/>
-<dimension x1="0" y1="0" x2="0.53" y2="-1.25" x3="33" y3="-0.625" textsize="1.27" layer="20" dtype="vertical"/>
-<dimension x1="0" y1="10.2" x2="0.11" y2="11.45" x3="36.1" y3="10.825" textsize="1.27" layer="20" dtype="vertical"/>
-<dimension x1="0" y1="0" x2="1.13" y2="-0.69" x3="0.565" y3="-2.5" textsize="1.27" layer="20" dtype="horizontal"/>
-<dimension x1="30.2" y1="0" x2="29.07" y2="-0.03" x3="29.635" y3="-0.8" textsize="1.27" layer="20" dtype="horizontal"/>
 <pad name="S2" x="29.07" y="-1.25" drill="0.85" diameter="1.9" shape="square"/>
 <pad name="S1" x="1.13" y="-1.25" drill="0.85" diameter="1.9" shape="square"/>
-<dimension x1="0" y1="10.2" x2="4.95" y2="10.19" x3="2.475" y3="12" textsize="1.27" layer="20" dtype="horizontal"/>
-<dimension x1="30.2" y1="10.2" x2="25.25" y2="10.24" x3="27.725" y3="13.2" textsize="1.27" layer="20" dtype="horizontal"/>
 <pad name="C2" x="25.25" y="11.45" drill="0.85" diameter="1.9" shape="square"/>
 <pad name="C1" x="4.95" y="11.45" drill="0.85" diameter="1.9" shape="square"/>
 </package>
