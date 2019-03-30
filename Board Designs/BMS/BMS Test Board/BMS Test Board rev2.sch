@@ -2661,7 +2661,6 @@ Leakage Inductance: 0.50 uH max
 <part name="R31" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="430"/>
 <part name="GND15" library="supply1" deviceset="GND" device=""/>
 <part name="U$8" library="HyTechDevices" deviceset="LTC6820" device=""/>
-<part name="P+13" library="supply1" deviceset="+5V" device=""/>
 <part name="P+17" library="supply1" deviceset="+5V" device=""/>
 <part name="R33" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1k"/>
 <part name="R34" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="1k"/>
@@ -2671,10 +2670,7 @@ Leakage Inductance: 0.50 uH max
 <part name="R35" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="120"/>
 <part name="C4" library="HyTechDevices" deviceset="CAP" device="0805" value="27pF"/>
 <part name="GND22" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="R36" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2k"/>
 <part name="R37" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2k"/>
-<part name="P+19" library="supply1" deviceset="+5V" device=""/>
-<part name="P+20" library="supply1" deviceset="+5V" device=""/>
 <part name="U$9" library="HyTechDevices" deviceset="TEENSY_3.2_SIMPLE" device=""/>
 <part name="GND24" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="P+21" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
@@ -2703,6 +2699,8 @@ Leakage Inductance: 0.50 uH max
 <part name="GND36" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+9" library="supply1" deviceset="+5V" device=""/>
 <part name="+3V6" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="+3V4" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+3V3" device=""/>
+<part name="GND2" library="HyTechSymbols" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2838,9 +2836,6 @@ Leakage Inductance: 0.50 uH max
 <attribute name="VALUE" x="35.56" y="-93.98" size="1.778" layer="96" rot="R270"/>
 </instance>
 <instance part="U$8" gate="G$1" x="60.96" y="-137.16" smashed="yes"/>
-<instance part="P+13" gate="1" x="45.72" y="-152.4" smashed="yes" rot="MR180">
-<attribute name="VALUE" x="45.72" y="-152.4" size="1.778" layer="96" rot="MR180"/>
-</instance>
 <instance part="P+17" gate="1" x="73.66" y="-152.4" smashed="yes" rot="R180">
 <attribute name="VALUE" x="76.2" y="-147.32" size="1.778" layer="96" rot="R270"/>
 </instance>
@@ -2872,19 +2867,9 @@ Leakage Inductance: 0.50 uH max
 <instance part="GND22" gate="1" x="91.44" y="-132.08" smashed="yes" rot="R180">
 <attribute name="VALUE" x="93.98" y="-129.54" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="R36" gate="G$1" x="25.4" y="-132.08" smashed="yes">
-<attribute name="NAME" x="21.59" y="-130.5814" size="1.778" layer="95"/>
-<attribute name="VALUE" x="21.59" y="-135.382" size="1.778" layer="96"/>
-</instance>
-<instance part="R37" gate="G$1" x="30.48" y="-139.7" smashed="yes">
-<attribute name="NAME" x="26.67" y="-138.2014" size="1.778" layer="95"/>
-<attribute name="VALUE" x="26.67" y="-143.002" size="1.778" layer="96"/>
-</instance>
-<instance part="P+19" gate="1" x="15.24" y="-132.08" smashed="yes" rot="R90">
-<attribute name="VALUE" x="20.32" y="-134.62" size="1.778" layer="96" rot="R180"/>
-</instance>
-<instance part="P+20" gate="1" x="20.32" y="-139.7" smashed="yes" rot="R90">
-<attribute name="VALUE" x="25.4" y="-142.24" size="1.778" layer="96" rot="R180"/>
+<instance part="R37" gate="G$1" x="27.94" y="-134.62" smashed="yes">
+<attribute name="NAME" x="24.13" y="-133.1214" size="1.778" layer="95"/>
+<attribute name="VALUE" x="24.13" y="-137.922" size="1.778" layer="96"/>
 </instance>
 <instance part="U$9" gate="G$1" x="68.58" y="-116.84" smashed="yes"/>
 <instance part="GND24" gate="1" x="66.04" y="-73.66" smashed="yes" rot="R180">
@@ -2977,6 +2962,12 @@ Leakage Inductance: 0.50 uH max
 </instance>
 <instance part="+3V6" gate="G$1" x="20.32" y="-111.76" smashed="yes" rot="R270">
 <attribute name="VALUE" x="17.78" y="-109.22" size="1.778" layer="96"/>
+</instance>
+<instance part="+3V4" gate="G$1" x="17.78" y="-134.62" smashed="yes" rot="R90">
+<attribute name="VALUE" x="20.32" y="-137.16" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="GND2" gate="1" x="45.72" y="-152.4" smashed="yes">
+<attribute name="VALUE" x="43.18" y="-154.94" size="1.778" layer="96"/>
 </instance>
 </instances>
 <busses>
@@ -3095,6 +3086,16 @@ Leakage Inductance: 0.50 uH max
 <pinref part="GND36" gate="1" pin="GND"/>
 <wire x1="30.48" y1="-124.46" x2="25.4" y2="-124.46" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="U$8" gate="G$1" pin="POL"/>
+<pinref part="U$8" gate="G$1" pin="PHA"/>
+<wire x1="48.26" y1="-144.78" x2="45.72" y2="-144.78" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="-144.78" x2="45.72" y2="-147.32" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="-147.32" x2="48.26" y2="-147.32" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="-147.32" x2="45.72" y2="-149.86" width="0.1524" layer="91"/>
+<junction x="45.72" y="-147.32"/>
+<pinref part="GND2" gate="1" pin="GND"/>
+</segment>
 </net>
 <net name="+12V" class="0">
 <segment>
@@ -3132,16 +3133,6 @@ Leakage Inductance: 0.50 uH max
 <wire x1="73.66" y1="-147.32" x2="73.66" y2="-149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="R36" gate="G$1" pin="1"/>
-<pinref part="P+19" gate="1" pin="+5V"/>
-<wire x1="17.78" y1="-132.08" x2="20.32" y2="-132.08" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R37" gate="G$1" pin="1"/>
-<pinref part="P+20" gate="1" pin="+5V"/>
-<wire x1="22.86" y1="-139.7" x2="25.4" y2="-139.7" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U$8" gate="G$1" pin="MSTR"/>
 <wire x1="73.66" y1="-139.7" x2="88.9" y2="-139.7" width="0.1524" layer="91"/>
 <pinref part="P+18" gate="1" pin="+5V"/>
@@ -3171,16 +3162,6 @@ Leakage Inductance: 0.50 uH max
 <pinref part="U$8" gate="G$1" pin="EN"/>
 <pinref part="P+25" gate="1" pin="+5V"/>
 <wire x1="48.26" y1="-129.54" x2="48.26" y2="-127" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U$8" gate="G$1" pin="POL"/>
-<pinref part="U$8" gate="G$1" pin="PHA"/>
-<pinref part="P+13" gate="1" pin="+5V"/>
-<wire x1="48.26" y1="-144.78" x2="45.72" y2="-144.78" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="-144.78" x2="45.72" y2="-147.32" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="-147.32" x2="48.26" y2="-147.32" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="-147.32" x2="45.72" y2="-149.86" width="0.1524" layer="91"/>
-<junction x="45.72" y="-147.32"/>
 </segment>
 <segment>
 <pinref part="IC2" gate="G$1" pin="VDD"/>
@@ -3307,7 +3288,7 @@ Leakage Inductance: 0.50 uH max
 <pinref part="U$8" gate="G$1" pin="MISO"/>
 <wire x1="48.26" y1="-134.62" x2="35.56" y2="-134.62" width="0.1524" layer="91"/>
 <wire x1="35.56" y1="-134.62" x2="35.56" y2="-111.76" width="0.1524" layer="91"/>
-<wire x1="35.56" y1="-134.62" x2="35.56" y2="-139.7" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="-134.62" x2="33.02" y2="-134.62" width="0.1524" layer="91"/>
 <junction x="35.56" y="-134.62"/>
 <pinref part="R37" gate="G$1" pin="2"/>
 <pinref part="U$9" gate="G$1" pin="D12"/>
@@ -3489,6 +3470,11 @@ Leakage Inductance: 0.50 uH max
 <pinref part="C15" gate="G$1" pin="2"/>
 <wire x1="15.24" y1="-111.76" x2="15.24" y2="-114.3" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R37" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="-134.62" x2="22.86" y2="-134.62" width="0.1524" layer="91"/>
+<pinref part="+3V4" gate="G$1" pin="+3V3"/>
+</segment>
 </net>
 <net name="CS_MCP3208_3.3V" class="0">
 <segment>
@@ -3512,9 +3498,6 @@ Leakage Inductance: 0.50 uH max
 <pinref part="U$8" gate="G$1" pin="MOSI"/>
 <wire x1="48.26" y1="-132.08" x2="38.1" y2="-132.08" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="-132.08" x2="38.1" y2="-109.22" width="0.1524" layer="91"/>
-<pinref part="R36" gate="G$1" pin="2"/>
-<wire x1="38.1" y1="-132.08" x2="30.48" y2="-132.08" width="0.1524" layer="91"/>
-<junction x="38.1" y="-132.08"/>
 <pinref part="U$9" gate="G$1" pin="D11"/>
 <wire x1="38.1" y1="-109.22" x2="66.04" y2="-109.22" width="0.1524" layer="91"/>
 <label x="50.8" y="-109.22" size="1.778" layer="95"/>
