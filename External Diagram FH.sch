@@ -1771,7 +1771,6 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="GND18" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="BUTTON_MODE" library="HyTechSymbols" deviceset="SWITCH_SPST_MOM" device=""/>
 <part name="GND20" library="HyTechSymbols" deviceset="GND" device=""/>
-<part name="LED_POWER" library="HyTechSymbols" deviceset="LED" device=""/>
 <part name="LED_MODE" library="HyTechSymbols" deviceset="LED" device=""/>
 <part name="MAIN_PRIM_2" library="HyTechSymbols" deviceset="M37" device="" value="8STA61435SN"/>
 <part name="MAIN_PRIM_1" library="HyTechSymbols" deviceset="M37" device="" value="8STA21435PN"/>
@@ -2168,10 +2167,6 @@ Orange: HV High Current Path</text>
 <instance part="GND20" gate="1" x="665.48" y="187.96" smashed="yes" rot="R180">
 <attribute name="VALUE" x="668.02" y="190.5" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="LED_POWER" gate="G$1" x="650.24" y="218.44" smashed="yes">
-<attribute name="NAME" x="649.732" y="225.171" size="1.778" layer="95"/>
-<attribute name="VALUE" x="649.732" y="222.885" size="1.778" layer="96"/>
-</instance>
 <instance part="LED_MODE" gate="G$1" x="650.24" y="208.28" smashed="yes">
 <attribute name="NAME" x="649.732" y="215.011" size="1.778" layer="95"/>
 <attribute name="VALUE" x="649.732" y="212.725" size="1.778" layer="96"/>
@@ -2409,14 +2404,10 @@ Orange: HV High Current Path</text>
 <wire x1="657.86" y1="231.14" x2="668.02" y2="231.14" width="0.1524" layer="91"/>
 <wire x1="668.02" y1="231.14" x2="668.02" y2="241.3" width="0.1524" layer="91"/>
 <junction x="668.02" y="241.3"/>
-<pinref part="LED_POWER" gate="G$1" pin="C"/>
-<wire x1="657.86" y1="220.98" x2="668.02" y2="220.98" width="0.1524" layer="91"/>
-<wire x1="668.02" y1="220.98" x2="668.02" y2="231.14" width="0.1524" layer="91"/>
 <junction x="668.02" y="231.14"/>
 <pinref part="LED_MODE" gate="G$1" pin="C"/>
 <wire x1="657.86" y1="210.82" x2="668.02" y2="210.82" width="0.1524" layer="91"/>
-<wire x1="668.02" y1="210.82" x2="668.02" y2="220.98" width="0.1524" layer="91"/>
-<junction x="668.02" y="220.98"/>
+<wire x1="668.02" y1="210.82" x2="668.02" y2="231.14" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <portref moduleinst="HV_PCB" port="DISCHARGE_RELAY_GND"/>
@@ -3570,14 +3561,6 @@ Orange: HV High Current Path</text>
 <pinref part="DASH_1" gate="G$1" pin="6"/>
 <wire x1="594.36" y1="213.36" x2="568.96" y2="213.36" width="0.1524" layer="91"/>
 <label x="571.5" y="213.36" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="DASH_2" gate="G$1" pin="6"/>
-<wire x1="617.22" y1="213.36" x2="635" y2="213.36" width="0.1524" layer="91"/>
-<wire x1="635" y1="213.36" x2="635" y2="220.98" width="0.1524" layer="91"/>
-<pinref part="LED_POWER" gate="G$1" pin="A"/>
-<wire x1="635" y1="220.98" x2="650.24" y2="220.98" width="0.1524" layer="91"/>
-<label x="637.54" y="220.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="DASH_6" class="0">
