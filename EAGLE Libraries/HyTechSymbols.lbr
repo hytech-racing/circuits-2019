@@ -465,15 +465,15 @@ Precharger</text>
 <pin name="O" x="-2.54" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
 </symbol>
 <symbol name="RINEHART_PM100DX">
-<wire x1="66.04" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
-<wire x1="0" y1="30.48" x2="66.04" y2="30.48" width="0.254" layer="94"/>
-<wire x1="66.04" y1="0" x2="66.04" y2="30.48" width="0.254" layer="94"/>
+<wire x1="68.58" y1="0" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="30.48" x2="68.58" y2="30.48" width="0.254" layer="94"/>
+<wire x1="68.58" y1="0" x2="68.58" y2="30.48" width="0.254" layer="94"/>
 <wire x1="0" y1="0" x2="0" y2="30.48" width="0.254" layer="94"/>
-<pin name="A" x="71.12" y="10.16" length="middle" rot="R180"/>
-<pin name="B" x="71.12" y="17.78" length="middle" rot="R180"/>
-<pin name="C" x="71.12" y="25.4" length="middle" rot="R180"/>
+<pin name="A" x="73.66" y="10.16" length="middle" rot="R180"/>
+<pin name="B" x="73.66" y="17.78" length="middle" rot="R180"/>
+<pin name="C" x="73.66" y="25.4" length="middle" rot="R180"/>
 <pin name="DC+" x="-5.08" y="12.7" length="middle"/>
-<pin name="DC-" x="-5.08" y="22.86" length="middle"/>
+<pin name="DC-" x="-5.08" y="20.32" length="middle"/>
 <pin name="J1-11/CAN_L" x="15.24" y="33.02" length="short" rot="R270"/>
 <pin name="J1-33/CAN_H" x="17.78" y="33.02" length="short" rot="R270"/>
 <text x="63.5" y="7.62" size="5.08" layer="95" rot="R180">Rinehart PM100DX</text>
@@ -494,6 +494,8 @@ Precharger</text>
 <pin name="J1-24/AIN2_TEMP" x="43.18" y="33.02" length="short" rot="R270"/>
 <pin name="J1-28/XDCR_PWR" x="33.02" y="33.02" length="short" rot="R270"/>
 <pin name="J1-26/XDCR_PWR" x="40.64" y="33.02" length="short" rot="R270"/>
+<pin name="GND" x="2.54" y="33.02" length="short" rot="R270"/>
+<pin name="J2-19/SHIELD_GND" x="63.5" y="33.02" length="short" rot="R270"/>
 </symbol>
 <symbol name="BANANA_JACK">
 <circle x="0" y="0" radius="1.2951" width="0.254" layer="94"/>
