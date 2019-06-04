@@ -3742,7 +3742,7 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 <part name="IMD-OK" library="HyTechDevices" deviceset="LED" device="-0805" value="YELLOW"/>
 <part name="BMS-OK" library="HyTechDevices" deviceset="LED" device="-0805" value="GREEN"/>
 <part name="R3" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="820"/>
-<part name="R4" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="5k"/>
+<part name="R4" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2k"/>
 <part name="GND23" library="supply1" deviceset="GND" device=""/>
 <part name="GND25" library="supply1" deviceset="GND" device=""/>
 <part name="INTERLOCK" library="HyTechDevices" deviceset="CONNECTOR-2" device="NANO-FIT_VERTICAL-2" value="INTERLOCK"/>
@@ -3777,7 +3777,6 @@ Minimum input voltage level 1.8V. Maximum output voltage level 5.5V.</descriptio
 <part name="GND18" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="GND19" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="P+18" library="supply1" deviceset="+5V" device=""/>
-<part name="R35" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="120"/>
 <part name="C4" library="HyTechDevices" deviceset="CAP" device="0805" value="27pF"/>
 <part name="GND22" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="R36" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="2k"/>
@@ -4117,10 +4116,6 @@ corner frequency = fclk / 100 = 1 kHz</text>
 </instance>
 <instance part="P+18" gate="1" x="91.44" y="-289.56" smashed="yes" rot="R270">
 <attribute name="VALUE" x="86.36" y="-287.02" size="1.778" layer="96"/>
-</instance>
-<instance part="R35" gate="G$1" x="86.36" y="-297.18" smashed="yes" rot="R90">
-<attribute name="NAME" x="84.8614" y="-300.99" size="1.778" layer="95" rot="R90"/>
-<attribute name="VALUE" x="89.662" y="-300.99" size="1.778" layer="96" rot="R90"/>
 </instance>
 <instance part="C4" gate="G$1" x="96.52" y="-284.48" smashed="yes" rot="R270">
 <attribute name="NAME" x="99.441" y="-286.004" size="1.778" layer="95" rot="R270"/>
@@ -5227,20 +5222,14 @@ corner frequency = fclk / 100 = 1 kHz</text>
 <pinref part="U$8" gate="G$1" pin="IM"/>
 <wire x1="73.66" y1="-294.64" x2="81.28" y2="-294.64" width="0.1524" layer="91"/>
 <wire x1="81.28" y1="-294.64" x2="81.28" y2="-302.26" width="0.1524" layer="91"/>
-<pinref part="R35" gate="G$1" pin="1"/>
-<wire x1="81.28" y1="-302.26" x2="86.36" y2="-302.26" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="-302.26" x2="86.36" y2="-302.26" width="0.1524" layer="91"/>
-<junction x="86.36" y="-302.26"/>
+<wire x1="104.14" y1="-302.26" x2="81.28" y2="-302.26" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="TD-"/>
 </segment>
 </net>
 <net name="IP" class="0">
 <segment>
 <pinref part="U$8" gate="G$1" pin="IP"/>
-<wire x1="73.66" y1="-292.1" x2="86.36" y2="-292.1" width="0.1524" layer="91"/>
-<pinref part="R35" gate="G$1" pin="2"/>
-<wire x1="104.14" y1="-292.1" x2="86.36" y2="-292.1" width="0.1524" layer="91"/>
-<junction x="86.36" y="-292.1"/>
+<wire x1="104.14" y1="-292.1" x2="73.66" y2="-292.1" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="TD+"/>
 </segment>
 </net>

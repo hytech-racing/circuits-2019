@@ -28,7 +28,7 @@
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="14" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
@@ -3984,6 +3984,8 @@ Voltage PCB Area</text>
 <circle x="58.928" y="5.08" radius="3" width="0.127" layer="40"/>
 <circle x="6.4008" y="23.6728" radius="3" width="0.127" layer="40"/>
 <circle x="32.3088" y="50.3428" radius="3" width="0.127" layer="40"/>
+<dimension x1="0" y1="71.374" x2="119.126" y2="71.374" x3="59.563" y3="73.406" textsize="1.778" layer="20"/>
+<dimension x1="0" y1="0" x2="0" y2="71.374" x3="-2.286" y3="35.687" textsize="1.778" layer="20"/>
 </plain>
 <libraries>
 <library name="HyTechDevices">
@@ -4668,7 +4670,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="25.273" y="44.7421" size="0.3048" layer="25" rot="R180" align="bottom-center"/>
 <attribute name="VALUE" x="28.702" y="45.4152" size="0.889" layer="27" font="vector" rot="R180" align="center"/>
 </element>
-<element name="R4" library="HyTechDevices" package="0805" value="5k" x="25.273" y="42.037" smashed="yes">
+<element name="R4" library="HyTechDevices" package="0805" value="2k" x="25.273" y="42.037" smashed="yes">
 <attribute name="NAME" x="25.273" y="42.7609" size="0.3048" layer="25" align="bottom-center"/>
 <attribute name="VALUE" x="28.194" y="42.0878" size="0.889" layer="27" font="vector" align="center"/>
 </element>
@@ -4742,10 +4744,6 @@ design rules under a new name.</description>
 <element name="R34" library="HyTechDevices" package="0805" value="1k" x="15.621" y="49.149" smashed="yes" rot="MR180">
 <attribute name="NAME" x="15.621" y="48.1711" size="0.3048" layer="26" rot="MR180" align="bottom-center"/>
 <attribute name="VALUE" x="15.621" y="50.6222" size="0.889" layer="28" font="vector" rot="MR180" align="center"/>
-</element>
-<element name="R35" library="HyTechDevices" package="0805" value="120" x="12.192" y="51.308" smashed="yes" rot="MR180">
-<attribute name="NAME" x="12.192" y="50.5841" size="0.3048" layer="26" rot="MR180" align="bottom-center"/>
-<attribute name="VALUE" x="12.192" y="52.7812" size="0.889" layer="28" font="vector" rot="MR180" align="center"/>
 </element>
 <element name="C4" library="HyTechDevices" package="0805" value="27pF" x="14.605" y="54.356" smashed="yes" rot="MR270">
 <attribute name="NAME" x="14.3891" y="53.848" size="0.3048" layer="26" rot="MR270" align="bottom-center"/>
@@ -5620,32 +5618,26 @@ design rules under a new name.</description>
 </signal>
 <signal name="IM">
 <contactref element="U$8" pad="10"/>
-<contactref element="R35" pad="1"/>
 <contactref element="U$2" pad="P$10"/>
 <wire x1="10.922" y1="62.357" x2="10.922" y2="55.118" width="0.254" layer="1"/>
-<wire x1="11.176" y1="54.864" x2="11.176" y2="51.317" width="0.254" layer="16"/>
-<wire x1="11.167" y1="51.308" x2="11.176" y2="51.317" width="0.254" layer="16"/>
-<wire x1="11.176" y1="54.864" x2="10.922" y2="55.118" width="0.254" layer="16"/>
+<wire x1="10.922" y1="55.118" x2="11.176" y2="54.864" width="0.254" layer="16"/>
 <via x="10.922" y="55.118" extent="1-16" drill="0.381"/>
 <wire x1="12.42" y1="62.707" x2="11.272" y2="62.707" width="0.254" layer="1"/>
 <wire x1="11.272" y1="62.707" x2="10.922" y2="62.357" width="0.254" layer="1"/>
-<wire x1="12.086" y1="47.477" x2="11.167" y2="48.396" width="0.254" layer="16"/>
-<wire x1="11.167" y1="51.308" x2="11.167" y2="48.396" width="0.254" layer="16"/>
+<wire x1="11.167" y1="48.396" x2="12.086" y2="47.477" width="0.254" layer="16"/>
 <wire x1="12.086" y1="47.477" x2="12.086" y2="43.959" width="0.254" layer="16"/>
+<wire x1="11.176" y1="48.405" x2="11.167" y2="48.396" width="0.254" layer="16"/>
+<wire x1="11.176" y1="54.864" x2="11.176" y2="48.405" width="0.254" layer="16"/>
 </signal>
 <signal name="IP">
 <contactref element="U$8" pad="11"/>
-<contactref element="R35" pad="2"/>
 <contactref element="U$2" pad="P$12"/>
-<wire x1="13.217" y1="51.308" x2="13.182" y2="51.308" width="0.254" layer="16"/>
 <via x="12.42" y="54.229" extent="1-16" drill="0.35"/>
 <wire x1="12.42" y1="58.707" x2="12.42" y2="54.229" width="0.254" layer="1"/>
-<wire x1="12.42" y1="54.229" x2="13.182" y2="53.467" width="0.254" layer="16"/>
-<wire x1="13.182" y1="53.467" x2="13.182" y2="51.308" width="0.254" layer="16"/>
-<wire x1="13.217" y1="51.308" x2="12.709" y2="51.308" width="0.254" layer="16"/>
-<wire x1="12.709" y1="51.308" x2="12.582" y2="51.435" width="0.254" layer="16"/>
 <wire x1="12.582" y1="51.435" x2="12.582" y2="43.963" width="0.254" layer="16"/>
 <wire x1="12.582" y1="43.963" x2="12.586" y2="43.959" width="0.254" layer="16"/>
+<wire x1="12.582" y1="51.435" x2="12.582" y2="54.067" width="0.254" layer="16"/>
+<wire x1="12.582" y1="54.067" x2="12.42" y2="54.229" width="0.254" layer="16"/>
 </signal>
 <signal name="ISOSPI-P" class="2">
 <contactref element="U$2" pad="P$1"/>
