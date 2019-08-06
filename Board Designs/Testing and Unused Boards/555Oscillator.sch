@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.4.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1403,7 +1403,7 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <parts>
 <part name="U$1" library="HyTechDevices" deviceset="555_TIMER" device=""/>
 <part name="U$2" library="HyTechDevices" deviceset="CR-2450/G1AN" device=""/>
-<part name="C1" library="HyTechDevices" deviceset="CAP" device="_" value="10u"/>
+<part name="C1" library="HyTechDevices" deviceset="CAP" device="_" value="10uF"/>
 <part name="C2" library="HyTechDevices" deviceset="CAP" device="_" value="10nF"/>
 <part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="AXIAL-0.3" value="330"/>
 <part name="R2" library="HyTechDevices" deviceset="TRIMPOT_3296" device="C"/>
@@ -1415,14 +1415,34 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <plain>
 </plain>
 <instances>
-<instance part="U$1" gate="G$1" x="58.42" y="43.18" rot="R90"/>
-<instance part="U$2" gate="G$1" x="-7.62" y="93.98" rot="R180"/>
-<instance part="C1" gate="G$1" x="7.62" y="30.48"/>
-<instance part="C2" gate="G$1" x="55.88" y="83.82"/>
-<instance part="R1" gate="G$1" x="5.08" y="78.74" rot="R90"/>
-<instance part="R2" gate="G$1" x="10.16" y="48.26" rot="R180"/>
-<instance part="LED1" gate="LED" x="99.06" y="45.72"/>
-<instance part="R3" gate="G$1" x="93.98" y="25.4"/>
+<instance part="U$1" gate="G$1" x="58.42" y="43.18" smashed="yes" rot="R90">
+<attribute name="NAME" x="48.26" y="58.42" size="1.778" layer="95" rot="R90" align="center"/>
+</instance>
+<instance part="U$2" gate="G$1" x="-7.62" y="93.98" smashed="yes" rot="R180"/>
+<instance part="C1" gate="G$1" x="7.62" y="30.48" smashed="yes">
+<attribute name="NAME" x="9.144" y="33.401" size="1.778" layer="95"/>
+<attribute name="VALUE" x="9.144" y="28.321" size="1.778" layer="96"/>
+</instance>
+<instance part="C2" gate="G$1" x="55.88" y="83.82" smashed="yes">
+<attribute name="NAME" x="57.404" y="86.741" size="1.778" layer="95"/>
+<attribute name="VALUE" x="57.404" y="81.661" size="1.778" layer="96"/>
+</instance>
+<instance part="R1" gate="G$1" x="5.08" y="78.74" smashed="yes" rot="R90">
+<attribute name="NAME" x="3.5814" y="74.93" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="8.382" y="74.93" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R2" gate="G$1" x="10.16" y="48.26" smashed="yes" rot="R180">
+<attribute name="NAME" x="15.875" y="52.07" size="1.524" layer="95" ratio="10" rot="R270"/>
+<attribute name="VALUE" x="13.97" y="52.07" size="1.524" layer="96" ratio="10" rot="R270"/>
+</instance>
+<instance part="LED1" gate="LED" x="99.06" y="45.72" smashed="yes">
+<attribute name="NAME" x="102.616" y="41.148" size="1.778" layer="95" rot="R90"/>
+<attribute name="VALUE" x="104.775" y="41.148" size="1.778" layer="96" rot="R90"/>
+</instance>
+<instance part="R3" gate="G$1" x="93.98" y="25.4" smashed="yes">
+<attribute name="NAME" x="90.17" y="26.8986" size="1.778" layer="95"/>
+<attribute name="VALUE" x="90.17" y="22.098" size="1.778" layer="96"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -1484,11 +1504,9 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <segment>
 <pinref part="U$1" gate="G$1" pin="3"/>
 <wire x1="40.64" y1="76.2" x2="40.64" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="99.06" x2="96.52" y2="99.06" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="99.06" x2="96.52" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="99.06" x2="99.06" y2="99.06" width="0.1524" layer="91"/>
 <pinref part="LED1" gate="LED" pin="A"/>
-<wire x1="96.52" y1="96.52" x2="99.06" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="99.06" y1="96.52" x2="99.06" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="99.06" x2="99.06" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
