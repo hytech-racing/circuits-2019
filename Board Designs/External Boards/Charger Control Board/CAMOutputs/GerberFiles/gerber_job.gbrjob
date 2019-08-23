@@ -1,0 +1,24 @@
+{
+    "Header": {
+        "Comment": "All values are metric (mm)",
+        "CreationDate": "2019-08-23T07:13:16Z",
+        "GenerationSoftware": {
+            "Application": "EAGLE",
+            "Vendor": "Autodesk",
+            "Version": "9.4.2"
+        },
+        "Part": "Single"
+    },
+    "Overall": {
+        "BoardThickness": 1.584,
+        "LayerNumber": 4,
+        "Name": {
+            "ProjectId": "chargerboardrev2"
+        },
+        "Owner": "Arvind Srinivasan <arvindsrinivasan@gatech.edu>",
+        "Size": {
+            "X": 54.082,
+            "Y": 51.74
+        }
+    }
+}

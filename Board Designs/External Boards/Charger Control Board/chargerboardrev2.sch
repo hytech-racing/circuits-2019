@@ -2558,7 +2558,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <part name="STATUS" library="HyTechDevices" deviceset="LED" device="-0805" value="RED"/>
 <part name="GND16" library="HyTechSymbols" deviceset="GND" device=""/>
 <part name="X2" library="HyTechDevices" deviceset="CONNECTOR-2" device="" value="Shutdown Button"/>
-<part name="ZENER1" library="HyTechDevices" deviceset="DIODE" device="0805" value="DIODE"/>
+<part name="DIODE" library="HyTechDevices" deviceset="DIODE" device="0805" value="DIODE"/>
 <part name="R1" library="HyTechDevices" deviceset="RESISTOR" device="0805-RES" value="60"/>
 <part name="CAN_TERM_JMP" library="HyTechDevices" deviceset="M02" device="_SLIM" value="M02_SLIM"/>
 <part name="U$13" library="HyTechDevices" deviceset="CDSOT23-T24CAN-Q" device=""/>
@@ -2730,7 +2730,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <attribute name="NAME" x="-41.402" y="2.54" size="1.524" layer="95" rot="R270"/>
 <attribute name="VALUE" x="-39.243" y="5.842" size="1.778" layer="96" rot="R270"/>
 </instance>
-<instance part="ZENER1" gate="1" x="-15.24" y="45.72" smashed="yes" rot="R180">
+<instance part="DIODE" gate="1" x="-15.24" y="45.72" smashed="yes" rot="R180">
 <attribute name="VALUE" x="-11.43" y="44.2214" size="1.778" layer="96" rot="R180"/>
 </instance>
 <instance part="R1" gate="G$1" x="71.12" y="30.48" smashed="yes">
@@ -2929,7 +2929,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 </segment>
 <segment>
 <wire x1="-17.78" y1="45.72" x2="-20.32" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="ZENER1" gate="1" pin="C"/>
+<pinref part="DIODE" gate="1" pin="C"/>
 <label x="-20.32" y="45.72" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
@@ -3087,7 +3087,7 @@ Note: The Sparkfun version includes many other packages including surface mount 
 <junction x="-7.62" y="45.72"/>
 <pinref part="Q1" gate="G$1" pin="G"/>
 <wire x1="-7.62" y1="45.72" x2="-10.16" y2="45.72" width="0.1524" layer="91"/>
-<pinref part="ZENER1" gate="1" pin="A"/>
+<pinref part="DIODE" gate="1" pin="A"/>
 </segment>
 </net>
 </nets>
