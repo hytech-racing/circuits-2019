@@ -1,0 +1,271 @@
+AMS_TEST_PORT1    CONNECTOR-2NANO-FIT_VERTICAL-2 CONNECTOR-2NANO-FIT_VERTICAL-2 NANO-FIT_VERTICAL-2 Mini-Fit Junior connector 2 pole                                         
+C1_A              1uF                            CAP0805                        0805                Capacitor                                                                
+C1_B              1uF                            CAP0805                        0805                Capacitor                                                                
+C2_A              1uF                            CAP0805                        0805                Capacitor                                                                
+C2_B              1uF                            CAP0805                        0805                Capacitor                                                                
+C3_A              15pF                           CAP0805                        0805                Capacitor                                                                
+C3_B              15pF                           CAP0805                        0805                Capacitor                                                                
+C4_A              10nF                           CAP0805                        0805                Capacitor                                                                
+C4_B              10nF                           CAP0805                        0805                Capacitor                                                                
+C5_A              10nF                           CAP0805                        0805                Capacitor                                                                
+C6_A              100nF                          CAP0805                        0805                Capacitor                                                         100V   
+C6_B              100nF                          CAP0805                        0805                Capacitor                                                         100V   
+C7_A              100nF                          CAP0805                        0805                Capacitor                                                         100V   
+C7_B              100nF                          CAP0805                        0805                Capacitor                                                         100V   
+C8_A              1uF                            CAP0805                        0805                Capacitor                                                                
+C8_B              1uF                            CAP0805                        0805                Capacitor                                                                
+CELL0             BATTERY_SPRING_KEYSTONE5222    BATTERY_SPRING_KEYSTONE5222    KEYSTONE5222        Keystone Electronics Battery Spring Contact                              
+CELL1             BATTERY_SPRING_KEYSTONE5222    BATTERY_SPRING_KEYSTONE5222    KEYSTONE5222        Keystone Electronics Battery Spring Contact                              
+CELL2             BATTERY_SPRING_KEYSTONE5222    BATTERY_SPRING_KEYSTONE5222    KEYSTONE5222        Keystone Electronics Battery Spring Contact                              
+CELL3             BATTERY_SPRING_KEYSTONE5222    BATTERY_SPRING_KEYSTONE5222    KEYSTONE5222        Keystone Electronics Battery Spring Contact                              
+CELL4             BATTERY_SPRING_KEYSTONE5222    BATTERY_SPRING_KEYSTONE5222    KEYSTONE5222        Keystone Electronics Battery Spring Contact                              
+CELL5             BATTERY_SPRING_KEYSTONE5222    BATTERY_SPRING_KEYSTONE5222    KEYSTONE5222        Keystone Electronics Battery Spring Contact                              
+CELL6             BATTERY_SPRING_KEYSTONE5222    BATTERY_SPRING_KEYSTONE5222    KEYSTONE5222        Keystone Electronics Battery Spring Contact                              
+CELL7             BATTERY_SPRING_KEYSTONE5222    BATTERY_SPRING_KEYSTONE5222    KEYSTONE5222        Keystone Electronics Battery Spring Contact                              
+CELL8             BATTERY_SPRING_KEYSTONE5222    BATTERY_SPRING_KEYSTONE5222    KEYSTONE5222        Keystone Electronics Battery Spring Contact                              
+CELL9             BATTERY_SPRING_KEYSTONE5222    BATTERY_SPRING_KEYSTONE5222    KEYSTONE5222        Keystone Electronics Battery Spring Contact                              
+CELL10            BATTERY_SPRING_KEYSTONE5222    BATTERY_SPRING_KEYSTONE5222    KEYSTONE5222        Keystone Electronics Battery Spring Contact                              
+CELL11            BATTERY_SPRING_KEYSTONE5222    BATTERY_SPRING_KEYSTONE5222    KEYSTONE5222        Keystone Electronics Battery Spring Contact                              
+CELL12            BATTERY_SPRING_KEYSTONE5222    BATTERY_SPRING_KEYSTONE5222    KEYSTONE5222        Keystone Electronics Battery Spring Contact                              
+CELL13            BATTERY_SPRING_KEYSTONE5222    BATTERY_SPRING_KEYSTONE5222    KEYSTONE5222        Keystone Electronics Battery Spring Contact                              
+CELL14            BATTERY_SPRING_KEYSTONE5222    BATTERY_SPRING_KEYSTONE5222    KEYSTONE5222        Keystone Electronics Battery Spring Contact                              
+CELL15            BATTERY_SPRING_KEYSTONE5222    BATTERY_SPRING_KEYSTONE5222    KEYSTONE5222        Keystone Electronics Battery Spring Contact                              
+CELL16            BATTERY_SPRING_KEYSTONE5222    BATTERY_SPRING_KEYSTONE5222    KEYSTONE5222        Keystone Electronics Battery Spring Contact                              
+CELL17            BATTERY_SPRING_KEYSTONE5222    BATTERY_SPRING_KEYSTONE5222    KEYSTONE5222        Keystone Electronics Battery Spring Contact                              
+CELL18            BATTERY_SPRING_KEYSTONE5222    BATTERY_SPRING_KEYSTONE5222    KEYSTONE5222        Keystone Electronics Battery Spring Contact                              
+C_5               10nF                           CAP0805                        0805                Capacitor                                                                
+DRAIN1:C          10nF                           CAP0805                        0805                Capacitor                                                                
+DRAIN1:DISCHARGE  5R                             RESISTORPWR163                 PWR163              Resistor                                                                 
+DRAIN1:GATE       3K3                            RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN1:LED1       RED                            LED-0805                       LED-805             Light Emitting Diode (LED)                                               
+DRAIN1:PFET       P-CHANNEL_MOSFET_DMP3099L-7    P-CHANNEL_MOSFET_DMP3099L-7    SOT23               Diodes Incorporated P-Channel Enhancement Mode MOSFET                    
+DRAIN1:R          100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN1:R1         150R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN2:C          10nF                           CAP0805                        0805                Capacitor                                                                
+DRAIN2:DISCHARGE  5R                             RESISTORPWR163                 PWR163              Resistor                                                                 
+DRAIN2:GATE       3K3                            RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN2:LED1       RED                            LED-0805                       LED-805             Light Emitting Diode (LED)                                               
+DRAIN2:PFET       P-CHANNEL_MOSFET_DMP3099L-7    P-CHANNEL_MOSFET_DMP3099L-7    SOT23               Diodes Incorporated P-Channel Enhancement Mode MOSFET                    
+DRAIN2:R          100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN2:R1         150R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN3:C          10nF                           CAP0805                        0805                Capacitor                                                                
+DRAIN3:DISCHARGE  5R                             RESISTORPWR163                 PWR163              Resistor                                                                 
+DRAIN3:GATE       3K3                            RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN3:LED1       RED                            LED-0805                       LED-805             Light Emitting Diode (LED)                                               
+DRAIN3:PFET       P-CHANNEL_MOSFET_DMP3099L-7    P-CHANNEL_MOSFET_DMP3099L-7    SOT23               Diodes Incorporated P-Channel Enhancement Mode MOSFET                    
+DRAIN3:R          100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN3:R1         150R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN4:C          10nF                           CAP0805                        0805                Capacitor                                                                
+DRAIN4:DISCHARGE  5R                             RESISTORPWR163                 PWR163              Resistor                                                                 
+DRAIN4:GATE       3K3                            RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN4:LED1       RED                            LED-0805                       LED-805             Light Emitting Diode (LED)                                               
+DRAIN4:PFET       P-CHANNEL_MOSFET_DMP3099L-7    P-CHANNEL_MOSFET_DMP3099L-7    SOT23               Diodes Incorporated P-Channel Enhancement Mode MOSFET                    
+DRAIN4:R          100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN4:R1         150R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN5:C          10nF                           CAP0805                        0805                Capacitor                                                                
+DRAIN5:DISCHARGE  5R                             RESISTORPWR163                 PWR163              Resistor                                                                 
+DRAIN5:GATE       3K3                            RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN5:LED1       RED                            LED-0805                       LED-805             Light Emitting Diode (LED)                                               
+DRAIN5:PFET       P-CHANNEL_MOSFET_DMP3099L-7    P-CHANNEL_MOSFET_DMP3099L-7    SOT23               Diodes Incorporated P-Channel Enhancement Mode MOSFET                    
+DRAIN5:R          100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN5:R1         150R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN6:C          10nF                           CAP0805                        0805                Capacitor                                                                
+DRAIN6:DISCHARGE  5R                             RESISTORPWR163                 PWR163              Resistor                                                                 
+DRAIN6:GATE       3K3                            RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN6:LED1       RED                            LED-0805                       LED-805             Light Emitting Diode (LED)                                               
+DRAIN6:PFET       P-CHANNEL_MOSFET_DMP3099L-7    P-CHANNEL_MOSFET_DMP3099L-7    SOT23               Diodes Incorporated P-Channel Enhancement Mode MOSFET                    
+DRAIN6:R          100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN6:R1         150R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN7:C          10nF                           CAP0805                        0805                Capacitor                                                                
+DRAIN7:DISCHARGE  5R                             RESISTORPWR163                 PWR163              Resistor                                                                 
+DRAIN7:GATE       3K3                            RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN7:LED1       RED                            LED-0805                       LED-805             Light Emitting Diode (LED)                                               
+DRAIN7:PFET       P-CHANNEL_MOSFET_DMP3099L-7    P-CHANNEL_MOSFET_DMP3099L-7    SOT23               Diodes Incorporated P-Channel Enhancement Mode MOSFET                    
+DRAIN7:R          100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN7:R1         150R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN8:C          10nF                           CAP0805                        0805                Capacitor                                                                
+DRAIN8:DISCHARGE  5R                             RESISTORPWR163                 PWR163              Resistor                                                                 
+DRAIN8:GATE       3K3                            RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN8:LED1       RED                            LED-0805                       LED-805             Light Emitting Diode (LED)                                               
+DRAIN8:PFET       P-CHANNEL_MOSFET_DMP3099L-7    P-CHANNEL_MOSFET_DMP3099L-7    SOT23               Diodes Incorporated P-Channel Enhancement Mode MOSFET                    
+DRAIN8:R          100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN8:R1         150R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN9:C          10nF                           CAP0805                        0805                Capacitor                                                                
+DRAIN9:DISCHARGE  5R                             RESISTORPWR163                 PWR163              Resistor                                                                 
+DRAIN9:GATE       3K3                            RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN9:LED1       RED                            LED-0805                       LED-805             Light Emitting Diode (LED)                                               
+DRAIN9:PFET       P-CHANNEL_MOSFET_DMP3099L-7    P-CHANNEL_MOSFET_DMP3099L-7    SOT23               Diodes Incorporated P-Channel Enhancement Mode MOSFET                    
+DRAIN9:R          100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN9:R1         150R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN10:C         10nF                           CAP0805                        0805                Capacitor                                                                
+DRAIN10:DISCHARGE 5R                             RESISTORPWR163                 PWR163              Resistor                                                                 
+DRAIN10:GATE      3K3                            RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN10:LED1      RED                            LED-0805                       LED-805             Light Emitting Diode (LED)                                               
+DRAIN10:PFET      P-CHANNEL_MOSFET_DMP3099L-7    P-CHANNEL_MOSFET_DMP3099L-7    SOT23               Diodes Incorporated P-Channel Enhancement Mode MOSFET                    
+DRAIN10:R         100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN10:R1        150R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN11:C         10nF                           CAP0805                        0805                Capacitor                                                                
+DRAIN11:DISCHARGE 5R                             RESISTORPWR163                 PWR163              Resistor                                                                 
+DRAIN11:GATE      3K3                            RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN11:LED1      RED                            LED-0805                       LED-805             Light Emitting Diode (LED)                                               
+DRAIN11:PFET      P-CHANNEL_MOSFET_DMP3099L-7    P-CHANNEL_MOSFET_DMP3099L-7    SOT23               Diodes Incorporated P-Channel Enhancement Mode MOSFET                    
+DRAIN11:R         100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN11:R1        150R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN12:C         10nF                           CAP0805                        0805                Capacitor                                                                
+DRAIN12:DISCHARGE 5R                             RESISTORPWR163                 PWR163              Resistor                                                                 
+DRAIN12:GATE      3K3                            RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN12:LED1      RED                            LED-0805                       LED-805             Light Emitting Diode (LED)                                               
+DRAIN12:PFET      P-CHANNEL_MOSFET_DMP3099L-7    P-CHANNEL_MOSFET_DMP3099L-7    SOT23               Diodes Incorporated P-Channel Enhancement Mode MOSFET                    
+DRAIN12:R         100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN12:R1        150R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN13:C         10nF                           CAP0805                        0805                Capacitor                                                                
+DRAIN13:DISCHARGE 5R                             RESISTORPWR163                 PWR163              Resistor                                                                 
+DRAIN13:GATE      3K3                            RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN13:LED1      RED                            LED-0805                       LED-805             Light Emitting Diode (LED)                                               
+DRAIN13:PFET      P-CHANNEL_MOSFET_DMP3099L-7    P-CHANNEL_MOSFET_DMP3099L-7    SOT23               Diodes Incorporated P-Channel Enhancement Mode MOSFET                    
+DRAIN13:R         100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN13:R1        150R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN14:C         10nF                           CAP0805                        0805                Capacitor                                                                
+DRAIN14:DISCHARGE 5R                             RESISTORPWR163                 PWR163              Resistor                                                                 
+DRAIN14:GATE      3K3                            RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN14:LED1      RED                            LED-0805                       LED-805             Light Emitting Diode (LED)                                               
+DRAIN14:PFET      P-CHANNEL_MOSFET_DMP3099L-7    P-CHANNEL_MOSFET_DMP3099L-7    SOT23               Diodes Incorporated P-Channel Enhancement Mode MOSFET                    
+DRAIN14:R         100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN14:R1        150R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN15:C         10nF                           CAP0805                        0805                Capacitor                                                                
+DRAIN15:DISCHARGE 5R                             RESISTORPWR163                 PWR163              Resistor                                                                 
+DRAIN15:GATE      3K3                            RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN15:LED1      RED                            LED-0805                       LED-805             Light Emitting Diode (LED)                                               
+DRAIN15:PFET      P-CHANNEL_MOSFET_DMP3099L-7    P-CHANNEL_MOSFET_DMP3099L-7    SOT23               Diodes Incorporated P-Channel Enhancement Mode MOSFET                    
+DRAIN15:R         100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN15:R1        150R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN16:C         10nF                           CAP0805                        0805                Capacitor                                                                
+DRAIN16:DISCHARGE 5R                             RESISTORPWR163                 PWR163              Resistor                                                                 
+DRAIN16:GATE      3K3                            RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN16:LED1      RED                            LED-0805                       LED-805             Light Emitting Diode (LED)                                               
+DRAIN16:PFET      P-CHANNEL_MOSFET_DMP3099L-7    P-CHANNEL_MOSFET_DMP3099L-7    SOT23               Diodes Incorporated P-Channel Enhancement Mode MOSFET                    
+DRAIN16:R         100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN16:R1        150R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN17:C         10nF                           CAP0805                        0805                Capacitor                                                                
+DRAIN17:DISCHARGE 5R                             RESISTORPWR163                 PWR163              Resistor                                                                 
+DRAIN17:GATE      3K3                            RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN17:LED1      RED                            LED-0805                       LED-805             Light Emitting Diode (LED)                                               
+DRAIN17:PFET      P-CHANNEL_MOSFET_DMP3099L-7    P-CHANNEL_MOSFET_DMP3099L-7    SOT23               Diodes Incorporated P-Channel Enhancement Mode MOSFET                    
+DRAIN17:R         100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN17:R1        150R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN18:C         10nF                           CAP0805                        0805                Capacitor                                                                
+DRAIN18:DISCHARGE 5R                             RESISTORPWR163                 PWR163              Resistor                                                                 
+DRAIN18:GATE      3K3                            RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN18:LED1      RED                            LED-0805                       LED-805             Light Emitting Diode (LED)                                               
+DRAIN18:PFET      P-CHANNEL_MOSFET_DMP3099L-7    P-CHANNEL_MOSFET_DMP3099L-7    SOT23               Diodes Incorporated P-Channel Enhancement Mode MOSFET                    
+DRAIN18:R         100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+DRAIN18:R1        150R                           RESISTOR0805-RES               0805                Resistor                                                                 
+F0                0001.2704.11                   0001.2704.11                   5X20MM_FUSE         Schurter Surface Mount Ceramic Fuse                                      
+F1                0001.2704.11                   0001.2704.11                   5X20MM_FUSE         Schurter Surface Mount Ceramic Fuse                                      
+F2                0001.2704.11                   0001.2704.11                   5X20MM_FUSE         Schurter Surface Mount Ceramic Fuse                                      
+F3                0001.2704.11                   0001.2704.11                   5X20MM_FUSE         Schurter Surface Mount Ceramic Fuse                                      
+F4                0001.2704.11                   0001.2704.11                   5X20MM_FUSE         Schurter Surface Mount Ceramic Fuse                                      
+F5                0001.2704.11                   0001.2704.11                   5X20MM_FUSE         Schurter Surface Mount Ceramic Fuse                                      
+F6                0001.2704.11                   0001.2704.11                   5X20MM_FUSE         Schurter Surface Mount Ceramic Fuse                                      
+F7                0001.2704.11                   0001.2704.11                   5X20MM_FUSE         Schurter Surface Mount Ceramic Fuse                                      
+F8                0001.2704.11                   0001.2704.11                   5X20MM_FUSE         Schurter Surface Mount Ceramic Fuse                                      
+F9                0001.2704.11                   0001.2704.11                   5X20MM_FUSE         Schurter Surface Mount Ceramic Fuse                                      
+F10               0001.2704.11                   0001.2704.11                   5X20MM_FUSE         Schurter Surface Mount Ceramic Fuse                                      
+F11               0001.2704.11                   0001.2704.11                   5X20MM_FUSE         Schurter Surface Mount Ceramic Fuse                                      
+F12               0001.2704.11                   0001.2704.11                   5X20MM_FUSE         Schurter Surface Mount Ceramic Fuse                                      
+F13               0001.2704.11                   0001.2704.11                   5X20MM_FUSE         Schurter Surface Mount Ceramic Fuse                                      
+F14               0001.2704.11                   0001.2704.11                   5X20MM_FUSE         Schurter Surface Mount Ceramic Fuse                                      
+F15               0001.2704.11                   0001.2704.11                   5X20MM_FUSE         Schurter Surface Mount Ceramic Fuse                                      
+F16               0001.2704.11                   0001.2704.11                   5X20MM_FUSE         Schurter Surface Mount Ceramic Fuse                                      
+F17               0001.2704.11                   0001.2704.11                   5X20MM_FUSE         Schurter Surface Mount Ceramic Fuse                                      
+F18               0001.2704.11                   0001.2704.11                   5X20MM_FUSE         Schurter Surface Mount Ceramic Fuse                                      
+ISOSPI_A          CONNECTOR-2NANO-FIT_VERTICAL-2 CONNECTOR-2NANO-FIT_VERTICAL-2 NANO-FIT_VERTICAL-2 Mini-Fit Junior connector 2 pole                                         
+ISOSPI_B          CONNECTOR-2NANO-FIT_VERTICAL-2 CONNECTOR-2NANO-FIT_VERTICAL-2 NANO-FIT_VERTICAL-2 Mini-Fit Junior connector 2 pole                                         
+J                 0R                             RESISTOR0805-RES               0805                Resistor                                              JUMPER             
+J1_A                                             RESISTOR0805-RES               0805                Resistor                                                                 
+J1_B                                             RESISTOR0805-RES               0805                Resistor                                                                 
+J2_A                                             RESISTOR0805-RES               0805                Resistor                                                                 
+J2_B                                             RESISTOR0805-RES               0805                Resistor                                                                 
+J3_A                                             RESISTOR0805-RES               0805                Resistor                                                                 
+J3_B                                             RESISTOR0805-RES               0805                Resistor                                                                 
+J4_A                                             RESISTOR0805-RES               0805                Resistor                                                                 
+J4_B                                             RESISTOR0805-RES               0805                Resistor                                                                 
+J5_A                                             RESISTOR0805-RES               0805                Resistor                                                                 
+J5_B                                             RESISTOR0805-RES               0805                Resistor                                                                 
+J6_A                                             RESISTOR0805-RES               0805                Resistor                                                                 
+J6_B                                             RESISTOR0805-RES               0805                Resistor                                                                 
+J7_A                                             RESISTOR0805-RES               0805                Resistor                                                                 
+J7_B                                             RESISTOR0805-RES               0805                Resistor                                                                 
+J8_A                                             RESISTOR0805-RES               0805                Resistor                                                                 
+J8_B                                             RESISTOR0805-RES               0805                Resistor                                                                 
+R1_A              100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+R1_B              100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+R2_A              100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+R2_B              100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+R3_A              402R                           RESISTOR0805-RES               0805                Resistor                                                                 
+R3_B              402R                           RESISTOR0805-RES               0805                Resistor                                                                 
+R4_A              22R                            RESISTOR0805-RES               0805                Resistor                                                                 
+R4_B              22R                            RESISTOR0805-RES               0805                Resistor                                                                 
+R5_A              22R                            RESISTOR0805-RES               0805                Resistor                                                                 
+R5_B              22R                            RESISTOR0805-RES               0805                Resistor                                                                 
+RB1_A             1K2                            RESISTOR0805-RES               0805                Resistor                                                                 
+RB1_B             1K2                            RESISTOR0805-RES               0805                Resistor                                                                 
+RB2_A             806R                           RESISTOR0805-RES               0805                Resistor                                                                 
+RB2_B             806R                           RESISTOR0805-RES               0805                Resistor                                                                 
+RIN_A             100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+RIN_B             100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+RM_A              100R                           RESISTOR0805-RES               0805                Resistor                                              TERMINATION        
+RM_B              100R                           RESISTOR0805-RES               0805                Resistor                                              TERMINATION        
+RU1_A             100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+RU1_B             100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+RU2_A             100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+RU2_B             100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+THERM1            10K                            THERMISTOR_NCP210603           0603                Murata NCP Thermistor                                                    
+THERM1_A          Th1                            CONNECTOR-2NANO-FIT_VERTICAL-2 NANO-FIT_VERTICAL-2 Mini-Fit Junior connector 2 pole                                         
+THERM1_B          Th1                            CONNECTOR-2NANO-FIT_VERTICAL-2 NANO-FIT_VERTICAL-2 Mini-Fit Junior connector 2 pole                                         
+THERM2            10K                            THERMISTOR_NCP210603           0603                Murata NCP Thermistor                                                    
+THERM2_A          Th1                            CONNECTOR-2NANO-FIT_VERTICAL-2 NANO-FIT_VERTICAL-2 Mini-Fit Junior connector 2 pole                                         
+THERM2_B          Th1                            CONNECTOR-2NANO-FIT_VERTICAL-2 NANO-FIT_VERTICAL-2 Mini-Fit Junior connector 2 pole                                         
+THERM3            10K                            THERMISTOR_NCP210603           0603                Murata NCP Thermistor                                                    
+THERM3_A          Th1                            CONNECTOR-2NANO-FIT_VERTICAL-2 NANO-FIT_VERTICAL-2 Mini-Fit Junior connector 2 pole                                         
+THERM3_B          Th1                            CONNECTOR-2NANO-FIT_VERTICAL-2 NANO-FIT_VERTICAL-2 Mini-Fit Junior connector 2 pole                                         
+THERM4            10K                            THERMISTOR_NCP210603           0603                Murata NCP Thermistor                                                    
+THERM_FILTER1:C   10nF                           CAP0805                        0805                Capacitor                                                                
+THERM_FILTER1:R   100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+THERM_FILTER1:R1  10K                            RESISTOR0805-RES               0805                Resistor                                                                 
+THERM_FILTER2:C   10nF                           CAP0805                        0805                Capacitor                                                                
+THERM_FILTER2:R   100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+THERM_FILTER2:R1  10K                            RESISTOR0805-RES               0805                Resistor                                                                 
+THERM_FILTER3:C   10nF                           CAP0805                        0805                Capacitor                                                                
+THERM_FILTER3:R   100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+THERM_FILTER3:R1  10K                            RESISTOR0805-RES               0805                Resistor                                                                 
+THERM_FILTER4:C   10nF                           CAP0805                        0805                Capacitor                                                                
+THERM_FILTER4:R   100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+THERM_FILTER4:R1  10K                            RESISTOR0805-RES               0805                Resistor                                                                 
+THERM_FILTER5:C   10nF                           CAP0805                        0805                Capacitor                                                                
+THERM_FILTER5:R   100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+THERM_FILTER5:R1  10K                            RESISTOR0805-RES               0805                Resistor                                                                 
+THERM_FILTER6:C   10nF                           CAP0805                        0805                Capacitor                                                                
+THERM_FILTER6:R   100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+THERM_FILTER6:R1  10K                            RESISTOR0805-RES               0805                Resistor                                                                 
+THERM_FILTER7:C   10nF                           CAP0805                        0805                Capacitor                                                                
+THERM_FILTER7:R   100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+THERM_FILTER7:R1  10K                            RESISTOR0805-RES               0805                Resistor                                                                 
+THERM_FILTER8:C   10nF                           CAP0805                        0805                Capacitor                                                                
+THERM_FILTER8:R   100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+THERM_FILTER8:R1  10K                            RESISTOR0805-RES               0805                Resistor                                                                 
+THERM_FILTER9:C   10nF                           CAP0805                        0805                Capacitor                                                                
+THERM_FILTER9:R   100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+THERM_FILTER9:R1  10K                            RESISTOR0805-RES               0805                Resistor                                                                 
+THERM_FILTER10:C  10nF                           CAP0805                        0805                Capacitor                                                                
+THERM_FILTER10:R  100R                           RESISTOR0805-RES               0805                Resistor                                                                 
+THERM_FILTER10:R1 10K                            RESISTOR0805-RES               0805                Resistor                                                                 
+TRANSFORMER       HM2102NLT                      HM2102NLT                      HM2102NLT           2 Channel SMT Transformer                                                
+U$1               LTC6804-2                      LTC6804-2                      LTC6804             Linear Technology Multicell Battery Stack Monitor                        
+U$2               LTC6804-2                      LTC6804-2                      LTC6804             Linear Technology Multicell Battery Stack Monitor                        
+U$3                                              NSV1C201MZ4                    SOT223              NPN Transistor                                                           
+U$4                                              NSV1C201MZ4                    SOT223              NPN Transistor                                                           
+U$5               TEST_POINT                     TEST_POINT                     TEST_POINT          Keystone Electronics Test Point 5005                                     
+U$6               TEST_POINT                     TEST_POINT                     TEST_POINT          Keystone Electronics Test Point 5005                                     
+U$7               TEST_POINT                     TEST_POINT                     TEST_POINT          Keystone Electronics Test Point 5005                                     
+U$8               TEST_POINT                     TEST_POINT                     TEST_POINT          Keystone Electronics Test Point 5005                                     
