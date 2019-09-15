@@ -8092,12 +8092,9 @@ on measured spikes and circuit behavior</text>
 <label x="35.56" y="33.02" size="1.016" layer="95" xref="yes"/>
 <pinref part="X4" gate="-3" pin="S"/>
 <wire x1="30.48" y1="33.02" x2="35.56" y2="33.02" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="17.78" x2="25.4" y2="17.78" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="17.78" x2="30.48" y2="17.78" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="17.78" x2="30.48" y2="17.78" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="17.78" x2="30.48" y2="33.02" width="0.1524" layer="91"/>
 <junction x="30.48" y="33.02"/>
-<wire x1="25.4" y1="12.7" x2="25.4" y2="17.78" width="0.1524" layer="91"/>
-<junction x="25.4" y="17.78"/>
 </segment>
 <segment>
 <label x="30.48" y="96.52" size="1.016" layer="95" xref="yes"/>
@@ -8143,12 +8140,9 @@ on measured spikes and circuit behavior</text>
 <label x="35.56" y="30.48" size="1.016" layer="95" xref="yes"/>
 <pinref part="X4" gate="-4" pin="S"/>
 <wire x1="33.02" y1="30.48" x2="35.56" y2="30.48" width="0.1524" layer="91"/>
-<wire x1="22.86" y1="15.24" x2="27.94" y2="15.24" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="15.24" x2="33.02" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="22.86" y1="15.24" x2="33.02" y2="15.24" width="0.1524" layer="91"/>
 <wire x1="33.02" y1="15.24" x2="33.02" y2="30.48" width="0.1524" layer="91"/>
 <junction x="33.02" y="30.48"/>
-<wire x1="27.94" y1="7.62" x2="27.94" y2="15.24" width="0.1524" layer="91"/>
-<junction x="27.94" y="15.24"/>
 </segment>
 <segment>
 <pinref part="CAN_TERM_JMP" gate="G$1" pin="1"/>
